@@ -1,0 +1,3 @@
+nl_NL-ak-cur.lite.res	e4b385293e9d8b53673adc028e53d825	510702
+nl_NL-lk-text.lite.res	2009a2b340cc86d0e59ec62d7ec18ecf	4429900
+nl_NL.lang	913de41c59b7f31b935cefe0790526cd	3251

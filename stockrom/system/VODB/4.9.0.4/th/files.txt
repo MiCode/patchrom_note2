@@ -1,0 +1,5 @@
+th-sk-email.res	227d42214c31da2319482e09ae4e9fce	65233
+th-sk-uri.res	49d3bec2ff29ff6fae039fd0c74b4d1c	65114
+th.lang	1025676052e26eae79879aff58327517	2086
+th_sk.res	de7f8a0eeea4766b07dc21c1444002fd	2823
+thai-ak-iso.res	be94f1c82793bebc4d74d7cbb71c9003	1270754

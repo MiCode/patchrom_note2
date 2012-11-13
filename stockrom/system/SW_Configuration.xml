@@ -1,0 +1,13 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<SW-Configuration>
+	<MobileData>
+	<PublicName>GT-N7100</PublicName>
+	</MobileData>
+	<CustomerDataSet>
+	<CSCName>N7100OZS</CSCName>
+	<CSCVersion>ALJ7</CSCVersion>
+	<NbCustomer>2</NbCustomer>
+	<CustomerData src="/Customer/TGY/customer.xml" />
+	<CustomerData src="/Customer/BRI/customer.xml" />
+	</CustomerDataSet>
+</SW-Configuration>

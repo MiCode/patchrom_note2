@@ -1,0 +1,5 @@
+4
+com.sec.msc.learninghub
+com.samsung.videohub
+com.samsung.music
+com.inventec.dreye.samsung

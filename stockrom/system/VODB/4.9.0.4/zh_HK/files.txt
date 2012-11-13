@@ -1,0 +1,3 @@
+chinese_HK-lk-free.res	bc173fb85762f45f97212d79b2e1b8c5	609466
+chinese_gb18030_hkscs-ak-iso.lite.res	8abee8c41369fdbfa09dd15b1bf17795	7642271
+zh_HK.lang	5e1f8ddb915267bbd3cd9ca890a25136	3443

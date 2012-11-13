@@ -1,0 +1,2 @@
+sk.lang	f1fdbe4f61e9d1833a7b7aa2eb76bd66	3326
+sk_sk.res	f1ca744ba7c8629ac7c0f9cfd98dcc1e	2789

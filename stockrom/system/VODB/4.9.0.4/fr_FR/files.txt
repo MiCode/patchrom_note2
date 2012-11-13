@@ -1,0 +1,3 @@
+fr_FR-ak-cur.lite.res	2ad067576a5ef903a4162a23bb0816b4	520958
+fr_FR-lk-text.lite.res	29160e763b9c54f11c86f164bbc9e581	4036760
+fr_FR.lang	46a9c3777b30376d4f90797ba10dbd7b	3251

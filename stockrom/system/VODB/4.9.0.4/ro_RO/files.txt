@@ -1,0 +1,3 @@
+ro_RO-ak-cur.lite.res	c0a2c8b36dbb3f1a482d06bd519d7fec	502050
+ro_RO-lk-text.lite.res	709f15f9b6d0cb77a788c835e5fe5ffa	3680940
+ro_RO.lang	d129c2f9a200a539613518e66aa6a653	3251

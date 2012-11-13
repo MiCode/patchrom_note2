@@ -1,0 +1,3 @@
+da_DK-ak-cur.lite.res	402a58f491816a965702373ae0bd7a80	502886
+da_DK-lk-text.lite.res	80b69ff85fb5335ee21c87888de7e4d7	4462340
+da_DK.lang	6af6e92496ec33b4b920cd9a733945b0	3251

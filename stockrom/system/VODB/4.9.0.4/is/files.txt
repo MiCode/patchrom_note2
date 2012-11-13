@@ -1,0 +1,2 @@
+is.lang	c7836fa3a3b7ba5b3a1b1ab26f4cd30a	3328
+is_sk.res	f49e3f7fddc519a1aed6634359811b37	2421

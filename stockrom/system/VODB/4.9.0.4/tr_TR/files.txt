@@ -1,0 +1,3 @@
+tr_TR-ak-cur.lite.res	b46c4c08cb4e3ca894a0bca93d1c3d88	508538
+tr_TR-lk-text.lite.res	3e47cc19fb15e3144861b03ecb3f5210	4558980
+tr_TR.lang	68d1b74cfae79f79291485bcbc831948	3251

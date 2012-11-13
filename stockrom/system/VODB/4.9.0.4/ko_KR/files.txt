@@ -1,0 +1,4 @@
+ko_KR.lang	531b8a585bd6231cd104dcb05f816e07	3358
+ko_KR_johab-ak-cur.lite.res	d91cf4a5c1c45d88ea63b76101db46e6	6307658
+ko_KR_johab-lk-text.lite.res	0be83d12526ba60b197f7a9e0c201233	4792324
+slang.res	dd6c8c3dc3844430114e8e86cbfdae7b	2084

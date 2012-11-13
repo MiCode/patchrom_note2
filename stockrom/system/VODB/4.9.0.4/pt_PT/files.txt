@@ -1,0 +1,3 @@
+pt_PT-ak-cur.lite.res	68226d4efe7da5d714821b8ce352c044	520958
+pt_PT-lk-text.lite.res	dc515c9270326f6b70e41c77f54ffbf3	3881724
+pt_PT.lang	f278d47527da732e78eaea8fa439d231	3251

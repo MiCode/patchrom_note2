@@ -1,0 +1,3 @@
+sv_SE-ak-cur.lite.res	d8bc598736becdddee5d29bc20246a7b	500262
+sv_SE-lk-text.lite.res	80dcb6e3e945cb6f90631670eecde3f6	4152752
+sv_SE.lang	ce25e30af344fb6883b68974c8bd2314	3251

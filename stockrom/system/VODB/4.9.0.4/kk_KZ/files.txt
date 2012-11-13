@@ -1,0 +1,3 @@
+kk_KZ-ak-cur.lite.res	e48f90b6ed65d680a6dd6e7a4b813a2a	599366
+kk_KZ-lk-text.lite.res	c8d8a4bf95285da9e503c1697a8f77ce	4617060
+kk_KZ.lang	03b817f124556e6e7b7181284314c4ab	3251

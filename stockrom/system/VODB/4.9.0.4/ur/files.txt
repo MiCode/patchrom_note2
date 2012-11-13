@@ -1,0 +1,3 @@
+arabic-ak-iso.lite.res	9fc6e92fdc26996b384baada12400044	362962
+arabic-lk-free.res	64c51281640999c1efba295a63c39326	31616
+ur.lang	05bfdec5b4fef44ec684906d5730d770	3270
