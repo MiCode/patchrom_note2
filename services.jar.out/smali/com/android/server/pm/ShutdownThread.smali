@@ -647,7 +647,7 @@
 
     .line 397
     .local v4, pd:Landroid/app/ProgressDialog;
-    const v5, 0x1040183
+    const v5, 0x60c0191
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -656,7 +656,7 @@
     invoke-virtual {v4, v5}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 398
-    const v5, 0x1040187
+    const v5, 0x60c01aa
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -725,7 +725,8 @@
     invoke-virtual {v5, v6}, Landroid/view/Window;->addFlags(I)V
 
     .line 410
-    invoke-virtual {v4}, Landroid/app/ProgressDialog;->show()V
+    #invoke-virtual {v4}, Landroid/app/ProgressDialog;->show()V
+    invoke-static {p0}, Lcom/android/server/pm/ShutdownThread$Injector;->createShutDownDialog(Landroid/content/Context;)V
 
     goto/16 :goto_1
 

@@ -9534,11 +9534,12 @@
     if-nez v11, :cond_0
 
     .line 1669
-    new-instance v11, Lcom/android/internal/policy/impl/KeyguardViewMediator;
+
+    new-instance v11, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;
 
     move-object/from16 v0, p4
-
-    invoke-direct {v11, p1, p0, v0}, Lcom/android/internal/policy/impl/KeyguardViewMediator;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/os/LocalPowerManager;)V
+ 
+    invoke-direct {v11, p1, p0, v0}, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/os/LocalPowerManager;)V
 
     iput-object v11, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
 
@@ -15612,6 +15613,8 @@
     iget-boolean v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPendingPowerKeyUpCanceled:Z
 
     move/from16 v22, v0
+
+    invoke-static/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->sendPowerUpBroadcast(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
 
     if-eqz v22, :cond_36
 
@@ -24051,4 +24054,17 @@
         0x899 -> :sswitch_1e
         0x89a -> :sswitch_1a
     .end sparse-switch
+.end method
+
+.method callInterceptPowerKeyUp(Z)V
+    .locals 0
+    .parameter "canceled"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
+
+    return-void
 .end method

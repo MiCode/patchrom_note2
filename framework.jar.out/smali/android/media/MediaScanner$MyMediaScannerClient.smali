@@ -901,6 +901,22 @@
     :goto_6
     if-eqz v38, :cond_31
 
+    #start
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Landroid/media/MediaScanner$MyMediaScannerClient;->this$0:Landroid/media/MediaScanner;
+
+    move-object/from16 v1, p1
+
+    move/from16 v2, p2
+
+    move/from16 v3, p4
+
+    move/from16 v4, p5
+
+    invoke-static {v0, v1, v2, v3, v4}, Landroid/media/MediaScanner$Injector;->setAllSettingsIfNotSet(Landroid/media/MediaScanner;Landroid/media/MediaScanner$FileEntry;ZZZ)V
+    #end
+
     .line 1271
     if-eqz p4, :cond_32
 

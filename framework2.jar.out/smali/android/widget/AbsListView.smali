@@ -11015,6 +11015,19 @@
     .parameter "ev"
 
     .prologue
+
+    invoke-static/range {p0 .. p1}, Landroid/widget/AbsListView$Injector;->isOutOfTouchRange(Landroid/widget/AbsListView;Landroid/view/MotionEvent;)Z
+
+    move-result v26
+
+    if-eqz v26, :cond_ff
+
+    const/16 v26, 0x1
+
+    return v26
+
+    :cond_ff
+
     .line 3777
     move-object/from16 v0, p0
 

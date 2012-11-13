@@ -5542,7 +5542,7 @@
 
     .line 1319
     :try_start_0
-    new-instance v2, Lcom/android/internal/policy/impl/AccountUnlockScreen;
+    new-instance v2, Lcom/android/internal/policy/impl/MiuiAccountUnlockScreen;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
 

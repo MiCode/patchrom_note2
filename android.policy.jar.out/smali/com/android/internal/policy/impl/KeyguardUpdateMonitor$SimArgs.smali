@@ -237,7 +237,9 @@
     .line 229
     .end local v2           #state:Lcom/android/internal/telephony/IccCard$State;
     :cond_8
-    sget-object v2, Lcom/android/internal/telephony/IccCard$State;->UNKNOWN:Lcom/android/internal/telephony/IccCard$State;
+    invoke-static {v3}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$Injector;->getIccCardState(Ljava/lang/String;)Lcom/android/internal/telephony/IccCard$State;
+
+    move-result-object v2
 
     .restart local v2       #state:Lcom/android/internal/telephony/IccCard$State;
     goto :goto_0

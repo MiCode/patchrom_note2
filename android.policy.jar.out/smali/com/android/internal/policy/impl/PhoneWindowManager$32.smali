@@ -43,10 +43,11 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
+    .locals 6
 
     .prologue
     const/4 v4, 0x0
+    const/4 v5, 0x0
 
     .line 6343
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$32;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
@@ -64,7 +65,7 @@
 
     iget-object v3, v3, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    invoke-direct {v2, p0, v3}, Lcom/android/internal/policy/impl/PhoneWindowManager$32$1;-><init>(Lcom/android/internal/policy/impl/PhoneWindowManager$32;Landroid/content/Context;)V
+    invoke-direct {v2, p0, v3, v4}, Lcom/android/internal/policy/impl/PhoneWindowManager$32$1;-><init>(Lcom/android/internal/policy/impl/PhoneWindowManager$17;Landroid/content/Context;I)V
 
     iput-object v2, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBootMsgDialog:Landroid/app/ProgressDialog;
 
@@ -82,7 +83,7 @@
 
     iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBootMsgDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v1, v4}, Landroid/app/ProgressDialog;->setProgressStyle(I)V
+    invoke-virtual {v1, v5}, Landroid/app/ProgressDialog;->setProgressStyle(I)V
 
     .line 6369
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$32;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
@@ -167,7 +168,7 @@
 
     iget-object v1, v1, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBootMsgDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v1, v4}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    invoke-virtual {v1, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     .line 6380
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$32;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
