@@ -1,0 +1,46 @@
+diff a/services.jar.out/smali/com/android/server/am/AppErrorDialog.smali b/services.jar.out/smali/com/android/server/am/AppErrorDialog.smali	(rejected hunks)
+@@ -75,7 +90,7 @@
+     .local v1, name:Ljava/lang/CharSequence;
+     if-eqz v1, :cond_3
+ 
+-    const v4, 0x10404cf
++    const v4, 0x010404cf
+ 
+     const/4 v5, 0x2
+ 
+@@ -104,7 +119,7 @@
+ 
+     const/4 v4, -0x1
+ 
+-    const v5, 0x10404d6
++    const v5, 0x010404d6
+ 
+     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+ 
+@@ -151,7 +166,7 @@
+ 
+     const/4 v4, -0x2
+ 
+-    const v5, 0x10404d7
++    const v5, 0x010404d7
+ 
+     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+ 
+@@ -168,7 +183,7 @@
+     .end local v0           #edm:Landroid/app/enterprise/EnterpriseDeviceManager;
+     .end local v3           #rp:Landroid/app/enterprise/RestrictionPolicy;
+     :cond_1
+-    const v4, 0x10404ce
++    const v4, 0x010404ce
+ 
+     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+ 
+@@ -244,7 +259,7 @@
+     iget-object v1, p3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+ 
+     .restart local v1       #name:Ljava/lang/CharSequence;
+-    const v4, 0x10404d0
++    const v4, 0x010404d0
+ 
+     new-array v5, v8, [Ljava/lang/Object;
+ 

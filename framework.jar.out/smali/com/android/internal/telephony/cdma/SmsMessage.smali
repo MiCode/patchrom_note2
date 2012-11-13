@@ -1314,7 +1314,8 @@
     return-object v0
 .end method
 
-.method private static declared-synchronized getNextMessageId()I
+#TODO change access from private
+.method static declared-synchronized getNextMessageId()I
     .locals 6
 
     .prologue

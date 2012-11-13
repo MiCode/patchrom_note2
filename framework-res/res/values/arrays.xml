@@ -460,6 +460,10 @@
     </integer-array>
     <string-array name="config_statusBarIcons">
         <item>felica_lock</item>
+        <!-- Defines the slots for miui icons. -->
+        <item>headset</item>
+        <item>call_record</item>
+        <item>privacy_mode</item>
         <item>ime</item>
         <item>face</item>
         <item>sync_failing</item>
@@ -467,6 +471,7 @@
         <item>gps</item>
         <item>lbs</item>
         <item>bluetooth</item>
+        <item>bluetooth_handsfree_battery</item>
         <item>nfc_on</item>
         <item>nfc</item>
         <item>tty</item>
@@ -477,6 +482,7 @@
         <item>com.samsung.rcs</item>
         <item>wifi_p2p</item>
         <item>wifi</item>
+        <item>wimax</item>
         <item>wifi_ap</item>
         <item>cdma_eri</item>
         <item>data_connection</item>

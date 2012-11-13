@@ -9,7 +9,8 @@
         Landroid/widget/DatePicker$TwTextWatcher;,
         Landroid/widget/DatePicker$TwKeyListener;,
         Landroid/widget/DatePicker$SavedState;,
-        Landroid/widget/DatePicker$OnDateChangedListener;
+        Landroid/widget/DatePicker$OnDateChangedListener;,
+        Landroid/widget/DatePicker$OnDateChangeListener;
     }
 .end annotation
 
@@ -155,6 +156,9 @@
     .parameter "context"
     .parameter "attrs"
     .parameter "defStyle"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 181
@@ -440,6 +444,16 @@
 
     .line 249
     .local v14, onChangeListener:Landroid/widget/NumberPicker$OnValueChangeListener;
+
+    new-instance v14, Landroid/widget/DatePicker$OnDateChangeListener;
+
+    .end local v14           #onChangeListener:Landroid/widget/NumberPicker$OnValueChangeListener;
+    move-object/from16 v0, p0
+
+    invoke-direct {v14, v0}, Landroid/widget/DatePicker$OnDateChangeListener;-><init>(Landroid/widget/DatePicker;)V
+
+    .restart local v14       #onChangeListener:Landroid/widget/NumberPicker$OnValueChangeListener;
+
     const v17, 0x1020296
 
     move-object/from16 v0, p0

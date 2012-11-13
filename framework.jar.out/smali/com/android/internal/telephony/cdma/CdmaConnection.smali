@@ -1180,22 +1180,14 @@
     :goto_0
     move v0, v1
 
-    .line 751
     :cond_0
     return v0
 
-    .line 735
     :cond_1
     const/16 v2, 0x2c
 
     if-ne p1, v2, :cond_2
 
-    .line 736
-    sget-object v0, Lcom/android/internal/telephony/Connection$PostDialState;->PAUSE:Lcom/android/internal/telephony/Connection$PostDialState;
-
-    invoke-direct {p0, v0}, Lcom/android/internal/telephony/cdma/CdmaConnection;->setPostDialState(Lcom/android/internal/telephony/Connection$PostDialState;)V
-
-    .line 741
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CdmaConnection;->h:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/android/internal/telephony/cdma/CdmaConnection;->h:Landroid/os/Handler;
@@ -2056,18 +2048,17 @@
 
     move-result-object v1
 
-    .line 763
     .local v1, subStr:Ljava/lang/String;
+    goto :goto_0
+
     if-eqz v1, :cond_1
 
-    .line 764
     const/16 v3, 0x3b
 
     invoke-virtual {v1, v3}, Ljava/lang/String;->indexOf(I)I
 
     move-result v2
 
-    .line 765
     .local v2, wIndex:I
     const/16 v3, 0x2c
 

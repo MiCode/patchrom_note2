@@ -1,0 +1,12 @@
+diff a/framework-res/res/values-zh-rTW/strings.xml b/framework-res/res/values-zh-rTW/strings.xml	(rejected hunks)
+@@ -1089,8 +1089,8 @@
+     <string name="low_internal_storage_view_title">記憶體幾乎已滿</string>
+     <string name="low_internal_storage_view_text">部分系統功能可能無法運作</string>
+     <string name="loading">正在載入…</string>
+-    <string name="capital_on">開</string>
+-    <string name="capital_off">關</string>
++    <string name="capital_on">開啟</string>
++    <string name="capital_off">關閉</string>
+     <string name="whichApplication">完成動作需使用</string>
+     <string name="alwaysUse">預設用於此動作</string>
+     <string name="clearDefaultHintMsg">前往設定 > 應用程式管理員 > 全部，清除預設的應用程式設定</string>

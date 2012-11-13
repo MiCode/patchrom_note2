@@ -26,7 +26,8 @@
         Lcom/android/server/am/ActivityManagerService$ProcessChangeItem;,
         Lcom/android/server/am/ActivityManagerService$Identity;,
         Lcom/android/server/am/ActivityManagerService$ForegroundToken;,
-        Lcom/android/server/am/ActivityManagerService$PendingActivityLaunch;
+        Lcom/android/server/am/ActivityManagerService$PendingActivityLaunch;,
+        Lcom/android/server/am/ActivityManagerService$Injector;
     }
 .end annotation
 
@@ -959,6 +960,9 @@
 
 .method private constructor <init>()V
     .locals 10
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/4 v5, 0x5
@@ -1507,11 +1511,11 @@
 
     invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 1645
     .local v1, systemDir:Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
-    .line 1646
+    invoke-static {v1, v0}, Lmiui/os/Environment;->init(Ljava/io/File;Ljava/io/File;)V
+
     new-instance v2, Lcom/android/server/am/BatteryStatsService;
 
     new-instance v3, Ljava/io/File;
@@ -6476,6 +6480,18 @@
 
     .line 13756
     .restart local v8       #queue:Lcom/android/server/am/BroadcastQueue;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/server/am/ActivityManagerService;->getRunningAppProcesses()Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-virtual/range {v44 .. v44}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object/from16 v0, v24
+
+    invoke-static {v0, v3, v5}, Lcom/android/server/am/ExtraActivityManagerService;->adjustMediaButtonReceivers(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
+
     new-instance v7, Lcom/android/server/am/BroadcastRecord;
 
     const/16 v31, 0x0
@@ -11772,6 +11788,9 @@
     .locals 24
     .parameter "r"
     .parameter "crashInfo"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 8849
@@ -12199,74 +12218,67 @@
 
     invoke-virtual {v12, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8902
     const-string v3, "app"
 
     move-object/from16 v0, p1
 
     invoke-virtual {v12, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8904
+    const-string v3, "crash"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v12, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v15
 
-    .line 8905
     .local v15, msg:Landroid/os/Message;
-    sget-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
+    # merget from ics.9300
+    #sget-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
 
-    if-eqz v3, :cond_d
+    #if-eqz v3, :cond_d
 
-    .line 8906
-    const/16 v3, 0x22
+    const/16 v3, 0x01
 
     iput v3, v15, Landroid/os/Message;->what:I
 
-    .line 8907
-    const-string v3, "errorpermission"
+    #const-string v3, "errorpermission"
 
-    sget-object v10, Lcom/android/server/am/ActivityManagerService;->mCMErrorPermissionName:Ljava/lang/String;
+    #sget-object v10, Lcom/android/server/am/ActivityManagerService;->mCMErrorPermissionName:Ljava/lang/String;
 
-    invoke-virtual {v12, v3, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    #invoke-virtual {v12, v3, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8908
-    const/4 v3, 0x0
+    #const/4 v3, 0x0
 
-    sput-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
+    #sput-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
 
-    .line 8912
     :goto_4
     iput-object v12, v15, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 8913
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/am/ActivityManagerService;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v3, v15}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 8915
     invoke-static/range {v16 .. v17}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 8916
     monitor-exit p0
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 8918
     invoke-virtual/range {v19 .. v19}, Lcom/android/server/am/AppErrorResult;->get()I
 
     move-result v18
 
-    .line 8920
     .local v18, res:I
     const/4 v11, 0x0
 
-    .line 8921
     .local v11, appErrorIntent:Landroid/content/Intent;
     monitor-enter p0
 
-    .line 8922
     if-eqz p1, :cond_b
 
     :try_start_6
@@ -22785,6 +22797,9 @@
 .method public static final main(I)Landroid/content/Context;
     .locals 7
     .parameter "factoryTest"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/4 v6, 0x1
@@ -22821,93 +22836,73 @@
 
     goto :goto_0
 
-    .line 1478
     :catch_0
     move-exception v4
 
     goto :goto_0
 
-    .line 1481
     :cond_0
     :try_start_2
     monitor-exit v3
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1483
     iget-object v2, v3, Lcom/android/server/am/ActivityManagerService$AThread;->mService:Lcom/android/server/am/ActivityManagerService;
 
-    .line 1484
     .local v2, m:Lcom/android/server/am/ActivityManagerService;
     sput-object v2, Lcom/android/server/am/ActivityManagerService;->mSelf:Lcom/android/server/am/ActivityManagerService;
 
-    .line 1485
     invoke-static {}, Landroid/app/ActivityThread;->systemMain()Landroid/app/ActivityThread;
 
     move-result-object v0
 
-    .line 1486
     .local v0, at:Landroid/app/ActivityThread;
     sput-object v0, Lcom/android/server/am/ActivityManagerService;->mSystemThread:Landroid/app/ActivityThread;
 
-    .line 1487
     invoke-virtual {v0}, Landroid/app/ActivityThread;->getSystemContext()Landroid/app/ContextImpl;
 
     move-result-object v1
 
-    .line 1488
     .local v1, context:Landroid/content/Context;
-    const v4, 0x103006b
+    const v4, 0x103006e
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->setTheme(I)V
 
-    .line 1489
     iput-object v1, v2, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    .line 1490
     iput p0, v2, Lcom/android/server/am/ActivityManagerService;->mFactoryTest:I
 
-    .line 1491
     new-instance v4, Lcom/android/server/am/ActivityStack;
 
     invoke-direct {v4, v2, v1, v6}, Lcom/android/server/am/ActivityStack;-><init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Z)V
 
     iput-object v4, v2, Lcom/android/server/am/ActivityManagerService;->mMainStack:Lcom/android/server/am/ActivityStack;
 
-    .line 1493
     iget-object v4, v2, Lcom/android/server/am/ActivityManagerService;->mBatteryStatsService:Lcom/android/server/am/BatteryStatsService;
 
     invoke-virtual {v4, v1}, Lcom/android/server/am/BatteryStatsService;->publish(Landroid/content/Context;)V
 
-    .line 1494
     iget-object v4, v2, Lcom/android/server/am/ActivityManagerService;->mUsageStatsService:Lcom/android/server/am/UsageStatsService;
 
     invoke-virtual {v4, v1}, Lcom/android/server/am/UsageStatsService;->publish(Landroid/content/Context;)V
 
-    .line 1496
     monitor-enter v3
 
-    .line 1497
     const/4 v4, 0x1
 
     :try_start_3
     iput-boolean v4, v3, Lcom/android/server/am/ActivityManagerService$AThread;->mReady:Z
 
-    .line 1498
     invoke-virtual {v3}, Ljava/lang/Object;->notifyAll()V
 
-    .line 1499
     monitor-exit v3
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 1501
     invoke-virtual {v2, v5, v5, v5, v5}, Lcom/android/server/am/ActivityManagerService;->startRunning(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1503
     return-object v1
 
-    .line 1481
     .end local v0           #at:Landroid/app/ActivityThread;
     .end local v1           #context:Landroid/content/Context;
     .end local v2           #m:Lcom/android/server/am/ActivityManagerService;
@@ -50751,6 +50746,9 @@
 .method public getCallingPackage(Landroid/os/IBinder;)Ljava/lang/String;
     .locals 2
     .parameter "token"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 4743
@@ -50780,7 +50778,11 @@
     return-object v1
 
     :cond_0
-    const/4 v1, 0x0
+
+    #TODO auto merged at wrong pos
+    invoke-static {p0, p1}, Lcom/android/server/am/ActivityManagerService$Injector;->getCallingUidPackage(Lcom/android/server/am/ActivityManagerService;Landroid/os/IBinder;)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
@@ -74085,6 +74087,9 @@
     .parameter "starting"
     .parameter "persistent"
     .parameter "initLocale"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 14129
@@ -74480,6 +74485,20 @@
     move-object/from16 v2, p0
 
     invoke-direct/range {v2 .. v16}, Lcom/android/server/am/ActivityManagerService;->broadcastIntentLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ZZIII)I
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/server/am/ActivityManagerService;->mHandler:Landroid/os/Handler;
+
+    move/from16 v0, v23
+
+    move-object/from16 v1, v28
+
+    invoke-static {v0, v1, v2, v3}, Landroid/app/MiuiThemeHelper;->handleExtraConfigurationChanges(ILandroid/content/res/Configuration;Landroid/content/Context;Landroid/os/Handler;)V
 
     .line 14208
     and-int/lit8 v2, v23, 0x4

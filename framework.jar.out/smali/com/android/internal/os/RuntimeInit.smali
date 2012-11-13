@@ -7,7 +7,8 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/internal/os/RuntimeInit$Arguments;,
-        Lcom/android/internal/os/RuntimeInit$UncaughtHandler;
+        Lcom/android/internal/os/RuntimeInit$UncaughtHandler;,
+        Lcom/android/internal/os/RuntimeInit$Injector;
     }
 .end annotation
 
@@ -153,6 +154,20 @@
     goto :goto_0
 .end method
 
+.method public static callGetDefaultUserAgent()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    invoke-static {}, Lcom/android/internal/os/RuntimeInit;->getDefaultUserAgent()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method private static final commonInit()V
     .locals 4
 
@@ -251,6 +266,9 @@
 
 .method private static getDefaultUserAgent()Ljava/lang/String;
     .locals 6
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 152
@@ -317,20 +335,20 @@
 
     if-lez v4, :cond_0
 
-    .line 164
     const-string v4, "; "
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 165
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 168
     .end local v1           #model:Ljava/lang/String;
     :cond_0
-    sget-object v0, Landroid/os/Build;->ID:Ljava/lang/String;
+    sget-object v4, Landroid/os/Build;->ID:Ljava/lang/String;
 
-    .line 169
+    invoke-static {v2, v4}, Lcom/android/internal/os/RuntimeInit$Injector;->appendMiuiVersion(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
     .local v0, id:Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 

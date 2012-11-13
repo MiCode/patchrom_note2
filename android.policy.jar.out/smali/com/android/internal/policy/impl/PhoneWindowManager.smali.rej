@@ -1,0 +1,41 @@
+diff a/android.policy.jar.out/smali/com/android/internal/policy/impl/PhoneWindowManager.smali b/android.policy.jar.out/smali/com/android/internal/policy/impl/PhoneWindowManager.smali	(rejected hunks)
+@@ -7976,9 +8009,9 @@
+ 
+     if-nez v7, :cond_0
+ 
+-    new-instance v7, Lcom/android/internal/policy/impl/KeyguardViewMediator;
+-
+-    invoke-direct {v7, p1, p0, p4}, Lcom/android/internal/policy/impl/KeyguardViewMediator;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/os/LocalPowerManager;)V
++    new-instance v7, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;
++ 
++    invoke-direct {v7, p1, p0, p4}, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/os/LocalPowerManager;)V
+ 
+     iput-object v7, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
+ 
+@@ -13055,6 +13092,8 @@
+ 
+     move/from16 v22, v0
+ 
++    invoke-static/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->sendPowerUpBroadcast(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
++
+     if-eqz v22, :cond_35
+ 
+     :cond_32
+@@ -20166,3 +20221,17 @@
+         0x836 -> :sswitch_1c
+     .end sparse-switch
+ .end method
++
++.method callInterceptPowerKeyUp(Z)V
++    .locals 0
++    .parameter "canceled"
++    .annotation build Landroid/annotation/MiuiHook;
++        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++    .end annotation
++
++    .prologue
++    invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
++
++    return-void
++.end method
++

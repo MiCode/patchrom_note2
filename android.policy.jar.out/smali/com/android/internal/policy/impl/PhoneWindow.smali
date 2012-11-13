@@ -16,7 +16,8 @@
         Lcom/android/internal/policy/impl/PhoneWindow$DecorView;,
         Lcom/android/internal/policy/impl/PhoneWindow$ActionMenuPresenterCallback;,
         Lcom/android/internal/policy/impl/PhoneWindow$PanelMenuPresenterCallback;,
-        Lcom/android/internal/policy/impl/PhoneWindow$WindowManagerHolder;
+        Lcom/android/internal/policy/impl/PhoneWindow$WindowManagerHolder;,
+        Lcom/android/internal/policy/impl/PhoneWindow$Injector;
     }
 .end annotation
 
@@ -1776,6 +1777,9 @@
     .locals 18
     .parameter "st"
     .parameter "event"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 581
@@ -2176,6 +2180,12 @@
     iget v4, v0, Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;->windowAnimations:I
 
     iput v4, v2, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v17
+
+    invoke-static {v0, v1, v2}, Lcom/android/internal/policy/impl/PhoneWindow$Injector;->handleIcsAppLayoutParams(Lcom/android/internal/policy/impl/PhoneWindow;Landroid/view/WindowManager;Landroid/view/WindowManager$LayoutParams;)V
 
     .line 695
     move-object/from16 v0, p1
@@ -3588,6 +3598,9 @@
 .method protected generateLayout(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Landroid/view/ViewGroup;
     .locals 22
     .parameter "decor"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     .line 2793
@@ -4688,7 +4701,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindow;->clearFlags(I)V
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindow;->addFlags(I)V
 
     goto/16 :goto_6
 

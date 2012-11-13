@@ -1,0 +1,10 @@
+diff a/framework.jar.out/smali/android/text/util/Linkify.smali b/framework.jar.out/smali/android/text/util/Linkify.smali	(rejected hunks)
+@@ -1027,7 +1027,7 @@
+     goto :goto_0
+ .end method
+ 
+-.method private static final makeUrl(Ljava/lang/String;[Ljava/lang/String;Ljava/util/regex/Matcher;Landroid/text/util/Linkify$TransformFilter;)Ljava/lang/String;
++.method public static final makeUrl(Ljava/lang/String;[Ljava/lang/String;Ljava/util/regex/Matcher;Landroid/text/util/Linkify$TransformFilter;)Ljava/lang/String;
+     .locals 9
+     .parameter "url"
+     .parameter "prefixes"

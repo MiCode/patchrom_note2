@@ -12,7 +12,8 @@
         Landroid/media/MediaScanner$MyMediaScannerClient;,
         Landroid/media/MediaScanner$FileParsingTime;,
         Landroid/media/MediaScanner$PlaylistEntry;,
-        Landroid/media/MediaScanner$FileEntry;
+        Landroid/media/MediaScanner$FileEntry;,
+        Landroid/media/MediaScanner$Injector;
     }
 .end annotation
 
@@ -5726,6 +5727,18 @@
 
     .line 2365
     return-void
+.end method
+
+.method getContext()Landroid/content/Context;
+    .locals 1
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iget-object v0, p0, Landroid/media/MediaScanner;->mContext:Landroid/content/Context;
+
+    return-object v0
 .end method
 
 .method makeEntryFor(Ljava/lang/String;)Landroid/media/MediaScanner$FileEntry;

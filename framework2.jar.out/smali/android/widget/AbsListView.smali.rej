@@ -1,0 +1,24 @@
+diff a/framework2.jar.out/smali/android/widget/AbsListView.smali b/framework2.jar.out/smali/android/widget/AbsListView.smali	(rejected hunks)
+@@ -9667,8 +9692,22 @@
+ .method public onTouchEvent(Landroid/view/MotionEvent;)Z
+     .locals 29
+     .parameter "ev"
++    .annotation build Landroid/annotation/MiuiHook;
++        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
++    .end annotation
+ 
+     .prologue
++    invoke-static/range {p0 .. p1}, Landroid/widget/AbsListView$Injector;->isOutOfTouchRange(Landroid/widget/AbsListView;Landroid/view/MotionEvent;)Z
++
++    move-result v26
++
++    if-eqz v26, :cond_ff
++
++    const/16 v26, 0x1
++
++    return v26
++
++    :cond_ff
+     invoke-virtual/range {p0 .. p0}, Landroid/widget/AbsListView;->isEnabled()Z
+ 
+     move-result v26

@@ -140,13 +140,14 @@
 
     .line 181
     .local v6, title:Ljava/lang/CharSequence;
-    new-instance v3, Landroid/app/Dialog;
+
+    new-instance v3, Landroid/app/PreferenceDialog;
 
     invoke-virtual {v2}, Landroid/content/Context;->getThemeResId()I
 
     move-result v7
 
-    invoke-direct {v3, v2, v7}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v3, v2, v7}, Landroid/app/PreferenceDialog;-><init>(Landroid/content/Context;I)V
 
     iput-object v3, p0, Landroid/preference/PreferenceScreen;->mDialog:Landroid/app/Dialog;
 

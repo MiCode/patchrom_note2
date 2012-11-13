@@ -1,0 +1,12 @@
+diff a/android.policy.jar.out/smali/com/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs.smali b/android.policy.jar.out/smali/com/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs.smali	(rejected hunks)
+@@ -192,7 +196,9 @@
+ 
+     .end local v2           #state:Lcom/android/internal/telephony/IccCard$State;
+     :cond_7
+-    sget-object v2, Lcom/android/internal/telephony/IccCard$State;->UNKNOWN:Lcom/android/internal/telephony/IccCard$State;
++    invoke-static {v3}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$Injector;->getIccCardState(Ljava/lang/String;)Lcom/android/internal/telephony/IccCard$State;
++
++    move-result-object v2
+ 
+     .restart local v2       #state:Lcom/android/internal/telephony/IccCard$State;
+     goto :goto_0
