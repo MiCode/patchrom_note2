@@ -308,3 +308,33 @@
     .line 277
     return-void
 .end method
+
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 2
+    .parameter "savedInstanceState"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    invoke-virtual {p0}, Landroid/app/ListActivity;->getThemeResId()I
+
+    move-result v0
+
+    const v1, 0x60d0089
+
+    if-ne v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/app/ListActivity;->getActionBar()Landroid/app/ActionBar;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setHomeViewBackground(I)V
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    return-void
+.end method

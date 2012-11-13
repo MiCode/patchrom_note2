@@ -6616,3 +6616,18 @@
 
     return v0
 .end method
+
+.method public setHomeViewBackground(I)V
+    .locals 1
+    .parameter "resId"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mHomeLayout:Lcom/android/internal/widget/ActionBarView$HomeView;
+
+    invoke-virtual {v0, p1}, Lcom/android/internal/widget/ActionBarView$HomeView;->setBackgroundResource(I)V
+
+    return-void
+.end method
