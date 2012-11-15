@@ -1,4 +1,11 @@
-local-phone-apps = $(private-phone-apps) $(private-lockscreen-apps)
+local-phone-apps = $(private-phone-apps) $(private-lockscreen-apps) $(private-services) $(private-services)
+private-services := AllshareService \
+					FlashBarService \
+					SuggestionService \
+					QuickSnote \
+					SnoteT0 \
+					SnoteT0Provider \
+					SecPhone
 
 private-phone-apps := ApplicationsProvider \
 					  BackupRestoreConfirmation \

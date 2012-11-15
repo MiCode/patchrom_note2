@@ -1896,23 +1896,24 @@
     .parameter "filename"
 
     .prologue
-    const-string v0, "/sdcard"
+    const-string v0, "/storage/extSdCard/"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_miui_1
 
-    const-string v0, "sdcard"
+    const-string v0, "storage/extSdCard"
 
-    const-string v1, "emmc"
+    const-string v1, "external_sd"
 
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
     :goto_0
+    :cond_miui_1
     const-string v0, "RecoverySystem"
 
     new-instance v1, Ljava/lang/StringBuilder;

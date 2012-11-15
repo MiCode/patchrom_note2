@@ -12,7 +12,7 @@ local-out-zip-file := MIUI_note2.zip
 local-previous-target-dir := ~/workspace/ota_base/note2
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := OriginalSettings Camera
+local-modified-apps := Camera
 
 local-modified-jars :=
 
@@ -58,6 +58,21 @@ local-put-to-phone:
 	adb push out/$(local-rom-zip) /sdcard/
 	adb reboot recovery
 
-local-root-phone:
-	adb shell su -c insecure &
-	adb kill-server
+out/framework2.jar : out/framework.jar
+
+%.phone : out/%.jar
+	@echo push -- to --- phone
+	#adb shell su -c insecure
+	adb remount
+	adb push $< /system/framework
+	adb shell chmod 644 /system/framework/$*.jar
+	adb shell stop
+	adb shell start
+
+%.sign-plat : out/%
+	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
+	@echo push -- to --- phone
+	#adb shell su -c insecure
+	adb remount
+	adb push $<.signed /system/app/$*
+	adb shell chmod 644 /system/app/$*
