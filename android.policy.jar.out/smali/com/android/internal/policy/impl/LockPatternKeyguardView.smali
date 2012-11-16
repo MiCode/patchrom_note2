@@ -248,7 +248,7 @@
 
     #invoke-direct {v6, p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView$3;-><init>(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)V
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->createKeyguardScreenCallback()Lcom/android/internal/policy/impl/KeyguardScreenCallback;
-    move-result-object v0
+    move-result-object v6
 
     iput-object v6, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mKeyguardScreenCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
@@ -2389,211 +2389,6 @@
     .end local v5           #subsystem:Ljava/lang/String;
     :cond_2
     return-object v2
-.end method
-
-.method private getInitialMode()Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-    .locals 8
-
-    .prologue
-    const/4 v6, 0x0
-
-    const/4 v5, 0x1
-
-    .line 1496
-    iget-object v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v7, "with_circle"
-
-    invoke-static {v4, v7, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-ne v4, v5, :cond_1
-
-    move v4, v5
-
-    :goto_0
-    iput-boolean v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowUnlockWithCircle:Z
-
-    .line 1500
-    iget-object v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v7, "lockscreen_wallpaper"
-
-    invoke-static {v4, v7, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-ne v4, v5, :cond_2
-
-    move v0, v6
-
-    .line 1501
-    .local v0, isLiveWallpaper:Z
-    :goto_1
-    iget-object v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v7, 0x1110048
-
-    invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v2
-
-    .line 1502
-    .local v2, isWaterRippleConfig:Z
-    iget-object v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v7, "lockscreen_ripple_effect"
-
-    invoke-static {v4, v7, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-ne v4, v5, :cond_3
-
-    move v1, v5
-
-    .line 1503
-    .local v1, isRippleEffect:Z
-    :goto_2
-    if-nez v0, :cond_4
-
-    if-eqz v2, :cond_4
-
-    if-eqz v1, :cond_4
-
-    :goto_3
-    iput-boolean v5, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mIsWaterRipple:Z
-
-    invoke-static {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Injector;->updateShowLockBeforeUnlock(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)V
-
-    .line 1506
-    iget-object v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
-
-    invoke-virtual {v4}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->getSimState()Lcom/android/internal/telephony/IccCard$State;
-
-    move-result-object v3
-
-    .line 1507
-    .local v3, simState:Lcom/android/internal/telephony/IccCard$State;
-    invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->stuckOnLockScreenBecauseSimMissing()Z
-
-    move-result v4
-
-    if-nez v4, :cond_0
-
-    sget-object v4, Lcom/android/internal/telephony/IccCard$State;->PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
-
-    if-ne v3, v4, :cond_5
-
-    iget-object v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
-
-    invoke-virtual {v4}, Lcom/android/internal/widget/LockPatternUtils;->isPukUnlockScreenEnable()Z
-
-    move-result v4
-
-    if-nez v4, :cond_5
-
-    .line 1510
-    :cond_0
-    sget-object v4, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->LockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-
-    .line 1521
-    :goto_4
-    return-object v4
-
-    .end local v0           #isLiveWallpaper:Z
-    .end local v1           #isRippleEffect:Z
-    .end local v2           #isWaterRippleConfig:Z
-    .end local v3           #simState:Lcom/android/internal/telephony/IccCard$State;
-    :cond_1
-    move v4, v6
-
-    .line 1496
-    goto :goto_0
-
-    :cond_2
-    move v0, v5
-
-    .line 1500
-    goto :goto_1
-
-    .restart local v0       #isLiveWallpaper:Z
-    .restart local v2       #isWaterRippleConfig:Z
-    :cond_3
-    move v1, v6
-
-    .line 1502
-    goto :goto_2
-
-    .restart local v1       #isRippleEffect:Z
-    :cond_4
-    move v5, v6
-
-    .line 1503
-    goto :goto_3
-
-    .line 1512
-    .restart local v3       #simState:Lcom/android/internal/telephony/IccCard$State;
-    :cond_5
-    invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->isSecure()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    iget-boolean v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowLockBeforeUnlock:Z
-
-    if-nez v4, :cond_6
-
-    iget-boolean v4, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowUnlockWithCircle:Z
-
-    if-eqz v4, :cond_7
-
-    .line 1513
-    :cond_6
-    sget-object v4, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->LockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-
-    goto :goto_4
-
-    .line 1516
-    :cond_7
-    invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->isSecure()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_8
-
-    sget-boolean v4, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mSwipeLockShowingBeforeTimeout:Z
-
-    if-eqz v4, :cond_8
-
-    .line 1517
-    sget-object v4, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->LockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-
-    goto :goto_4
-
-    .line 1521
-    :cond_8
-    sget-object v4, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->UnlockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-
-    goto :goto_4
 .end method
 
 .method private getResetProgressDialog()Landroid/app/Dialog;
@@ -6837,4 +6632,74 @@
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowLockBeforeUnlock:Z
 
     return-void
+.end method
+
+.method private getInitialMode()Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
+    .locals 2
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    .line 1123
+    invoke-static {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Injector;->updateShowLockBeforeUnlock(Lcom/android/internal/policy/impl/LockPatternKeyguardView;)V
+
+    .line 1125
+    iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
+
+    invoke-virtual {v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->getSimState()Lcom/android/internal/telephony/IccCard$State;
+
+    move-result-object v0
+
+    .line 1126
+    .local v0, simState:Lcom/android/internal/telephony/IccCard$State;
+    invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->stuckOnLockScreenBecauseSimMissing()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+
+    invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->isPukUnlockScreenEnable()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 1129
+    :cond_0
+    sget-object v1, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->LockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
+
+    .line 1134
+    :goto_0
+    return-object v1
+
+    .line 1131
+    :cond_1
+    invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->isSecure()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    iget-boolean v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowLockBeforeUnlock:Z
+
+    if-eqz v1, :cond_3
+
+    .line 1132
+    :cond_2
+    sget-object v1, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->LockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
+
+    goto :goto_0
+
+    .line 1134
+    :cond_3
+    sget-object v1, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->UnlockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
+
+    goto :goto_0
 .end method
