@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lanunch_page_buddy" android:background="@drawable/tw_list_section_divider_holo_dark" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/lanunch_page_buddy" />
+        <TextView android:id="@id/lanunch_page_buddy_help_1" android:text="@string/lanunch_page_buddy_help_1" style="@style/page_buddy_help" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/help_page_buddy00" android:contentDescription="@null" />
+        <TextView android:id="@id/lanunch_page_buddy_help_2" android:text="@string/lanunch_page_buddy_help_2" style="@style/page_buddy_help" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/lanunch_page_buddy_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="7.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/lanunch_page_buddy_tip_play" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/help_btn_play" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:id="@id/lanunch_page_buddy_help_3" android:text="@string/lanunch_page_buddy_help_3" style="@style/page_buddy_help" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:orientation="vertical" android:id="@id/terminate_page_buddy" android:background="@drawable/tw_list_section_divider_holo_dark" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/terminate_page_buddy" />
+        <TextView android:text="@string/terminate_page_buddy_help" style="@style/page_buddy_help" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:orientation="vertical" android:id="@id/recommend_applications" android:background="@drawable/tw_list_section_divider_holo_dark" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/recommend_applications" />
+        <TextView android:id="@id/recommend_applications_help_1" android:text="@string/recommend_applications_help_1" style="@style/page_buddy_help" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/recommend_applications_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="7.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/recommend_applications_tip_play" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/help_btn_play" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:id="@id/recommend_applications_help_2" android:text="@string/recommend_applications_help_2" style="@style/page_buddy_help" />
+    </LinearLayout>
+</ScrollView>
