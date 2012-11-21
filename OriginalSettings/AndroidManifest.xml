@@ -1328,7 +1328,7 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.PenHovering" />
-        </activity>
+        </activity-->
         <activity android:label="@string/pen_help_title" android:name=".PenHelpActivity" android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1350,7 +1350,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/phone_vibration_title" android:name="PhoneVibration" android:screenOrientation="portrait">
+        <!--activity android:label="@string/phone_vibration_title" android:name="PhoneVibration" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

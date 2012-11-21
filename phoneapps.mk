@@ -1,4 +1,4 @@
-local-phone-apps = $(private-phone-apps) $(private-lockscreen-apps) $(private-services) $(private-services)
+local-phone-apps = $(private-phone-apps) $(private-lockscreen-apps) $(private-services)
 private-services := AllshareService \
 					FlashBarService \
 					SuggestionService \
