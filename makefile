@@ -68,8 +68,10 @@ out/framework2.jar : out/framework.jar
 	adb shell chmod 644 /system/framework/$*.jar
 	adb shell stop
 	adb shell start
+	adb reboot
 
-%.sign-plat : out/%
+#%.sign-plat : out/%
+%.sign-plat : /home/gexudong/libra.jbmiui/out/target/product/maguro/system/app/%
 	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
 	@echo push -- to --- phone
 	#adb shell su -c insecure

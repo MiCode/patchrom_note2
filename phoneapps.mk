@@ -5,7 +5,10 @@ private-services := AllshareService \
 					QuickSnote \
 					SnoteT0 \
 					SnoteT0Provider \
-					SecPhone
+					ResourceManager \
+					SPenGesturePad \
+					IdeaVisualizer \
+					QuickSnote
 
 private-phone-apps := ApplicationsProvider \
 					  BackupRestoreConfirmation \
