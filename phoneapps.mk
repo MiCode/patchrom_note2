@@ -8,7 +8,8 @@ private-services := AllshareService \
 					ResourceManager \
 					SPenGesturePad \
 					IdeaVisualizer \
-					QuickSnote
+					QuickSnote \
+					SamsungIME
 
 private-phone-apps := ApplicationsProvider \
 					  BackupRestoreConfirmation \

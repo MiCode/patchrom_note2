@@ -3440,6 +3440,9 @@
 
     .line 987
     :cond_0
+    invoke-virtual {p0, p1}, Lcom/android/internal/widget/LockPatternUtils;->passwordToHashOriginal(Ljava/lang/String;)[B
+    move-result-object v3
+    goto :goto_0
     const/4 v0, 0x0
 
     .line 988
