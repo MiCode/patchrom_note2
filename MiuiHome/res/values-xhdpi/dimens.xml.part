@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="config_icon_width">62.5dip</dimen>
+    <dimen name="config_icon_height">62.5dip</dimen>
+    <dimen name="workspace_padding_side">12.0dip</dimen>
+    <dimen name="workspace_margin_bottom">82.0dip</dimen>
+    <dimen name="hotseats_padding_side">8.5dip</dimen>
+    <dimen name="user_folder_cell_height">95.0dip</dimen>
+    <dimen name="icon_title_padding_bottom">0.0dip</dimen>
+    <item type="dimen" name="workspace_icon_text_shadow_radius">2.0</item>
+    <item type="dimen" name="workspace_icon_text_shadow_dx">0.0</item>
+    <item type="dimen" name="workspace_icon_text_shadow_dy">3.8</item>
+    <dimen name="upside_apps_btn_text_size">13.0sp</dimen>
+    <dimen name="workspace_cell_padding_bottom">28.0dip</dimen>
+    <dimen name="workspace_icon_text_size">13.0sp</dimen>
+    <dimen name="user_folder_cell_width">90.0dip</dimen>
+</resources>
