@@ -2784,6 +2784,11 @@
     invoke-virtual {p0, v12}, Lcom/android/OriginalSettings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v12
+#start
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    move-result-object v13
+    invoke-virtual {v13, v12}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+#end
 
     check-cast v12, Landroid/preference/SwitchPreferenceScreen;
 
