@@ -146,6 +146,7 @@
     sget-object v3, Lcom/android/internal/widget/LockPatternUtils;->sLockPatternFilename:Ljava/lang/String;
 
     if-nez v3, :cond_1
+    if-eqz v3, :cond_1
 
     .line 213
     new-instance v3, Ljava/lang/StringBuilder;
