@@ -19,7 +19,7 @@ local-modified-jars :=
 # All apks from MIUI
 local-miui-removed-apps := MediaProvider Stk
 
-local-miui-modified-apps := MiuiHome Settings Phone Mms ThemeManager
+local-miui-modified-apps := MiuiHome Settings Phone Mms ThemeManager MiuiSystemUI
 
 include phoneapps.mk
 
@@ -51,30 +51,21 @@ local-pre-zip-misc:
 	more $(pre_install_data_packages) | wc -l > $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
 	more $(pre_install_data_packages) >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
 
-
-local-rom-zip := MIUI_note2.zip
-local-put-to-phone:
-	adb shell rm /sdcard/$(local-rom-zip)
-	adb push out/$(local-rom-zip) /sdcard/
-	adb reboot recovery
-
 out/framework2.jar : out/framework.jar
 
 %.phone : out/%.jar
 	@echo push -- to --- phone
-	#adb shell su -c insecure
 	adb remount
 	adb push $< /system/framework
 	adb shell chmod 644 /system/framework/$*.jar
-	adb shell stop
-	adb shell start
-	adb reboot
+	#adb shell stop
+	#adb shell start
+	#adb reboot
 
-#%.sign-plat : out/%
-%.sign-plat : /home/gexudong/libra.jbmiui/out/target/product/maguro/system/app/%
+%.sign-plat : out/%
+#%.sign-plat : /home/gexudong/libra.jbmiui/out/target/product/maguro/system/app/%
 	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
 	@echo push -- to --- phone
-	#adb shell su -c insecure
 	adb remount
 	adb push $<.signed /system/app/$*
 	adb shell chmod 644 /system/app/$*
