@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Κάμερα</string>
     <string name="camcorder_label">Βιντεοκάμερα</string>
-    <string name="wait">Περιμένετε...</string>
+    <string name="wait">Περιμένετε…</string>
     <string name="warning_msg">Προειδοποίηση</string>
     <string name="insert_mmc_msg">Εισάγετε κάρτα μνήμης για να χρησιμοποιήσετε την Κάμερα</string>
     <string name="not_enough_space">Ανεπαρκής μνήμη</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Δεν υπάρχει αρκετή μνήμη. Η προεπιλεγμένη αποθήκευση άλλαξε σε μνήμη τηλεφώνου</string>
     <string name="change_to_device_memory">Ο χώρος της κάρτας SD δεν επαρκεί. Ο προεπιλεγμένος χώρος αποθήκευσης άλλαξε σε συσκευή αποθήκευσης</string>
     <string name="video_reach_size_limit">Συμπληρώθηκε το μέγιστο όριο μεγέθους εγγραφής</string>
-    <string name="processing_msg">Επεξεργασία...</string>
+    <string name="processing_msg">Επεξεργασία…</string>
     <string name="panorama_processing_msg">Περιμένετε μέχρι να δημιουργηθεί το πανόραμα</string>
     <string name="battery_overheat">Έξοδος από κάμερα. Η θερμοκρασία της μπαταρίας είναι πολύ υψηλή</string>
-    <string name="savingImage">Aποθήκευση...</string>
+    <string name="savingImage">Aποθήκευση…</string>
     <string name="open_hw_failed_msg">Σφάλμα κάμερας</string>
     <string name="capture_failed_msg">Αποτυχία καταγραφής</string>
     <string name="recording_failed_msg">Αποτυχία εγγραφής</string>
@@ -105,7 +105,7 @@
     <string name="RM_EMAIL">Όριο για email</string>
     <string name="RM_SLOW">Αργή ταχύτητα</string>
     <string name="RM_FAST">Γρήγορη ταχύτητα</string>
-    <string name="CS_PROGRESS_TEXT">Δημιουργία εικόνας. Περιμένετε...</string>
+    <string name="CS_PROGRESS_TEXT">Δημιουργία εικόνας. Περιμένετε…</string>
     <string name="SCN_NONE">Κανένα</string>
     <string name="SCN_PORTRAIT">Πορτραίτο</string>
     <string name="SCN_LANDSCAPE">Οριζόντια</string>
@@ -114,7 +114,7 @@
     <string name="SCN_BEACH_SNOW">Παραλία/Χιόνι</string>
     <string name="SCN_SUNSET">Ηλιοβασίλεμα</string>
     <string name="SCN_DAWN_DUSK">Αυγή</string>
-    <string name="SCN_FALL_COLOR">Φθινοπωρινό χρώμα</string>
+    <string name="SCN_FALL_COLOR">Χρώμα του φθινοπώρου</string>
     <string name="SCN_NIGHT_SHOT">Νύχτα</string>
     <string name="SCN_FIREWORK">Πυροτέχνημα</string>
     <string name="SCN_TEXT">Κείμενο</string>
@@ -159,7 +159,7 @@
     <string name="Title_Guideline">Οδηγίες</string>
     <string name="Title_VideoQuality">Ποιότητα βίντεο</string>
     <string name="Title_AudioRecording">Εγγρ. ήχου</string>
-    <string name="Title_Storage">Χώρος αποθήκευσης</string>
+    <string name="Title_Storage">Αποθήκευση</string>
     <string name="Title_Reset">Επαναφορά</string>
     <string name="Title_Mode">Λειτουργία</string>
     <string name="Title_Back">Πίσω</string>
@@ -181,7 +181,7 @@
     <string name="message_DefaultLayout">Θα γίνει επαναφορά της διάταξης συντομεύσεων</string>
     <string name="message_EULA_GPS">Η ενεργοποίηση της ετικέτας GPS θα επισυνάψει, θα ενσωματώσει και θα αποθηκεύσει τα δεδομένα γεωγραφικής θέσης σε κάθε φωτογραφία. Να είστε προσεκτικοί, όταν στέλνετε, κάνετε κοινή χρήση, διανείμετε, μεταδίδετε ή αντιγράφετε αυτές τις φωτογραφίες, γιατί περιέχουν την τοποθεσία όπου έγινε λήψη της φωτογραφίας</string>
     <string name="message_Auto_ShareShot">"Η δυνατότητα αυτόματης κοινής χρήσης λήψης σάς επιτρέπει να συνδεθείτε εύκολα στις συσκευές με τις οποίες θέλετε να μοιραστείτε εικόνες.
-Ενεργοποιήστε την αυτόματη κοινή χρήση λήψης και, στη συνέχεια, μετακινήστε τις συσκευές τη μία κοντά στην άλλη (συνήθως πλάτη με πλάτη) για σύνδεση"</string>
+Ενεργοποιήστε την αυτόματη κοινή χρήση λήψης και, στη συνέχεια, μετακινήστε τις συσκευές τη μία κοντά στην άλλη (συνήθως “πλάτη με πλάτη”) για σύνδεση"</string>
     <string name="GPS_msg">Απενεργοποιημένο GPS</string>
     <string name="message_enable_GPS">Για να χρησιμοποιήσετε την ετικέτα GPS, ενεργοποιήστε το GPS στις Ρυθμίσεις</string>
     <string name="cancel">Ακύρωση</string>
@@ -191,15 +191,15 @@
     <string name="Title_ChangeMemoryInUseDailog">Αλλαγή προεπιλεγμένης αποθήκευσης σε κάρτα μνήμης;</string>
     <string name="Title_InsertMemoryCardDailog">Εισάγετε κάρτα μνήμης για να χρησιμοποιήσετε την Κάμερα</string>
     <string name="OnScreen_HelpTextTouchAF">Πατήστε την οθ. για μετατ. στην επιλ. περιοχή</string>
-    <string name="media_scanner_running">Εκτελείται σάρωση πολυμέσων...</string>
+    <string name="media_scanner_running">Εκτελείται σάρωση πολυμέσων…</string>
     <string name="close_camera_when_mmc_inserted">Τοποθετήθηκε κάρτα SD. Το %s έχει κλείσει για να γίνει σάρωση των αρχείων πολυμέσων στην κάρτα SD</string>
     <string name="close_camera_when_media_mounted">Η κάμερα έκλεισε για να γίνει σάρωση των αρχείων πολυμέσων</string>
     <string name="close_camera_for_unmounted_memory">Πριν τη χρήση της κάμερας απενεργοποιήστε την αποθήκευση USB</string>
     <string name="message_size_limited">Συμπληρώθηκε το όριο μεγέθους μηνύματος</string>
     <string name="crop_save_text">Αποθήκ.</string>
-    <string name="crop_discard_text">Απόρριψη</string>
+    <string name="crop_discard_text">Ακύρωση</string>
     <string name="crop_gallery_text">Συλλογή</string>
-    <string name="wallpaper">Ρύθμιση φόντου. Περιμένετε...</string>
+    <string name="wallpaper">Ρύθμιση φόντου. Περιμένετε…</string>
     <string name="crop_label">Περικοπή φωτογραφίας</string>
     <string name="low_database_storage_view_text">Ο χώρος αποθήκευσης βάσης δεδομένων είναι σχεδόν πλήρης</string>
     <string name="camera_security_enter">Η πολιτική ασφαλείας περιορίζει τη χρήση της κάμερας</string>
@@ -221,7 +221,7 @@
     <string name="wifi_dialog_text">Απαιτείται σύνδεση Wi-Fi</string>
     <string name="wifi_dialog_text_chn">WLAN connection required</string>
     <string name="wifi_direct_dialog_title">Κοινή χρήση λήψης</string>
-    <string name="wifi_direct_dialog_text">Η Κοινή χρήση λήψης σάς δίνει τη δυνατότητα να μοιραστείτε φωτογραφίες με άλλους χρήστες μέσω του Wi-Fi Direct. Απαιτείται σύνδεση Wi-Fi Direct</string>
+    <string name="wifi_direct_dialog_text">Η “Κοινή χρήση λήψης” σάς δίνει τη δυνατότητα να μοιραστείτε φωτογραφίες με άλλους χρήστες μέσω του Wi-Fi Direct. Απαιτείται σύνδεση Wi-Fi Direct</string>
     <string name="wifi_direct_dialog_text_chn">WLAN Direct connection required</string>
     <string name="wifi_dialog_yes">OK</string>
     <string name="wifi_dialog_no">Ακύρωση</string>
@@ -252,27 +252,31 @@
     <string name="editable_shortcut_helptext_title">Συμβουλές</string>
     <string name="editable_shortcut_helptext_message">Πατήστε παρατεταμένα συντομεύσεις για να τις επεξεργαστείτε</string>
     <string name="editable_shortcut_helptext">Πατήστε παρατεταμένα το εικονίδιο, κατόπιν σύρετέ το για να αλλάξετε τη θέση των συντομεύσεων</string>
+    <string name="singleshotburst_capture_helptext">Πατήστε παρατεταμένα το κουμπί της κάμερας για τη λήψη εικόνας με τη λειτουργία συνεχούς λήψης</string>
+    <string name="singleshotburst_storage_helptext">Οι εικόνες από τη λειτουργία συνεχούς λήψης αποθηκεύονται με υψηλή ποιότητα</string>
     <string name="sbeam_helptext">Κάντε λήψη και κοινή χρήση των φωτογραφιών με άλλες συσκευές. Τοποθετήσετε τις συσκευές σε κοντινή απόσταση, για να προσθέσετε συσκευές με τις οποίες θέλετε να κάνετε κοινή χρήση μέσω S Beam</string>
     <string name="storage_setting_dialog_title">Θέση αποθήκευσης</string>
     <string name="storage_setting_dialog_message">Τοποθετήθηκε κάρτα SD. Να γίνει αλλαγή της θέσης αποθήκευσης σε κάρτα SD;</string>
+    <string name="storage_setting_dialog_burstshot_message">Οι μεμονωμένες λήψεις θα αποθηκευτούν στην κάρτα SD. Οι εικόνες από τη λειτουργία συνεχούς λήψης θα αποθηκευτούν στο χώρο αποθήκευσης της συσκευής</string>
     <string name="do_not_ask_again">Να μην εμφανιστεί ξανά</string>
     <string name="shutter">Διάφραγμα</string>
     <string name="record">Εγγραφή</string>
     <string name="bestpic">Καλύτερη φωτογραφία</string>
     <string name="bestpic_on">On</string>
     <string name="bestpic_off">Off</string>
-    <string name="bestgroup">Καλύτερη ομαδική πόζα</string>
-    <string name="bestgroup_title">Επιλέξτε τα πρόσωπα για αποθ.</string>
+    <string name="bestgroup">Καλύτερα Πρόσωπα</string>
+    <string name="bestgroup_title">Επιλ. τα Καλ. Πρόσωπα για αποθ.</string>
     <string name="battery_low">Κλείστε την κάμερα. Η θερμοκρ. μπαταρίας είναι πολύ χαμηλή</string>
     <string name="buddy_photo_share_helptext">Τραβήξτε και μοιραστείτε φωτογραφίες με φίλους μέσω της λειτουργίας εντοπισμού προσώπου</string>
     <string name="face_zoom_helptext">Πατήστε δύο φορές σε ένα πρόσωπο για μεγέθυνση ή σμίκρυνση</string>
     <string name="burst_shot_guidetext">Η εικόνες από τη λειτουργία συνεχούς λήψης θα αποθ. στο χώρο αποθήκευσης της συσκευής</string>
+    <string name="best_photo_guidetext">Η καλύτερες φωτογραφίες θα αποθηκευτούν στο χώρο αποθήκευσης της συσκευής</string>
     <string name="snap_shot_limitation_dialog">Δεν είναι δυνατή η χρήση της δυνατότητας εγγραφής στιγμιότυπου, όταν είναι ενεργοποιημένη η λειτουργία anti-shake</string>
     <string name="on_device_help_focus">Πατήστε για τη ρύθμιση της εστίασης της κάμερας</string>
     <string name="on_device_help_camcorder">Μετάβαση στη λειτουργία Βιντεοκάμερας</string>
     <string name="on_device_help_self">Μετάβαση στη λειτουργία Αυτοφωτογράφησης</string>
     <string name="on_device_help_editable">Πατήστε παρατεταμένα τη συντόμευση που θέλετε να μετακινήσετε. Κατόπιν σύρετέ την στο σημείο που θέλετε</string>
-    <string name="on_device_help_voicecommand">Μπορείτε να τραβήξετε φωτογραφίες με φωνητικές εντολές όπως, Λήψη, Φωτογράφιση και Χαμογελάστε</string>
+    <string name="on_device_help_voicecommand">Μπορείτε να τραβήξετε φωτογραφίες με φωνητικές εντολές όπως, “Λήψη”, “Φωτογράφιση” και “Χαμογελάστε”</string>
     <string name="Title_VideoSpeed">Ταχύτητα</string>
     <string name="SPEED_OFF">Κανονική</string>
     <string name="SPEED_2X_FASTER">2x ταχύτερα</string>
@@ -295,6 +299,6 @@
     <string name="contextual_filename">Αυτόματη ονομασία αρχείου βάσει συσχετισμών</string>
     <string name="enable_gps_dialog">Η ετικέτα GPS πρέπει να ενεργοποιηθεί. Ενεργοποίηση ετικέτας GPS;</string>
     <string name="gallery_disable">Η Συλλογή είναι απενεργοποιημένη</string>
-    <string name="HDR_Normal">Κανονική</string>
+    <string name="HDR_Normal">Κανονικό</string>
     <string name="HDR_Strong">Ισχυρό</string>
 </resources>

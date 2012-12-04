@@ -83,13 +83,13 @@
 
     move-result-object v1
 
-    const v4, 0x7f020144
+    const v4, 0x7f020146
 
-    const v5, 0x7f02023a
+    const v5, 0x7f02023c
 
     const/4 v6, 0x0
 
-    const v7, 0x7f020244
+    const v7, 0x7f020248
 
     move v3, v2
 

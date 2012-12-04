@@ -3,7 +3,7 @@
 .source "Camera.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
@@ -20,15 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
+.field final synthetic val$et:Landroid/widget/EditText;
+
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;Landroid/widget/EditText;)V
     .locals 0
+    .parameter
     .parameter
 
     .prologue
-    .line 6364
+    .line 6441
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$25;->val$et:Landroid/widget/EditText;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,70 +42,47 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
-    .locals 3
-    .parameter "dialog"
-    .parameter "keyCode"
-    .parameter "event"
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+    .parameter "image"
 
     .prologue
-    const/4 v0, 0x1
-
-    .line 6366
-    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
-
-    move-result v1
-
-    if-ne v1, v0, :cond_1
-
-    const/4 v1, 0x4
-
-    if-eq p2, v1, :cond_0
-
-    const/16 v1, 0x52
-
-    if-eq p2, v1, :cond_0
-
-    const/16 v1, 0x17
-
-    if-ne p2, v1, :cond_1
-
-    .line 6368
-    :cond_0
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    const-string v2, "/sdcard/Android/data/com.sec.android.app.camera/user_pic.b"
-
-    iput-object v2, v1, Lcom/sec/android/app/camera/Camera;->mPhotoPath:Ljava/lang/String;
-
-    .line 6369
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    const/4 v2, 0x0
-
-    iput-boolean v2, v1, Lcom/sec/android/app/camera/Camera;->mNameChanged:Z
-
-    .line 6370
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    const/4 v2, 0x6
-
-    invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->removeDialog(I)V
-
-    .line 6373
-    :goto_0
-    return v0
-
-    :cond_1
+    .line 6446
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getWindow()Landroid/view/Window;
+    const/4 v1, 0x6
 
-    move-result-object v0
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->dismissDialog(I)V
 
-    invoke-virtual {v0, p3}, Landroid/view/Window;->superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    .line 6447
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    move-result v0
+    const/4 v1, 0x7
 
-    goto :goto_0
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->showDialog(I)V
+
+    .line 6448
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Lcom/sec/android/app/camera/Camera;->mNameChanged:Z
+
+    .line 6449
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$25;->val$et:Landroid/widget/EditText;
+
+    invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/sec/android/app/camera/Camera;->mName:Ljava/lang/String;
+
+    .line 6450
+    return-void
 .end method

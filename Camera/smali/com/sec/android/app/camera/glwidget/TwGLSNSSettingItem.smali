@@ -85,7 +85,7 @@
 
     .prologue
     .line 46
-    const v0, 0x7f0601d3
+    const v0, 0x7f060203
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -96,7 +96,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSNSSettingItem;->LIST_TYPE_BUTTON_WIDTH:I
 
     .line 47
-    const v0, 0x7f0600ea
+    const v0, 0x7f0600fa
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -118,7 +118,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSNSSettingItem;->LIST_TYPE_TEXT_POS_X:I
 
     .line 49
-    const v0, 0x7f0600ec
+    const v0, 0x7f0600fc
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -140,7 +140,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSNSSettingItem;->LIST_TYPE_TEXT_WIDTH:I
 
     .line 51
-    const v0, 0x7f0600ee
+    const v0, 0x7f0600fe
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -173,7 +173,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSNSSettingItem;->CHECKBOX_POS_Y:I
 
     .line 54
-    const v0, 0x7f060107
+    const v0, 0x7f060117
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -344,7 +344,7 @@
     .parameter "glContext"
 
     .prologue
-    const v4, 0x7f02023d
+    const v4, 0x7f020241
 
     const/4 v7, 0x0
 
@@ -650,7 +650,7 @@
 
     int-to-float v3, v3
 
-    const v6, 0x7f020057
+    const v6, 0x7f020058
 
     invoke-direct {v0, v1, v2, v3, v6}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -684,7 +684,7 @@
 
     int-to-float v11, v0
 
-    const v12, 0x7f020207
+    const v12, 0x7f020209
 
     move v10, v4
 

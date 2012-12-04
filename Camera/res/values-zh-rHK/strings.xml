@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">相機</string>
     <string name="camcorder_label">攝錄機</string>
-    <string name="wait">請稍候...</string>
+    <string name="wait">請稍候…</string>
     <string name="warning_msg">警告</string>
     <string name="insert_mmc_msg">插入記憶卡以使用相機</string>
     <string name="not_enough_space">記憶體不足</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">記憶體不足。預設儲存位置已更改為手機記憶體</string>
     <string name="change_to_device_memory">SD 卡空間不足。已將預設儲存裝置更改為裝置儲存</string>
     <string name="video_reach_size_limit">已達錄影的最大尺寸</string>
-    <string name="processing_msg">正在處理...</string>
+    <string name="processing_msg">正在處理…</string>
     <string name="panorama_processing_msg">請稍候，正在建立全景</string>
     <string name="battery_overheat">退出相機。電池溫度太高</string>
-    <string name="savingImage">正在儲存...</string>
+    <string name="savingImage">正在儲存…</string>
     <string name="open_hw_failed_msg">相機故障</string>
     <string name="capture_failed_msg">拍攝失敗</string>
     <string name="recording_failed_msg">錄製失敗</string>
@@ -104,7 +104,7 @@
     <string name="RM_EMAIL">電子郵件限制</string>
     <string name="RM_SLOW">慢動作</string>
     <string name="RM_FAST">快動作</string>
-    <string name="CS_PROGRESS_TEXT">建立圖像。請稍候...</string>
+    <string name="CS_PROGRESS_TEXT">建立圖像。請稍候…</string>
     <string name="SCN_NONE">無</string>
     <string name="SCN_PORTRAIT">人像</string>
     <string name="SCN_LANDSCAPE">風景</string>
@@ -179,8 +179,8 @@
     <string name="help_text_panorama_device">輕觸相機鍵並朝一個方向慢慢移動裝置</string>
     <string name="message_DefaultLayout">捷徑版面將被重設</string>
     <string name="message_EULA_GPS">啟用 GPS 標籤將在每張相片附加、嵌入並儲存地理位置數據。當您發送、分享、發佈、傳輸或複製這些照片時請謹慎使用，因其中包含相片拍攝地點的位置資訊</string>
-    <string name="message_Auto_ShareShot">"自動攝影分享可讓您輕鬆連接想要與之分享照片的裝置。
-啟用攝影分享，然後將兩台裝置靠近彼此（通常為背對背）以進行連接"</string>
+    <string name="message_Auto_ShareShot">"自動分享拍攝可讓您輕鬆連接想要與之分享照片的裝置。
+啟用自動分享拍攝，然後將兩台裝置靠近彼此（通常為背對背）以進行連接"</string>
     <string name="GPS_msg">GPS 關</string>
     <string name="message_enable_GPS">在設定開啟 GPS 以使用 GPS 標籤</string>
     <string name="cancel">取消</string>
@@ -190,13 +190,13 @@
     <string name="Title_ChangeMemoryInUseDailog">更改預設儲存位置到記憶卡嗎?</string>
     <string name="Title_InsertMemoryCardDailog">插入記憶卡以使用相機</string>
     <string name="OnScreen_HelpTextTouchAF">輕觸屏幕可將對焦移動到輕觸的區域</string>
-    <string name="media_scanner_running">媒體掃描器執行中...</string>
+    <string name="media_scanner_running">媒體掃描器執行中…</string>
     <string name="close_camera_when_mmc_inserted">SD 卡已插入。%s 被關閉以便掃描 SD 卡上的媒體檔案</string>
     <string name="close_camera_when_media_mounted">相機已關閉以掃描媒體檔案</string>
     <string name="close_camera_for_unmounted_memory">請在使用相機前關閉 USB 儲存裝置</string>
     <string name="message_size_limited">訊息大小已達上限</string>
     <string name="crop_save_text">儲存</string>
-    <string name="crop_discard_text">放棄</string>
+    <string name="crop_discard_text">取消</string>
     <string name="crop_gallery_text">媒體瀏覽器</string>
     <string name="wallpaper">正在設定螢幕牆紙。請稍候…</string>
     <string name="crop_label">裁剪圖片</string>
@@ -251,21 +251,25 @@
     <string name="editable_shortcut_helptext_title">提示</string>
     <string name="editable_shortcut_helptext_message">輕觸並按住捷徑以進行編輯</string>
     <string name="editable_shortcut_helptext">輕觸並按住圖示，然後拖曳以編輯捷徑位置</string>
+    <string name="singleshotburst_capture_helptext">輕觸並按住相機鍵以拍攝連續快拍</string>
+    <string name="singleshotburst_storage_helptext">連續快拍圖像以設定的高畫質儲存</string>
     <string name="sbeam_helptext">拍攝並與其他裝置分享相片。將裝置互相靠近以加入想要透過 S Beam 分享的裝置</string>
     <string name="storage_setting_dialog_title">儲存裝置位置</string>
     <string name="storage_setting_dialog_message">已插入 SD 卡。將儲存裝置位置變更為 SD 卡嗎？</string>
+    <string name="storage_setting_dialog_burstshot_message">單張拍攝將儲存至 SD 卡。連續快拍將儲存至裝置記憶體</string>
     <string name="do_not_ask_again">不再顯示</string>
     <string name="shutter">快門</string>
     <string name="record">錄音</string>
     <string name="bestpic">最佳相片</string>
     <string name="bestpic_on">開</string>
     <string name="bestpic_off">關</string>
-    <string name="bestgroup">最佳團體姿勢</string>
-    <string name="bestgroup_title">選擇最佳臉部以儲存</string>
+    <string name="bestgroup">最佳臉部表情</string>
+    <string name="bestgroup_title">選擇最佳臉部表情以儲存</string>
     <string name="battery_low">關閉相機。電池溫度過低</string>
     <string name="buddy_photo_share_helptext">透過臉部偵測拍攝並與好友分享相片</string>
     <string name="face_zoom_helptext">輕觸兩下臉部以放大或縮小</string>
     <string name="burst_shot_guidetext">連續快拍將儲存至裝置記憶體</string>
+    <string name="best_photo_guidetext">最佳相片將儲存至裝置儲存空間</string>
     <string name="snap_shot_limitation_dialog">防震啟用時無法使用錄製快照功能</string>
     <string name="on_device_help_focus">輕觸以設定相機對焦</string>
     <string name="on_device_help_camcorder">切換至攝錄機模式</string>
@@ -294,6 +298,6 @@
     <string name="contextual_filename">關聯式檔名</string>
     <string name="enable_gps_dialog">需啟用 GPS 標籤。 啟用 GPS 標籤嗎？</string>
     <string name="gallery_disable">媒體瀏覽器已停用</string>
-    <string name="HDR_Normal">正常</string>
+    <string name="HDR_Normal">標準</string>
     <string name="HDR_Strong">強</string>
 </resources>

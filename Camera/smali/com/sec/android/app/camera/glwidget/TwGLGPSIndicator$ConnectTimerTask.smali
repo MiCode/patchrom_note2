@@ -57,6 +57,8 @@
     .locals 4
 
     .prologue
+    const/4 v2, 0x4
+
     const/4 v3, 0x0
 
     .line 29
@@ -64,7 +66,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    rem-int/lit8 v1, v1, 0x3
+    rem-int/lit8 v1, v1, 0x2
 
     iput v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator$ConnectTimerTask;->mCnt:I
 
@@ -73,9 +75,7 @@
 
     .local v0, i:I
     :goto_0
-    const/4 v1, 0x5
-
-    if-ge v0, v1, :cond_0
+    if-ge v0, v2, :cond_0
 
     .line 32
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator$ConnectTimerTask;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
@@ -83,8 +83,6 @@
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;->getView(I)Lcom/sec/android/glview/TwGLView;
 
     move-result-object v1
-
-    const/4 v2, 0x4
 
     invoke-virtual {v1, v2, v3}, Lcom/sec/android/glview/TwGLView;->setVisibility(IZ)V
 

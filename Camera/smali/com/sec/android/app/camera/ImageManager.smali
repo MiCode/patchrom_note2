@@ -450,7 +450,7 @@
 .end method
 
 .method public static addImage(Landroid/content/ContentResolver;Ljava/lang/String;JLandroid/location/Location;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;[B[II)Landroid/net/Uri;
-    .locals 1
+    .locals 5
     .parameter "cr"
     .parameter "title"
     .parameter "dateTaken"
@@ -466,11 +466,50 @@
     .line 235
     invoke-static/range {p0 .. p9}, Lcom/sec/android/app/camera/ImageManager;->addImage(Landroid/content/ContentResolver;Ljava/lang/String;JLandroid/location/Location;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;[B[I)Landroid/net/Uri;
 
-    move-result-object v0
+    move-result-object v1
+
+    .line 238
+    .local v1, result:Landroid/net/Uri;
+    if-eqz p4, :cond_0
+
+    .line 240
+    const-string v3, "ImageManager"
+
+    const-string v4, "Insert contextual tag"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 242
+    new-instance v2, Landroid/content/ContentValues;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v2, v3}, Landroid/content/ContentValues;-><init>(I)V
+
+    .line 243
+    .local v2, values:Landroid/content/ContentValues;
+    const-string v0, "weather_ID"
+
+    .line 245
+    .local v0, WEATHER_ID:Ljava/lang/String;
+    invoke-static {p10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 246
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-virtual {p0, v1, v2, v3, v4}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
     .line 249
-    .local v0, result:Landroid/net/Uri;
-    return-object v0
+    .end local v0           #WEATHER_ID:Ljava/lang/String;
+    .end local v2           #values:Landroid/content/ContentValues;
+    :cond_0
+    return-object v1
 .end method
 
 .method private static checkFsWritable()Z

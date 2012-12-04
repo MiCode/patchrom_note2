@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 510
+    .line 522
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$MainHandler$1;->this$1:Lcom/sec/android/app/camera/Camera$MainHandler;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -38,13 +38,13 @@
     .locals 2
 
     .prologue
-    .line 514
+    .line 526
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$MainHandler$1;->this$1:Lcom/sec/android/app/camera/Camera$MainHandler;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mIsDestroying:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$500(Lcom/sec/android/app/camera/Camera;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
 
@@ -63,7 +63,7 @@
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v0
 
@@ -88,19 +88,19 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 515
+    .line 527
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$MainHandler$1;->this$1:Lcom/sec/android/app/camera/Camera$MainHandler;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;->updateThumbnailButton()V
 
-    .line 516
+    .line 528
     :cond_0
     return-void
 .end method

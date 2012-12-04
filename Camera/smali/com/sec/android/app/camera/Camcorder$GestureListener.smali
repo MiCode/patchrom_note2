@@ -32,17 +32,17 @@
     .parameter
 
     .prologue
-    .line 259
+    .line 274
     iput-object p1, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 260
+    .line 275
     const/16 v0, 0xc8
 
     iput v0, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->DISTANCE:I
 
-    .line 261
+    .line 276
     const/16 v0, 0xfa
 
     iput v0, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->VELOCITY:I
@@ -56,7 +56,7 @@
     .parameter "x1"
 
     .prologue
-    .line 259
+    .line 274
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camcorder$GestureListener;-><init>(Lcom/sec/android/app/camera/Camcorder;)V
 
     return-void
@@ -69,7 +69,7 @@
     .parameter "event"
 
     .prologue
-    .line 264
+    .line 279
     const/4 v0, 0x0
 
     return v0
@@ -80,7 +80,7 @@
     .parameter "e"
 
     .prologue
-    .line 268
+    .line 283
     const/4 v0, 0x0
 
     return v0
@@ -91,7 +91,7 @@
     .parameter "e"
 
     .prologue
-    .line 277
+    .line 292
     const/4 v0, 0x0
 
     return v0
@@ -105,14 +105,14 @@
     .parameter "velocityY"
 
     .prologue
-    .line 281
+    .line 296
     const-string v0, "Camcorder"
 
     const-string v1, "onFling"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 282
+    .line 297
     iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getBaseContext()Landroid/content/Context;
@@ -133,7 +133,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->DISTANCE:I
 
-    .line 283
+    .line 298
     iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getBaseContext()Landroid/content/Context;
@@ -154,7 +154,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/Camcorder$GestureListener;->VELOCITY:I
 
-    .line 286
+    .line 301
     const/4 v0, 0x0
 
     return v0
@@ -165,7 +165,7 @@
     .parameter "e"
 
     .prologue
-    .line 304
+    .line 319
     return-void
 .end method
 
@@ -177,7 +177,7 @@
     .parameter "distanceY"
 
     .prologue
-    .line 307
+    .line 322
     const/4 v0, 0x0
 
     return v0
@@ -188,7 +188,7 @@
     .parameter "e"
 
     .prologue
-    .line 311
+    .line 326
     return-void
 .end method
 
@@ -197,7 +197,7 @@
     .parameter "e"
 
     .prologue
-    .line 272
+    .line 287
     const/4 v0, 0x0
 
     return v0
@@ -208,7 +208,7 @@
     .parameter "e"
 
     .prologue
-    .line 314
+    .line 329
     const/4 v0, 0x0
 
     return v0

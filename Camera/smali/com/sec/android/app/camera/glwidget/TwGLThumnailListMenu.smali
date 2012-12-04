@@ -43,7 +43,7 @@
 
     .prologue
     .line 43
-    const v0, 0x7f060147
+    const v0, 0x7f060157
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -54,7 +54,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumnailListMenu;->MENU_POS_X:I
 
     .line 44
-    const v0, 0x7f060148
+    const v0, 0x7f060158
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -76,7 +76,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumnailListMenu;->MENU_WIDTH:I
 
     .line 46
-    const v0, 0x7f060152
+    const v0, 0x7f060162
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -191,7 +191,7 @@
     .line 62
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumnailListMenu;->mList:Lcom/sec/android/glview/TwGLList;
 
-    const v1, 0x7f020208
+    const v1, 0x7f02020a
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLList;->setScrollBarResource(I)V
 
@@ -226,7 +226,7 @@
     .line 68
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumnailListMenu;->mMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const v1, 0x7f020206
+    const v1, 0x7f020208
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setNinePatchBackground(I)Z
 

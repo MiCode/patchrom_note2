@@ -3,12 +3,12 @@
 .source "Camera.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->switchToCamcorder(Z)V
+    value = Lcom/sec/android/app/camera/Camera;->isGpsEULAEnabledinCamera()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 3239
+    .line 3256
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,22 +37,40 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .locals 3
+    .parameter "arg0"
+    .parameter "arg1"
 
     .prologue
-    .line 3241
-    const-string v0, "Camera"
+    .line 3258
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const-string v1, "Finish camera due to camcorder start"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 3242
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->finish()V
+    const-string v2, "audio"
 
-    .line 3243
+    invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/Camera;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/media/AudioManager;
+
+    #setter for: Lcom/sec/android/app/camera/Camera;->mAudioManager:Landroid/media/AudioManager;
+    invoke-static {v1, v0}, Lcom/sec/android/app/camera/Camera;->access$1502(Lcom/sec/android/app/camera/Camera;Landroid/media/AudioManager;)Landroid/media/AudioManager;
+
+    .line 3259
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    #getter for: Lcom/sec/android/app/camera/Camera;->mAudioManager:Landroid/media/AudioManager;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$1500(Lcom/sec/android/app/camera/Camera;)Landroid/media/AudioManager;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
+
+    .line 3260
     return-void
 .end method

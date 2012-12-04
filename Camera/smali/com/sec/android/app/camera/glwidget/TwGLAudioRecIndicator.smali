@@ -24,7 +24,7 @@
     .line 16
     new-instance v0, Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f02008b
+    const v1, 0x7f02008c
 
     invoke-direct {v0, p1, v2, v2, v1}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 

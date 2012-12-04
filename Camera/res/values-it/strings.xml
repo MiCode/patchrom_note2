@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Fotocamera</string>
     <string name="camcorder_label">Videocamera</string>
-    <string name="wait">Attendere...</string>
+    <string name="wait">Attendere…</string>
     <string name="warning_msg">Avviso</string>
     <string name="insert_mmc_msg">Inserire la scheda di memoria per usare la Fotocamera</string>
     <string name="not_enough_space">Memoria insufficiente</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Memoria insufficiente. Memoria predefinita impostata su memoria telefono</string>
     <string name="change_to_device_memory">Memoria insufficiente sulla scheda SD. Memoria del dispositivo impostata come predefinita</string>
     <string name="video_reach_size_limit">Raggiunte dimensioni massime di registrazione</string>
-    <string name="processing_msg">Elaborazione...</string>
+    <string name="processing_msg">Elaborazione…</string>
     <string name="panorama_processing_msg">Attendere durante la creazione del panorama</string>
     <string name="battery_overheat">Uscire dalla fotocamera. Temperatura della batteria troppo alta</string>
-    <string name="savingImage">Salvataggio...</string>
+    <string name="savingImage">Salvataggio…</string>
     <string name="open_hw_failed_msg">Errore fotocamera</string>
     <string name="capture_failed_msg">Cattura non eseguita</string>
     <string name="recording_failed_msg">Reg. non riuscita</string>
@@ -41,7 +41,7 @@ durante la chiamata"</string>
     <string name="SM_ACTION">Scatto azione</string>
     <string name="SM_STOPMOTION">Arresta movimento</string>
     <string name="SM_CARTOON">Fumetto</string>
-    <string name="SM_SHOOTANDSHARE">Share shot</string>
+    <string name="SM_SHOOTANDSHARE">Scatto condiviso</string>
     <string name="SM_BURST">Scatto multiplo</string>
     <string name="SM_BUDDY_PHOTOSHARING">Condivisione foto amici</string>
     <string name="SM_LOW_LIGHT">Illuminazione scarsa</string>
@@ -105,7 +105,7 @@ durante la chiamata"</string>
     <string name="RM_EMAIL">Limite per email</string>
     <string name="RM_SLOW">Slow motion</string>
     <string name="RM_FAST">Movimento rapido</string>
-    <string name="CS_PROGRESS_TEXT">Creazione immagine in corso. Attendere...</string>
+    <string name="CS_PROGRESS_TEXT">Creazione immagine in corso. Attendere…</string>
     <string name="SCN_NONE">Nessuno</string>
     <string name="SCN_PORTRAIT">Ritratto</string>
     <string name="SCN_LANDSCAPE">Panorama</string>
@@ -114,7 +114,7 @@ durante la chiamata"</string>
     <string name="SCN_BEACH_SNOW">Spiaggia/Neve</string>
     <string name="SCN_SUNSET">Tramonto</string>
     <string name="SCN_DAWN_DUSK">Alba</string>
-    <string name="SCN_FALL_COLOR">Colori autunnali</string>
+    <string name="SCN_FALL_COLOR">Colore autunnale</string>
     <string name="SCN_NIGHT_SHOT">Notte</string>
     <string name="SCN_FIREWORK">"Fuochi d'artificio"</string>
     <string name="SCN_TEXT">Testo</string>
@@ -159,7 +159,7 @@ durante la chiamata"</string>
     <string name="Title_Guideline">Linee guida</string>
     <string name="Title_VideoQuality">Qualità video</string>
     <string name="Title_AudioRecording">Registr.audio</string>
-    <string name="Title_Storage">Memoria</string>
+    <string name="Title_Storage">Memorizzazione</string>
     <string name="Title_Reset">Ripristina</string>
     <string name="Title_Mode">Modo</string>
     <string name="Title_Back">Indietro</string>
@@ -180,8 +180,8 @@ durante la chiamata"</string>
     <string name="help_text_panorama_device">Premi Fotocamera e sposta lentamente il dispositivo in una direzione</string>
     <string name="message_DefaultLayout">Il layout di collegamento sarà rimosso</string>
     <string name="message_EULA_GPS">"Attivando il tag GPS, il dispositivo allegherà, integrerà e memorizzerà i dati sulla posizione geografica su ogni foto. Prestare attenzione durante l'invio, la condivisione, la distribuzione, la trasmissione o la copia delle foto, poiché queste ultime contengono la posizione in cui sono state scattate"</string>
-    <string name="message_Auto_ShareShot">"Share Shot automatico consente di connettersi facilmente ai dispositivi con cui si desidera condividere le foto.
-Attivare Share Shot automatico, quindi avvicinare la parte posteriore dei due dispositivi per connetterli"</string>
+    <string name="message_Auto_ShareShot">"Scatto condiviso automatico consente di connettersi facilmente ai dispositivi con cui si desidera condividere le foto.
+Attivare Scatto condiviso automatico, quindi avvicinare la parte posteriore dei due dispositivi per connetterli"</string>
     <string name="GPS_msg">GPS disattivo</string>
     <string name="message_enable_GPS">Attivare il GPS nelle Impostazioni per utilizzare il tag GPS</string>
     <string name="cancel">Annulla</string>
@@ -197,9 +197,9 @@ Attivare Share Shot automatico, quindi avvicinare la parte posteriore dei due di
     <string name="close_camera_for_unmounted_memory">Disattivare memoria USB prima di usare la fotocamera</string>
     <string name="message_size_limited">Dimensioni limite messaggio raggiunte</string>
     <string name="crop_save_text">Salva</string>
-    <string name="crop_discard_text">Ignora</string>
+    <string name="crop_discard_text">Annulla</string>
     <string name="crop_gallery_text">Galleria</string>
-    <string name="wallpaper">Impostazione sfondo. Attendere...</string>
+    <string name="wallpaper">Impostazione sfondo. Attendere…</string>
     <string name="crop_label">Ritaglia foto</string>
     <string name="low_database_storage_view_text">La memoria del database è quasi piena</string>
     <string name="camera_security_enter">"I criteri di sicurezza limitano l'uso della fotocamera"</string>
@@ -217,10 +217,10 @@ Attivare Share Shot automatico, quindi avvicinare la parte posteriore dei due di
     <string name="network_title_chn">Share shot while WLAN Direct connected</string>
     <string name="done">Fatto</string>
     <string name="add_photo_title">Aggiungi foto</string>
-    <string name="wifi_dialog_title">Share shot</string>
+    <string name="wifi_dialog_title">Scatto condiviso</string>
     <string name="wifi_dialog_text">Connessione Wi-Fi richiesta</string>
     <string name="wifi_dialog_text_chn">WLAN connection required</string>
-    <string name="wifi_direct_dialog_title">Share shot</string>
+    <string name="wifi_direct_dialog_title">Scatto condiviso</string>
     <string name="wifi_direct_dialog_text">Share shot consente la condivisione di foto con altri utenti con Wi-Fi Direct. Connessione Wi-Fi Direct necessaria</string>
     <string name="wifi_direct_dialog_text_chn">WLAN Direct connection required</string>
     <string name="wifi_dialog_yes">OK</string>
@@ -252,27 +252,31 @@ Attivare Share Shot automatico, quindi avvicinare la parte posteriore dei due di
     <string name="editable_shortcut_helptext_title">Aiuto</string>
     <string name="editable_shortcut_helptext_message">Toccate e tenete premuti i collegamenti per modificarli</string>
     <string name="editable_shortcut_helptext">"Toccate e tenete premuta l'icona, quindi trascinatela per modificare la posizione dei collegamenti"</string>
+    <string name="singleshotburst_capture_helptext">Toccate e tenete premuto il pulsante della fotocamera per una foto a scatto continuo</string>
+    <string name="singleshotburst_storage_helptext">Le foto a scatto continuo vengono salvate con la qualità impostata come eccellente</string>
     <string name="sbeam_helptext">Scattate e condividete foto con altri dispositivi. Mettete insieme i dispositivi per aggiungere quelli che si desidera condividere con S Beam</string>
     <string name="storage_setting_dialog_title">Posizione di memoria</string>
     <string name="storage_setting_dialog_message">Scheda SD inserita. Impostate la posizione di memoria su microSD?</string>
+    <string name="storage_setting_dialog_burstshot_message">Gli scatti singoli verranno salvati nella scheda SD. Gli scatti continui verranno salvati nella memoria del dispositivo</string>
     <string name="do_not_ask_again">Non mostrare più</string>
     <string name="shutter">Otturatore</string>
     <string name="record">Registra</string>
     <string name="bestpic">Scatto migliore</string>
     <string name="bestpic_on">Sì</string>
     <string name="bestpic_off">No</string>
-    <string name="bestgroup">Migliore posa di gruppo</string>
-    <string name="bestgroup_title">Selez. faccia migliore da salvare</string>
+    <string name="bestgroup">Volti migliori</string>
+    <string name="bestgroup_title">Selez. volto migliore da salvare</string>
     <string name="battery_low">Chiudere la fotocamera. Temperatura batteria troppo bassa</string>
     <string name="buddy_photo_share_helptext">Scatta e condividi le foto con gli amici tramite il rilevamento volti</string>
     <string name="face_zoom_helptext">Toccare due volte per eseguire zoom avanti e indietro</string>
     <string name="burst_shot_guidetext">Le foto scattate in modalità Scatto multiplo saranno salvate nella memoria del dispos.</string>
+    <string name="best_photo_guidetext">Le foto migliori verranno salvare nella memoria del dispositivo</string>
     <string name="snap_shot_limitation_dialog">Impossibile utilizzare la funzione di registrazione snapshot quando la stabilizzazione è attivata</string>
     <string name="on_device_help_focus">Toccare per impostare la messa a fuoco della fotocamera</string>
     <string name="on_device_help_camcorder">Passare alla modalità Videocamera</string>
     <string name="on_device_help_self">Passa alla modalità Autoritratto</string>
     <string name="on_device_help_editable">Tenere premuto il collegamento da spostare, quindi trascinarlo nella posizione desiderata</string>
-    <string name="on_device_help_voicecommand">È possibile scattare foto con comandi vocali quali Cattura, Scatta, Sorriso e Cheese</string>
+    <string name="on_device_help_voicecommand">Potete scattare foto con i comandi vocali quali “Cattura”, “Scatta”, “Sorriso” e “Cheese”</string>
     <string name="Title_VideoSpeed">Velocità</string>
     <string name="SPEED_OFF">Normale</string>
     <string name="SPEED_2X_FASTER">2 volte più veloce</string>

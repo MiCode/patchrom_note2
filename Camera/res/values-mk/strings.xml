@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Камера</string>
     <string name="camcorder_label">Камeра</string>
-    <string name="wait">Ве молам почекајте...</string>
+    <string name="wait">Ве молам почекајте…</string>
     <string name="warning_msg">Предупредување</string>
     <string name="insert_mmc_msg">Вметнете мемориска картичка за да ја користите камерата</string>
     <string name="not_enough_space">Нема доволно меморија</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Нема доволно меморија. Основната меморија е сменета во телефонска меморија</string>
     <string name="change_to_device_memory">Нема доволно место на SD-картичката. Основната меморија е сменета во меморија на уредот</string>
     <string name="video_reach_size_limit">Достигната е максималната големина за снимање</string>
-    <string name="processing_msg">Обработување...</string>
+    <string name="processing_msg">Обработување…</string>
     <string name="panorama_processing_msg">Почекајте додека се прави панорамата</string>
     <string name="battery_overheat">Излез од камерата. Температурата на батеријата е превисока</string>
-    <string name="savingImage">Се снима...</string>
+    <string name="savingImage">Се снима…</string>
     <string name="open_hw_failed_msg">Неуспешно сликање</string>
     <string name="capture_failed_msg">Неуспешно снимање</string>
     <string name="recording_failed_msg">Снимањето не успеа</string>
@@ -104,7 +104,7 @@
     <string name="RM_EMAIL">До лимит за email</string>
     <string name="RM_SLOW">Бавно движење</string>
     <string name="RM_FAST">Брзо движење</string>
-    <string name="CS_PROGRESS_TEXT">Се прави слика. Почекајте...</string>
+    <string name="CS_PROGRESS_TEXT">Се прави слика. Почекајте…</string>
     <string name="SCN_NONE">Ништо</string>
     <string name="SCN_PORTRAIT">Исправено</string>
     <string name="SCN_LANDSCAPE">Положено</string>
@@ -158,7 +158,7 @@
     <string name="Title_Guideline">Со водилки</string>
     <string name="Title_VideoQuality">Квалитет на видео</string>
     <string name="Title_AudioRecording">Снимање звук</string>
-    <string name="Title_Storage">Меморија</string>
+    <string name="Title_Storage">Место</string>
     <string name="Title_Reset">Ресетирај</string>
     <string name="Title_Mode">Режим</string>
     <string name="Title_Back">Назад</string>
@@ -179,8 +179,8 @@
     <string name="help_text_panorama_device">Притиснете го копчето за камера и движете го уредот бавно во една насока</string>
     <string name="message_DefaultLayout">Распоредот на кратенки ќе се ресетира</string>
     <string name="message_EULA_GPS">Вклучувањето ознаки GPS ќе приложува, придружува и чува податоци за географско лоцирање со секоја фотографија. Бидете претпазливи кога ги праќате, споделувате, дистрибуирате, емитувате или копирате овие фотографии затоа што ја содржат локацијата каде што било фотографирано</string>
-    <string name="message_Auto_ShareShot">"Auto share shot enables you to easily connect to the devices you want to share pictures with.
-Enable auto share shot, then bring the devices together (typically back to back) to connect them"</string>
+    <string name="message_Auto_ShareShot">"Автоматско споделување снимка ви овозможува лесно да се поврзувате со уредите со коишто сакате да споделувате слики.
+Вклучете автоматско споделување снимка, па приближете ги уредите (обично грб со грб) за да ги поврзете"</string>
     <string name="GPS_msg">Исклучи GPS</string>
     <string name="message_enable_GPS">Вклучете GPS во Опции за да користите ознаки GPS</string>
     <string name="cancel">Откажи</string>
@@ -190,15 +190,15 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="Title_ChangeMemoryInUseDailog">Смени ја основната меморија на мемориската картичка?</string>
     <string name="Title_InsertMemoryCardDailog">Вметнете мемориска картичка за да ја користите камерата</string>
     <string name="OnScreen_HelpTextTouchAF">Држете го екранот за фокусирање на допреното</string>
-    <string name="media_scanner_running">Скенерот на медиуми работи...</string>
+    <string name="media_scanner_running">Скенерот на медиуми работи…</string>
     <string name="close_camera_when_mmc_inserted">Вметната е SD-картичка. %s е затворен за да се скенираат медиумските фајлови на SD-картичката</string>
     <string name="close_camera_when_media_mounted">Камерата е затворена за да се сканираат медиумските фајлови</string>
     <string name="close_camera_for_unmounted_memory">Исклучете ја USB-меморија пред да ја користите камерата</string>
     <string name="message_size_limited">Достигнато е ограничувањето за големината на пораките</string>
     <string name="crop_save_text">Сочувај</string>
-    <string name="crop_discard_text">Отфрли</string>
+    <string name="crop_discard_text">Откажи</string>
     <string name="crop_gallery_text">Галерија</string>
-    <string name="wallpaper">Се поставува заднина. Почекајте...</string>
+    <string name="wallpaper">Се поставува заднина. Почекајте…</string>
     <string name="crop_label">Отсечи слика</string>
     <string name="low_database_storage_view_text">Меморијата за базата податоци е речиси полна</string>
     <string name="camera_security_enter">Политиката на безбедност го ограничува користењето камера</string>
@@ -251,21 +251,25 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="editable_shortcut_helptext_title">Совети</string>
     <string name="editable_shortcut_helptext_message">Допрете и држете кратенка за да ја измените</string>
     <string name="editable_shortcut_helptext">Допрете и држете икона, па одвлечете ја за да ја измените положбата на кратенките</string>
+    <string name="singleshotburst_capture_helptext">Држете го копчето на камерата за рафално сликање</string>
+    <string name="singleshotburst_storage_helptext">Сликите од рафалното сликање се сочувани со квалитет поставен како фин</string>
     <string name="sbeam_helptext">Фотографирајте и споделувајте фотографии со други уреди. Приближете ги уредите со коишто сакате да споделувате за да ги додадете преку S Beam</string>
     <string name="storage_setting_dialog_title">Место за меморирање</string>
     <string name="storage_setting_dialog_message">Вметната е SD-картичка. Да се смени местото за меморирање на SD-картичка?</string>
+    <string name="storage_setting_dialog_burstshot_message">Единечните снимки ќе се сочувуваат на SD-картичката. Рафалните снимки ќе се сочувуваат во меморијата на уредот</string>
     <string name="do_not_ask_again">Не прикажувај веќе</string>
     <string name="shutter">Копче за сликање</string>
     <string name="record">Снимај</string>
     <string name="bestpic">Најдобра фотографија</string>
     <string name="bestpic_on">Вк</string>
     <string name="bestpic_off">Иск</string>
-    <string name="bestgroup">Најдобра групна поза</string>
+    <string name="bestgroup">Најдобри лица</string>
     <string name="bestgroup_title">Изб. најдобри лица за зачув.</string>
     <string name="battery_low">Затворете ја камерата. Темп. на батеријата е прениска</string>
     <string name="buddy_photo_share_helptext">Фотографирајте и делете фотографии со пријателите преку откривањето лица</string>
     <string name="face_zoom_helptext">Допрете лице двапати за да приближите или оддалечите</string>
     <string name="burst_shot_guidetext">Рафалните снимки ќе се сочуваат во меморијата на уредот</string>
+    <string name="best_photo_guidetext">Најдобрите фотографии ќе се сочуваат во меморијата на уредот</string>
     <string name="snap_shot_limitation_dialog">Не може да се користи функцијата за правење снимка додека е вклучено нетресење</string>
     <string name="on_device_help_focus">Допрете за да го одредите фокусот на камерата</string>
     <string name="on_device_help_camcorder">Префрли во камера</string>
@@ -295,5 +299,5 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="enable_gps_dialog">Треба да се вклучени ознаки GPS. Да се вклучат ознаки GPS?</string>
     <string name="gallery_disable">Галеријата е оневозможена</string>
     <string name="HDR_Normal">Нормално</string>
-    <string name="HDR_Strong">Јак</string>
+    <string name="HDR_Strong">Јако</string>
 </resources>

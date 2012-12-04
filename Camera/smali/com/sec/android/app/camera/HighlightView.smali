@@ -218,7 +218,7 @@
     iput-object v1, p0, Lcom/sec/android/app/camera/HighlightView;->mResizeDrawableHeight:Landroid/graphics/drawable/Drawable;
 
     .line 59
-    const v1, 0x7f020258
+    const v1, 0x7f02025e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

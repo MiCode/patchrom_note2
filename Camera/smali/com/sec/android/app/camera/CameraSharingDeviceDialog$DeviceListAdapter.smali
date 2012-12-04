@@ -225,7 +225,7 @@
     .restart local v1       #iv:Landroid/widget/ImageView;
     .restart local v3       #tv:Landroid/widget/TextView;
     :cond_4
-    const v6, 0x7f02024f
+    const v6, 0x7f020253
 
     invoke-virtual {v1, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 

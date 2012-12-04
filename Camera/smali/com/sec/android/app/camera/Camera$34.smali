@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->showStorageForBurstDialog()V
+    value = Lcom/sec/android/app/camera/Camera;->showBurstShotsGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 6647
+    .line 6757
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$34;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -39,10 +39,10 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .parameter "arg0"
-    .parameter "arg1"
+    .parameter "dialog"
+    .parameter "whichButton"
 
     .prologue
-    .line 6651
+    .line 6759
     return-void
 .end method

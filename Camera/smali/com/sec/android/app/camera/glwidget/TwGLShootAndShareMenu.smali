@@ -58,7 +58,7 @@
     const/4 v2, 0x0
 
     .line 46
-    const v0, 0x7f060259
+    const v0, 0x7f0601e9
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -69,7 +69,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;->ShareShot_Button_BUTTON_WIDTH:I
 
     .line 47
-    const v0, 0x7f06025a
+    const v0, 0x7f0601ea
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -80,7 +80,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;->ShareShot_Button_BUTTON_HEIGHT:I
 
     .line 48
-    const v0, 0x7f060263
+    const v0, 0x7f0601f3
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -91,7 +91,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;->ShareShot_Count_TEXT_WIDTH:I
 
     .line 49
-    const v0, 0x7f060264
+    const v0, 0x7f0601f4
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -102,7 +102,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;->ShareShot_Count_TEXT_HEIGHT:I
 
     .line 50
-    const v0, 0x7f060265
+    const v0, 0x7f0601f5
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -115,7 +115,7 @@
     .line 52
     new-array v0, v6, [I
 
-    const v1, 0x7f06025b
+    const v1, 0x7f0601eb
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -125,7 +125,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f06025c
+    const v1, 0x7f0601ec
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -135,7 +135,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f06025d
+    const v1, 0x7f0601ed
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -145,7 +145,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f06025e
+    const v1, 0x7f0601ee
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -160,7 +160,7 @@
     .line 59
     new-array v0, v6, [I
 
-    const v1, 0x7f06025f
+    const v1, 0x7f0601ef
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -170,7 +170,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f060260
+    const v1, 0x7f0601f0
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -180,7 +180,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f060261
+    const v1, 0x7f0601f1
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f060262
+    const v1, 0x7f0601f2
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -205,7 +205,7 @@
     .line 66
     new-array v0, v6, [I
 
-    const v1, 0x7f060266
+    const v1, 0x7f0601f6
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -215,7 +215,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f060267
+    const v1, 0x7f0601f7
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -225,7 +225,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f060268
+    const v1, 0x7f0601f8
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -235,7 +235,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f060269
+    const v1, 0x7f0601f9
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -250,7 +250,7 @@
     .line 73
     new-array v0, v6, [I
 
-    const v1, 0x7f06026a
+    const v1, 0x7f0601fa
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -260,7 +260,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f06026b
+    const v1, 0x7f0601fb
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -270,7 +270,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f06026c
+    const v1, 0x7f0601fc
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -280,7 +280,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f06026d
+    const v1, 0x7f0601fd
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -368,11 +368,11 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02021c
+    const v6, 0x7f02021e
 
-    const v7, 0x7f02021d
+    const v7, 0x7f02021f
 
-    const v8, 0x7f02021d
+    const v8, 0x7f02021f
 
     const/4 v9, 0x0
 
@@ -424,7 +424,7 @@
     .line 96
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;->mSharingDeviceText:Lcom/sec/android/glview/TwGLText;
 
-    const v1, 0x7f02021e
+    const v1, 0x7f020220
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setBackground(I)Z
 

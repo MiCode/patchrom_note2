@@ -46,7 +46,7 @@
 
     .prologue
     .line 42
-    const v0, 0x7f060202
+    const v0, 0x7f060232
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -57,7 +57,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->THUMBNAIL_POS_X:I
 
     .line 43
-    const v0, 0x7f060203
+    const v0, 0x7f060233
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -68,7 +68,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->THUMBNAIL_POS_Y:I
 
     .line 44
-    const v0, 0x7f060204
+    const v0, 0x7f060234
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -79,7 +79,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->THUMBNAIL_WIDTH:I
 
     .line 45
-    const v0, 0x7f060205
+    const v0, 0x7f060235
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -90,7 +90,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->THUMBNAIL_HEIGHT:I
 
     .line 46
-    const v0, 0x7f060206
+    const v0, 0x7f060236
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -101,7 +101,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->THUMBNAIL_BUTTON_WIDTH:I
 
     .line 47
-    const v0, 0x7f060207
+    const v0, 0x7f060237
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -454,11 +454,11 @@
     .line 268
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->mFrameButton:Lcom/sec/android/glview/TwGLButton;
 
-    const v1, 0x7f0201da
+    const v1, 0x7f0201dc
 
-    const v2, 0x7f0201dc
+    const v2, 0x7f0201de
 
-    const v3, 0x7f0201da
+    const v3, 0x7f0201dc
 
     const/4 v4, 0x0
 
@@ -1132,11 +1132,11 @@
     .line 212
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->mFrameButton:Lcom/sec/android/glview/TwGLButton;
 
-    const v1, 0x7f0201da
+    const v1, 0x7f0201dc
 
-    const v2, 0x7f0201dc
+    const v2, 0x7f0201de
 
-    const v3, 0x7f0201da
+    const v3, 0x7f0201dc
 
     const/4 v4, 0x0
 
@@ -1214,11 +1214,11 @@
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->mFrameButton:Lcom/sec/android/glview/TwGLButton;
 
-    const v1, 0x7f0201db
+    const v1, 0x7f0201dd
 
-    const v2, 0x7f0201dc
+    const v2, 0x7f0201de
 
-    const v3, 0x7f0201db
+    const v3, 0x7f0201dd
 
     const/4 v4, 0x0
 
@@ -1233,7 +1233,7 @@
     .locals 9
 
     .prologue
-    const v8, 0x7f0201db
+    const v8, 0x7f0201dd
 
     const/4 v6, 0x0
 
@@ -1289,7 +1289,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f02023d
+    const v4, 0x7f020241
 
     invoke-direct {v2, v3, v6, v6, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -1329,7 +1329,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0201dc
+    const v5, 0x7f0201de
 
     const/4 v7, 0x0
 

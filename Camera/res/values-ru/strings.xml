@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Камера</string>
     <string name="camcorder_label">Видеокамера</string>
-    <string name="wait">Подождите...</string>
+    <string name="wait">Подождите…</string>
     <string name="warning_msg">Предупреждение</string>
     <string name="insert_mmc_msg">Чтобы использовать камеру, вставьте карту памяти</string>
     <string name="not_enough_space">Недостаточно памяти</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Недостаточно памяти. Сохранение по умолчанию будет происходить в память телефона</string>
     <string name="change_to_device_memory">Недостаточно места на карте памяти SD. Хранилище по умолчанию изменено на встроенную память устройства</string>
     <string name="video_reach_size_limit">Достигнут максимальный размер записи</string>
-    <string name="processing_msg">Обработка...</string>
-    <string name="panorama_processing_msg">Подождите... идет создание панорамы</string>
+    <string name="processing_msg">Обработка…</string>
+    <string name="panorama_processing_msg">Подождите… идет создание панорамы</string>
     <string name="battery_overheat">Выключите камеру. Температура батареи слишком высока</string>
-    <string name="savingImage">Сохранение...</string>
+    <string name="savingImage">Сохранение…</string>
     <string name="open_hw_failed_msg">Сбой камеры</string>
     <string name="capture_failed_msg">Сбой съемки</string>
     <string name="recording_failed_msg">Сбой записи</string>
@@ -105,7 +105,7 @@
     <string name="RM_EMAIL">Ограничение для e-mail</string>
     <string name="RM_SLOW">Замедленное движение</string>
     <string name="RM_FAST">Быстрое движение</string>
-    <string name="CS_PROGRESS_TEXT">Создание изображения. Подождите...</string>
+    <string name="CS_PROGRESS_TEXT">Создание изображения. Подождите…</string>
     <string name="SCN_NONE">Нет</string>
     <string name="SCN_PORTRAIT">Портрет</string>
     <string name="SCN_LANDSCAPE">Пейзаж</string>
@@ -123,7 +123,7 @@
     <string name="OPTION_ON">Включено</string>
     <string name="OPTION_OFF">Выключено</string>
     <string name="EXPOSURE_METER">Экспозамер</string>
-    <string name="ADJUST">Настр.</string>
+    <string name="ADJUST">Настроить</string>
     <string name="CONTRAST">Контраст</string>
     <string name="SATURATION">Насыщенность</string>
     <string name="SHARPNESS">Четкость</string>
@@ -191,15 +191,15 @@
     <string name="Title_ChangeMemoryInUseDailog">Изменить место хранения по умолчанию на карту памяти?</string>
     <string name="Title_InsertMemoryCardDailog">Чтобы использовать камеру, вставьте карту памяти</string>
     <string name="OnScreen_HelpTextTouchAF">Выделите пальцем область для фокусировки</string>
-    <string name="media_scanner_running">Выполняется поиск медиафайлов...</string>
+    <string name="media_scanner_running">Выполняется поиск медиафайлов…</string>
     <string name="close_camera_when_mmc_inserted">Вставлена карта памяти SD. Приложение %s закрыто в связи с выполнением поиска медиафайлов на карте памяти SD</string>
     <string name="close_camera_when_media_mounted">Камера выключена на время сканирования медиафайлов</string>
     <string name="close_camera_for_unmounted_memory">Перед использованием камеры отключите USB-накопитель</string>
     <string name="message_size_limited">Достигнут максимальный размер сообщения</string>
     <string name="crop_save_text">Сохранить</string>
-    <string name="crop_discard_text">Отменить</string>
+    <string name="crop_discard_text">Отмена</string>
     <string name="crop_gallery_text">Галерея</string>
-    <string name="wallpaper">Настройка обоев. Подождите...</string>
+    <string name="wallpaper">Настройка обоев. Подождите…</string>
     <string name="crop_label">Обрезать</string>
     <string name="low_database_storage_view_text">Хранилище базы данных почти заполнено</string>
     <string name="camera_security_enter">Политика безопасности ограничивает использование камеры</string>
@@ -252,21 +252,25 @@
     <string name="editable_shortcut_helptext_title">Советы</string>
     <string name="editable_shortcut_helptext_message">Нажмите и удерживайте ярлыки, чтобы изменить их</string>
     <string name="editable_shortcut_helptext">Нажмите и удерживайте значок, а затем перетащите его, чтобы изменить положение ярлыка</string>
+    <string name="singleshotburst_capture_helptext">Для непрерывной съемки нажмите и удерживайте кнопку камеры</string>
+    <string name="singleshotburst_storage_helptext">Фотографии, полученные при непрерывной съемке, сохраняются с отличным качеством</string>
     <string name="sbeam_helptext">Обменивайтесь только что снятыми фотографиями с другими устройствами. Поднесите устройства друг к другу, чтобы зарегистрировать их для обмена данными через S Beam</string>
     <string name="storage_setting_dialog_title">Место хранения</string>
     <string name="storage_setting_dialog_message">Вставлена карта памяти SD. Изменить место хранения на карту памяти SD?</string>
+    <string name="storage_setting_dialog_burstshot_message">Одиночные снимки будут сохраняться на карту памяти SD. Фотографии, полученные при непрерывной съемке, будут сохраняться в памяти устройства</string>
     <string name="do_not_ask_again">Не показывать снова</string>
     <string name="shutter">Затвор</string>
     <string name="record">Запись</string>
     <string name="bestpic">Лучшая фотография</string>
     <string name="bestpic_on">Вк</string>
     <string name="bestpic_off">Вык</string>
-    <string name="bestgroup">Лучшая общая фотография</string>
+    <string name="bestgroup">Лучшие снимки</string>
     <string name="bestgroup_title">Выберите лучшие снимки</string>
     <string name="battery_low">Закройте камеру. Батарея слишком холодная</string>
     <string name="buddy_photo_share_helptext">Автоматическое определение лиц друзей на фотографиях</string>
     <string name="face_zoom_helptext">Для увеличения или уменьшения дважды нажмите лицо</string>
     <string name="burst_shot_guidetext">Фотографии, полученные при непрерывной съемке, будут сохраняться в памяти устройства</string>
+    <string name="best_photo_guidetext">Лучшие фотографии будут сохраняться в памяти устройства</string>
     <string name="snap_shot_limitation_dialog">Невозможно делать моментальные снимки записей, если включена стабилизация</string>
     <string name="on_device_help_focus">Нажмите, чтобы настроить фокус камеры</string>
     <string name="on_device_help_camcorder">Перейти в режим видеокамеры</string>
@@ -295,6 +299,6 @@
     <string name="contextual_filename">Контекстное имя файла</string>
     <string name="enable_gps_dialog">Необходимо включить теги GPS. Сделать это?</string>
     <string name="gallery_disable">Галерея отключена</string>
-    <string name="HDR_Normal">Обычное</string>
-    <string name="HDR_Strong">Сильный</string>
+    <string name="HDR_Normal">Обычный</string>
+    <string name="HDR_Strong">Интенсивн.</string>
 </resources>

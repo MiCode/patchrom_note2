@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Kamera</string>
     <string name="camcorder_label">Videokamera</string>
-    <string name="wait">Lūdzu, uzgaidiet...</string>
+    <string name="wait">Lūdzu, uzgaidiet…</string>
     <string name="warning_msg">Brīdinājums</string>
     <string name="insert_mmc_msg">Lai lietotu kameru, ievietojiet atmiņas karti</string>
     <string name="not_enough_space">Atmiņa pilna</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Nepietiek atmiņas. Noklusējuma krātuve ir mainīta uz tālruņa atmiņu.</string>
     <string name="change_to_device_memory">SD kartē nepietiek vietas. Noklusējuma krātuve ir mainīta uz ierīces krātuvi</string>
     <string name="video_reach_size_limit">Sasniegts maksimālais ierakstīšanas apjoms</string>
-    <string name="processing_msg">Notiek apstrāde...</string>
+    <string name="processing_msg">Notiek apstrāde…</string>
     <string name="panorama_processing_msg">Lūdzu uzgaidiet, kamēr tiek veidots panorāmas attēls</string>
     <string name="battery_overheat">Aizvērt kameru. Akumulatora temperatūra ir par augstu</string>
-    <string name="savingImage">Saglabā...</string>
+    <string name="savingImage">Saglabā…</string>
     <string name="open_hw_failed_msg">Kameras kļūme</string>
     <string name="capture_failed_msg">Uzņemšana neizdevās</string>
     <string name="recording_failed_msg">Ierakstīšana neizdevās</string>
@@ -105,7 +105,7 @@ startēt kameru"</string>
     <string name="RM_EMAIL">E-pasta ierobežojums</string>
     <string name="RM_SLOW">Lēna kustība</string>
     <string name="RM_FAST">Ātri</string>
-    <string name="CS_PROGRESS_TEXT">Izveido attēlu. Lūdzu, uzgaidiet...</string>
+    <string name="CS_PROGRESS_TEXT">Izveido attēlu. Lūdzu, uzgaidiet…</string>
     <string name="SCN_NONE">Nav</string>
     <string name="SCN_PORTRAIT">Portrets</string>
     <string name="SCN_LANDSCAPE">Ainava</string>
@@ -114,7 +114,7 @@ startēt kameru"</string>
     <string name="SCN_BEACH_SNOW">Pludmale/Sniegs</string>
     <string name="SCN_SUNSET">Saulriets</string>
     <string name="SCN_DAWN_DUSK">Rītausma</string>
-    <string name="SCN_FALL_COLOR">Rudens krāsas</string>
+    <string name="SCN_FALL_COLOR">Rudens krāsa</string>
     <string name="SCN_NIGHT_SHOT">Nakts</string>
     <string name="SCN_FIREWORK">Uguņošana</string>
     <string name="SCN_TEXT">Teksts</string>
@@ -160,7 +160,7 @@ startēt kameru"</string>
     <string name="Title_VideoQuality">Video kvalitāte</string>
     <string name="Title_AudioRecording">Audio ierak.</string>
     <string name="Title_Storage">Krātuve</string>
-    <string name="Title_Reset">Nodzēst</string>
+    <string name="Title_Reset">Atiestatīt</string>
     <string name="Title_Mode">Režīms</string>
     <string name="Title_Back">Atpakaļ</string>
     <string name="Title_ImageViewer">Attēlu skatītājs</string>
@@ -191,15 +191,15 @@ Aktivizējiet automātiskās kopīgošanas uzņēmumu, pēc tam novietojiet ier�
     <string name="Title_ChangeMemoryInUseDailog">Vai mainīt noklusējuma atmiņu uz atmiņas karti?</string>
     <string name="Title_InsertMemoryCardDailog">Lai lietotu kameru, ievietojiet atmiņas karti</string>
     <string name="OnScreen_HelpTextTouchAF">Nosp. uz ekrāna, lai fokus.apg., kuram piesk.</string>
-    <string name="media_scanner_running">Darbojas multivides meklētājs...</string>
+    <string name="media_scanner_running">Darbojas multivides meklētājs…</string>
     <string name="close_camera_when_mmc_inserted">Ievietota SD karte. %s ir aizvērta, lai SD kartē meklētu multivides failus</string>
     <string name="close_camera_when_media_mounted">Kamera ir aizvērta, lai varētu meklēt multivides failus</string>
     <string name="close_camera_for_unmounted_memory">Pirms kameras lietošanas izslēdziet USB atmiņas glabātuvi</string>
     <string name="message_size_limited">Sasniegts ziņas lieluma ierobežojums</string>
     <string name="crop_save_text">Saglabāt</string>
-    <string name="crop_discard_text">Izmest</string>
+    <string name="crop_discard_text">Atcelt</string>
     <string name="crop_gallery_text">Galerija</string>
-    <string name="wallpaper">Notiek fona attēla iestatīšana. Lūdzu, uzgaidiet...</string>
+    <string name="wallpaper">Notiek fona attēla iestatīšana. Lūdzu, uzgaidiet…</string>
     <string name="crop_label">Apcirpt attēlu</string>
     <string name="low_database_storage_view_text">Datubāzes atmiņa ir gandrīz pilna</string>
     <string name="camera_security_enter">Drošības politika ierobežo kameras lietošanu</string>
@@ -252,21 +252,25 @@ Aktivizējiet automātiskās kopīgošanas uzņēmumu, pēc tam novietojiet ier�
     <string name="editable_shortcut_helptext_title">Padomi</string>
     <string name="editable_shortcut_helptext_message">Lai rediģētu īsceļus, pieskarieties tiem un turiet</string>
     <string name="editable_shortcut_helptext">Pieskarieties ikonai un turiet, pēc tam velciet, lai rediģētu īsceļu novietojumu</string>
+    <string name="singleshotburst_capture_helptext">Lai uzņemtu sērijveida fotoattēlus, pieskarieties kameras pogai un turiet to</string>
+    <string name="singleshotburst_storage_helptext">Sērijveida fotoattēli tiks saglabāti iestatītajā labas kvalitātes režīmā</string>
     <string name="sbeam_helptext">Fotografējiet un kopīgojiet fotoattēlus ar citām ierīcēm. Novietojiet ierīces blakus, lai pievienotu ierīces, ar kurām vēlaties kopīgot saturu, izmantojot S Beam</string>
     <string name="storage_setting_dialog_title">Krātuves atrašanās vieta</string>
     <string name="storage_setting_dialog_message">Ievietota SD karte. Vai mainīt krātuves atrašanās vietu uz SD karti?</string>
+    <string name="storage_setting_dialog_burstshot_message">Atsevišķi uzņemti fotoattēli tiks saglabāti SD kartē. Sērijveida fotoattēli tiks saglabāti ierīces krātuvē</string>
     <string name="do_not_ask_again">Nerādīt vēlreiz</string>
     <string name="shutter">Aizslēgs</string>
     <string name="record">Ierakstīt</string>
     <string name="bestpic">Labākais fotoattēls</string>
     <string name="bestpic_on">Ies</string>
     <string name="bestpic_off">Izs</string>
-    <string name="bestgroup">Jauns grupas izkārtojums</string>
+    <string name="bestgroup">Visskaistākās sejas</string>
     <string name="bestgroup_title">Izv. skaist. sejas, lai sagl.</string>
     <string name="battery_low">Aizveriet kameru. Akumulatora temperatūra ir par zemu</string>
     <string name="buddy_photo_share_helptext">Fotografējiet un kopīgojiet fotoattēlus ar draugiem, izmantojot sejas noteikšanas funkciju</string>
     <string name="face_zoom_helptext">Veiciet divkāršo pieskārienu sejai, lai tuvinātu vai tālinātu</string>
     <string name="burst_shot_guidetext">Sērijveida fotoattēli tiks saglabāti ierīces krātuvē</string>
+    <string name="best_photo_guidetext">Labākie fotoattēli tiks saglabāti ierīces krātuvē</string>
     <string name="snap_shot_limitation_dialog">Ja ir aktivizēta prettriecienu funkcija, nevar izmantot ieraksta momentuzņēmuma funkciju</string>
     <string name="on_device_help_focus">Pieskarieties, lai iestatītu kameras fokusu</string>
     <string name="on_device_help_camcorder">Pārslēdzieties uz videokameras režīmu</string>
@@ -295,6 +299,6 @@ Aktivizējiet automātiskās kopīgošanas uzņēmumu, pēc tam novietojiet ier�
     <string name="contextual_filename">Kontekstuāls faila nosaukums</string>
     <string name="enable_gps_dialog">Ir jāaktivizē GPS atzīme. Vai aktivizēt GPS atzīmi?</string>
     <string name="gallery_disable">Galerija ir deaktivizēta</string>
-    <string name="HDR_Normal">Parasti</string>
+    <string name="HDR_Normal">Parasts</string>
     <string name="HDR_Strong">Spēcīgs</string>
 </resources>

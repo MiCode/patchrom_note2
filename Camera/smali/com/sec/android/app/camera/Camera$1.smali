@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 591
+    .line 593
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,15 +39,15 @@
     .parameter "msg"
 
     .prologue
-    .line 595
+    .line 597
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 596
+    .line 598
     iget-object v3, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     if-eqz v3, :cond_0
 
-    .line 597
+    .line 599
     iget-object v4, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v3, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -57,18 +57,18 @@
     #setter for: Lcom/sec/android/app/camera/Camera;->mActiveIp:Ljava/lang/String;
     invoke-static {v4, v3}, Lcom/sec/android/app/camera/Camera;->access$1002(Lcom/sec/android/app/camera/Camera;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 598
+    .line 600
     :cond_0
     iget v3, p1, Landroid/os/Message;->what:I
 
     packed-switch v3, :pswitch_data_0
 
-    .line 657
+    .line 659
     :cond_1
     :goto_0
     return-void
 
-    .line 600
+    .line 602
     :pswitch_0
     new-instance v3, Ljava/lang/Thread;
 
@@ -82,7 +82,7 @@
 
     goto :goto_0
 
-    .line 616
+    .line 618
     :pswitch_1
     new-instance v3, Ljava/lang/Thread;
 
@@ -96,7 +96,7 @@
 
     goto :goto_0
 
-    .line 633
+    .line 635
     :pswitch_2
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -104,7 +104,7 @@
 
     goto :goto_0
 
-    .line 636
+    .line 638
     :pswitch_3
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -121,7 +121,7 @@
 
     move-result-object v2
 
-    .line 637
+    .line 639
     .local v2, user:Lcom/samsung/shareshot/User;
     if-eqz v2, :cond_1
 
@@ -133,7 +133,7 @@
 
     if-nez v3, :cond_1
 
-    .line 640
+    .line 642
     :cond_2
     :try_start_0
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -142,7 +142,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 641
+    .line 643
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v3, v3, Lcom/sec/android/app/camera/Camera;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
@@ -158,7 +158,7 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 646
+    .line 648
     :cond_3
     :goto_1
     if-eqz v2, :cond_1
@@ -169,24 +169,24 @@
 
     if-nez v3, :cond_1
 
-    .line 647
+    .line 649
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/Camera;->refreshDeviceList()V
 
     goto :goto_0
 
-    .line 642
+    .line 644
     :catch_0
     move-exception v1
 
-    .line 644
+    .line 646
     .local v1, e:Landroid/os/RemoteException;
     invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 651
+    .line 653
     .end local v1           #e:Landroid/os/RemoteException;
     .end local v2           #user:Lcom/samsung/shareshot/User;
     :pswitch_4
@@ -208,13 +208,13 @@
 
     check-cast v0, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;
 
-    .line 652
+    .line 654
     .local v0, ShareShot:Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLShootAndShareMenu;->showDisplayCount()V
 
     goto :goto_0
 
-    .line 598
+    .line 600
     :pswitch_data_0
     .packed-switch 0xcb
         :pswitch_0

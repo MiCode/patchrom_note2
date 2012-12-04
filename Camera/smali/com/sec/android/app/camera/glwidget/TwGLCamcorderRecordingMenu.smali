@@ -201,14 +201,18 @@
 
 .field private mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
+.field private mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
 .field private mStopping:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
     .prologue
+    const v2, 0x7f0600ba
+
     .line 31
     const v0, 0x7f060072
 
@@ -274,7 +278,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->TEXT_SIZE:I
 
     .line 37
-    const v0, 0x7f0600bf
+    const v0, 0x7f0600c0
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -296,7 +300,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SHIFT:I
 
     .line 41
-    const v0, 0x7f0600bd
+    const v0, 0x7f0600be
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -307,7 +311,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PROGRESSBAR_WIDTH:I
 
     .line 42
-    const v0, 0x7f06015a
+    const v0, 0x7f06016a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -318,7 +322,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PROGRESSBAR_HEIGHT:I
 
     .line 43
-    const v0, 0x7f06015b
+    const v0, 0x7f06016b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -329,7 +333,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PROGRESS_HEIGHT:I
 
     .line 44
-    const v0, 0x7f0600be
+    const v0, 0x7f0600bf
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -431,9 +435,17 @@
 
     sub-int/2addr v0, v1
 
+    invoke-static {v2}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    sub-int/2addr v0, v1
+
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_GROUP_LANDSCAPE_POS_X:I
 
-    .line 58
+    .line 59
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->FULL_SCREEN_HEIGHT:I
 
     const v1, 0x7f0600b3
@@ -446,9 +458,17 @@
 
     sub-int/2addr v0, v1
 
+    invoke-static {v2}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    sub-int/2addr v0, v1
+
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_GROUP_PORTRAIT_POS_X:I
 
-    .line 59
+    .line 61
     const v0, 0x7f0600b1
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -459,7 +479,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_GORUP_POS_Y:I
 
-    .line 60
+    .line 62
     const v0, 0x7f0600b5
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -470,7 +490,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_GROUP_WIDTH:I
 
-    .line 61
+    .line 63
     const v0, 0x7f0600b6
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -481,7 +501,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_GROUP_HEIGHT:I
 
-    .line 62
+    .line 64
     const v0, 0x7f0600b8
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -492,7 +512,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_REC_TIME_WIDTH:I
 
-    .line 63
+    .line 65
     const v0, 0x7f0600b9
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -503,7 +523,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->REC_TIME_PADDING:I
 
-    .line 64
+    .line 66
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->INDICATOR_REC_TIME_WIDTH:I
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->REC_TIME_PADDING:I
@@ -512,8 +532,8 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->REC_ICON_POS_X:I
 
-    .line 67
-    const v0, 0x7f0600bb
+    .line 69
+    const v0, 0x7f0600bc
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -523,8 +543,8 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_WIDTH:I
 
-    .line 68
-    const v0, 0x7f0600bc
+    .line 70
+    const v0, 0x7f0600bd
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -534,7 +554,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_HEIGHT:I
 
-    .line 69
+    .line 71
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PREVIEW_NORMAL_WIDTH:I
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SIDE_MENU_WIDTH:I
@@ -555,7 +575,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_POS_X:I
 
-    .line 70
+    .line 72
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PREVIEW_NORMAL_HEIGHT:I
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_HEIGHT:I
@@ -568,7 +588,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_POS_Y:I
 
-    .line 73
+    .line 75
     const v0, 0x7f06000c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -579,7 +599,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SNAPBUTTON_WIDTH:I
 
-    .line 74
+    .line 76
     const v0, 0x7f06000d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -590,7 +610,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SNAPBUTTON_POS_Y:I
 
-    .line 77
+    .line 79
     const v0, 0x7f060012
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -601,7 +621,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->STOPBUTTON_POS_Y:I
 
-    .line 80
+    .line 82
     const v0, 0x7f06000e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -612,7 +632,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CAF_BUTTON_WIDTH:I
 
-    .line 81
+    .line 83
     const v0, 0x7f06000f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -623,7 +643,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CAF_BUTTON_HEIGHT:I
 
-    .line 82
+    .line 84
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PREVIEW_NORMAL_WIDTH:I
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SIDE_MENU_WIDTH:I
@@ -638,7 +658,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CAF_BUTTON_POS_X:I
 
-    .line 83
+    .line 85
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PREVIEW_NORMAL_HEIGHT:I
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_HEIGHT:I
@@ -673,7 +693,7 @@
 
     const/4 v6, 0x0
 
-    .line 147
+    .line 150
     move-object v0, p0
 
     move-object v1, p1
@@ -688,53 +708,53 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/sec/android/app/camera/MenuBase;-><init>(Lcom/sec/android/app/camera/AbstractCameraActivity;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;IZ)V
 
-    .line 100
+    .line 102
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
-    .line 123
+    .line 126
     const-string v0, "00:00:00"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mHMS:Ljava/lang/String;
 
-    .line 125
+    .line 128
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingTime:I
 
-    .line 126
+    .line 129
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingLimitTime:I
 
-    .line 127
+    .line 130
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgress:I
 
-    .line 128
+    .line 131
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isMMSMode:Z
 
-    .line 129
+    .line 132
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isEmailMode:Z
 
-    .line 130
+    .line 133
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopping:Z
 
-    .line 134
+    .line 137
     iput-wide v7, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeTime:J
 
-    .line 135
+    .line 138
     iput-wide v7, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mPauseTime:J
 
-    .line 137
+    .line 140
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu$1;-><init>(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingProgressHandler:Landroid/os/Handler;
 
-    .line 149
+    .line 152
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->setTouchHandled(Z)V
 
-    .line 150
+    .line 153
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -747,15 +767,15 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 151
+    .line 154
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, p2}, Lcom/sec/android/glview/TwGLViewGroup;->setTag(I)V
 
-    .line 152
+    .line 155
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->init()V
 
-    .line 153
+    .line 156
     return-void
 .end method
 
@@ -767,7 +787,7 @@
 
     const/4 v1, 0x1
 
-    .line 516
+    .line 550
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingTime:I
 
     if-lt v0, v1, :cond_0
@@ -776,29 +796,52 @@
 
     if-eqz v0, :cond_1
 
-    .line 534
+    .line 552
     :cond_0
-    :goto_0
-    return-void
+    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    .line 529
+    check-cast v0, Lcom/sec/android/app/camera/Camcorder;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->isCamcorderFastMotionEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    check-cast v0, Lcom/sec/android/app/camera/Camcorder;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getRecordingStopAvailable()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 563
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->stopTimer()V
 
-    .line 530
+    .line 564
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/Camcorder;->handleRecordingCommand(I)V
 
-    .line 531
+    .line 565
     iput v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
-    .line 533
+    .line 567
     iput-boolean v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopping:Z
 
-    goto :goto_0
+    .line 568
+    :cond_2
+    return-void
 .end method
 
 .method private hmsConvert(I)V
@@ -810,19 +853,19 @@
 
     const/4 v6, 0x0
 
-    .line 441
+    .line 469
     const v4, 0x1517f
 
     if-le p1, v4, :cond_0
 
-    .line 442
+    .line 470
     const p1, 0x1517f
 
-    .line 445
+    .line 473
     :cond_0
     div-int/lit16 v0, p1, 0xe10
 
-    .line 446
+    .line 474
     .local v0, hr:I
     div-int/lit8 v4, p1, 0x3c
 
@@ -830,57 +873,57 @@
 
     sub-int v1, v4, v5
 
-    .line 447
+    .line 475
     .local v1, min:I
     rem-int/lit8 v2, p1, 0x3c
 
-    .line 449
+    .line 477
     .local v2, sec:I
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 451
+    .line 479
     .local v3, str:Ljava/lang/StringBuilder;
     if-ge v0, v7, :cond_1
 
-    .line 452
+    .line 480
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 453
+    .line 481
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 458
+    .line 486
     :goto_0
     const-string v4, ":"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 460
+    .line 488
     if-ge v1, v7, :cond_2
 
-    .line 461
+    .line 489
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 462
+    .line 490
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 467
+    .line 495
     :goto_1
     const-string v4, ":"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 469
+    .line 497
     if-ge v2, v7, :cond_3
 
-    .line 470
+    .line 498
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 471
+    .line 499
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 476
+    .line 504
     :goto_2
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -888,22 +931,22 @@
 
     iput-object v4, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mHMS:Ljava/lang/String;
 
-    .line 477
+    .line 505
     return-void
 
-    .line 455
+    .line 483
     :cond_1
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 464
+    .line 492
     :cond_2
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 473
+    .line 501
     :cond_3
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -914,14 +957,14 @@
     .locals 12
 
     .prologue
-    .line 156
+    .line 159
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
     move-result-object v1
 
-    .line 158
+    .line 161
     .local v1, glContext:Lcom/sec/android/glview/TwGLContext;
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -945,7 +988,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 159
+    .line 162
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x0
@@ -970,7 +1013,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
-    .line 160
+    .line 163
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x3
@@ -979,7 +1022,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 161
+    .line 164
     new-instance v0, Lcom/sec/android/glview/TwGLImage;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->REC_ICON_POS_X:I
@@ -988,20 +1031,20 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f020219
+    const v4, 0x7f02021b
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
 
-    .line 162
+    .line 165
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setRotatable(Z)V
 
-    .line 163
+    .line 166
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-static {}, Lcom/sec/android/glview/TwGLUtil;->getAlphaOnAnimation()Landroid/view/animation/Animation;
@@ -1010,7 +1053,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 164
+    .line 167
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x1
@@ -1033,7 +1076,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 165
+    .line 168
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x2
@@ -1060,7 +1103,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 166
+    .line 169
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x3
@@ -1079,42 +1122,42 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 168
+    .line 171
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 169
+    .line 172
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
-    .line 171
+    .line 174
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 172
+    .line 175
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 174
+    .line 177
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 176
+    .line 179
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CUR_SIZE_GROUP_POS_X:I
@@ -1137,7 +1180,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 177
+    .line 180
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x0
@@ -1176,14 +1219,14 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
-    .line 178
+    .line 181
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setRotatable(Z)V
 
-    .line 180
+    .line 183
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x1
@@ -1210,7 +1253,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 181
+    .line 184
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x2
@@ -1233,7 +1276,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 182
+    .line 185
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x3
@@ -1268,14 +1311,14 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 184
+    .line 187
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 185
+    .line 188
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x3
@@ -1284,21 +1327,21 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 186
+    .line 189
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 187
+    .line 190
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 189
+    .line 192
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->FULL_SCREEN_WIDTH:I
@@ -1335,7 +1378,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 191
+    .line 194
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x0
@@ -1374,7 +1417,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
-    .line 192
+    .line 195
     new-instance v0, Lcom/sec/android/glview/TwGLProgressBar;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PROGRESSBAR_POS_X:I
@@ -1399,15 +1442,15 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02029a
+    const v6, 0x7f0202a0
 
-    const v7, 0x7f020299
+    const v7, 0x7f02029f
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/glview/TwGLProgressBar;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFII)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
-    .line 193
+    .line 196
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PROGRESS_MAX_SIZE_POS_X:I
@@ -1448,7 +1491,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
-    .line 194
+    .line 197
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->PROGRESS_MAX_SIZE_POS_X:I
@@ -1489,14 +1532,14 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
-    .line 196
+    .line 199
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setRotatable(Z)V
 
-    .line 197
+    .line 200
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x1
@@ -1521,7 +1564,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 198
+    .line 201
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x2
@@ -1546,7 +1589,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 199
+    .line 202
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x3
@@ -1583,14 +1626,14 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 200
+    .line 203
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 201
+    .line 204
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x3
@@ -1599,14 +1642,14 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 202
+    .line 205
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     const/16 v2, 0x64
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLProgressBar;->setMax(I)V
 
-    .line 203
+    .line 206
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x1
@@ -1615,7 +1658,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 204
+    .line 207
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x1
@@ -1624,53 +1667,42 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 205
+    .line 208
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 206
+    .line 209
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 207
+    .line 210
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 208
+    .line 211
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 209
+    .line 212
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 211
-    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-
-    check-cast v0, Lcom/sec/android/app/camera/Camcorder;
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->isPauseResumeMenuSupported()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 212
+    .line 215
     new-instance v2, Lcom/sec/android/glview/TwGLButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -1695,11 +1727,11 @@
 
     int-to-float v5, v0
 
-    const v6, 0x7f0201ca
+    const v6, 0x7f0201cc
 
-    const v7, 0x7f0201cb
+    const v7, 0x7f0201cd
 
-    const v8, 0x7f0201ca
+    const v8, 0x7f0201cc
 
     const/4 v9, 0x0
 
@@ -1707,33 +1739,33 @@
 
     iput-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 217
+    .line 220
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
 
-    .line 218
+    .line 221
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 219
+    .line 222
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     const/16 v2, 0x20
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setTag(I)V
 
-    .line 220
+    .line 223
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 222
+    .line 225
     new-instance v2, Lcom/sec/android/glview/TwGLButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -1770,33 +1802,33 @@
 
     iput-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 227
+    .line 230
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
 
-    .line 228
+    .line 231
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 229
+    .line 232
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     const/16 v2, 0x20
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setTag(I)V
 
-    .line 230
+    .line 233
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 232
+    .line 235
     new-instance v0, Lcom/sec/android/glview/TwGLImage;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -1821,70 +1853,133 @@
 
     int-to-float v4, v4
 
-    const v5, 0x7f0201c9
+    const v5, 0x7f0201cb
 
     invoke-direct {v0, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
-
-    .line 233
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setRotatable(Z)V
-
-    .line 234
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setCenterPivot(Z)V
-
-    .line 235
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setRotateAnimation(Z)V
 
     .line 236
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setBypassTouch(Z)V
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setRotatable(Z)V
 
     .line 237
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setCenterPivot(Z)V
+
+    .line 238
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setRotateAnimation(Z)V
+
+    .line 239
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setBypassTouch(Z)V
+
+    .line 240
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
-    .line 239
+    .line 242
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 240
+    .line 243
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 241
+    .line 244
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
+    .line 246
+    new-instance v0, Lcom/sec/android/glview/TwGLButton;
+
+    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->FULL_SCREEN_WIDTH:I
+
+    sget v3, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SIDE_MENU_WIDTH:I
+
+    sub-int/2addr v2, v3
+
+    sget v3, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SHUTTER_BUTTON_X:I
+
+    add-int/2addr v2, v3
+
+    int-to-float v2, v2
+
+    sget v3, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SHUTTER_BUTTON_Y:I
+
+    int-to-float v3, v3
+
+    const v4, 0x7f020023
+
+    const v5, 0x7f020024
+
+    const v6, 0x7f020027
+
+    const/4 v7, 0x0
+
+    invoke-direct/range {v0 .. v7}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFIIII)V
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    .line 250
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
+
+    .line 251
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
+
+    .line 252
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    const/16 v2, 0x20
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setTag(I)V
+
+    .line 253
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    const/4 v2, 0x4
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
     .line 254
-    :goto_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
+
+    .line 259
     new-instance v0, Lcom/sec/android/glview/TwGLButton;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->FULL_SCREEN_WIDTH:I
@@ -1905,11 +2000,11 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f02027d
+    const v4, 0x7f020283
 
-    const v5, 0x7f02027e
+    const v5, 0x7f020284
 
-    const v6, 0x7f02027e
+    const v6, 0x7f020284
 
     const/4 v7, 0x0
 
@@ -1917,47 +2012,47 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 256
+    .line 261
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
 
-    .line 257
+    .line 262
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 258
+    .line 263
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setRotatable(Z)V
 
-    .line 259
+    .line 264
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setCenterPivot(Z)V
 
-    .line 260
+    .line 265
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setRotateAnimation(Z)V
 
-    .line 261
+    .line 266
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 265
+    .line 270
     new-instance v0, Lcom/sec/android/glview/TwGLButton;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->CAF_BUTTON_POS_X:I
@@ -1980,26 +2075,26 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 267
+    .line 272
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
 
-    .line 268
+    .line 273
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 269
+    .line 274
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setRotatable(Z)V
 
-    .line 270
+    .line 275
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
@@ -2032,7 +2127,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLButton;->setLeftTop(IFF)V
 
-    .line 271
+    .line 276
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x2
@@ -2061,7 +2156,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLButton;->setLeftTop(IFF)V
 
-    .line 272
+    .line 277
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x3
@@ -2098,25 +2193,14 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLButton;->setLeftTop(IFF)V
 
-    .line 273
+    .line 278
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 277
-    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-
-    check-cast v0, Lcom/sec/android/app/camera/Camcorder;
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->isPauseResumeMenuSupported()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 278
+    .line 283
     new-instance v0, Lcom/sec/android/glview/TwGLButton;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->FULL_SCREEN_WIDTH:I
@@ -2137,11 +2221,11 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f020268
+    const v4, 0x7f02026e
 
-    const v5, 0x7f020269
+    const v5, 0x7f02026f
 
-    const v6, 0x7f020268
+    const v6, 0x7f02026e
 
     const/4 v7, 0x0
 
@@ -2149,123 +2233,62 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 280
+    .line 285
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
 
-    .line 281
+    .line 286
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 282
+    .line 287
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setRotatable(Z)V
 
-    .line 283
+    .line 288
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setCenterPivot(Z)V
 
-    .line 284
+    .line 289
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setRotateAnimation(Z)V
 
-    .line 285
+    .line 290
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+
+    const/4 v2, 0x4
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 291
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 288
-    :cond_0
+    .line 294
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 289
+    .line 295
     return-void
-
-    .line 243
-    :cond_1
-    new-instance v0, Lcom/sec/android/glview/TwGLButton;
-
-    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->FULL_SCREEN_WIDTH:I
-
-    sget v3, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SIDE_MENU_WIDTH:I
-
-    sub-int/2addr v2, v3
-
-    sget v3, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SHUTTER_BUTTON_X:I
-
-    add-int/2addr v2, v3
-
-    int-to-float v2, v2
-
-    sget v3, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->SHUTTER_BUTTON_Y:I
-
-    int-to-float v3, v3
-
-    const v4, 0x7f020023
-
-    const v5, 0x7f020024
-
-    const v6, 0x7f020027
-
-    const/4 v7, 0x0
-
-    invoke-direct/range {v0 .. v7}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFIIII)V
-
-    iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    .line 245
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setMute(Z)V
-
-    .line 246
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
-
-    .line 247
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    const/16 v2, 0x20
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setTag(I)V
-
-    .line 248
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    const/4 v2, 0x4
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
-
-    .line 249
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
-
-    goto/16 :goto_0
 .end method
 
 .method private isNotElapsed1SEC()Z
@@ -2278,12 +2301,12 @@
 
     const/4 v1, 0x0
 
-    .line 586
+    .line 620
     iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
     if-ne v2, v0, :cond_2
 
-    .line 587
+    .line 621
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v2
@@ -2296,7 +2319,7 @@
 
     if-gez v2, :cond_1
 
-    .line 591
+    .line 625
     :cond_0
     :goto_0
     return v0
@@ -2304,10 +2327,10 @@
     :cond_1
     move v0, v1
 
-    .line 587
+    .line 621
     goto :goto_0
 
-    .line 588
+    .line 622
     :cond_2
     iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
@@ -2315,7 +2338,7 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 589
+    .line 623
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v2
@@ -2335,7 +2358,7 @@
     :cond_3
     move v0, v1
 
-    .line 591
+    .line 625
     goto :goto_0
 .end method
 
@@ -2347,115 +2370,150 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 293
+    .line 299
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_0
 
-    .line 294
+    .line 300
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 295
+    .line 301
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 298
+    .line 304
     :cond_0
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_1
 
-    .line 299
-    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
+    .line 305
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
 
-    .line 302
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
+
+    .line 306
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    .line 308
     :cond_1
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     if-eqz v0, :cond_2
 
-    .line 303
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
+    .line 309
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
-
-    .line 304
-    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
-
-    .line 307
+    .line 312
     :cond_2
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_3
 
-    .line 308
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
-
-    .line 309
-    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
-
-    .line 312
-    :cond_3
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
-
-    if-eqz v0, :cond_4
-
     .line 313
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
     .line 314
-    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     .line 317
-    :cond_4
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+    :cond_3
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     .line 318
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
     .line 319
-    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     .line 322
+    :cond_4
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+
+    if-eqz v0, :cond_5
+
+    .line 323
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
+
+    .line 324
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+
+    .line 327
     :cond_5
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_6
 
-    .line 323
+    .line 328
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
+
+    .line 329
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+
+    .line 332
+    :cond_6
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
+
+    if-eqz v0, :cond_7
+
+    .line 333
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0}, Lcom/sec/android/glview/TwGLViewGroup;->clear()V
 
-    .line 324
+    .line 334
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 327
-    :cond_6
+    .line 337
+    :cond_7
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
+
+    .line 338
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
+
+    .line 339
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
+
+    .line 340
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
+
+    .line 341
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
+
+    .line 342
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
+
+    .line 343
+    iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
+
+    .line 345
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 328
+    .line 346
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 329
+    .line 347
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 330
+    .line 348
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingProgressHandler:Landroid/os/Handler;
 
-    .line 332
+    .line 350
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->clear()V
 
-    .line 333
+    .line 351
     return-void
 .end method
 
@@ -2463,7 +2521,7 @@
     .locals 1
 
     .prologue
-    .line 568
+    .line 602
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
     return v0
@@ -2473,7 +2531,7 @@
     .locals 1
 
     .prologue
-    .line 491
+    .line 525
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingTime:I
 
     return v0
@@ -2483,7 +2541,7 @@
     .locals 2
 
     .prologue
-    .line 581
+    .line 615
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_0
@@ -2496,14 +2554,14 @@
 
     if-nez v0, :cond_0
 
-    .line 582
+    .line 616
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 583
+    .line 617
     :cond_0
     return-void
 .end method
@@ -2523,7 +2581,7 @@
 
     const/4 v1, 0x1
 
-    .line 597
+    .line 631
     invoke-virtual {p1}, Lcom/sec/android/glview/TwGLView;->getTag()I
 
     move-result v0
@@ -2532,7 +2590,7 @@
 
     if-ne v0, v3, :cond_6
 
-    .line 598
+    .line 632
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
@@ -2543,19 +2601,19 @@
 
     if-eqz v0, :cond_5
 
-    .line 599
+    .line 633
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v0, :cond_2
 
-    .line 600
+    .line 634
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v3
 
     iput-wide v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeTime:J
 
-    .line 601
+    .line 635
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
     if-ne v0, v1, :cond_0
@@ -2568,11 +2626,11 @@
 
     move v0, v1
 
-    .line 641
+    .line 675
     :goto_0
     return v0
 
-    .line 604
+    .line 638
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2580,20 +2638,20 @@
 
     invoke-virtual {v0, v6}, Lcom/sec/android/app/camera/Camcorder;->handleRecordingCommand(I)V
 
-    .line 605
+    .line 639
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
-    .line 606
+    .line 640
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v5}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 607
+    .line 641
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 608
+    .line 642
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
@@ -2602,23 +2660,23 @@
     :goto_1
     move v0, v1
 
-    .line 626
+    .line 660
     goto :goto_0
 
-    .line 609
+    .line 643
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v0, :cond_1
 
-    .line 610
+    .line 644
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v3
 
     iput-wide v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mPauseTime:J
 
-    .line 611
+    .line 645
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
     if-ne v0, v6, :cond_3
@@ -2631,10 +2689,10 @@
 
     move v0, v1
 
-    .line 612
+    .line 646
     goto :goto_0
 
-    .line 614
+    .line 648
     :cond_3
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingTime:I
 
@@ -2642,10 +2700,10 @@
 
     move v0, v1
 
-    .line 615
+    .line 649
     goto :goto_0
 
-    .line 617
+    .line 651
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2653,62 +2711,62 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camcorder;->handleRecordingCommand(I)V
 
-    .line 618
+    .line 652
     iput v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
-    .line 619
+    .line 653
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 620
+    .line 654
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v5}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 621
+    .line 655
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v5}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 624
+    .line 658
     :cond_5
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->doStop()V
 
     goto :goto_1
 
-    .line 627
+    .line 661
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v0, :cond_7
 
-    .line 628
+    .line 662
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->setContinuousAF()V
 
-    .line 629
+    .line 663
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v5}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
     move v0, v1
 
-    .line 630
+    .line 664
     goto :goto_0
 
-    .line 631
+    .line 665
     :cond_7
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v0, :cond_9
 
-    .line 632
+    .line 666
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getRemainStorage()I
@@ -2719,10 +2777,10 @@
 
     move v0, v1
 
-    .line 633
+    .line 667
     goto :goto_0
 
-    .line 635
+    .line 669
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2732,27 +2790,27 @@
 
     move v0, v1
 
-    .line 636
+    .line 670
     goto :goto_0
 
-    .line 637
+    .line 671
     :cond_9
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v0, :cond_a
 
-    .line 638
+    .line 672
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->doStop()V
 
     move v0, v1
 
-    .line 639
+    .line 673
     goto/16 :goto_0
 
     :cond_a
     move v0, v2
 
-    .line 641
+    .line 675
     goto/16 :goto_0
 .end method
 
@@ -2760,25 +2818,50 @@
     .locals 2
 
     .prologue
-    .line 425
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
-
     const/4 v1, 0x4
+
+    .line 447
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 426
+    .line 448
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 449
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 450
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
+
+    .line 451
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 452
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 454
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->showSideMenuItems()V
 
-    .line 427
+    .line 455
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->stopTimer()V
 
-    .line 429
+    .line 457
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->onHide()V
 
-    .line 430
+    .line 458
     return-void
 .end method
 
@@ -2786,10 +2869,10 @@
     .locals 0
 
     .prologue
-    .line 433
+    .line 461
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->onHide()V
 
-    .line 434
+    .line 462
     return-void
 .end method
 
@@ -2803,7 +2886,7 @@
 
     const/4 v1, 0x0
 
-    .line 645
+    .line 679
     const/16 v2, 0x18
 
     if-eq p1, v2, :cond_0
@@ -2815,18 +2898,18 @@
     :cond_0
     move v0, v1
 
-    .line 659
+    .line 693
     :cond_1
     :goto_0
     return v0
 
-    .line 649
+    .line 683
     :cond_2
     const/4 v2, 0x4
 
     if-eq p1, v2, :cond_1
 
-    .line 653
+    .line 687
     const/16 v2, 0x1b
 
     if-eq p1, v2, :cond_1
@@ -2841,7 +2924,7 @@
 
     move v0, v1
 
-    .line 659
+    .line 693
     goto :goto_0
 .end method
 
@@ -2855,7 +2938,7 @@
 
     const/4 v0, 0x1
 
-    .line 663
+    .line 697
     const/16 v2, 0x18
 
     if-eq p1, v2, :cond_0
@@ -2867,28 +2950,28 @@
     :cond_0
     move v0, v1
 
-    .line 683
+    .line 717
     :cond_1
     :goto_0
     return v0
 
-    .line 667
+    .line 701
     :cond_2
     const/4 v2, 0x4
 
     if-ne p1, v2, :cond_3
 
-    .line 668
+    .line 702
     iget-boolean v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopping:Z
 
     if-nez v1, :cond_1
 
-    .line 672
+    .line 706
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->doStop()V
 
     goto :goto_0
 
-    .line 676
+    .line 710
     :cond_3
     const/16 v2, 0x1b
 
@@ -2902,7 +2985,7 @@
 
     if-ne p1, v2, :cond_5
 
-    .line 679
+    .line 713
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->doStop()V
 
@@ -2911,7 +2994,7 @@
     :cond_5
     move v0, v1
 
-    .line 683
+    .line 717
     goto :goto_0
 .end method
 
@@ -2919,10 +3002,10 @@
     .locals 0
 
     .prologue
-    .line 437
+    .line 465
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->onHide()V
 
-    .line 438
+    .line 466
     return-void
 .end method
 
@@ -2936,17 +3019,12 @@
 
     const/4 v6, 0x0
 
-    .line 336
+    .line 354
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 337
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
-
-    .line 338
+    .line 355
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
@@ -2955,25 +3033,30 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_5
 
-    .line 339
+    .line 356
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 357
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButtonImage:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
-    .line 340
+    .line 358
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 341
+    .line 359
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mResumeButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 344
-    :cond_0
+    .line 366
+    :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -2984,15 +3067,15 @@
 
     move-result v0
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_6
 
-    .line 345
+    .line 367
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->hideSideMenuItems()V
 
-    .line 350
-    :goto_0
+    .line 372
+    :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -3003,7 +3086,7 @@
 
     move-result v0
 
-    if-eq v0, v8, :cond_1
+    if-eq v0, v8, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -3015,16 +3098,16 @@
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
-    .line 351
-    :cond_1
+    .line 373
+    :cond_0
     iput-boolean v8, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isMMSMode:Z
 
-    .line 352
+    .line 374
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isEmailMode:Z
 
-    .line 353
+    .line 375
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3061,98 +3144,83 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 354
+    .line 376
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLProgressBar;->setVisibility(I)V
 
-    .line 355
+    .line 377
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 356
+    .line 378
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 357
+    .line 379
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 358
+    .line 380
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 359
+    .line 381
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 360
+    .line 382
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 384
-    :goto_1
+    .line 406
+    :goto_2
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_1
 
-    .line 394
+    .line 408
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getCamcorderResolution()I
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->isRecordingSpeedControlEnabled()Z
 
     move-result v0
 
-    const/16 v1, 0x13
+    if-eqz v0, :cond_9
 
-    if-eq v0, v1, :cond_2
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getCamcorderAntishake()I
-
-    move-result v0
-
-    if-ne v0, v8, :cond_a
-
-    .line 396
-    :cond_2
+    .line 409
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 402
-    :cond_3
-    :goto_2
+    .line 424
+    :cond_1
+    :goto_3
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
-    .line 403
+    .line 425
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 405
+    .line 427
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_2
 
-    .line 406
+    .line 428
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
@@ -3161,62 +3229,70 @@
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
-    .line 407
+    .line 429
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 413
-    :cond_4
-    :goto_3
+    .line 435
+    :cond_2
+    :goto_4
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopping:Z
 
-    .line 415
+    .line 437
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgress:I
 
-    if-lez v0, :cond_5
+    if-lez v0, :cond_3
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isMMSMode:Z
 
-    if-nez v0, :cond_6
+    if-nez v0, :cond_4
 
-    .line 416
-    :cond_5
+    .line 438
+    :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLProgressBar;->setProgress(I)V
 
-    .line 417
+    .line 439
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
     const-string v1, "0K"
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 419
-    :cond_6
+    .line 441
+    :cond_4
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingLimitTime:I
 
-    .line 421
+    .line 443
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->onShow()V
 
-    .line 422
+    .line 444
     return-void
 
-    .line 347
-    :cond_7
+    .line 363
+    :cond_5
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mStopPauseButton_NoPauseResume:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    goto/16 :goto_0
+
+    .line 369
+    :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->showShutterButton()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 361
-    :cond_8
+    .line 383
+    :cond_7
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -3227,15 +3303,15 @@
 
     move-result v0
 
-    if-ne v0, v7, :cond_9
+    if-ne v0, v7, :cond_8
 
-    .line 362
+    .line 384
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isMMSMode:Z
 
-    .line 363
+    .line 385
     iput-boolean v8, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isEmailMode:Z
 
-    .line 364
+    .line 386
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3272,121 +3348,157 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 365
+    .line 387
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLProgressBar;->setVisibility(I)V
 
-    .line 366
+    .line 388
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 367
+    .line 389
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 368
+    .line 390
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 369
+    .line 391
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 370
+    .line 392
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 371
+    .line 393
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    .line 373
-    :cond_9
+    .line 395
+    :cond_8
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isMMSMode:Z
 
-    .line 374
+    .line 396
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isEmailMode:Z
 
-    .line 375
+    .line 397
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLProgressBar;->setVisibility(I)V
 
-    .line 376
+    .line 398
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBarGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 377
+    .line 399
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 378
+    .line 400
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mMMSMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 379
+    .line 401
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mEmailMaxRecSize:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 380
+    .line 402
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 381
+    .line 403
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    goto/16 :goto_1
-
-    .line 398
-    :cond_a
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
-
     goto/16 :goto_2
 
-    .line 409
-    :cond_b
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+    .line 410
+    :cond_9
+    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getCamcorderResolution()I
+
+    move-result v0
+
+    const/16 v1, 0x13
+
+    if-eq v0, v1, :cond_a
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getCamcorderAntishake()I
+
+    move-result v0
+
+    if-ne v0, v8, :cond_b
+
+    .line 412
+    :cond_a
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
     goto/16 :goto_3
+
+    .line 414
+    :cond_b
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mSnapShotButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    goto/16 :goto_3
+
+    .line 431
+    :cond_c
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v7}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    goto/16 :goto_4
 .end method
 
 .method public pauseTimer()V
     .locals 2
 
     .prologue
-    .line 563
+    .line 597
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->restartInactivityTimer()V
 
-    .line 564
+    .line 598
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingProgressHandler:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 565
+    .line 599
     return-void
 .end method
 
@@ -3395,10 +3507,10 @@
     .parameter "state"
 
     .prologue
-    .line 572
+    .line 606
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
-    .line 573
+    .line 607
     return-void
 .end method
 
@@ -3406,7 +3518,7 @@
     .locals 2
 
     .prologue
-    .line 576
+    .line 610
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_0
@@ -3421,14 +3533,14 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 577
+    .line 611
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCAFButton:Lcom/sec/android/glview/TwGLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 578
+    .line 612
     :cond_0
     return-void
 .end method
@@ -3437,24 +3549,24 @@
     .locals 3
 
     .prologue
-    .line 537
+    .line 571
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->stopInactivityTimer()V
 
-    .line 538
+    .line 572
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
-    .line 540
+    .line 574
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     const-string v1, "00:00:00"
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 541
+    .line 575
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
@@ -3465,7 +3577,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingLimitTime:I
 
-    .line 542
+    .line 576
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingLimitTime:I
 
     if-lez v0, :cond_0
@@ -3476,12 +3588,12 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 543
+    .line 577
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->hmsConvert(I)V
 
-    .line 544
+    .line 578
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3518,11 +3630,11 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 547
+    .line 581
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->stepSecond()V
 
-    .line 548
+    .line 582
     return-void
 .end method
 
@@ -3530,7 +3642,7 @@
     .locals 5
 
     .prologue
-    .line 551
+    .line 585
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v1, Lcom/sec/android/app/camera/Camcorder;
@@ -3539,7 +3651,7 @@
 
     move-result v0
 
-    .line 553
+    .line 587
     .local v0, drift:I
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingProgressHandler:Landroid/os/Handler;
 
@@ -3551,7 +3663,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 554
+    .line 588
     return-void
 .end method
 
@@ -3559,24 +3671,24 @@
     .locals 2
 
     .prologue
-    .line 557
+    .line 591
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingProgressHandler:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 558
+    .line 592
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingTime:I
 
-    .line 559
+    .line 593
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->restartInactivityTimer()V
 
-    .line 560
+    .line 594
     return-void
 .end method
 
@@ -3587,7 +3699,7 @@
     .prologue
     const-wide/16 v6, 0x400
 
-    .line 495
+    .line 529
     iget-boolean v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->isMMSMode:Z
 
     if-nez v2, :cond_0
@@ -3596,7 +3708,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 496
+    .line 530
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -3608,7 +3720,7 @@
 
     move-result-wide v0
 
-    .line 497
+    .line 531
     .local v0, mMaxSize:J
     const-wide/16 v2, 0x64
 
@@ -3620,22 +3732,22 @@
 
     iput v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgress:I
 
-    .line 498
+    .line 532
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
     iget v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mProgress:I
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLProgressBar;->setProgress(I)V
 
-    .line 500
+    .line 534
     cmp-long v2, p1, v0
 
     if-ltz v2, :cond_1
 
-    .line 501
+    .line 535
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->doStop()V
 
-    .line 503
+    .line 537
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mCurRecSize:Lcom/sec/android/glview/TwGLText;
 
@@ -3661,12 +3773,12 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 513
+    .line 547
     .end local v0           #mMaxSize:J
     :goto_0
     return-void
 
-    .line 504
+    .line 538
     :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -3696,7 +3808,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 505
+    .line 539
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -3751,7 +3863,7 @@
 
     goto :goto_0
 
-    .line 507
+    .line 541
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -3763,12 +3875,12 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 508
+    .line 542
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->doStop()V
 
     goto :goto_0
 
-    .line 511
+    .line 545
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecSizeText:Lcom/sec/android/glview/TwGLText;
 
@@ -3832,13 +3944,13 @@
     .parameter "second"
 
     .prologue
-    .line 480
+    .line 508
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingTime:I
 
-    .line 481
+    .line 509
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->hmsConvert(I)V
 
-    .line 483
+    .line 511
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingLimitTime:I
 
     if-lez v0, :cond_0
@@ -3849,7 +3961,7 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 484
+    .line 512
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3886,11 +3998,28 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 488
+    .line 517
     :goto_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
+
+    invoke-virtual {v0}, Lcom/sec/android/glview/TwGLImage;->getVisibility()I
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 518
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
+
+    .line 522
+    :goto_1
     return-void
 
-    .line 486
+    .line 514
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecTime:Lcom/sec/android/glview/TwGLText;
 
@@ -3899,4 +4028,14 @@
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
     goto :goto_0
+
+    .line 520
+    :cond_1
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecIcon:Lcom/sec/android/glview/TwGLImage;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
+
+    goto :goto_1
 .end method

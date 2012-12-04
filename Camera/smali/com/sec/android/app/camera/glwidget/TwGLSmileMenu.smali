@@ -130,7 +130,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSmileMenu;->HELP_TEXT_SIZE:F
 
     .line 37
-    const v0, 0x7f060200
+    const v0, 0x7f060230
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -193,7 +193,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSmileMenu;->HELP_TEXT_Y:I
 
     .line 42
-    const v0, 0x7f0601fe
+    const v0, 0x7f06022e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -204,7 +204,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSmileMenu;->SMILESHOT_BLINK_IMAGE_X:I
 
     .line 43
-    const v0, 0x7f0601ff
+    const v0, 0x7f06022f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -237,7 +237,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSmileMenu;->SMILESHOT_BLINK_IMAGE_HEIGHT:I
 
     .line 47
-    const v0, 0x7f060201
+    const v0, 0x7f060231
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -402,7 +402,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f02008a
+    const v7, 0x7f02008b
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFZI)V
 

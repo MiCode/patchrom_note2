@@ -190,13 +190,8 @@
 
     goto :goto_0
 
-    .line 64
-    :cond_1
-    const/16 v4, 0xbd7
-
-    if-eq v1, v4, :cond_0
-
     .line 92
+    :cond_1
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
     move-result-object v4
@@ -233,13 +228,8 @@
 
     if-eq v1, v4, :cond_0
 
-    .line 101
-    :cond_3
-    const/16 v4, 0xbdc
-
-    if-eq v1, v4, :cond_0
-
     .line 105
+    :cond_3
     new-instance v0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
     const/4 v4, 0x5

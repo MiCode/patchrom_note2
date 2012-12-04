@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 6411
+    .line 6514
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,20 +43,27 @@
     .parameter "which"
 
     .prologue
-    .line 6416
+    .line 6519
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const/4 v1, 0x7
+    const-string v1, "/sdcard/Android/data/com.sec.android.app.camera/user_pic.b"
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->dismissDialog(I)V
+    iput-object v1, v0, Lcom/sec/android/app/camera/Camera;->mPhotoPath:Ljava/lang/String;
 
-    .line 6417
+    .line 6520
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Lcom/sec/android/app/camera/Camera;->mNameChanged:Z
+
+    .line 6521
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/4 v1, 0x6
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->removeDialog(I)V
 
-    .line 6418
+    .line 6522
     return-void
 .end method

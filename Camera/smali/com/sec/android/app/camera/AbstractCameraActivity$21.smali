@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1653
+    .line 1685
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$21;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,23 +45,23 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1658
+    .line 1690
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$21;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->removeDialog(I)V
 
-    .line 1659
+    .line 1691
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$21;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iput-boolean v2, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mShowWifiDialog:Z
 
-    .line 1660
+    .line 1692
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$21;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iput-boolean v2, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mIsFromSNS:Z
 
-    .line 1661
+    .line 1693
     return-void
 .end method

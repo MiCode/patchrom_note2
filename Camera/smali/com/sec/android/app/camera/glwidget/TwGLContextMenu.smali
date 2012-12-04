@@ -80,7 +80,7 @@
     const/16 v1, 0xff
 
     .line 31
-    const v0, 0x7f060115
+    const v0, 0x7f060125
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -91,7 +91,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_LANDSCAPE_POS_X:I
 
     .line 32
-    const v0, 0x7f060116
+    const v0, 0x7f060126
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -102,7 +102,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_LANDSCAPE_POS_Y:I
 
     .line 33
-    const v0, 0x7f060117
+    const v0, 0x7f060127
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -113,7 +113,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_LANDSCAPE_WIDTH:I
 
     .line 34
-    const v0, 0x7f060118
+    const v0, 0x7f060128
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -124,7 +124,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_LANDSCAPE_HEIGHT:I
 
     .line 35
-    const v0, 0x7f060119
+    const v0, 0x7f060129
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -135,7 +135,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_PORTRAIT_POS_X:I
 
     .line 36
-    const v0, 0x7f06011a
+    const v0, 0x7f06012a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_PORTRAIT_POS_Y:I
 
     .line 37
-    const v0, 0x7f06011b
+    const v0, 0x7f06012b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -157,7 +157,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_PORTRAIT_WIDTH:I
 
     .line 38
-    const v0, 0x7f06011c
+    const v0, 0x7f06012c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -168,7 +168,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_PORTRAIT_HEIGHT:I
 
     .line 39
-    const v0, 0x7f06011d
+    const v0, 0x7f06012d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_BUTTON_POS_X:I
 
     .line 40
-    const v0, 0x7f06011e
+    const v0, 0x7f06012e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_BUTTON_POS_Y:I
 
     .line 41
-    const v0, 0x7f060120
+    const v0, 0x7f060130
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_TEXT_WIDTH:I
 
     .line 42
-    const v0, 0x7f060121
+    const v0, 0x7f060131
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -228,7 +228,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_FONT_COLOR:I
 
     .line 45
-    const v0, 0x7f060122
+    const v0, 0x7f060132
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -239,7 +239,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_LANDSCAPE_BUTTON_RESOURCE_POS_X:I
 
     .line 46
-    const v0, 0x7f060123
+    const v0, 0x7f060133
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -250,7 +250,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_LANDSCAPE_BUTTON_RESOURCE_POS_Y:I
 
     .line 47
-    const v0, 0x7f060124
+    const v0, 0x7f060134
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -261,7 +261,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_LANDSCAPE_TEXT_POS_X:I
 
     .line 48
-    const v0, 0x7f060125
+    const v0, 0x7f060135
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -272,7 +272,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_LANDSCAPE_TEXT_POS_Y:I
 
     .line 49
-    const v0, 0x7f060126
+    const v0, 0x7f060136
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -283,7 +283,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_PORTRAIT_BUTTON_RESOURCE_POS_X:I
 
     .line 50
-    const v0, 0x7f060127
+    const v0, 0x7f060137
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -294,7 +294,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_PORTRAIT_BUTTON_RESOURCE_POS_Y:I
 
     .line 51
-    const v0, 0x7f060128
+    const v0, 0x7f060138
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -305,7 +305,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->MENU_EDIT_PORTRAIT_TEXT_POS_X:I
 
     .line 52
-    const v0, 0x7f060129
+    const v0, 0x7f060139
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -439,7 +439,7 @@
 
     iget v9, v11, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    const v10, 0x7f020297
+    const v10, 0x7f02029d
 
     invoke-direct/range {v1 .. v10}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFIIII)V
 
@@ -574,7 +574,7 @@
 
     iget v9, v11, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    const v10, 0x7f020297
+    const v10, 0x7f02029d
 
     invoke-direct/range {v1 .. v10}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFIIII)V
 
@@ -690,7 +690,7 @@
     .line 100
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->mMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const v2, 0x7f020298
+    const v2, 0x7f02029e
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setNinePatchBackground(I)Z
 

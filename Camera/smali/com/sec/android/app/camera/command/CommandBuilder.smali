@@ -80,7 +80,7 @@
 
     .line 47
     .local v4, res:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_13
 
     .line 48
     const/4 v0, 0x0
@@ -371,8 +371,52 @@
 
     goto/16 :goto_0
 
-    .line 90
+    .line 83
     :cond_10
+    const/16 v1, 0xbb9
+
+    if-ne p0, v1, :cond_11
+
+    .line 84
+    new-instance v0, Lcom/sec/android/app/camera/command/LaunchRecordingModeMenuCommand;
+
+    .end local v0           #command:Lcom/sec/android/app/camera/command/MenuCommand;
+    invoke-direct {v0, p1, p2, p3, v4}, Lcom/sec/android/app/camera/command/LaunchRecordingModeMenuCommand;-><init>(Lcom/sec/android/app/camera/AbstractCameraActivity;Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
+
+    .restart local v0       #command:Lcom/sec/android/app/camera/command/MenuCommand;
+    move-object v1, v0
+
+    .line 85
+    check-cast v1, Lcom/sec/android/app/camera/command/LaunchRecordingModeMenuCommand;
+
+    invoke-virtual {v1, p4}, Lcom/sec/android/app/camera/command/LaunchRecordingModeMenuCommand;->setZOrder(I)V
+
+    goto/16 :goto_0
+
+    .line 86
+    :cond_11
+    const/4 v1, 0x2
+
+    if-ne p0, v1, :cond_12
+
+    .line 87
+    new-instance v0, Lcom/sec/android/app/camera/command/LaunchSceneModeMenuCommand;
+
+    .end local v0           #command:Lcom/sec/android/app/camera/command/MenuCommand;
+    invoke-direct {v0, p1, p2, p3, v4}, Lcom/sec/android/app/camera/command/LaunchSceneModeMenuCommand;-><init>(Lcom/sec/android/app/camera/AbstractCameraActivity;Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
+
+    .restart local v0       #command:Lcom/sec/android/app/camera/command/MenuCommand;
+    move-object v1, v0
+
+    .line 88
+    check-cast v1, Lcom/sec/android/app/camera/command/LaunchSceneModeMenuCommand;
+
+    invoke-virtual {v1, p4}, Lcom/sec/android/app/camera/command/LaunchSceneModeMenuCommand;->setZOrder(I)V
+
+    goto/16 :goto_0
+
+    .line 90
+    :cond_12
     new-instance v0, Lcom/sec/android/app/camera/command/LaunchListTypeMenuCommand;
 
     .end local v0           #command:Lcom/sec/android/app/camera/command/MenuCommand;
@@ -390,7 +434,7 @@
 
     .line 96
     .end local v0           #command:Lcom/sec/android/app/camera/command/MenuCommand;
-    :cond_11
+    :cond_13
     sparse-switch p0, :sswitch_data_0
 
     goto/16 :goto_0
@@ -743,8 +787,6 @@
     goto/16 :goto_0
 
     .line 96
-    nop
-
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0

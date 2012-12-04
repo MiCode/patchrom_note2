@@ -3,12 +3,12 @@
 .source "Camcorder.java"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camcorder;->showSnapshotLimitationDialog()V
+    value = Lcom/sec/android/app/camera/Camcorder;->startPostRecordingSnapAnimation(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 4064
+    .line 3960
     iput-object p1, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,60 +37,77 @@
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 4
-    .parameter "arg0"
-    .parameter "arg1"
+.method public onProgress(I)V
+    .locals 2
+    .parameter "step"
 
     .prologue
-    const/4 v1, 0x0
+    .line 3963
+    packed-switch p1, :pswitch_data_0
 
-    .line 4066
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
-
-    const-string v3, "audio"
-
-    invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/Camcorder;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/media/AudioManager;
-
-    #setter for: Lcom/sec/android/app/camera/Camcorder;->mAudioManager:Landroid/media/AudioManager;
-    invoke-static {v2, v0}, Lcom/sec/android/app/camera/Camcorder;->access$2602(Lcom/sec/android/app/camera/Camcorder;Landroid/media/AudioManager;)Landroid/media/AudioManager;
-
-    .line 4067
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
-
-    #getter for: Lcom/sec/android/app/camera/Camcorder;->mAudioManager:Landroid/media/AudioManager;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camcorder;->access$2600(Lcom/sec/android/app/camera/Camcorder;)Landroid/media/AudioManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
-
-    .line 4068
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
-
-    move-result-object v2
-
-    if-eqz p2, :cond_0
-
-    const/4 v0, 0x1
-
+    .line 3974
+    :cond_0
     :goto_0
-    invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/CameraSettings;->setSnapshotLimitationDialog(I)V
-
-    .line 4069
     return-void
 
-    :cond_0
-    move v0, v1
+    .line 3965
+    :pswitch_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
-    .line 4068
+    #getter for: Lcom/sec/android/app/camera/Camcorder;->mPostRecordingSnapImage:Lcom/sec/android/glview/TwGLAniViewGroup;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camcorder;->access$2600(Lcom/sec/android/app/camera/Camcorder;)Lcom/sec/android/glview/TwGLAniViewGroup;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 3966
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
+
+    iget-object v0, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mMenuRoot:Lcom/sec/android/glview/TwGLViewGroup;
+
+    if-eqz v0, :cond_1
+
+    .line 3967
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
+
+    iget-object v0, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mMenuRoot:Lcom/sec/android/glview/TwGLViewGroup;
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
+
+    #getter for: Lcom/sec/android/app/camera/Camcorder;->mPostRecordingSnapImage:Lcom/sec/android/glview/TwGLAniViewGroup;
+    invoke-static {v1}, Lcom/sec/android/app/camera/Camcorder;->access$2600(Lcom/sec/android/app/camera/Camcorder;)Lcom/sec/android/glview/TwGLAniViewGroup;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->removeView(Lcom/sec/android/glview/TwGLView;)V
+
+    .line 3969
+    :cond_1
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
+
+    #getter for: Lcom/sec/android/app/camera/Camcorder;->mPostRecordingSnapImage:Lcom/sec/android/glview/TwGLAniViewGroup;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camcorder;->access$2600(Lcom/sec/android/app/camera/Camcorder;)Lcom/sec/android/glview/TwGLAniViewGroup;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/glview/TwGLAniViewGroup;->clear()V
+
+    .line 3970
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$12;->this$0:Lcom/sec/android/app/camera/Camcorder;
+
+    const/4 v1, 0x0
+
+    #setter for: Lcom/sec/android/app/camera/Camcorder;->mPostRecordingSnapImage:Lcom/sec/android/glview/TwGLAniViewGroup;
+    invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camcorder;->access$2602(Lcom/sec/android/app/camera/Camcorder;Lcom/sec/android/glview/TwGLAniViewGroup;)Lcom/sec/android/glview/TwGLAniViewGroup;
+
     goto :goto_0
+
+    .line 3963
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0xffff
+        :pswitch_0
+    .end packed-switch
 .end method

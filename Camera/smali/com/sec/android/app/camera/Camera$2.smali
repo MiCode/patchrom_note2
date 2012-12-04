@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 669
+    .line 671
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 672
+    .line 674
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 673
+    .line 675
     .local v0, action:Ljava/lang/String;
     const-string v7, "Camera"
 
@@ -75,11 +75,11 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 674
+    .line 676
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mIsDestroying:Z
-    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$500(Lcom/sec/android/app/camera/Camera;)Z
+    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v7
 
@@ -87,19 +87,19 @@
 
     if-ne v7, v8, :cond_1
 
-    .line 675
+    .line 677
     const-string v7, "Camera"
 
     const-string v8, "onReceive - camera is destroying"
 
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 833
+    .line 835
     :cond_0
     :goto_0
     return-void
 
-    .line 679
+    .line 681
     :cond_1
     const-string v7, "android.net.wifi.p2p.STATE_CHANGED"
 
@@ -117,7 +117,7 @@
 
     if-eqz v7, :cond_8
 
-    .line 681
+    .line 683
     :cond_2
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -128,7 +128,7 @@
 
     if-eqz v7, :cond_3
 
-    .line 682
+    .line 684
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
@@ -138,7 +138,7 @@
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setWifiDirectStatus()V
 
-    .line 701
+    .line 703
     :cond_3
     :goto_1
     const-string v7, "android.intent.action.MEDIA_UNMOUNTED"
@@ -165,14 +165,14 @@
 
     if-eqz v7, :cond_a
 
-    .line 704
+    .line 706
     :cond_4
     invoke-static {}, Landroid/media/MiniThumbFile;->reset()V
 
-    .line 705
+    .line 707
     const/4 v3, 0x0
 
-    .line 706
+    .line 708
     .local v3, mIsSettingsMMC:Z
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -182,7 +182,7 @@
 
     if-eqz v7, :cond_5
 
-    .line 707
+    .line 709
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -197,10 +197,10 @@
 
     if-ne v7, v8, :cond_9
 
-    .line 708
+    .line 710
     const/4 v3, 0x1
 
-    .line 714
+    .line 716
     :cond_5
     :goto_2
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -211,15 +211,15 @@
 
     invoke-virtual {v7, v8, v9}, Lcom/sec/android/app/camera/Camera;->checkStorage(ZZ)V
 
-    .line 715
+    .line 717
     if-eqz v3, :cond_6
 
-    .line 716
+    .line 718
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->finish()V
 
-    .line 809
+    .line 811
     .end local v3           #mIsSettingsMMC:Z
     :cond_6
     :goto_3
@@ -235,10 +235,10 @@
 
     if-eqz v7, :cond_7
 
-    .line 810
+    .line 812
     const/4 v4, 0x0
 
-    .line 812
+    .line 814
     .local v4, messageDisplayData:Ljava/lang/String;
     const-string v7, "com.sec.mms.intent.action.SMS_RECEIVED"
 
@@ -248,14 +248,14 @@
 
     if-eqz v7, :cond_1a
 
-    .line 813
+    .line 815
     const-string v7, "DisplayName"
 
     invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 815
+    .line 817
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v8, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -264,7 +264,7 @@
 
     invoke-virtual {v7, v8, v9, v4}, Lcom/sec/android/app/camera/Camera;->makeToast(Landroid/app/Activity;ILjava/lang/String;)V
 
-    .line 827
+    .line 829
     .end local v4           #messageDisplayData:Ljava/lang/String;
     :cond_7
     :goto_4
@@ -280,7 +280,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 828
+    .line 830
     const-string v7, "com.sktelecom.dmc.intent.action.DCMO_SET"
 
     invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -299,21 +299,21 @@
 
     if-nez v7, :cond_0
 
-    .line 829
+    .line 831
     const-string v7, "Camera"
 
     const-string v8, "INTENT_MSG_DCMO"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 830
+    .line 832
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->finish()V
 
     goto/16 :goto_0
 
-    .line 684
+    .line 686
     :cond_8
     const-string v7, "android.intent.action.SIOP_LEVEL_CHANGED"
 
@@ -323,12 +323,12 @@
 
     if-eqz v7, :cond_3
 
-    .line 685
+    .line 687
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v5
 
-    .line 686
+    .line 688
     .local v5, myExtras:Landroid/os/Bundle;
     const-string v7, "flash_led_disable"
 
@@ -338,11 +338,11 @@
 
     move-result v1
 
-    .line 687
+    .line 689
     .local v1, bLimit:Z
     if-eqz v1, :cond_3
 
-    .line 688
+    .line 690
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -353,7 +353,7 @@
 
     invoke-virtual {v7, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFlashMode(I)V
 
-    .line 689
+    .line 691
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->getMenuDimController()Lcom/sec/android/app/camera/MenuDimController;
@@ -366,7 +366,7 @@
 
     invoke-virtual {v7, v8, v9}, Lcom/sec/android/app/camera/MenuDimController;->refreshButtonDim(II)V
 
-    .line 690
+    .line 692
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -376,7 +376,7 @@
 
     if-eqz v7, :cond_3
 
-    .line 691
+    .line 693
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -392,7 +392,7 @@
 
     goto/16 :goto_1
 
-    .line 710
+    .line 712
     .end local v1           #bLimit:Z
     .end local v5           #myExtras:Landroid/os/Bundle;
     .restart local v3       #mIsSettingsMMC:Z
@@ -400,7 +400,7 @@
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v7
 
@@ -415,11 +415,11 @@
 
     if-nez v7, :cond_5
 
-    .line 711
+    .line 713
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v7
 
@@ -427,7 +427,7 @@
 
     goto/16 :goto_2
 
-    .line 717
+    .line 719
     .end local v3           #mIsSettingsMMC:Z
     :cond_a
     const-string v7, "android.intent.action.MEDIA_MOUNTED"
@@ -438,7 +438,7 @@
 
     if-eqz v7, :cond_b
 
-    .line 721
+    .line 723
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-static {}, Lcom/sec/android/app/camera/CheckMemory;->isStorageMounted()Z
@@ -451,7 +451,7 @@
 
     goto/16 :goto_3
 
-    .line 722
+    .line 724
     :cond_b
     const-string v7, "android.intent.action.MEDIA_SCANNER_FINISHED"
 
@@ -461,11 +461,11 @@
 
     if-eqz v7, :cond_c
 
-    .line 723
+    .line 725
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v7
 
@@ -477,11 +477,11 @@
 
     if-nez v7, :cond_6
 
-    .line 724
+    .line 726
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v7}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v7
 
@@ -489,7 +489,7 @@
 
     goto/16 :goto_3
 
-    .line 725
+    .line 727
     :cond_c
     const-string v7, "com.android.camera.NEW_PICTURE"
 
@@ -499,14 +499,14 @@
 
     if-eqz v7, :cond_d
 
-    .line 726
+    .line 728
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->updateRemainTime()V
 
     goto/16 :goto_3
 
-    .line 727
+    .line 729
     :cond_d
     const-string v7, "android.intent.action.BATTERY_CHANGED"
 
@@ -516,7 +516,7 @@
 
     if-eqz v7, :cond_e
 
-    .line 728
+    .line 730
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #calls: Lcom/sec/android/app/camera/Camera;->handleBatteryChanged(Landroid/content/Intent;)V
@@ -524,7 +524,7 @@
 
     goto/16 :goto_3
 
-    .line 729
+    .line 731
     :cond_e
     const-string v7, "android.intent.action.BATTERY_LOW"
 
@@ -534,7 +534,7 @@
 
     if-eqz v7, :cond_10
 
-    .line 731
+    .line 733
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->battLevel:I
@@ -546,12 +546,12 @@
 
     if-gt v7, v8, :cond_f
 
-    .line 732
+    .line 734
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->finishTimerCount()V
 
-    .line 733
+    .line 735
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/4 v8, 0x0
@@ -560,7 +560,7 @@
 
     goto/16 :goto_3
 
-    .line 736
+    .line 738
     :cond_f
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -568,12 +568,12 @@
 
     if-nez v7, :cond_6
 
-    .line 737
+    .line 739
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->finishTimerCount()V
 
-    .line 738
+    .line 740
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/4 v8, 0x0
@@ -583,7 +583,7 @@
 
     goto/16 :goto_3
 
-    .line 742
+    .line 744
     :cond_10
     const-string v7, "android.intent.action.ACTION_POWER_CONNECTED"
 
@@ -593,7 +593,7 @@
 
     if-eqz v7, :cond_16
 
-    .line 743
+    .line 745
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->battLevel:I
@@ -607,7 +607,7 @@
 
     if-gt v7, v8, :cond_14
 
-    .line 745
+    .line 747
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->battLevel:I
@@ -619,12 +619,12 @@
 
     if-gt v7, v8, :cond_12
 
-    .line 746
+    .line 748
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->finishTimerCount()V
 
-    .line 747
+    .line 749
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/AbstractCameraActivity;->mPluggedLowBatteryPopup:Landroid/app/AlertDialog;
@@ -641,14 +641,14 @@
 
     if-eqz v7, :cond_11
 
-    .line 748
+    .line 750
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/AbstractCameraActivity;->mPluggedLowBatteryPopup:Landroid/app/AlertDialog;
 
     invoke-virtual {v7}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 750
+    .line 752
     :cond_11
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -658,13 +658,13 @@
 
     goto/16 :goto_3
 
-    .line 753
+    .line 755
     :cond_12
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->finishTimerCount()V
 
-    .line 754
+    .line 756
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/AbstractCameraActivity;->mLowBatteryPopup:Landroid/app/AlertDialog;
@@ -681,14 +681,14 @@
 
     if-eqz v7, :cond_13
 
-    .line 755
+    .line 757
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/AbstractCameraActivity;->mLowBatteryPopup:Landroid/app/AlertDialog;
 
     invoke-virtual {v7}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 757
+    .line 759
     :cond_13
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -696,7 +696,7 @@
 
     iput-object v8, v7, Lcom/sec/android/app/camera/AbstractCameraActivity;->mLowBatteryPopup:Landroid/app/AlertDialog;
 
-    .line 759
+    .line 761
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/4 v8, 0x0
@@ -706,7 +706,7 @@
 
     goto/16 :goto_3
 
-    .line 763
+    .line 765
     :cond_14
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -724,14 +724,14 @@
 
     if-eqz v7, :cond_15
 
-    .line 764
+    .line 766
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/AbstractCameraActivity;->mLowBatteryPopup:Landroid/app/AlertDialog;
 
     invoke-virtual {v7}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 766
+    .line 768
     :cond_15
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -741,7 +741,7 @@
 
     goto/16 :goto_3
 
-    .line 768
+    .line 770
     :cond_16
     const-string v7, "android.app.action.DEVICE_POLICY_MANAGER_STATE_CHANGED"
 
@@ -751,7 +751,7 @@
 
     if-eqz v7, :cond_17
 
-    .line 769
+    .line 771
     const-string v7, "Camera"
 
     const-string v8, "INTENT_MSG_SECURITY"
@@ -760,7 +760,7 @@
 
     goto/16 :goto_3
 
-    .line 781
+    .line 783
     :cond_17
     const-string v7, "com.android.shoot.userchanged"
 
@@ -770,14 +770,14 @@
 
     if-eqz v7, :cond_18
 
-    .line 782
+    .line 784
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->refreshDeviceList()V
 
     goto/16 :goto_3
 
-    .line 783
+    .line 785
     :cond_18
     const-string v7, "com.android.shootshare.recvfile"
 
@@ -787,23 +787,23 @@
 
     if-eqz v7, :cond_19
 
-    .line 784
+    .line 786
     const-string v7, "filepath"
 
     invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 786
+    .line 788
     .local v2, filePath:Ljava/lang/String;
     if-eqz v2, :cond_6
 
-    .line 787
+    .line 789
     new-instance v6, Ljava/util/Timer;
 
     invoke-direct {v6}, Ljava/util/Timer;-><init>()V
 
-    .line 788
+    .line 790
     .local v6, timer:Ljava/util/Timer;
     new-instance v7, Lcom/sec/android/app/camera/Camera$2$1;
 
@@ -815,7 +815,7 @@
 
     goto/16 :goto_3
 
-    .line 799
+    .line 801
     .end local v2           #filePath:Ljava/lang/String;
     .end local v6           #timer:Ljava/util/Timer;
     :cond_19
@@ -827,14 +827,14 @@
 
     if-eqz v7, :cond_6
 
-    .line 800
+    .line 802
     const-string v7, "Camera"
 
     const-string v8, "onReceive shutdown"
 
     invoke-static {v7, v8}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 802
+    .line 804
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -844,7 +844,7 @@
 
     if-eqz v7, :cond_6
 
-    .line 803
+    .line 805
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -858,7 +858,7 @@
 
     if-eqz v7, :cond_6
 
-    .line 804
+    .line 806
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -870,7 +870,7 @@
 
     goto/16 :goto_3
 
-    .line 816
+    .line 818
     .restart local v4       #messageDisplayData:Ljava/lang/String;
     :cond_1a
     const-string v7, "com.sec.mms.intent.action.PUSHSMS_RECEIVED"
@@ -881,14 +881,14 @@
 
     if-eqz v7, :cond_1b
 
-    .line 817
+    .line 819
     const-string v7, "DisplayName"
 
     invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 819
+    .line 821
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v8, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -899,7 +899,7 @@
 
     goto/16 :goto_4
 
-    .line 820
+    .line 822
     :cond_1b
     const-string v7, "com.sec.mms.intent.action.MMS_RECEIVED"
 
@@ -909,14 +909,14 @@
 
     if-eqz v7, :cond_7
 
-    .line 821
+    .line 823
     const-string v7, "DisplayName"
 
     invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 823
+    .line 825
     iget-object v7, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v8, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;

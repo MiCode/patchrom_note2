@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2082
+    .line 2114
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$35;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "which"
 
     .prologue
-    .line 2085
+    .line 2117
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$35;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -54,11 +54,11 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraSettings;->setSelfToggle(Z)V
 
-    .line 2086
+    .line 2118
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$35;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->resetToDefaultSettings()V
 
-    .line 2087
+    .line 2119
     return-void
 .end method

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 476
+    .line 482
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 479
+    .line 485
     const-wide/16 v1, 0x190
 
     :try_start_0
@@ -49,7 +49,7 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 483
+    .line 489
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;
 
@@ -58,14 +58,14 @@
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mIsBlockFastButton:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->access$002(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;Z)Z
 
-    .line 484
+    .line 490
     return-void
 
-    .line 480
+    .line 486
     :catch_0
     move-exception v0
 
-    .line 481
+    .line 487
     .local v0, e:Ljava/lang/InterruptedException;
     invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
 

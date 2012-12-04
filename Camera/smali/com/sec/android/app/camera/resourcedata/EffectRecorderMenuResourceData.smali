@@ -31,7 +31,7 @@
     .line 45
     const/16 v4, 0xbd8
 
-    const v5, 0x7f090158
+    const v5, 0x7f090159
 
     invoke-direct {p0, v4, v5}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;-><init>(II)V
 

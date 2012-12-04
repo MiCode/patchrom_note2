@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Ceamara</string>
     <string name="camcorder_label">Ceamthaifeadán</string>
-    <string name="wait">Fan go fóill...</string>
+    <string name="wait">Fan go fóill…</string>
     <string name="warning_msg">Rabhadh</string>
     <string name="insert_mmc_msg">Ionsáigh cárta cuimhne le Ceamara a úsáid</string>
     <string name="not_enough_space">Easpa cuimhne</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Easpa cuimhne. Tá stórás réamhshocraithe athraithe go cuimhne fóin</string>
     <string name="change_to_device_memory">Easpa spáis ar an gcárta SD. Athraíodh an stóras réamhshocraithe go stóras gléis</string>
     <string name="video_reach_size_limit">Uasmhéid taifeadta bainte amach</string>
-    <string name="processing_msg">Ag próiseáil...</string>
+    <string name="processing_msg">Ag próiseáil…</string>
     <string name="panorama_processing_msg">Fan go fóill agus lánléargas á chruthú</string>
     <string name="battery_overheat">Scoir Ceamara. Tá teocht an cheallra ró-ard</string>
-    <string name="savingImage">Ag sábháil...</string>
+    <string name="savingImage">Ag sábháil…</string>
     <string name="open_hw_failed_msg">Theip ar Cheamara</string>
     <string name="capture_failed_msg">Theip ar ghabháil</string>
     <string name="recording_failed_msg">Theip ar thaifeadadh</string>
@@ -105,7 +105,7 @@ sa lár"</string>
     <string name="RM_EMAIL">Teorainn do r-phost</string>
     <string name="RM_SLOW">Mallghluaisne</string>
     <string name="RM_FAST">Mearghluaisne</string>
-    <string name="CS_PROGRESS_TEXT">Ag cruthú íomhá. Fan go fóill...</string>
+    <string name="CS_PROGRESS_TEXT">Ag cruthú íomhá. Fan go fóill…</string>
     <string name="SCN_NONE">Dada</string>
     <string name="SCN_PORTRAIT">Portráid</string>
     <string name="SCN_LANDSCAPE">Tírdhreach</string>
@@ -181,8 +181,8 @@ sa lár"</string>
     <string name="help_text_panorama_device">Brúigh cnaipe an cheamara agus bog an gléas go mall i dtreo amháin</string>
     <string name="message_DefaultLayout">Athshocrófar an leagan amach aicearra</string>
     <string name="message_EULA_GPS">Greamófar, leabófar agus stórálfar sonraí suímh tíreolaíochta laistigh de gach grianghraf nuair a chumasaíonn tú clib GPS. Bí cúramach nuair atá tú ag seoladh, comhroinnt, scaipeadh, nó ag cóipeáil na ngrianghraf seo toisc go léirítear orthu an suíomh inar tógadh an grianghraf</string>
-    <string name="message_Auto_ShareShot">"Cuireann Comhroinn seat go huathoibríoch ar do chumas nascadh go héasca leis na gléasanna ar mian leat pictiúir a chomhroinnt leo.
-Cumasaigh Comhroinn seat go huathoibríoch, ansin cuir na gléasanna le chéile (cúl le cúl de ghnáth) le hiad a nascadh"</string>
+    <string name="message_Auto_ShareShot">"Cuireann Uath-Comhroinnt seat ar do chumas nascadh go héasca leis na gléasanna ar mian leat pictiúir a chomhroinnt leo.
+Cumasaigh Uath-Comhroinnt seat go huathoibríoch, ansin cuir na gléasanna le chéile (cúl le cúl de ghnáth) lena nascadh"</string>
     <string name="GPS_msg">GPS as</string>
     <string name="message_enable_GPS">Cas an GPS air sna Socruithe le clib GPS a úsáid</string>
     <string name="cancel">Cealaigh</string>
@@ -192,15 +192,15 @@ Cumasaigh Comhroinn seat go huathoibríoch, ansin cuir na gléasanna le chéile 
     <string name="Title_ChangeMemoryInUseDailog">Athraigh an stóras réamhshocraithe chuig an gcárta cuimhne?</string>
     <string name="Title_InsertMemoryCardDailog">Ionsáigh cárta cuimhne le Ceamara a úsáid</string>
     <string name="OnScreen_HelpTextTouchAF">Brúigh scáileán le díriú ar an réimse tapáilte</string>
-    <string name="media_scanner_running">Scanóir meán ar rith...</string>
+    <string name="media_scanner_running">Scanóir meán ar rith…</string>
     <string name="close_camera_when_mmc_inserted">Cárta SD ionsáite. Tá %s dúnta le comhaid mheán a scanadh ar chárta SD</string>
     <string name="close_camera_when_media_mounted">Tá an ceamara dúnta le comhaid mheán a scanadh</string>
     <string name="close_camera_for_unmounted_memory">Cas as stóras USB roimh an ceamara a úsáid</string>
     <string name="message_size_limited">Teorainn mhéide na teachtaireachta bainte amach</string>
     <string name="crop_save_text">Sábháil</string>
-    <string name="crop_discard_text">Cuileáil</string>
+    <string name="crop_discard_text">Cealaigh</string>
     <string name="crop_gallery_text">Gailearaí</string>
-    <string name="wallpaper">Cúlbhrat á shocrú. Fan go fóill...</string>
+    <string name="wallpaper">Cúlbhrat á shocrú. Fan go fóill…</string>
     <string name="crop_label">Bearr pictiúr</string>
     <string name="low_database_storage_view_text">Tá spás stórais an bhunachair shonraí beagnach lán</string>
     <string name="camera_security_enter">Cuireann an beartas slándála srian ar úsáid an Cheamara</string>
@@ -253,21 +253,25 @@ Cumasaigh Comhroinn seat go huathoibríoch, ansin cuir na gléasanna le chéile 
     <string name="editable_shortcut_helptext_title">Léideanna</string>
     <string name="editable_shortcut_helptext_message">Tapáil agus coinnigh aicearraí lena gcur in eagar</string>
     <string name="editable_shortcut_helptext">Tapáil agus coinnigh an t-íocón, ansin tarraing chuig suíomh eagarthóireachta na n-aicearraí é</string>
+    <string name="singleshotburst_capture_helptext">Brúigh agus coinnigh síos cnaipe an cheamara le seat pléasctha a thógáil</string>
+    <string name="singleshotburst_storage_helptext">Sábháiltear íomhánna seat pléasctha leis an gcáilíocht socraithe mar mhín</string>
     <string name="sbeam_helptext">Glac agus comhroinn grianghraif le gléasanna eile. Tabhair na gléasanna le chéile le gléasanna is mian leat a chomhroinnt trí S Beam a chur leis</string>
     <string name="storage_setting_dialog_title">Suíomh stórála</string>
     <string name="storage_setting_dialog_message">Cárta SD ionsáite. Athraigh an suíomh stórála chuig an gcárta SD?</string>
+    <string name="storage_setting_dialog_burstshot_message">Sábhálfar seatanna aonair chuig an gcárta SD. Sábhálfar seatanna pléasctha chuig stóráil an ghléis</string>
     <string name="do_not_ask_again">Ná taispeáin arís</string>
     <string name="shutter">Comhla</string>
     <string name="record">Taifead</string>
     <string name="bestpic">Grianghraf is fearr</string>
     <string name="bestpic_on">Air</string>
     <string name="bestpic_off">As</string>
-    <string name="bestgroup">Staidiúir is fearr den ghrúpa</string>
-    <string name="bestgroup_title">Roghn. gach aghaidh is fearr</string>
+    <string name="bestgroup">Aghaidheanna is fearr</string>
+    <string name="bestgroup_title">Roghn. na hAghaidheanna is fearr le sábháil</string>
     <string name="battery_low">Dún an Ceamara. Tá teocht an cheallra ró-íseal</string>
     <string name="buddy_photo_share_helptext">Glac grianghraif agus comhroinn le cairde trí aimsiú aghaidhe iad</string>
     <string name="face_zoom_helptext">Déthapáil ar aghaidh le zúmáil isteach nó amach</string>
     <string name="burst_shot_guidetext">Sábhálfar seatanna rúisce i stóras an ghléis</string>
+    <string name="best_photo_guidetext">Sábhálfar na grianghraif is fearr i stóráil an ghléis</string>
     <string name="snap_shot_limitation_dialog">Ní féidir an fheidhm alaghraif thaifeadta a úsáid nuair atá frith-chaith cumasaithe</string>
     <string name="on_device_help_focus">Tapáil le fócas an cheamara a shocrú</string>
     <string name="on_device_help_camcorder">Aistrigh go Mód ceamthaifeadáin</string>

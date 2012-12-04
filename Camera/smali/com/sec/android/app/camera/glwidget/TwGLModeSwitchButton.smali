@@ -76,7 +76,7 @@
 
     .prologue
     .line 47
-    const v0, 0x7f060109
+    const v0, 0x7f060119
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -85,7 +85,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->SWITCH_BG_IMAGE_POS_X:F
 
     .line 48
-    const v0, 0x7f06010a
+    const v0, 0x7f06011a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -94,7 +94,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->SELECTED_IMAGE_POS_X:F
 
     .line 49
-    const v0, 0x7f06010b
+    const v0, 0x7f06011b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -103,7 +103,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->CELL_PADDING_WIDTH:F
 
     .line 50
-    const v0, 0x7f06010c
+    const v0, 0x7f06011c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -112,7 +112,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->CELL_PADDING_HEIGHT:F
 
     .line 51
-    const v0, 0x7f06010d
+    const v0, 0x7f06011d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -123,7 +123,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->SWITCH_BALL_MAX_MOVEMENT:I
 
     .line 52
-    const v0, 0x7f060110
+    const v0, 0x7f060120
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -134,7 +134,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->TOUCH_PADDING:I
 
     .line 53
-    const v0, 0x7f060111
+    const v0, 0x7f060121
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -145,7 +145,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->SWITCH_BALL_SELECT_AREA_WIDTH:I
 
     .line 54
-    const v0, 0x7f060112
+    const v0, 0x7f060122
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -332,7 +332,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0200c5
+    const v4, 0x7f0200c7
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -359,7 +359,7 @@
 
     move-result v3
 
-    const v4, 0x7f0200b8
+    const v4, 0x7f0200ba
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -394,7 +394,7 @@
 
     add-float/2addr v3, v4
 
-    const v4, 0x7f0200c3
+    const v4, 0x7f0200c5
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -433,7 +433,7 @@
 
     int-to-float v5, v5
 
-    const v7, 0x7f0200c1
+    const v7, 0x7f0200c3
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFZI)V
 
@@ -1626,21 +1626,21 @@
     .line 107
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->mCameraSelectedImage:Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f0200c6
+    const v1, 0x7f0200c8
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
     .line 108
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->mCamcorderSelectedImage:Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f0200c4
+    const v1, 0x7f0200c6
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
     .line 109
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->mSwitchBall:Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f0200c2
+    const v1, 0x7f0200c4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
@@ -1665,21 +1665,21 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->mCameraSelectedImage:Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f0200c5
+    const v1, 0x7f0200c7
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
     .line 113
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->mCamcorderSelectedImage:Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f0200c3
+    const v1, 0x7f0200c5
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
     .line 114
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->mSwitchBall:Lcom/sec/android/glview/TwGLImage;
 
-    const v1, 0x7f0200c1
+    const v1, 0x7f0200c3
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 

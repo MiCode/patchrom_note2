@@ -168,7 +168,7 @@
 
     .prologue
     .line 54
-    const v0, 0x7f0601da
+    const v0, 0x7f06020a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_MENU_POS_X:I
 
     .line 55
-    const v0, 0x7f0601db
+    const v0, 0x7f06020b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_MENU_POS_Y:I
 
     .line 56
-    const v0, 0x7f0601dc
+    const v0, 0x7f06020c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_MENU_WIDTH:I
 
     .line 57
-    const v0, 0x7f0601dd
+    const v0, 0x7f06020d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -212,7 +212,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_MENU_HEIGHT:I
 
     .line 58
-    const v0, 0x7f0601de
+    const v0, 0x7f06020e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -223,7 +223,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_BUTTON_WIDTH:I
 
     .line 59
-    const v0, 0x7f0601df
+    const v0, 0x7f06020f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -234,7 +234,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_BUTTON_HEIGHT:I
 
     .line 60
-    const v0, 0x7f0601e0
+    const v0, 0x7f060210
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -245,7 +245,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_PLUS_BUTTON_POS_X:I
 
     .line 61
-    const v0, 0x7f0601e1
+    const v0, 0x7f060211
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -256,7 +256,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_PLUS_BUTTON_POS_Y:I
 
     .line 62
-    const v0, 0x7f0601e2
+    const v0, 0x7f060212
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -267,7 +267,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_CENTERLINE_POS_X:I
 
     .line 63
-    const v0, 0x7f0601e3
+    const v0, 0x7f060213
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -278,7 +278,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_CENTERLINE_POS_Y:I
 
     .line 64
-    const v0, 0x7f0601e4
+    const v0, 0x7f060214
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -289,7 +289,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_PLUS_BUTTON_OFFSET_X:I
 
     .line 65
-    const v0, 0x7f0601e5
+    const v0, 0x7f060215
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -300,7 +300,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_PLUS_BUTTON_OFFSET_Y:I
 
     .line 66
-    const v0, 0x7f0601e6
+    const v0, 0x7f060216
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -311,7 +311,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_MINUS_BUTTON_POS_X:I
 
     .line 67
-    const v0, 0x7f0601e7
+    const v0, 0x7f060217
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -322,7 +322,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_MINUS_BUTTON_POS_Y:I
 
     .line 68
-    const v0, 0x7f0601e8
+    const v0, 0x7f060218
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -333,7 +333,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_SLIDER_POS_X:I
 
     .line 69
-    const v0, 0x7f0601e9
+    const v0, 0x7f060219
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -344,7 +344,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_SLIDER_POS_Y:I
 
     .line 70
-    const v0, 0x7f0601ea
+    const v0, 0x7f06021a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -355,7 +355,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_SLIDER_WIDTH:I
 
     .line 71
-    const v0, 0x7f0601eb
+    const v0, 0x7f06021b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -366,7 +366,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_SLIDER_HEIGHT:I
 
     .line 72
-    const v0, 0x7f0601ed
+    const v0, 0x7f06021d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -377,7 +377,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_SLIDERBAR_POX_X:I
 
     .line 73
-    const v0, 0x7f0601ee
+    const v0, 0x7f06021e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -397,7 +397,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_NUM_OF_STEP:I
 
     .line 75
-    const v0, 0x7f0601ef
+    const v0, 0x7f06021f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -408,7 +408,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_OFFSET:I
 
     .line 76
-    const v0, 0x7f0601f0
+    const v0, 0x7f060220
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -419,7 +419,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_MENU_POS_X:I
 
     .line 77
-    const v0, 0x7f0601f1
+    const v0, 0x7f060221
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -430,7 +430,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_MENU_POS_Y:I
 
     .line 78
-    const v0, 0x7f0601f2
+    const v0, 0x7f060222
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -441,7 +441,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_MENU_WIDTH:I
 
     .line 79
-    const v0, 0x7f0601f3
+    const v0, 0x7f060223
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -452,7 +452,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_MENU_HEIGHT:I
 
     .line 80
-    const v0, 0x7f0601f4
+    const v0, 0x7f060224
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -463,7 +463,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_TEXT_WIDTH:I
 
     .line 81
-    const v0, 0x7f0601f5
+    const v0, 0x7f060225
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -474,7 +474,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_TEXT_HEIGHT:I
 
     .line 82
-    const v0, 0x7f0601f6
+    const v0, 0x7f060226
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -485,7 +485,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_VALUE_SLIDER_POS_X:I
 
     .line 83
-    const v0, 0x7f0601f7
+    const v0, 0x7f060227
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -496,7 +496,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_VALUE_SLIDER_POS_Y:I
 
     .line 84
-    const v0, 0x7f0601f8
+    const v0, 0x7f060228
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -507,7 +507,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_VALUE_SLIDER_WIDTH:I
 
     .line 85
-    const v0, 0x7f0601f9
+    const v0, 0x7f060229
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -518,7 +518,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_VALUE_SLIDER_HEIGHT:I
 
     .line 86
-    const v0, 0x7f0601fa
+    const v0, 0x7f06022a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -529,7 +529,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_VALUE_SLIDERBAR_POX_X:I
 
     .line 87
-    const v0, 0x7f0601fb
+    const v0, 0x7f06022b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -567,7 +567,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_MAX_RATIO:I
 
     .line 91
-    const v0, 0x7f0601fc
+    const v0, 0x7f06022c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -580,7 +580,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->GAUGE_BALL_SELECT_AREA_WIDTH:F
 
     .line 92
-    const v0, 0x7f0601fd
+    const v0, 0x7f06022d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -764,7 +764,7 @@
 
     int-to-float v4, v4
 
-    const v5, 0x7f020210
+    const v5, 0x7f020212
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -971,7 +971,7 @@
     .line 206
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mSlider:Lcom/sec/android/glview/TwGLSlider;
 
-    const v2, 0x7f02020f
+    const v2, 0x7f020211
 
     sget v3, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->EXPOSURE_VALUE_SLIDERBAR_POX_X:I
 
@@ -997,7 +997,7 @@
     .line 208
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const v2, 0x7f02020e
+    const v2, 0x7f020210
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setBackground(I)Z
 
@@ -1253,7 +1253,7 @@
     .line 239
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mSlider:Lcom/sec/android/glview/TwGLSlider;
 
-    const v2, 0x7f020215
+    const v2, 0x7f020217
 
     sget v3, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->ZOOM_VALUE_SLIDERBAR_POX_X:I
 
@@ -1279,7 +1279,7 @@
     .line 241
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const v2, 0x7f020214
+    const v2, 0x7f020216
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setBackground(I)Z
 

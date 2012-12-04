@@ -33,7 +33,7 @@
 
     .prologue
     .line 37
-    const v0, 0x7f060213
+    const v0, 0x7f060243
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -44,7 +44,7 @@
     sput v0, Lcom/sec/android/app/camera/widget/TwScaleZoomRect;->MAX_ZOOM_RATIO:I
 
     .line 38
-    const v0, 0x7f060214
+    const v0, 0x7f060244
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -55,7 +55,7 @@
     sput v0, Lcom/sec/android/app/camera/widget/TwScaleZoomRect;->MIN_ZOOM_RATIO:I
 
     .line 39
-    const v0, 0x7f060215
+    const v0, 0x7f060245
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -326,7 +326,7 @@
     .line 62
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/TwScaleZoomRect;->mLinePaint:Landroid/graphics/Paint;
 
-    const v1, 0x7f06020f
+    const v1, 0x7f06023f
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -341,7 +341,7 @@
     .line 63
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/TwScaleZoomRect;->mLinePaint:Landroid/graphics/Paint;
 
-    const v1, 0x7f060210
+    const v1, 0x7f060240
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -389,7 +389,7 @@
 
     .line 82
     .local v8, wcenter:F
-    const v9, 0x7f06020f
+    const v9, 0x7f06023f
 
     invoke-static {v9}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -401,7 +401,7 @@
 
     .line 83
     .local v3, offset:I
-    const v9, 0x7f060216
+    const v9, 0x7f060246
 
     invoke-static {v9}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -423,7 +423,7 @@
 
     .line 88
     :cond_0
-    const v9, 0x7f060211
+    const v9, 0x7f060241
 
     invoke-static {v9}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -595,7 +595,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f060212
+    const v10, 0x7f060242
 
     invoke-static {v10}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 

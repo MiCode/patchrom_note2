@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 708
+    .line 716
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$hoverclass;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 708
+    .line 716
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/AbstractCameraActivity$hoverclass;-><init>(Lcom/sec/android/app/camera/AbstractCameraActivity;)V
 
     return-void
@@ -55,14 +55,14 @@
     .parameter "arg1"
 
     .prologue
-    .line 712
+    .line 720
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$hoverclass;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mGLContext:Lcom/sec/android/glview/TwGLContext;
 
     if-eqz v0, :cond_0
 
-    .line 713
+    .line 721
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$hoverclass;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mGLContext:Lcom/sec/android/glview/TwGLContext;
@@ -71,7 +71,7 @@
 
     move-result v0
 
-    .line 716
+    .line 724
     :goto_0
     return v0
 

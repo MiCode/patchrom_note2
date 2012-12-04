@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1632
+    .line 1634
     iput-object p1, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1632
+    .line 1634
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;-><init>(Lcom/sec/android/app/camera/CamcorderEngine;)V
 
     return-void
@@ -65,7 +65,7 @@
 
     const/4 v3, 0x2
 
-    .line 1634
+    .line 1636
     const-string v0, "CamcorderEngine"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -108,7 +108,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1636
+    .line 1638
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -125,12 +125,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 1695
+    .line 1697
     :cond_0
     :goto_0
     return-void
 
-    .line 1639
+    .line 1641
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
@@ -144,7 +144,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1642
+    .line 1644
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mRequestQueue:Lcom/sec/android/app/camera/CeRequestQueue;
@@ -180,14 +180,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1644
+    .line 1646
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CamcorderEngine;->closeCamcorder()V
 
     goto :goto_0
 
-    .line 1649
+    .line 1651
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
@@ -201,7 +201,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 1650
+    .line 1652
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -212,16 +212,16 @@
 
     goto :goto_0
 
-    .line 1654
+    .line 1656
     :cond_3
     if-ne p1, v6, :cond_4
 
-    .line 1655
+    .line 1657
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iput v4, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mFocusState:I
 
-    .line 1656
+    .line 1658
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -230,7 +230,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->resetPosIndicator()V
 
-    .line 1657
+    .line 1659
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -241,11 +241,11 @@
 
     goto :goto_0
 
-    .line 1661
+    .line 1663
     :cond_4
     if-ne p1, v7, :cond_5
 
-    .line 1662
+    .line 1664
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -256,16 +256,16 @@
 
     goto :goto_0
 
-    .line 1666
+    .line 1668
     :cond_5
     if-ne p1, v4, :cond_9
 
-    .line 1667
+    .line 1669
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iput v3, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mFocusState:I
 
-    .line 1668
+    .line 1670
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CamcorderEngine;->isMediaRecorderRecording()Z
@@ -282,20 +282,20 @@
 
     if-eqz v0, :cond_6
 
-    .line 1669
+    .line 1671
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0, v4, v5}, Lcom/sec/android/app/camera/AbstractCameraActivity;->playCameraSound(II)V
 
-    .line 1672
+    .line 1674
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CamcorderEngine;->updateFocusIndicator()V
 
-    .line 1684
+    .line 1686
     :cond_7
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
@@ -304,7 +304,7 @@
 
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 1686
+    .line 1688
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -333,7 +333,7 @@
 
     if-nez v0, :cond_8
 
-    .line 1688
+    .line 1690
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mMainHandler:Lcom/sec/android/app/camera/CameraEngine$MainHandler;
@@ -342,7 +342,7 @@
 
     invoke-virtual {v0, v4, v1, v2}, Lcom/sec/android/app/camera/CameraEngine$MainHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1691
+    .line 1693
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
@@ -352,7 +352,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1692
+    .line 1694
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     #getter for: Lcom/sec/android/app/camera/CamcorderEngine;->mHideFocusRectHandler:Landroid/os/Handler;
@@ -366,27 +366,27 @@
 
     goto/16 :goto_0
 
-    .line 1673
+    .line 1675
     :cond_9
     if-ne p1, v3, :cond_a
 
-    .line 1674
+    .line 1676
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iput v7, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mFocusState:I
 
     goto :goto_1
 
-    .line 1675
+    .line 1677
     :cond_a
     if-nez p1, :cond_7
 
-    .line 1676
+    .line 1678
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iput v6, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mFocusState:I
 
-    .line 1677
+    .line 1679
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CamcorderEngine;->isMediaRecorderRecording()Z
@@ -403,14 +403,14 @@
 
     if-eqz v0, :cond_b
 
-    .line 1678
+    .line 1680
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CamcorderEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0, v3, v5}, Lcom/sec/android/app/camera/AbstractCameraActivity;->playCameraSound(II)V
 
-    .line 1681
+    .line 1683
     :cond_b
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 

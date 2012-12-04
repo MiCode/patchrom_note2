@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2432
+    .line 2436
     iput-object p1, p0, Lcom/sec/android/app/camera/CamcorderEngine$7;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,14 +43,14 @@
     .parameter "camera"
 
     .prologue
-    .line 2435
+    .line 2439
     const-string v1, "CamcorderEngine"
 
     const-string v2, "Jpeg Image callback"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2437
+    .line 2441
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/sec/android/app/camera/CamcorderEngine$7$1;
@@ -59,15 +59,15 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 2554
+    .line 2558
     .local v0, savingThread:Ljava/lang/Thread;
     const-string v1, "startsaveimage"
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 2555
+    .line 2559
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2557
+    .line 2561
     return-void
 .end method

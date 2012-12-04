@@ -32,19 +32,19 @@
     .parameter
 
     .prologue
-    .line 3553
+    .line 3684
     iput-object p1, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3555
+    .line 3686
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKickerHandler:Landroid/os/Handler;
 
-    .line 3556
+    .line 3687
     new-instance v0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/Camcorder$ThumbKicker$1;-><init>(Lcom/sec/android/app/camera/Camcorder$ThumbKicker;)V
@@ -54,23 +54,23 @@
     return-void
 .end method
 
-.method static synthetic access$2100(Lcom/sec/android/app/camera/Camcorder$ThumbKicker;)Ljava/lang/Runnable;
+.method static synthetic access$2200(Lcom/sec/android/app/camera/Camcorder$ThumbKicker;)Ljava/lang/Runnable;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 3553
+    .line 3684
     iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKicker:Ljava/lang/Runnable;
 
     return-object v0
 .end method
 
-.method static synthetic access$2200(Lcom/sec/android/app/camera/Camcorder$ThumbKicker;)Landroid/os/Handler;
+.method static synthetic access$2300(Lcom/sec/android/app/camera/Camcorder$ThumbKicker;)Landroid/os/Handler;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 3553
+    .line 3684
     iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKickerHandler:Landroid/os/Handler;
 
     return-object v0
@@ -82,34 +82,34 @@
     .locals 3
 
     .prologue
-    .line 3573
+    .line 3704
     const-string v1, "Camcorder"
 
     const-string v2, "stopKickThumbSuspend"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3574
+    .line 3705
     iget-object v1, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKickerHandler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKicker:Ljava/lang/Runnable;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 3575
+    .line 3706
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.MEDIA_THUMBWORKER_RESUME"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3576
+    .line 3707
     .local v0, i:Landroid/content/Intent;
     iget-object v1, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/Camcorder;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 3577
+    .line 3708
     return-void
 .end method
 
@@ -117,27 +117,27 @@
     .locals 5
 
     .prologue
-    .line 3566
+    .line 3697
     const-string v1, "Camcorder"
 
     const-string v2, "suspendThumbWork"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3567
+    .line 3698
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.MEDIA_THUMBWORKER_SUSPEND"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3568
+    .line 3699
     .local v0, i:Landroid/content/Intent;
     iget-object v1, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/Camcorder;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 3569
+    .line 3700
     iget-object v1, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKickerHandler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camcorder$ThumbKicker;->mThumbSuspendKicker:Ljava/lang/Runnable;
@@ -146,6 +146,6 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 3570
+    .line 3701
     return-void
 .end method

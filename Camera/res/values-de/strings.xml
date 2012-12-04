@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Kamera</string>
     <string name="camcorder_label">Videokamera</string>
-    <string name="wait">Bitte warten...</string>
+    <string name="wait">Bitte warten…</string>
     <string name="warning_msg">Warnung</string>
     <string name="insert_mmc_msg">Speicherkarte zur Verwendung der Kamera einlegen</string>
     <string name="not_enough_space">Speicher voll</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Nicht genügend Speicher. Standardspeicher wird auf Telefonspeicher geändert</string>
     <string name="change_to_device_memory">Nicht genügend Platz auf SD-Karte. Standardspeicher wurde auf Gerätespeicher geändert.</string>
     <string name="video_reach_size_limit">Maximale Aufnahmegröße erreicht</string>
-    <string name="processing_msg">Verarbeitung läuft ...</string>
+    <string name="processing_msg">Verarbeitung läuft …</string>
     <string name="panorama_processing_msg">Panorama wird erstellt, bitte warten</string>
     <string name="battery_overheat">Kamera wird geschlossen. Akku zu heiß</string>
-    <string name="savingImage">Speichern...</string>
+    <string name="savingImage">Speichern…</string>
     <string name="open_hw_failed_msg">Kamerafehler</string>
     <string name="capture_failed_msg">Fehler bei Aufnahme</string>
     <string name="recording_failed_msg">Aufnahme fehlgeschlagen</string>
@@ -22,7 +22,7 @@
     <string name="unknown_error_callback_msg">Unbekannter Fehler aufgetreten</string>
     <string name="settings">Einstellungen</string>
     <string name="low_batt_msg">Akku fast leer</string>
-    <string name="close">Schließ.</string>
+    <string name="close">Schließen</string>
     <string name="cannot_start_camera_msg">"Starten der Kamera während
 Anruf nicht möglich"</string>
     <string name="cannot_start_camcorder_msg">Videoaufnahme während Anruf nicht möglich.</string>
@@ -105,7 +105,7 @@ Anruf nicht möglich"</string>
     <string name="RM_EMAIL">Begrenzung für E-Mail</string>
     <string name="RM_SLOW">Zeitlupe</string>
     <string name="RM_FAST">Schnelle Bewegung</string>
-    <string name="CS_PROGRESS_TEXT">Bild wird erstellt. Bitte warten...</string>
+    <string name="CS_PROGRESS_TEXT">Bild wird erstellt. Bitte warten…</string>
     <string name="SCN_NONE">Ohne</string>
     <string name="SCN_PORTRAIT">Portrait</string>
     <string name="SCN_LANDSCAPE">Landschaft</string>
@@ -150,7 +150,7 @@ Anruf nicht möglich"</string>
     <string name="Title_ImageQuality">Bildqualität</string>
     <string name="Title_Metering">Messung</string>
     <string name="Title_ObjectTracking">Objektverfolgung</string>
-    <string name="Title_AntiShake">Bildstabilis.</string>
+    <string name="Title_AntiShake">Bildstabilisator</string>
     <string name="Title_BlinkDetection">Blinzelerk.</string>
     <string name="Title_AutoContrast">Automatischer Kontrast</string>
     <string name="Title_GPS">GPS-Tag</string>
@@ -180,8 +180,8 @@ Anruf nicht möglich"</string>
     <string name="help_text_panorama_device">Drücken Sie die Kamerataste und bewegen Sie das Gerät langsam in eine Richtung.</string>
     <string name="message_DefaultLayout">Das Shortcut-Layout wird zurückgesetzt.</string>
     <string name="message_EULA_GPS">Durch die Aktivierung von GPS-Tag werden für jedes Foto Daten zur geographischen Position hinzugefügt, eingebettet und gespeichert. Lassen Sie Vorsicht walten, wenn Sie diese Fotos versenden, freigeben, verteilen, übertragen oder kopieren, da sie die Position enthalten, an der das Foto aufgenommen wurde.</string>
-    <string name="message_Auto_ShareShot">"Mit Aufnahme automatisch senden können Sie auf einfache Art und Weise die Geräte verbinden, mit denen Sie Bilder teilen möchten.
-Aktivieren Sie die Funktion Aufnahme automatisch senden und halten Sie die Geräte aneinander (im Allgemeinen Rückseite gegen Rückseite), um eine Verbindung herzustellen."</string>
+    <string name="message_Auto_ShareShot">"Mit “Aufnahme automatisch senden” können Sie auf einfache Art und Weise die Geräte verbinden, mit denen Sie Bilder teilen möchten.
+Aktivieren Sie die Funktion “Aufnahme automatisch senden” und halten Sie die Geräte aneinander (im Allgemeinen Rückseite gegen Rückseite), um eine Verbindung herzustellen."</string>
     <string name="GPS_msg">GPS aus</string>
     <string name="message_enable_GPS">GPS in Einstellungen aktivieren, um GPS-Tag zu verwenden.</string>
     <string name="cancel">Abbruch</string>
@@ -191,15 +191,15 @@ Aktivieren Sie die Funktion Aufnahme automatisch senden und halten Sie die Gerä
     <string name="Title_ChangeMemoryInUseDailog">Standardspeicher zu Speicherkarte wechseln?</string>
     <string name="Title_InsertMemoryCardDailog">Speicherkarte zur Verwendung der Kamera einlegen</string>
     <string name="OnScreen_HelpTextTouchAF">Bildschirm tippen, um auf Bereich zu fokussieren</string>
-    <string name="media_scanner_running">Medienscanner wird ausgeführt...</string>
+    <string name="media_scanner_running">Medienscanner wird ausgeführt…</string>
     <string name="close_camera_when_mmc_inserted">SD-Karte eingesetzt. %s wird geschlossen, um Mediendateien auf der SD-Karte zu scannen.</string>
     <string name="close_camera_when_media_mounted">Kamera geschlossen, um Mediendateien zu scannen.</string>
     <string name="close_camera_for_unmounted_memory">USB-Speicher vor dem Verwenden der Kamera ausschalten</string>
     <string name="message_size_limited">Beschränkung der Nachrichtengröße erreicht</string>
     <string name="crop_save_text">Speichern</string>
-    <string name="crop_discard_text">Verwerfen</string>
+    <string name="crop_discard_text">Abbruch</string>
     <string name="crop_gallery_text">Galerie</string>
-    <string name="wallpaper">Hintergrund wird eingestellt. Bitte warten...</string>
+    <string name="wallpaper">Hintergrund wird eingestellt. Bitte warten…</string>
     <string name="crop_label">Bild zuschneiden</string>
     <string name="low_database_storage_view_text">Datenbankspeicher ist fast voll</string>
     <string name="camera_security_enter">Sicherheitsrichtlinie schränkt die Verwendung der Kamera ein.</string>
@@ -221,7 +221,7 @@ Aktivieren Sie die Funktion Aufnahme automatisch senden und halten Sie die Gerä
     <string name="wifi_dialog_text">WLAN-Verbindung erforderlich</string>
     <string name="wifi_dialog_text_chn">WLAN connection required</string>
     <string name="wifi_direct_dialog_title">Aufnahme senden</string>
-    <string name="wifi_direct_dialog_text">Mit Aufnahme senden können Sie Fotos für andere Benutzer über Wi-Fi Direct freigeben. Wi-Fi Direct-Verbindung erforderlich.</string>
+    <string name="wifi_direct_dialog_text">Mit “Aufnahme senden” können Sie Fotos für andere Benutzer über Wi-Fi Direct freigeben. Wi-Fi Direct-Verbindung erforderlich.</string>
     <string name="wifi_direct_dialog_text_chn">WLAN Direct connection required</string>
     <string name="wifi_dialog_yes">OK</string>
     <string name="wifi_dialog_no">Abbruch</string>
@@ -252,27 +252,31 @@ Aktivieren Sie die Funktion Aufnahme automatisch senden und halten Sie die Gerä
     <string name="editable_shortcut_helptext_title">Tipps</string>
     <string name="editable_shortcut_helptext_message">Tippen und halten Sie die Schnellzugriffe, um sie zu bearbeiten.</string>
     <string name="editable_shortcut_helptext">Tippen und halten Sie das Symbol und ziehen Sie es dann, um die Position der Schnellzugriffe zu bearbeiten.</string>
+    <string name="singleshotburst_capture_helptext">Drücken und halten Sie die Kamerataste, um Serienbilder aufzunehmen.</string>
+    <string name="singleshotburst_storage_helptext">Serienbildaufnahmen werden in der Qualität “Fein” gespeichert.</string>
     <string name="sbeam_helptext">Fotos aufnehmen und für anderen Geräten freigeben. Legen Sie die Geräte aneinander, um die gewünschten Geräte für die Freigabe über S Beam hinzuzufügen.</string>
     <string name="storage_setting_dialog_title">Speicherort</string>
     <string name="storage_setting_dialog_message">SD-Karte eingesetzt. Standardspeicherort auf SD-Karte ändern?</string>
+    <string name="storage_setting_dialog_burstshot_message">Einzelbilder werden auf der SD-Karte gespeichert. Serienbildaufnahmen werden im Gerätespeicher gespeichert.</string>
     <string name="do_not_ask_again">Nicht mehr anzeigen</string>
     <string name="shutter">Shutter</string>
     <string name="record">Aufnahme</string>
     <string name="bestpic">Bestes Foto</string>
     <string name="bestpic_on">An</string>
     <string name="bestpic_off">Aus</string>
-    <string name="bestgroup">Beste Gruppenpose</string>
+    <string name="bestgroup">Beste Gesichter</string>
     <string name="bestgroup_title">Beste Gesichter zum Speichern</string>
     <string name="battery_low">Kamera schließen. Akku zu kalt</string>
     <string name="buddy_photo_share_helptext">Fotos aufnehmen und für Freunde über die Gesichtserkennung freigeben</string>
     <string name="face_zoom_helptext">Tippen Sie zweimal auf ein Gesicht, um es heran- oder wegzuzoomen.</string>
     <string name="burst_shot_guidetext">Serienbildaufnahmen werden im Gerätespeicher gespeichert.</string>
+    <string name="best_photo_guidetext">Die besten Fotos werden im Gerätespeicher gespeichert.</string>
     <string name="snap_shot_limitation_dialog">Verwendung der Snapshot-Aufnahmefunktion bei aktiviertem Bildstabilisator nicht möglich</string>
     <string name="on_device_help_focus">Kamera fokussieren</string>
     <string name="on_device_help_camcorder">In den Camcorder-Modus wechseln</string>
     <string name="on_device_help_self">Zum Selbstporträt-Modus wechseln</string>
     <string name="on_device_help_editable">Tippen und halten Sie den Schnellzugriff, den Sie verschieben möchten. Ziehen Sie ihn dann an die gewünschte Stelle.</string>
-    <string name="on_device_help_voicecommand">Sie können Fotos mit Sprachbefehlen wie Aufnehmen, Klick, Lächeln und Bitte lächeln aufnehmen.</string>
+    <string name="on_device_help_voicecommand">Sie können Fotos mit Sprachbefehlen wie “Aufnehmen”, “Klick”, “Lächeln” und “Bitte lächeln” aufnehmen.</string>
     <string name="Title_VideoSpeed">Geschw.</string>
     <string name="SPEED_OFF">Normal</string>
     <string name="SPEED_2X_FASTER">2x schneller</string>
@@ -293,7 +297,7 @@ Aktivieren Sie die Funktion Aufnahme automatisch senden und halten Sie die Gerä
     <string name="self_shot_open_warning_popup">Selbstauslöser kann nur bei geöffnetem Telefon verwendet werden.</string>
     <string name="self_recording_open_warning_popup">Selbstaufnahme kann nur bei geöffnetem Telefon verwendet werden.</string>
     <string name="contextual_filename">Kontextabhängige Dateinamen</string>
-    <string name="enable_gps_dialog">GPS-Tags müssen aktiviert sein. GPS-Tag aktivieren?</string>
+    <string name="enable_gps_dialog">GPS-Tags müssen aktiviert sein. “GPS-Tag” aktivieren?</string>
     <string name="gallery_disable">Galerie deaktiviert</string>
     <string name="HDR_Normal">Normal</string>
     <string name="HDR_Strong">Gut</string>

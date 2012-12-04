@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">相機</string>
     <string name="camcorder_label">攝影機</string>
-    <string name="wait">請稍候</string>
+    <string name="wait">請稍候…</string>
     <string name="warning_msg">警告</string>
     <string name="insert_mmc_msg">插入記憶卡使用照相機</string>
     <string name="not_enough_space">記憶體不足</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">記憶體不足。預設儲存位置已更改為手機記憶體</string>
     <string name="change_to_device_memory">SD 卡空間不足。已將預設儲存空間變更至裝置儲存</string>
     <string name="video_reach_size_limit">已達到最大錄製大小</string>
-    <string name="processing_msg">正在處理...</string>
+    <string name="processing_msg">正在處理…</string>
     <string name="panorama_processing_msg">請稍候，正在建立全景</string>
     <string name="battery_overheat">離開相機。電池溫度過高</string>
-    <string name="savingImage">正在儲存...</string>
+    <string name="savingImage">正在儲存…</string>
     <string name="open_hw_failed_msg">相機失敗</string>
     <string name="capture_failed_msg">拍攝失敗</string>
     <string name="recording_failed_msg">錄製失敗</string>
@@ -158,7 +158,7 @@
     <string name="Title_Guideline">指引線</string>
     <string name="Title_VideoQuality">影片品質</string>
     <string name="Title_AudioRecording">錄音</string>
-    <string name="Title_Storage">儲存空間</string>
+    <string name="Title_Storage">儲存裝置</string>
     <string name="Title_Reset">重設</string>
     <string name="Title_Mode">模式</string>
     <string name="Title_Back">返回</string>
@@ -196,9 +196,9 @@
     <string name="close_camera_for_unmounted_memory">使用照相機前，關閉 USB儲存</string>
     <string name="message_size_limited">已到達訊息大小限制</string>
     <string name="crop_save_text">儲存</string>
-    <string name="crop_discard_text">捨棄</string>
+    <string name="crop_discard_text">取消</string>
     <string name="crop_gallery_text">媒體瀏覽器</string>
-    <string name="wallpaper">設定桌布中。請稍候...</string>
+    <string name="wallpaper">設定桌布中。請稍候…</string>
     <string name="crop_label">裁剪圖片</string>
     <string name="low_database_storage_view_text">資料庫儲存空間幾乎已滿</string>
     <string name="camera_security_enter">由於安全政策，使用相機被限制</string>
@@ -251,21 +251,25 @@
     <string name="editable_shortcut_helptext_title">提示</string>
     <string name="editable_shortcut_helptext_message">輕觸並按住捷徑以進行編輯</string>
     <string name="editable_shortcut_helptext">輕觸並按住圖示，然後拖曳以編輯捷徑位置</string>
+    <string name="singleshotburst_capture_helptext">輕觸並按住相機鍵以拍攝連續快拍</string>
+    <string name="singleshotburst_storage_helptext">連續快拍圖像以設定的高畫質儲存</string>
     <string name="sbeam_helptext">拍照並與其他裝置分享照片。將裝置互相靠近以新增想要透過 S Beam 分享的裝置</string>
     <string name="storage_setting_dialog_title">儲存裝置位置</string>
     <string name="storage_setting_dialog_message">已插入 SD 卡。將儲存裝置位置變更到 SD 卡嗎？</string>
+    <string name="storage_setting_dialog_burstshot_message">單張拍攝將儲存到 SD 卡。連續快拍將儲存至裝置記憶體</string>
     <string name="do_not_ask_again">不再顯示</string>
     <string name="shutter">快門</string>
     <string name="record">錄音</string>
     <string name="bestpic">最佳照片</string>
     <string name="bestpic_on">開啟</string>
     <string name="bestpic_off">關閉</string>
-    <string name="bestgroup">最佳團體姿勢</string>
-    <string name="bestgroup_title">選擇最佳臉部以儲存</string>
+    <string name="bestgroup">最佳臉部表情</string>
+    <string name="bestgroup_title">選擇最佳臉部表情以儲存</string>
     <string name="battery_low">關閉相機。電池溫度過低</string>
     <string name="buddy_photo_share_helptext">透過臉部偵測拍攝並與好友分享照片</string>
     <string name="face_zoom_helptext">輕觸兩下臉孔以放大或縮小</string>
     <string name="burst_shot_guidetext">連續快拍將儲存至裝置記憶體</string>
+    <string name="best_photo_guidetext">最佳照片將儲存至裝置儲存空間</string>
     <string name="snap_shot_limitation_dialog">防手震啟用時無法使用錄製快照功能</string>
     <string name="on_device_help_focus">輕觸以設定相機對焦</string>
     <string name="on_device_help_camcorder">切換至攝錄影機模式</string>
@@ -294,6 +298,6 @@
     <string name="contextual_filename">關聯式檔名</string>
     <string name="enable_gps_dialog">需啟用 GPS 標籤。 啟用 GPS 標籤嗎？</string>
     <string name="gallery_disable">媒體瀏覽器已停用</string>
-    <string name="HDR_Normal">正常</string>
+    <string name="HDR_Normal">標準</string>
     <string name="HDR_Strong">強</string>
 </resources>

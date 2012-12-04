@@ -216,7 +216,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_ROOT_SHIFT:F
 
     .line 57
-    const v0, 0x7f060153
+    const v0, 0x7f060163
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -225,7 +225,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_POPUP_GROUP_X:F
 
     .line 58
-    const v0, 0x7f060154
+    const v0, 0x7f060164
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -234,7 +234,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_POPUP_GROUP_Y:F
 
     .line 59
-    const v0, 0x7f060155
+    const v0, 0x7f060165
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -243,7 +243,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_POPUP_GROUP_WIDTH:F
 
     .line 60
-    const v0, 0x7f060156
+    const v0, 0x7f060166
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -252,7 +252,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_POPUP_GROUP_HEIGHT:F
 
     .line 61
-    const v0, 0x7f060168
+    const v0, 0x7f060178
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -261,7 +261,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESS_TEXT_X:F
 
     .line 62
-    const v0, 0x7f060169
+    const v0, 0x7f060179
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -270,7 +270,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESS_TEXT_Y:F
 
     .line 63
-    const v0, 0x7f06016a
+    const v0, 0x7f06017a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -279,7 +279,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESS_TEXT_WIDTH:F
 
     .line 64
-    const v0, 0x7f06016b
+    const v0, 0x7f06017b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -299,7 +299,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESS_TEXT_SIZE:F
 
     .line 66
-    const v0, 0x7f060159
+    const v0, 0x7f060169
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -308,7 +308,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESSBAR_WIDTH:F
 
     .line 67
-    const v0, 0x7f06015a
+    const v0, 0x7f06016a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESSBAR_HEIGHT:F
 
     .line 68
-    const v0, 0x7f060164
+    const v0, 0x7f060174
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -326,7 +326,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESSBAR_X:F
 
     .line 69
-    const v0, 0x7f060165
+    const v0, 0x7f060175
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -337,7 +337,7 @@
     .line 70
     new-array v0, v6, [F
 
-    const v1, 0x7f06016c
+    const v1, 0x7f06017c
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -345,7 +345,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f06016d
+    const v1, 0x7f06017d
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -358,7 +358,7 @@
     .line 72
     new-array v0, v6, [F
 
-    const v1, 0x7f06016e
+    const v1, 0x7f06017e
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -366,7 +366,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f06016f
+    const v1, 0x7f06017f
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -390,7 +390,7 @@
 
     new-array v0, v0, [I
 
-    const v1, 0x7f06017b
+    const v1, 0x7f06018b
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -400,7 +400,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f06017c
+    const v1, 0x7f06018c
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -410,7 +410,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f06017d
+    const v1, 0x7f06018d
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -422,7 +422,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f06017e
+    const v2, 0x7f06018e
 
     invoke-static {v2}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -439,7 +439,7 @@
 
     new-array v0, v0, [I
 
-    const v1, 0x7f06017f
+    const v1, 0x7f06018f
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -449,7 +449,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f060180
+    const v1, 0x7f060190
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -459,7 +459,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f060181
+    const v1, 0x7f060191
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -471,7 +471,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f060182
+    const v2, 0x7f060192
 
     invoke-static {v2}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -484,7 +484,7 @@
     sput-object v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_TRI_POS_Y:[I
 
     .line 85
-    const v0, 0x7f060183
+    const v0, 0x7f060193
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -495,7 +495,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_TRI_WIDTH:I
 
     .line 86
-    const v0, 0x7f060184
+    const v0, 0x7f060194
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -506,7 +506,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_TRI_HEIGHT:I
 
     .line 88
-    const v0, 0x7f060185
+    const v0, 0x7f060195
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -515,7 +515,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_RECT_WIDTH:F
 
     .line 89
-    const v0, 0x7f060186
+    const v0, 0x7f060196
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -524,7 +524,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_RECT_HEIGHT:F
 
     .line 90
-    const v0, 0x7f060187
+    const v0, 0x7f060197
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -533,7 +533,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_RECT_MARGIN:F
 
     .line 92
-    const v0, 0x7f060170
+    const v0, 0x7f060180
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -542,7 +542,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->HELP_TEXT_WIDTH:F
 
     .line 93
-    const v0, 0x7f060171
+    const v0, 0x7f060181
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -608,7 +608,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->HELP_TEXT_SIZE:F
 
     .line 98
-    const v0, 0x7f060188
+    const v0, 0x7f060198
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -617,7 +617,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     .line 99
-    const v0, 0x7f060189
+    const v0, 0x7f060199
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -626,7 +626,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_LANDSCAPE_HEIGHT:F
 
     .line 100
-    const v0, 0x7f06018a
+    const v0, 0x7f06019a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -635,7 +635,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_LANDSCAPE_X:F
 
     .line 101
-    const v0, 0x7f06018b
+    const v0, 0x7f06019b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -644,7 +644,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_LANDSCAPE_Y:F
 
     .line 102
-    const v0, 0x7f06018c
+    const v0, 0x7f06019c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -653,7 +653,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_PORTRAIT_WIDTH:F
 
     .line 103
-    const v0, 0x7f06018d
+    const v0, 0x7f06019d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -662,7 +662,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
     .line 104
-    const v0, 0x7f06018e
+    const v0, 0x7f06019e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -671,7 +671,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_PORTRAIT_X:F
 
     .line 105
-    const v0, 0x7f06018f
+    const v0, 0x7f06019f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -680,7 +680,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_PORTRAIT_Y:F
 
     .line 106
-    const v0, 0x7f060190
+    const v0, 0x7f0601a0
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -689,7 +689,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_SINGLE_WIDTH:F
 
     .line 107
-    const v0, 0x7f060191
+    const v0, 0x7f0601a1
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -698,7 +698,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_SINGLE_HEIGHT:F
 
     .line 108
-    const v0, 0x7f060192
+    const v0, 0x7f0601a2
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -707,7 +707,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_RECT_THICKNESS:F
 
     .line 111
-    const v0, 0x7f060193
+    const v0, 0x7f0601a3
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -716,7 +716,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->VIEWFINDER_DESTINATION_X:F
 
     .line 112
-    const v0, 0x7f060194
+    const v0, 0x7f0601a4
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -725,7 +725,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->VIEWFINDER_DESTINATION_Y:F
 
     .line 113
-    const v0, 0x7f060195
+    const v0, 0x7f0601a5
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -734,7 +734,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->VIEWFINDER_DESTINATION_WIDTH:F
 
     .line 114
-    const v0, 0x7f060196
+    const v0, 0x7f0601a6
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -917,7 +917,7 @@
 
     sget v5, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->LIVEPREVIEW_LANDSCAPE_HEIGHT:F
 
-    const v6, 0x7f02020b
+    const v6, 0x7f02020d
 
     invoke-direct/range {v0 .. v6}, Lcom/sec/android/glview/TwGLNinePatchTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFI)V
 
@@ -954,7 +954,7 @@
 
     sub-float/2addr v5, v6
 
-    const v6, 0x7f02020c
+    const v6, 0x7f02020e
 
     invoke-direct/range {v0 .. v6}, Lcom/sec/android/glview/TwGLNinePatchTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFI)V
 
@@ -1045,9 +1045,9 @@
 
     sget v5, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->PANORAMASHOT_PROGRESSBAR_HEIGHT:F
 
-    const v6, 0x7f02029a
+    const v6, 0x7f0202a0
 
-    const v7, 0x7f020299
+    const v7, 0x7f02029f
 
     const/4 v8, 0x1
 
@@ -1570,7 +1570,7 @@
     .line 258
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanoramaMenu;->mPopupGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const v1, 0x7f020294
+    const v1, 0x7f02029a
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setNinePatchBackground(I)Z
 

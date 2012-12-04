@@ -33,10 +33,10 @@
 
     const/4 v2, 0x0
 
-    .line 676
+    .line 687
     invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 678
+    .line 689
     const/16 v0, 0x24
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -49,7 +49,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 681
+    .line 692
     const/4 v0, 0x3
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -62,7 +62,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 683
+    .line 694
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -73,7 +73,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 684
+    .line 695
     const/4 v0, 0x2
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -86,7 +86,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 685
+    .line 696
     const/4 v0, 0x7
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -99,7 +99,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 687
+    .line 698
     const/4 v0, 0x5
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -112,7 +112,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 689
+    .line 700
     const/4 v0, 0x6
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -125,7 +125,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 690
+    .line 701
     const/16 v0, 0x8
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -138,7 +138,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 691
+    .line 702
     const/4 v0, 0x4
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -151,7 +151,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 692
+    .line 703
     const/16 v0, 0x9
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -164,7 +164,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 694
+    .line 705
     const/16 v0, 0xa
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -177,7 +177,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 696
+    .line 707
     const/16 v0, 0xb
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -190,7 +190,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 697
+    .line 708
     const/16 v0, 0xe
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -203,7 +203,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 699
+    .line 710
     const/16 v0, 0x23
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -216,7 +216,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 701
+    .line 712
     const/16 v0, 0x13
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -229,6 +229,6 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/CameraSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 710
+    .line 721
     return-void
 .end method

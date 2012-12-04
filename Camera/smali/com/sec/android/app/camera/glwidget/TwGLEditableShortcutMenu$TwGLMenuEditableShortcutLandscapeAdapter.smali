@@ -29,20 +29,20 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 276
+    .line 274
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 277
+    .line 275
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mFirstBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {p1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$002(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-
-    .line 278
-    #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLastBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
     invoke-static {p1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$102(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
-    .line 279
+    .line 276
+    #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLastBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {p1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$202(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+
+    .line 277
     return-void
 .end method
 
@@ -52,11 +52,11 @@
     .locals 2
 
     .prologue
-    .line 282
+    .line 280
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
-    invoke-static {v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$200(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
+    invoke-static {v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mCols:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$400(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
 
     move-result v1
 
@@ -96,16 +96,16 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 286
+    .line 284
     if-nez p2, :cond_5
 
-    .line 287
+    .line 285
     new-instance v11, Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$400(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$500(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     move-result-object v1
 
@@ -115,9 +115,9 @@
 
     invoke-direct {v11, v1, v4, v4}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
 
-    .line 288
+    .line 286
     .local v11, v:Lcom/sec/android/glview/TwGLViewGroup;
-    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$500()I
+    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$600()I
 
     move-result v1
 
@@ -125,7 +125,7 @@
 
     int-to-float v3, v1
 
-    .line 289
+    .line 287
     .local v3, left:F
     const/4 v7, 0x0
 
@@ -133,7 +133,7 @@
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mCols:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$400(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
 
     move-result v1
 
@@ -144,7 +144,7 @@
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mCols:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$400(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
 
     move-result v1
 
@@ -153,7 +153,7 @@
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$200(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
 
     move-result-object v1
 
@@ -163,11 +163,11 @@
 
     if-ge v10, v1, :cond_3
 
-    .line 290
+    .line 288
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$200(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
 
     move-result-object v1
 
@@ -175,14 +175,14 @@
 
     move-result-object v9
 
-    .line 292
+    .line 290
     .local v9, itemData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$600(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$700(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     move-result-object v1
 
@@ -193,55 +193,55 @@
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLastBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {v2}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$100(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {v2}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$200(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
     move-result-object v2
 
     iget-object v5, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLandscapeList:Lcom/sec/android/glview/TwGLList;
-    invoke-static {v5}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$700(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/glview/TwGLList;
+    invoke-static {v5}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$800(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/glview/TwGLList;
 
     move-result-object v5
 
     iget-object v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLandscapeList:Lcom/sec/android/glview/TwGLList;
-    invoke-static {v6}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$700(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/glview/TwGLList;
+    invoke-static {v6}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$800(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/glview/TwGLList;
 
     move-result-object v6
 
     invoke-direct/range {v0 .. v6}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;-><init>(Lcom/sec/android/glview/TwGLContext;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;FFLcom/sec/android/glview/TwGLView;Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
 
-    .line 294
+    .line 292
     .local v0, dropBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLastBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {v1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$102(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {v1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$202(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
-    .line 295
+    .line 293
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mFirstBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$000(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$100(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
     move-result-object v1
 
     if-nez v1, :cond_0
 
-    .line 296
+    .line 294
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mFirstBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {v1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$002(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {v1, v0}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$102(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
-    .line 299
+    .line 297
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mViewList:Ljava/util/HashMap;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$800(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Ljava/util/HashMap;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$900(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -259,11 +259,11 @@
 
     check-cast v8, Lcom/sec/android/glview/TwGLView;
 
-    .line 300
+    .line 298
     .local v8, item:Lcom/sec/android/glview/TwGLView;
     if-nez v8, :cond_1
 
-    .line 301
+    .line 299
     invoke-virtual {v9}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
 
     move-result v1
@@ -272,14 +272,14 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 302
+    .line 300
     new-instance v8, Lcom/sec/android/app/camera/glwidget/TwGLItem;
 
     .end local v8           #item:Lcom/sec/android/glview/TwGLView;
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$900(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1000(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     move-result-object v1
 
@@ -289,7 +289,7 @@
 
     invoke-direct {v8, v1}, Lcom/sec/android/app/camera/glwidget/TwGLItem;-><init>(Lcom/sec/android/glview/TwGLContext;)V
 
-    .line 311
+    .line 309
     .restart local v8       #item:Lcom/sec/android/glview/TwGLView;
     :cond_1
     invoke-virtual {v8}, Lcom/sec/android/glview/TwGLView;->getWidth()F
@@ -298,8 +298,8 @@
 
     add-float/2addr v3, v1
 
-    .line 312
-    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$500()I
+    .line 310
+    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$600()I
 
     move-result v1
 
@@ -307,39 +307,39 @@
 
     add-float/2addr v3, v1
 
-    .line 313
+    .line 311
     invoke-virtual {v0, v8}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 315
+    .line 313
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLandscapeList:Lcom/sec/android/glview/TwGLList;
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$700(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/glview/TwGLList;
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$800(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/glview/TwGLList;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;->setOnTouchListener(Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
 
-    .line 316
+    .line 314
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;->setOnDragListener(Lcom/sec/android/glview/TwGLView$OnDragListener;)V
 
-    .line 317
+    .line 315
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;->setOnDropListener(Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDropListener;)V
 
-    .line 318
+    .line 316
     invoke-virtual {v11, v0}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 289
+    .line 287
     add-int/lit8 v7, v7, 0x1
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mCols:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$300(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$400(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)I
 
     move-result v1
 
@@ -349,7 +349,7 @@
 
     goto/16 :goto_0
 
-    .line 304
+    .line 302
     :cond_2
     const-string v1, "MenuBase"
 
@@ -357,7 +357,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 305
+    .line 303
     const-string v1, "MenuBase"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -384,21 +384,21 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 306
+    .line 304
     const-string v1, "MenuBase"
 
     const-string v2, "========================================="
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 307
+    .line 305
     new-instance v1, Ljava/lang/IllegalStateException;
 
     invoke-direct {v1}, Ljava/lang/IllegalStateException;-><init>()V
 
     throw v1
 
-    .line 320
+    .line 318
     .end local v0           #dropBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
     .end local v8           #item:Lcom/sec/android/glview/TwGLView;
     .end local v9           #itemData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
@@ -406,19 +406,19 @@
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->drawLines:Z
-    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1000(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Z
+    invoke-static {v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1100(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 321
+    .line 319
     new-instance v1, Lcom/sec/android/glview/TwGLImage;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #getter for: Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-    invoke-static {v2}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1100(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
+    invoke-static {v2}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1200(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;)Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     move-result-object v2
 
@@ -426,25 +426,25 @@
 
     move-result-object v2
 
-    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1200()I
+    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1300()I
 
     move-result v4
 
     int-to-float v4, v4
 
-    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1300()I
+    invoke-static {}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$1400()I
 
     move-result v5
 
     int-to-float v5, v5
 
-    const v6, 0x7f02022c
+    const v6, 0x7f02022e
 
     invoke-direct {v1, v2, v4, v5, v6}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
     invoke-virtual {v11, v1}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 326
+    .line 324
     .end local v3           #left:F
     .end local v7           #i:I
     .end local v10           #resourceIndex:I
@@ -465,18 +465,18 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 330
+    .line 328
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mLastBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$102(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$202(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
-    .line 331
+    .line 329
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu$TwGLMenuEditableShortcutLandscapeAdapter;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->mFirstBox:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    invoke-static {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$002(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
+    invoke-static {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->access$102(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;)Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
 
-    .line 332
+    .line 330
     return-void
 .end method

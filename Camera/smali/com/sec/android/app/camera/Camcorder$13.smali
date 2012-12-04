@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camcorder;->showSnapshotLimitationDialog()V
+    value = Lcom/sec/android/app/camera/Camcorder;->handlePluggedLowBattery(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 4071
+    .line 4107
     iput-object p1, p0, Lcom/sec/android/app/camera/Camcorder$13;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -38,11 +38,18 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+    .locals 2
     .parameter "dialog"
-    .parameter "whichButton"
+    .parameter "which"
 
     .prologue
-    .line 4073
+    .line 4109
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$13;->this$0:Lcom/sec/android/app/camera/Camcorder;
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Lcom/sec/android/app/camera/Camcorder;->mLowBatteryDisableFlashPopupDisplayed:Z
+
+    .line 4110
     return-void
 .end method

@@ -306,266 +306,272 @@
 
     .line 805
     :goto_0
-    :sswitch_0
     return v0
 
     .line 668
-    :sswitch_1
+    :sswitch_0
     const/4 v0, 0x0
 
     .line 669
     goto :goto_0
 
     .line 671
-    :sswitch_2
+    :sswitch_1
     const/4 v0, 0x6
 
     .line 672
     goto :goto_0
 
     .line 674
-    :sswitch_3
+    :sswitch_2
     const/4 v0, 0x5
 
     .line 675
     goto :goto_0
 
     .line 677
-    :sswitch_4
+    :sswitch_3
     const/16 v0, 0xb
 
     .line 678
     goto :goto_0
 
     .line 680
-    :sswitch_5
+    :sswitch_4
     const/16 v0, 0x11
 
     .line 681
     goto :goto_0
 
     .line 683
-    :sswitch_6
+    :sswitch_5
     const/16 v0, 0xc
 
     .line 684
     goto :goto_0
 
     .line 686
-    :sswitch_7
+    :sswitch_6
     const/16 v0, 0x14
 
     .line 687
     goto :goto_0
 
     .line 689
-    :sswitch_8
+    :sswitch_7
     const/16 v0, 0x10
 
     .line 690
     goto :goto_0
 
     .line 692
-    :sswitch_9
+    :sswitch_8
     const/16 v0, 0x8
 
     .line 693
     goto :goto_0
 
     .line 695
-    :sswitch_a
+    :sswitch_9
     const/16 v0, 0x12
 
     .line 696
     goto :goto_0
 
     .line 698
-    :sswitch_b
+    :sswitch_a
     const/4 v0, 0x7
 
     .line 699
     goto :goto_0
 
     .line 701
-    :sswitch_c
+    :sswitch_b
     const/16 v0, 0xe
 
     .line 702
     goto :goto_0
 
     .line 704
-    :sswitch_d
+    :sswitch_c
     const/4 v0, 0x2
 
     .line 705
     goto :goto_0
 
     .line 707
-    :sswitch_e
+    :sswitch_d
     const/4 v0, 0x4
 
     .line 708
     goto :goto_0
 
     .line 710
-    :sswitch_f
+    :sswitch_e
     const/16 v0, 0x15
 
     .line 711
     goto :goto_0
 
     .line 713
-    :sswitch_10
+    :sswitch_f
     const/16 v0, 0x37
 
     .line 714
     goto :goto_0
 
     .line 716
-    :sswitch_11
+    :sswitch_10
     const/16 v0, 0x38
 
     .line 717
     goto :goto_0
 
     .line 719
-    :sswitch_12
+    :sswitch_11
     const/16 v0, 0x9
 
     .line 720
     goto :goto_0
 
     .line 722
-    :sswitch_13
+    :sswitch_12
     const/16 v0, 0x17
 
     .line 723
     goto :goto_0
 
     .line 725
-    :sswitch_14
+    :sswitch_13
     const/16 v0, 0x16
 
     .line 726
     goto :goto_0
 
     .line 728
-    :sswitch_15
+    :sswitch_14
     const/16 v0, 0x18
 
     .line 729
     goto :goto_0
 
     .line 731
-    :sswitch_16
+    :sswitch_15
     const/4 v0, 0x1
 
     .line 732
     goto :goto_0
 
     .line 734
-    :sswitch_17
+    :sswitch_16
     const/16 v0, 0x1a
 
     .line 735
     goto :goto_0
 
     .line 737
-    :sswitch_18
+    :sswitch_17
     const/16 v0, 0x19
 
     .line 738
     goto :goto_0
 
     .line 740
-    :sswitch_19
+    :sswitch_18
     const/16 v0, 0x1b
 
     .line 741
     goto :goto_0
 
     .line 743
-    :sswitch_1a
+    :sswitch_19
     const/16 v0, 0x1e
 
     .line 744
     goto :goto_0
 
     .line 746
-    :sswitch_1b
+    :sswitch_1a
     const/16 v0, 0x20
 
     .line 747
     goto :goto_0
 
     .line 749
-    :sswitch_1c
+    :sswitch_1b
     const/16 v0, 0x1f
 
     .line 750
     goto :goto_0
 
     .line 752
-    :sswitch_1d
+    :sswitch_1c
     const/16 v0, 0x1d
 
     .line 753
     goto :goto_0
 
     .line 755
-    :sswitch_1e
+    :sswitch_1d
     const/16 v0, 0x22
 
     .line 756
     goto :goto_0
 
     .line 758
-    :sswitch_1f
+    :sswitch_1e
     const/16 v0, 0x23
 
     .line 759
     goto :goto_0
 
     .line 761
-    :sswitch_20
+    :sswitch_1f
     const/16 v0, 0x2c
 
     .line 762
     goto :goto_0
 
     .line 764
-    :sswitch_21
+    :sswitch_20
     const/16 v0, 0x25
 
     .line 765
     goto :goto_0
 
     .line 767
-    :sswitch_22
+    :sswitch_21
     const/16 v0, 0x26
 
     .line 768
     goto :goto_0
 
     .line 770
-    :sswitch_23
+    :sswitch_22
     const/16 v0, 0x2a
 
     .line 771
     goto :goto_0
 
     .line 773
-    :sswitch_24
+    :sswitch_23
     const/16 v0, 0x29
 
     .line 774
     goto :goto_0
 
     .line 776
-    :sswitch_25
+    :sswitch_24
     const/16 v0, 0x28
 
     .line 777
+    goto :goto_0
+
+    .line 780
+    :sswitch_25
+    const/16 v0, 0x2e
+
+    .line 782
     goto :goto_0
 
     .line 784
@@ -611,54 +617,52 @@
     goto :goto_0
 
     .line 666
-    nop
-
     :sswitch_data_0
     .sparse-switch
-        0x0 -> :sswitch_1
-        0x1 -> :sswitch_2
-        0x2 -> :sswitch_3
-        0x3 -> :sswitch_4
-        0x4 -> :sswitch_5
-        0x5 -> :sswitch_6
-        0x6 -> :sswitch_7
-        0x7 -> :sswitch_8
-        0x8 -> :sswitch_9
-        0x9 -> :sswitch_a
-        0xa -> :sswitch_b
-        0xb -> :sswitch_c
-        0xd -> :sswitch_d
-        0xe -> :sswitch_e
+        0x0 -> :sswitch_0
+        0x1 -> :sswitch_1
+        0x2 -> :sswitch_2
+        0x3 -> :sswitch_3
+        0x4 -> :sswitch_4
+        0x5 -> :sswitch_5
+        0x6 -> :sswitch_6
+        0x7 -> :sswitch_7
+        0x8 -> :sswitch_8
+        0x9 -> :sswitch_9
+        0xa -> :sswitch_a
+        0xb -> :sswitch_b
+        0xd -> :sswitch_c
+        0xe -> :sswitch_d
         0x10 -> :sswitch_26
-        0x11 -> :sswitch_f
-        0x12 -> :sswitch_12
-        0x13 -> :sswitch_13
-        0x16 -> :sswitch_14
+        0x11 -> :sswitch_e
+        0x12 -> :sswitch_11
+        0x13 -> :sswitch_12
+        0x16 -> :sswitch_13
         0x1b -> :sswitch_2b
-        0x1d -> :sswitch_15
+        0x1d -> :sswitch_14
         0x23 -> :sswitch_2a
-        0x24 -> :sswitch_16
-        0x33 -> :sswitch_25
-        0x35 -> :sswitch_24
-        0x36 -> :sswitch_23
+        0x24 -> :sswitch_15
+        0x33 -> :sswitch_24
+        0x35 -> :sswitch_23
+        0x36 -> :sswitch_22
         0x3f -> :sswitch_27
         0x40 -> :sswitch_28
-        0x43 -> :sswitch_10
-        0xbb8 -> :sswitch_18
-        0xbb9 -> :sswitch_19
-        0xbbb -> :sswitch_21
-        0xbbc -> :sswitch_1a
-        0xbbf -> :sswitch_1b
-        0xbc0 -> :sswitch_1c
-        0xbc1 -> :sswitch_1d
-        0xbc2 -> :sswitch_22
-        0xbc9 -> :sswitch_1f
-        0xbcd -> :sswitch_1e
-        0xbce -> :sswitch_17
-        0xbd6 -> :sswitch_20
-        0xbd7 -> :sswitch_0
+        0x43 -> :sswitch_f
+        0xbb8 -> :sswitch_17
+        0xbb9 -> :sswitch_18
+        0xbbb -> :sswitch_20
+        0xbbc -> :sswitch_19
+        0xbbf -> :sswitch_1a
+        0xbc0 -> :sswitch_1b
+        0xbc1 -> :sswitch_1c
+        0xbc2 -> :sswitch_21
+        0xbc9 -> :sswitch_1e
+        0xbcd -> :sswitch_1d
+        0xbce -> :sswitch_16
+        0xbd6 -> :sswitch_1f
+        0xbd7 -> :sswitch_25
         0xbdb -> :sswitch_29
-        0xbde -> :sswitch_11
+        0xbde -> :sswitch_10
     .end sparse-switch
 .end method
 
@@ -667,7 +671,7 @@
     .parameter "array"
 
     .prologue
-    .line 1488
+    .line 1489
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -676,7 +680,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 1489
+    .line 1490
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuDimController;->mCurrentDimArray:[Z
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuDimController;->mCurrentDimArray:[Z
@@ -689,12 +693,12 @@
 
     aput-boolean v2, v1, v0
 
-    .line 1488
+    .line 1489
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1491
+    .line 1492
     :cond_0
     return-void
 .end method
@@ -839,7 +843,7 @@
     .locals 1
 
     .prologue
-    .line 1469
+    .line 1470
     iget-boolean v0, p0, Lcom/sec/android/app/camera/MenuDimController;->mIsFlashDimmed:Z
 
     return v0
@@ -849,7 +853,7 @@
     .locals 1
 
     .prologue
-    .line 1461
+    .line 1462
     iget-boolean v0, p0, Lcom/sec/android/app/camera/MenuDimController;->mLowBattery:Z
 
     return v0
@@ -859,7 +863,7 @@
     .locals 4
 
     .prologue
-    .line 1473
+    .line 1474
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -868,23 +872,23 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 1474
+    .line 1475
     const/4 v2, 0x0
 
     invoke-virtual {p0, v0, v2}, Lcom/sec/android/app/camera/MenuDimController;->setDim(IZ)V
 
-    .line 1473
+    .line 1474
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1477
+    .line 1478
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/MenuDimController;->mDimArrayList:Ljava/util/concurrent/ConcurrentHashMap;
 
     monitor-enter v3
 
-    .line 1478
+    .line 1479
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuDimController;->mDimArrayList:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -896,7 +900,7 @@
 
     move-result-object v1
 
-    .line 1479
+    .line 1480
     .local v1, iter:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/sec/android/app/camera/MenuDimController$DimArray;>;"
     :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -905,7 +909,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 1480
+    .line 1481
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -920,7 +924,7 @@
 
     goto :goto_1
 
-    .line 1482
+    .line 1483
     .end local v1           #iter:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/sec/android/app/camera/MenuDimController$DimArray;>;"
     :catchall_0
     move-exception v2
@@ -938,19 +942,21 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1484
+    .line 1485
     invoke-virtual {p0}, Lcom/sec/android/app/camera/MenuDimController;->synchronizeDim()V
 
-    .line 1485
+    .line 1486
     return-void
 .end method
 
 .method public declared-synchronized refreshButtonDim(II)V
-    .locals 8
+    .locals 9
     .parameter "menuid"
     .parameter "modeid"
 
     .prologue
+    const/4 v8, 0x2
+
     const/4 v7, 0x1
 
     .line 845
@@ -1084,7 +1090,7 @@
     .restart local v1       #dimArray:Lcom/sec/android/app/camera/MenuDimController$DimArray;
     sparse-switch p1, :sswitch_data_0
 
-    .line 1431
+    .line 1428
     :cond_1
     :goto_0
     :sswitch_0
@@ -1092,7 +1098,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 1432
+    .line 1429
     const/4 v4, 0x2
 
     new-array v4, v4, [I
@@ -1101,7 +1107,7 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
-    .line 1433
+    .line 1430
     const/4 v4, 0x2
 
     new-array v4, v4, [I
@@ -1110,30 +1116,30 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
-    .line 1434
+    .line 1431
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFlashMode(I)V
 
-    .line 1435
+    .line 1432
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderFlashMode(I)V
 
-    .line 1438
+    .line 1435
     :cond_2
     iget-boolean v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mIsFlashDimmed:Z
 
     if-eqz v4, :cond_3
 
-    .line 1439
+    .line 1436
     const-string v4, "MenuDimController"
 
     const-string v5, "set flash dim by external"
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1440
+    .line 1437
     const/4 v4, 0x2
 
     new-array v4, v4, [I
@@ -1142,7 +1148,7 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
-    .line 1441
+    .line 1438
     const/4 v4, 0x2
 
     new-array v4, v4, [I
@@ -1151,17 +1157,17 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
-    .line 1442
+    .line 1439
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFlashMode(I)V
 
-    .line 1443
+    .line 1440
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderFlashMode(I)V
 
-    .line 1446
+    .line 1443
     :cond_3
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -1187,7 +1193,7 @@
 
     if-eqz v4, :cond_5
 
-    .line 1447
+    .line 1444
     :cond_4
     const/4 v4, 0x1
 
@@ -1201,7 +1207,7 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
-    .line 1448
+    .line 1445
     const/4 v4, 0x1
 
     new-array v4, v4, [I
@@ -1214,7 +1220,7 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
-    .line 1451
+    .line 1448
     :cond_5
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mDimArrayList:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -1224,12 +1230,12 @@
 
     invoke-virtual {v4, v5, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1453
+    .line 1450
     invoke-virtual {p0}, Lcom/sec/android/app/camera/MenuDimController;->processDim()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1454
+    .line 1451
     monitor-exit p0
 
     return-void
@@ -2773,7 +2779,7 @@
 
     .line 1229
     :cond_f
-    if-ne p2, v7, :cond_13
+    if-ne p2, v7, :cond_14
 
     .line 1230
     const/4 v4, 0x1
@@ -2819,7 +2825,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_12
 
     .line 1234
     const/4 v4, 0x1
@@ -2864,7 +2870,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_10
+    if-nez v4, :cond_11
 
     .line 1238
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
@@ -2886,11 +2892,93 @@
     :goto_4
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
 
+    .line 1270
+    .end local v3           #resolutionId:I
+    :cond_10
+    :goto_5
+    if-ne p2, v8, :cond_16
+
+    .line 1271
+    const/4 v4, 0x3
+
+    new-array v4, v4, [I
+
+    fill-array-data v4, :array_5b
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
+
+    .line 1272
+    const/4 v4, 0x4
+
+    new-array v4, v4, [I
+
+    fill-array-data v4, :array_5c
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
+
+    .line 1273
+    const/4 v4, 0x0
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderAntishake(I)V
+
+    .line 1274
+    const/16 v4, 0xf
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
+
+    .line 1275
+    const/4 v4, 0x0
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderZoomValue(I)V
+
+    .line 1276
+    iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/CameraSettings;->isVideocallPresetSelected()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    .line 1277
+    const/4 v4, 0x1
+
+    new-array v4, v4, [I
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0x1e
+
+    aput v6, v4, v5
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
+
+    .line 1278
+    const/4 v4, 0x1
+
+    new-array v4, v4, [I
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0x1e
+
+    aput v6, v4, v5
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
+
+    .line 1279
+    const/16 v4, 0x13
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
+
     goto/16 :goto_0
 
     .line 1240
-    .end local v3           #resolutionId:I
-    :cond_10
+    :cond_11
     const/16 v3, 0x13
 
     .restart local v3       #resolutionId:I
@@ -2898,7 +2986,7 @@
 
     .line 1244
     .end local v3           #resolutionId:I
-    :cond_11
+    :cond_12
     const/4 v4, 0x1
 
     new-array v4, v4, [I
@@ -2941,7 +3029,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_12
+    if-nez v4, :cond_13
 
     .line 1248
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
@@ -2960,30 +3048,30 @@
 
     .line 1252
     .restart local v3       #resolutionId:I
-    :goto_5
+    :goto_6
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
 
-    goto/16 :goto_0
+    goto/16 :goto_5
 
     .line 1250
     .end local v3           #resolutionId:I
-    :cond_12
+    :cond_13
     const/16 v3, 0x13
 
     .restart local v3       #resolutionId:I
-    goto :goto_5
+    goto :goto_6
 
     .line 1254
     .end local v3           #resolutionId:I
-    :cond_13
-    if-nez p2, :cond_1
+    :cond_14
+    if-nez p2, :cond_10
 
     .line 1255
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->isBackCamera()Z
 
     move-result v4
 
-    if-eqz v4, :cond_14
+    if-eqz v4, :cond_15
 
     .line 1256
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -2996,7 +3084,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1
+    if-eqz v4, :cond_10
 
     .line 1257
     const/4 v4, 0x1
@@ -3029,10 +3117,10 @@
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
 
-    goto/16 :goto_0
+    goto/16 :goto_5
 
     .line 1262
-    :cond_14
+    :cond_15
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -3043,7 +3131,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1
+    if-eqz v4, :cond_10
 
     .line 1263
     const/4 v4, 0x1
@@ -3072,6 +3160,81 @@
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
     .line 1265
+    const/16 v4, 0x13
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
+
+    goto/16 :goto_5
+
+    .line 1281
+    :cond_16
+    const/4 v4, 0x3
+
+    if-ne p2, v4, :cond_1
+
+    .line 1282
+    const/4 v4, 0x2
+
+    new-array v4, v4, [I
+
+    fill-array-data v4, :array_5d
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
+
+    .line 1283
+    const/4 v4, 0x2
+
+    new-array v4, v4, [I
+
+    fill-array-data v4, :array_5e
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
+
+    .line 1284
+    const/4 v4, 0x0
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderAntishake(I)V
+
+    .line 1285
+    iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/CameraSettings;->isVideocallPresetSelected()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    .line 1286
+    const/4 v4, 0x1
+
+    new-array v4, v4, [I
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0x1e
+
+    aput v6, v4, v5
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
+
+    .line 1287
+    const/4 v4, 0x1
+
+    new-array v4, v4, [I
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0x1e
+
+    aput v6, v4, v5
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
+
+    .line 1288
     const/16 v4, 0x13
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
@@ -3116,21 +3279,21 @@
 
     .line 1300
     :sswitch_7
-    if-ne p2, v7, :cond_17
+    if-ne p2, v7, :cond_19
 
     .line 1301
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getMode()I
 
     move-result v4
 
-    if-nez v4, :cond_15
+    if-nez v4, :cond_17
 
     .line 1302
     const/4 v4, 0x4
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_5b
+    fill-array-data v4, :array_5f
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
@@ -3139,7 +3302,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_5c
+    fill-array-data v4, :array_60
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
@@ -3159,19 +3322,19 @@
     goto/16 :goto_0
 
     .line 1306
-    :cond_15
+    :cond_17
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->isVideocallPresetSelected()Z
 
     move-result v4
 
-    if-eqz v4, :cond_16
+    if-eqz v4, :cond_18
 
     .line 1307
     const/4 v4, 0x6
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_5d
+    fill-array-data v4, :array_61
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
@@ -3180,7 +3343,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_5e
+    fill-array-data v4, :array_62
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
@@ -3192,12 +3355,12 @@
     goto/16 :goto_0
 
     .line 1311
-    :cond_16
+    :cond_18
     const/4 v4, 0x5
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_5f
+    fill-array-data v4, :array_63
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
@@ -3206,24 +3369,22 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_60
+    fill-array-data v4, :array_64
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
     goto/16 :goto_0
 
     .line 1315
-    :cond_17
-    const/4 v4, 0x2
-
-    if-ne p2, v4, :cond_18
+    :cond_19
+    if-ne p2, v8, :cond_1a
 
     .line 1316
     const/4 v4, 0x7
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_61
+    fill-array-data v4, :array_65
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
@@ -3232,7 +3393,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_62
+    fill-array-data v4, :array_66
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
@@ -3241,24 +3402,24 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_63
+    fill-array-data v4, :array_67
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/MenuDimController;->setSettingDefault([I)V
 
     goto/16 :goto_0
 
     .line 1321
-    :cond_18
+    :cond_1a
     const/4 v4, 0x3
 
-    if-ne p2, v4, :cond_19
+    if-ne p2, v4, :cond_1b
 
     .line 1322
     const/4 v4, 0x5
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_64
+    fill-array-data v4, :array_68
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
@@ -3267,7 +3428,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_65
+    fill-array-data v4, :array_69
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
@@ -3287,7 +3448,7 @@
     goto/16 :goto_0
 
     .line 1326
-    :cond_19
+    :cond_1b
     const/4 v4, 0x1
 
     new-array v4, v4, [I
@@ -3387,10 +3548,10 @@
     :sswitch_a
     const/16 v4, 0xd
 
-    if-ne p2, v4, :cond_1a
+    if-ne p2, v4, :cond_1c
 
     .line 1349
-    :cond_1a
+    :cond_1c
     const/16 v4, 0xd
 
     if-eq p2, v4, :cond_1
@@ -3442,7 +3603,7 @@
 
     .line 1356
     :sswitch_b
-    if-nez p2, :cond_1b
+    if-nez p2, :cond_1d
 
     .line 1357
     const/16 v4, 0x29
@@ -3454,7 +3615,7 @@
     goto/16 :goto_0
 
     .line 1359
-    :cond_1b
+    :cond_1d
     const/16 v4, 0x29
 
     const/4 v5, 0x0
@@ -3476,40 +3637,40 @@
 
     const/16 v5, 0xb
 
-    if-ne v4, v5, :cond_1c
+    if-ne v4, v5, :cond_1e
 
     .line 1366
     const/16 v4, 0xa
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_66
+    fill-array-data v4, :array_6a
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
     .line 1372
-    :goto_6
+    :goto_7
     const/4 v4, 0x7
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_67
+    fill-array-data v4, :array_6b
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/MenuDimController;->setSettingDefault([I)V
 
     goto/16 :goto_0
 
     .line 1368
-    :cond_1c
+    :cond_1e
     const/4 v4, 0x7
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_68
+    fill-array-data v4, :array_6c
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
-    goto :goto_6
+    goto :goto_7
 
     .line 1386
     :sswitch_d
@@ -3520,7 +3681,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_69
+    fill-array-data v4, :array_6d
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
@@ -3529,7 +3690,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_6a
+    fill-array-data v4, :array_6e
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/MenuDimController;->setSettingDefault([I)V
 
@@ -3537,23 +3698,23 @@
 
     .line 1399
     :sswitch_e
-    if-ne p2, v7, :cond_1e
+    if-ne p2, v7, :cond_20
 
     .line 1400
     const/16 v4, 0x12
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_6b
+    fill-array-data v4, :array_6f
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->setDimMulti([I)V
 
     .line 1402
-    const/4 v4, 0x5
+    const/16 v4, 0x9
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_6c
+    fill-array-data v4, :array_70
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSettingMulti([I)V
 
@@ -3562,7 +3723,7 @@
 
     new-array v4, v4, [I
 
-    fill-array-data v4, :array_6d
+    fill-array-data v4, :array_71
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/MenuDimController;->setSettingDefault([I)V
 
@@ -3571,25 +3732,30 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1d
+    if-eqz v4, :cond_1f
 
     .line 1405
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFocusMode(I)V
 
-    .line 1408
-    :goto_7
+    .line 1406
+    :cond_1f
     const/4 v4, 0x0
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFlashMode(I)V
 
-    .line 1410
+    .line 1407
     const/4 v4, 0x1
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCameraQuality(I)V
 
-    .line 1412
+    .line 1408
+    const/4 v4, 0x0
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setStorage(I)V
+
+    .line 1409
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v4, Lcom/sec/android/app/camera/Camera;
@@ -3604,7 +3770,7 @@
 
     invoke-virtual {v4, v5, v6}, Lcom/sec/android/app/camera/CameraEngine;->doChangeParameterSync(II)V
 
-    .line 1413
+    .line 1410
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v4, Lcom/sec/android/app/camera/Camera;
@@ -3621,7 +3787,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1415
+    .line 1412
     const-wide/16 v4, 0xc8
 
     :try_start_3
@@ -3632,35 +3798,27 @@
 
     goto/16 :goto_0
 
-    .line 1416
+    .line 1413
     :catch_0
     move-exception v2
 
-    .line 1418
+    .line 1415
     .local v2, e:Ljava/lang/InterruptedException;
     :try_start_4
     invoke-virtual {v2}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     goto/16 :goto_0
 
-    .line 1407
+    .line 1418
     .end local v2           #e:Ljava/lang/InterruptedException;
-    :cond_1d
-    const/4 v4, 0x1
-
-    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFocusMode(I)V
-
-    goto :goto_7
-
-    .line 1421
-    :cond_1e
+    :cond_20
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getCameraFlashMode()I
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 1422
+    .line 1419
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v4, Lcom/sec/android/app/camera/Camera;
@@ -3703,28 +3861,28 @@
         0x79 -> :sswitch_d
     .end sparse-switch
 
-    .line 1432
+    .line 1429
     :array_0
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
         0x25t 0x0t 0x0t 0x0t
     .end array-data
 
-    .line 1433
+    .line 1430
     :array_1
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
         0x25t 0x0t 0x0t 0x0t
     .end array-data
 
-    .line 1440
+    .line 1437
     :array_2
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
         0x25t 0x0t 0x0t 0x0t
     .end array-data
 
-    .line 1441
+    .line 1438
     :array_3
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
@@ -4928,8 +5086,39 @@
         0xct 0x0t 0x0t 0x0t
     .end array-data
 
-    .line 1302
+    .line 1271
     :array_5b
+    .array-data 0x4
+        0x2ct 0x0t 0x0t 0x0t
+        0x1at 0x0t 0x0t 0x0t
+        0x1et 0x0t 0x0t 0x0t
+    .end array-data
+
+    .line 1272
+    :array_5c
+    .array-data 0x4
+        0x2ct 0x0t 0x0t 0x0t
+        0x1at 0x0t 0x0t 0x0t
+        0x1et 0x0t 0x0t 0x0t
+        0x27t 0x0t 0x0t 0x0t
+    .end array-data
+
+    .line 1282
+    :array_5d
+    .array-data 0x4
+        0x2ct 0x0t 0x0t 0x0t
+        0x1at 0x0t 0x0t 0x0t
+    .end array-data
+
+    .line 1283
+    :array_5e
+    .array-data 0x4
+        0x2ct 0x0t 0x0t 0x0t
+        0x1at 0x0t 0x0t 0x0t
+    .end array-data
+
+    .line 1302
+    :array_5f
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
         0x18t 0x0t 0x0t 0x0t
@@ -4938,7 +5127,7 @@
     .end array-data
 
     .line 1303
-    :array_5c
+    :array_60
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
         0x18t 0x0t 0x0t 0x0t
@@ -4947,7 +5136,7 @@
     .end array-data
 
     .line 1307
-    :array_5d
+    :array_61
     .array-data 0x4
         0x1et 0x0t 0x0t 0x0t
         0x19t 0x0t 0x0t 0x0t
@@ -4958,7 +5147,7 @@
     .end array-data
 
     .line 1308
-    :array_5e
+    :array_62
     .array-data 0x4
         0x1et 0x0t 0x0t 0x0t
         0x19t 0x0t 0x0t 0x0t
@@ -4969,7 +5158,7 @@
     .end array-data
 
     .line 1311
-    :array_5f
+    :array_63
     .array-data 0x4
         0x19t 0x0t 0x0t 0x0t
         0x1bt 0x0t 0x0t 0x0t
@@ -4979,7 +5168,7 @@
     .end array-data
 
     .line 1312
-    :array_60
+    :array_64
     .array-data 0x4
         0x19t 0x0t 0x0t 0x0t
         0x1bt 0x0t 0x0t 0x0t
@@ -4989,7 +5178,7 @@
     .end array-data
 
     .line 1316
-    :array_61
+    :array_65
     .array-data 0x4
         0x19t 0x0t 0x0t 0x0t
         0x1bt 0x0t 0x0t 0x0t
@@ -5001,7 +5190,7 @@
     .end array-data
 
     .line 1318
-    :array_62
+    :array_66
     .array-data 0x4
         0x19t 0x0t 0x0t 0x0t
         0x1bt 0x0t 0x0t 0x0t
@@ -5013,7 +5202,7 @@
     .end array-data
 
     .line 1320
-    :array_63
+    :array_67
     .array-data 0x4
         0x1bt 0x0t 0x0t 0x0t
         0x1et 0x0t 0x0t 0x0t
@@ -5021,7 +5210,7 @@
     .end array-data
 
     .line 1322
-    :array_64
+    :array_68
     .array-data 0x4
         0x19t 0x0t 0x0t 0x0t
         0x1bt 0x0t 0x0t 0x0t
@@ -5031,7 +5220,7 @@
     .end array-data
 
     .line 1323
-    :array_65
+    :array_69
     .array-data 0x4
         0x19t 0x0t 0x0t 0x0t
         0x1bt 0x0t 0x0t 0x0t
@@ -5041,7 +5230,7 @@
     .end array-data
 
     .line 1366
-    :array_66
+    :array_6a
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
         0xct 0x0t 0x0t 0x0t
@@ -5056,7 +5245,7 @@
     .end array-data
 
     .line 1372
-    :array_67
+    :array_6b
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
         0xct 0x0t 0x0t 0x0t
@@ -5068,7 +5257,7 @@
     .end array-data
 
     .line 1368
-    :array_68
+    :array_6c
     .array-data 0x4
         0xbt 0x0t 0x0t 0x0t
         0xct 0x0t 0x0t 0x0t
@@ -5080,7 +5269,7 @@
     .end array-data
 
     .line 1388
-    :array_69
+    :array_6d
     .array-data 0x4
         0x25t 0x0t 0x0t 0x0t
         0x26t 0x0t 0x0t 0x0t
@@ -5088,7 +5277,7 @@
     .end array-data
 
     .line 1391
-    :array_6a
+    :array_6e
     .array-data 0x4
         0x25t 0x0t 0x0t 0x0t
         0x26t 0x0t 0x0t 0x0t
@@ -5096,7 +5285,7 @@
     .end array-data
 
     .line 1400
-    :array_6b
+    :array_6f
     .array-data 0x4
         0x1t 0x0t 0x0t 0x0t
         0x6t 0x0t 0x0t 0x0t
@@ -5119,17 +5308,21 @@
     .end array-data
 
     .line 1402
-    :array_6c
+    :array_70
     .array-data 0x4
         0xct 0x0t 0x0t 0x0t
         0xbt 0x0t 0x0t 0x0t
         0x14t 0x0t 0x0t 0x0t
         0x16t 0x0t 0x0t 0x0t
         0x30t 0x0t 0x0t 0x0t
+        0x10t 0x0t 0x0t 0x0t
+        0x12t 0x0t 0x0t 0x0t
+        0xet 0x0t 0x0t 0x0t
+        0x7t 0x0t 0x0t 0x0t
     .end array-data
 
     .line 1403
-    :array_6d
+    :array_71
     .array-data 0x4
         0x14t 0x0t 0x0t 0x0t
         0x16t 0x0t 0x0t 0x0t
@@ -5311,10 +5504,10 @@
     .parameter "isflashDimmed"
 
     .prologue
-    .line 1465
+    .line 1466
     iput-boolean p1, p0, Lcom/sec/android/app/camera/MenuDimController;->mIsFlashDimmed:Z
 
-    .line 1466
+    .line 1467
     return-void
 .end method
 
@@ -5323,10 +5516,22 @@
     .parameter "lowBattery"
 
     .prologue
-    .line 1457
+    .line 1458
     iput-boolean p1, p0, Lcom/sec/android/app/camera/MenuDimController;->mLowBattery:Z
 
-    .line 1458
+    .line 1459
+    return-void
+.end method
+
+.method public setPreviousFlashValue(I)V
+    .locals 0
+    .parameter "previousFlashValue"
+
+    .prologue
+    .line 1454
+    iput p1, p0, Lcom/sec/android/app/camera/MenuDimController;->mPreviousFlashValue:I
+
+    .line 1455
     return-void
 .end method
 
@@ -5339,14 +5544,14 @@
 
     const/4 v8, 0x0
 
-    .line 1495
+    .line 1496
     iget-object v6, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v6}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
     move-result-object v1
 
-    .line 1499
+    .line 1500
     .local v1, cs:Lcom/sec/android/app/camera/CameraSettings;
     move-object v0, p1
 
@@ -5362,36 +5567,36 @@
 
     aget v3, v0, v2
 
-    .line 1500
+    .line 1501
     .local v3, index:I
     packed-switch v3, :pswitch_data_0
 
-    .line 1499
+    .line 1500
     :goto_1
     :pswitch_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 1502
+    .line 1503
     :pswitch_1
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setSceneMode(I)V
 
     goto :goto_1
 
-    .line 1506
+    .line 1507
     :pswitch_2
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraFlashMode(I)V
 
     goto :goto_1
 
-    .line 1510
+    .line 1511
     :pswitch_3
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraISO(I)V
 
     goto :goto_1
 
-    .line 1516
+    .line 1517
     :pswitch_4
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getDefaultCameraFocusMode()I
 
@@ -5401,55 +5606,55 @@
 
     goto :goto_1
 
-    .line 1519
+    .line 1520
     :pswitch_5
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraExposureMeter(I)V
 
     goto :goto_1
 
-    .line 1522
+    .line 1523
     :pswitch_6
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraExposureValue(I)V
 
     goto :goto_1
 
-    .line 1525
+    .line 1526
     :pswitch_7
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraAutoContrast(I)V
 
     goto :goto_1
 
-    .line 1528
+    .line 1529
     :pswitch_8
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraEffect(I)V
 
     goto :goto_1
 
-    .line 1531
+    .line 1532
     :pswitch_9
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setWhiteBalance(I)V
 
     goto :goto_1
 
-    .line 1534
+    .line 1535
     :pswitch_a
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setTimer(I)V
 
     goto :goto_1
 
-    .line 1537
+    .line 1538
     :pswitch_b
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setGuideline(I)V
 
     goto :goto_1
 
-    .line 1540
+    .line 1541
     :pswitch_c
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraReview(I)V
 
     goto :goto_1
 
-    .line 1543
+    .line 1544
     :pswitch_d
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getAttachMode()Z
 
@@ -5457,19 +5662,19 @@
 
     if-ne v6, v9, :cond_2
 
-    .line 1544
+    .line 1545
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getAttachMMSMode()Z
 
     move-result v6
 
     if-ne v6, v9, :cond_0
 
-    .line 1545
+    .line 1546
     invoke-virtual {v1, v9}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderRecordingMode(I)V
 
     goto :goto_1
 
-    .line 1546
+    .line 1547
     :cond_0
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getAttachEmailMode()Z
 
@@ -5477,26 +5682,26 @@
 
     if-ne v6, v9, :cond_1
 
-    .line 1547
+    .line 1548
     const/4 v6, 0x4
 
     invoke-virtual {v1, v6}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderRecordingMode(I)V
 
     goto :goto_1
 
-    .line 1549
+    .line 1550
     :cond_1
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderRecordingMode(I)V
 
     goto :goto_1
 
-    .line 1552
+    .line 1553
     :cond_2
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderRecordingMode(I)V
 
     goto :goto_1
 
-    .line 1557
+    .line 1558
     :pswitch_e
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -5516,7 +5721,7 @@
 
     if-nez v6, :cond_3
 
-    .line 1558
+    .line 1559
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
     move-result-object v6
@@ -5531,14 +5736,14 @@
 
     move-result v5
 
-    .line 1564
+    .line 1565
     .local v5, resolutionId:I
     :goto_2
     invoke-virtual {v1, v5}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderResolution(I)Z
 
     goto :goto_1
 
-    .line 1561
+    .line 1562
     .end local v5           #resolutionId:I
     :cond_3
     const/16 v5, 0x13
@@ -5546,20 +5751,20 @@
     .restart local v5       #resolutionId:I
     goto :goto_2
 
-    .line 1567
+    .line 1568
     .end local v5           #resolutionId:I
     :pswitch_f
     invoke-virtual {v1, v9}, Lcom/sec/android/app/camera/CameraSettings;->setCameraReview(I)V
 
     goto/16 :goto_1
 
-    .line 1570
+    .line 1571
     :pswitch_10
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCameraAntiShake(I)V
 
     goto/16 :goto_1
 
-    .line 1573
+    .line 1574
     :pswitch_11
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getDefaultCamcorderAntishake()I
 
@@ -5569,54 +5774,70 @@
 
     goto/16 :goto_1
 
-    .line 1577
+    .line 1578
     :pswitch_12
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderFlashMode(I)V
 
     goto/16 :goto_1
 
-    .line 1581
+    .line 1582
     :pswitch_13
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderZoomValue(I)V
 
     goto/16 :goto_1
 
-    .line 1584
+    .line 1585
     :pswitch_14
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setWhiteBalance(I)V
 
     goto/16 :goto_1
 
-    .line 1587
+    .line 1588
     :pswitch_15
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderEffect(I)V
 
     goto/16 :goto_1
 
-    .line 1590
+    .line 1591
     :pswitch_16
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setSelfFlip(I)V
 
     goto/16 :goto_1
 
-    .line 1598
+    .line 1595
     :pswitch_17
+    sget v6, Lcom/sec/android/app/camera/CameraSettings;->DEFAULT_CAMCORDER_SPEED:I
+
+    invoke-virtual {v1, v6}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderSlowMotion(I)V
+
+    goto/16 :goto_1
+
+    .line 1599
+    :pswitch_18
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setBurstMode(I)V
 
     goto/16 :goto_1
 
-    .line 1602
-    :pswitch_18
+    .line 1603
+    :pswitch_19
     invoke-virtual {v1, v8}, Lcom/sec/android/app/camera/CameraSettings;->setContextualFilename(I)V
 
     goto/16 :goto_1
 
-    .line 1614
+    .line 1607
+    :pswitch_1a
+    sget v6, Lcom/sec/android/app/camera/CameraSettings;->DEFAULT_CAMCORDER_FASTMOTION:I
+
+    invoke-virtual {v1, v6}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderTimeLapse(I)V
+
+    goto/16 :goto_1
+
+    .line 1615
     .end local v3           #index:I
     :cond_4
     return-void
 
-    .line 1500
+    .line 1501
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_10
@@ -5663,13 +5884,13 @@
         :pswitch_0
         :pswitch_11
         :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
         :pswitch_17
-        :pswitch_18
-        :pswitch_18
         :pswitch_0
+        :pswitch_0
+        :pswitch_18
+        :pswitch_19
+        :pswitch_19
+        :pswitch_1a
     .end packed-switch
 .end method
 

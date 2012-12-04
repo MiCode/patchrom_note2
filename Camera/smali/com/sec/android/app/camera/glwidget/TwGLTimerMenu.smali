@@ -41,7 +41,7 @@
 
     .prologue
     .line 21
-    const v0, 0x7f060217
+    const v0, 0x7f060247
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -52,7 +52,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLTimerMenu;->TIMER_WIDTH:I
 
     .line 22
-    const v0, 0x7f060218
+    const v0, 0x7f060248
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -100,7 +100,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLTimerMenu;->SCREEN_HEIGHT:I
 
     .line 26
-    const v0, 0x7f060219
+    const v0, 0x7f060249
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -111,7 +111,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLTimerMenu;->TEXT_SIZE:I
 
     .line 27
-    const v0, 0x7f06021a
+    const v0, 0x7f06024a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -122,7 +122,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLTimerMenu;->TEXT_POS_LEFT:I
 
     .line 28
-    const v0, 0x7f06021b
+    const v0, 0x7f06024b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -222,7 +222,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f02028e
+    const v7, 0x7f020294
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFZI)V
 

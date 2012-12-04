@@ -46,29 +46,29 @@
 
     const/4 v0, 0x0
 
-    .line 2888
+    .line 2912
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2889
+    .line 2913
     iput-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
-    .line 2890
+    .line 2914
     iput-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
-    .line 2891
+    .line 2915
     iput-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
-    .line 2892
+    .line 2916
     iput-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 2893
+    .line 2917
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContinuousFileSequence:I
 
-    .line 2894
+    .line 2918
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -79,7 +79,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mCurrentShootingMode:I
 
-    .line 2895
+    .line 2919
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -90,7 +90,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mStorage:I
 
-    .line 2896
+    .line 2920
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -101,7 +101,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mWhiteBalance:I
 
-    .line 2897
+    .line 2921
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -121,7 +121,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2888
+    .line 2912
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;-><init>(Lcom/sec/android/app/camera/CameraEngine;)V
 
     return-void
@@ -134,7 +134,7 @@
     .parameter "x2"
 
     .prologue
-    .line 2888
+    .line 2912
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->storeImage([BLandroid/location/Location;)Z
 
     move-result v0
@@ -148,7 +148,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2888
+    .line 2912
     iput p1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContinuousFileSequence:I
 
     return p1
@@ -160,7 +160,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2888
+    .line 2912
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContentResolver:Landroid/content/ContentResolver;
 
     return-object p1
@@ -174,7 +174,7 @@
     .parameter "x3"
 
     .prologue
-    .line 2888
+    .line 2912
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
     return-void
@@ -184,25 +184,25 @@
     .locals 8
 
     .prologue
-    .line 3234
+    .line 3259
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 3235
+    .line 3260
     .local v1, dateTaken:J
     iget-object v5, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iput-wide v1, v5, Lcom/sec/android/app/camera/CameraEngine;->mDateTaken:J
 
-    .line 3237
+    .line 3262
     iget-object v5, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v5}, Lcom/sec/android/app/camera/CameraEngine;->getAddress()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3239
+    .line 3264
     .local v0, currentAddress:Ljava/lang/String;
     iget-object v5, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -215,12 +215,12 @@
 
     if-ne v5, v6, :cond_0
 
-    .line 3241
+    .line 3266
     iget-object v5, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iput-wide v1, v5, Lcom/sec/android/app/camera/CameraEngine;->mDateTakenForHDR:J
 
-    .line 3242
+    .line 3267
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -228,13 +228,13 @@
     .local v3, name:Ljava/lang/String;
     move-object v4, v3
 
-    .line 3250
+    .line 3275
     .end local v3           #name:Ljava/lang/String;
     .local v4, name:Ljava/lang/String;
     :goto_0
     return-object v4
 
-    .line 3244
+    .line 3269
     .end local v4           #name:Ljava/lang/String;
     :cond_0
     iget-object v5, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -248,7 +248,7 @@
 
     if-ne v5, v6, :cond_1
 
-    .line 3246
+    .line 3271
     iget-object v5, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-wide v5, v5, Lcom/sec/android/app/camera/CameraEngine;->mDateTakenForHDR:J
@@ -262,12 +262,12 @@
     .restart local v3       #name:Ljava/lang/String;
     move-object v4, v3
 
-    .line 3247
+    .line 3272
     .end local v3           #name:Ljava/lang/String;
     .restart local v4       #name:Ljava/lang/String;
     goto :goto_0
 
-    .line 3249
+    .line 3274
     .end local v4           #name:Ljava/lang/String;
     :cond_1
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;)Ljava/lang/String;
@@ -277,7 +277,7 @@
     .restart local v3       #name:Ljava/lang/String;
     move-object v4, v3
 
-    .line 3250
+    .line 3275
     .end local v3           #name:Ljava/lang/String;
     .restart local v4       #name:Ljava/lang/String;
     goto :goto_0
@@ -290,7 +290,7 @@
     .parameter "location"
 
     .prologue
-    .line 2968
+    .line 2992
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     new-instance v1, Ljava/lang/Thread;
@@ -304,7 +304,7 @@
     #setter for: Lcom/sec/android/app/camera/CameraEngine;->mPictureSavingThread:Ljava/lang/Thread;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/CameraEngine;->access$1602(Lcom/sec/android/app/camera/CameraEngine;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    .line 2981
+    .line 3005
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mPictureSavingThread:Ljava/lang/Thread;
@@ -316,7 +316,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 2982
+    .line 3006
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mPictureSavingThread:Ljava/lang/Thread;
@@ -326,17 +326,17 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2983
+    .line 3007
     return-void
 .end method
 
 .method private declared-synchronized storeImage([BLandroid/location/Location;)Z
-    .locals 31
+    .locals 32
     .parameter "data"
     .parameter "loc"
 
     .prologue
-    .line 2995
+    .line 3019
     monitor-enter p0
 
     :try_start_0
@@ -348,7 +348,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2996
+    .line 3020
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -357,7 +357,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CaptureData;->clear()V
 
-    .line 2997
+    .line 3021
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -366,7 +366,7 @@
 
     iput-object v7, v2, Lcom/sec/android/app/camera/CameraEngine;->mLastCaptureData:Lcom/sec/android/app/camera/CaptureData;
 
-    .line 3000
+    .line 3024
     :cond_0
     move-object/from16 v0, p0
 
@@ -426,7 +426,7 @@
 
     if-eq v2, v7, :cond_2
 
-    .line 3005
+    .line 3029
     :cond_1
     :try_start_1
     move-object/from16 v0, p0
@@ -439,7 +439,7 @@
 
     iput-object v7, v2, Lcom/sec/android/app/camera/CameraEngine;->mLastCaptureData:Lcom/sec/android/app/camera/CaptureData;
 
-    .line 3006
+    .line 3030
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -517,7 +517,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 3017
+    .line 3041
     :cond_2
     :goto_0
     :try_start_2
@@ -639,7 +639,21 @@
 
     if-eq v2, v7, :cond_3
 
-    .line 3026
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
+
+    iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraSettings;->getShootingMode()I
+
+    move-result v2
+
+    const/16 v7, 0x12
+
+    if-eq v2, v7, :cond_3
+
+    .line 3051
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -648,7 +662,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 3030
+    .line 3055
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -671,45 +685,45 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 3034
+    .line 3059
     :cond_3
-    const/4 v13, 0x1
+    const/4 v14, 0x1
 
-    .line 3036
-    .local v13, bSuccess:Z
+    .line 3061
+    .local v14, bSuccess:Z
     :try_start_3
-    new-instance v14, Ljava/util/GregorianCalendar;
+    new-instance v15, Ljava/util/GregorianCalendar;
 
-    invoke-direct {v14}, Ljava/util/GregorianCalendar;-><init>()V
+    invoke-direct {v15}, Ljava/util/GregorianCalendar;-><init>()V
 
-    .line 3037
-    .local v14, calendar:Ljava/util/GregorianCalendar;
-    new-instance v28, Landroid/text/format/Time;
+    .line 3062
+    .local v15, calendar:Ljava/util/GregorianCalendar;
+    new-instance v29, Landroid/text/format/Time;
 
-    invoke-direct/range {v28 .. v28}, Landroid/text/format/Time;-><init>()V
+    invoke-direct/range {v29 .. v29}, Landroid/text/format/Time;-><init>()V
 
-    .line 3038
-    .local v28, time:Landroid/text/format/Time;
-    move-object/from16 v0, v28
+    .line 3063
+    .local v29, time:Landroid/text/format/Time;
+    move-object/from16 v0, v29
 
     iget-object v2, v0, Landroid/text/format/Time;->timezone:Ljava/lang/String;
 
     invoke-static {v2}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
-    move-result-object v29
+    move-result-object v30
 
-    .line 3039
-    .local v29, timezone:Ljava/util/TimeZone;
-    move-object/from16 v0, v29
+    .line 3064
+    .local v30, timezone:Ljava/util/TimeZone;
+    move-object/from16 v0, v30
 
-    invoke-virtual {v14, v0}, Ljava/util/GregorianCalendar;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v15, v0}, Ljava/util/GregorianCalendar;->setTimeZone(Ljava/util/TimeZone;)V
 
-    .line 3040
-    invoke-virtual {v14}, Ljava/util/GregorianCalendar;->getTimeInMillis()J
+    .line 3065
+    invoke-virtual {v15}, Ljava/util/GregorianCalendar;->getTimeInMillis()J
 
     move-result-wide v5
 
-    .line 3042
+    .line 3067
     .local v5, dateTaken:J
     move-object/from16 v0, p0
 
@@ -717,17 +731,17 @@
 
     iput-wide v5, v2, Lcom/sec/android/app/camera/CameraEngine;->mDateTaken:J
 
-    .line 3044
+    .line 3069
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->getAddress()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v16
 
-    .line 3046
-    .local v15, currentAddress:Ljava/lang/String;
+    .line 3071
+    .local v16, currentAddress:Ljava/lang/String;
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mCurrentShootingMode:I
@@ -736,7 +750,7 @@
 
     if-ne v2, v7, :cond_5
 
-    .line 3047
+    .line 3072
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContinuousFileSequence:I
@@ -747,23 +761,25 @@
 
     iput v7, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContinuousFileSequence:I
 
-    invoke-static {v5, v6, v15, v2}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;I)Ljava/lang/String;
+    move-object/from16 v0, v16
 
-    move-result-object v24
+    invoke-static {v5, v6, v0, v2}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;I)Ljava/lang/String;
 
-    .line 3063
-    .local v24, name:Ljava/lang/String;
+    move-result-object v25
+
+    .line 3088
+    .local v25, name:Ljava/lang/String;
     :goto_1
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     #setter for: Lcom/sec/android/app/camera/CameraEngine;->mLastCapturedTitle:Ljava/lang/String;
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/CameraEngine;->access$2002(Lcom/sec/android/app/camera/CameraEngine;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 3066
+    .line 3091
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mCurrentShootingMode:I
@@ -772,12 +788,12 @@
 
     if-ne v2, v7, :cond_a
 
-    .line 3067
+    .line 3092
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -793,7 +809,7 @@
 
     move-result-object v4
 
-    .line 3073
+    .line 3098
     .local v4, filename:Ljava/lang/String;
     :goto_2
     move-object/from16 v0, p0
@@ -810,17 +826,17 @@
 
     if-ne v2, v7, :cond_c
 
-    .line 3074
+    .line 3099
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mStorage:I
 
     if-nez v2, :cond_b
 
-    .line 3075
+    .line 3100
     sget-object v3, Lcom/sec/android/app/camera/ImageSavingUtils;->CAMERA_IMAGE_SNS_MODE_PHONE:Ljava/lang/String;
 
-    .line 3094
+    .line 3119
     .local v3, directory:Ljava/lang/String;
     :goto_3
     move-object/from16 v0, p0
@@ -852,8 +868,8 @@
     #setter for: Lcom/sec/android/app/camera/CameraEngine;->mLastCapturedFileName:Ljava/lang/String;
     invoke-static {v2, v7}, Lcom/sec/android/app/camera/CameraEngine;->access$2102(Lcom/sec/android/app/camera/CameraEngine;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 3097
-    new-instance v19, Ljava/io/File;
+    .line 3122
+    new-instance v20, Ljava/io/File;
 
     move-object/from16 v0, p0
 
@@ -864,40 +880,40 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v20
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 3098
-    .local v19, f:Ljava/io/File;
-    const/16 v21, 0x0
+    .line 3123
+    .local v20, f:Ljava/io/File;
+    const/16 v22, 0x0
 
-    .local v21, filenumber:I
-    move/from16 v22, v21
-
-    .line 3099
-    .end local v21           #filenumber:I
     .local v22, filenumber:I
+    move/from16 v23, v22
+
+    .line 3124
+    .end local v22           #filenumber:I
+    .local v23, filenumber:I
     :goto_4
-    invoke-virtual/range {v19 .. v19}, Ljava/io/File;->exists()Z
+    invoke-virtual/range {v20 .. v20}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_11
 
-    .line 3100
+    .line 3125
     const-string v2, "CameraEngine"
 
     const-string v7, "Duplicated file name found"
 
     invoke-static {v2, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3101
+    .line 3126
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -909,11 +925,11 @@
 
     move-result-object v2
 
-    add-int/lit8 v21, v22, 0x1
+    add-int/lit8 v22, v23, 0x1
 
-    .end local v22           #filenumber:I
-    .restart local v21       #filenumber:I
-    move/from16 v0, v22
+    .end local v23           #filenumber:I
+    .restart local v22       #filenumber:I
+    move/from16 v0, v23
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -935,7 +951,7 @@
 
     move-result-object v4
 
-    .line 3102
+    .line 3127
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -965,17 +981,17 @@
     #setter for: Lcom/sec/android/app/camera/CameraEngine;->mLastCapturedFileName:Ljava/lang/String;
     invoke-static {v2, v7}, Lcom/sec/android/app/camera/CameraEngine;->access$2102(Lcom/sec/android/app/camera/CameraEngine;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 3104
+    .line 3129
     const-string v2, "CameraEngine"
 
     const-string v7, "New file name created"
 
     invoke-static {v2, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3105
-    new-instance v19, Ljava/io/File;
+    .line 3130
+    new-instance v20, Ljava/io/File;
 
-    .end local v19           #f:Ljava/io/File;
+    .end local v20           #f:Ljava/io/File;
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -985,37 +1001,37 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v20
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
-    .restart local v19       #f:Ljava/io/File;
-    move/from16 v22, v21
+    .restart local v20       #f:Ljava/io/File;
+    move/from16 v23, v22
 
-    .end local v21           #filenumber:I
-    .restart local v22       #filenumber:I
+    .end local v22           #filenumber:I
+    .restart local v23       #filenumber:I
     goto :goto_4
 
-    .line 3009
+    .line 3033
     .end local v3           #directory:Ljava/lang/String;
     .end local v4           #filename:Ljava/lang/String;
     .end local v5           #dateTaken:J
-    .end local v13           #bSuccess:Z
-    .end local v14           #calendar:Ljava/util/GregorianCalendar;
-    .end local v15           #currentAddress:Ljava/lang/String;
-    .end local v19           #f:Ljava/io/File;
-    .end local v22           #filenumber:I
-    .end local v24           #name:Ljava/lang/String;
-    .end local v28           #time:Landroid/text/format/Time;
-    .end local v29           #timezone:Ljava/util/TimeZone;
+    .end local v14           #bSuccess:Z
+    .end local v15           #calendar:Ljava/util/GregorianCalendar;
+    .end local v16           #currentAddress:Ljava/lang/String;
+    .end local v20           #f:Ljava/io/File;
+    .end local v23           #filenumber:I
+    .end local v25           #name:Ljava/lang/String;
+    .end local v29           #time:Landroid/text/format/Time;
+    .end local v30           #timezone:Ljava/util/TimeZone;
     :catch_0
-    move-exception v25
+    move-exception v26
 
-    .line 3010
-    .local v25, oom:Ljava/lang/OutOfMemoryError;
+    .line 3034
+    .local v26, oom:Ljava/lang/OutOfMemoryError;
     :try_start_4
     const-string v2, "CameraEngine"
 
@@ -1023,7 +1039,7 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3011
+    .line 3035
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1032,7 +1048,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 3012
+    .line 3036
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1041,7 +1057,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CaptureData;->clear()V
 
-    .line 3013
+    .line 3037
     :cond_4
     move-object/from16 v0, p0
 
@@ -1055,8 +1071,8 @@
 
     goto/16 :goto_0
 
-    .line 2995
-    .end local v25           #oom:Ljava/lang/OutOfMemoryError;
+    .line 3019
+    .end local v26           #oom:Ljava/lang/OutOfMemoryError;
     :catchall_0
     move-exception v2
 
@@ -1064,13 +1080,13 @@
 
     throw v2
 
-    .line 3048
+    .line 3073
     .restart local v5       #dateTaken:J
-    .restart local v13       #bSuccess:Z
-    .restart local v14       #calendar:Ljava/util/GregorianCalendar;
-    .restart local v15       #currentAddress:Ljava/lang/String;
-    .restart local v28       #time:Landroid/text/format/Time;
-    .restart local v29       #timezone:Ljava/util/TimeZone;
+    .restart local v14       #bSuccess:Z
+    .restart local v15       #calendar:Ljava/util/GregorianCalendar;
+    .restart local v16       #currentAddress:Ljava/lang/String;
+    .restart local v29       #time:Landroid/text/format/Time;
+    .restart local v30       #timezone:Ljava/util/TimeZone;
     :cond_5
     :try_start_5
     move-object/from16 v0, p0
@@ -1081,7 +1097,7 @@
 
     if-ne v2, v7, :cond_6
 
-    .line 3049
+    .line 3074
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1100,7 +1116,7 @@
     #setter for: Lcom/sec/android/app/camera/CameraEngine;->mNumOfSavedImageInHDR:I
     invoke-static {v2, v7}, Lcom/sec/android/app/camera/CameraEngine;->access$1902(Lcom/sec/android/app/camera/CameraEngine;I)I
 
-    .line 3050
+    .line 3075
     const-string v2, "CameraEngine"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1132,16 +1148,16 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3051
+    .line 3076
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->getHDRFileName()Ljava/lang/String;
 
-    move-result-object v24
+    move-result-object v25
 
-    .restart local v24       #name:Ljava/lang/String;
+    .restart local v25       #name:Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 3052
-    .end local v24           #name:Ljava/lang/String;
+    .line 3077
+    .end local v25           #name:Ljava/lang/String;
     :cond_6
     move-object/from16 v0, p0
 
@@ -1151,25 +1167,27 @@
 
     if-ne v2, v7, :cond_7
 
-    .line 3053
+    .line 3078
     const-string v2, "CameraEngine"
 
     const-string v7, "[LowLight] storeImage - add LLS tag "
 
     invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3054
+    .line 3079
     const-string v2, "LLS"
 
-    invoke-static {v5, v6, v15, v2}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    move-object/from16 v0, v16
 
-    move-result-object v24
+    invoke-static {v5, v6, v0, v2}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .restart local v24       #name:Ljava/lang/String;
+    move-result-object v25
+
+    .restart local v25       #name:Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 3055
-    .end local v24           #name:Ljava/lang/String;
+    .line 3080
+    .end local v25           #name:Ljava/lang/String;
     :cond_7
     move-object/from16 v0, p0
 
@@ -1195,7 +1213,7 @@
 
     if-ne v2, v7, :cond_9
 
-    .line 3059
+    .line 3084
     :cond_8
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1211,7 +1229,9 @@
 
     iput v8, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContinuousFileSequence:I
 
-    invoke-static {v5, v6, v15, v7}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;I)Ljava/lang/String;
+    move-object/from16 v0, v16
+
+    invoke-static {v5, v6, v0, v7}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1227,28 +1247,30 @@
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v24
+    move-result-object v25
 
-    .restart local v24       #name:Ljava/lang/String;
+    .restart local v25       #name:Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 3061
-    .end local v24           #name:Ljava/lang/String;
+    .line 3086
+    .end local v25           #name:Ljava/lang/String;
     :cond_9
-    invoke-static {v5, v6, v15}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;)Ljava/lang/String;
+    move-object/from16 v0, v16
 
-    move-result-object v24
+    invoke-static {v5, v6, v0}, Lcom/sec/android/app/camera/ImageSavingUtils;->createName(JLjava/lang/String;)Ljava/lang/String;
 
-    .restart local v24       #name:Ljava/lang/String;
+    move-result-object v25
+
+    .restart local v25       #name:Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 3069
+    .line 3094
     :cond_a
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v25
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1267,14 +1289,14 @@
     .restart local v4       #filename:Ljava/lang/String;
     goto/16 :goto_2
 
-    .line 3077
+    .line 3102
     :cond_b
     sget-object v3, Lcom/sec/android/app/camera/ImageSavingUtils;->CAMERA_IMAGE_SNS_MODE_MMC:Ljava/lang/String;
 
     .restart local v3       #directory:Ljava/lang/String;
     goto/16 :goto_3
 
-    .line 3078
+    .line 3103
     .end local v3           #directory:Ljava/lang/String;
     :cond_c
     move-object/from16 v0, p0
@@ -1319,7 +1341,7 @@
 
     if-ne v2, v7, :cond_f
 
-    .line 3082
+    .line 3107
     :cond_d
     move-object/from16 v0, p0
 
@@ -1327,7 +1349,7 @@
 
     if-nez v2, :cond_e
 
-    .line 3083
+    .line 3108
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1351,7 +1373,7 @@
     .restart local v3       #directory:Ljava/lang/String;
     goto/16 :goto_3
 
-    .line 3085
+    .line 3110
     .end local v3           #directory:Ljava/lang/String;
     :cond_e
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1377,7 +1399,7 @@
     .restart local v3       #directory:Ljava/lang/String;
     goto/16 :goto_3
 
-    .line 3088
+    .line 3113
     .end local v3           #directory:Ljava/lang/String;
     :cond_f
     move-object/from16 v0, p0
@@ -1386,13 +1408,13 @@
 
     if-nez v2, :cond_10
 
-    .line 3089
+    .line 3114
     sget-object v3, Lcom/sec/android/app/camera/ImageSavingUtils;->CAMERA_IMAGE_BUCKET_NAME_PHONE:Ljava/lang/String;
 
     .restart local v3       #directory:Ljava/lang/String;
     goto/16 :goto_3
 
-    .line 3091
+    .line 3116
     .end local v3           #directory:Ljava/lang/String;
     :cond_10
     sget-object v3, Lcom/sec/android/app/camera/ImageSavingUtils;->CAMERA_IMAGE_BUCKET_NAME_MMC:Ljava/lang/String;
@@ -1400,9 +1422,9 @@
     .restart local v3       #directory:Ljava/lang/String;
     goto/16 :goto_3
 
-    .line 3108
-    .restart local v19       #f:Ljava/io/File;
-    .restart local v22       #filenumber:I
+    .line 3133
+    .restart local v20       #f:Ljava/io/File;
+    .restart local v23       #filenumber:I
     :cond_11
     move-object/from16 v0, p0
 
@@ -1418,10 +1440,10 @@
 
     invoke-virtual {v2, v7}, Lcom/sec/android/app/camera/CameraEngine;->calculateOrientationForPicture(I)I
 
-    move-result v26
+    move-result v27
 
-    .line 3109
-    .local v26, orientationForPicture:I
+    .line 3134
+    .local v27, orientationForPicture:I
     const-string v2, "CameraEngine"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1434,7 +1456,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1446,18 +1468,18 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3110
+    .line 3135
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/CameraEngine;->convertToExifInterfaceOrientation(I)I
 
     move-result v10
 
-    .line 3111
+    .line 3136
     .local v10, orientationForExif:I
     const-string v2, "CameraEngine"
 
@@ -1481,7 +1503,7 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3113
+    .line 3138
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1490,18 +1512,18 @@
 
     if-eqz v2, :cond_12
 
-    .line 3114
+    .line 3139
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mLastCaptureData:Lcom/sec/android/app/camera/CaptureData;
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/CaptureData;->setOrientation(I)V
 
-    .line 3116
+    .line 3141
     :cond_12
     move-object/from16 v0, p0
 
@@ -1523,9 +1545,9 @@
 
     invoke-static/range {v2 .. v12}, Lcom/sec/android/app/camera/ImageSavingUtils;->addImage(ILjava/lang/String;Ljava/lang/String;JLandroid/location/Location;Landroid/graphics/Bitmap;[BIII)Z
 
-    move-result v13
+    move-result v14
 
-    .line 3118
+    .line 3143
     const-string v2, "CameraEngine"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1538,7 +1560,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7, v13}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v14}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -1548,10 +1570,10 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3120
-    if-nez v13, :cond_13
+    .line 3145
+    if-nez v14, :cond_13
 
-    .line 3121
+    .line 3146
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1562,11 +1584,11 @@
 
     invoke-virtual {v2, v7}, Lcom/sec/android/app/camera/CameraEngine$MainHandler;->sendEmptyMessage(I)Z
 
-    .line 3124
+    .line 3149
     :cond_13
-    if-eqz v13, :cond_1b
+    if-eqz v14, :cond_1c
 
-    .line 3125
+    .line 3150
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1593,7 +1615,7 @@
 
     const/16 v7, 0xe
 
-    if-ne v2, v7, :cond_1c
+    if-ne v2, v7, :cond_1d
 
     move-object/from16 v0, p0
 
@@ -1607,9 +1629,9 @@
 
     move-result v2
 
-    if-nez v2, :cond_1c
+    if-nez v2, :cond_1d
 
-    .line 3127
+    .line 3152
     :cond_14
     move-object/from16 v0, p0
 
@@ -1627,7 +1649,7 @@
 
     if-eqz v2, :cond_15
 
-    .line 3131
+    .line 3156
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1646,70 +1668,70 @@
 
     move-result-object v7
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v2, v7, v0}, Lcom/sec/android/app/camera/Camera;->updateThumbnail(Landroid/graphics/Bitmap;I)V
 
-    .line 3154
+    .line 3179
     :cond_15
     :goto_5
-    new-instance v30, Landroid/content/ContentValues;
+    new-instance v31, Landroid/content/ContentValues;
 
     const/16 v2, 0x8
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-direct {v0, v2}, Landroid/content/ContentValues;-><init>(I)V
 
-    .line 3155
-    .local v30, values:Landroid/content/ContentValues;
+    .line 3180
+    .local v31, values:Landroid/content/ContentValues;
     const-string v2, "title"
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
-    move-object/from16 v1, v24
+    move-object/from16 v1, v25
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3160
+    .line 3185
     const-string v2, "_display_name"
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3161
+    .line 3186
     const-string v2, "datetaken"
 
     invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3162
+    .line 3187
     const-string v2, "mime_type"
 
     const-string v7, "image/jpeg"
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3163
+    .line 3188
     const-string v2, "orientation"
 
-    invoke-static/range {v26 .. v26}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static/range {v27 .. v27}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3164
+    .line 3189
     const-string v2, "_data"
 
     move-object/from16 v0, p0
@@ -1721,11 +1743,11 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3165
+    .line 3190
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -1740,7 +1762,7 @@
 
     if-eq v2, v7, :cond_16
 
-    .line 3166
+    .line 3191
     const-string v2, "height"
 
     move-object/from16 v0, p0
@@ -1761,11 +1783,11 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3167
+    .line 3192
     const-string v2, "width"
 
     move-object/from16 v0, p0
@@ -1786,15 +1808,15 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3170
+    .line 3195
     :cond_16
     if-eqz p2, :cond_17
 
-    .line 3171
+    .line 3196
     const-string v2, "latitude"
 
     invoke-virtual/range {p2 .. p2}, Landroid/location/Location;->getLatitude()D
@@ -1805,11 +1827,11 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Double;)V
 
-    .line 3172
+    .line 3197
     const-string v2, "longitude"
 
     invoke-virtual/range {p2 .. p2}, Landroid/location/Location;->getLongitude()D
@@ -1820,11 +1842,11 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Double;)V
 
-    .line 3175
+    .line 3200
     :cond_17
     move-object/from16 v0, p0
 
@@ -1868,7 +1890,7 @@
 
     if-ne v2, v7, :cond_19
 
-    .line 3178
+    .line 3203
     :cond_18
     const-string v2, "CameraEngine"
 
@@ -1906,7 +1928,26 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3184
+    .line 3206
+    const-string v2, "group_id"
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
+
+    invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraEngine;->getGroupID()I
+
+    move-result v7
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    move-object/from16 v0, v31
+
+    invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 3209
     :cond_19
     const-string v2, "date_modified"
 
@@ -1918,32 +1959,76 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 3186
-    const/16 v20, 0x0
+    .line 3211
+    const/16 v21, 0x0
 
-    .line 3201
-    .local v20, fileUri:Landroid/net/Uri;
+    .line 3215
+    .local v21, fileUri:Landroid/net/Uri;
+    if-eqz p2, :cond_1a
+
+    .line 3217
     :try_start_6
+    const-string v2, "CameraEngine"
+
+    const-string v7, "Insert contextual tag"
+
+    invoke-static {v2, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3219
+    const-string v13, "weather_ID"
+
+    .line 3220
+    .local v13, WEATHER_ID:Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
+
+    iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    if-eqz v2, :cond_1a
+
+    .line 3221
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
+
+    iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getWeather()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    move-object/from16 v0, v31
+
+    invoke-virtual {v0, v13, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 3226
+    .end local v13           #WEATHER_ID:Ljava/lang/String;
+    :cond_1a
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContentResolver:Landroid/content/ContentResolver;
 
     sget-object v7, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v31
 
     invoke-virtual {v2, v7, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
-    move-result-object v20
+    move-result-object v21
 
-    .line 3211
+    .line 3236
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mContentResolver:Landroid/content/ContentResolver;
@@ -1956,29 +2041,29 @@
 
     move-result-wide v7
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v21
 
     invoke-static {v2, v0, v7, v8}, Lcom/sec/android/app/camera/ImageSavingUtils;->setImageSize(Landroid/content/ContentResolver;Landroid/net/Uri;J)V
 
-    .line 3213
+    .line 3238
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v21
 
     iput-object v0, v2, Lcom/sec/android/app/camera/CameraEngine;->mLastContentUri:Landroid/net/Uri;
 
-    .line 3214
+    .line 3239
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    if-eqz v2, :cond_1a
+    if-eqz v2, :cond_1b
 
-    .line 3215
+    .line 3240
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -2003,8 +2088,8 @@
     .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_6 .. :try_end_6} :catch_3
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
 
-    .line 3223
-    :cond_1a
+    .line 3248
+    :cond_1b
     :goto_6
     :try_start_7
     move-object/from16 v0, p0
@@ -2019,41 +2104,41 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_2
 
-    .line 3229
+    .line 3254
     .end local v3           #directory:Ljava/lang/String;
     .end local v4           #filename:Ljava/lang/String;
     .end local v5           #dateTaken:J
     .end local v10           #orientationForExif:I
-    .end local v14           #calendar:Ljava/util/GregorianCalendar;
-    .end local v15           #currentAddress:Ljava/lang/String;
-    .end local v19           #f:Ljava/io/File;
-    .end local v20           #fileUri:Landroid/net/Uri;
-    .end local v22           #filenumber:I
-    .end local v24           #name:Ljava/lang/String;
-    .end local v26           #orientationForPicture:I
-    .end local v28           #time:Landroid/text/format/Time;
-    .end local v29           #timezone:Ljava/util/TimeZone;
-    .end local v30           #values:Landroid/content/ContentValues;
-    :cond_1b
+    .end local v15           #calendar:Ljava/util/GregorianCalendar;
+    .end local v16           #currentAddress:Ljava/lang/String;
+    .end local v20           #f:Ljava/io/File;
+    .end local v21           #fileUri:Landroid/net/Uri;
+    .end local v23           #filenumber:I
+    .end local v25           #name:Ljava/lang/String;
+    .end local v27           #orientationForPicture:I
+    .end local v29           #time:Landroid/text/format/Time;
+    .end local v30           #timezone:Ljava/util/TimeZone;
+    .end local v31           #values:Landroid/content/ContentValues;
+    :cond_1c
     :goto_7
     monitor-exit p0
 
-    return v13
+    return v14
 
-    .line 3133
+    .line 3158
     .restart local v3       #directory:Ljava/lang/String;
     .restart local v4       #filename:Ljava/lang/String;
     .restart local v5       #dateTaken:J
     .restart local v10       #orientationForExif:I
-    .restart local v14       #calendar:Ljava/util/GregorianCalendar;
-    .restart local v15       #currentAddress:Ljava/lang/String;
-    .restart local v19       #f:Ljava/io/File;
-    .restart local v22       #filenumber:I
-    .restart local v24       #name:Ljava/lang/String;
-    .restart local v26       #orientationForPicture:I
-    .restart local v28       #time:Landroid/text/format/Time;
-    .restart local v29       #timezone:Ljava/util/TimeZone;
-    :cond_1c
+    .restart local v15       #calendar:Ljava/util/GregorianCalendar;
+    .restart local v16       #currentAddress:Ljava/lang/String;
+    .restart local v20       #f:Ljava/io/File;
+    .restart local v23       #filenumber:I
+    .restart local v25       #name:Ljava/lang/String;
+    .restart local v27       #orientationForPicture:I
+    .restart local v29       #time:Landroid/text/format/Time;
+    .restart local v30       #timezone:Ljava/util/TimeZone;
+    :cond_1d
     :try_start_8
     move-object/from16 v0, p0
 
@@ -2069,7 +2154,7 @@
 
     if-ne v2, v7, :cond_15
 
-    .line 3134
+    .line 3159
     const-string v2, "CameraEngine"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -2101,14 +2186,14 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3135
+    .line 3160
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    if-eqz v2, :cond_1d
+    if-eqz v2, :cond_1e
 
     move-object/from16 v0, p0
 
@@ -2119,9 +2204,9 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_1d
+    if-eqz v2, :cond_1e
 
-    .line 3136
+    .line 3161
     const-string v2, "CameraEngine"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -2153,7 +2238,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2165,7 +2250,7 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3137
+    .line 3162
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -2183,11 +2268,11 @@
 
     move-result-object v7
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v2, v7, v0}, Lcom/sec/android/app/camera/Camera;->updateThumbnail(Landroid/graphics/Bitmap;I)V
 
-    .line 3138
+    .line 3163
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -2199,7 +2284,7 @@
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 3139
+    .line 3164
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -2212,10 +2297,10 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_2
 
-    .line 3145
-    :cond_1d
+    .line 3170
+    :cond_1e
     :try_start_9
-    new-instance v17, Landroid/media/ExifInterface;
+    new-instance v18, Landroid/media/ExifInterface;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2239,35 +2324,35 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     invoke-direct {v0, v2}, Landroid/media/ExifInterface;-><init>(Ljava/lang/String;)V
 
-    .line 3146
-    .local v17, exif:Landroid/media/ExifInterface;
+    .line 3171
+    .local v18, exif:Landroid/media/ExifInterface;
     const-string v2, "Orientation"
 
     const/4 v7, -0x1
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     invoke-virtual {v0, v2, v7}, Landroid/media/ExifInterface;->getAttributeInt(Ljava/lang/String;I)I
 
-    move-result v18
+    move-result v19
 
-    .line 3147
-    .local v18, exifOrientation:I
+    .line 3172
+    .local v19, exifOrientation:I
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
-    move/from16 v0, v18
+    move/from16 v0, v19
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/CameraEngine;->convertExifOrientationToMediaOrientation(I)I
 
-    move-result v26
+    move-result v27
 
-    .line 3148
+    .line 3173
     const-string v2, "CameraEngine"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -2280,7 +2365,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v18
+    move/from16 v0, v19
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2292,7 +2377,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v26
+    move/from16 v0, v27
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2310,14 +2395,14 @@
 
     goto/16 :goto_5
 
-    .line 3149
-    .end local v17           #exif:Landroid/media/ExifInterface;
-    .end local v18           #exifOrientation:I
+    .line 3174
+    .end local v18           #exif:Landroid/media/ExifInterface;
+    .end local v19           #exifOrientation:I
     :catch_1
-    move-exception v23
+    move-exception v24
 
-    .line 3150
-    .local v23, ioex:Ljava/io/IOException;
+    .line 3175
+    .local v24, ioex:Ljava/io/IOException;
     :try_start_a
     const-string v2, "CameraEngine"
 
@@ -2331,7 +2416,7 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v23
+    move-object/from16 v0, v24
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2348,31 +2433,31 @@
 
     goto/16 :goto_5
 
-    .line 3225
+    .line 3250
     .end local v3           #directory:Ljava/lang/String;
     .end local v4           #filename:Ljava/lang/String;
     .end local v5           #dateTaken:J
     .end local v10           #orientationForExif:I
-    .end local v14           #calendar:Ljava/util/GregorianCalendar;
-    .end local v15           #currentAddress:Ljava/lang/String;
-    .end local v19           #f:Ljava/io/File;
-    .end local v22           #filenumber:I
-    .end local v23           #ioex:Ljava/io/IOException;
-    .end local v24           #name:Ljava/lang/String;
-    .end local v26           #orientationForPicture:I
-    .end local v28           #time:Landroid/text/format/Time;
-    .end local v29           #timezone:Ljava/util/TimeZone;
+    .end local v15           #calendar:Ljava/util/GregorianCalendar;
+    .end local v16           #currentAddress:Ljava/lang/String;
+    .end local v20           #f:Ljava/io/File;
+    .end local v23           #filenumber:I
+    .end local v24           #ioex:Ljava/io/IOException;
+    .end local v25           #name:Ljava/lang/String;
+    .end local v27           #orientationForPicture:I
+    .end local v29           #time:Landroid/text/format/Time;
+    .end local v30           #timezone:Ljava/util/TimeZone;
     :catch_2
-    move-exception v16
+    move-exception v17
 
-    .line 3226
-    .local v16, ex:Ljava/lang/Exception;
+    .line 3251
+    .local v17, ex:Ljava/lang/Exception;
     :try_start_b
     const-string v2, "CameraEngine"
 
     const-string v7, "Exception while compressing image."
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v17
 
     invoke-static {v2, v7, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_b
@@ -2380,27 +2465,27 @@
 
     goto/16 :goto_7
 
-    .line 3217
-    .end local v16           #ex:Ljava/lang/Exception;
+    .line 3242
+    .end local v17           #ex:Ljava/lang/Exception;
     .restart local v3       #directory:Ljava/lang/String;
     .restart local v4       #filename:Ljava/lang/String;
     .restart local v5       #dateTaken:J
     .restart local v10       #orientationForExif:I
-    .restart local v14       #calendar:Ljava/util/GregorianCalendar;
-    .restart local v15       #currentAddress:Ljava/lang/String;
-    .restart local v19       #f:Ljava/io/File;
-    .restart local v20       #fileUri:Landroid/net/Uri;
-    .restart local v22       #filenumber:I
-    .restart local v24       #name:Ljava/lang/String;
-    .restart local v26       #orientationForPicture:I
-    .restart local v28       #time:Landroid/text/format/Time;
-    .restart local v29       #timezone:Ljava/util/TimeZone;
-    .restart local v30       #values:Landroid/content/ContentValues;
+    .restart local v15       #calendar:Ljava/util/GregorianCalendar;
+    .restart local v16       #currentAddress:Ljava/lang/String;
+    .restart local v20       #f:Ljava/io/File;
+    .restart local v21       #fileUri:Landroid/net/Uri;
+    .restart local v23       #filenumber:I
+    .restart local v25       #name:Ljava/lang/String;
+    .restart local v27       #orientationForPicture:I
+    .restart local v29       #time:Landroid/text/format/Time;
+    .restart local v30       #timezone:Ljava/util/TimeZone;
+    .restart local v31       #values:Landroid/content/ContentValues;
     :catch_3
-    move-exception v27
+    move-exception v28
 
-    .line 3218
-    .local v27, sfe:Landroid/database/sqlite/SQLiteFullException;
+    .line 3243
+    .local v28, sfe:Landroid/database/sqlite/SQLiteFullException;
     :try_start_c
     const-string v2, "CameraEngine"
 
@@ -2408,7 +2493,7 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3219
+    .line 3244
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -2437,7 +2522,7 @@
     .locals 1
 
     .prologue
-    .line 3470
+    .line 3493
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2447,7 +2532,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3471
+    .line 3494
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2457,13 +2542,13 @@
 
     invoke-virtual {v0}, Lcom/sec/android/seccamera/SecCamera;->cancelPanorama()V
 
-    .line 3474
+    .line 3497
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->startContinuousAF()V
 
-    .line 3475
+    .line 3498
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -2472,12 +2557,12 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->resumeAudioPlayback()V
 
-    .line 3476
+    .line 3499
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
-    .line 3477
+    .line 3500
     return-void
 .end method
 
@@ -2485,7 +2570,7 @@
     .locals 1
 
     .prologue
-    .line 3563
+    .line 3588
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2495,7 +2580,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3564
+    .line 3589
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2505,7 +2590,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/seccamera/SecCamera;->cancelSeriesActionShot()V
 
-    .line 3566
+    .line 3591
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2515,12 +2600,12 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->resumeAudioPlayback()V
 
-    .line 3567
+    .line 3592
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
-    .line 3568
+    .line 3593
     return-void
 .end method
 
@@ -2528,7 +2613,7 @@
     .locals 1
 
     .prologue
-    .line 3571
+    .line 3596
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
     return v0
@@ -2540,7 +2625,7 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 3270
+    .line 3295
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraEngine;->isCapturing()Z
@@ -2561,7 +2646,7 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 3271
+    .line 3296
     :cond_0
     const-string v1, "CameraEngine"
 
@@ -2609,12 +2694,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3296
+    .line 3320
     :cond_1
     :goto_0
     return-void
 
-    .line 3275
+    .line 3300
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2624,7 +2709,7 @@
 
     move-result v0
 
-    .line 3276
+    .line 3301
     .local v0, shootingMode:I
     const-string v1, "CameraEngine"
 
@@ -2648,7 +2733,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3277
+    .line 3302
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -2685,7 +2770,7 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 3280
+    .line 3305
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2696,12 +2781,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 3281
+    .line 3306
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraEngine;->stopContinuousAF()V
 
-    .line 3282
+    .line 3307
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -2710,7 +2795,7 @@
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->onBurstShotStarted()V
 
-    .line 3283
+    .line 3308
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2738,14 +2823,14 @@
 
     invoke-virtual {v2, v4, v1, v3}, Lcom/sec/android/seccamera/SecCamera;->startBurstShot(ZZI)V
 
-    .line 3284
+    .line 3309
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraEngine;->captureBurstShot()V
 
     goto :goto_0
 
-    .line 3286
+    .line 3311
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2767,7 +2852,7 @@
 
     if-ne v1, v4, :cond_1
 
-    .line 3287
+    .line 3312
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraEngine;->isSingleShotBurst()Z
@@ -2776,7 +2861,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 3288
+    .line 3313
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2786,12 +2871,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 3289
-    iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
-
-    invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraEngine;->stopContinuousAF()V
-
-    .line 3290
+    .line 3314
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -2800,7 +2880,7 @@
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->onBurstShotStarted()V
 
-    .line 3291
+    .line 3315
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -2820,7 +2900,7 @@
 
     invoke-virtual {v1, v4, v2, v3}, Lcom/sec/android/seccamera/SecCamera;->startBurstShot(ZZI)V
 
-    .line 3292
+    .line 3316
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraEngine;->captureBurstShot()V
@@ -2836,7 +2916,7 @@
 
     const/4 v4, 0x1
 
-    .line 3299
+    .line 3323
     const-string v2, "CameraEngine"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2863,7 +2943,7 @@
 
     invoke-static {v2, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3301
+    .line 3325
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->isCapturing()Z
@@ -2880,7 +2960,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 3302
+    .line 3326
     :cond_0
     const-string v2, "CameraEngine"
 
@@ -2888,12 +2968,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3406
+    .line 3429
     :cond_1
     :goto_0
     return-void
 
-    .line 3306
+    .line 3330
     :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2910,7 +2990,7 @@
 
     invoke-virtual {v2, v5}, Lcom/sec/android/app/camera/CameraEngine$JpegPictureCallback;->setLocation(Landroid/location/Location;)V
 
-    .line 3308
+    .line 3332
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mCurrentState:Lcom/sec/android/app/camera/AbstractCeState;
@@ -2923,7 +3003,7 @@
 
     if-eq v2, v5, :cond_3
 
-    .line 3309
+    .line 3333
     const-string v2, "CameraEngine"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -2956,7 +3036,7 @@
 
     goto :goto_0
 
-    .line 3322
+    .line 3346
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2966,14 +3046,14 @@
 
     move-result v1
 
-    .line 3324
+    .line 3348
     .local v1, shootingMode:I
     packed-switch v1, :pswitch_data_0
 
     :pswitch_0
     goto :goto_0
 
-    .line 3337
+    .line 3361
     :pswitch_1
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -2993,7 +3073,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 3338
+    .line 3362
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -3004,25 +3084,20 @@
 
     if-nez v2, :cond_1
 
-    .line 3339
+    .line 3363
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->doStopBurstShot()V
 
-    .line 3340
-    iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->startContinuousAF()V
-
     goto :goto_0
 
-    .line 3333
+    .line 3357
     :pswitch_2
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->handleSingleShutterWithNoShutterLag()V
 
     goto :goto_0
 
-    .line 3343
+    .line 3366
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3034,12 +3109,12 @@
 
     if-nez v2, :cond_5
 
-    .line 3344
+    .line 3367
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->handleSingleShutterWithNoShutterLag()V
 
     goto :goto_0
 
-    .line 3346
+    .line 3369
     :cond_5
     invoke-static {}, Lcom/sec/android/app/camera/CameraEngine;->access$2500()Z
 
@@ -3047,14 +3122,14 @@
 
     if-nez v2, :cond_6
 
-    .line 3347
+    .line 3370
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->handleSingleShutter()V
 
-    .line 3350
+    .line 3373
     :cond_6
     invoke-static {v4}, Lcom/sec/android/app/camera/CameraEngine;->access$2502(Z)Z
 
-    .line 3351
+    .line 3374
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v2, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager$2;
@@ -3063,18 +3138,18 @@
 
     invoke-direct {v0, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 3361
+    .line 3384
     .local v0, blockSingShutterThread:Ljava/lang/Thread;
     const-string v2, "blockSingShutterThread"
 
     invoke-virtual {v0, v2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 3362
+    .line 3385
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     goto/16 :goto_0
 
-    .line 3367
+    .line 3390
     .end local v0           #blockSingShutterThread:Ljava/lang/Thread;
     :pswitch_3
     iget-boolean v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
@@ -3086,12 +3161,12 @@
     :goto_1
     iput-boolean v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
-    .line 3368
+    .line 3391
     iget-boolean v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
     if-nez v2, :cond_9
 
-    .line 3369
+    .line 3392
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -3104,7 +3179,7 @@
 
     if-nez v2, :cond_8
 
-    .line 3370
+    .line 3393
     iput-boolean v4, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
     goto/16 :goto_0
@@ -3112,10 +3187,10 @@
     :cond_7
     move v2, v4
 
-    .line 3367
+    .line 3390
     goto :goto_1
 
-    .line 3373
+    .line 3396
     :cond_8
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3123,7 +3198,7 @@
 
     goto/16 :goto_0
 
-    .line 3375
+    .line 3398
     :cond_9
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3131,14 +3206,14 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/AbstractCameraActivity;->hideSideMenuItems()V
 
-    .line 3376
+    .line 3399
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStartPanorama()V
 
     goto/16 :goto_0
 
-    .line 3380
+    .line 3403
     :pswitch_4
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3148,12 +3223,12 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/CeRequestQueue;->removeRequest(I)V
 
-    .line 3381
+    .line 3404
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->handleSingleShutter()V
 
     goto/16 :goto_0
 
-    .line 3384
+    .line 3407
     :pswitch_5
     iget-boolean v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
@@ -3164,12 +3239,12 @@
     :cond_a
     iput-boolean v4, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
-    .line 3385
+    .line 3408
     iget-boolean v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
     if-eqz v2, :cond_b
 
-    .line 3386
+    .line 3409
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -3182,14 +3257,14 @@
 
     if-nez v2, :cond_1
 
-    .line 3387
+    .line 3410
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStartActionShot()V
 
     goto/16 :goto_0
 
-    .line 3389
+    .line 3412
     :cond_b
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3203,7 +3278,7 @@
 
     if-eqz v2, :cond_c
 
-    .line 3390
+    .line 3413
     const-string v4, "CameraEngine"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3242,14 +3317,14 @@
 
     invoke-static {v4, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3391
+    .line 3414
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStopActionShot()V
 
     goto/16 :goto_0
 
-    .line 3393
+    .line 3416
     :cond_c
     const-string v4, "CameraEngine"
 
@@ -3291,7 +3366,7 @@
 
     goto/16 :goto_0
 
-    .line 3398
+    .line 3421
     :pswitch_6
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3305,16 +3380,14 @@
 
     if-nez v2, :cond_1
 
-    .line 3399
+    .line 3422
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->doStopBurstShot()V
 
     goto/16 :goto_0
 
-    .line 3324
-    nop
-
+    .line 3348
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -3348,7 +3421,7 @@
     .locals 4
 
     .prologue
-    .line 3410
+    .line 3433
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3381,12 +3454,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3411
+    .line 3434
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->clearCaptureImageData()V
 
-    .line 3412
+    .line 3435
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -3457,22 +3530,22 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3418
+    .line 3441
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->handleTimer()Z
 
-    .line 3422
+    .line 3445
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStopPreviewDummy()V
 
-    .line 3426
+    .line 3449
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleTakePicture()V
 
-    .line 3428
+    .line 3451
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -3485,12 +3558,12 @@
 
     if-nez v0, :cond_2
 
-    .line 3429
+    .line 3452
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStartPreview()V
 
-    .line 3432
+    .line 3455
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3500,7 +3573,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->pauseAudioPlayback()V
 
-    .line 3433
+    .line 3456
     return-void
 .end method
 
@@ -3508,7 +3581,7 @@
     .locals 3
 
     .prologue
-    .line 3436
+    .line 3459
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -3521,7 +3594,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3437
+    .line 3460
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mRequestQueue:Lcom/sec/android/app/camera/CeRequestQueue;
@@ -3552,12 +3625,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3439
+    .line 3462
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleContinuousAF()V
 
-    .line 3442
+    .line 3465
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->handleTimer()Z
 
@@ -3565,18 +3638,18 @@
 
     if-eqz v0, :cond_3
 
-    .line 3444
+    .line 3467
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStopPreviewDummy()V
 
-    .line 3454
+    .line 3477
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleTakePicture()V
 
-    .line 3456
+    .line 3479
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -3589,7 +3662,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3461
+    .line 3484
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3603,12 +3676,12 @@
 
     if-nez v0, :cond_2
 
-    .line 3462
+    .line 3485
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStartPreview()V
 
-    .line 3465
+    .line 3488
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3618,10 +3691,10 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->pauseAudioPlayback()V
 
-    .line 3466
+    .line 3489
     return-void
 
-    .line 3452
+    .line 3475
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3652,7 +3725,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 3255
+    .line 3280
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -3663,13 +3736,13 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 3266
+    .line 3291
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 3257
+    .line 3282
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3679,7 +3752,7 @@
 
     goto :goto_0
 
-    .line 3260
+    .line 3285
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3689,7 +3762,7 @@
 
     goto :goto_0
 
-    .line 3263
+    .line 3288
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3699,7 +3772,7 @@
 
     goto :goto_0
 
-    .line 3255
+    .line 3280
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -3712,7 +3785,7 @@
     .locals 1
 
     .prologue
-    .line 3480
+    .line 3503
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
     return v0
@@ -3728,7 +3801,7 @@
 
     const/4 v2, 0x3
 
-    .line 2905
+    .line 2929
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
@@ -3737,11 +3810,11 @@
 
     move-result v0
 
-    .line 2907
+    .line 2931
     .local v0, shootingMode:I
     packed-switch v0, :pswitch_data_0
 
-    .line 2959
+    .line 2983
     :goto_0
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -3752,14 +3825,14 @@
 
     invoke-virtual {v1, v3}, Lcom/sec/android/app/camera/Camera;->setTouchAutoFocusActive(Z)V
 
-    .line 2962
+    .line 2986
     invoke-static {}, Lcom/sec/android/app/camera/CameraEngine;->access$800()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 2963
+    .line 2987
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
@@ -3772,17 +3845,17 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/CameraEngine;->setFocusParameter(I)V
 
-    .line 2964
+    .line 2988
     :cond_0
     return-void
 
-    .line 2909
+    .line 2933
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2910
+    .line 2934
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;
@@ -3791,13 +3864,13 @@
 
     goto :goto_0
 
-    .line 2913
+    .line 2937
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2914
+    .line 2938
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;
@@ -3806,13 +3879,13 @@
 
     goto :goto_0
 
-    .line 2921
+    .line 2945
     :pswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2922
+    .line 2946
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;
@@ -3821,7 +3894,7 @@
 
     goto :goto_0
 
-    .line 2925
+    .line 2949
     :pswitch_4
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -3831,12 +3904,12 @@
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->onSmileDetectingStopped()V
 
-    .line 2926
+    .line 2950
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2927
+    .line 2951
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;
@@ -3845,24 +3918,24 @@
 
     goto :goto_0
 
-    .line 2930
+    .line 2954
     :pswitch_5
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2931
+    .line 2955
     iput-boolean v3, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mActionShotStarted:Z
 
     goto :goto_0
 
-    .line 2934
+    .line 2958
     :pswitch_6
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2935
+    .line 2959
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;
@@ -3871,7 +3944,7 @@
 
     goto :goto_0
 
-    .line 2938
+    .line 2962
     :pswitch_7
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
@@ -3879,7 +3952,7 @@
 
     goto :goto_0
 
-    .line 2941
+    .line 2965
     :pswitch_8
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
@@ -3887,7 +3960,7 @@
 
     goto :goto_0
 
-    .line 2946
+    .line 2970
     :pswitch_9
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
@@ -3895,13 +3968,13 @@
 
     goto :goto_0
 
-    .line 2949
+    .line 2973
     :pswitch_a
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, v1}, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
-    .line 2950
+    .line 2974
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CameraEngine$StateMessageHandler;
@@ -3910,7 +3983,7 @@
 
     goto/16 :goto_0
 
-    .line 2907
+    .line 2931
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_2
@@ -3946,12 +4019,12 @@
     .locals 1
 
     .prologue
-    .line 3484
+    .line 3507
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
-    .line 3485
+    .line 3508
     return-void
 .end method
 
@@ -3960,10 +4033,10 @@
     .parameter "loc"
 
     .prologue
-    .line 2900
+    .line 2924
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
-    .line 2901
+    .line 2925
     return-void
 .end method
 
@@ -3974,18 +4047,18 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 3488
+    .line 3511
     iget v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mCurrentShootingMode:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 3524
+    .line 3547
     :cond_0
     :goto_0
     :pswitch_0
     iput p1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mCurrentShootingMode:I
 
-    .line 3526
+    .line 3549
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mJpegPictureCallback:Lcom/sec/android/app/camera/CameraEngine$JpegPictureCallback;
@@ -4001,7 +4074,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraEngine$JpegPictureCallback;->setLocation(Landroid/location/Location;)V
 
-    .line 3527
+    .line 3550
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4011,7 +4084,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3529
+    .line 3552
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4021,7 +4094,7 @@
 
     invoke-virtual {v0, p1}, Lcom/sec/android/seccamera/SecCamera;->setShootingMode(I)V
 
-    .line 3530
+    .line 3553
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4052,17 +4125,17 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/seccamera/SecCamera;->setShootingModeCallbacks(Lcom/sec/android/seccamera/SecCamera$ShutterCallback;Lcom/sec/android/seccamera/SecCamera$PictureCallback;Lcom/sec/android/seccamera/SecCamera$PictureCallback;)V
 
-    .line 3533
+    .line 3556
     :cond_1
     packed-switch p1, :pswitch_data_1
 
-    .line 3560
+    .line 3585
     :cond_2
     :goto_1
     :pswitch_1
     return-void
 
-    .line 3504
+    .line 3527
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -4073,7 +4146,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 3505
+    .line 3528
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4083,7 +4156,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/seccamera/SecCamera;->cancelPanorama()V
 
-    .line 3506
+    .line 3529
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -4093,12 +4166,12 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->clearPanoramaRect()V
 
-    .line 3507
+    .line 3530
     iput-boolean v4, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
     goto :goto_0
 
-    .line 3510
+    .line 3533
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
@@ -4109,7 +4182,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3511
+    .line 3534
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4121,7 +4194,7 @@
 
     goto :goto_0
 
-    .line 3518
+    .line 3541
     :pswitch_4
     const-string v0, "CameraEngine"
 
@@ -4129,7 +4202,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3519
+    .line 3542
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4139,7 +4212,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3520
+    .line 3543
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4151,14 +4224,34 @@
 
     goto/16 :goto_0
 
-    .line 3544
+    .line 3566
     :pswitch_5
+    iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
+
+    iget-object v1, v1, Lcom/sec/android/app/camera/CameraEngine;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getHDRModeLevel()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraEngine;->setHDRShotModeChanged(I)V
+
+    goto :goto_1
+
+    .line 3569
+    :pswitch_6
     iput-boolean v4, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->mPanoramaCapturing:Z
 
     goto :goto_1
 
-    .line 3547
-    :pswitch_6
+    .line 3572
+    :pswitch_7
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4168,7 +4261,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 3548
+    .line 3573
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4178,7 +4271,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/seccamera/SecCamera;->initializeActionShot()V
 
-    .line 3549
+    .line 3574
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4212,17 +4305,17 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/seccamera/SecCamera;->setResolutionActionShot(II)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    .line 3555
-    :pswitch_7
+    .line 3580
+    :pswitch_8
     const-string v0, "CameraEngine"
 
     const-string v1, "setLowLightShot : 1"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3556
+    .line 3581
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4232,7 +4325,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 3557
+    .line 3582
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraEngine$ShootingModeManager;->this$0:Lcom/sec/android/app/camera/CameraEngine;
 
     #getter for: Lcom/sec/android/app/camera/CameraEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -4246,9 +4339,7 @@
 
     goto/16 :goto_1
 
-    .line 3488
-    nop
-
+    .line 3511
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -4279,17 +4370,9 @@
         :pswitch_0
     .end packed-switch
 
-    .line 3533
+    .line 3556
     :pswitch_data_1
     .packed-switch 0x0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_5
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
         :pswitch_1
         :pswitch_1
         :pswitch_6
@@ -4300,11 +4383,19 @@
         :pswitch_1
         :pswitch_1
         :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
         :pswitch_7
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_5
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_8
     .end packed-switch
 .end method

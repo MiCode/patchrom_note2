@@ -128,7 +128,7 @@
 
     const v2, 0x7f060072
 
-    .line 40
+    .line 41
     invoke-static {v2}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
     move-result v0
@@ -137,7 +137,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FULL_SCREEN_WIDTH:I
 
-    .line 41
+    .line 42
     invoke-static {v3}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
     move-result v0
@@ -146,7 +146,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FULL_SCREEN_HEIGHT:I
 
-    .line 42
+    .line 43
     const v0, 0x7f060090
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -157,7 +157,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->SIDE_MENU_WIDTH:I
 
-    .line 44
+    .line 45
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FULL_SCREEN_WIDTH:I
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->SIDE_MENU_WIDTH:I
@@ -176,7 +176,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_GROUP_LANDSCAPE_POS_X:I
 
-    .line 45
+    .line 46
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FULL_SCREEN_HEIGHT:I
 
     const v1, 0x7f0600b2
@@ -191,7 +191,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_GROUP_PORTRAIT_POS_X:I
 
-    .line 46
+    .line 47
     const v0, 0x7f0600b1
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -202,7 +202,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_GORUP_POS_Y:I
 
-    .line 47
+    .line 48
     const v0, 0x7f0600b4
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -213,7 +213,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_GROUP_WIDTH:I
 
-    .line 48
+    .line 49
     const v0, 0x7f0600b6
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -224,7 +224,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_GROUP_HEIGHT:I
 
-    .line 49
+    .line 50
     const v0, 0x7f080020
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getInteger(I)I
@@ -233,7 +233,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_TEXT_SIZE:I
 
-    .line 50
+    .line 51
     const v0, 0x7f0600b7
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
@@ -244,8 +244,8 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->REMAIN_COUNTER_WIDTH:I
 
-    .line 51
-    const v0, 0x7f0600ba
+    .line 52
+    const v0, 0x7f0600bb
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -255,28 +255,28 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->PERCENTAGE_WIDTH:I
 
-    .line 53
+    .line 54
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FULL_SCREEN_WIDTH:I
 
     div-int/lit8 v0, v0, 0x2
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_X:I
 
-    .line 54
+    .line 55
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FULL_SCREEN_HEIGHT:I
 
     div-int/lit8 v0, v0, 0x2
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_Y:I
 
-    .line 56
+    .line 57
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->SIDE_MENU_WIDTH:I
 
     div-int/lit8 v0, v0, 0x2
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_X_DELTA:I
 
-    .line 58
+    .line 59
     const v0, 0x7f080002
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getInteger(I)I
@@ -285,8 +285,8 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->VISIBLE_BATTERY_LEVEL:I
 
-    .line 61
-    const v0, 0x7f060170
+    .line 62
+    const v0, 0x7f060180
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -294,8 +294,8 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->HELP_TEXT_WIDTH:F
 
-    .line 62
-    const v0, 0x7f060171
+    .line 63
+    const v0, 0x7f060181
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -303,7 +303,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->HELP_TEXT_HEIGHT:F
 
-    .line 63
+    .line 64
     invoke-static {v2}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
     move-result v0
@@ -318,7 +318,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->HELP_TEXT_POS_X:F
 
-    .line 64
+    .line 65
     invoke-static {v3}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
     move-result v0
@@ -329,7 +329,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->HELP_TEXT_POS_Y:F
 
-    .line 65
+    .line 66
     const v0, 0x7f080022
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getInteger(I)I
@@ -340,8 +340,8 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->HELP_TEXT_SIZE:F
 
-    .line 66
-    const v0, 0x7f06017a
+    .line 67
+    const v0, 0x7f06018a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -364,7 +364,7 @@
 
     const/4 v6, 0x0
 
-    .line 94
+    .line 95
     const/4 v5, 0x3
 
     move-object v0, p0
@@ -379,42 +379,42 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/sec/android/app/camera/MenuBase;-><init>(Lcom/sec/android/app/camera/AbstractCameraActivity;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;IZ)V
 
-    .line 72
+    .line 73
     new-array v0, v7, [Lcom/sec/android/glview/TwGLRectangle;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
-    .line 81
+    .line 82
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCount:I
 
-    .line 83
+    .line 84
     new-array v0, v7, [Lcom/sec/android/seccamera/SecCamera$Face;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceInfo:[Lcom/sec/android/seccamera/SecCamera$Face;
 
-    .line 87
+    .line 88
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMatrixForFace:Landroid/graphics/Matrix;
 
-    .line 88
+    .line 89
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRect:Landroid/graphics/RectF;
 
-    .line 405
+    .line 406
     iput v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceCount:I
 
-    .line 96
+    .line 97
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setTouchHandled(Z)V
 
-    .line 97
+    .line 98
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -427,15 +427,15 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 98
+    .line 99
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, p2}, Lcom/sec/android/glview/TwGLViewGroup;->setTag(I)V
 
-    .line 100
+    .line 101
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->init()V
 
-    .line 101
+    .line 102
     return-void
 .end method
 
@@ -443,14 +443,14 @@
     .locals 13
 
     .prologue
-    .line 104
+    .line 105
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
     move-result-object v1
 
-    .line 106
+    .line 107
     .local v1, glContext:Lcom/sec/android/glview/TwGLContext;
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -460,7 +460,7 @@
 
     invoke-virtual {v0, p0}, Lcom/sec/android/app/camera/CameraSettings;->registerCameraSettingsChangedObserver(Lcom/sec/android/app/camera/CameraSettings$OnCameraSettingsChangedObserver;)V
 
-    .line 110
+    .line 116
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_X:I
@@ -471,11 +471,13 @@
 
     int-to-float v3, v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
+    const/4 v4, 0x1
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFZ)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
-    .line 120
+    .line 121
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -496,7 +498,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
-    .line 124
+    .line 125
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -511,7 +513,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;->handleGuidelineSettingsChanged(I)V
 
-    .line 126
+    .line 127
     new-instance v0, Lcom/sec/android/glview/TwGLIndicator;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->INDICATOR_GROUP_LANDSCAPE_POS_X:I
@@ -534,14 +536,14 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
-    .line 127
+    .line 128
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->setRotatable(Z)V
 
-    .line 128
+    .line 129
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     const/4 v2, 0x1
@@ -564,7 +566,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLIndicator;->setLeftTop(IFF)V
 
-    .line 129
+    .line 130
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     const/4 v2, 0x2
@@ -587,7 +589,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLIndicator;->setLeftTop(IFF)V
 
-    .line 130
+    .line 131
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     const/4 v2, 0x3
@@ -610,7 +612,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLIndicator;->setLeftTop(IFF)V
 
-    .line 132
+    .line 133
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getRemainStorage()I
@@ -619,7 +621,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCount:I
 
-    .line 133
+    .line 134
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x0
@@ -648,7 +650,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
 
-    .line 134
+    .line 135
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x3
@@ -657,14 +659,14 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 135
+    .line 136
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 136
+    .line 137
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
     const/4 v2, 0x0
@@ -675,7 +677,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
-    .line 137
+    .line 138
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
 
     const/4 v2, 0x0
@@ -696,7 +698,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mStorageIndicator:Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
 
-    .line 138
+    .line 139
     new-instance v0, Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x0
@@ -721,7 +723,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
-    .line 139
+    .line 140
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x3
@@ -730,14 +732,14 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 140
+    .line 141
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 141
+    .line 142
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
     const/4 v2, 0x0
@@ -748,7 +750,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
-    .line 144
+    .line 145
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     const/4 v2, 0x0
@@ -759,88 +761,88 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
-    .line 145
+    .line 146
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;->setVisibility(I)V
 
-    .line 148
+    .line 149
     new-instance v0, Lcom/sec/android/glview/TwGLImage;
 
     const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    const v4, 0x7f020211
+    const v4, 0x7f020213
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
-    .line 149
+    .line 150
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
-    .line 152
+    .line 153
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mStorageIndicator:Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 153
+    .line 154
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 154
+    .line 155
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 155
+    .line 156
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 156
+    .line 157
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 157
+    .line 158
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 159
+    .line 160
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
     if-eqz v0, :cond_0
 
-    .line 160
+    .line 161
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 163
+    .line 164
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -856,39 +858,39 @@
 
     invoke-virtual {p0, v0, v2}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setBatteryLevel(IZ)V
 
-    .line 164
+    .line 165
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCount:I
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setRemainCount(I)V
 
-    .line 166
+    .line 167
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->initGPSIndicator()V
 
-    .line 169
+    .line 170
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setWifiDirectStatus()V
 
-    .line 172
+    .line 173
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 173
+    .line 174
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 174
+    .line 175
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 176
+    .line 177
     const/4 v10, 0x0
 
     .local v10, i:I
@@ -897,7 +899,7 @@
 
     if-ge v10, v0, :cond_1
 
-    .line 177
+    .line 178
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     new-instance v2, Lcom/sec/android/glview/TwGLRectangle;
@@ -934,7 +936,7 @@
 
     aput-object v2, v0, v10
 
-    .line 178
+    .line 179
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v0, v0, v10
@@ -943,7 +945,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLRectangle;->setVisibility(I)V
 
-    .line 179
+    .line 180
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
@@ -952,16 +954,16 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 176
+    .line 177
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_0
 
-    .line 182
+    .line 183
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->showFocusIndicator()V
 
-    .line 184
+    .line 185
     new-instance v2, Lcom/sec/android/glview/TwGLText;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -980,7 +982,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    const v8, 0x7f090137
+    const v8, 0x7f090138
 
     invoke-virtual {v0, v8}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getString(I)Ljava/lang/String;
 
@@ -992,21 +994,21 @@
 
     iput-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
-    .line 186
+    .line 187
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLText;->setRotatable(Z)V
 
-    .line 187
+    .line 188
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 188
+    .line 189
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x2
@@ -1015,7 +1017,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/glview/TwGLText;->setAlign(II)V
 
-    .line 189
+    .line 190
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x1
@@ -1048,7 +1050,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLText;->setLeftTop(IFF)V
 
-    .line 190
+    .line 191
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x2
@@ -1063,7 +1065,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLText;->setLeftTop(IFF)V
 
-    .line 194
+    .line 195
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x3
@@ -1106,21 +1108,21 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/sec/android/glview/TwGLText;->setLeftTop(IFF)V
 
-    .line 196
+    .line 197
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 198
+    .line 199
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 200
+    .line 201
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camera;
@@ -1131,19 +1133,19 @@
 
     if-eqz v0, :cond_3
 
-    .line 201
+    .line 202
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;->setVisibility(I)V
 
-    .line 202
+    .line 203
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setVoiceStatus(I)V
 
-    .line 203
+    .line 204
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -1156,20 +1158,20 @@
 
     if-nez v0, :cond_2
 
-    .line 204
-    const v0, 0x7f090140
+    .line 205
+    const v0, 0x7f090141
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setVoiceHelpText(I)V
 
-    .line 205
+    .line 206
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->showHelpText()V
 
-    .line 210
+    .line 211
     :cond_2
     :goto_1
     return-void
 
-    .line 208
+    .line 209
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
@@ -1187,22 +1189,22 @@
     .parameter "modeid"
 
     .prologue
-    .line 584
+    .line 585
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     if-nez v0, :cond_0
 
-    .line 596
+    .line 597
     :goto_0
     return-void
 
-    .line 587
+    .line 588
     :cond_0
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 589
+    .line 590
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
@@ -1214,7 +1216,7 @@
 
     goto :goto_0
 
-    .line 592
+    .line 593
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
@@ -1224,7 +1226,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 593
+    .line 594
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     const/4 v1, 0x2
@@ -1233,7 +1235,7 @@
 
     goto :goto_0
 
-    .line 587
+    .line 588
     nop
 
     :pswitch_data_0
@@ -1249,30 +1251,30 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 229
+    .line 230
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 230
+    .line 231
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0}, Lcom/sec/android/glview/TwGLViewGroup;->clear()V
 
-    .line 231
+    .line 232
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMenuGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 233
+    .line 234
     :cond_0
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceInfo:[Lcom/sec/android/seccamera/SecCamera$Face;
 
-    .line 234
+    .line 235
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
-    .line 236
+    .line 237
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->clear()V
 
-    .line 237
+    .line 238
     return-void
 .end method
 
@@ -1281,12 +1283,12 @@
     .parameter "input"
 
     .prologue
-    .line 503
+    .line 504
     monitor-enter p0
 
     const/4 v3, 0x0
 
-    .line 505
+    .line 506
     .local v3, ret:Landroid/graphics/Point;
     const/4 v0, 0x0
 
@@ -1296,7 +1298,7 @@
 
     if-ge v0, v4, :cond_0
 
-    .line 507
+    .line 508
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceInfo:[Lcom/sec/android/seccamera/SecCamera$Face;
 
@@ -1306,13 +1308,13 @@
 
     if-nez v4, :cond_1
 
-    .line 516
+    .line 517
     :cond_0
     monitor-exit p0
 
     return-object v3
 
-    .line 508
+    .line 509
     :cond_1
     :try_start_1
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -1343,7 +1345,7 @@
 
     move-result-object v1
 
-    .line 509
+    .line 510
     .local v1, loc:Landroid/graphics/Point;
     iget-object v4, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -1373,7 +1375,7 @@
 
     move-result-object v2
 
-    .line 511
+    .line 512
     .local v2, loc2:Landroid/graphics/Point;
     iget v4, v1, Landroid/graphics/Point;->x:I
 
@@ -1399,7 +1401,7 @@
 
     if-gt v4, v5, :cond_2
 
-    .line 513
+    .line 514
     new-instance v3, Landroid/graphics/Point;
 
     .end local v3           #ret:Landroid/graphics/Point;
@@ -1447,14 +1449,14 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 505
+    .line 506
     .restart local v3       #ret:Landroid/graphics/Point;
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
     goto/16 :goto_0
 
-    .line 503
+    .line 504
     .end local v1           #loc:Landroid/graphics/Point;
     .end local v2           #loc2:Landroid/graphics/Point;
     .end local v3           #ret:Landroid/graphics/Point;
@@ -1470,7 +1472,7 @@
     .locals 1
 
     .prologue
-    .line 530
+    .line 531
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCount:I
 
     return v0
@@ -1480,7 +1482,7 @@
     .locals 1
 
     .prologue
-    .line 469
+    .line 470
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterX:I
 
     return v0
@@ -1490,7 +1492,7 @@
     .locals 1
 
     .prologue
-    .line 473
+    .line 474
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterY:I
 
     return v0
@@ -1500,7 +1502,7 @@
     .locals 1
 
     .prologue
-    .line 493
+    .line 494
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->getYDelta()I
@@ -1516,7 +1518,7 @@
     .locals 1
 
     .prologue
-    .line 489
+    .line 490
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->getXDelta()I
@@ -1532,7 +1534,7 @@
     .locals 3
 
     .prologue
-    .line 399
+    .line 400
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -1541,7 +1543,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 400
+    .line 401
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
@@ -1550,19 +1552,19 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLRectangle;->setVisibility(I)V
 
-    .line 401
+    .line 402
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1}, Lcom/sec/android/glview/TwGLRectangle;->resetTranslate()V
 
-    .line 399
+    .line 400
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 403
+    .line 404
     :cond_0
     return-void
 .end method
@@ -1571,19 +1573,19 @@
     .locals 2
 
     .prologue
-    .line 353
+    .line 354
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 354
+    .line 355
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->setVisibility(I)V
 
-    .line 356
+    .line 357
     :cond_0
     return-void
 .end method
@@ -1592,17 +1594,17 @@
     .locals 1
 
     .prologue
-    .line 359
+    .line 360
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 360
+    .line 361
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->hideFocusRect()V
 
-    .line 362
+    .line 363
     :cond_0
     return-void
 .end method
@@ -1611,19 +1613,19 @@
     .locals 2
 
     .prologue
-    .line 652
+    .line 653
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     if-eqz v0, :cond_0
 
-    .line 653
+    .line 654
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 655
+    .line 656
     :cond_0
     return-void
 .end method
@@ -1632,14 +1634,14 @@
     .locals 2
 
     .prologue
-    .line 395
+    .line 396
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->setVisibility(I)V
 
-    .line 396
+    .line 397
     return-void
 .end method
 
@@ -1647,14 +1649,14 @@
     .locals 2
 
     .prologue
-    .line 579
+    .line 580
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
     move-result-object v0
 
-    .line 580
+    .line 581
     .local v0, camSettings:Lcom/sec/android/app/camera/CameraSettings;
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->getGPS()I
 
@@ -1662,7 +1664,7 @@
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->ChangeGPS(I)V
 
-    .line 581
+    .line 582
     return-void
 .end method
 
@@ -1670,12 +1672,12 @@
     .locals 1
 
     .prologue
-    .line 240
+    .line 241
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->processBack()V
 
-    .line 241
+    .line 242
     return-void
 .end method
 
@@ -1693,41 +1695,41 @@
 
     const/4 v3, 0x0
 
-    .line 260
+    .line 261
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     if-nez v1, :cond_1
 
-    .line 329
+    .line 330
     :cond_0
     :goto_0
     return-void
 
-    .line 263
+    .line 264
     :cond_1
     sparse-switch p1, :sswitch_data_0
 
     goto :goto_0
 
-    .line 274
+    .line 275
     :sswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
     if-eqz v1, :cond_2
 
-    .line 275
+    .line 276
     const/16 v1, 0xf
 
     if-ne p2, v1, :cond_4
 
-    .line 276
+    .line 277
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v1, v2, v3}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 285
+    .line 286
     :cond_2
     :goto_1
     :sswitch_1
@@ -1783,21 +1785,21 @@
 
     if-ne v1, v5, :cond_5
 
-    .line 289
+    .line 290
     :cond_3
     const/4 v0, 0x1
 
-    .line 299
+    .line 300
     .local v0, bHideFocus:Z
     :goto_2
     if-eqz v0, :cond_8
 
-    .line 300
+    .line 301
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v1, v6}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->setVisibility(I)V
 
-    .line 305
+    .line 306
     :goto_3
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -1811,28 +1813,28 @@
 
     if-eq v1, v5, :cond_0
 
-    .line 306
+    .line 307
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->hideAllFaceRect()V
 
     goto :goto_0
 
-    .line 265
+    .line 266
     .end local v0           #bHideFocus:Z
     :sswitch_2
     if-ne p2, v4, :cond_0
 
-    .line 266
+    .line 267
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->resetFaceRect()V
 
     goto :goto_0
 
-    .line 270
+    .line 271
     :sswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     if-eqz v1, :cond_0
 
-    .line 271
+    .line 272
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -1849,7 +1851,7 @@
 
     goto :goto_0
 
-    .line 278
+    .line 279
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
@@ -1859,7 +1861,7 @@
 
     goto :goto_1
 
-    .line 290
+    .line 291
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -1873,13 +1875,13 @@
 
     if-ne v1, v4, :cond_6
 
-    .line 291
+    .line 292
     const/4 v0, 0x1
 
     .restart local v0       #bHideFocus:Z
     goto :goto_2
 
-    .line 292
+    .line 293
     .end local v0           #bHideFocus:Z
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -1894,13 +1896,13 @@
 
     if-nez v1, :cond_7
 
-    .line 294
+    .line 295
     const/4 v0, 0x1
 
     .restart local v0       #bHideFocus:Z
     goto :goto_2
 
-    .line 296
+    .line 297
     .end local v0           #bHideFocus:Z
     :cond_7
     const/4 v0, 0x0
@@ -1908,7 +1910,7 @@
     .restart local v0       #bHideFocus:Z
     goto :goto_2
 
-    .line 302
+    .line 303
     :cond_8
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -1916,27 +1918,27 @@
 
     goto :goto_3
 
-    .line 309
+    .line 310
     .end local v0           #bHideFocus:Z
     :sswitch_4
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mStorageIndicator:Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
 
     if-eqz v1, :cond_0
 
-    .line 310
+    .line 311
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mStorageIndicator:Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
 
     invoke-virtual {v1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;->setStorage(I)V
 
     goto/16 :goto_0
 
-    .line 314
+    .line 315
     :sswitch_5
     invoke-virtual {p0, p2}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->ChangeGPS(I)V
 
     goto/16 :goto_0
 
-    .line 317
+    .line 318
     :sswitch_6
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -1950,21 +1952,21 @@
 
     if-ne v1, v4, :cond_9
 
-    .line 319
+    .line 320
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->showVoiceInputIndicator(I)V
 
-    .line 320
+    .line 321
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setVoiceStatus(I)V
 
     goto/16 :goto_0
 
-    .line 323
+    .line 324
     :cond_9
     invoke-virtual {p0, v6}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->showVoiceInputIndicator(I)V
 
     goto/16 :goto_0
 
-    .line 263
+    .line 264
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
@@ -1982,23 +1984,23 @@
     .locals 2
 
     .prologue
-    .line 253
+    .line 254
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 254
+    .line 255
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 256
+    .line 257
     :cond_0
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->onHide()V
 
-    .line 257
+    .line 258
     return-void
 .end method
 
@@ -2008,7 +2010,7 @@
     .prologue
     const/16 v3, 0xff
 
-    .line 389
+    .line 390
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -2017,7 +2019,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 390
+    .line 391
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
@@ -2028,12 +2030,12 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLRectangle;->setColor(I)V
 
-    .line 389
+    .line 390
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 392
+    .line 393
     :cond_0
     return-void
 .end method
@@ -2043,7 +2045,7 @@
     .parameter "view"
 
     .prologue
-    .line 216
+    .line 217
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -2058,7 +2060,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_X:I
 
-    .line 217
+    .line 218
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v0
@@ -2073,7 +2075,7 @@
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_Y:I
 
-    .line 220
+    .line 221
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->FOCUS_BUTTON_POS_X:I
@@ -2082,10 +2084,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->resetInit(II)V
 
-    .line 224
+    .line 225
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->showFocusIndicator()V
 
-    .line 225
+    .line 226
     return-void
 .end method
 
@@ -2093,17 +2095,17 @@
     .locals 1
 
     .prologue
-    .line 384
+    .line 385
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 385
+    .line 386
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->resetPosIndicator()V
 
-    .line 386
+    .line 387
     :cond_0
     return-void
 .end method
@@ -2112,17 +2114,17 @@
     .locals 1
 
     .prologue
-    .line 477
+    .line 478
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 478
+    .line 479
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->reset()V
 
-    .line 480
+    .line 481
     :cond_0
     return-void
 .end method
@@ -2131,23 +2133,23 @@
     .locals 2
 
     .prologue
-    .line 245
+    .line 246
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 246
+    .line 247
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 248
+    .line 249
     :cond_0
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->restoreMenu()V
 
-    .line 249
+    .line 250
     return-void
 .end method
 
@@ -2163,35 +2165,35 @@
 
     const/4 v4, 0x0
 
-    .line 534
+    .line 535
     if-eqz p2, :cond_0
 
-    .line 535
+    .line 536
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
     invoke-virtual {v1, v2, v4}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 536
+    .line 537
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
     const/4 v2, 0x6
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;->setLevel(I)V
 
-    .line 537
+    .line 538
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v1, v2, v5}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 575
+    .line 576
     :goto_0
     return-void
 
-    .line 540
+    .line 541
     :cond_0
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->VISIBLE_BATTERY_LEVEL:I
 
@@ -2199,7 +2201,7 @@
 
     if-nez p1, :cond_2
 
-    .line 541
+    .line 542
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
@@ -2207,7 +2209,7 @@
 
     invoke-virtual {v1, v2, v5}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 542
+    .line 543
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
@@ -2216,7 +2218,7 @@
 
     goto :goto_0
 
-    .line 546
+    .line 547
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
@@ -2224,7 +2226,7 @@
 
     invoke-virtual {v1, v2, v4}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 547
+    .line 548
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getDisplayBatteryPercentageEnabled()I
@@ -2233,14 +2235,14 @@
 
     if-ne v1, v6, :cond_3
 
-    .line 548
+    .line 549
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
     invoke-virtual {v1, v2, v4}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 549
+    .line 550
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2267,26 +2269,26 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 551
+    .line 552
     :cond_3
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->VISIBLE_BATTERY_LEVEL:I
 
     div-int/lit8 v0, v1, 0x5
 
-    .line 552
+    .line 553
     .local v0, factor:I
     div-int v1, p1, v0
 
     packed-switch v1, :pswitch_data_0
 
-    .line 572
+    .line 573
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;->setLevel(I)V
 
     goto :goto_0
 
-    .line 554
+    .line 555
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
@@ -2294,7 +2296,7 @@
 
     goto :goto_0
 
-    .line 557
+    .line 558
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
@@ -2302,7 +2304,7 @@
 
     goto :goto_0
 
-    .line 560
+    .line 561
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
@@ -2312,7 +2314,7 @@
 
     goto :goto_0
 
-    .line 563
+    .line 564
     :pswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
@@ -2322,7 +2324,7 @@
 
     goto :goto_0
 
-    .line 566
+    .line 567
     :pswitch_4
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
@@ -2330,7 +2332,7 @@
 
     goto :goto_0
 
-    .line 569
+    .line 570
     :pswitch_5
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mBatteryIndicator:Lcom/sec/android/app/camera/glwidget/TwGLBatteryIndicator;
 
@@ -2340,7 +2342,7 @@
 
     goto :goto_0
 
-    .line 552
+    .line 553
     nop
 
     :pswitch_data_0
@@ -2359,22 +2361,22 @@
     .parameter "state"
 
     .prologue
-    .line 599
+    .line 600
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     if-nez v0, :cond_0
 
-    .line 614
+    .line 615
     :goto_0
     return-void
 
-    .line 602
+    .line 603
     :cond_0
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 610
+    .line 611
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
@@ -2384,7 +2386,7 @@
 
     goto :goto_0
 
-    .line 604
+    .line 605
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
@@ -2394,7 +2396,7 @@
 
     goto :goto_0
 
-    .line 607
+    .line 608
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
@@ -2404,7 +2406,7 @@
 
     goto :goto_0
 
-    .line 602
+    .line 603
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -2418,7 +2420,7 @@
     .parameter "faces"
 
     .prologue
-    .line 409
+    .line 410
     monitor-enter p0
 
     const/4 v0, 0x0
@@ -2429,7 +2431,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 410
+    .line 411
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceInfo:[Lcom/sec/android/seccamera/SecCamera$Face;
 
@@ -2437,14 +2439,14 @@
 
     aput-object v2, v1, v0
 
-    .line 411
+    .line 412
     array-length v1, p1
 
     add-int/lit8 v1, v1, -0x1
 
     if-le v0, v1, :cond_0
 
-    .line 412
+    .line 413
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
@@ -2453,20 +2455,20 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLRectangle;->setVisibility(I)V
 
-    .line 413
+    .line 414
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1}, Lcom/sec/android/glview/TwGLRectangle;->resetTranslate()V
 
-    .line 409
+    .line 410
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 416
+    .line 417
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2476,7 +2478,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->prepareMatrixForFaceRect(Landroid/graphics/Matrix;)V
 
-    .line 417
+    .line 418
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRect:Landroid/graphics/RectF;
 
     aget-object v2, p1, v0
@@ -2485,14 +2487,14 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
-    .line 419
+    .line 420
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mMatrixForFace:Landroid/graphics/Matrix;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRect:Landroid/graphics/RectF;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 421
+    .line 422
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
@@ -2551,7 +2553,7 @@
 
     invoke-virtual {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLRectangle;->setRect(FFFF)V
 
-    .line 422
+    .line 423
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v1, v1, v0
@@ -2560,7 +2562,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLRectangle;->setVisibility(I)V
 
-    .line 423
+    .line 424
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceInfo:[Lcom/sec/android/seccamera/SecCamera$Face;
 
     aget-object v2, p1, v0
@@ -2571,7 +2573,7 @@
 
     goto :goto_1
 
-    .line 409
+    .line 410
     :catchall_0
     move-exception v1
 
@@ -2579,8 +2581,43 @@
 
     throw v1
 
-    .line 436
+    .line 429
     :cond_1
+    if-eqz p1, :cond_3
+
+    .line 430
+    :try_start_1
+    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceCount:I
+
+    array-length v2, p1
+
+    if-eq v1, v2, :cond_2
+
+    array-length v1, p1
+
+    const/4 v2, 0x1
+
+    if-lt v1, v2, :cond_2
+
+    .line 431
+    iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    check-cast v1, Lcom/sec/android/app/camera/Camera;
+
+    array-length v2, p1
+
+    invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->playFaceCount(I)V
+
+    .line 434
+    :cond_2
+    array-length v1, p1
+
+    iput v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceCount:I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 437
+    :cond_3
     monitor-exit p0
 
     return-void
@@ -2593,17 +2630,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 339
+    .line 340
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 340
+    .line 341
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->setFocusIndicator(I)V
 
-    .line 342
+    .line 343
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
@@ -2621,10 +2658,10 @@
 
     if-nez v0, :cond_1
 
-    .line 343
+    .line 344
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setMainFaceRectChanged(I)V
 
-    .line 344
+    .line 345
     :cond_1
     return-void
 .end method
@@ -2634,17 +2671,17 @@
     .parameter "view"
 
     .prologue
-    .line 497
+    .line 498
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     if-eqz v0, :cond_0
 
-    .line 498
+    .line 499
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;->setGuideLineSize(Landroid/view/View;)V
 
-    .line 499
+    .line 500
     :cond_0
     return-void
 .end method
@@ -2654,12 +2691,12 @@
     .parameter "resourceid"
 
     .prologue
-    .line 657
+    .line 658
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     if-eqz v0, :cond_0
 
-    .line 658
+    .line 659
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -2670,7 +2707,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 660
+    .line 661
     :cond_0
     return-void
 .end method
@@ -2684,10 +2721,10 @@
 
     const/16 v1, 0xff
 
-    .line 439
+    .line 440
     packed-switch p1, :pswitch_data_0
 
-    .line 447
+    .line 448
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
     aget-object v0, v0, v2
@@ -2698,11 +2735,11 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLRectangle;->setColor(I)V
 
-    .line 450
+    .line 451
     :goto_0
     return-void
 
-    .line 441
+    .line 442
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
@@ -2716,7 +2753,7 @@
 
     goto :goto_0
 
-    .line 444
+    .line 445
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/glview/TwGLRectangle;
 
@@ -2730,7 +2767,7 @@
 
     goto :goto_0
 
-    .line 439
+    .line 440
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_0
@@ -2743,17 +2780,17 @@
     .parameter "count"
 
     .prologue
-    .line 520
+    .line 521
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCount:I
 
-    .line 521
+    .line 522
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCount:I
 
     const/16 v1, 0x12c
 
     if-le v0, v1, :cond_0
 
-    .line 522
+    .line 523
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
@@ -2762,11 +2799,11 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/glview/TwGLIndicator;->setVisibility(Lcom/sec/android/glview/TwGLView;I)V
 
-    .line 527
+    .line 528
     :goto_0
     return-void
 
-    .line 524
+    .line 525
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
 
@@ -2776,7 +2813,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
-    .line 525
+    .line 526
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRemainCounterIndicator:Lcom/sec/android/glview/TwGLText;
@@ -2794,23 +2831,23 @@
     .parameter "y"
 
     .prologue
-    .line 453
+    .line 454
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterX:I
 
-    .line 454
-    iput p2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterY:I
-
     .line 455
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
-
-    if-eqz v0, :cond_0
+    iput p2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterY:I
 
     .line 456
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
+    if-eqz v0, :cond_0
+
+    .line 457
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
+
     invoke-virtual {v0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->onFocus(II)V
 
-    .line 458
+    .line 459
     :cond_0
     return-void
 .end method
@@ -2821,25 +2858,25 @@
     .parameter "y"
 
     .prologue
-    .line 461
+    .line 462
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterX:I
 
-    .line 462
+    .line 463
     iput p2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterY:I
 
-    .line 463
+    .line 464
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 464
+    .line 465
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->onFocus(IIZ)V
 
-    .line 466
+    .line 467
     :cond_0
     return-void
 .end method
@@ -2849,206 +2886,388 @@
     .parameter "resourceid"
 
     .prologue
-    const/4 v13, 0x0
-
-    const v12, 0x7f090140
-
-    .line 662
-    iget-object v10, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
-
-    if-eqz v10, :cond_2
-
     .line 663
-    iget-object v10, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+    iget-object v12, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
-    invoke-virtual {v10}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v8
+    if-eqz v12, :cond_2
 
     .line 664
-    .local v8, res:Landroid/content/res/Resources;
-    invoke-virtual {v8}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+    iget-object v12, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    move-result-object v0
-
-    .line 665
-    .local v0, config:Landroid/content/res/Configuration;
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object v2
-
-    .line 666
-    .local v2, globalLocale:Ljava/util/Locale;
-    const-string v5, ""
-
-    .line 667
-    .local v5, language:Ljava/lang/String;
-    const-string v1, ""
-
-    .line 668
-    .local v1, country:Ljava/lang/String;
-    const-string v3, ""
-
-    .line 669
-    .local v3, helptext:Ljava/lang/String;
-    iget-object v10, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
-
-    invoke-virtual {v10}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v12}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v10
 
-    const-string v11, "voicetalk_language"
-
-    invoke-static {v10, v11}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v9
-
-    .line 670
-    .local v9, voiceLocale:Ljava/lang/String;
-    if-eqz v9, :cond_0
-
-    .line 671
-    invoke-virtual {v9}, Ljava/lang/String;->length()I
-
-    move-result v6
-
-    .line 672
-    .local v6, length:I
-    if-lez v6, :cond_0
-
-    .line 674
-    const/16 v10, 0x2d
-
-    :try_start_0
-    invoke-virtual {v9, v10}, Ljava/lang/String;->indexOf(I)I
-
-    move-result v4
-
-    .line 675
-    .local v4, index:I
-    if-lez v4, :cond_0
-
-    .line 676
-    const/4 v10, 0x0
-
-    invoke-virtual {v9, v10, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 677
-    add-int/lit8 v10, v4, 0x1
-
-    if-ge v10, v6, :cond_0
-
-    .line 678
-    add-int/lit8 v10, v4, 0x1
-
-    invoke-virtual {v9, v10, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .line 665
+    .local v10, res:Landroid/content/res/Resources;
+    invoke-virtual {v10}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v1
 
-    .line 685
-    .end local v4           #index:I
-    .end local v6           #length:I
-    :cond_0
-    :goto_0
-    if-eqz v0, :cond_2
-
-    .line 686
-    iget-object v7, v0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
-
-    .line 687
-    .local v7, locale:Ljava/util/Locale;
-    invoke-virtual {v7}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v10, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_1
-
-    invoke-virtual {v7}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v10, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-nez v10, :cond_3
-
-    .line 690
-    :cond_1
-    new-instance v10, Ljava/util/Locale;
-
-    invoke-direct {v10, v5, v1}, Ljava/util/Locale;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    iput-object v10, v0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
-
-    .line 691
-    invoke-virtual {v8, v0, v13}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
-
-    .line 692
-    invoke-virtual {v8, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 666
+    .local v1, config:Landroid/content/res/Configuration;
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v3
 
-    .line 693
-    iget-object v10, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+    .line 667
+    .local v3, globalLocale:Ljava/util/Locale;
+    const-string v7, ""
 
-    invoke-virtual {v10, v3}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
+    .line 668
+    .local v7, language:Ljava/lang/String;
+    const-string v2, ""
+
+    .line 669
+    .local v2, country:Ljava/lang/String;
+    const-string v4, ""
+
+    .line 670
+    .local v4, helptext:Ljava/lang/String;
+    iget-object v12, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    invoke-virtual {v12}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v12
+
+    const-string v13, "voicetalk_language"
+
+    invoke-static {v12, v13}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v11
+
+    .line 671
+    .local v11, voiceLocale:Ljava/lang/String;
+    if-eqz v11, :cond_4
+
+    .line 672
+    invoke-virtual {v11}, Ljava/lang/String;->length()I
+
+    move-result v8
+
+    .line 673
+    .local v8, length:I
+    if-lez v8, :cond_0
+
+    .line 675
+    const/16 v12, 0x2d
+
+    :try_start_0
+    invoke-virtual {v11, v12}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v5
+
+    .line 676
+    .local v5, index:I
+    if-lez v5, :cond_0
+
+    .line 677
+    const/4 v12, 0x0
+
+    invoke-virtual {v11, v12, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 678
+    add-int/lit8 v12, v5, 0x1
+
+    if-ge v12, v8, :cond_0
+
+    .line 679
+    add-int/lit8 v12, v5, 0x1
+
+    invoke-virtual {v11, v12, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v2
+
+    .line 684
+    .end local v5           #index:I
+    :cond_0
+    :goto_0
+    if-eqz v1, :cond_2
+
+    .line 685
+    iget-object v9, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+
+    .line 686
+    .local v9, locale:Ljava/util/Locale;
+    invoke-virtual {v9}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v12, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_1
+
+    invoke-virtual {v9}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v12, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_3
+
+    .line 689
+    :cond_1
+    new-instance v12, Ljava/util/Locale;
+
+    invoke-direct {v12, v7, v2}, Ljava/util/Locale;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    iput-object v12, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+
+    .line 690
+    const/4 v12, 0x0
+
+    invoke-virtual {v10, v1, v12}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
+
+    .line 691
+    const v12, 0x7f090141
+
+    invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 692
+    iget-object v12, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+
+    invoke-virtual {v12, v4}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
+
+    .line 695
+    iput-object v3, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
     .line 696
-    iput-object v2, v0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+    const/4 v12, 0x0
 
-    .line 697
-    invoke-virtual {v8, v0, v13}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
+    invoke-virtual {v10, v1, v12}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
 
-    .line 704
-    .end local v0           #config:Landroid/content/res/Configuration;
-    .end local v1           #country:Ljava/lang/String;
-    .end local v2           #globalLocale:Ljava/util/Locale;
-    .end local v3           #helptext:Ljava/lang/String;
-    .end local v5           #language:Ljava/lang/String;
-    .end local v7           #locale:Ljava/util/Locale;
-    .end local v8           #res:Landroid/content/res/Resources;
-    .end local v9           #voiceLocale:Ljava/lang/String;
+    .line 722
+    .end local v1           #config:Landroid/content/res/Configuration;
+    .end local v2           #country:Ljava/lang/String;
+    .end local v3           #globalLocale:Ljava/util/Locale;
+    .end local v4           #helptext:Ljava/lang/String;
+    .end local v7           #language:Ljava/lang/String;
+    .end local v8           #length:I
+    .end local v9           #locale:Ljava/util/Locale;
+    .end local v10           #res:Landroid/content/res/Resources;
+    .end local v11           #voiceLocale:Ljava/lang/String;
     :cond_2
     :goto_1
     return-void
 
-    .line 699
-    .restart local v0       #config:Landroid/content/res/Configuration;
-    .restart local v1       #country:Ljava/lang/String;
-    .restart local v2       #globalLocale:Ljava/util/Locale;
-    .restart local v3       #helptext:Ljava/lang/String;
-    .restart local v5       #language:Ljava/lang/String;
-    .restart local v7       #locale:Ljava/util/Locale;
-    .restart local v8       #res:Landroid/content/res/Resources;
-    .restart local v9       #voiceLocale:Ljava/lang/String;
+    .line 698
+    .restart local v1       #config:Landroid/content/res/Configuration;
+    .restart local v2       #country:Ljava/lang/String;
+    .restart local v3       #globalLocale:Ljava/util/Locale;
+    .restart local v4       #helptext:Ljava/lang/String;
+    .restart local v7       #language:Ljava/lang/String;
+    .restart local v8       #length:I
+    .restart local v9       #locale:Ljava/util/Locale;
+    .restart local v10       #res:Landroid/content/res/Resources;
+    .restart local v11       #voiceLocale:Ljava/lang/String;
     :cond_3
-    invoke-virtual {v8, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    const v12, 0x7f090141
 
-    move-result-object v3
+    invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    .line 700
-    iget-object v10, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+    move-result-object v4
 
-    invoke-virtual {v10, v3}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
+    .line 699
+    iget-object v12, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+
+    invoke-virtual {v12, v4}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 681
-    .end local v7           #locale:Ljava/util/Locale;
-    .restart local v6       #length:I
-    :catch_0
-    move-exception v10
+    .line 703
+    .end local v8           #length:I
+    .end local v9           #locale:Ljava/util/Locale;
+    :cond_4
+    iget-object v12, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
-    goto :goto_0
+    invoke-virtual {v12}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 704
+    .local v6, lan:Ljava/lang/String;
+    const-string v12, "ro.csc.sales_code"
+
+    invoke-static {v12}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 706
+    .local v0, SalesCode:Ljava/lang/String;
+    const-string v12, "zh"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_6
+
+    const-string v12, "CHN"
+
+    invoke-virtual {v12, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_5
+
+    const-string v12, "CHM"
+
+    invoke-virtual {v12, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_5
+
+    const-string v12, "CHU"
+
+    invoke-virtual {v12, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_5
+
+    const-string v12, "CTC"
+
+    invoke-virtual {v12, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_6
+
+    .line 707
+    :cond_5
+    const v12, 0x7f090141
+
+    invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 708
+    iget-object v12, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+
+    invoke-virtual {v12, v4}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 709
+    :cond_6
+    const-string v12, "en"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_7
+
+    const-string v12, "es"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_7
+
+    const-string v12, "fr"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_7
+
+    const-string v12, "it"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_7
+
+    const-string v12, "ko"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_7
+
+    const-string v12, "de"
+
+    invoke-virtual {v6, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_7
+
+    .line 710
+    new-instance v12, Ljava/util/Locale;
+
+    const-string v13, "en"
+
+    invoke-direct {v12, v13}, Ljava/util/Locale;-><init>(Ljava/lang/String;)V
+
+    iput-object v12, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+
+    .line 711
+    const/4 v12, 0x0
+
+    invoke-virtual {v10, v1, v12}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
+
+    .line 712
+    const v12, 0x7f090141
+
+    invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 713
+    iget-object v12, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+
+    invoke-virtual {v12, v4}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
+
+    .line 714
+    iput-object v3, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+
+    .line 715
+    const/4 v12, 0x0
+
+    invoke-virtual {v10, v1, v12}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
+
+    goto/16 :goto_1
+
+    .line 717
+    :cond_7
+    const v12, 0x7f090141
+
+    invoke-virtual {v10, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 718
+    iget-object v12, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
+
+    invoke-virtual {v12, v4}, Lcom/sec/android/glview/TwGLText;->setText(Ljava/lang/String;)V
+
+    goto/16 :goto_1
+
+    .line 682
+    .end local v0           #SalesCode:Ljava/lang/String;
+    .end local v6           #lan:Ljava/lang/String;
+    .restart local v8       #length:I
+    :catch_0
+    move-exception v12
+
+    goto/16 :goto_0
 .end method
 
 .method public setVoiceStatus(I)V
@@ -3056,23 +3275,23 @@
     .parameter "status"
 
     .prologue
-    .line 630
+    .line 631
     const-string v0, "TwGLCameraBaseIndicators"
 
     const-string v1, "setVoiceStatus"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 631
+    .line 632
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
     if-nez v0, :cond_0
 
-    .line 635
+    .line 636
     :goto_0
     return-void
 
-    .line 634
+    .line 635
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
@@ -3085,23 +3304,23 @@
     .locals 3
 
     .prologue
-    .line 617
+    .line 618
     const-string v1, "TwGLCameraBaseIndicators"
 
     const-string v2, "setWifiDirectStatus"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 618
+    .line 619
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
     if-nez v1, :cond_0
 
-    .line 627
+    .line 628
     :goto_0
     return-void
 
-    .line 621
+    .line 622
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -3113,24 +3332,24 @@
 
     move-result v0
 
-    .line 622
+    .line 623
     .local v0, wifidirect:Z
     if-eqz v0, :cond_1
 
-    .line 623
+    .line 624
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
-    const v2, 0x7f020212
+    const v2, 0x7f020214
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
     goto :goto_0
 
-    .line 625
+    .line 626
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mWifiIndicator:Lcom/sec/android/glview/TwGLImage;
 
-    const v2, 0x7f020211
+    const v2, 0x7f020213
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLImage;->setImageResources(I)V
 
@@ -3143,16 +3362,16 @@
     .prologue
     const/4 v2, 0x3
 
-    .line 365
+    .line 366
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     if-nez v0, :cond_0
 
-    .line 381
+    .line 382
     :goto_0
     return-void
 
-    .line 368
+    .line 369
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -3218,7 +3437,7 @@
 
     if-nez v0, :cond_2
 
-    .line 375
+    .line 376
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -3228,13 +3447,13 @@
 
     goto :goto_0
 
-    .line 379
+    .line 380
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->resetPosIndicator()V
 
-    .line 380
+    .line 381
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     const/4 v1, 0x0
@@ -3249,17 +3468,17 @@
     .parameter "state"
 
     .prologue
-    .line 347
+    .line 348
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 348
+    .line 349
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->showFocusIndicator(I)V
 
-    .line 350
+    .line 351
     :cond_0
     return-void
 .end method
@@ -3268,12 +3487,12 @@
     .locals 3
 
     .prologue
-    .line 638
+    .line 639
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     if-eqz v1, :cond_0
 
-    .line 639
+    .line 640
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getMenuResourceDepot()Lcom/sec/android/app/camera/MenuResourceDepot;
@@ -3294,7 +3513,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/MenuBase;
 
-    .line 640
+    .line 641
     .local v0, menu:Lcom/sec/android/app/camera/MenuBase;
     if-eqz v0, :cond_0
 
@@ -3304,26 +3523,26 @@
 
     if-eqz v1, :cond_0
 
-    .line 641
+    .line 642
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->processBack()V
 
-    .line 645
+    .line 646
     .end local v0           #menu:Lcom/sec/android/app/camera/MenuBase;
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     if-eqz v1, :cond_1
 
-    .line 646
+    .line 647
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Lcom/sec/android/glview/TwGLText;->setVisibility(I)V
 
-    .line 648
+    .line 649
     :cond_1
     const-string v1, "TwGLCameraBaseIndicators"
 
@@ -3331,7 +3550,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 649
+    .line 650
     return-void
 .end method
 
@@ -3340,16 +3559,16 @@
     .parameter "visible"
 
     .prologue
-    .line 332
+    .line 333
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 
     if-nez v0, :cond_0
 
-    .line 336
+    .line 337
     :goto_0
     return-void
 
-    .line 335
+    .line 336
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
@@ -3364,17 +3583,17 @@
     .locals 1
 
     .prologue
-    .line 483
+    .line 484
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     if-eqz v0, :cond_0
 
-    .line 484
+    .line 485
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->shrinkRect()V
 
-    .line 486
+    .line 487
     :cond_0
     return-void
 .end method

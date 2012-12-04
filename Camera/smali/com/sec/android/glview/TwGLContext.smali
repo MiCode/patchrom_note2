@@ -199,12 +199,12 @@
     iput-boolean v2, p0, Lcom/sec/android/glview/TwGLContext;->mFocusIndicatorVisibilityChanged:Z
 
     .line 139
-    const v0, 0x7f02023f
+    const v0, 0x7f020243
 
     iput v0, p0, Lcom/sec/android/glview/TwGLContext;->mFocusResId:I
 
     .line 141
-    const v0, 0x7f020245
+    const v0, 0x7f020249
 
     iput v0, p0, Lcom/sec/android/glview/TwGLContext;->mHoverResId:I
 
@@ -399,12 +399,12 @@
     .locals 2
 
     .prologue
-    .line 772
+    .line 774
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
     if-nez v0, :cond_0
 
-    .line 773
+    .line 775
     new-instance v0, Lcom/sec/android/glview/TwGLContext$1;
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getApplicationContext()Landroid/content/Context;
@@ -415,13 +415,13 @@
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
-    .line 797
+    .line 799
     :cond_0
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
     invoke-virtual {v0}, Landroid/view/OrientationEventListener;->enable()V
 
-    .line 798
+    .line 800
     return-void
 .end method
 
@@ -432,24 +432,24 @@
     .parameter "texture"
 
     .prologue
-    .line 861
+    .line 863
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 862
+    .line 864
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 863
+    .line 865
     monitor-exit v1
 
-    .line 864
+    .line 866
     return-void
 
-    .line 863
+    .line 865
     :catchall_0
     move-exception v0
 
@@ -577,26 +577,26 @@
     .locals 2
 
     .prologue
-    .line 853
+    .line 855
     const-string v0, "DUMP"
 
     const-string v1, "=======================DUMP_START======================="
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 854
+    .line 856
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 855
+    .line 857
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->dumpViewHierarchy(I)V
 
-    .line 857
+    .line 859
     :cond_0
     const-string v0, "DUMP"
 
@@ -604,7 +604,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 858
+    .line 860
     return-void
 .end method
 
@@ -613,10 +613,10 @@
     .parameter "orientation"
 
     .prologue
-    .line 841
+    .line 843
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationEnabled:Z
 
-    .line 842
+    .line 844
     return-void
 .end method
 
@@ -627,25 +627,25 @@
     .parameter "direction"
 
     .prologue
-    .line 616
+    .line 618
     const/4 v0, 0x0
 
-    .line 617
+    .line 619
     .local v0, resultView:Lcom/sec/android/glview/TwGLView;
     if-nez p1, :cond_0
 
-    .line 618
+    .line 620
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v1, p2, p3}, Lcom/sec/android/glview/TwGLViewGroup;->findNextFocusFromView(Lcom/sec/android/glview/TwGLView;I)Lcom/sec/android/glview/TwGLView;
 
     move-result-object v0
 
-    .line 622
+    .line 624
     :goto_0
     return-object v0
 
-    .line 620
+    .line 622
     :cond_0
     invoke-virtual {p1, p2, p3}, Lcom/sec/android/glview/TwGLViewGroup;->findNextFocusFromView(Lcom/sec/android/glview/TwGLView;I)Lcom/sec/android/glview/TwGLView;
 
@@ -659,19 +659,19 @@
     .parameter "id"
 
     .prologue
-    .line 609
+    .line 611
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 610
+    .line 612
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/glview/TwGLViewGroup;->findViewById(I)Lcom/sec/android/glview/TwGLView;
 
     move-result-object v0
 
-    .line 612
+    .line 614
     :goto_0
     return-object v0
 
@@ -686,19 +686,19 @@
     .parameter "tag"
 
     .prologue
-    .line 595
+    .line 597
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 596
+    .line 598
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/glview/TwGLViewGroup;->findViewByTag(I)Lcom/sec/android/glview/TwGLView;
 
     move-result-object v0
 
-    .line 598
+    .line 600
     :goto_0
     return-object v0
 
@@ -762,7 +762,7 @@
     .locals 1
 
     .prologue
-    .line 814
+    .line 816
     iget v0, p0, Lcom/sec/android/glview/TwGLContext;->mLastOrientation:I
 
     return v0
@@ -810,7 +810,7 @@
     .locals 1
 
     .prologue
-    .line 805
+    .line 807
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mClipRect:Landroid/graphics/Rect;
 
     return-object v0
@@ -860,7 +860,7 @@
     .locals 1
 
     .prologue
-    .line 849
+    .line 851
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLContext;->mScrollBarAutoHide:Z
 
     return v0
@@ -870,12 +870,12 @@
     .locals 3
 
     .prologue
-    .line 872
+    .line 874
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTts:Landroid/speech/tts/TextToSpeech;
 
     if-nez v0, :cond_0
 
-    .line 874
+    .line 876
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mApplicationContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -922,7 +922,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 875
+    .line 877
     new-instance v0, Landroid/speech/tts/TextToSpeech;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mApplicationContext:Landroid/content/Context;
@@ -931,7 +931,7 @@
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTts:Landroid/speech/tts/TextToSpeech;
 
-    .line 877
+    .line 879
     :cond_0
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -956,7 +956,7 @@
 
     const/4 v1, 0x0
 
-    .line 881
+    .line 883
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
@@ -992,12 +992,12 @@
     :cond_0
     move v0, v1
 
-    .line 886
+    .line 888
     :cond_1
     :goto_0
     return v0
 
-    .line 883
+    .line 885
     :cond_2
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getApplicationContext()Landroid/content/Context;
 
@@ -1040,7 +1040,7 @@
     :cond_3
     move v0, v1
 
-    .line 886
+    .line 888
     goto :goto_0
 .end method
 
@@ -1052,7 +1052,7 @@
 
     const/4 v1, 0x0
 
-    .line 890
+    .line 892
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1069,7 +1069,7 @@
 
     if-ne v2, v0, :cond_0
 
-    .line 893
+    .line 895
     :goto_0
     return v0
 
@@ -1088,12 +1088,12 @@
 
     const/4 v1, 0x0
 
-    .line 661
+    .line 663
     iget-object v2, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
     monitor-enter v2
 
-    .line 662
+    .line 664
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
@@ -1115,13 +1115,13 @@
 
     check-cast v8, Lcom/sec/android/glview/TwGLTexture;
 
-    .line 663
+    .line 665
     .local v8, texture:Lcom/sec/android/glview/TwGLTexture;
     invoke-virtual {v8, p1}, Lcom/sec/android/glview/TwGLTexture;->clearTexture(Ljavax/microedition/khronos/opengles/GL10;)V
 
     goto :goto_0
 
-    .line 666
+    .line 668
     .end local v7           #i$:Ljava/util/Iterator;
     .end local v8           #texture:Lcom/sec/android/glview/TwGLTexture;
     :catchall_0
@@ -1133,7 +1133,7 @@
 
     throw v0
 
-    .line 665
+    .line 667
     .restart local v7       #i$:Ljava/util/Iterator;
     :cond_0
     :try_start_1
@@ -1141,12 +1141,12 @@
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 666
+    .line 668
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 668
+    .line 670
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getScreenAspectRatio()F
 
     move-result v0
@@ -1155,43 +1155,43 @@
 
     if-gez v0, :cond_1
 
-    .line 669
+    .line 671
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
     invoke-virtual {v0}, Landroid/opengl/GLSurfaceView;->requestRender()V
 
-    .line 671
+    .line 673
     :cond_1
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLContext;->mDirty:Z
 
-    .line 673
+    .line 675
     const/16 v0, 0x4100
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glClear(I)V
 
-    .line 674
+    .line 676
     const/16 v0, 0xbe2
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glEnable(I)V
 
-    .line 675
+    .line 677
     const/4 v0, 0x1
 
     const/16 v2, 0x303
 
     invoke-interface {p1, v0, v2}, Ljavax/microedition/khronos/opengles/GL10;->glBlendFunc(II)V
 
-    .line 677
+    .line 679
     const/16 v0, 0x1700
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glMatrixMode(I)V
 
-    .line 678
+    .line 680
     invoke-interface {p1}, Ljavax/microedition/khronos/opengles/GL10;->glLoadIdentity()V
 
-    .line 679
+    .line 681
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getScreenWidth()I
 
     move-result v0
@@ -1212,12 +1212,12 @@
 
     invoke-interface/range {v0 .. v6}, Ljavax/microedition/khronos/opengles/GL10;->glOrthof(FFFFFF)V
 
-    .line 681
+    .line 683
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_2
 
-    .line 682
+    .line 684
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mIdentityMatrix:[F
@@ -1226,7 +1226,7 @@
 
     invoke-virtual {v0, p1, v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->draw(Ljavax/microedition/khronos/opengles/GL10;[FLandroid/graphics/Rect;)V
 
-    .line 683
+    .line 685
     :cond_2
     return-void
 .end method
@@ -1300,7 +1300,7 @@
 
     .line 575
     :cond_0
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
     .line 576
     invoke-virtual {p1, v4}, Lcom/sec/android/glview/TwGLView;->onHoverStatusChanged(I)V
@@ -1310,7 +1310,7 @@
 
     move-result-object v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
     invoke-virtual {p1}, Lcom/sec/android/glview/TwGLView;->getVisibility()I
 
@@ -1318,9 +1318,16 @@
 
     const/4 v2, 0x4
 
-    if-eq v1, v2, :cond_1
+    if-eq v1, v2, :cond_2
 
     .line 578
+    invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getTts()Landroid/speech/tts/TextToSpeech;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    .line 579
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getTts()Landroid/speech/tts/TextToSpeech;
 
     move-result-object v1
@@ -1333,7 +1340,8 @@
 
     invoke-virtual {v1, v2, v4, v3}, Landroid/speech/tts/TextToSpeech;->speak(Ljava/lang/String;ILjava/util/HashMap;)I
 
-    .line 580
+    .line 582
+    :cond_1
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1346,21 +1354,21 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    .line 581
+    .line 583
     .local v0, vibrator:Landroid/os/Vibrator;
     const-wide/16 v1, 0x64
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Vibrator;->vibrate(J)V
 
-    .line 584
+    .line 586
     .end local v0           #vibrator:Landroid/os/Vibrator;
-    :cond_1
+    :cond_2
     iput-object p1, p0, Lcom/sec/android/glview/TwGLContext;->mCurrentHoverFocusedView:Lcom/sec/android/glview/TwGLView;
 
-    .line 585
+    .line 587
     invoke-virtual {p0, v5}, Lcom/sec/android/glview/TwGLContext;->setDirty(Z)V
 
-    .line 586
+    .line 588
     return-void
 .end method
 
@@ -1538,12 +1546,12 @@
     .parameter "arg0"
 
     .prologue
-    .line 867
+    .line 869
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTts:Landroid/speech/tts/TextToSpeech;
 
     if-eqz v0, :cond_0
 
-    .line 868
+    .line 870
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTts:Landroid/speech/tts/TextToSpeech;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -1552,7 +1560,7 @@
 
     invoke-virtual {v0, v1}, Landroid/speech/tts/TextToSpeech;->setLanguage(Ljava/util/Locale;)I
 
-    .line 869
+    .line 871
     :cond_0
     return-void
 .end method
@@ -2075,44 +2083,44 @@
     .locals 2
 
     .prologue
-    .line 639
+    .line 641
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
     if-eqz v0, :cond_0
 
-    .line 640
+    .line 642
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
     invoke-virtual {v0}, Landroid/view/OrientationEventListener;->disable()V
 
-    .line 643
+    .line 645
     :cond_0
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 644
+    .line 646
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 645
+    .line 647
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 646
+    .line 648
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLContext;->getRootView()Lcom/sec/android/glview/TwGLViewGroup;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/sec/android/glview/TwGLViewGroup;->reset()V
 
-    .line 647
+    .line 649
     return-void
 
-    .line 645
+    .line 647
     :catchall_0
     move-exception v0
 
@@ -2128,17 +2136,17 @@
     .locals 1
 
     .prologue
-    .line 633
+    .line 635
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
     if-eqz v0, :cond_0
 
-    .line 634
+    .line 636
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
     invoke-virtual {v0}, Landroid/opengl/GLSurfaceView;->requestRender()V
 
-    .line 636
+    .line 638
     :cond_0
     return-void
 .end method
@@ -2152,7 +2160,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 691
+    .line 693
     const-string v0, "TwGLRenderer"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2185,7 +2193,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 692
+    .line 694
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2218,26 +2226,26 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 694
+    .line 696
     iput p2, p0, Lcom/sec/android/glview/TwGLContext;->mWidth:I
 
-    .line 695
+    .line 697
     iput p3, p0, Lcom/sec/android/glview/TwGLContext;->mHeight:I
 
-    .line 702
+    .line 704
     invoke-interface {p1, v4, v4, p2, p3}, Ljavax/microedition/khronos/opengles/GL10;->glViewport(IIII)V
 
-    .line 707
+    .line 709
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mClipRect:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v4, v4, p2, p3}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 710
+    .line 712
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 714
+    .line 716
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     int-to-float v1, p2
@@ -2246,14 +2254,14 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setSize(FF)V
 
-    .line 718
+    .line 720
     :cond_0
     check-cast p1, Ljavax/microedition/khronos/opengles/GL11;
 
     .end local p1
     iput-object p1, p0, Lcom/sec/android/glview/TwGLContext;->mGl:Ljavax/microedition/khronos/opengles/GL11;
 
-    .line 720
+    .line 722
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mListener:Lcom/sec/android/glview/TwGLContext$OnGLInitializeListener;
 
     if-eqz v0, :cond_1
@@ -2262,20 +2270,20 @@
 
     if-eqz v0, :cond_1
 
-    .line 721
+    .line 723
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mListener:Lcom/sec/android/glview/TwGLContext$OnGLInitializeListener;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-interface {v0, v1}, Lcom/sec/android/glview/TwGLContext$OnGLInitializeListener;->onGLInitialized(Lcom/sec/android/glview/TwGLViewGroup;)V
 
-    .line 723
+    .line 725
     :cond_1
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/glview/TwGLContext;->setDirty(Z)V
 
-    .line 724
+    .line 726
     return-void
 .end method
 
@@ -2287,76 +2295,76 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 732
+    .line 734
     const-string v0, "TwGLRenderer"
 
     const-string v1, "onSurfaceCreated"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 734
+    .line 736
     invoke-interface {p1, v2, v2, v2, v2}, Ljavax/microedition/khronos/opengles/GL10;->glClearColor(FFFF)V
 
-    .line 735
+    .line 737
     const/16 v0, 0x1d01
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glShadeModel(I)V
 
-    .line 737
+    .line 739
     const/16 v0, 0xbe2
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glEnable(I)V
 
-    .line 738
+    .line 740
     const/16 v0, 0xc11
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glEnable(I)V
 
-    .line 740
+    .line 742
     const/16 v0, 0xb90
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glEnable(I)V
 
-    .line 741
+    .line 743
     const/16 v0, 0xde1
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glEnable(I)V
 
-    .line 743
+    .line 745
     const/high16 v0, 0x3f80
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glClearDepthf(F)V
 
-    .line 744
+    .line 746
     const/16 v0, 0xb71
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glEnable(I)V
 
-    .line 745
+    .line 747
     const/16 v0, 0x203
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL10;->glDepthFunc(I)V
 
-    .line 747
+    .line 749
     const/16 v0, 0xc50
 
     const/16 v1, 0x1102
 
     invoke-interface {p1, v0, v1}, Ljavax/microedition/khronos/opengles/GL10;->glHint(II)V
 
-    .line 750
+    .line 752
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-nez v0, :cond_0
 
-    .line 751
+    .line 753
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-direct {v0, p0, v2, v2}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
-    .line 753
+    .line 755
     :cond_0
     return-void
 .end method
@@ -2480,7 +2488,7 @@
     .locals 2
 
     .prologue
-    .line 821
+    .line 823
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
@@ -2489,19 +2497,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 822
+    .line 824
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget v1, p0, Lcom/sec/android/glview/TwGLContext;->mLastOrientation:I
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->onOrientationChanged(I)V
 
-    .line 823
+    .line 825
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/glview/TwGLContext;->setDirty(Z)V
 
-    .line 825
+    .line 827
     :cond_0
     return-void
 .end method
@@ -2514,7 +2522,7 @@
 
     const/4 v2, 0x0
 
-    .line 831
+    .line 833
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mApplicationContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2534,7 +2542,7 @@
     :goto_0
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLContext;->mAutoOrientationStatus:Z
 
-    .line 833
+    .line 835
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_0
@@ -2543,27 +2551,27 @@
 
     if-nez v0, :cond_0
 
-    .line 834
+    .line 836
     iput v2, p0, Lcom/sec/android/glview/TwGLContext;->mLastOrientation:I
 
-    .line 835
+    .line 837
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget v2, p0, Lcom/sec/android/glview/TwGLContext;->mLastOrientation:I
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->onOrientationChanged(I)V
 
-    .line 836
+    .line 838
     invoke-virtual {p0, v1}, Lcom/sec/android/glview/TwGLContext;->setDirty(Z)V
 
-    .line 838
+    .line 840
     :cond_0
     return-void
 
     :cond_1
     move v0, v2
 
-    .line 831
+    .line 833
     goto :goto_0
 .end method
 
@@ -2571,17 +2579,17 @@
     .locals 1
 
     .prologue
-    .line 650
+    .line 652
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
     if-eqz v0, :cond_0
 
-    .line 651
+    .line 653
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
     invoke-virtual {v0}, Landroid/view/OrientationEventListener;->enable()V
 
-    .line 653
+    .line 655
     :cond_0
     return-void
 .end method
@@ -2591,10 +2599,10 @@
     .parameter "dirty"
 
     .prologue
-    .line 626
+    .line 628
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mDirty:Z
 
-    .line 627
+    .line 629
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLContext;->mDirty:Z
 
     if-eqz v0, :cond_0
@@ -2607,12 +2615,12 @@
 
     if-nez v0, :cond_0
 
-    .line 628
+    .line 630
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
     invoke-virtual {v0}, Landroid/opengl/GLSurfaceView;->requestRender()V
 
-    .line 630
+    .line 632
     :cond_0
     return-void
 .end method
@@ -2624,23 +2632,23 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 759
+    .line 761
     packed-switch p1, :pswitch_data_0
 
-    .line 764
+    .line 766
     iput v0, p0, Lcom/sec/android/glview/TwGLContext;->mDisplayRotation:I
 
-    .line 766
+    .line 768
     :goto_0
     return-void
 
-    .line 760
+    .line 762
     :pswitch_0
     iput v0, p0, Lcom/sec/android/glview/TwGLContext;->mDisplayRotation:I
 
     goto :goto_0
 
-    .line 761
+    .line 763
     :pswitch_1
     const/16 v0, 0x5a
 
@@ -2648,7 +2656,7 @@
 
     goto :goto_0
 
-    .line 762
+    .line 764
     :pswitch_2
     const/16 v0, 0xb4
 
@@ -2656,7 +2664,7 @@
 
     goto :goto_0
 
-    .line 763
+    .line 765
     :pswitch_3
     const/16 v0, 0x10e
 
@@ -2664,7 +2672,7 @@
 
     goto :goto_0
 
-    .line 759
+    .line 761
     nop
 
     :pswitch_data_0
@@ -2705,9 +2713,9 @@
     .parameter "value"
 
     .prologue
-    .line 845
+    .line 847
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mScrollBarAutoHide:Z
 
-    .line 846
+    .line 848
     return-void
 .end method

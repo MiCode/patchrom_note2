@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Fotoaparát</string>
     <string name="camcorder_label">Videokamera</string>
-    <string name="wait">Čekejte prosím...</string>
+    <string name="wait">Čekejte prosím…</string>
     <string name="warning_msg">Upozornění</string>
     <string name="insert_mmc_msg">Chcete-li použít fotoaparát, vložte paměťovou kartu</string>
     <string name="not_enough_space">Nedostatek paměti</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Nedostatek paměti. Výchozí úložiště je změněno na paměť telefonu</string>
     <string name="change_to_device_memory">Na SD kartě není dostatek místa. Výchozí úložiště bylo změněno na paměť zařízení</string>
     <string name="video_reach_size_limit">Bylo dosaženo maximální velikosti nahrávky</string>
-    <string name="processing_msg">Probíhá zpracování...</string>
+    <string name="processing_msg">Probíhá zpracování…</string>
     <string name="panorama_processing_msg">Počkejte při fotografování panoramatického snímku</string>
     <string name="battery_overheat">Ukončí Fotoaparát. Teplota baterie je příliš vysoká</string>
-    <string name="savingImage">Ukládání...</string>
+    <string name="savingImage">Ukládání…</string>
     <string name="open_hw_failed_msg">Chyba fotoaparátu</string>
     <string name="capture_failed_msg">Během fotografování došlo k chybě</string>
     <string name="recording_failed_msg">Během nahrávání došlo k chybě</string>
@@ -105,7 +105,7 @@ spustit fotoaparát"</string>
     <string name="RM_EMAIL">Limit pro e-mail</string>
     <string name="RM_SLOW">Pomalý pohyb</string>
     <string name="RM_FAST">Rychlý pohyb</string>
-    <string name="CS_PROGRESS_TEXT">Vytváření obrázku. Počkejte prosím...</string>
+    <string name="CS_PROGRESS_TEXT">Vytváření obrázku. Počkejte prosím…</string>
     <string name="SCN_NONE">Žádný</string>
     <string name="SCN_PORTRAIT">Na výšku</string>
     <string name="SCN_LANDSCAPE">Na šířku</string>
@@ -191,7 +191,7 @@ Zapněte funkci Automaticky sdílet snímek a spojte zařízení tak, že je př
     <string name="Title_ChangeMemoryInUseDailog">Chcete změnit výchozí úložiště na paměťovou kartu?</string>
     <string name="Title_InsertMemoryCardDailog">Chcete-li použít fotoaparát, vložte paměťovou kartu</string>
     <string name="OnScreen_HelpTextTouchAF">Stiskn. displeje zaostříte na oblast klepnutí</string>
-    <string name="media_scanner_running">Je spuštěn vyhledávač médií...</string>
+    <string name="media_scanner_running">Je spuštěn vyhledávač médií…</string>
     <string name="close_camera_when_mmc_inserted">Byla vložena SD karta. %s bude ukončena, aby bylo možné vyhledat mediální soubory na SD kartě</string>
     <string name="close_camera_when_media_mounted">Fotoaparát byl uzavřen, aby bylo možné vyhledat mediální soubory</string>
     <string name="close_camera_for_unmounted_memory">Před použitím fotoaparátu vypněte paměťové zařízení USB</string>
@@ -199,7 +199,7 @@ Zapněte funkci Automaticky sdílet snímek a spojte zařízení tak, že je př
     <string name="crop_save_text">Uložit</string>
     <string name="crop_discard_text">Zrušit</string>
     <string name="crop_gallery_text">Galerie</string>
-    <string name="wallpaper">Nastavování pozadí. Počkejte prosím...</string>
+    <string name="wallpaper">Nastavování pozadí. Počkejte prosím…</string>
     <string name="crop_label">Oříznout obrázek</string>
     <string name="low_database_storage_view_text">Databázové úložiště je téměř plné</string>
     <string name="camera_security_enter">Zásady zabezpečení omezují použití fotoaparátu</string>
@@ -252,27 +252,31 @@ Zapněte funkci Automaticky sdílet snímek a spojte zařízení tak, že je př
     <string name="editable_shortcut_helptext_title">Tipy</string>
     <string name="editable_shortcut_helptext_message">Zástupce můžete upravit, když na ně klepnete a podržíte je</string>
     <string name="editable_shortcut_helptext">Klepněte na ikonu a držte ji, a potom ji přetáhněte na místo, kde se upravují zástupci</string>
+    <string name="singleshotburst_capture_helptext">Klepnutím a podržením tlačítka fotoaparátu zahájíte sériové snímání</string>
+    <string name="singleshotburst_storage_helptext">Fotografie pořízené sériovým snímáním se ukládají s nastavenou kvalitou vysoká</string>
     <string name="sbeam_helptext">Můžete fotografovat a sdílet fotografie s dalšími zařízeními. Dejte zařízení k sobě a tím přidáte zařízení, se kterými chcete sdílet fotografie prostřednictvím S Beam</string>
     <string name="storage_setting_dialog_title">Místo uložení</string>
     <string name="storage_setting_dialog_message">Byla vložena SD karta. Chcete změnit úložiště na SD kartu?</string>
+    <string name="storage_setting_dialog_burstshot_message">Jednotlivé snímky budou ukládány na SD kartu. Fotografie pořízené sériovým snímáním budou ukládány do úložiště zařízení</string>
     <string name="do_not_ask_again">Znovu nezobrazovat</string>
     <string name="shutter">Spoušť</string>
     <string name="record">Nahrát</string>
     <string name="bestpic">Nejlepší fotografie</string>
     <string name="bestpic_on">I</string>
     <string name="bestpic_off">O</string>
-    <string name="bestgroup">Nejlepší sestava skupiny</string>
-    <string name="bestgroup_title">Uložte nejlepší obličeje</string>
+    <string name="bestgroup">Nejlepší obličeje</string>
+    <string name="bestgroup_title">Uložte Nejlepší obličeje</string>
     <string name="battery_low">Ukončí Fotoaparát. Teplota baterie je příliš nízká</string>
     <string name="buddy_photo_share_helptext">Fotografovat a sdílet fotografie s přáteli prostřednictvím rozpoznávání obličeje</string>
     <string name="face_zoom_helptext">Poklepáním na obličej zvětšíte nebo zmenšíte obraz</string>
     <string name="burst_shot_guidetext">Fotografie pořízené sériovým snímáním budou uloženy do paměti zařízení</string>
+    <string name="best_photo_guidetext">Nejlepší fotografie budou uloženy do paměti zařízení</string>
     <string name="snap_shot_limitation_dialog">Když je zapnutá stabilizace obrazu, není možné použít funkci snímku nahrávky</string>
     <string name="on_device_help_focus">Klepnutím nastavte zaostření fotoaparátu</string>
     <string name="on_device_help_camcorder">Přepnout do režimu videokamery</string>
     <string name="on_device_help_self">Přepnout do režimu autoportrétu</string>
     <string name="on_device_help_editable">Klepněte na zástupce, kterého chcete přesunout, a držte ho. Potom ho přetáhněte na požadované místo</string>
-    <string name="on_device_help_voicecommand">Můžete fotografovat pomocí hlasových příkazů, např. Vyfotografovat, Zachytit, Úsměv nebo Sýr</string>
+    <string name="on_device_help_voicecommand">Můžete fotografovat pomocí hlasových příkazů, např. “Vyfotografovat”, “Zachytit”, “Úsměv” nebo “Sýr”</string>
     <string name="Title_VideoSpeed">Rychlost</string>
     <string name="SPEED_OFF">Normální</string>
     <string name="SPEED_2X_FASTER">2x rychleji</string>
@@ -296,5 +300,5 @@ Zapněte funkci Automaticky sdílet snímek a spojte zařízení tak, že je př
     <string name="enable_gps_dialog">Je potřeba zapnout značku GPS. Zapnout značku GPS?</string>
     <string name="gallery_disable">Galerie je vypnutá</string>
     <string name="HDR_Normal">Normální</string>
-    <string name="HDR_Strong">Silný</string>
+    <string name="HDR_Strong">Vysoký</string>
 </resources>

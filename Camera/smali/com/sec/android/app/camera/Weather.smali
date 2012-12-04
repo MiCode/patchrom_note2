@@ -14,6 +14,8 @@
 
 .field private final KEY_ICON_NUM:Ljava/lang/String;
 
+.field private final KEY_REFRESH_INTERVAL:Ljava/lang/String;
+
 .field private final MSG_WEATHER_DATA_UPDATED:I
 
 .field private final MSG_WEATHER_SETTING_CHANGED:I
@@ -59,38 +61,41 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
 
-    .line 46
+    .line 45
     const-string v0, "aw_daemon_service_key_app_service_status"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/Weather;->KEY_APP_SERVICE_STATUS:Ljava/lang/String;
 
-    .line 47
+    .line 46
     const-string v0, "aw_daemon_service_key_icon_num"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/Weather;->KEY_ICON_NUM:Ljava/lang/String;
 
-    .line 51
+    .line 47
+    const-string v0, "aw_daemon_service_key_autorefresh_interval"
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/Weather;->KEY_REFRESH_INTERVAL:Ljava/lang/String;
+
+    .line 50
     const/16 v0, 0x10
 
     iput v0, p0, Lcom/sec/android/app/camera/Weather;->CAMERA_SERVICE_CODE:I
 
-    .line 54
+    .line 52
     const/16 v0, 0x12c0
 
     iput v0, p0, Lcom/sec/android/app/camera/Weather;->MSG_WEATHER_SETTING_CHANGED:I
 
-    .line 55
+    .line 53
     const/16 v0, 0x12c1
 
     iput v0, p0, Lcom/sec/android/app/camera/Weather;->MSG_WEATHER_DATA_UPDATED:I
 
-    .line 57
+    .line 56
     iput v1, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
 
-    .line 58
-    const/4 v0, 0x1
-
-    iput v0, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
+    .line 59
+    iput v1, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     .line 64
     iput v1, p0, Lcom/sec/android/app/camera/Weather;->mAppServiceStatus:I
@@ -118,12 +123,12 @@
     .parameter "code"
 
     .prologue
-    .line 112
+    .line 136
     xor-int/lit8 v0, p1, -0x1
 
     and-int/2addr p0, v0
 
-    .line 113
+    .line 137
     return p0
 .end method
 
@@ -133,10 +138,10 @@
     .parameter "code"
 
     .prologue
-    .line 107
+    .line 131
     or-int/2addr p0, p1
 
-    .line 108
+    .line 132
     return p0
 .end method
 
@@ -182,6 +187,65 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
 
     return-object v0
+.end method
+
+.method public static isChinaFeature()Z
+    .locals 2
+
+    .prologue
+    .line 96
+    const-string v1, "ro.csc.sales_code"
+
+    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 97
+    .local v0, SalesCode:Ljava/lang/String;
+    const-string v1, "CHN"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "CHM"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "CHU"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "CTC"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 98
+    :cond_0
+    const/4 v1, 0x1
+
+    .line 100
+    :goto_0
+    return v1
+
+    :cond_1
+    const/4 v1, 0x0
+
+    goto :goto_0
 .end method
 
 .method public static isKoreaFeature()Z
@@ -247,10 +311,10 @@
     .locals 4
 
     .prologue
-    .line 96
+    .line 106
     const-string v0, "kweather"
 
-    .line 98
+    .line 107
     .local v0, DAEMON_KWEATHER:Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -262,7 +326,7 @@
 
     move-result-object v1
 
-    .line 100
+    .line 108
     .local v1, mCPName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/Weather;->isKoreaFeature()Z
 
@@ -278,10 +342,58 @@
 
     if-eqz v2, :cond_0
 
-    .line 101
+    .line 109
     const/4 v2, 0x1
 
-    .line 104
+    .line 112
+    :goto_0
+    return v2
+
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static isSinaweatherEnable()Z
+    .locals 4
+
+    .prologue
+    .line 119
+    const-string v0, "sinaweather"
+
+    .line 121
+    .local v0, DAEMON_SINAWEATHER:Ljava/lang/String;
+    invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
+
+    move-result-object v2
+
+    const-string v3, "CscFeature_LiveWallpaper_WeatherWallCPName"
+
+    invoke-virtual {v2, v3}, Lcom/sec/android/app/CscFeature;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 123
+    .local v1, mCPName:Ljava/lang/String;
+    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isChinaFeature()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string v2, "sinaweather"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 124
+    const/4 v2, 0x1
+
+    .line 127
     :goto_0
     return v2
 
@@ -306,20 +418,20 @@
 
     const/4 v1, 0x0
 
-    .line 259
+    .line 297
     invoke-static {}, Lcom/sec/android/app/camera/Weather;->isKweatherEnable()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 260
+    .line 298
     packed-switch p1, :pswitch_data_0
 
-    .line 311
+    .line 349
     iput v1, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
-    .line 376
+    .line 470
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Weather;->TAG:Ljava/lang/String;
 
@@ -345,68 +457,81 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 377
+    .line 471
     return-void
 
-    .line 263
+    .line 301
     :pswitch_0
     iput v2, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 270
+    .line 308
     :pswitch_1
     iput v3, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 284
+    .line 322
     :pswitch_2
     iput v4, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 307
+    .line 345
     :pswitch_3
     iput v5, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 315
+    .line 352
     :cond_0
+    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isSinaweatherEnable()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 353
+    iput v1, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
+
+    goto :goto_0
+
+    .line 409
+    :cond_1
     packed-switch p1, :pswitch_data_1
 
-    .line 371
+    .line 465
     :pswitch_4
     iput v1, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 324
+    .line 418
     :pswitch_5
     iput v2, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 335
+    .line 429
     :pswitch_6
     iput v3, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 349
+    .line 443
     :pswitch_7
     iput v4, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 363
+    .line 457
     :pswitch_8
     iput v5, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     goto :goto_0
 
-    .line 368
+    .line 462
     :pswitch_9
     const/4 v0, 0x5
 
@@ -414,9 +539,7 @@
 
     goto :goto_0
 
-    .line 260
-    nop
-
+    .line 298
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -461,7 +584,7 @@
         :pswitch_1
     .end packed-switch
 
-    .line 315
+    .line 409
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_5
@@ -519,7 +642,26 @@
     .prologue
     const/16 v7, 0x10
 
-    .line 119
+    .line 144
+    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isKweatherEnable()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 145
+    const-string v4, "com.sec.android.widgetapp.ap.hero.kweatherdaemon.action.SYNC_DATA_WITH_DAEMON"
+
+    iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_SETTING_CHANGED:Ljava/lang/String;
+
+    .line 146
+    const-string v4, "com.sec.android.widgetapp.ap.kweatherdaemon.action.CURRENT_LOCATION_WEATHER_DATA"
+
+    iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
+
+    .line 154
+    :cond_0
+    :goto_0
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
@@ -534,19 +676,19 @@
 
     move-result v3
 
-    .line 121
+    .line 156
     .local v3, mAppServiceStatus:I
     and-int/lit8 v4, v3, 0x10
 
-    if-eq v4, v7, :cond_0
+    if-eq v4, v7, :cond_1
 
-    .line 122
+    .line 157
     invoke-static {v3, v7}, Lcom/sec/android/app/camera/Weather;->AppServiceOn(II)I
 
     move-result v3
 
-    .line 125
-    :cond_0
+    .line 160
+    :cond_1
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
@@ -557,22 +699,22 @@
 
     invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 130
+    .line 165
     new-instance v2, Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
 
     invoke-direct {v2, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 131
+    .line 166
     .local v2, intent:Landroid/content/Intent;
     invoke-static {}, Lcom/sec/android/app/camera/Weather;->isKweatherEnable()Z
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_4
 
-    .line 132
+    .line 167
     new-instance v0, Landroid/content/ComponentName;
 
     const-string v4, "com.sec.android.daemonapp.ap.kweather"
@@ -581,63 +723,45 @@
 
     invoke-direct {v0, v4, v5}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 134
+    .line 169
     .local v0, component:Landroid/content/ComponentName;
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 142
-    :goto_0
+    .line 182
+    :goto_1
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v4, v2}, Lcom/sec/android/app/camera/AbstractCameraActivity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 145
-    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isKweatherEnable()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    .line 146
-    const-string v4, "com.sec.android.widgetapp.ap.hero.kweatherdaemon.action.SYNC_DATA_WITH_DAEMON"
-
-    iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_SETTING_CHANGED:Ljava/lang/String;
-
-    .line 147
-    const-string v4, "com.sec.android.widgetapp.ap.kweatherdaemon.action.CURRENT_LOCATION_WEATHER_DATA"
-
-    iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
-
-    .line 151
-    :cond_1
+    .line 185
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-nez v4, :cond_2
 
-    .line 153
+    .line 187
     new-instance v1, Landroid/content/IntentFilter;
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 154
+    .line 188
     .local v1, filter:Landroid/content/IntentFilter;
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_SETTING_CHANGED:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 155
+    .line 189
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 158
+    .line 192
     new-instance v4, Lcom/sec/android/app/camera/Weather$2;
 
     invoke-direct {v4, p0}, Lcom/sec/android/app/camera/Weather$2;-><init>(Lcom/sec/android/app/camera/Weather;)V
 
     iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 175
+    .line 208
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -647,18 +771,66 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 183
+    .line 214
     .end local v1           #filter:Landroid/content/IntentFilter;
     :cond_2
-    :goto_1
+    :goto_2
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Weather;->updateWeatherInfo()V
 
-    .line 184
+    .line 215
     return-void
 
-    .line 137
+    .line 149
     .end local v0           #component:Landroid/content/ComponentName;
+    .end local v2           #intent:Landroid/content/Intent;
+    .end local v3           #mAppServiceStatus:I
     :cond_3
+    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isSinaweatherEnable()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    .line 150
+    const-string v4, "com.sec.android.widgetapp.ap.sinaweatherdaemon.action.SYNC_DATA_WITH_DAEMON"
+
+    iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_SETTING_CHANGED:Ljava/lang/String;
+
+    .line 151
+    const-string v4, "com.sec.android.widgetapp.ap.sinaweatherdaemon.action.REFRESH"
+
+    iput-object v4, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 171
+    .restart local v2       #intent:Landroid/content/Intent;
+    .restart local v3       #mAppServiceStatus:I
+    :cond_4
+    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isSinaweatherEnable()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    .line 172
+    new-instance v0, Landroid/content/ComponentName;
+
+    const-string v4, "com.sec.android.daemonapp.ap.sinaweather"
+
+    const-string v5, "com.sec.android.daemonapp.ap.sinaweather.SinaWeatherDaemonService"
+
+    invoke-direct {v0, v4, v5}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 174
+    .restart local v0       #component:Landroid/content/ComponentName;
+    invoke-virtual {v2, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    goto :goto_1
+
+    .line 177
+    .end local v0           #component:Landroid/content/ComponentName;
+    :cond_5
     new-instance v0, Landroid/content/ComponentName;
 
     const-string v4, "com.sec.android.daemonapp.ap.accuweather"
@@ -667,18 +839,18 @@
 
     invoke-direct {v0, v4, v5}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 139
+    .line 179
     .restart local v0       #component:Landroid/content/ComponentName;
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 176
+    .line 209
     .restart local v1       #filter:Landroid/content/IntentFilter;
     :catch_0
     move-exception v4
 
-    goto :goto_1
+    goto :goto_2
 .end method
 
 .method public Disconnect()V
@@ -687,7 +859,7 @@
     .prologue
     const/16 v6, 0x10
 
-    .line 190
+    .line 221
     iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
@@ -702,18 +874,18 @@
 
     move-result v2
 
-    .line 192
+    .line 223
     .local v2, mAppServiceStatus:I
     and-int/lit8 v3, v2, 0x10
 
     if-ne v3, v6, :cond_0
 
-    .line 193
+    .line 224
     invoke-static {v2, v6}, Lcom/sec/android/app/camera/Weather;->AppServiceOff(II)I
 
     move-result v2
 
-    .line 196
+    .line 227
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -725,14 +897,14 @@
 
     invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 201
+    .line 232
     new-instance v1, Landroid/content/Intent;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
 
     invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 203
+    .line 234
     .local v1, intent:Landroid/content/Intent;
     invoke-static {}, Lcom/sec/android/app/camera/Weather;->isKweatherEnable()Z
 
@@ -740,7 +912,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 204
+    .line 235
     new-instance v0, Landroid/content/ComponentName;
 
     const-string v3, "com.sec.android.daemonapp.ap.kweather"
@@ -749,22 +921,22 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 206
+    .line 237
     .local v0, component:Landroid/content/ComponentName;
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 214
+    .line 250
     :goto_0
     iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v3, v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 218
+    .line 253
     iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v3, :cond_1
 
-    .line 221
+    .line 255
     :try_start_0
     iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -774,14 +946,38 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 226
+    .line 260
     :cond_1
     :goto_1
     return-void
 
-    .line 209
+    .line 239
     .end local v0           #component:Landroid/content/ComponentName;
     :cond_2
+    invoke-static {}, Lcom/sec/android/app/camera/Weather;->isSinaweatherEnable()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    .line 240
+    new-instance v0, Landroid/content/ComponentName;
+
+    const-string v3, "com.sec.android.daemonapp.ap.sinaweather"
+
+    const-string v4, "com.sec.android.daemonapp.ap.sinaweather.SinaWeatherDaemonService"
+
+    invoke-direct {v0, v3, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 242
+    .restart local v0       #component:Landroid/content/ComponentName;
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    goto :goto_0
+
+    .line 245
+    .end local v0           #component:Landroid/content/ComponentName;
+    :cond_3
     new-instance v0, Landroid/content/ComponentName;
 
     const-string v3, "com.sec.android.daemonapp.ap.accuweather"
@@ -790,13 +986,13 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 211
+    .line 247
     .restart local v0       #component:Landroid/content/ComponentName;
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     goto :goto_0
 
-    .line 222
+    .line 256
     :catch_0
     move-exception v3
 
@@ -807,103 +1003,124 @@
     .locals 1
 
     .prologue
-    .line 252
+    .line 290
     iget v0, p0, Lcom/sec/android/app/camera/Weather;->mContextualWeather:I
 
     return v0
 .end method
 
 .method public updateWeatherInfo()V
-    .locals 5
+    .locals 7
 
     .prologue
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    .line 233
-    iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+    .line 267
+    iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    invoke-virtual {v3}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v4
 
-    const-string v4, "aw_daemon_service_key_app_service_status"
+    const-string v5, "aw_daemon_service_key_app_service_status"
 
-    invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v0
+    move-result v1
 
-    .line 234
-    .local v0, mAppServiceStatus:I
-    and-int/lit8 v3, v0, 0x10
+    .line 268
+    .local v1, mAppServiceStatus:I
+    and-int/lit8 v4, v1, 0x10
 
-    const/16 v4, 0x10
+    const/16 v5, 0x10
 
-    if-ne v3, v4, :cond_0
+    if-ne v4, v5, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
-    .line 236
-    .local v1, mIsWeatherDateAvailable:Z
+    .line 270
+    .local v2, mIsWeatherDateAvailable:Z
     :goto_0
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
-    .line 246
+    .line 284
     :goto_1
     return-void
 
-    .end local v1           #mIsWeatherDateAvailable:Z
+    .end local v2           #mIsWeatherDateAvailable:Z
     :cond_0
-    move v1, v2
+    move v2, v3
 
-    .line 234
+    .line 268
     goto :goto_0
 
-    .line 240
-    .restart local v1       #mIsWeatherDateAvailable:Z
+    .line 274
+    .restart local v2       #mIsWeatherDateAvailable:Z
     :cond_1
-    iget-object v3, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+    iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    invoke-virtual {v3}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v4
 
-    const-string v4, "aw_daemon_service_key_icon_num"
+    const-string v5, "aw_daemon_service_key_icon_num"
 
-    invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v2
+    move-result v4
 
-    iput v2, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
+    iput v4, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
 
-    .line 242
-    iget-object v2, p0, Lcom/sec/android/app/camera/Weather;->TAG:Ljava/lang/String;
+    .line 276
+    iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->TAG:Ljava/lang/String;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "Weather Data : iconNum = "
+    const-string v6, "Weather Data : iconNum = "
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v5
 
-    iget v4, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
+    iget v6, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v5
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v5
 
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 245
-    iget v2, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
+    .line 277
+    iget-object v4, p0, Lcom/sec/android/app/camera/Weather;->mContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
-    invoke-direct {p0, v2}, Lcom/sec/android/app/camera/Weather;->setContextualWeather(I)V
+    invoke-virtual {v4}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v5, "aw_daemon_service_key_autorefresh_interval"
+
+    invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    .line 279
+    .local v0, interval:I
+    if-nez v0, :cond_2
+
+    .line 280
+    iput v3, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
+
+    .line 283
+    :cond_2
+    iget v3, p0, Lcom/sec/android/app/camera/Weather;->mWeatherIcon:I
+
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/Weather;->setContextualWeather(I)V
 
     goto :goto_1
 .end method

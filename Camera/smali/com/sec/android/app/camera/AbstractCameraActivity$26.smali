@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1713
+    .line 1745
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$26;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,23 +45,23 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1715
+    .line 1747
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$26;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->setGpsPopupDisplayed(Z)V
 
-    .line 1716
+    .line 1748
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$26;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->onGpsChanged(I)V
 
-    .line 1717
+    .line 1749
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$26;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     const/16 v1, 0x9
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->hideDlg(I)V
 
-    .line 1718
+    .line 1750
     return-void
 .end method

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1604
+    .line 1636
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$18;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "which"
 
     .prologue
-    .line 1609
+    .line 1641
     iget-object v1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$18;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     const-string v2, "wifi"
@@ -58,26 +58,26 @@
 
     invoke-virtual {v1, v2}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 
-    .line 1610
+    .line 1642
     iget-object v1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$18;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/AbstractCameraActivity;->removeDialog(I)V
 
-    .line 1611
+    .line 1643
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.settings.WIFI_SETTINGS"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1612
+    .line 1644
     .local v0, localIntent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$18;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 1613
+    .line 1645
     return-void
 .end method

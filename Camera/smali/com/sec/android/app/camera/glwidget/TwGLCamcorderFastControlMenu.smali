@@ -89,7 +89,7 @@
     .line 46
     new-array v0, v6, [I
 
-    const v1, 0x7f060242
+    const v1, 0x7f0600c4
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -99,7 +99,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f060243
+    const v1, 0x7f0600c5
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -109,7 +109,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f060244
+    const v1, 0x7f0600c6
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -119,7 +119,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f060245
+    const v1, 0x7f0600c7
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -134,7 +134,7 @@
     .line 53
     new-array v0, v6, [I
 
-    const v1, 0x7f060246
+    const v1, 0x7f0600c8
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -144,7 +144,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f060247
+    const v1, 0x7f0600c9
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -154,7 +154,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f060248
+    const v1, 0x7f0600ca
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -164,7 +164,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f060249
+    const v1, 0x7f0600cb
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -177,7 +177,7 @@
     sput-object v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_Y:[I
 
     .line 61
-    const v0, 0x7f06023f
+    const v0, 0x7f0600c1
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -188,7 +188,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEED_CONTROL_BUTTON_WIDTH:I
 
     .line 62
-    const v0, 0x7f060240
+    const v0, 0x7f0600c2
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -199,7 +199,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEED_CONTROL_BUTTON_HEIGHT:I
 
     .line 63
-    const v0, 0x7f060241
+    const v0, 0x7f0600c3
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -210,7 +210,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEED_CONTROL_BUTTON_TEXT_SIZE:I
 
     .line 65
-    const v0, 0x7f06024b
+    const v0, 0x7f0600cd
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -221,7 +221,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_WIDTH:I
 
     .line 66
-    const v0, 0x7f06024c
+    const v0, 0x7f0600ce
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -232,7 +232,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_HEIGHT:I
 
     .line 67
-    const v0, 0x7f06024a
+    const v0, 0x7f0600cc
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -254,7 +254,7 @@
 
     .prologue
     .line 101
-    const/16 v5, 0xf
+    const/4 v5, 0x5
 
     const/4 v6, 0x1
 
@@ -322,11 +322,11 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f0201fa
+    const v6, 0x7f0201fc
 
-    const v7, 0x7f0201fb
+    const v7, 0x7f0201fd
 
-    const v8, 0x7f0201fb
+    const v8, 0x7f0201fd
 
     const/4 v9, 0x0
 
@@ -467,7 +467,7 @@
 
     int-to-float v4, v4
 
-    const v5, 0x7f0201fd
+    const v5, 0x7f0201ff
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -499,36 +499,43 @@
     .line 125
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 126
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
+
     invoke-virtual {p3, v0}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 128
+    .line 129
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_3
 
-    .line 129
+    .line 130
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setRotatable(Z)V
 
-    .line 130
+    .line 131
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 131
+    .line 132
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 136
+    .line 137
     const/4 v10, 0x0
 
     :goto_1
@@ -536,7 +543,7 @@
 
     if-ge v10, v0, :cond_2
 
-    .line 137
+    .line 138
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButtonLine:[Lcom/sec/android/glview/TwGLImage;
@@ -545,12 +552,12 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 136
+    .line 137
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_1
 
-    .line 139
+    .line 140
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -558,43 +565,43 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 140
+    .line 141
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {p3, v0}, Lcom/sec/android/glview/TwGLViewGroup;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 143
+    .line 144
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_4
 
-    .line 144
+    .line 145
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 145
+    .line 146
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_5
 
-    .line 146
+    .line 147
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 156
+    .line 157
     :cond_5
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->setCaptureEnabled(Z)V
 
-    .line 158
+    .line 159
     invoke-direct {p0, p3, p2}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->init(Lcom/sec/android/glview/TwGLViewGroup;I)V
 
-    .line 160
+    .line 161
     return-void
 .end method
 
@@ -615,7 +622,7 @@
     .parameter "select"
 
     .prologue
-    .line 501
+    .line 507
     add-int/lit8 v0, p1, 0x6
 
     return v0
@@ -626,7 +633,7 @@
     .parameter "speed"
 
     .prologue
-    .line 505
+    .line 511
     add-int/lit8 v0, p1, -0x6
 
     return v0
@@ -637,7 +644,7 @@
     .parameter "speed"
 
     .prologue
-    .line 509
+    .line 515
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v0, Lcom/sec/android/app/camera/Camcorder;
@@ -665,7 +672,7 @@
 
     const/4 v6, 0x1
 
-    .line 163
+    .line 164
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     sget-object v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_X:[I
@@ -682,7 +689,7 @@
 
     invoke-virtual {v0, v6, v1, v2}, Lcom/sec/android/glview/TwGLButton;->setLeftTop(IFF)V
 
-    .line 164
+    .line 165
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     sget-object v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_X:[I
@@ -699,7 +706,7 @@
 
     invoke-virtual {v0, v7, v1, v2}, Lcom/sec/android/glview/TwGLButton;->setLeftTop(IFF)V
 
-    .line 165
+    .line 166
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     sget-object v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_X:[I
@@ -716,7 +723,7 @@
 
     invoke-virtual {v0, v8, v1, v2}, Lcom/sec/android/glview/TwGLButton;->setLeftTop(IFF)V
 
-    .line 166
+    .line 167
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
@@ -743,7 +750,7 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
 
-    .line 168
+    .line 169
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     sget-object v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_X:[I
@@ -764,7 +771,7 @@
 
     invoke-virtual {v0, v6, v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 169
+    .line 170
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     sget-object v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_X:[I
@@ -785,7 +792,7 @@
 
     invoke-virtual {v0, v7, v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 170
+    .line 171
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     sget-object v1, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPEEDCONTROL_BUTTON_POX_X:[I
@@ -806,14 +813,14 @@
 
     invoke-virtual {v0, v8, v1, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setLeftTop(IFF)V
 
-    .line 171
+    .line 172
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const v1, 0x7f0201fc
+    const v1, 0x7f0201fe
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setNinePatchBackground(I)Z
 
-    .line 172
+    .line 173
     return-void
 .end method
 
@@ -825,24 +832,24 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 177
+    .line 178
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_0
 
-    .line 178
+    .line 179
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
 
-    .line 179
+    .line 180
     iput-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
-    .line 181
+    .line 182
     :cond_0
     invoke-super {p0}, Lcom/sec/android/app/camera/MenuBase;->clear()V
 
-    .line 182
+    .line 183
     return-void
 .end method
 
@@ -860,41 +867,41 @@
 
     const/4 v7, 0x0
 
-    .line 270
+    .line 276
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v3}, Lcom/sec/android/glview/TwGLButton;->getOrientation()I
 
     move-result v2
 
-    .line 271
+    .line 277
     .local v2, to:I
     new-instance v1, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v1, v8}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 274
+    .line 280
     .local v1, animation:Landroid/view/animation/AnimationSet;
     packed-switch v2, :pswitch_data_0
 
-    .line 288
+    .line 294
     const-string v3, "TwGLCamcorderFastControlMenu"
 
     const-string v4, "TwGLCamcorderFastControlMenu: tarButtonAnimation orientation is invalid"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 305
+    .line 311
     :goto_0
     return-void
 
-    .line 276
+    .line 282
     :pswitch_0
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v7, v7, v7, v4}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 291
+    .line 297
     .local v0, anim:Landroid/view/animation/Animation;
     :goto_1
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
@@ -935,23 +942,23 @@
 
     invoke-virtual {v0, v3, v4, v5, v6}, Landroid/view/animation/TranslateAnimation;->initialize(IIII)V
 
-    .line 293
+    .line 299
     invoke-virtual {v0, v8}, Landroid/view/animation/Animation;->setZAdjustment(I)V
 
-    .line 294
+    .line 300
     invoke-virtual {v0, v9, v10}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
-    .line 295
+    .line 301
     new-instance v3, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v3}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
     invoke-virtual {v0, v3}, Landroid/view/animation/TranslateAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 296
+    .line 302
     invoke-virtual {v1, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 298
+    .line 304
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     .end local v0           #anim:Landroid/view/animation/Animation;
@@ -959,68 +966,68 @@
 
     invoke-direct {v0, v3, v7}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 299
+    .line 305
     .restart local v0       #anim:Landroid/view/animation/Animation;
     invoke-virtual {v0, v9, v10}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 300
+    .line 306
     new-instance v3, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v3}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
     invoke-virtual {v0, v3}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 301
+    .line 307
     invoke-virtual {v1, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 303
+    .line 309
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v4, 0x1
 
     invoke-virtual {v3, v1, v4}, Lcom/sec/android/glview/TwGLViewGroup;->setAnimation(Landroid/view/animation/Animation;Z)V
 
-    .line 304
+    .line 310
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v3}, Lcom/sec/android/glview/TwGLViewGroup;->startAnimation()V
 
     goto :goto_0
 
-    .line 279
+    .line 285
     .end local v0           #anim:Landroid/view/animation/Animation;
     :pswitch_1
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v7, v5, v7, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 280
+    .line 286
     .restart local v0       #anim:Landroid/view/animation/Animation;
     goto :goto_1
 
-    .line 282
+    .line 288
     .end local v0           #anim:Landroid/view/animation/Animation;
     :pswitch_2
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v7, v7, v7, v5}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 283
+    .line 289
     .restart local v0       #anim:Landroid/view/animation/Animation;
     goto :goto_1
 
-    .line 285
+    .line 291
     .end local v0           #anim:Landroid/view/animation/Animation;
     :pswitch_3
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v7, v4, v7, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 286
+    .line 292
     .restart local v0       #anim:Landroid/view/animation/Animation;
     goto :goto_1
 
-    .line 274
+    .line 280
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1045,7 +1052,7 @@
 
     const/4 v1, 0x6
 
-    .line 308
+    .line 314
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
     if-ne v0, v1, :cond_0
@@ -1066,17 +1073,17 @@
 
     if-ne p1, v4, :cond_3
 
-    .line 310
+    .line 316
     :cond_2
     iput v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
-    .line 354
+    .line 360
     :goto_0
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
     return v0
 
-    .line 311
+    .line 317
     :cond_3
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
@@ -1098,13 +1105,13 @@
 
     if-ne p1, v5, :cond_7
 
-    .line 313
+    .line 319
     :cond_6
     iput v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
     goto :goto_0
 
-    .line 314
+    .line 320
     :cond_7
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
@@ -1126,13 +1133,13 @@
 
     if-nez p1, :cond_b
 
-    .line 316
+    .line 322
     :cond_a
     iput v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
     goto :goto_0
 
-    .line 353
+    .line 359
     :cond_b
     const/16 v0, 0xa
 
@@ -1145,7 +1152,7 @@
     .locals 1
 
     .prologue
-    .line 493
+    .line 499
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
     return v0
@@ -1155,12 +1162,12 @@
     .locals 1
 
     .prologue
-    .line 211
+    .line 217
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->processBack()V
 
-    .line 212
+    .line 218
     return-void
 .end method
 
@@ -1175,43 +1182,43 @@
 
     const/4 v6, 0x1
 
-    const v3, 0x7f0201fb
+    const v3, 0x7f0201fd
 
     const/4 v5, 0x0
 
-    .line 434
+    .line 440
     iget-boolean v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mIsBlockFastButton:Z
 
     if-eqz v1, :cond_0
 
-    .line 489
+    .line 495
     :goto_0
     return v6
 
-    .line 437
+    .line 443
     :cond_0
     iput-boolean v6, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mIsBlockFastButton:Z
 
-    .line 438
+    .line 444
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v1, :cond_2
 
-    .line 439
+    .line 445
     const-string v1, "TwGLCamcorderFastControlMenu"
 
     const-string v2, "mFastControlButton on clicked"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 441
+    .line 447
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getSelectedItem(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->setChangeModeButton(I)V
 
-    .line 442
+    .line 448
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v1}, Lcom/sec/android/glview/TwGLViewGroup;->getVisibility()I
@@ -1220,14 +1227,14 @@
 
     if-nez v1, :cond_1
 
-    .line 443
+    .line 449
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
-    const v2, 0x7f0201fa
+    const v2, 0x7f0201fc
 
     invoke-virtual {v1, v2, v3, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setButtonResources(IIII)V
 
-    .line 444
+    .line 450
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
@@ -1248,10 +1255,10 @@
 
     invoke-virtual {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
 
-    .line 445
+    .line 451
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->endAnimation()V
 
-    .line 476
+    .line 482
     :goto_1
     new-instance v0, Ljava/lang/Thread;
 
@@ -1261,57 +1268,57 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 486
+    .line 492
     .local v0, blockFastButtonThread:Ljava/lang/Thread;
     const-string v1, "blockFastButtonThread"
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 487
+    .line 493
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     goto :goto_0
 
-    .line 447
+    .line 453
     .end local v0           #blockFastButtonThread:Ljava/lang/Thread;
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v1, v3, v3, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setButtonResources(IIII)V
 
-    .line 448
+    .line 454
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->starAnimation()V
 
-    .line 449
+    .line 455
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v1, v5}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 452
+    .line 458
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v1, :cond_4
 
-    .line 453
+    .line 459
     invoke-virtual {p0, v6}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getSelectedItem(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->setChangeModeButton(I)V
 
-    .line 470
+    .line 476
     :cond_3
     :goto_2
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
-    const v2, 0x7f0201fa
+    const v2, 0x7f0201fc
 
     invoke-virtual {v1, v2, v3, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setButtonResources(IIII)V
 
-    .line 471
+    .line 477
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
@@ -1332,32 +1339,32 @@
 
     invoke-virtual {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
 
-    .line 472
+    .line 478
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
-    invoke-virtual {v1, v2, v6}, Lcom/sec/android/app/camera/AbstractCameraActivity;->onCamcorderSpeedMenuSelect(IZ)V
+    invoke-virtual {v1, v2, v6, v5}, Lcom/sec/android/app/camera/AbstractCameraActivity;->onCamcorderSpeedMenuSelect(IZZ)V
 
-    .line 473
+    .line 479
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     check-cast v1, Lcom/sec/android/app/camera/Camcorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camcorder;->updateRemainTime()V
 
-    .line 474
+    .line 480
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->endAnimation()V
 
     goto :goto_1
 
-    .line 454
+    .line 460
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
 
     if-ne p1, v1, :cond_3
 
-    .line 455
+    .line 461
     const/4 v1, 0x2
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getSelectedItem(I)I
@@ -1373,10 +1380,10 @@
     .locals 0
 
     .prologue
-    .line 190
+    .line 196
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->onHideFastControlButton()V
 
-    .line 191
+    .line 197
     return-void
 .end method
 
@@ -1384,10 +1391,82 @@
     .locals 5
 
     .prologue
-    const v4, 0x7f0201fb
+    const v4, 0x7f0201fd
 
     const/4 v3, 0x4
 
+    .line 207
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
+
+    if-eqz v0, :cond_0
+
+    .line 208
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-virtual {v0, v3}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
+
+    .line 209
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
+
+    const v1, 0x7f0201fc
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v4, v4, v2}, Lcom/sec/android/glview/TwGLButton;->setButtonResources(IIII)V
+
+    .line 211
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
+
+    if-eqz v0, :cond_1
+
+    .line 212
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
+
+    invoke-virtual {v0, v3}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
+
+    .line 214
+    :cond_1
+    return-void
+.end method
+
+.method public onShow()V
+    .locals 1
+
+    .prologue
+    .line 187
+    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    check-cast v0, Lcom/sec/android/app/camera/Camcorder;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->isCamcorderFastMotionEnabled()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 188
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->onHideFastControlButton()V
+
+    .line 193
+    :goto_0
+    return-void
+
+    .line 192
+    :cond_0
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->onShowFastControlButton()V
+
+    goto :goto_0
+.end method
+
+.method public onShowFastControlButton()V
+    .locals 2
+
+    .prologue
     .line 201
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -1396,61 +1475,11 @@
     .line 202
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
-    invoke-virtual {v0, v3}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
-
-    .line 203
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
-
-    const v1, 0x7f0201fa
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v4, v4, v2}, Lcom/sec/android/glview/TwGLButton;->setButtonResources(IIII)V
-
-    .line 205
-    :cond_0
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
-
-    if-eqz v0, :cond_1
-
-    .line 206
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v3}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 208
-    :cond_1
-    return-void
-.end method
-
-.method public onShow()V
-    .locals 0
-
-    .prologue
-    .line 186
-    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->onShowFastControlButton()V
-
-    .line 187
-    return-void
-.end method
-
-.method public onShowFastControlButton()V
-    .locals 2
-
-    .prologue
-    .line 195
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
-
-    if-eqz v0, :cond_0
-
-    .line 196
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
-
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 197
+    .line 203
     :cond_0
     return-void
 .end method
@@ -1459,26 +1488,26 @@
     .locals 7
 
     .prologue
-    const/4 v6, 0x0
+    const/4 v6, 0x4
 
-    .line 216
+    .line 222
     const-string v0, "TwGLCamcorderFastControlMenu"
 
     const-string v1, "SpeedControl Menu restart"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 218
+    .line 224
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->setTouchHandled(Z)V
 
-    .line 220
+    .line 226
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     if-eqz v0, :cond_0
 
-    .line 221
+    .line 227
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
@@ -1501,27 +1530,27 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3, v6}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
+    const/4 v4, 0x0
 
-    .line 222
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
+
+    .line 228
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLButton;->setVisibility(I)V
 
-    .line 224
+    .line 230
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     if-eqz v0, :cond_1
 
-    .line 225
+    .line 231
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
-    const/4 v1, 0x4
+    invoke-virtual {v0, v6}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 227
+    .line 233
     :cond_1
     return-void
 .end method
@@ -1541,7 +1570,7 @@
 
     const/16 v4, 0xff
 
-    .line 358
+    .line 364
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
@@ -1558,117 +1587,15 @@
 
     invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
 
-    .line 360
+    .line 366
     const/4 v0, 0x6
 
     if-ne p1, v0, :cond_0
 
-    .line 361
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-direct {p0, v6}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
-
-    move-result v1
-
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
-
-    int-to-float v2, v2
-
-    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
-
-    move-result v3
-
-    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
-
-    .line 362
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-direct {p0, v7}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
-
-    move-result v1
-
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
-
-    int-to-float v2, v2
-
-    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
-
-    move-result v3
-
-    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
-
-    .line 430
-    :goto_0
-    return-void
-
-    .line 363
-    :cond_0
-    const/4 v0, 0x7
-
-    if-ne p1, v0, :cond_1
-
-    .line 364
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-direct {p0, v5}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
-
-    move-result v1
-
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
-
-    int-to-float v2, v2
-
-    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
-
-    move-result v3
-
-    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
-
-    .line 365
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
-
-    invoke-direct {p0, v7}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
-
-    move-result v1
-
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
-
-    int-to-float v2, v2
-
-    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
-
-    move-result v3
-
-    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
-
-    goto :goto_0
-
-    .line 366
-    :cond_1
-    const/16 v0, 0x8
-
-    if-ne p1, v0, :cond_2
-
     .line 367
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
 
-    invoke-direct {p0, v5}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
+    invoke-direct {p0, v6}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
 
     move-result v1
 
@@ -1689,6 +1616,108 @@
     .line 368
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
 
+    invoke-direct {p0, v7}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
+
+    move-result v1
+
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
+
+    int-to-float v2, v2
+
+    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
+
+    move-result v3
+
+    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
+
+    .line 436
+    :goto_0
+    return-void
+
+    .line 369
+    :cond_0
+    const/4 v0, 0x7
+
+    if-ne p1, v0, :cond_1
+
+    .line 370
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-direct {p0, v5}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
+
+    move-result v1
+
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
+
+    int-to-float v2, v2
+
+    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
+
+    move-result v3
+
+    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
+
+    .line 371
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-direct {p0, v7}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
+
+    move-result v1
+
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
+
+    int-to-float v2, v2
+
+    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
+
+    move-result v3
+
+    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
+
+    goto :goto_0
+
+    .line 372
+    :cond_1
+    const/16 v0, 0x8
+
+    if-ne p1, v0, :cond_2
+
+    .line 373
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton2:Lcom/sec/android/glview/TwGLButton;
+
+    invoke-direct {p0, v5}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
+
+    move-result v1
+
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->getMenuString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->SPPED_CONTROL_LIST_ITEM_TEXT_SIZE:I
+
+    int-to-float v2, v2
+
+    invoke-static {v4, v4, v4}, Landroid/graphics/Color;->rgb(III)I
+
+    move-result v3
+
+    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/sec/android/glview/TwGLButton;->setText(Ljava/lang/String;FIZ)V
+
+    .line 374
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mModeButton3:Lcom/sec/android/glview/TwGLButton;
+
     invoke-direct {p0, v6}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->covertSelectToSpeed(I)I
 
     move-result v1
@@ -1709,7 +1738,7 @@
 
     goto :goto_0
 
-    .line 428
+    .line 434
     :cond_2
     const-string v0, "TwGLCamcorderFastControlMenu"
 
@@ -1741,10 +1770,10 @@
     .parameter "speed"
 
     .prologue
-    .line 497
+    .line 503
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mCurrentFastSpeed:I
 
-    .line 498
+    .line 504
     return-void
 .end method
 
@@ -1760,41 +1789,41 @@
 
     const/4 v7, 0x0
 
-    .line 230
+    .line 236
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v3}, Lcom/sec/android/glview/TwGLButton;->getOrientation()I
 
     move-result v2
 
-    .line 231
+    .line 237
     .local v2, from:I
     new-instance v1, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v1, v8}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 234
+    .line 240
     .local v1, animation:Landroid/view/animation/AnimationSet;
     packed-switch v2, :pswitch_data_0
 
-    .line 248
+    .line 254
     const-string v3, "TwGLCamcorderFastControlMenu"
 
     const-string v4, "TwGLCamcorderFastControlMenu: tarButtonAnimation orientation is invalid"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 267
+    .line 273
     :goto_0
     return-void
 
-    .line 236
+    .line 242
     :pswitch_0
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v7, v7, v4, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 252
+    .line 258
     .local v0, anim:Landroid/view/animation/Animation;
     :goto_1
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
@@ -1835,27 +1864,27 @@
 
     invoke-virtual {v0, v3, v4, v5, v6}, Landroid/view/animation/TranslateAnimation;->initialize(IIII)V
 
-    .line 255
+    .line 261
     const/4 v3, 0x2
 
     invoke-virtual {v0, v3}, Landroid/view/animation/Animation;->setZAdjustment(I)V
 
-    .line 256
+    .line 262
     const-wide/16 v3, 0x64
 
     invoke-virtual {v0, v3, v4}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
-    .line 257
+    .line 263
     new-instance v3, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v3}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
     invoke-virtual {v0, v3}, Landroid/view/animation/TranslateAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 258
+    .line 264
     invoke-virtual {v1, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 260
+    .line 266
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     .end local v0           #anim:Landroid/view/animation/Animation;
@@ -1863,68 +1892,68 @@
 
     invoke-direct {v0, v7, v3}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 261
+    .line 267
     .restart local v0       #anim:Landroid/view/animation/Animation;
     const-wide/16 v3, 0x12c
 
     invoke-virtual {v0, v3, v4}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 262
+    .line 268
     new-instance v3, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v3}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
     invoke-virtual {v0, v3}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 263
+    .line 269
     invoke-virtual {v1, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 265
+    .line 271
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v3, v1, v8}, Lcom/sec/android/glview/TwGLViewGroup;->setAnimation(Landroid/view/animation/Animation;Z)V
 
-    .line 266
+    .line 272
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderFastControlMenu;->mFastControlButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v3}, Lcom/sec/android/glview/TwGLViewGroup;->startAnimation()V
 
     goto :goto_0
 
-    .line 239
+    .line 245
     .end local v0           #anim:Landroid/view/animation/Animation;
     :pswitch_1
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v5, v7, v7, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 240
+    .line 246
     .restart local v0       #anim:Landroid/view/animation/Animation;
     goto :goto_1
 
-    .line 242
+    .line 248
     .end local v0           #anim:Landroid/view/animation/Animation;
     :pswitch_2
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v7, v7, v5, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 243
+    .line 249
     .restart local v0       #anim:Landroid/view/animation/Animation;
     goto :goto_1
 
-    .line 245
+    .line 251
     .end local v0           #anim:Landroid/view/animation/Animation;
     :pswitch_3
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     invoke-direct {v0, v4, v7, v7, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 246
+    .line 252
     .restart local v0       #anim:Landroid/view/animation/Animation;
     goto :goto_1
 
-    .line 234
+    .line 240
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

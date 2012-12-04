@@ -63,11 +63,11 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02023d
+    const v3, 0x7f020241
 
-    const v4, 0x7f02023d
+    const v4, 0x7f020241
 
-    const v5, 0x7f02023d
+    const v5, 0x7f020241
 
     const/high16 v6, 0x7f09
 
@@ -90,9 +90,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02023b
+    const v3, 0x7f02023d
 
-    const v4, 0x7f02023b
+    const v4, 0x7f02023d
 
     const/4 v5, 0x0
 
@@ -117,9 +117,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02023b
+    const v3, 0x7f02023d
 
-    const v4, 0x7f02023b
+    const v4, 0x7f02023d
 
     const/4 v5, 0x0
 
@@ -144,9 +144,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02018a
+    const v3, 0x7f02018c
 
-    const v4, 0x7f02018b
+    const v4, 0x7f02018d
 
     const/4 v5, 0x0
 
@@ -171,9 +171,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f0200ef
+    const v3, 0x7f0200f1
 
-    const v4, 0x7f0200f0
+    const v4, 0x7f0200f2
 
     const/4 v5, 0x0
 
@@ -198,9 +198,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02023b
+    const v3, 0x7f02023d
 
-    const v4, 0x7f02023b
+    const v4, 0x7f02023d
 
     const/4 v5, 0x0
 
@@ -225,9 +225,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f0201b2
+    const v3, 0x7f0201b4
 
-    const v4, 0x7f0201b3
+    const v4, 0x7f0201b5
 
     const/4 v5, 0x0
 
@@ -252,9 +252,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f020144
+    const v3, 0x7f020146
 
-    const v4, 0x7f020144
+    const v4, 0x7f020146
 
     const/4 v5, 0x0
 
@@ -279,9 +279,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02018c
+    const v3, 0x7f02018e
 
-    const v4, 0x7f02018d
+    const v4, 0x7f02018f
 
     const/4 v5, 0x0
 
@@ -306,9 +306,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f0200b3
+    const v3, 0x7f0200b5
 
-    const v4, 0x7f0200b3
+    const v4, 0x7f0200b5
 
     const/4 v5, 0x0
 
@@ -333,9 +333,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f02023b
+    const v3, 0x7f02023d
 
-    const v4, 0x7f02023b
+    const v4, 0x7f02023d
 
     const/4 v5, 0x0
 
@@ -364,9 +364,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f0200e7
+    const v3, 0x7f0200e9
 
-    const v4, 0x7f0200ea
+    const v4, 0x7f0200ec
 
     const/4 v5, 0x0
 
@@ -389,9 +389,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200cb
+    const v9, 0x7f0200cd
 
-    const v10, 0x7f0200cc
+    const v10, 0x7f0200ce
 
     const/4 v11, 0x0
 
@@ -416,9 +416,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -443,9 +443,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020098
+    const v9, 0x7f02009a
 
-    const v10, 0x7f020098
+    const v10, 0x7f02009a
 
     const/4 v11, 0x0
 
@@ -470,9 +470,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -497,9 +497,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -524,9 +524,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -551,9 +551,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -578,9 +578,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -605,9 +605,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -632,9 +632,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -659,9 +659,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -686,9 +686,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -713,9 +713,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020277
+    const v9, 0x7f02027d
 
-    const v10, 0x7f020278
+    const v10, 0x7f02027e
 
     const/4 v11, 0x0
 
@@ -740,9 +740,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -767,9 +767,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -794,9 +794,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -821,9 +821,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -848,9 +848,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02013e
+    const v9, 0x7f020140
 
-    const v10, 0x7f02013f
+    const v10, 0x7f020141
 
     const/4 v11, 0x0
 
@@ -875,9 +875,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -902,9 +902,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200bd
+    const v9, 0x7f0200bf
 
-    const v10, 0x7f0200c0
+    const v10, 0x7f0200c2
 
     const/4 v11, 0x0
 
@@ -929,9 +929,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020186
+    const v9, 0x7f020188
 
-    const v10, 0x7f020187
+    const v10, 0x7f020189
 
     const/4 v11, 0x0
 
@@ -956,9 +956,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -983,9 +983,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020131
+    const v9, 0x7f020133
 
-    const v10, 0x7f020131
+    const v10, 0x7f020133
 
     const/4 v11, 0x0
 
@@ -1010,9 +1010,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1037,9 +1037,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -1064,9 +1064,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ef
+    const v9, 0x7f0200f1
 
-    const v10, 0x7f0200f0
+    const v10, 0x7f0200f2
 
     const/4 v11, 0x0
 
@@ -1091,9 +1091,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1118,9 +1118,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v3, 0x7f0200e7
+    const v3, 0x7f0200e9
 
-    const v4, 0x7f0200ea
+    const v4, 0x7f0200ec
 
     const/4 v5, 0x0
 
@@ -1143,9 +1143,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1170,9 +1170,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1197,9 +1197,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200cb
+    const v9, 0x7f0200cd
 
-    const v10, 0x7f0200cc
+    const v10, 0x7f0200ce
 
     const/4 v11, 0x0
 
@@ -1224,9 +1224,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1251,9 +1251,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1278,13 +1278,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090141
+    const v12, 0x7f090142
 
     move-object/from16 v8, p0
 
@@ -1305,9 +1305,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1332,9 +1332,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1359,9 +1359,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1386,9 +1386,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02013e
+    const v9, 0x7f020140
 
-    const v10, 0x7f02013f
+    const v10, 0x7f020141
 
     const/4 v11, 0x0
 
@@ -1413,9 +1413,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02013e
+    const v9, 0x7f020140
 
-    const v10, 0x7f02013f
+    const v10, 0x7f020141
 
     const/4 v11, 0x0
 
@@ -1440,9 +1440,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1467,9 +1467,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1494,13 +1494,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090158
+    const v12, 0x7f090159
 
     move-object/from16 v8, p0
 
@@ -1521,13 +1521,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090163
+    const v12, 0x7f090164
 
     move-object/from16 v8, p0
 
@@ -1548,9 +1548,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1575,13 +1575,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090163
+    const v12, 0x7f090164
 
     move-object/from16 v8, p0
 
@@ -1602,9 +1602,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1629,9 +1629,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1656,9 +1656,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1683,9 +1683,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1697,7 +1697,7 @@
 
     invoke-virtual {v1, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 285
+    .line 277
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->mResourceIDs:Ljava/util/HashMap;
@@ -1710,9 +1710,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018a
+    const v9, 0x7f02018c
 
-    const v10, 0x7f02018b
+    const v10, 0x7f02018d
 
     const/4 v11, 0x0
 
@@ -1724,7 +1724,7 @@
 
     invoke-virtual {v1, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 286
+    .line 278
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->mResourceIDs:Ljava/util/HashMap;
@@ -1737,9 +1737,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018a
+    const v9, 0x7f02018c
 
-    const v10, 0x7f02018b
+    const v10, 0x7f02018d
 
     const/4 v11, 0x0
 
@@ -1751,7 +1751,7 @@
 
     invoke-virtual {v1, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 289
+    .line 281
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->mResourceIDs:Ljava/util/HashMap;
@@ -1764,9 +1764,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020186
+    const v9, 0x7f020188
 
-    const v10, 0x7f020187
+    const v10, 0x7f020189
 
     const/4 v11, 0x0
 
@@ -1778,7 +1778,7 @@
 
     invoke-virtual {v1, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 290
+    .line 282
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->mResourceIDs:Ljava/util/HashMap;
@@ -1791,9 +1791,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020186
+    const v9, 0x7f020188
 
-    const v10, 0x7f020187
+    const v10, 0x7f020189
 
     const/4 v11, 0x0
 
@@ -1818,9 +1818,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201b4
+    const v9, 0x7f0201b6
 
-    const v10, 0x7f0201b5
+    const v10, 0x7f0201b7
 
     const/4 v11, 0x0
 
@@ -1845,9 +1845,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02019c
+    const v9, 0x7f02019e
 
-    const v10, 0x7f02019d
+    const v10, 0x7f02019f
 
     const/4 v11, 0x0
 
@@ -1872,9 +1872,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ac
+    const v9, 0x7f0201ae
 
-    const v10, 0x7f0201ad
+    const v10, 0x7f0201af
 
     const/4 v11, 0x0
 
@@ -1899,9 +1899,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201b6
+    const v9, 0x7f0201b8
 
-    const v10, 0x7f0201b7
+    const v10, 0x7f0201b9
 
     const/4 v11, 0x0
 
@@ -1926,9 +1926,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1953,9 +1953,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -1980,9 +1980,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020196
+    const v9, 0x7f020198
 
-    const v10, 0x7f020197
+    const v10, 0x7f020199
 
     const/4 v11, 0x0
 
@@ -2007,9 +2007,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -2034,9 +2034,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020190
+    const v9, 0x7f020192
 
-    const v10, 0x7f020191
+    const v10, 0x7f020193
 
     const/4 v11, 0x0
 
@@ -2061,9 +2061,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -2088,9 +2088,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02019a
+    const v9, 0x7f02019c
 
-    const v10, 0x7f02019b
+    const v10, 0x7f02019d
 
     const/4 v11, 0x0
 
@@ -2115,9 +2115,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020107
+    const v9, 0x7f020109
 
-    const v10, 0x7f020108
+    const v10, 0x7f02010a
 
     const/4 v11, 0x0
 
@@ -2142,9 +2142,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018e
+    const v9, 0x7f020190
 
-    const v10, 0x7f02018f
+    const v10, 0x7f020191
 
     const/4 v11, 0x0
 
@@ -2169,9 +2169,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200bd
+    const v9, 0x7f0200bf
 
-    const v10, 0x7f0200c0
+    const v10, 0x7f0200c2
 
     const/4 v11, 0x0
 
@@ -2196,9 +2196,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201a8
+    const v9, 0x7f0201aa
 
-    const v10, 0x7f0201a9
+    const v10, 0x7f0201ab
 
     const/4 v11, 0x0
 
@@ -2250,9 +2250,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200f9
+    const v9, 0x7f0200fb
 
-    const v10, 0x7f0200fa
+    const v10, 0x7f0200fc
 
     const/4 v11, 0x0
 
@@ -2277,13 +2277,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200b4
+    const v9, 0x7f0200b6
 
-    const v10, 0x7f0200b5
+    const v10, 0x7f0200b7
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090131
+    const v12, 0x7f090132
 
     move-object/from16 v8, p0
 
@@ -2304,13 +2304,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200b6
+    const v9, 0x7f0200b8
 
-    const v10, 0x7f0200b7
+    const v10, 0x7f0200b9
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090134
+    const v12, 0x7f090135
 
     move-object/from16 v8, p0
 
@@ -2331,9 +2331,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201b2
+    const v9, 0x7f0201b4
 
-    const v10, 0x7f0201b3
+    const v10, 0x7f0201b5
 
     const/4 v11, 0x0
 
@@ -2358,9 +2358,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201b0
+    const v9, 0x7f0201b2
 
-    const v10, 0x7f0201b1
+    const v10, 0x7f0201b3
 
     const/4 v11, 0x0
 
@@ -2385,9 +2385,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201a6
+    const v9, 0x7f0201a8
 
-    const v10, 0x7f0201a7
+    const v10, 0x7f0201a9
 
     const/4 v11, 0x0
 
@@ -2412,9 +2412,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201aa
+    const v9, 0x7f0201ac
 
-    const v10, 0x7f0201ab
+    const v10, 0x7f0201ad
 
     const/4 v11, 0x0
 
@@ -2439,9 +2439,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201b8
+    const v9, 0x7f0201ba
 
-    const v10, 0x7f0201b9
+    const v10, 0x7f0201bb
 
     const/4 v11, 0x0
 
@@ -2466,9 +2466,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ae
+    const v9, 0x7f0201b0
 
-    const v10, 0x7f0201af
+    const v10, 0x7f0201b1
 
     const/4 v11, 0x0
 
@@ -2493,9 +2493,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020194
+    const v9, 0x7f020196
 
-    const v10, 0x7f020195
+    const v10, 0x7f020197
 
     const/4 v11, 0x0
 
@@ -2520,9 +2520,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ba
+    const v9, 0x7f0201bc
 
-    const v10, 0x7f0201bb
+    const v10, 0x7f0201bd
 
     const/4 v11, 0x0
 
@@ -2547,9 +2547,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02019e
+    const v9, 0x7f0201a0
 
-    const v10, 0x7f02019f
+    const v10, 0x7f0201a1
 
     const/4 v11, 0x0
 
@@ -2574,9 +2574,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201a0
+    const v9, 0x7f0201a2
 
-    const v10, 0x7f0201a1
+    const v10, 0x7f0201a3
 
     const/4 v11, 0x0
 
@@ -2601,9 +2601,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201a2
+    const v9, 0x7f0201a4
 
-    const v10, 0x7f0201a3
+    const v10, 0x7f0201a5
 
     const/4 v11, 0x0
 
@@ -2628,9 +2628,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201bc
+    const v9, 0x7f0201be
 
-    const v10, 0x7f0201bd
+    const v10, 0x7f0201bf
 
     const/4 v11, 0x0
 
@@ -2655,9 +2655,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020198
+    const v9, 0x7f02019a
 
-    const v10, 0x7f020199
+    const v10, 0x7f02019b
 
     const/4 v11, 0x0
 
@@ -2682,9 +2682,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020192
+    const v9, 0x7f020194
 
-    const v10, 0x7f020193
+    const v10, 0x7f020195
 
     const/4 v11, 0x0
 
@@ -2709,9 +2709,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ed
+    const v9, 0x7f0200ef
 
-    const v10, 0x7f0200ee
+    const v10, 0x7f0200f0
 
     const/4 v11, 0x0
 
@@ -2736,9 +2736,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ef
+    const v9, 0x7f0200f1
 
-    const v10, 0x7f0200f0
+    const v10, 0x7f0200f2
 
     const/4 v11, 0x0
 
@@ -2763,9 +2763,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200eb
+    const v9, 0x7f0200ed
 
-    const v10, 0x7f0200ec
+    const v10, 0x7f0200ee
 
     const/4 v11, 0x0
 
@@ -2790,9 +2790,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200f1
+    const v9, 0x7f0200f3
 
-    const v10, 0x7f0200f2
+    const v10, 0x7f0200f4
 
     const/4 v11, 0x0
 
@@ -2817,9 +2817,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ed
+    const v9, 0x7f0200ef
 
-    const v10, 0x7f0200ee
+    const v10, 0x7f0200f0
 
     const/4 v11, 0x0
 
@@ -2844,9 +2844,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ef
+    const v9, 0x7f0200f1
 
-    const v10, 0x7f0200f0
+    const v10, 0x7f0200f2
 
     const/4 v11, 0x0
 
@@ -2871,9 +2871,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200eb
+    const v9, 0x7f0200ed
 
-    const v10, 0x7f0200ec
+    const v10, 0x7f0200ee
 
     const/4 v11, 0x0
 
@@ -2898,9 +2898,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200f1
+    const v9, 0x7f0200f3
 
-    const v10, 0x7f0200f2
+    const v10, 0x7f0200f4
 
     const/4 v11, 0x0
 
@@ -2925,9 +2925,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200f7
+    const v9, 0x7f0200f9
 
-    const v10, 0x7f0200f8
+    const v10, 0x7f0200fa
 
     const/4 v11, 0x0
 
@@ -2952,9 +2952,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200f7
+    const v9, 0x7f0200f9
 
-    const v10, 0x7f0200f8
+    const v10, 0x7f0200fa
 
     const/4 v11, 0x0
 
@@ -2979,9 +2979,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200fb
+    const v9, 0x7f0200fd
 
-    const v10, 0x7f0200fc
+    const v10, 0x7f0200fe
 
     const/4 v11, 0x0
 
@@ -3006,9 +3006,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200f7
+    const v9, 0x7f0200fb
 
-    const v10, 0x7f0200f8
+    const v10, 0x7f0200fc
 
     const/4 v11, 0x0
 
@@ -3033,9 +3033,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e3
+    const v9, 0x7f0201e5
 
-    const v10, 0x7f0201e4
+    const v10, 0x7f0201e6
 
     const/4 v11, 0x0
 
@@ -3060,9 +3060,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201df
+    const v9, 0x7f0201e1
 
-    const v10, 0x7f0201e0
+    const v10, 0x7f0201e2
 
     const/4 v11, 0x0
 
@@ -3087,9 +3087,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e1
+    const v9, 0x7f0201e3
 
-    const v10, 0x7f0201e2
+    const v10, 0x7f0201e4
 
     const/4 v11, 0x0
 
@@ -3114,9 +3114,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201dd
+    const v9, 0x7f0201df
 
-    const v10, 0x7f0201de
+    const v10, 0x7f0201e0
 
     const/4 v11, 0x0
 
@@ -3141,9 +3141,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e3
+    const v9, 0x7f0201e5
 
-    const v10, 0x7f0201e4
+    const v10, 0x7f0201e6
 
     const/4 v11, 0x0
 
@@ -3168,9 +3168,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201df
+    const v9, 0x7f0201e1
 
-    const v10, 0x7f0201e0
+    const v10, 0x7f0201e2
 
     const/4 v11, 0x0
 
@@ -3195,9 +3195,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e1
+    const v9, 0x7f0201e3
 
-    const v10, 0x7f0201e2
+    const v10, 0x7f0201e4
 
     const/4 v11, 0x0
 
@@ -3222,9 +3222,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201dd
+    const v9, 0x7f0201df
 
-    const v10, 0x7f0201de
+    const v10, 0x7f0201e0
 
     const/4 v11, 0x0
 
@@ -3249,9 +3249,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e9
+    const v9, 0x7f0201eb
 
-    const v10, 0x7f0201ea
+    const v10, 0x7f0201ec
 
     const/4 v11, 0x0
 
@@ -3276,9 +3276,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ed
+    const v9, 0x7f0201ef
 
-    const v10, 0x7f0201ee
+    const v10, 0x7f0201f0
 
     const/4 v11, 0x0
 
@@ -3303,9 +3303,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201eb
+    const v9, 0x7f0201ed
 
-    const v10, 0x7f0201ec
+    const v10, 0x7f0201ee
 
     const/4 v11, 0x0
 
@@ -3330,9 +3330,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201f3
+    const v9, 0x7f0201f5
 
-    const v10, 0x7f0201f4
+    const v10, 0x7f0201f6
 
     const/4 v11, 0x0
 
@@ -3357,9 +3357,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ef
+    const v9, 0x7f0201f1
 
-    const v10, 0x7f0201f0
+    const v10, 0x7f0201f2
 
     const/4 v11, 0x0
 
@@ -3384,9 +3384,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201f5
+    const v9, 0x7f0201f7
 
-    const v10, 0x7f0201f6
+    const v10, 0x7f0201f8
 
     const/4 v11, 0x0
 
@@ -3411,9 +3411,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201f1
+    const v9, 0x7f0201f3
 
-    const v10, 0x7f0201f2
+    const v10, 0x7f0201f4
 
     const/4 v11, 0x0
 
@@ -3438,9 +3438,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e9
+    const v9, 0x7f0201eb
 
-    const v10, 0x7f0201ea
+    const v10, 0x7f0201ec
 
     const/4 v11, 0x0
 
@@ -3465,9 +3465,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ed
+    const v9, 0x7f0201ef
 
-    const v10, 0x7f0201ee
+    const v10, 0x7f0201f0
 
     const/4 v11, 0x0
 
@@ -3492,9 +3492,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201eb
+    const v9, 0x7f0201ed
 
-    const v10, 0x7f0201ec
+    const v10, 0x7f0201ee
 
     const/4 v11, 0x0
 
@@ -3519,9 +3519,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201f3
+    const v9, 0x7f0201f5
 
-    const v10, 0x7f0201f4
+    const v10, 0x7f0201f6
 
     const/4 v11, 0x0
 
@@ -3546,9 +3546,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ef
+    const v9, 0x7f0201f1
 
-    const v10, 0x7f0201f0
+    const v10, 0x7f0201f2
 
     const/4 v11, 0x0
 
@@ -3573,9 +3573,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201f5
+    const v9, 0x7f0201f7
 
-    const v10, 0x7f0201f6
+    const v10, 0x7f0201f8
 
     const/4 v11, 0x0
 
@@ -3600,9 +3600,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201f1
+    const v9, 0x7f0201f3
 
-    const v10, 0x7f0201f2
+    const v10, 0x7f0201f4
 
     const/4 v11, 0x0
 
@@ -3633,7 +3633,7 @@
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09015a
+    const v12, 0x7f09015b
 
     move-object/from16 v8, p0
 
@@ -3708,9 +3708,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02021a
+    const v9, 0x7f02021c
 
-    const v10, 0x7f02021b
+    const v10, 0x7f02021d
 
     const/4 v11, 0x0
 
@@ -4173,7 +4173,7 @@
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09015a
+    const v12, 0x7f09015b
 
     move-object/from16 v8, p0
 
@@ -4248,9 +4248,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02021a
+    const v9, 0x7f02021c
 
-    const v10, 0x7f02021b
+    const v10, 0x7f02021d
 
     const/4 v11, 0x0
 
@@ -4707,9 +4707,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02011b
+    const v9, 0x7f02011d
 
-    const v10, 0x7f02011c
+    const v10, 0x7f02011e
 
     const/4 v11, 0x0
 
@@ -4734,9 +4734,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020115
+    const v9, 0x7f020117
 
-    const v10, 0x7f020116
+    const v10, 0x7f020118
 
     const/4 v11, 0x0
 
@@ -4761,9 +4761,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010f
+    const v9, 0x7f020111
 
-    const v10, 0x7f020110
+    const v10, 0x7f020112
 
     const/4 v11, 0x0
 
@@ -4788,9 +4788,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020111
+    const v9, 0x7f020113
 
-    const v10, 0x7f020112
+    const v10, 0x7f020114
 
     const/4 v11, 0x0
 
@@ -4815,9 +4815,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020113
+    const v9, 0x7f020115
 
-    const v10, 0x7f020114
+    const v10, 0x7f020116
 
     const/4 v11, 0x0
 
@@ -4842,9 +4842,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020119
+    const v9, 0x7f02011b
 
-    const v10, 0x7f02011a
+    const v10, 0x7f02011c
 
     const/4 v11, 0x0
 
@@ -4869,9 +4869,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -4896,9 +4896,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -4923,9 +4923,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -4950,9 +4950,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -4977,9 +4977,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02011f
+    const v9, 0x7f020121
 
-    const v10, 0x7f020120
+    const v10, 0x7f020122
 
     const/4 v11, 0x0
 
@@ -5004,9 +5004,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02011d
+    const v9, 0x7f02011f
 
-    const v10, 0x7f02011e
+    const v10, 0x7f020120
 
     const/4 v11, 0x0
 
@@ -5031,9 +5031,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02023b
+    const v9, 0x7f02023d
 
-    const v10, 0x7f02023b
+    const v10, 0x7f02023d
 
     const/4 v11, 0x0
 
@@ -5058,9 +5058,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020121
+    const v9, 0x7f020123
 
-    const v10, 0x7f020122
+    const v10, 0x7f020124
 
     const/4 v11, 0x0
 
@@ -5085,9 +5085,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020127
+    const v9, 0x7f020129
 
-    const v10, 0x7f020128
+    const v10, 0x7f02012a
 
     const/4 v11, 0x0
 
@@ -5112,9 +5112,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020123
+    const v9, 0x7f020125
 
-    const v10, 0x7f020124
+    const v10, 0x7f020126
 
     const/4 v11, 0x0
 
@@ -5139,9 +5139,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02009d
+    const v9, 0x7f02009f
 
-    const v10, 0x7f02009e
+    const v10, 0x7f0200a0
 
     const/4 v11, 0x0
 
@@ -5166,9 +5166,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02009f
+    const v9, 0x7f0200a1
 
-    const v10, 0x7f0200a0
+    const v10, 0x7f0200a2
 
     const/4 v11, 0x0
 
@@ -5193,9 +5193,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02009d
+    const v9, 0x7f02009f
 
-    const v10, 0x7f02009e
+    const v10, 0x7f0200a0
 
     const/4 v11, 0x0
 
@@ -5220,9 +5220,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02009f
+    const v9, 0x7f0200a1
 
-    const v10, 0x7f0200a0
+    const v10, 0x7f0200a2
 
     const/4 v11, 0x0
 
@@ -5247,9 +5247,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200a1
+    const v9, 0x7f0200a3
 
-    const v10, 0x7f0200a2
+    const v10, 0x7f0200a4
 
     const/4 v11, 0x0
 
@@ -5274,9 +5274,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200a3
+    const v9, 0x7f0200a5
 
-    const v10, 0x7f0200a4
+    const v10, 0x7f0200a6
 
     const/4 v11, 0x0
 
@@ -5301,9 +5301,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200a1
+    const v9, 0x7f0200a3
 
-    const v10, 0x7f0200a2
+    const v10, 0x7f0200a4
 
     const/4 v11, 0x0
 
@@ -5328,9 +5328,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200a3
+    const v9, 0x7f0200a5
 
-    const v10, 0x7f0200a4
+    const v10, 0x7f0200a6
 
     const/4 v11, 0x0
 
@@ -5355,9 +5355,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200b9
+    const v9, 0x7f0200bb
 
-    const v10, 0x7f0200ba
+    const v10, 0x7f0200bc
 
     const/4 v11, 0x0
 
@@ -5382,9 +5382,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200bb
+    const v9, 0x7f0200bd
 
-    const v10, 0x7f0200bc
+    const v10, 0x7f0200be
 
     const/4 v11, 0x0
 
@@ -5409,9 +5409,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
@@ -5436,9 +5436,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020109
+    const v9, 0x7f02010b
 
-    const v10, 0x7f02010a
+    const v10, 0x7f02010c
 
     const/4 v11, 0x0
 
@@ -5463,9 +5463,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010b
+    const v9, 0x7f02010d
 
-    const v10, 0x7f02010c
+    const v10, 0x7f02010e
 
     const/4 v11, 0x0
 
@@ -5490,9 +5490,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
@@ -5517,9 +5517,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020109
+    const v9, 0x7f02010b
 
-    const v10, 0x7f02010a
+    const v10, 0x7f02010c
 
     const/4 v11, 0x0
 
@@ -5544,9 +5544,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010b
+    const v9, 0x7f02010d
 
-    const v10, 0x7f02010c
+    const v10, 0x7f02010e
 
     const/4 v11, 0x0
 
@@ -5571,13 +5571,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09014d
+    const v12, 0x7f09014e
 
     move-object/from16 v8, p0
 
@@ -5598,13 +5598,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f090150
+    const v12, 0x7f090151
 
     move-object/from16 v8, p0
 
@@ -5625,13 +5625,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09014f
+    const v12, 0x7f090150
 
     move-object/from16 v8, p0
 
@@ -5652,13 +5652,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09014e
+    const v12, 0x7f09014f
 
     move-object/from16 v8, p0
 
@@ -5679,13 +5679,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09014a
+    const v12, 0x7f09014b
 
     move-object/from16 v8, p0
 
@@ -5706,13 +5706,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09014b
+    const v12, 0x7f09014c
 
     move-object/from16 v8, p0
 
@@ -5733,13 +5733,13 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02010d
+    const v9, 0x7f02010f
 
-    const v10, 0x7f02010e
+    const v10, 0x7f020110
 
     const/4 v11, 0x0
 
-    const v12, 0x7f09014c
+    const v12, 0x7f09014d
 
     move-object/from16 v8, p0
 
@@ -5760,9 +5760,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020101
+    const v9, 0x7f020103
 
-    const v10, 0x7f020102
+    const v10, 0x7f020104
 
     const/4 v11, 0x0
 
@@ -5787,9 +5787,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020103
+    const v9, 0x7f020105
 
-    const v10, 0x7f020104
+    const v10, 0x7f020106
 
     const/4 v11, 0x0
 
@@ -5814,9 +5814,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020101
+    const v9, 0x7f020103
 
-    const v10, 0x7f020102
+    const v10, 0x7f020104
 
     const/4 v11, 0x0
 
@@ -5841,9 +5841,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020103
+    const v9, 0x7f020105
 
-    const v10, 0x7f020104
+    const v10, 0x7f020106
 
     const/4 v11, 0x0
 
@@ -5868,9 +5868,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020180
+    const v9, 0x7f020182
 
-    const v10, 0x7f020181
+    const v10, 0x7f020183
 
     const/4 v11, 0x0
 
@@ -5895,9 +5895,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020182
+    const v9, 0x7f020184
 
-    const v10, 0x7f020183
+    const v10, 0x7f020185
 
     const/4 v11, 0x0
 
@@ -5922,9 +5922,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e5
+    const v9, 0x7f0201e7
 
-    const v10, 0x7f0201e6
+    const v10, 0x7f0201e8
 
     const/4 v11, 0x0
 
@@ -5949,9 +5949,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e7
+    const v9, 0x7f0201e9
 
-    const v10, 0x7f0201e8
+    const v10, 0x7f0201ea
 
     const/4 v11, 0x0
 
@@ -5976,9 +5976,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e5
+    const v9, 0x7f0201e7
 
-    const v10, 0x7f0201e6
+    const v10, 0x7f0201e8
 
     const/4 v11, 0x0
 
@@ -6003,9 +6003,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201e7
+    const v9, 0x7f0201e9
 
-    const v10, 0x7f0201e8
+    const v10, 0x7f0201ea
 
     const/4 v11, 0x0
 
@@ -6030,9 +6030,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6057,9 +6057,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6084,9 +6084,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6111,9 +6111,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6138,9 +6138,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6165,9 +6165,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6192,9 +6192,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f02018c
+    const v9, 0x7f02018e
 
-    const v10, 0x7f02018d
+    const v10, 0x7f02018f
 
     const/4 v11, 0x0
 
@@ -6219,9 +6219,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020180
+    const v9, 0x7f020182
 
-    const v10, 0x7f020181
+    const v10, 0x7f020183
 
     const/4 v11, 0x0
 
@@ -6246,9 +6246,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f020182
+    const v9, 0x7f020184
 
-    const v10, 0x7f020183
+    const v10, 0x7f020185
 
     const/4 v11, 0x0
 
@@ -6273,9 +6273,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200fd
+    const v9, 0x7f0200ff
 
-    const v10, 0x7f0200fe
+    const v10, 0x7f020100
 
     const/4 v11, 0x0
 
@@ -6300,9 +6300,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ff
+    const v9, 0x7f020101
 
-    const v10, 0x7f020100
+    const v10, 0x7f020102
 
     const/4 v11, 0x0
 
@@ -6327,9 +6327,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200fd
+    const v9, 0x7f0200ff
 
-    const v10, 0x7f0200fe
+    const v10, 0x7f020100
 
     const/4 v11, 0x0
 
@@ -6354,9 +6354,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0200ff
+    const v9, 0x7f020101
 
-    const v10, 0x7f020100
+    const v10, 0x7f020102
 
     const/4 v11, 0x0
 
@@ -6381,9 +6381,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201cc
+    const v9, 0x7f0201ce
 
-    const v10, 0x7f0201cd
+    const v10, 0x7f0201cf
 
     const/4 v11, 0x0
 
@@ -6408,9 +6408,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201ce
+    const v9, 0x7f0201d0
 
-    const v10, 0x7f0201d1
+    const v10, 0x7f0201d3
 
     const/4 v11, 0x0
 
@@ -6439,9 +6439,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201d6
+    const v9, 0x7f0201d8
 
-    const v10, 0x7f0201d7
+    const v10, 0x7f0201d9
 
     const/4 v11, 0x0
 
@@ -6464,9 +6464,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0201d8
+    const v15, 0x7f0201da
 
-    const v16, 0x7f0201d9
+    const v16, 0x7f0201db
 
     const/16 v17, 0x0
 
@@ -6491,9 +6491,9 @@
 
     new-instance v7, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v9, 0x7f0201d6
+    const v9, 0x7f0201d8
 
-    const v10, 0x7f0201d7
+    const v10, 0x7f0201d9
 
     const/4 v11, 0x0
 
@@ -6516,9 +6516,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0201d8
+    const v15, 0x7f0201da
 
-    const v16, 0x7f0201d9
+    const v16, 0x7f0201db
 
     const/16 v17, 0x0
 
@@ -6543,9 +6543,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020162
+    const v15, 0x7f020164
 
-    const v16, 0x7f020163
+    const v16, 0x7f020165
 
     const/16 v17, 0x0
 
@@ -6570,9 +6570,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02017c
+    const v15, 0x7f02017e
 
-    const v16, 0x7f02017d
+    const v16, 0x7f02017f
 
     const/16 v17, 0x0
 
@@ -6597,9 +6597,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02017e
+    const v15, 0x7f020180
 
-    const v16, 0x7f02017f
+    const v16, 0x7f020181
 
     const/16 v17, 0x0
 
@@ -6624,9 +6624,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02017e
+    const v15, 0x7f020180
 
-    const v16, 0x7f02017f
+    const v16, 0x7f020181
 
     const/16 v17, 0x0
 
@@ -6651,9 +6651,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020160
+    const v15, 0x7f020162
 
-    const v16, 0x7f020161
+    const v16, 0x7f020163
 
     const/16 v17, 0x0
 
@@ -6678,9 +6678,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02017a
+    const v15, 0x7f02017c
 
-    const v16, 0x7f02017b
+    const v16, 0x7f02017d
 
     const/16 v17, 0x0
 
@@ -6705,9 +6705,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02015a
+    const v15, 0x7f02015c
 
-    const v16, 0x7f02015b
+    const v16, 0x7f02015d
 
     const/16 v17, 0x0
 
@@ -6732,9 +6732,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02015a
+    const v15, 0x7f02015c
 
-    const v16, 0x7f02015b
+    const v16, 0x7f02015d
 
     const/16 v17, 0x0
 
@@ -6759,9 +6759,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020178
+    const v15, 0x7f02017a
 
-    const v16, 0x7f020179
+    const v16, 0x7f02017b
 
     const/16 v17, 0x0
 
@@ -6786,9 +6786,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020176
+    const v15, 0x7f020178
 
-    const v16, 0x7f020177
+    const v16, 0x7f020179
 
     const/16 v17, 0x0
 
@@ -6813,9 +6813,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020158
+    const v15, 0x7f02015a
 
-    const v16, 0x7f020159
+    const v16, 0x7f02015b
 
     const/16 v17, 0x0
 
@@ -6840,9 +6840,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020174
+    const v15, 0x7f020176
 
-    const v16, 0x7f020175
+    const v16, 0x7f020177
 
     const/16 v17, 0x0
 
@@ -6867,9 +6867,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020174
+    const v15, 0x7f020176
 
-    const v16, 0x7f020175
+    const v16, 0x7f020177
 
     const/16 v17, 0x0
 
@@ -6894,9 +6894,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020172
+    const v15, 0x7f020174
 
-    const v16, 0x7f020173
+    const v16, 0x7f020175
 
     const/16 v17, 0x0
 
@@ -6921,9 +6921,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020152
+    const v15, 0x7f020154
 
-    const v16, 0x7f020153
+    const v16, 0x7f020155
 
     const/16 v17, 0x0
 
@@ -6948,9 +6948,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020170
+    const v15, 0x7f020172
 
-    const v16, 0x7f020171
+    const v16, 0x7f020173
 
     const/16 v17, 0x0
 
@@ -6975,9 +6975,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02016e
+    const v15, 0x7f020170
 
-    const v16, 0x7f02016f
+    const v16, 0x7f020171
 
     const/16 v17, 0x0
 
@@ -7002,9 +7002,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02016c
+    const v15, 0x7f02016e
 
-    const v16, 0x7f02016d
+    const v16, 0x7f02016f
 
     const/16 v17, 0x0
 
@@ -7029,9 +7029,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02014e
+    const v15, 0x7f020150
 
-    const v16, 0x7f02014f
+    const v16, 0x7f020151
 
     const/16 v17, 0x0
 
@@ -7056,9 +7056,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02014c
+    const v15, 0x7f02014e
 
-    const v16, 0x7f02014d
+    const v16, 0x7f02014f
 
     const/16 v17, 0x0
 
@@ -7083,9 +7083,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020168
+    const v15, 0x7f02016a
 
-    const v16, 0x7f020169
+    const v16, 0x7f02016b
 
     const/16 v17, 0x0
 
@@ -7110,9 +7110,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020166
+    const v15, 0x7f020168
 
-    const v16, 0x7f020167
+    const v16, 0x7f020169
 
     const/16 v17, 0x0
 
@@ -7137,9 +7137,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020142
+    const v15, 0x7f020144
 
-    const v16, 0x7f020143
+    const v16, 0x7f020145
 
     const/16 v17, 0x0
 
@@ -7164,9 +7164,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020164
+    const v15, 0x7f020166
 
-    const v16, 0x7f020165
+    const v16, 0x7f020167
 
     const/16 v17, 0x0
 
@@ -7191,9 +7191,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020140
+    const v15, 0x7f020142
 
-    const v16, 0x7f020141
+    const v16, 0x7f020143
 
     const/16 v17, 0x0
 
@@ -7218,9 +7218,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020148
+    const v15, 0x7f02014a
 
-    const v16, 0x7f020149
+    const v16, 0x7f02014b
 
     const/16 v17, 0x0
 
@@ -7245,9 +7245,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020144
+    const v15, 0x7f020146
 
-    const v16, 0x7f020145
+    const v16, 0x7f020147
 
     const/16 v17, 0x0
 
@@ -7272,9 +7272,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02015e
+    const v15, 0x7f020160
 
-    const v16, 0x7f02015f
+    const v16, 0x7f020161
 
     const/16 v17, 0x0
 
@@ -7299,9 +7299,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02015c
+    const v15, 0x7f02015e
 
-    const v16, 0x7f02015d
+    const v16, 0x7f02015f
 
     const/16 v17, 0x0
 
@@ -7326,9 +7326,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7353,9 +7353,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020154
+    const v15, 0x7f020156
 
-    const v16, 0x7f020155
+    const v16, 0x7f020157
 
     const/16 v17, 0x0
 
@@ -7380,9 +7380,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020146
+    const v15, 0x7f020148
 
-    const v16, 0x7f020147
+    const v16, 0x7f020149
 
     const/16 v17, 0x0
 
@@ -7407,9 +7407,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020138
+    const v15, 0x7f02013a
 
-    const v16, 0x7f020139
+    const v16, 0x7f02013b
 
     const/16 v17, 0x0
 
@@ -7434,9 +7434,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020136
+    const v15, 0x7f020138
 
-    const v16, 0x7f020137
+    const v16, 0x7f020139
 
     const/16 v17, 0x0
 
@@ -7461,9 +7461,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02013a
+    const v15, 0x7f02013c
 
-    const v16, 0x7f02013b
+    const v16, 0x7f02013d
 
     const/16 v17, 0x0
 
@@ -7488,9 +7488,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020132
+    const v15, 0x7f020134
 
-    const v16, 0x7f020133
+    const v16, 0x7f020135
 
     const/16 v17, 0x0
 
@@ -7515,9 +7515,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020134
+    const v15, 0x7f020136
 
-    const v16, 0x7f020135
+    const v16, 0x7f020137
 
     const/16 v17, 0x0
 
@@ -7542,9 +7542,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7569,9 +7569,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7596,9 +7596,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7623,9 +7623,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7650,9 +7650,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02012d
+    const v15, 0x7f02012f
 
-    const v16, 0x7f02012e
+    const v16, 0x7f020130
 
     const/16 v17, 0x0
 
@@ -7677,9 +7677,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02012f
+    const v15, 0x7f020131
 
-    const v16, 0x7f020130
+    const v16, 0x7f020132
 
     const/16 v17, 0x0
 
@@ -7704,9 +7704,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02012d
+    const v15, 0x7f02012f
 
-    const v16, 0x7f02012e
+    const v16, 0x7f020130
 
     const/16 v17, 0x0
 
@@ -7731,9 +7731,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02012f
+    const v15, 0x7f020131
 
-    const v16, 0x7f020130
+    const v16, 0x7f020132
 
     const/16 v17, 0x0
 
@@ -7758,9 +7758,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7785,9 +7785,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f02023b
+    const v15, 0x7f02023d
 
-    const v16, 0x7f02023b
+    const v16, 0x7f02023d
 
     const/16 v17, 0x0
 
@@ -7812,9 +7812,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200d3
+    const v15, 0x7f0200d5
 
-    const v16, 0x7f0200d4
+    const v16, 0x7f0200d6
 
     const/16 v17, 0x0
 
@@ -7839,9 +7839,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200e3
+    const v15, 0x7f0200e5
 
-    const v16, 0x7f0200e4
+    const v16, 0x7f0200e6
 
     const/16 v17, 0x0
 
@@ -7866,9 +7866,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200e3
+    const v15, 0x7f0200e5
 
-    const v16, 0x7f0200e4
+    const v16, 0x7f0200e6
 
     const/16 v17, 0x0
 
@@ -7893,9 +7893,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200e1
+    const v15, 0x7f0200e3
 
-    const v16, 0x7f0200e2
+    const v16, 0x7f0200e4
 
     const/16 v17, 0x0
 
@@ -7920,9 +7920,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200df
+    const v15, 0x7f0200e1
 
-    const v16, 0x7f0200e0
+    const v16, 0x7f0200e2
 
     const/16 v17, 0x0
 
@@ -7947,9 +7947,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200dd
+    const v15, 0x7f0200df
 
-    const v16, 0x7f0200de
+    const v16, 0x7f0200e0
 
     const/16 v17, 0x0
 
@@ -7974,9 +7974,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200db
+    const v15, 0x7f0200dd
 
-    const v16, 0x7f0200dc
+    const v16, 0x7f0200de
 
     const/16 v17, 0x0
 
@@ -8001,9 +8001,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200d9
+    const v15, 0x7f0200db
 
-    const v16, 0x7f0200da
+    const v16, 0x7f0200dc
 
     const/16 v17, 0x0
 
@@ -8028,9 +8028,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200d7
+    const v15, 0x7f0200d9
 
-    const v16, 0x7f0200d8
+    const v16, 0x7f0200da
 
     const/16 v17, 0x0
 
@@ -8055,9 +8055,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200d5
+    const v15, 0x7f0200d7
 
-    const v16, 0x7f0200d6
+    const v16, 0x7f0200d8
 
     const/16 v17, 0x0
 
@@ -8082,9 +8082,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200d3
+    const v15, 0x7f0200d5
 
-    const v16, 0x7f0200d4
+    const v16, 0x7f0200d6
 
     const/16 v17, 0x0
 
@@ -8109,9 +8109,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020248
+    const v15, 0x7f02024c
 
-    const v16, 0x7f020248
+    const v16, 0x7f02024c
 
     const/16 v17, 0x0
 
@@ -8136,9 +8136,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200a6
+    const v15, 0x7f0200a8
 
-    const v16, 0x7f0200a7
+    const v16, 0x7f0200a9
 
     const/16 v17, 0x0
 
@@ -8163,9 +8163,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200a8
+    const v15, 0x7f0200aa
 
-    const v16, 0x7f0200a9
+    const v16, 0x7f0200ab
 
     const/16 v17, 0x0
 
@@ -8190,9 +8190,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200f3
+    const v15, 0x7f0200f5
 
-    const v16, 0x7f0200f4
+    const v16, 0x7f0200f6
 
     const/16 v17, 0x0
 
@@ -8217,9 +8217,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200f5
+    const v15, 0x7f0200f7
 
-    const v16, 0x7f0200f6
+    const v16, 0x7f0200f8
 
     const/16 v17, 0x0
 
@@ -8244,13 +8244,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f090159
+    const v18, 0x7f09015a
 
     move-object/from16 v14, p0
 
@@ -8271,13 +8271,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f09015b
+    const v18, 0x7f09015c
 
     move-object/from16 v14, p0
 
@@ -8298,13 +8298,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f09015c
+    const v18, 0x7f09015d
 
     move-object/from16 v14, p0
 
@@ -8325,13 +8325,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f09015d
+    const v18, 0x7f09015e
 
     move-object/from16 v14, p0
 
@@ -8352,13 +8352,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f09015e
+    const v18, 0x7f09015f
 
     move-object/from16 v14, p0
 
@@ -8379,13 +8379,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f09015f
+    const v18, 0x7f090160
 
     move-object/from16 v14, p0
 
@@ -8406,13 +8406,13 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200cb
+    const v15, 0x7f0200cd
 
-    const v16, 0x7f0200cc
+    const v16, 0x7f0200ce
 
     const/16 v17, 0x0
 
-    const v18, 0x7f090160
+    const v18, 0x7f090161
 
     move-object/from16 v14, p0
 
@@ -8433,9 +8433,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200be
+    const v15, 0x7f0200c0
 
-    const v16, 0x7f0200bf
+    const v16, 0x7f0200c1
 
     const/16 v17, 0x0
 
@@ -8460,9 +8460,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200bd
+    const v15, 0x7f0200bf
 
-    const v16, 0x7f0200c0
+    const v16, 0x7f0200c2
 
     const/16 v17, 0x0
 
@@ -8487,9 +8487,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020235
+    const v15, 0x7f020237
 
-    const v16, 0x7f020236
+    const v16, 0x7f020238
 
     const/16 v17, 0x0
 
@@ -8514,9 +8514,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020237
+    const v15, 0x7f020239
 
-    const v16, 0x7f020238
+    const v16, 0x7f02023a
 
     const/16 v17, 0x0
 
@@ -8541,9 +8541,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020235
+    const v15, 0x7f020237
 
-    const v16, 0x7f020236
+    const v16, 0x7f020238
 
     const/16 v17, 0x0
 
@@ -8568,9 +8568,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f020237
+    const v15, 0x7f020239
 
-    const v16, 0x7f020238
+    const v16, 0x7f02023a
 
     const/16 v17, 0x0
 
@@ -8595,9 +8595,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200b0
+    const v15, 0x7f0200b2
 
-    const v16, 0x7f0200b1
+    const v16, 0x7f0200b3
 
     const/16 v17, 0x0
 
@@ -8622,9 +8622,9 @@
 
     new-instance v13, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
-    const v15, 0x7f0200af
+    const v15, 0x7f0200b1
 
-    const v16, 0x7f0200b2
+    const v16, 0x7f0200b4
 
     const/16 v17, 0x0
 

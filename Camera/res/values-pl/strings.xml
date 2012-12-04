@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Aparat</string>
     <string name="camcorder_label">Kamera</string>
-    <string name="wait">Proszę czekać...</string>
+    <string name="wait">Proszę czekać…</string>
     <string name="warning_msg">Ostrzeżenie</string>
     <string name="insert_mmc_msg">Aby używać kamery, włóż kartę pamięci</string>
     <string name="not_enough_space">Brak pamięci</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Brak pamięci. Zmieniono domyślną pamięć na pamięć telefonu</string>
     <string name="change_to_device_memory">Za mało miejsca na karcie pamięci. Zmieniono domyślną pamięć na pamięć urządzenia</string>
     <string name="video_reach_size_limit">Osiągnięto maksymalny rozmiar nagrania</string>
-    <string name="processing_msg">Przetwarzanie...</string>
+    <string name="processing_msg">Przetwarzanie…</string>
     <string name="panorama_processing_msg">Zaczekaj na utworzenie panoramy</string>
     <string name="battery_overheat">Zamknij aplikację Aparat. Temperatura baterii jest za wysoka</string>
-    <string name="savingImage">Zapisywanie...</string>
+    <string name="savingImage">Zapisywanie…</string>
     <string name="open_hw_failed_msg">Błąd kamery</string>
     <string name="capture_failed_msg">Błąd kamery</string>
     <string name="recording_failed_msg">Błąd nagrywania</string>
@@ -42,7 +42,7 @@ nie można uruchomić aparatu"</string>
     <string name="SM_STOPMOTION">Zatrzymaj ruch</string>
     <string name="SM_CARTOON">Obrazek</string>
     <string name="SM_SHOOTANDSHARE">Udostępnianie zdjęć</string>
-    <string name="SM_BURST">Zdj. w trybie burst</string>
+    <string name="SM_BURST">Zdjęcia seryjne</string>
     <string name="SM_BUDDY_PHOTOSHARING">Udostępnianie zdjęć znajomym</string>
     <string name="SM_LOW_LIGHT">Słabe światło</string>
     <string name="NORMAL">Normalna</string>
@@ -105,7 +105,7 @@ nie można uruchomić aparatu"</string>
     <string name="RM_EMAIL">Limit e-mail</string>
     <string name="RM_SLOW">Powolny ruch</string>
     <string name="RM_FAST">Szybki ruch</string>
-    <string name="CS_PROGRESS_TEXT">Tworzenie obrazu. Czekaj...</string>
+    <string name="CS_PROGRESS_TEXT">Tworzenie obrazu. Czekaj…</string>
     <string name="SCN_NONE">Brak</string>
     <string name="SCN_PORTRAIT">Portret</string>
     <string name="SCN_LANDSCAPE">Pocztówka</string>
@@ -114,7 +114,7 @@ nie można uruchomić aparatu"</string>
     <string name="SCN_BEACH_SNOW">Plaża/śnieg</string>
     <string name="SCN_SUNSET">Zachód słońca</string>
     <string name="SCN_DAWN_DUSK">Świt</string>
-    <string name="SCN_FALL_COLOR">Kolory jesieni</string>
+    <string name="SCN_FALL_COLOR">Kolor jesieni</string>
     <string name="SCN_NIGHT_SHOT">Tryb nocny</string>
     <string name="SCN_FIREWORK">Fajerwerki</string>
     <string name="SCN_TEXT">Tekst</string>
@@ -159,7 +159,7 @@ nie można uruchomić aparatu"</string>
     <string name="Title_Guideline">Linie pomocnicze</string>
     <string name="Title_VideoQuality">Jakość wideo</string>
     <string name="Title_AudioRecording">Nagryw. z dźw.</string>
-    <string name="Title_Storage">Pamięć</string>
+    <string name="Title_Storage">Domyślna pamięć</string>
     <string name="Title_Reset">Ust.fabryczne</string>
     <string name="Title_Mode">Tryb</string>
     <string name="Title_Back">Wstecz</string>
@@ -168,7 +168,7 @@ nie można uruchomić aparatu"</string>
     <string name="Title_Flip">Zapisz odwrócony</string>
     <string name="Title_Self_Portrait">Autoportret</string>
     <string name="Title_Self_Recording">Samoczynne nagrywanie</string>
-    <string name="Title_Voice_Capture">Rób zdjęcia przy użyciu głosu</string>
+    <string name="Title_Voice_Capture">Sterowanie głosem</string>
     <string name="Dialog_Yes">Tak</string>
     <string name="Dialog_No">Nie</string>
     <string name="Add_Me_Helptext">Twórz kompozycje wizualne, łącząc postacie z istniejącymi tłami</string>
@@ -191,15 +191,15 @@ Włącz automatyczne udostępnianie zdjęć, a następnie zbliż urządzenia do 
     <string name="Title_ChangeMemoryInUseDailog">Zmienić domyślną pamięć na kartę pamięci?</string>
     <string name="Title_InsertMemoryCardDailog">Aby używać kamery, włóż kartę pamięci</string>
     <string name="OnScreen_HelpTextTouchAF">Dotknij ekranu,by ust. ostrość na tym obszarze</string>
-    <string name="media_scanner_running">Uruchomiony skaner multimediów...</string>
+    <string name="media_scanner_running">Uruchomiony skaner multimediów…</string>
     <string name="close_camera_when_mmc_inserted">Włożono kartę pamięci. Plik %s zostanie zamknięty w celu skanowania plików multimedialnych na karcie pamięci</string>
     <string name="close_camera_when_media_mounted">Aparat został zamknięty w celu przeskanowania plików multimedialn.</string>
     <string name="close_camera_for_unmounted_memory">Wyłącz tryb pamięci masowej USB przed użyciem aparatu</string>
     <string name="message_size_limited">Osiągnięto limit wielkości wiadomości</string>
     <string name="crop_save_text">Zapisz</string>
-    <string name="crop_discard_text">Usuń</string>
+    <string name="crop_discard_text">Anuluj</string>
     <string name="crop_gallery_text">Galeria</string>
-    <string name="wallpaper">Ustawianie tapety. Czekaj...</string>
+    <string name="wallpaper">Ustawianie tapety. Czekaj…</string>
     <string name="crop_label">Przytnij obraz</string>
     <string name="low_database_storage_view_text">Pamięć masowa bazy danych jest prawie pełna</string>
     <string name="camera_security_enter">Zasady zabezpieczeń ograniczają użycie aparatu</string>
@@ -252,21 +252,25 @@ Włącz automatyczne udostępnianie zdjęć, a następnie zbliż urządzenia do 
     <string name="editable_shortcut_helptext_title">Wskazówki</string>
     <string name="editable_shortcut_helptext_message">Dotknij skrótów i przytrzymaj je, aby je edytować</string>
     <string name="editable_shortcut_helptext">Aby zmieniać położenie skrótów, dotknij ikony, przytrzymaj ją, a następnie przeciągnij</string>
+    <string name="singleshotburst_capture_helptext">Dotknij i przytrzymaj przycisk aparatu, aby zrobić zdjęcie seryjne</string>
+    <string name="singleshotburst_storage_helptext">Zdjęcia seryjne wykonane są zapisywane w jakości dobrej</string>
     <string name="sbeam_helptext">Rób zdjęcia i udostępniaj je innym urządzeniom. Zbierz urządzenia razem, aby dodać te, którym chcesz udostępniać przez S Beam</string>
     <string name="storage_setting_dialog_title">Położenie pamięci</string>
     <string name="storage_setting_dialog_message">Włożono kartę pamięci. Zmienić lokalizację pamięci na kartę pamięci?</string>
+    <string name="storage_setting_dialog_burstshot_message">Pojedyncze zdjęcia zostaną zapisane na karcie pamięci. Zdjęcia seryjne zostaną zapisane w pamięci urządzenia</string>
     <string name="do_not_ask_again">Nie wyświetlaj ponownie</string>
     <string name="shutter">Migawka</string>
     <string name="record">Nagraj</string>
     <string name="bestpic">Najlepsze zdjęcie</string>
     <string name="bestpic_on">Wł</string>
     <string name="bestpic_off">Wył</string>
-    <string name="bestgroup">Wybór najlepszej pozy</string>
-    <string name="bestgroup_title">Wyb. najl. wyraz tw. do zapis.</string>
+    <string name="bestgroup">Najlepsze wyrazy twarzy</string>
+    <string name="bestgroup_title">Wyb. Najl. wyraz tw. do zapis.</string>
     <string name="battery_low">Zamknij aplikację Aparat. Temperatura baterii jest za niska</string>
     <string name="buddy_photo_share_helptext">Rób zdjęcia i udostępniaj je przyjaciołom dzięki funkcji wykrywania twarzy</string>
     <string name="face_zoom_helptext">Dotknij dwukrotnie twarzy, aby powiększyć lub zmniejszyć</string>
-    <string name="burst_shot_guidetext">Zdjęcia w trybie burst zostaną zapisane w pamięci urządzenia</string>
+    <string name="burst_shot_guidetext">Zdjęcia seryjne zostaną zapisane w pamięci urządzenia</string>
+    <string name="best_photo_guidetext">Najlepsze zdjęcia zostaną zapisane w pamięci urządzenia</string>
     <string name="snap_shot_limitation_dialog">Nie można użyć funkcji rejestrowania zdjęć, gdy włączony jest stabilizator obrazu</string>
     <string name="on_device_help_focus">Dotknij, aby ustawić ostrość aparatu</string>
     <string name="on_device_help_camcorder">Przełącz do trybu kamery</string>
@@ -295,6 +299,6 @@ Włącz automatyczne udostępnianie zdjęć, a następnie zbliż urządzenia do 
     <string name="contextual_filename">Kontekstowa nazwa pliku</string>
     <string name="enable_gps_dialog">Etykieta GPS musi być włączona. Włączyć etykietę GPS?</string>
     <string name="gallery_disable">Galeria jest wyłączona</string>
-    <string name="HDR_Normal">Normalna</string>
-    <string name="HDR_Strong">Bardzo dobra</string>
+    <string name="HDR_Normal">Normalność</string>
+    <string name="HDR_Strong">Silny</string>
 </resources>

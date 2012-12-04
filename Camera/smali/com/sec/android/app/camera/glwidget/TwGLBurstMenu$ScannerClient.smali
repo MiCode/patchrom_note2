@@ -42,31 +42,31 @@
     .parameter "context"
 
     .prologue
-    .line 1026
+    .line 1043
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1021
+    .line 1038
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mPaths:Ljava/util/ArrayList;
 
-    .line 1024
+    .line 1041
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mLock:Ljava/lang/Object;
 
-    .line 1027
+    .line 1044
     new-instance v0, Landroid/media/MediaScannerConnection;
 
     invoke-direct {v0, p1, p0}, Landroid/media/MediaScannerConnection;-><init>(Landroid/content/Context;Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mScannerConnection:Landroid/media/MediaScannerConnection;
 
-    .line 1028
+    .line 1045
     return-void
 .end method
 
@@ -76,18 +76,18 @@
     .locals 6
 
     .prologue
-    .line 1048
+    .line 1065
     iget-object v4, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 1049
+    .line 1066
     const/4 v3, 0x1
 
     :try_start_0
     iput-boolean v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mConnected:Z
 
-    .line 1050
+    .line 1067
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mPaths:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
@@ -96,7 +96,7 @@
 
     if-nez v3, :cond_1
 
-    .line 1051
+    .line 1068
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mPaths:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -119,7 +119,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1053
+    .line 1070
     .local v2, path:Ljava/lang/String;
     :try_start_1
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mScannerConnection:Landroid/media/MediaScannerConnection;
@@ -133,11 +133,11 @@
 
     goto :goto_0
 
-    .line 1054
+    .line 1071
     :catch_0
     move-exception v0
 
-    .line 1055
+    .line 1072
     .local v0, e:Ljava/lang/IllegalStateException;
     :try_start_2
     const-string v3, "TwGLBurstMenu"
@@ -146,14 +146,14 @@
 
     invoke-static {v3, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1056
+    .line 1073
     const/4 v3, 0x0
 
     iput-boolean v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mConnected:Z
 
     goto :goto_0
 
-    .line 1061
+    .line 1078
     .end local v0           #e:Ljava/lang/IllegalStateException;
     .end local v1           #i$:Ljava/util/Iterator;
     .end local v2           #path:Ljava/lang/String;
@@ -166,7 +166,7 @@
 
     throw v3
 
-    .line 1059
+    .line 1076
     .restart local v1       #i$:Ljava/util/Iterator;
     :cond_0
     :try_start_3
@@ -174,14 +174,14 @@
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
-    .line 1061
+    .line 1078
     .end local v1           #i$:Ljava/util/Iterator;
     :cond_1
     monitor-exit v4
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 1062
+    .line 1079
     return-void
 .end method
 
@@ -191,17 +191,17 @@
     .parameter "uri"
 
     .prologue
-    .line 1066
+    .line 1083
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mScannerConnection:Landroid/media/MediaScannerConnection;
 
     invoke-virtual {v0}, Landroid/media/MediaScannerConnection;->disconnect()V
 
-    .line 1067
+    .line 1084
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mConnected:Z
 
-    .line 1068
+    .line 1085
     return-void
 .end method
 
@@ -210,12 +210,12 @@
     .parameter "path"
 
     .prologue
-    .line 1031
+    .line 1048
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 1032
+    .line 1049
     :try_start_0
     iget-boolean v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mConnected:Z
     :try_end_0
@@ -223,7 +223,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1034
+    .line 1051
     :try_start_1
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mScannerConnection:Landroid/media/MediaScannerConnection;
 
@@ -234,19 +234,19 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 1043
+    .line 1060
     :goto_0
     :try_start_2
     monitor-exit v2
 
-    .line 1044
+    .line 1061
     return-void
 
-    .line 1035
+    .line 1052
     :catch_0
     move-exception v0
 
-    .line 1036
+    .line 1053
     .local v0, e:Ljava/lang/IllegalStateException;
     const-string v1, "TwGLBurstMenu"
 
@@ -254,14 +254,14 @@
 
     invoke-static {v1, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1037
+    .line 1054
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mConnected:Z
 
     goto :goto_0
 
-    .line 1043
+    .line 1060
     .end local v0           #e:Ljava/lang/IllegalStateException;
     :catchall_0
     move-exception v1
@@ -272,14 +272,14 @@
 
     throw v1
 
-    .line 1040
+    .line 1057
     :cond_0
     :try_start_3
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mPaths:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1041
+    .line 1058
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$ScannerClient;->mScannerConnection:Landroid/media/MediaScannerConnection;
 
     invoke-virtual {v1}, Landroid/media/MediaScannerConnection;->connect()V

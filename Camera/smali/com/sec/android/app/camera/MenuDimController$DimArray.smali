@@ -301,7 +301,6 @@
     .line 386
     :cond_2
     :goto_3
-    :pswitch_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
@@ -330,11 +329,11 @@
     :cond_5
     packed-switch v1, :pswitch_data_0
 
-    :pswitch_1
+    :pswitch_0
     goto :goto_3
 
     .line 416
-    :pswitch_2
+    :pswitch_1
     const/16 v3, 0xd
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -352,7 +351,7 @@
 
     .line 421
     .end local v2           #savedValue:I
-    :pswitch_3
+    :pswitch_2
     invoke-virtual {p0, v8}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
 
     move-result v2
@@ -368,7 +367,7 @@
 
     .line 426
     .end local v2           #savedValue:I
-    :pswitch_4
+    :pswitch_3
     const/4 v3, 0x2
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -386,7 +385,7 @@
 
     .line 431
     .end local v2           #savedValue:I
-    :pswitch_5
+    :pswitch_4
     const/4 v3, 0x1
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -404,7 +403,7 @@
 
     .line 436
     .end local v2           #savedValue:I
-    :pswitch_6
+    :pswitch_5
     const/16 v3, 0xa
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -422,7 +421,7 @@
 
     .line 441
     .end local v2           #savedValue:I
-    :pswitch_7
+    :pswitch_6
     const/16 v3, 0x8
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -455,7 +454,7 @@
 
     .line 450
     .end local v2           #savedValue:I
-    :pswitch_8
+    :pswitch_7
     const/16 v3, 0x12
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -473,7 +472,7 @@
 
     .line 455
     .end local v2           #savedValue:I
-    :pswitch_9
+    :pswitch_8
     if-nez p1, :cond_2
 
     .line 456
@@ -492,7 +491,7 @@
 
     .line 462
     .end local v2           #savedValue:I
-    :pswitch_a
+    :pswitch_9
     const/4 v3, 0x5
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -513,7 +512,7 @@
 
     .line 471
     .end local v2           #savedValue:I
-    :pswitch_b
+    :pswitch_a
     invoke-virtual {p0, v7}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
 
     move-result v2
@@ -529,7 +528,7 @@
 
     .line 476
     .end local v2           #savedValue:I
-    :pswitch_c
+    :pswitch_b
     const/4 v3, 0x7
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -547,7 +546,7 @@
 
     .line 481
     .end local v2           #savedValue:I
-    :pswitch_d
+    :pswitch_c
     const/4 v3, 0x4
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -565,7 +564,7 @@
 
     .line 488
     .end local v2           #savedValue:I
-    :pswitch_e
+    :pswitch_d
     const/16 v3, 0x9
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -583,7 +582,7 @@
 
     .line 493
     .end local v2           #savedValue:I
-    :pswitch_f
+    :pswitch_e
     const/4 v3, 0x6
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -601,7 +600,7 @@
 
     .line 498
     .end local v2           #savedValue:I
-    :pswitch_10
+    :pswitch_f
     const/16 v3, 0x11
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -619,7 +618,7 @@
 
     .line 503
     .end local v2           #savedValue:I
-    :pswitch_11
+    :pswitch_10
     const/16 v3, 0x32
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -644,7 +643,7 @@
 
     .line 509
     .end local v2           #savedValue:I
-    :pswitch_12
+    :pswitch_11
     const-string v3, "MenuDimController"
 
     const-string v4, "Voice CamcorderCommand"
@@ -669,7 +668,7 @@
 
     .line 515
     .end local v2           #savedValue:I
-    :pswitch_13
+    :pswitch_12
     const/16 v3, 0x13
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -687,7 +686,7 @@
 
     .line 520
     .end local v2           #savedValue:I
-    :pswitch_14
+    :pswitch_13
     const/16 v3, 0x16
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -705,7 +704,7 @@
 
     .line 525
     .end local v2           #savedValue:I
-    :pswitch_15
+    :pswitch_14
     const/16 v3, 0x65
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -723,7 +722,7 @@
 
     .line 530
     .end local v2           #savedValue:I
-    :pswitch_16
+    :pswitch_15
     const/16 v3, 0x6d
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -741,7 +740,7 @@
 
     .line 535
     .end local v2           #savedValue:I
-    :pswitch_17
+    :pswitch_16
     const/16 v3, 0x68
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -759,7 +758,7 @@
 
     .line 542
     .end local v2           #savedValue:I
-    :pswitch_18
+    :pswitch_17
     const/16 v3, 0x6c
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -777,7 +776,7 @@
 
     .line 547
     .end local v2           #savedValue:I
-    :pswitch_19
+    :pswitch_18
     const/16 v3, 0x6b
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -795,7 +794,7 @@
 
     .line 552
     .end local v2           #savedValue:I
-    :pswitch_1a
+    :pswitch_19
     const/16 v3, 0x72
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -893,7 +892,7 @@
 
     .line 562
     .end local v2           #savedValue:I
-    :pswitch_1b
+    :pswitch_1a
     const/16 v3, 0x78
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -911,7 +910,7 @@
 
     .line 567
     .end local v2           #savedValue:I
-    :pswitch_1c
+    :pswitch_1b
     const/16 v3, 0x15
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -946,7 +945,7 @@
 
     .line 576
     .end local v2           #savedValue:I
-    :pswitch_1d
+    :pswitch_1c
     const/16 v3, 0x67
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -964,7 +963,7 @@
 
     .line 581
     .end local v2           #savedValue:I
-    :pswitch_1e
+    :pswitch_1d
     const/16 v3, 0x6e
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -982,7 +981,7 @@
 
     .line 586
     .end local v2           #savedValue:I
-    :pswitch_1f
+    :pswitch_1e
     const/16 v3, 0x70
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -1000,7 +999,7 @@
 
     .line 591
     .end local v2           #savedValue:I
-    :pswitch_20
+    :pswitch_1f
     const/16 v3, 0x26
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
@@ -1013,6 +1012,24 @@
 
     .line 593
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/CameraSettings;->setSelfFlip(I)V
+
+    goto/16 :goto_3
+
+    .line 597
+    .end local v2           #savedValue:I
+    :pswitch_20
+    const/16 v3, 0x7e
+
+    invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
+
+    move-result v2
+
+    .line 598
+    .restart local v2       #savedValue:I
+    if-eq v2, v5, :cond_2
+
+    .line 599
+    invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderSlowMotion(I)V
 
     goto/16 :goto_3
 
@@ -1106,6 +1123,24 @@
 
     goto/16 :goto_3
 
+    .line 629
+    .end local v2           #savedValue:I
+    :pswitch_26
+    const/16 v3, 0x83
+
+    invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->getSavedSettingValue(I)I
+
+    move-result v2
+
+    .line 630
+    .restart local v2       #savedValue:I
+    if-eq v2, v5, :cond_2
+
+    .line 631
+    invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/CameraSettings;->setCamcorderTimeLapse(I)V
+
+    goto/16 :goto_3
+
     .line 639
     .end local v2           #savedValue:I
     :cond_8
@@ -1116,61 +1151,61 @@
 
     :pswitch_data_0
     .packed-switch 0x2
-        :pswitch_2
         :pswitch_1
+        :pswitch_0
+        :pswitch_2
         :pswitch_3
         :pswitch_4
         :pswitch_5
         :pswitch_6
         :pswitch_7
+        :pswitch_0
         :pswitch_8
-        :pswitch_1
         :pswitch_9
+        :pswitch_0
         :pswitch_a
-        :pswitch_1
+        :pswitch_0
         :pswitch_b
-        :pswitch_1
         :pswitch_c
         :pswitch_d
+        :pswitch_0
         :pswitch_e
-        :pswitch_1
         :pswitch_f
-        :pswitch_10
-        :pswitch_14
         :pswitch_13
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
+        :pswitch_12
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_14
+        :pswitch_0
         :pswitch_15
-        :pswitch_1
         :pswitch_16
         :pswitch_17
         :pswitch_18
         :pswitch_19
         :pswitch_1a
+        :pswitch_0
         :pswitch_1b
-        :pswitch_1
         :pswitch_1c
         :pswitch_1d
         :pswitch_1e
         :pswitch_1f
-        :pswitch_20
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
         :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_20
         :pswitch_21
         :pswitch_22
         :pswitch_23
         :pswitch_24
         :pswitch_25
+        :pswitch_26
         :pswitch_0
-        :pswitch_1
-        :pswitch_1
+        :pswitch_0
+        :pswitch_10
         :pswitch_11
-        :pswitch_12
     .end packed-switch
 .end method
 
@@ -1737,8 +1772,20 @@
 
     goto/16 :goto_2
 
-    .line 336
+    .line 332
     :pswitch_20
+    const/16 v5, 0x7e
+
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getCamcorderSlowMotion()I
+
+    move-result v7
+
+    invoke-virtual {p0, v5, v7}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSetting(II)Z
+
+    goto/16 :goto_2
+
+    .line 336
+    :pswitch_21
     const/16 v5, 0x10
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getCameraQuality()I
@@ -1750,7 +1797,7 @@
     goto/16 :goto_2
 
     .line 339
-    :pswitch_21
+    :pswitch_22
     const/16 v5, 0x2f
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getBurstMode()I
@@ -1762,7 +1809,7 @@
     goto/16 :goto_2
 
     .line 342
-    :pswitch_22
+    :pswitch_23
     const/16 v5, 0x30
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getContextualFilename()I
@@ -1774,10 +1821,22 @@
     goto/16 :goto_2
 
     .line 345
-    :pswitch_23
+    :pswitch_24
     const/16 v5, 0x81
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getContextualFilename()I
+
+    move-result v7
+
+    invoke-virtual {p0, v5, v7}, Lcom/sec/android/app/camera/MenuDimController$DimArray;->saveSetting(II)Z
+
+    goto/16 :goto_2
+
+    .line 349
+    :pswitch_25
+    const/16 v5, 0x83
+
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraSettings;->getCamcorderTimeLapse()I
 
     move-result v7
 
@@ -1834,13 +1893,13 @@
         :pswitch_0
         :pswitch_1e
         :pswitch_0
-        :pswitch_0
-        :pswitch_0
         :pswitch_20
+        :pswitch_0
         :pswitch_21
         :pswitch_22
         :pswitch_23
-        :pswitch_0
+        :pswitch_24
+        :pswitch_25
         :pswitch_0
         :pswitch_0
         :pswitch_1a

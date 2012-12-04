@@ -85,7 +85,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f020099
+    const v4, 0x7f02009b
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -108,7 +108,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f02009a
+    const v4, 0x7f02009c
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -174,7 +174,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f020099
+    const v4, 0x7f02009b
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -197,7 +197,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f02009a
+    const v4, 0x7f02009c
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -275,7 +275,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f020099
+    const v4, 0x7f02009b
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -298,7 +298,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f02009a
+    const v4, 0x7f02009c
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 

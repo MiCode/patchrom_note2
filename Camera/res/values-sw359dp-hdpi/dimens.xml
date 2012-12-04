@@ -74,6 +74,7 @@
     <dimen name="baseindicator_remain_counter_width">55.0px</dimen>
     <dimen name="camcorder_baseindicator_remain_counter_width">120.0px</dimen>
     <dimen name="camcorder_baseindicator_remain_counter_padding">5.0px</dimen>
+    <dimen name="camcorder_baseindicator_indicator_group_padding">0.0px</dimen>
     <dimen name="baseindicator_percentage_width">62.0px</dimen>
     <dimen name="size_text_width">350.0dip</dimen>
     <dimen name="size_text_height">20.0dip</dimen>

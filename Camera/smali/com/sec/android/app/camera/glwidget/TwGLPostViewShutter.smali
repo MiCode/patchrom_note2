@@ -208,7 +208,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f02027a
+    const v5, 0x7f020280
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLAniResourceTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -236,7 +236,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f02027b
+    const v5, 0x7f020281
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLAniResourceTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -520,7 +520,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f02027c
+    const v5, 0x7f020282
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLAniResourceTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -548,7 +548,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f020279
+    const v5, 0x7f02027f
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/sec/android/glview/TwGLAniResourceTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 

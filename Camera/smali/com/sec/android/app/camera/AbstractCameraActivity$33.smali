@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2052
+    .line 2084
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$33;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,11 +43,11 @@
     .parameter "which"
 
     .prologue
-    .line 2055
+    .line 2087
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$33;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->setDefaultLayout()V
 
-    .line 2056
+    .line 2088
     return-void
 .end method

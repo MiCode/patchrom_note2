@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">กล้อง​ถ่าย​รูป</string>
     <string name="camcorder_label">กล้อง​วี​ดี​โอ</string>
-    <string name="wait">กรุณา​รอ...</string>
+    <string name="wait">กรุณา​รอ…</string>
     <string name="warning_msg">เตือน</string>
     <string name="insert_mmc_msg">ใส่​การ์ด​ความ​จำ​เพื่อ​ใช้​กล้อง</string>
     <string name="not_enough_space">หน่ยวยความจำไม่​พอ</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">ความ​จำ​ไม่​พอ ที่​เก็บ​พื้น​ฐาน​ถูก​เปลี่ยน​เป็น​ความ​จำ​โทรศัพท์</string>
     <string name="change_to_device_memory">พื้นที่​ใน SD ​การ์ด​ไม่​พอ ที่​เก็บ​พื้น​ฐาน​เปลี่ยน​เป็น​พื้นที่​จัด​เก็บ​ใน​เครื่อง</string>
     <string name="video_reach_size_limit">ถึง​ขนาด​ที่​บันทึก​สูง​สุด​แล้ว</string>
-    <string name="processing_msg">ดำเนิน​การ...</string>
+    <string name="processing_msg">ดำเนิน​การ…</string>
     <string name="panorama_processing_msg">โปรด​รอ​สัก​ครู่​ใน​ขณะ​ที่​สร้าง​ภาพ​มุม​กว้าง</string>
     <string name="battery_overheat">ออก​จากกล้อง​ถ่าย​รูป อุณหภูมิ​แบตเตอรี่​สูง​เกิน​ไป</string>
-    <string name="savingImage">บันทึก...  </string>
+    <string name="savingImage">บันทึก…  </string>
     <string name="open_hw_failed_msg">"กล้อง​ถ่าย​รูป
 ​ผิด​พลาด"</string>
     <string name="capture_failed_msg">จับ​ภาพ​ผิด​พลาด</string>
@@ -52,8 +52,7 @@
     <string name="VM_COOL">ยอด​เยี่ยม</string>
     <string name="VM_MONO">โม​โน</string>
     <string name="AUTO">อัตโนมัติ</string>
-    <string name="WB_CLOUDY">"มีเมฆเป็นส่วน
-มาก"</string>
+    <string name="WB_CLOUDY">มีเมฆเป็นส่วนมาก</string>
     <string name="WB_DAYLIGHT">แสง​จ้า</string>
     <string name="WB_FLUORESCENT">ฟลูออเรส​เซนท์</string>
     <string name="WB_HORIZON">ขอบ​ฟ้า</string>
@@ -111,7 +110,7 @@
     <string name="RM_SLOW">"เคลื่อน
 ​ไหว​ช้า"</string>
     <string name="RM_FAST">เคลื่อนไหวเร็ว</string>
-    <string name="CS_PROGRESS_TEXT">กำลัง​สร้าง​รูป​ภาพ โปรด​รอ...</string>
+    <string name="CS_PROGRESS_TEXT">กำลัง​สร้าง​รูป​ภาพ โปรด​รอ…</string>
     <string name="SCN_NONE">ไม่​มี</string>
     <string name="SCN_PORTRAIT">รูป​คน</string>
     <string name="SCN_LANDSCAPE">ทิวทัศน์</string>
@@ -120,7 +119,7 @@
     <string name="SCN_BEACH_SNOW">ชาย​หาด/​หิมะ</string>
     <string name="SCN_SUNSET">พระ​อาทิตย์​ตก</string>
     <string name="SCN_DAWN_DUSK">พระ​อาทิตย์​ขึ้น</string>
-    <string name="SCN_FALL_COLOR">สีสัน​​ฤดู​ใบไม้​ร่วง</string>
+    <string name="SCN_FALL_COLOR">สี​ออ​ทัม​น์</string>
     <string name="SCN_NIGHT_SHOT">กลาง​คืน</string>
     <string name="SCN_FIREWORK">พลุ</string>
     <string name="SCN_TEXT">ตัว​อักษร</string>
@@ -165,8 +164,8 @@
     <string name="Title_Guideline">ไก​ด์​ไลน์</string>
     <string name="Title_VideoQuality">คุณภาพ​วี​ดี​โอ</string>
     <string name="Title_AudioRecording">การ​บันทึก​เสียง</string>
-    <string name="Title_Storage">ที่​จัด​เก็บ</string>
-    <string name="Title_Reset">ตั้ง​ค่า​ใหม่</string>
+    <string name="Title_Storage">ที่​เก็บ</string>
+    <string name="Title_Reset">ตั้ง​​ใหม่</string>
     <string name="Title_Mode">โหมด</string>
     <string name="Title_Back">กลับ</string>
     <string name="Title_ImageViewer">โปรแกรม​ดู​ภาพ</string>
@@ -197,7 +196,7 @@
     <string name="Title_ChangeMemoryInUseDailog">เปลี่ยน​ที่​เก็บ​พื้น​ฐาน​เป็น​การ์ด​ความ​จำ?</string>
     <string name="Title_InsertMemoryCardDailog">ใส่​การ์ด​ความ​จำ​เพื่อ​ใช้​กล้อง</string>
     <string name="OnScreen_HelpTextTouchAF">กด​หน้า​จอ​เพื่อ​โฟกัส​บน​พื้นที่​ที่​สัมผัส</string>
-    <string name="media_scanner_running">เครื่อง​ค้น​หา​มี​เดีย​กำลัง​ทำ​งาน...</string>
+    <string name="media_scanner_running">เครื่อง​ค้น​หา​มี​เดีย​กำลัง​ทำ​งาน…</string>
     <string name="close_camera_when_mmc_inserted">ใส่ SD ​การ์ด​แล้ว %s ​ถูก​ปิด​เพื่อ​ค้น​หา​มี​เดีย​ไฟล์​ใน SD ​การ์ด</string>
     <string name="close_camera_when_media_mounted">กล้องปิดเพื่อค้นหาไฟล์มีเดีย</string>
     <string name="close_camera_for_unmounted_memory">ปิด​ที่​เก็บข้อมูล USB ​ก่อน​ใช้​กล้อง</string>
@@ -205,7 +204,7 @@
     <string name="crop_save_text">บันทึก</string>
     <string name="crop_discard_text">ยก​เลิก</string>
     <string name="crop_gallery_text">แกลเลอรี่</string>
-    <string name="wallpaper">กำลัง​ตั้ง​ค่า​วอ​ลเปเปอร์ โปรด​รอ...</string>
+    <string name="wallpaper">กำลัง​ตั้ง​ค่า​วอ​ลเปเปอร์ โปรด​รอ…</string>
     <string name="crop_label">ตัด​ภาพ​บาง​ส่วน</string>
     <string name="low_database_storage_view_text">พื้นที่​จัด​เก็บ​ฐาน​ข้อมูล​ใกล้​เต็ม</string>
     <string name="camera_security_enter">นโยบาย​ความ​ปลอดภัย​จำกัด​การ​ใช้​กล้อง​ถ่าย​รูป</string>
@@ -259,21 +258,25 @@
     <string name="editable_shortcut_helptext_message">"สัมผัสและกดทางลัดค้างไว้
 เพื่อแก้ไข"</string>
     <string name="editable_shortcut_helptext">สัมผัสไอคอนค้างไว้ แล้วลากไปยังตำแหน่ง เพื่อแก้ไขของทางลัด</string>
+    <string name="singleshotburst_capture_helptext">สัมผัสปุ่มกล้องค้างไว้ เพื่อถ่ายช็อตต่อเนื่อง</string>
+    <string name="singleshotburst_storage_helptext">การถ่ายภาพต่อเนื่องถูกบันทึก ด้วยคุณภาพที่กำหนดที่ระดับดี</string>
     <string name="sbeam_helptext">รับและแชร์รูปถ่ายกับอุปกรณ์อื่นๆ นำอุปกรณ์มาประกบกันเพื่อเพิ่มอุปกรณ์ที่คุณต้องการแชร์ผ่านทาง S Beam</string>
     <string name="storage_setting_dialog_title">ตำแหน่งที่จัดเก็บ</string>
     <string name="storage_setting_dialog_message">ใส่ SD การ์ดแล้ว เปลี่ยนตำแหน่งที่จัดเก็บไปยัง SD การ์ด?</string>
+    <string name="storage_setting_dialog_burstshot_message">ช็อตเดี่ยวจะถูกบันทึกไปยัง SD การ์ด ช็อตต่อเนื่องจะถูกบันทึกไว้ในพื้นที่จัดเก็บภายในอุปกรณ์</string>
     <string name="do_not_ask_again">ห้าม​แสดง​อีก</string>
     <string name="shutter">ชัตเตอร์</string>
     <string name="record">บันทึก</string>
     <string name="bestpic">รูปภาพที่ดีที่สุด</string>
     <string name="bestpic_on">เปิด</string>
     <string name="bestpic_off">ปิด</string>
-    <string name="bestgroup">โพสที่ดีที่สุดเป็นกลุ่ม</string>
-    <string name="bestgroup_title">เลือกใบหน้าดีที่สุดเพื่อบันทึก</string>
+    <string name="bestgroup">เบสท์เฟซ</string>
+    <string name="bestgroup_title">เลือกเบสท์เฟซเพื่อบันทึก</string>
     <string name="battery_low">ปิดกล้องถ่ายรูป อุณหภูมิแบตเตอรี่ต่ำเกินไป</string>
     <string name="buddy_photo_share_helptext">รับและแชร์รูปถ่ายกับเพื่อนๆ ผ่านทางตรวจจับใบหน้า</string>
     <string name="face_zoom_helptext">แตะสองครั้งที่ใบหน้าเพื่อซูมเข้าหรือซูมออก</string>
     <string name="burst_shot_guidetext">ช็อตปะทุจะถูกบันทึกไว้ในพื้นที่จัดเก็บภายในเครื่อง</string>
+    <string name="best_photo_guidetext">รูปภาพที่ดีที่สุดจะถูกบันทึกไปยังพื้นที่จัดเก็บภายในอุปกรณ์</string>
     <string name="snap_shot_limitation_dialog">ไม่สามารถใช้ฟังก์ชันการบันทึกภาพสแนปชอทขณะเปิดใช้ระบบป้องกันการสั่นไหว</string>
     <string name="on_device_help_focus">แตะเพื่อตั้งค่าโฟกัสของกล้อง</string>
     <string name="on_device_help_camcorder">เปลี่ยนเป็นโหมดกล้องวิดีโอ</string>
@@ -299,7 +302,7 @@
     <string name="ER_EFFECT_SMALL_MOUTH">ปาก​ขนาด​เล็ก</string>
     <string name="self_shot_open_warning_popup">สามารถใช้การถ่ายตัวเองได้เมื่อโทรศัพท์เปิดอยู่เท่านั้น</string>
     <string name="self_recording_open_warning_popup">สามารถใช้การบันทึกตัวเองได้เมื่อโทรศัพท์เปิดอยู่เท่านั้น</string>
-    <string name="contextual_filename">ชื่อไฟล์ในเชิงบริบท</string>
+    <string name="contextual_filename">ชื่อไฟล์แบบบอกตำแหน่ง</string>
     <string name="enable_gps_dialog">ต้องเปิดใช้แท็ก GPS เปิดใช้แท็ก GPS?</string>
     <string name="gallery_disable">แกลเลอรี่ถูกปิดใช้งาน</string>
     <string name="HDR_Normal">ปกติ</string>

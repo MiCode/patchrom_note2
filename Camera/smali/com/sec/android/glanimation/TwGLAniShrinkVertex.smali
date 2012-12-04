@@ -77,7 +77,7 @@
     sput v0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->PREVIEW_HEIGHT:F
 
     .line 54
-    const v0, 0x7f06020d
+    const v0, 0x7f06023d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -86,7 +86,7 @@
     sput v0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->SHRINK_RATIO:F
 
     .line 55
-    const v0, 0x7f06020e
+    const v0, 0x7f06023e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -156,7 +156,7 @@
     iput v0, p0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->DISP_OVER_RATIO:F
 
     .line 44
-    const v0, 0x7f060208
+    const v0, 0x7f060238
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -165,7 +165,7 @@
     iput v0, p0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->BOTTOM_OFFSET:F
 
     .line 45
-    const v0, 0x7f060209
+    const v0, 0x7f060239
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -174,7 +174,7 @@
     iput v0, p0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->BOTTOM_OFFSET_CAMCORDER_WIDE:F
 
     .line 46
-    const v0, 0x7f06020a
+    const v0, 0x7f06023a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -183,7 +183,7 @@
     iput v0, p0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->BOTTOM_OFFSET_CAMCORDER_MINI:F
 
     .line 48
-    const v0, 0x7f06020b
+    const v0, 0x7f06023b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -192,7 +192,7 @@
     iput v0, p0, Lcom/sec/android/glanimation/TwGLAniShrinkVertex;->RIGHT_OFFSET:F
 
     .line 49
-    const v0, 0x7f06020c
+    const v0, 0x7f06023c
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 

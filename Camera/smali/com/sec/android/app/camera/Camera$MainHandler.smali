@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 445
+    .line 457
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -38,7 +38,7 @@
     .parameter "x1"
 
     .prologue
-    .line 445
+    .line 457
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera$MainHandler;-><init>(Lcom/sec/android/app/camera/Camera;)V
 
     return-void
@@ -59,7 +59,7 @@
 
     const/4 v5, 0x0
 
-    .line 447
+    .line 459
     const-string v2, "Camera"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -84,17 +84,17 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 449
+    .line 461
     iget v2, p1, Landroid/os/Message;->what:I
 
     sparse-switch v2, :sswitch_data_0
 
-    .line 585
+    .line 587
     :cond_0
     :goto_0
     return-void
 
-    .line 451
+    .line 463
     :sswitch_0
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -102,7 +102,7 @@
 
     goto :goto_0
 
-    .line 454
+    .line 466
     :sswitch_1
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -113,7 +113,7 @@
 
     invoke-virtual {v2, v5}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setFocusIndicator(I)V
 
-    .line 455
+    .line 467
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -123,9 +123,14 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleAutoFocus()V
 
+    .line 469
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->stopAFHideRectTimer()V
+
     goto :goto_0
 
-    .line 461
+    .line 473
     :sswitch_2
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -136,7 +141,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/glview/TwGLContext;->resumeOrientationListener()V
 
-    .line 462
+    .line 474
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
@@ -147,11 +152,11 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLContext;->setDirty(Z)V
 
-    .line 463
+    .line 475
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$300(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
 
     move-result-object v2
 
@@ -165,11 +170,11 @@
 
     goto :goto_0
 
-    .line 464
+    .line 476
     :catch_0
     move-exception v0
 
-    .line 465
+    .line 477
     .local v0, e:Ljava/lang/NullPointerException;
     const-string v2, "Camera"
 
@@ -179,18 +184,18 @@
 
     goto :goto_0
 
-    .line 469
+    .line 481
     .end local v0           #e:Ljava/lang/NullPointerException;
     :sswitch_3
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$404(Lcom/sec/android/app/camera/Camera;)I
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$504(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v2
 
     if-ge v2, v8, :cond_1
 
-    .line 471
+    .line 483
     :try_start_1
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -202,11 +207,11 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLContext;->setDirty(Z)V
 
-    .line 472
+    .line 484
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$300(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
 
     move-result-object v2
 
@@ -220,11 +225,11 @@
 
     goto :goto_0
 
-    .line 473
+    .line 485
     :catch_1
     move-exception v0
 
-    .line 474
+    .line 486
     .restart local v0       #e:Ljava/lang/NullPointerException;
     const-string v2, "Camera"
 
@@ -234,24 +239,24 @@
 
     goto :goto_0
 
-    .line 477
+    .line 489
     .end local v0           #e:Ljava/lang/NullPointerException;
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #setter for: Lcom/sec/android/app/camera/Camera;->mDirtyCount:I
-    invoke-static {v2, v5}, Lcom/sec/android/app/camera/Camera;->access$402(Lcom/sec/android/app/camera/Camera;I)I
+    invoke-static {v2, v5}, Lcom/sec/android/app/camera/Camera;->access$502(Lcom/sec/android/app/camera/Camera;I)I
 
     goto :goto_0
 
-    .line 482
+    .line 494
     :sswitch_4
     :try_start_2
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v1, Lcom/samsung/shareshot/User;
 
-    .line 483
+    .line 495
     .local v1, user:Lcom/samsung/shareshot/User;
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -267,25 +272,25 @@
 
     invoke-interface {v2, v3}, Lcom/samsung/shareshot/IShareShotService;->ackActivateUser(Ljava/lang/String;)V
 
-    .line 484
+    .line 496
     invoke-virtual {v1}, Lcom/samsung/shareshot/User;->onSelected()V
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_2
 
     goto/16 :goto_0
 
-    .line 485
+    .line 497
     .end local v1           #user:Lcom/samsung/shareshot/User;
     :catch_2
     move-exception v0
 
-    .line 486
+    .line 498
     .local v0, e:Landroid/os/RemoteException;
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto/16 :goto_0
 
-    .line 491
+    .line 503
     .end local v0           #e:Landroid/os/RemoteException;
     :sswitch_5
     :try_start_3
@@ -293,11 +298,11 @@
 
     check-cast v1, Lcom/samsung/shareshot/User;
 
-    .line 492
+    .line 504
     .restart local v1       #user:Lcom/samsung/shareshot/User;
     invoke-virtual {v1}, Lcom/samsung/shareshot/User;->onUnSelected()V
 
-    .line 493
+    .line 505
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/Camera;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
@@ -316,18 +321,18 @@
 
     goto/16 :goto_0
 
-    .line 494
+    .line 506
     .end local v1           #user:Lcom/samsung/shareshot/User;
     :catch_3
     move-exception v0
 
-    .line 495
+    .line 507
     .restart local v0       #e:Landroid/os/RemoteException;
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto/16 :goto_0
 
-    .line 499
+    .line 511
     .end local v0           #e:Landroid/os/RemoteException;
     :sswitch_6
     const-string v2, "Camera"
@@ -336,7 +341,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 500
+    .line 512
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -347,7 +352,7 @@
 
     goto/16 :goto_0
 
-    .line 509
+    .line 521
     :sswitch_7
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -361,7 +366,7 @@
 
     if-ne v2, v7, :cond_0
 
-    .line 510
+    .line 522
     new-instance v2, Ljava/util/Timer;
 
     invoke-direct {v2}, Ljava/util/Timer;-><init>()V
@@ -376,7 +381,7 @@
 
     goto/16 :goto_0
 
-    .line 521
+    .line 533
     :sswitch_8
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -384,7 +389,7 @@
 
     goto/16 :goto_0
 
-    .line 524
+    .line 536
     :sswitch_9
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -396,7 +401,7 @@
 
     goto/16 :goto_0
 
-    .line 527
+    .line 539
     :sswitch_a
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -415,58 +420,11 @@
 
     if-eqz v2, :cond_0
 
-    .line 530
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraSettings;->getStorage()I
-
-    move-result v2
-
-    if-ne v2, v6, :cond_2
-
-    .line 531
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->showBurstShotsGuideDialog()V
-
-    .line 532
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v5}, Lcom/sec/android/app/camera/CameraSettings;->setStorage(I)V
-
-    .line 533
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    #setter for: Lcom/sec/android/app/camera/Camera;->mRestoreStorageForBurst:Z
-    invoke-static {v2, v6}, Lcom/sec/android/app/camera/Camera;->access$702(Lcom/sec/android/app/camera/Camera;Z)Z
-
-    .line 534
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraSettings;->getBurstShotsGuideTextDialog()I
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 540
-    :goto_1
+    .line 542
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v2
 
@@ -475,7 +433,7 @@
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraSideMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraSideMenu;
 
     move-result-object v2
 
@@ -485,7 +443,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 541
+    .line 543
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -498,7 +456,7 @@
 
     if-nez v2, :cond_0
 
-    .line 542
+    .line 544
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -509,26 +467,17 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
-    .line 543
+    .line 545
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->startSingleBurstShot()V
 
     goto/16 :goto_0
 
-    .line 537
+    .line 547
     :cond_2
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    #setter for: Lcom/sec/android/app/camera/Camera;->mRestoreStorageForBurst:Z
-    invoke-static {v2, v5}, Lcom/sec/android/app/camera/Camera;->access$702(Lcom/sec/android/app/camera/Camera;Z)Z
-
-    goto :goto_1
-
-    .line 545
-    :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -542,7 +491,7 @@
 
     const/4 v3, 0x2
 
-    if-eq v2, v3, :cond_4
+    if-eq v2, v3, :cond_3
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -557,7 +506,7 @@
 
     const/4 v3, 0x3
 
-    if-eq v2, v3, :cond_4
+    if-eq v2, v3, :cond_3
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -572,25 +521,25 @@
 
     const/4 v3, 0x5
 
-    if-ne v2, v3, :cond_5
+    if-ne v2, v3, :cond_4
 
-    .line 548
-    :cond_4
+    .line 550
+    :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->startSingleBurstShot()V
 
     goto/16 :goto_0
 
-    .line 550
-    :cond_5
+    .line 552
+    :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2, v6}, Lcom/sec/android/app/camera/Camera;->setWaitBurstShot(Z)V
 
     goto/16 :goto_0
 
-    .line 557
+    .line 559
     :sswitch_b
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -599,9 +548,9 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_7
 
-    .line 558
+    .line 560
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -615,9 +564,9 @@
 
     move-result v2
 
-    if-ne v2, v8, :cond_6
+    if-ne v2, v8, :cond_5
 
-    .line 559
+    .line 561
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -627,8 +576,8 @@
 
     invoke-virtual {v2, v5}, Lcom/sec/android/app/camera/CameraEngine;->changeEngineState(I)V
 
-    .line 561
-    :cond_6
+    .line 563
+    :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -638,7 +587,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->waitForEngineStartingThread()V
 
-    .line 562
+    .line 564
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -648,7 +597,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->waitForStartPreviewThreadComplete()V
 
-    .line 563
+    .line 565
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -658,7 +607,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->waitForCurrentSearchingLastContentUri()V
 
-    .line 564
+    .line 566
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -668,7 +617,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->waitForCurrentPictureSaving()V
 
-    .line 565
+    .line 567
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -678,7 +627,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStopEngine()V
 
-    .line 566
+    .line 568
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -688,7 +637,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStartEngine()V
 
-    .line 567
+    .line 569
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -698,7 +647,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->schedulePostInit()V
 
-    .line 568
+    .line 570
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -708,7 +657,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleSetAllParams()V
 
-    .line 570
+    .line 572
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -719,9 +668,9 @@
 
     move-result v2
 
-    if-ne v2, v7, :cond_9
+    if-ne v2, v7, :cond_8
 
-    .line 571
+    .line 573
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -731,7 +680,7 @@
 
     invoke-virtual {v2, v6, v5}, Lcom/sec/android/app/camera/CameraEngine;->scheduleChangeParameter(II)V
 
-    .line 572
+    .line 574
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
@@ -739,9 +688,9 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_6
 
-    .line 573
+    .line 575
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
@@ -751,9 +700,9 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->setWifiDirectStatus()V
 
-    .line 578
-    :cond_7
-    :goto_2
+    .line 580
+    :cond_6
+    :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -763,8 +712,8 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraEngine;->scheduleStartPreview()V
 
-    .line 580
-    :cond_8
+    .line 582
+    :cond_7
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #setter for: Lcom/sec/android/app/camera/Camera;->mwLostWinFocus:Z
@@ -772,8 +721,8 @@
 
     goto/16 :goto_0
 
-    .line 576
-    :cond_9
+    .line 578
+    :cond_8
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->this$0:Lcom/sec/android/app/camera/Camera;
 
     #getter for: Lcom/sec/android/app/camera/Camera;->mCameraEngine:Lcom/sec/android/app/camera/CameraEngine;
@@ -793,9 +742,9 @@
 
     invoke-virtual {v2, v6, v3}, Lcom/sec/android/app/camera/CameraEngine;->scheduleChangeParameter(II)V
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 449
+    .line 461
     :sswitch_data_0
     .sparse-switch
         0x2 -> :sswitch_0

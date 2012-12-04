@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1713
+    .line 1715
     iput-object p1, p0, Lcom/sec/android/app/camera/CamcorderEngine$6;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 1715
+    .line 1717
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$6;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     #getter for: Lcom/sec/android/app/camera/CamcorderEngine;->mCamcorderDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1716
+    .line 1718
     iget-object v0, p0, Lcom/sec/android/app/camera/CamcorderEngine$6;->this$0:Lcom/sec/android/app/camera/CamcorderEngine;
 
     #getter for: Lcom/sec/android/app/camera/CamcorderEngine;->mCamcorderDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -61,7 +61,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/seccamera/SecCamera;->cancelAutoFocus()V
 
-    .line 1717
+    .line 1719
     :cond_0
     return-void
 .end method

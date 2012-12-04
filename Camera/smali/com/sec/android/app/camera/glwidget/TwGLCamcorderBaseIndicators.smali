@@ -222,7 +222,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->REMAIN_COUNTER_WIDTH:I
 
     .line 38
-    const v0, 0x7f0600ba
+    const v0, 0x7f0600bb
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -549,11 +549,11 @@
     .locals 12
 
     .prologue
-    const/4 v7, 0x1
-
     const/4 v11, 0x3
 
     const/4 v10, 0x2
+
+    const/4 v7, 0x1
 
     const/4 v9, 0x4
 
@@ -612,7 +612,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;->handleGuidelineSettingsChanged(I)V
 
-    .line 94
+    .line 96
     new-instance v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->FOCUS_BUTTON_POS_X:I
@@ -623,7 +623,7 @@
 
     int-to-float v3, v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
+    invoke-direct {v0, v1, v2, v3, v7}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFZ)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -917,6 +917,27 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mBatteryPercentage:Lcom/sec/android/glview/TwGLText;
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
+
+    .line 133
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
+
+    .line 136
+    const-string v0, "TwGLCamcorderBaseIndicators"
+
+    const-string v2, "mAudioOffIndicator is added in mIndicatorGroup"
+
+    invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 137
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mIndicatorGroup:Lcom/sec/android/glview/TwGLIndicator;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mAudioOffIndicator:Lcom/sec/android/app/camera/glwidget/TwGLAudioRecIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLIndicator;->addView(Lcom/sec/android/glview/TwGLView;)V
 
@@ -1260,7 +1281,6 @@
     .line 231
     :cond_0
     :goto_0
-    :sswitch_0
     return-void
 
     .line 198
@@ -1269,14 +1289,36 @@
 
     goto :goto_0
 
-    .line 211
-    :sswitch_1
-    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->showFocusIndicator()V
+    .line 206
+    :sswitch_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
+
+    check-cast v0, Lcom/sec/android/app/camera/Camcorder;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camcorder;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraSettings;->isCamcorderSlowMotionEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 207
+    const-string v0, "TwGLCamcorderBaseIndicators"
+
+    const-string v1, "slow motion is enabled, hide focus indicator"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 208
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->hideFocusIndicator()V
 
     goto :goto_0
 
     .line 200
-    :sswitch_2
+    :sswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
     if-eqz v0, :cond_0
@@ -1298,11 +1340,17 @@
 
     goto :goto_0
 
+    .line 211
+    :cond_2
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->showFocusIndicator()V
+
+    goto :goto_0
+
     .line 214
-    :sswitch_3
+    :sswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mStorageIndicator:Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     .line 215
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->mStorageIndicator:Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;
@@ -1310,7 +1358,7 @@
     invoke-virtual {v0, p2}, Lcom/sec/android/app/camera/glwidget/TwGLStorageIndicator;->setStorage(I)V
 
     .line 217
-    :cond_2
+    :cond_3
     invoke-static {p2}, Lcom/sec/android/app/camera/CheckMemory;->getTotalStorage(I)J
 
     move-result-wide v0
@@ -1320,8 +1368,19 @@
     goto :goto_0
 
     .line 220
-    :sswitch_4
+    :sswitch_3
     invoke-virtual {p0, p2}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->ChangeGPS(I)V
+
+    goto :goto_0
+
+    .line 224
+    :sswitch_4
+    const/4 v0, 0x1
+
+    if-ne p2, v0, :cond_0
+
+    .line 225
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderBaseIndicators;->hideAudioOffIndicator()V
 
     goto :goto_0
 
@@ -1330,12 +1389,12 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x65 -> :sswitch_1
-        0x68 -> :sswitch_1
-        0x75 -> :sswitch_3
-        0x77 -> :sswitch_0
-        0x7b -> :sswitch_2
-        0x82 -> :sswitch_4
+        0x65 -> :sswitch_0
+        0x68 -> :sswitch_0
+        0x75 -> :sswitch_2
+        0x77 -> :sswitch_4
+        0x7b -> :sswitch_1
+        0x82 -> :sswitch_3
     .end sparse-switch
 .end method
 

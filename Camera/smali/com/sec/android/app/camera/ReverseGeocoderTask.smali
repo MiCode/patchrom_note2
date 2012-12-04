@@ -33,14 +33,14 @@
 
 .field private mGeocoder:Landroid/location/Geocoder;
 
-.field private mLat:F
+.field private mLat:D
 
-.field private mLng:F
+.field private mLng:D
 
 
 # direct methods
-.method public constructor <init>(Landroid/location/Geocoder;[FLcom/sec/android/app/camera/ReverseGeocoderTask$Callback;)V
-    .locals 1
+.method public constructor <init>(Landroid/location/Geocoder;[DLcom/sec/android/app/camera/ReverseGeocoderTask$Callback;)V
+    .locals 2
     .parameter "geocoder"
     .parameter "latlng"
     .parameter "callback"
@@ -55,16 +55,16 @@
     .line 63
     const/4 v0, 0x0
 
-    aget v0, p2, v0
+    aget-wide v0, p2, v0
 
-    iput v0, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLat:F
+    iput-wide v0, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLat:D
 
     .line 64
     const/4 v0, 0x1
 
-    aget v0, p2, v0
+    aget-wide v0, p2, v0
 
-    iput v0, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLng:F
+    iput-wide v0, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLng:D
 
     .line 65
     iput-object p3, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mCallback:Lcom/sec/android/app/camera/ReverseGeocoderTask$Callback;
@@ -104,13 +104,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mGeocoder:Landroid/location/Geocoder;
 
-    iget v1, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLat:F
+    iget-wide v1, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLat:D
 
-    float-to-double v1, v1
-
-    iget v3, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLng:F
-
-    float-to-double v3, v3
+    iget-wide v3, p0, Lcom/sec/android/app/camera/ReverseGeocoderTask;->mLng:D
 
     const/4 v5, 0x1
 

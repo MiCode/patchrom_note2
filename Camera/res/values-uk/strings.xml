@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Камера</string>
     <string name="camcorder_label">Відеокамера</string>
-    <string name="wait">Зачекайте...</string>
+    <string name="wait">Зачекайте…</string>
     <string name="warning_msg">Попередження</string>
     <string name="insert_mmc_msg">Вставте карту пам’яті, щоб скористатися камерою</string>
     <string name="not_enough_space">"Недостатньо пам'яті"</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Недостатньо пам’яті. Стандартне місце збереження змінено на пам’ять телефону</string>
     <string name="change_to_device_memory">Недостатньо місця на карті пам’яті. Стандартне місце збереження змінено на місце збереження на пристрої</string>
     <string name="video_reach_size_limit">Досягнуто максимального розміру запису</string>
-    <string name="processing_msg">Обробка...</string>
+    <string name="processing_msg">Обробка…</string>
     <string name="panorama_processing_msg">Зачекайте, доки створюється панорама</string>
     <string name="battery_overheat">Вийдіть із камери. Зависока температура акумулятора</string>
-    <string name="savingImage">Збереження...</string>
+    <string name="savingImage">Збереження…</string>
     <string name="open_hw_failed_msg">Збій камери</string>
     <string name="capture_failed_msg">Збій зйомки</string>
     <string name="recording_failed_msg">Збій записування</string>
@@ -107,7 +107,7 @@
     <string name="RM_EMAIL">Обмеження для Email</string>
     <string name="RM_SLOW">Сповільнення</string>
     <string name="RM_FAST">Прискорена зйомка</string>
-    <string name="CS_PROGRESS_TEXT">Створення зображення. Зачекайте...</string>
+    <string name="CS_PROGRESS_TEXT">Створення зображення. Зачекайте…</string>
     <string name="SCN_NONE">Немає</string>
     <string name="SCN_PORTRAIT">Портрет</string>
     <string name="SCN_LANDSCAPE">Пейзаж</string>
@@ -116,7 +116,7 @@
     <string name="SCN_BEACH_SNOW">Пляж/сніг</string>
     <string name="SCN_SUNSET">Захід сонця</string>
     <string name="SCN_DAWN_DUSK">Світанок</string>
-    <string name="SCN_FALL_COLOR">Осінні кольори</string>
+    <string name="SCN_FALL_COLOR">Колір осені</string>
     <string name="SCN_NIGHT_SHOT">Ніч</string>
     <string name="SCN_FIREWORK">Феєрверк</string>
     <string name="SCN_TEXT">Текст</string>
@@ -161,7 +161,7 @@
     <string name="Title_Guideline">Вказівки</string>
     <string name="Title_VideoQuality">Якість відео</string>
     <string name="Title_AudioRecording">Запис. звуку</string>
-    <string name="Title_Storage">"Пам'ять"</string>
+    <string name="Title_Storage">Місце збереж.</string>
     <string name="Title_Reset">Скинути</string>
     <string name="Title_Mode">Режим</string>
     <string name="Title_Back">Назад</string>
@@ -193,15 +193,15 @@
     <string name="Title_ChangeMemoryInUseDailog">Змінити стандартне розташування на карту пам’яті?</string>
     <string name="Title_InsertMemoryCardDailog">Вставте карту пам’яті, щоб скористатися камерою</string>
     <string name="OnScreen_HelpTextTouchAF">Натисніть екран, щоб сфокусув. на нат. ділянці</string>
-    <string name="media_scanner_running">Запущено сканер медіафайлів...</string>
+    <string name="media_scanner_running">Запущено сканер медіафайлів…</string>
     <string name="close_camera_when_mmc_inserted">Вставлено карту пам’яті. %s закрито, щоб сканувати медіафайли на карті пам’яті</string>
     <string name="close_camera_when_media_mounted">Камеру закрито для сканування медіафайлів</string>
     <string name="close_camera_for_unmounted_memory">Вимкнення USB-накопичувача перед використанням камери</string>
     <string name="message_size_limited">Досягнуто максимального розміру повідомлення</string>
     <string name="crop_save_text">Зберегти</string>
-    <string name="crop_discard_text">Скасувати</string>
+    <string name="crop_discard_text">Скасув.</string>
     <string name="crop_gallery_text">Галерея</string>
-    <string name="wallpaper">Встановлення заставки. Зачекайте...</string>
+    <string name="wallpaper">Встановлення заставки. Зачекайте…</string>
     <string name="crop_label">Обрізання фотографії</string>
     <string name="low_database_storage_view_text">Місце збереження бази даних майже заповнено</string>
     <string name="camera_security_enter">Використання камери обмежено політикою безпеки</string>
@@ -254,21 +254,25 @@
     <string name="editable_shortcut_helptext_title">Підказки</string>
     <string name="editable_shortcut_helptext_message">Натисніть і утримуйте клавіші швидкого доступу для їхнього редагування</string>
     <string name="editable_shortcut_helptext">Натисніть і утримуйте значок, а потім перетягніть його, щоб змінити розташування клавіш швидкого доступу</string>
+    <string name="singleshotburst_capture_helptext">Натисніть та утримуйте кнопку камери, щоб виконати серійну зйомку</string>
+    <string name="singleshotburst_storage_helptext">Знімки серійної зйомки зберігаються у \"відмінній\" якості</string>
     <string name="sbeam_helptext">Фотографування та обмін знімками з іншими пристроями. Прикладіть пристрої один до одного, щоб додати пристрої, з якими буде проводитися обмін за допомогою S Beam</string>
     <string name="storage_setting_dialog_title">Розташування місця збереження</string>
     <string name="storage_setting_dialog_message">Вставлено карту пам’яті. Вибрати карту пам’яті для розташування місця збереження?</string>
+    <string name="storage_setting_dialog_burstshot_message">"Одиночні знімки буде збережено на карту пам’яті. Серію знімків буде збережено у пам'яті пристрою"</string>
     <string name="do_not_ask_again">Більше не показувати</string>
     <string name="shutter">Звук</string>
     <string name="record">Записати</string>
     <string name="bestpic">Найкраща фотографія</string>
     <string name="bestpic_on">Ув</string>
     <string name="bestpic_off">Вим</string>
-    <string name="bestgroup">Найкраще групове фото</string>
+    <string name="bestgroup">Найкращі обличчя</string>
     <string name="bestgroup_title">Вибер.найкр.облич.для збереж.</string>
     <string name="battery_low">Закрийте камеру. Занизька температура акумулятора.</string>
     <string name="buddy_photo_share_helptext">Робіть знімки та обмінюйтеся ними із друзями за допомогою функції розпізнавання обличчя</string>
     <string name="face_zoom_helptext">Двічі натисніть обличчя, щоб збільшити або зменшити масштаб</string>
     <string name="burst_shot_guidetext">"Знімки в режимі серійної зйомки буде збережено у пам'яті пристрою"</string>
+    <string name="best_photo_guidetext">"Найкращі фотографії буде збережено у пам'яті пристрою"</string>
     <string name="snap_shot_limitation_dialog">Неможливо використовувати функцію записування знімків під час роботи стабілізатора зображення</string>
     <string name="on_device_help_focus">Натисніть, щоб встановити фокус камери</string>
     <string name="on_device_help_camcorder">Перехід до режиму відеокамери</string>
@@ -297,6 +301,6 @@
     <string name="contextual_filename">Ім’я файла з контексту</string>
     <string name="enable_gps_dialog">Потрібно увімкнути тег GPS. Увімкнути тег GPS?</string>
     <string name="gallery_disable">Галерею вимкнено</string>
-    <string name="HDR_Normal">Звичайна</string>
-    <string name="HDR_Strong">Сильний</string>
+    <string name="HDR_Normal">Стандарт</string>
+    <string name="HDR_Strong">Потужність</string>
 </resources>

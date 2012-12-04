@@ -20,15 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
+.field final synthetic val$et:Landroid/widget/EditText;
+
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;Landroid/widget/EditText;)V
     .locals 0
+    .parameter
     .parameter
 
     .prologue
-    .line 6381
+    .line 6462
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$26;->val$et:Landroid/widget/EditText;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,133 +43,267 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 6
+    .locals 9
     .parameter "dialog"
     .parameter "which"
 
     .prologue
-    const/16 v5, 0x7d4
+    .line 6467
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const/16 v4, 0x64
+    iget-object v7, v7, Lcom/sec/android/app/camera/Camera;->mPhotoPath:Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const-string v8, "/sdcard/Android/data/com.sec.android.app.camera/user_pic_tmp.b"
 
-    .line 6386
-    if-nez p2, :cond_1
+    if-ne v7, v8, :cond_0
 
-    .line 6387
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.intent.action.GET_CONTENT"
-
+    .line 6468
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    .line 6469
+    .local v2, fOut:Ljava/io/FileOutputStream;
+    new-instance v5, Landroid/graphics/BitmapFactory$Options;
 
-    .line 6388
-    .local v0, intent:Landroid/content/Intent;
-    const-string v1, "image/*"
+    invoke-direct {v5}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+    .line 6470
+    .local v5, options:Landroid/graphics/BitmapFactory$Options;
+    const-string v7, "/sdcard/Android/data/com.sec.android.app.camera/user_pic_tmp.b"
 
-    .line 6389
-    const-string v1, "crop"
+    invoke-static {v7, v5}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
-    const-string v2, "true"
+    move-result-object v0
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    .line 6471
+    .local v0, b:Landroid/graphics/Bitmap;
+    new-instance v4, Ljava/io/File;
 
-    .line 6390
-    const-string v1, "aspectX"
+    const-string v7, "/sdcard/Android/data/com.sec.android.app.camera/user_pic.b"
 
-    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-direct {v4, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 6391
-    const-string v1, "aspectY"
+    .line 6473
+    .local v4, file:Ljava/io/File;
+    :try_start_0
+    new-instance v3, Ljava/io/FileOutputStream;
 
-    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-direct {v3, v4}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6392
-    const-string v1, "outputX"
+    .end local v2           #fOut:Ljava/io/FileOutputStream;
+    .local v3, fOut:Ljava/io/FileOutputStream;
+    move-object v2, v3
 
-    invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 6393
-    const-string v1, "outputY"
-
-    invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 6394
-    const-string v1, "return-data"
-
-    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
-
-    .line 6395
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v1, v0, v5}, Lcom/sec/android/app/camera/Camera;->startActivityForResult(Landroid/content/Intent;I)V
-
-    .line 6407
-    .end local v0           #intent:Landroid/content/Intent;
-    :cond_0
+    .line 6478
+    .end local v3           #fOut:Ljava/io/FileOutputStream;
+    .restart local v2       #fOut:Ljava/io/FileOutputStream;
     :goto_0
+    sget-object v7, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
+
+    const/16 v8, 0x64
+
+    invoke-virtual {v0, v7, v8, v2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
+
+    .line 6480
+    :try_start_1
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->flush()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 6485
+    if-eqz v2, :cond_0
+
+    .line 6487
+    :try_start_2
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_4
+
+    .line 6495
+    .end local v0           #b:Landroid/graphics/Bitmap;
+    .end local v2           #fOut:Ljava/io/FileOutputStream;
+    .end local v4           #file:Ljava/io/File;
+    .end local v5           #options:Landroid/graphics/BitmapFactory$Options;
+    :cond_0
+    :goto_1
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const-string v8, "/sdcard/Android/data/com.sec.android.app.camera/user_pic.b"
+
+    iput-object v8, v7, Lcom/sec/android/app/camera/Camera;->mPhotoPath:Ljava/lang/String;
+
+    .line 6497
+    :try_start_3
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->val$et:Landroid/widget/EditText;
+
+    invoke-virtual {v7}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 6498
+    .local v6, str_name:Ljava/lang/String;
+    if-eqz v6, :cond_1
+
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    :cond_1
+    if-nez v6, :cond_3
+
+    .line 6499
+    :cond_2
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f090122
+
+    invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 6501
+    :cond_3
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    iget-object v7, v7, Lcom/sec/android/app/camera/Camera;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
+
+    if-eqz v7, :cond_4
+
+    .line 6502
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    iget-object v7, v7, Lcom/sec/android/app/camera/Camera;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
+
+    iget-object v8, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-virtual {v8, v6}, Lcom/sec/android/app/camera/Camera;->produceGSPersonalSettingInfoValue(Ljava/lang/String;)Lcom/samsung/dmc/ux/db/PersonalSettingInfo;
+
+    move-result-object v8
+
+    invoke-interface {v7, v8}, Lcom/samsung/shareshot/IShareShotService;->setLocalPersonInfo(Lcom/samsung/dmc/ux/db/PersonalSettingInfo;)V
+    :try_end_3
+    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 6509
+    .end local v6           #str_name:Ljava/lang/String;
+    :cond_4
+    :goto_2
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const/4 v8, 0x0
+
+    iput-boolean v8, v7, Lcom/sec/android/app/camera/Camera;->mNameChanged:Z
+
+    .line 6510
+    iget-object v7, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const/4 v8, 0x6
+
+    invoke-virtual {v7, v8}, Lcom/sec/android/app/camera/Camera;->removeDialog(I)V
+
+    .line 6511
     return-void
 
-    .line 6396
-    :cond_1
-    if-ne p2, v3, :cond_0
+    .line 6474
+    .restart local v0       #b:Landroid/graphics/Bitmap;
+    .restart local v2       #fOut:Ljava/io/FileOutputStream;
+    .restart local v4       #file:Ljava/io/File;
+    .restart local v5       #options:Landroid/graphics/BitmapFactory$Options;
+    :catch_0
+    move-exception v1
 
-    .line 6397
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.media.action.IMAGE_CAPTURE"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 6398
-    .restart local v0       #intent:Landroid/content/Intent;
-    const-string v1, "com.sec.android.app.camera"
-
-    const-string v2, "com.sec.android.app.camera.Camera"
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 6399
-    const-string v1, "image/*"
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 6400
-    const-string v1, "crop"
-
-    const-string v2, "true"
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 6401
-    const-string v1, "aspectX"
-
-    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 6402
-    const-string v1, "aspectY"
-
-    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 6403
-    const-string v1, "outputX"
-
-    invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 6404
-    const-string v1, "outputY"
-
-    invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 6405
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v1, v0, v5}, Lcom/sec/android/app/camera/Camera;->startActivityForResult(Landroid/content/Intent;I)V
+    .line 6476
+    .local v1, e:Ljava/io/FileNotFoundException;
+    invoke-virtual {v1}, Ljava/io/FileNotFoundException;->printStackTrace()V
 
     goto :goto_0
+
+    .line 6481
+    .end local v1           #e:Ljava/io/FileNotFoundException;
+    :catch_1
+    move-exception v1
+
+    .line 6483
+    .local v1, e:Ljava/io/IOException;
+    :try_start_4
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    .line 6485
+    if-eqz v2, :cond_0
+
+    .line 6487
+    :try_start_5
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
+
+    goto :goto_1
+
+    .line 6488
+    :catch_2
+    move-exception v7
+
+    goto :goto_1
+
+    .line 6485
+    .end local v1           #e:Ljava/io/IOException;
+    :catchall_0
+    move-exception v7
+
+    if-eqz v2, :cond_5
+
+    .line 6487
+    :try_start_6
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_5
+
+    .line 6490
+    :cond_5
+    :goto_3
+    throw v7
+
+    .line 6504
+    .end local v0           #b:Landroid/graphics/Bitmap;
+    .end local v2           #fOut:Ljava/io/FileOutputStream;
+    .end local v4           #file:Ljava/io/File;
+    .end local v5           #options:Landroid/graphics/BitmapFactory$Options;
+    :catch_3
+    move-exception v1
+
+    .line 6506
+    .local v1, e:Landroid/os/RemoteException;
+    invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
+
+    goto :goto_2
+
+    .line 6488
+    .end local v1           #e:Landroid/os/RemoteException;
+    .restart local v0       #b:Landroid/graphics/Bitmap;
+    .restart local v2       #fOut:Ljava/io/FileOutputStream;
+    .restart local v4       #file:Ljava/io/File;
+    .restart local v5       #options:Landroid/graphics/BitmapFactory$Options;
+    :catch_4
+    move-exception v7
+
+    goto :goto_1
+
+    :catch_5
+    move-exception v8
+
+    goto :goto_3
 .end method

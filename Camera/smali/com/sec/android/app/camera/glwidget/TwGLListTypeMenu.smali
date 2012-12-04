@@ -70,7 +70,7 @@
     const/16 v1, 0xff
 
     .line 50
-    const v0, 0x7f060147
+    const v0, 0x7f060157
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -81,7 +81,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->MENU_POS_X:I
 
     .line 51
-    const v0, 0x7f060148
+    const v0, 0x7f060158
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -92,7 +92,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->MENU_POS_Y:I
 
     .line 52
-    const v0, 0x7f060149
+    const v0, 0x7f060159
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -103,7 +103,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->TITLE_HEIGHT:I
 
     .line 53
-    const v0, 0x7f06014a
+    const v0, 0x7f06015a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -114,7 +114,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->TITLE_LEFT_PADDING:I
 
     .line 54
-    const v0, 0x7f06014b
+    const v0, 0x7f06015b
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -143,7 +143,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->TITLE_TEXT_COLOR:I
 
     .line 57
-    const v0, 0x7f06014d
+    const v0, 0x7f06015d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -154,7 +154,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->ITEM_HEIGHT:I
 
     .line 58
-    const v0, 0x7f060150
+    const v0, 0x7f060160
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -165,7 +165,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->LIST_MENU_AREA_WIDTH:I
 
     .line 59
-    const v0, 0x7f060151
+    const v0, 0x7f060161
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -176,7 +176,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->LIST_MENU_AREA_HEIGHT:I
 
     .line 60
-    const v0, 0x7f06014e
+    const v0, 0x7f06015e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -187,13 +187,21 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->MENU_WIDTH:I
 
     .line 61
-    const v0, 0x7f06014f
+    const v0, 0x7f06015f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
     move-result v0
 
     float-to-int v0, v0
+
+    sget v1, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->ITEM_HEIGHT:I
+
+    mul-int/lit8 v1, v1, 0x2
+
+    div-int/lit8 v1, v1, 0x5
+
+    sub-int/2addr v0, v1
 
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->MENU_HEIGHT:I
 
@@ -278,7 +286,7 @@
     .line 86
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->mMenuWrapper:Lcom/sec/android/glview/TwGLTitleDecorator;
 
-    const v3, 0x7f020205
+    const v3, 0x7f020207
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLTitleDecorator;->setNinePatchBackground(I)Z
 
@@ -395,7 +403,7 @@
     .line 103
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->mList:Lcom/sec/android/glview/TwGLList;
 
-    const v3, 0x7f020208
+    const v3, 0x7f02020a
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLList;->setScrollBarResource(I)V
 
@@ -592,7 +600,7 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->mMenuWrapper:Lcom/sec/android/glview/TwGLTitleDecorator;
 
-    const v3, 0x7f020203
+    const v3, 0x7f020205
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLTitleDecorator;->setNinePatchBackground(I)Z
 
@@ -1647,7 +1655,7 @@
     .line 131
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->mMenuWrapper:Lcom/sec/android/glview/TwGLTitleDecorator;
 
-    const v1, 0x7f020205
+    const v1, 0x7f020207
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLTitleDecorator;->setNinePatchBackground(I)Z
 
@@ -1659,7 +1667,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLListTypeMenu;->mMenuWrapper:Lcom/sec/android/glview/TwGLTitleDecorator;
 
-    const v1, 0x7f020203
+    const v1, 0x7f020205
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLTitleDecorator;->setNinePatchBackground(I)Z
 

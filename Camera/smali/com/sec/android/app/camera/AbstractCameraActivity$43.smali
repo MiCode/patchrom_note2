@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2303
+    .line 2342
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$43;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 2305
+    .line 2344
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$43;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -54,7 +54,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraSettings;->setStorage(I)V
 
-    .line 2306
+    .line 2345
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$43;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -63,6 +63,6 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraSettings;->setChangeStorageSettingDialog(I)V
 
-    .line 2307
+    .line 2346
     return-void
 .end method

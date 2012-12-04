@@ -127,7 +127,7 @@
 
     .prologue
     .line 55
-    const v0, 0x7f06014e
+    const v0, 0x7f06015e
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -138,7 +138,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListItem;->LIST_TYPE_BUTTON_WIDTH:I
 
     .line 56
-    const v0, 0x7f06014d
+    const v0, 0x7f06015d
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -319,7 +319,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListItem;->WAITING_ICON_IMAGE_WIDTH:I
 
     .line 78
-    const v0, 0x7f060149
+    const v0, 0x7f060159
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -330,7 +330,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListItem;->TITLE_HEIGHT:I
 
     .line 79
-    const v0, 0x7f060147
+    const v0, 0x7f060157
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -341,7 +341,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListItem;->MENU_POS_X:I
 
     .line 80
-    const v0, 0x7f060148
+    const v0, 0x7f060158
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -429,7 +429,7 @@
     .parameter "glContext"
 
     .prologue
-    const v4, 0x7f02023d
+    const v4, 0x7f020241
 
     const/4 v7, 0x0
 
@@ -642,11 +642,11 @@
 
     move-result v6
 
-    const v7, 0x7f02023d
+    const v7, 0x7f020241
 
-    const v8, 0x7f02023d
+    const v8, 0x7f020241
 
-    const v9, 0x7f02023d
+    const v9, 0x7f020241
 
     const/4 v10, 0x0
 
@@ -858,7 +858,7 @@
 
     int-to-float v13, v1
 
-    const v14, 0x7f020207
+    const v14, 0x7f020209
 
     move v12, v5
 
@@ -887,7 +887,7 @@
 
     int-to-float v4, v4
 
-    const v8, 0x7f020280
+    const v8, 0x7f020286
 
     invoke-direct {v1, v2, v3, v4, v8}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -996,11 +996,11 @@
 
     move-result v6
 
-    const v7, 0x7f02023d
+    const v7, 0x7f020241
 
-    const v8, 0x7f02023d
+    const v8, 0x7f020241
 
-    const v9, 0x7f02023d
+    const v9, 0x7f020241
 
     const/4 v10, 0x0
 
@@ -1037,7 +1037,7 @@
 
     int-to-float v4, v4
 
-    const v8, 0x7f020232
+    const v8, 0x7f020234
 
     invoke-direct {v1, v2, v3, v4, v8}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 

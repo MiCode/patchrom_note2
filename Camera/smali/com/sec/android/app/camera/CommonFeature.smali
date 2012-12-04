@@ -210,8 +210,6 @@
 
 .field public static final CAMERA_DEFAULT_LAYOUT:Z = false
 
-.field public static final CAMERA_DURING_CALL:Z = false
-
 .field public static final CAMERA_EASY_SNAP:Z = false
 
 .field public static final CAMERA_EFFECT_CARTOONIZE:Z = false
@@ -406,17 +404,21 @@
 
 .field public static final CAMERA_ZOOM_SUPPORT_MAX_RESOLUTION:Z = true
 
+.field public static final DISABLE_BARGIN:Z = false
+
 .field public static final DUMP_CAMCORDER_PARAMETERS:Z = false
 
 .field public static final DUMP_CAMCORDER_PROFILE:Z = false
 
 .field public static final DUMP_CAMERA_PARAMETERS:Z = false
 
+.field public static final ENABLEDURINGCALL_DEFAULT_VALUE:Z = true
+
 .field public static final ENABLE_EFFECT_RECORDER:Z = false
 
 .field public static final ENABLE_ENHANCE_SWITCHING_TIME:Z = true
 
-.field public static final ENABLE_SETTING_MENU_CUT_OFF:Z = false
+.field public static final ENABLE_SETTING_MENU_CUT_OFF:Z = true
 
 .field public static final FRONT_CAMCORDER_RESOLUTION_1280X720:Z = true
 
@@ -583,6 +585,8 @@
 .field public static final INTERNAL_SD:Z = true
 
 .field public static final MID_SIDEMENU:Z = false
+
+.field public static final ONE_SHOT_PREVIEW_CALLBACK_USE:Z = false
 
 .field public static final PACKAGE_NAME_GALLERY3D:Ljava/lang/String; = "com.miui.gallery"
 

@@ -3,12 +3,12 @@
 .source "Camera.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/sec/android/app/camera/Camera;->runDialog(Lcom/samsung/shareshot/User;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
-.field final synthetic val$et:Landroid/widget/EditText;
+.field final synthetic val$user:Lcom/samsung/shareshot/User;
 
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;Landroid/widget/EditText;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/samsung/shareshot/User;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
-    .line 6281
+    .line 5989
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$22;->val$et:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$22;->val$user:Lcom/samsung/shareshot/User;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,47 +42,43 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-    .parameter "image"
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
+    .parameter "dialog"
+    .parameter "which"
 
     .prologue
-    .line 6286
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
+    .line 5994
+    :try_start_0
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const/4 v1, 0x6
+    iget-object v1, v1, Lcom/sec/android/app/camera/Camera;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->dismissDialog(I)V
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->val$user:Lcom/samsung/shareshot/User;
 
-    .line 6287
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
+    invoke-virtual {v2}, Lcom/samsung/shareshot/User;->getUserInfo()Lcom/samsung/dmc/ux/db/UserInfo;
 
-    const/4 v1, 0x7
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->showDialog(I)V
+    invoke-virtual {v2}, Lcom/samsung/dmc/ux/db/UserInfo;->getIPAddress()Ljava/lang/String;
 
-    .line 6288
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
+    move-result-object v2
 
-    const/4 v1, 0x1
+    invoke-interface {v1, v2}, Lcom/samsung/shareshot/IShareShotService;->rejectActivateUser(Ljava/lang/String;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    iput-boolean v1, v0, Lcom/sec/android/app/camera/Camera;->mNameChanged:Z
-
-    .line 6289
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$22;->val$et:Landroid/widget/EditText;
-
-    invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/sec/android/app/camera/Camera;->mName:Ljava/lang/String;
-
-    .line 6290
+    .line 5999
+    :goto_0
     return-void
+
+    .line 5995
+    :catch_0
+    move-exception v0
+
+    .line 5997
+    .local v0, e:Landroid/os/RemoteException;
+    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
+
+    goto :goto_0
 .end method

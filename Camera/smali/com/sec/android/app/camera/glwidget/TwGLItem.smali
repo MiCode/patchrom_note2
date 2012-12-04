@@ -185,7 +185,7 @@
 
     .prologue
     .line 55
-    const v0, 0x7f0600e7
+    const v0, 0x7f0600f7
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -196,7 +196,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_BUTTON_IMAGE_POS_X:I
 
     .line 56
-    const v0, 0x7f0600e8
+    const v0, 0x7f0600f8
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -207,7 +207,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_BUTTON_IMAGE_POS_Y:I
 
     .line 57
-    const v0, 0x7f0600e9
+    const v0, 0x7f0600f9
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -218,7 +218,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_BUTTON_WIDTH:I
 
     .line 58
-    const v0, 0x7f0600ea
+    const v0, 0x7f0600fa
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -229,7 +229,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_BUTTON_HEIGHT:I
 
     .line 59
-    const v0, 0x7f0600eb
+    const v0, 0x7f0600fb
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -240,7 +240,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_TEXT_POS_X:I
 
     .line 60
-    const v0, 0x7f0600ec
+    const v0, 0x7f0600fc
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -251,7 +251,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_TEXT_POS_Y:I
 
     .line 61
-    const v0, 0x7f0600ed
+    const v0, 0x7f0600fd
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -262,7 +262,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_TEXT_WIDTH:I
 
     .line 62
-    const v0, 0x7f0600ee
+    const v0, 0x7f0600fe
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -282,7 +282,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->LIST_TYPE_TEXT_FONT_SIZE:I
 
     .line 64
-    const v0, 0x7f0600f0
+    const v0, 0x7f060100
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -293,7 +293,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->CHECKBOX_X_OFFSET_FROM_RIGHT:I
 
     .line 65
-    const v0, 0x7f0600f1
+    const v0, 0x7f060101
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -304,7 +304,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->CHECKBOX_POS_Y:I
 
     .line 66
-    const v0, 0x7f0600f2
+    const v0, 0x7f060102
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -315,7 +315,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_TEXT_POS_X:I
 
     .line 67
-    const v0, 0x7f0600f3
+    const v0, 0x7f060103
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -326,7 +326,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_TEXT_POS_Y:I
 
     .line 68
-    const v0, 0x7f0600f4
+    const v0, 0x7f060104
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -337,7 +337,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_TEXT_WIDTH:I
 
     .line 69
-    const v0, 0x7f0600f5
+    const v0, 0x7f060105
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -348,7 +348,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_BUTTON_WIDTH:I
 
     .line 70
-    const v0, 0x7f0600f6
+    const v0, 0x7f060106
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -359,7 +359,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_BUTTON_HEIGHT:I
 
     .line 71
-    const v0, 0x7f0600f8
+    const v0, 0x7f060108
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -370,7 +370,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_DATA_POS_X:I
 
     .line 72
-    const v0, 0x7f0600f9
+    const v0, 0x7f060109
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -381,7 +381,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_DATA_POS_Y:I
 
     .line 73
-    const v0, 0x7f0600f7
+    const v0, 0x7f060107
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -392,7 +392,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SETTING_TYPE_DATA_WIDTH:I
 
     .line 74
-    const v0, 0x7f0600fa
+    const v0, 0x7f06010a
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -425,7 +425,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SIDEBUTTON_TYPE_BUTTON_HEIGHT:I
 
     .line 77
-    const v0, 0x7f0600ff
+    const v0, 0x7f06010f
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -436,7 +436,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_BUTTON_WIDTH:I
 
     .line 78
-    const v0, 0x7f060100
+    const v0, 0x7f060110
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -447,7 +447,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_BUTTON_HEIGHT:I
 
     .line 79
-    const v0, 0x7f060101
+    const v0, 0x7f060111
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -458,7 +458,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_BUTTON_IMAGE_POS_X:I
 
     .line 80
-    const v0, 0x7f060102
+    const v0, 0x7f060112
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -469,7 +469,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_BUTTON_IMAGE_POS_Y:I
 
     .line 81
-    const v0, 0x7f060103
+    const v0, 0x7f060113
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -480,7 +480,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_TEXT_POS_X:I
 
     .line 82
-    const v0, 0x7f060104
+    const v0, 0x7f060114
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -491,7 +491,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_TEXT_POS_Y:I
 
     .line 83
-    const v0, 0x7f060105
+    const v0, 0x7f060115
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -502,7 +502,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_TEXT_WIDTH:I
 
     .line 84
-    const v0, 0x7f060106
+    const v0, 0x7f060116
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -522,7 +522,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->EDITABLESHORTCUT_TYPE_FONT_SIZE:I
 
     .line 86
-    const v0, 0x7f060107
+    const v0, 0x7f060117
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -533,7 +533,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->SEPARATOR_HEIGHT:I
 
     .line 87
-    const v0, 0x7f060108
+    const v0, 0x7f060118
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -866,7 +866,7 @@
     .parameter "glContext"
 
     .prologue
-    const v4, 0x7f02023d
+    const v4, 0x7f020241
 
     const/4 v7, 0x0
 
@@ -1515,7 +1515,7 @@
 
     int-to-float v12, v1
 
-    const v13, 0x7f020207
+    const v13, 0x7f020209
 
     move v11, v5
 

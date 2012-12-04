@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 616
+    .line 618
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$1$2;->this$1:Lcom/sec/android/app/camera/Camera$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 622
+    .line 624
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$1$2;->this$1:Lcom/sec/android/app/camera/Camera$1;
 
@@ -51,7 +51,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 623
+    .line 625
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$1$2;->this$1:Lcom/sec/android/app/camera/Camera$1;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -71,16 +71,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 628
+    .line 630
     :cond_0
     :goto_0
     return-void
 
-    .line 624
+    .line 626
     :catch_0
     move-exception v0
 
-    .line 626
+    .line 628
     .local v0, e:Landroid/os/RemoteException;
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1731
+    .line 1763
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$28;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1733
+    .line 1765
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$28;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -70,7 +70,7 @@
 
     if-nez v0, :cond_1
 
-    .line 1734
+    .line 1766
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$28;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -80,7 +80,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraSettings;->androidBeamController(Z)V
 
-    .line 1735
+    .line 1767
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$28;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -90,13 +90,13 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraSettings;->setAutoShareShotMode(I)V
 
-    .line 1736
+    .line 1768
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$28;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     const/16 v1, 0xa
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->hideDlg(I)V
 
-    .line 1737
+    .line 1769
     return-void
 .end method

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="snapbutton_pos_y">10.0px</dimen>
     <dimen name="thumbnail_list_menu_width">232.0px</dimen>
     <dimen name="thumbnail_list_item_width">180.0px</dimen>
     <dimen name="thumbnail_list_item_height">180.0px</dimen>
@@ -56,7 +57,7 @@
     <dimen name="sidemenu_shutter_button_image_height">214.0px</dimen>
     <dimen name="sidemenu_mode_button_pos_x">46.0px</dimen>
     <dimen name="sidemenu_mode_button_pos_y">11.0px</dimen>
-    <dimen name="sidemenu_thumnail_button_pos_y">590.0px</dimen>
+    <dimen name="sidemenu_thumnail_button_pos_y">604.0px</dimen>
     <dimen name="sidemenu_anchor_height">42.0px</dimen>
     <dimen name="menu_edit_helptext_margin">120.0px</dimen>
     <dimen name="menu_edit_helptext_width">600.0px</dimen>
@@ -72,8 +73,9 @@
     <dimen name="camcorder_baseindicator_group_width">342.0px</dimen>
     <dimen name="baseindicator_group_height">48.0px</dimen>
     <dimen name="baseindicator_remain_counter_width">55.0px</dimen>
-    <dimen name="camcorder_baseindicator_remain_counter_width">120.0px</dimen>
+    <dimen name="camcorder_baseindicator_remain_counter_width">126.0px</dimen>
     <dimen name="camcorder_baseindicator_remain_counter_padding">5.0px</dimen>
+    <dimen name="camcorder_baseindicator_indicator_group_padding">20.0px</dimen>
     <dimen name="baseindicator_percentage_width">62.0px</dimen>
     <dimen name="size_text_width">150.0dip</dimen>
     <dimen name="size_text_height">16.0dip</dimen>
@@ -162,7 +164,7 @@
     <dimen name="modeswitchbutton_switch_ball_height">60.0px</dimen>
     <dimen name="modeswitchbutton_touch_padding">15.0px</dimen>
     <dimen name="modeswitchbutton_switch_ball_select_area_width">80.0px</dimen>
-    <dimen name="modeswitchbutton_switch_ball_select_area_height">123.0px</dimen>
+    <dimen name="modeswitchbutton_switch_ball_select_area_height">60.0px</dimen>
     <dimen name="modeswitchbutton_switch_ball_pos_x">40.0px</dimen>
     <dimen name="modeswitchbutton_switch_ball_pos_y">61.0px</dimen>
     <dimen name="contextmenu_landscape_pos_x">430.0px</dimen>
@@ -235,7 +237,7 @@
     <dimen name="capture_progressbar_width_p">620.0px</dimen>
     <dimen name="capture_progressbar_width">540.0px</dimen>
     <dimen name="capture_progressbar_height">12.0px</dimen>
-    <dimen name="capture_progress_height">26.0px</dimen>
+    <dimen name="capture_progress_height">32.0px</dimen>
     <dimen name="capture_progressbar_x_0">235.0px</dimen>
     <dimen name="capture_progressbar_x_90">220.0px</dimen>
     <dimen name="capture_progressbar_x_180">1040.0px</dimen>
@@ -426,9 +428,6 @@
     <dimen name="timer_text_size">54.0px</dimen>
     <dimen name="timer_pos_left">0.0px</dimen>
     <dimen name="timer_pos_top">10.0px</dimen>
-    <dimen name="panorama_capture_progressbar_text_x">60.0px</dimen>
-    <dimen name="capture_help_text_alignment">0.0px</dimen>
-    <dimen name="sidemenu_thumnail_button_pos_x">27.0px</dimen>
     <dimen name="speedcontrol_button_width">180.0px</dimen>
     <dimen name="speedcontrol_button_height">84.0px</dimen>
     <dimen name="speedcontrol_button_text_size">38.0px</dimen>
@@ -444,7 +443,9 @@
     <dimen name="speedcontrol_list_item_width">180.0px</dimen>
     <dimen name="speedcontrol_list_item_height">100.0px</dimen>
     <dimen name="fastcontrol_list_item_height">200.0px</dimen>
-    <dimen name="HDR_button_icon_width">180.0px</dimen>
+    <dimen name="panorama_capture_progressbar_text_x">60.0px</dimen>
+    <dimen name="capture_help_text_alignment">0.0px</dimen>
+    <dimen name="HDR_button_icon_width">248.0px</dimen>
     <dimen name="HDR_button_icon_height">84.0px</dimen>
     <dimen name="HDR_button_icon_pos_x_0">20.0px</dimen>
     <dimen name="HDR_button_icon_pos_x_90">948.0px</dimen>
@@ -454,7 +455,7 @@
     <dimen name="HDR_button_icon_pos_y_90">20.0px</dimen>
     <dimen name="HDR_button_icon_pos_y_180">708.0px</dimen>
     <dimen name="HDR_button_icon_pos_y_270">700.0px</dimen>
-    <dimen name="HDR_button_text_size">38.0px</dimen>
+    <dimen name="HDR_button_text_size">34.0px</dimen>
     <dimen name="shareshot_button_icon_width">104.0px</dimen>
     <dimen name="shareshot_button_icon_height">84.0px</dimen>
     <dimen name="shareshot_button_icon_pos_x_0">174.0px</dimen>
@@ -476,4 +477,5 @@
     <dimen name="shareshot_count_text_pos_y_90">90.0px</dimen>
     <dimen name="shareshot_count_text_pos_y_180">718.0px</dimen>
     <dimen name="shareshot_count_text_pos_y_270">630.0px</dimen>
+    <dimen name="sidemenu_thumnail_button_pos_x">27.0px</dimen>
 </resources>

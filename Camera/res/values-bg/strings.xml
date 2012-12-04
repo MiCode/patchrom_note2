@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Камера</string>
     <string name="camcorder_label">Видеокамера</string>
-    <string name="wait">Изчакайте...</string>
+    <string name="wait">Изчакайте…</string>
     <string name="warning_msg">Предупреждение</string>
     <string name="insert_mmc_msg">Поставете карта с памет, за да използвате камерата</string>
     <string name="not_enough_space">Няма достатъчно памет</string>
@@ -10,7 +10,7 @@
     <string name="change_to_phone_memory">Няма достатъчно памет. Основното място за съхранение е променено на телефон</string>
     <string name="change_to_device_memory">Няма достатъчно място на SD картата. Основното място за съхранение е променено на паметта на устройството</string>
     <string name="video_reach_size_limit">Максималният размер за запис е достигнат</string>
-    <string name="processing_msg">Обработване...</string>
+    <string name="processing_msg">Обработване…</string>
     <string name="panorama_processing_msg">Моля, изчакайте да се създаде панорама</string>
     <string name="battery_overheat">Излезте от Камера. Температурата на батерията е твърде висока</string>
     <string name="savingImage">Запазване</string>
@@ -105,7 +105,7 @@
     <string name="RM_EMAIL">Лимит за email</string>
     <string name="RM_SLOW">Бавно движение</string>
     <string name="RM_FAST">Бързо движение</string>
-    <string name="CS_PROGRESS_TEXT">Създаване на изображение Моля, изчакайте...</string>
+    <string name="CS_PROGRESS_TEXT">Създаване на изображение Моля, изчакайте…</string>
     <string name="SCN_NONE">Няма</string>
     <string name="SCN_PORTRAIT">Портрет</string>
     <string name="SCN_LANDSCAPE">Пейзажно</string>
@@ -114,7 +114,7 @@
     <string name="SCN_BEACH_SNOW">Плаж/Сняг</string>
     <string name="SCN_SUNSET">Залез</string>
     <string name="SCN_DAWN_DUSK">Зазоряване</string>
-    <string name="SCN_FALL_COLOR">Есенни цветове</string>
+    <string name="SCN_FALL_COLOR">Есенен цвят</string>
     <string name="SCN_NIGHT_SHOT">Нощ</string>
     <string name="SCN_FIREWORK">Фойерверки</string>
     <string name="SCN_TEXT">Текст</string>
@@ -159,7 +159,7 @@
     <string name="Title_Guideline">Направляващи линии</string>
     <string name="Title_VideoQuality">Видео качество</string>
     <string name="Title_AudioRecording">Аудио запис</string>
-    <string name="Title_Storage">Памет</string>
+    <string name="Title_Storage">Съхраняване</string>
     <string name="Title_Reset">Нyлиране</string>
     <string name="Title_Mode">Режим</string>
     <string name="Title_Back">Назад</string>
@@ -191,15 +191,15 @@
     <string name="Title_ChangeMemoryInUseDailog">Смяна на съхранението по подразбиране за картата с памет?</string>
     <string name="Title_InsertMemoryCardDailog">Поставете карта с памет, за да използвате камерата</string>
     <string name="OnScreen_HelpTextTouchAF">Натиснете екрана за фокус в зоната на чукване</string>
-    <string name="media_scanner_running">Протича сканиране за мултимедия...</string>
+    <string name="media_scanner_running">Протича сканиране за мултимедия…</string>
     <string name="close_camera_when_mmc_inserted">Поставена е SD карта. %s е затворено, за да се сканират мултимедийните файлове в SD картата</string>
     <string name="close_camera_when_media_mounted">Камерата е затворена, за да се сканират мултимедийните файлове</string>
     <string name="close_camera_for_unmounted_memory">Изключете USB паметта, преди да използвате камерата</string>
     <string name="message_size_limited">Достигнато ограничение на размера на съобщение</string>
     <string name="crop_save_text">Запази</string>
-    <string name="crop_discard_text">Отхвърляне</string>
+    <string name="crop_discard_text">Отказ</string>
     <string name="crop_gallery_text">Галерия</string>
-    <string name="wallpaper">Настройва се тапет. Моля, изчакайте...</string>
+    <string name="wallpaper">Настройва се тапет. Моля, изчакайте…</string>
     <string name="crop_label">Изрязване на снимка</string>
     <string name="low_database_storage_view_text">Мястото за съхранение на базата данни е почти пълно</string>
     <string name="camera_security_enter">Правилата за защита ограничават използването на камерата</string>
@@ -252,27 +252,31 @@
     <string name="editable_shortcut_helptext_title">Съвети</string>
     <string name="editable_shortcut_helptext_message">Чукнете и задръжте бързите клавиши, за да ги редактирате</string>
     <string name="editable_shortcut_helptext">Чукнете и задръжте икона, след което я плъзнете, за да редактирате позицията на бързите команди</string>
+    <string name="singleshotburst_capture_helptext">Чукнете и задръжте бутона за камера, за да направите бързи снимки</string>
+    <string name="singleshotburst_storage_helptext">Бързите снимки се записват с качеството, зададено като добро</string>
     <string name="sbeam_helptext">Правете и споделяйте снимки с други устройства. Съберете устройствата, за да добавите устройства, с които искате да споделяте през S Beam</string>
     <string name="storage_setting_dialog_title">Място за съхранение</string>
     <string name="storage_setting_dialog_message">SD картата е поставена. Промяна на мястото за съхранение на SD карта?</string>
+    <string name="storage_setting_dialog_burstshot_message">Единичните снимки ще бъдат записани в SD картата. Снимките от Бързо снимане ще бъдат записани в паметта на устройството</string>
     <string name="do_not_ask_again">Не показвай отново</string>
     <string name="shutter">Затвор</string>
     <string name="record">Запис</string>
     <string name="bestpic">Най-добра снимка</string>
     <string name="bestpic_on">Вк</string>
     <string name="bestpic_off">Изк</string>
-    <string name="bestgroup">Най-добра групова поза</string>
-    <string name="bestgroup_title">Изб. вс. добро лице за запис.</string>
+    <string name="bestgroup">Най-добри лица</string>
+    <string name="bestgroup_title">Изб. вс. Най-доб. лице за зап.</string>
     <string name="battery_low">Затворете Камера. Температурата на батерията е твърде ниска</string>
     <string name="buddy_photo_share_helptext">Снимайте и споделяйте снимки с приятели чрез откриване на лица</string>
     <string name="face_zoom_helptext">Чукнете двукратно лице за увеличаване и намаляване на мащаба</string>
     <string name="burst_shot_guidetext">Снимките от Бързо снимане ще бъдат записани в паметта на устройството</string>
+    <string name="best_photo_guidetext">Най-добрите снимки ще бъдат записани в паметта на устройството</string>
     <string name="snap_shot_limitation_dialog">Функцията за снимка на запис не може да се използва, докато е активирана системата срещу разклащане</string>
     <string name="on_device_help_focus">Чукнете, за да зададете фокус на камерата</string>
     <string name="on_device_help_camcorder">Превключване към режим Камкордер</string>
     <string name="on_device_help_self">Превключване към режим автопортрет</string>
     <string name="on_device_help_editable">Чукнете и задръжте бързата команда, която искате да преместите. След това я плъзнете, където пожелаете</string>
-    <string name="on_device_help_voicecommand">Можете да правите снимки с гласови команди, като Заснемане, Усмивка и Зееелее!</string>
+    <string name="on_device_help_voicecommand">Можете да правите снимки с гласови команди, като „Заснемане“, „Усмивка“ и „Зееелее!“</string>
     <string name="Title_VideoSpeed">Скорост</string>
     <string name="SPEED_OFF">Нормален</string>
     <string name="SPEED_2X_FASTER">2x по-бързо</string>
@@ -295,6 +299,6 @@
     <string name="contextual_filename">Контекстно име на файл</string>
     <string name="enable_gps_dialog">GPS тагът трябва да бъде активиран. Активиране на GPS таг?</string>
     <string name="gallery_disable">Галерия е деактивирана</string>
-    <string name="HDR_Normal">Нормален</string>
-    <string name="HDR_Strong">Силен</string>
+    <string name="HDR_Normal">Нормално</string>
+    <string name="HDR_Strong">Силно</string>
 </resources>

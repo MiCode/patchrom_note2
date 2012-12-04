@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 233
+    .line 238
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$1;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,17 +39,17 @@
     .parameter "msg"
 
     .prologue
-    .line 235
+    .line 240
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 245
+    .line 250
     :goto_0
     :pswitch_0
     return-void
 
-    .line 237
+    .line 242
     :pswitch_1
     const-string v0, "AbstractCameraActivity"
 
@@ -57,27 +57,27 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 238
+    .line 243
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$1;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->finish()V
 
     goto :goto_0
 
-    .line 241
+    .line 246
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$1;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->hideFocusRect()V
 
-    .line 242
+    .line 247
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$1;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->stopAFHideRectTimer()V
 
     goto :goto_0
 
-    .line 235
+    .line 240
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

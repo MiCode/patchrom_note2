@@ -119,7 +119,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->INCR_VAL:I
 
     .line 39
-    const v0, 0x7f060145
+    const v0, 0x7f060155
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -130,7 +130,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_WIDTH:I
 
     .line 40
-    const v0, 0x7f060146
+    const v0, 0x7f060156
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -174,16 +174,16 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f020289
+    const v3, 0x7f02028f
 
     invoke-direct {v0, p1, v1, v2, v3}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_NotReady:Lcom/sec/android/glview/TwGLImage;
 
-    .line 105
+    .line 103
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_NotReady:Lcom/sec/android/glview/TwGLImage;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
@@ -194,7 +194,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f02028b
+    const v3, 0x7f020291
 
     invoke-direct {v0, p1, v1, v2, v3}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -214,7 +214,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f020288
+    const v3, 0x7f02028e
 
     invoke-direct {v0, p1, v1, v2, v3}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -1284,7 +1284,7 @@
 
     int-to-float v5, v1
 
-    const v6, 0x7f020283
+    const v6, 0x7f020289
 
     move-object v1, p1
 
@@ -1292,10 +1292,10 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_NotReady:Lcom/sec/android/glview/TwGLNinePatch;
 
-    .line 214
+    .line 212
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_NotReady:Lcom/sec/android/glview/TwGLNinePatch;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
 
@@ -1314,7 +1314,7 @@
 
     int-to-float v5, v1
 
-    const v6, 0x7f020284
+    const v6, 0x7f02028a
 
     move-object v1, p1
 
@@ -1344,7 +1344,7 @@
 
     int-to-float v5, v1
 
-    const v6, 0x7f020282
+    const v6, 0x7f020288
 
     move-object v1, p1
 
@@ -1359,7 +1359,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
 
-    .line 231
+    .line 222
     new-instance v0, Lcom/sec/android/glview/TwGLNinePatch;
 
     const/4 v2, 0x0
@@ -1368,17 +1368,29 @@
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_WIDTH:I
 
-    mul-int/lit8 v1, v1, 0x2
+    int-to-float v1, v1
+
+    const v4, 0x3f99999a
+
+    mul-float/2addr v1, v4
+
+    float-to-int v1, v1
 
     int-to-float v4, v1
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_HEIGHT:I
 
-    mul-int/lit8 v1, v1, 0x2
+    int-to-float v1, v1
+
+    const v5, 0x3f99999a
+
+    mul-float/2addr v1, v5
+
+    float-to-int v1, v1
 
     int-to-float v5, v1
 
-    const v6, 0x7f020283
+    const v6, 0x7f020289
 
     move-object v1, p1
 
@@ -1386,42 +1398,82 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Touch:Lcom/sec/android/glview/TwGLNinePatch;
 
-    .line 233
+    .line 224
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_WIDTH:I
 
-    mul-int/lit8 v0, v0, 0x2
+    int-to-float v0, v0
+
+    const v1, 0x3f99999a
+
+    mul-float/2addr v0, v1
+
+    float-to-int v0, v0
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeX:I
 
-    .line 234
+    .line 225
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_HEIGHT:I
 
-    mul-int/lit8 v0, v0, 0x2
+    int-to-float v0, v0
+
+    const v1, 0x3f99999a
+
+    mul-float/2addr v0, v1
+
+    float-to-int v0, v0
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeY:I
 
-    .line 235
+    .line 226
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_WIDTH:I
 
-    div-int/lit8 v0, v0, 0x2
+    int-to-float v0, v0
+
+    const v1, 0x3f666666
+
+    mul-float/2addr v0, v1
+
+    float-to-int v0, v0
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetX:I
 
-    .line 236
+    .line 227
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_HEIGHT:I
 
-    div-int/lit8 v0, v0, 0x2
+    int-to-float v0, v0
+
+    const v1, 0x3f666666
+
+    mul-float/2addr v0, v1
+
+    float-to-int v0, v0
 
     iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetY:I
 
-    .line 238
+    .line 229
     new-instance v0, Lcom/sec/android/glview/TwGLViewGroup;
 
-    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetX:I
+    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeX:I
+
+    iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetX:I
+
+    sub-int/2addr v1, v2
+
+    add-int/lit8 v1, v1, -0xa
+
+    div-int/lit8 v1, v1, 0x2
 
     int-to-float v2, v1
 
-    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetY:I
+    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeY:I
+
+    iget v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetY:I
+
+    sub-int/2addr v1, v3
+
+    add-int/lit8 v1, v1, -0xa
+
+    div-int/lit8 v1, v1, 0x2
 
     int-to-float v3, v1
 
@@ -1561,35 +1613,35 @@
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->addView(Lcom/sec/android/glview/TwGLView;)V
 
-    .line 265
+    .line 261
     new-instance v0, Landroid/view/animation/ScaleAnimation;
 
-    const/high16 v1, 0x3fa0
+    const v1, 0x3f8ccccd
 
-    const/high16 v2, 0x3f00
+    const v2, 0x3f4ccccd
 
-    const/high16 v3, 0x3fa0
+    const v3, 0x3f8ccccd
 
-    const/high16 v4, 0x3f00
+    const v4, 0x3f4ccccd
 
     const/4 v5, 0x1
 
-    const/high16 v6, 0x4000
+    const/high16 v6, 0x3f00
 
     const/4 v7, 0x1
 
-    const/high16 v8, 0x4000
+    const/high16 v8, 0x3f00
 
     invoke-direct/range {v0 .. v8}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectShrink:Landroid/view/animation/Animation;
 
-    .line 266
+    .line 262
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectShrink:Landroid/view/animation/Animation;
 
-    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetX:I
+    iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeX:I
 
-    iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mShrinkOffsetY:I
+    iget v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeY:I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->getContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -1609,10 +1661,10 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/animation/Animation;->initialize(IIII)V
 
-    .line 267
+    .line 263
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectShrink:Landroid/view/animation/Animation;
 
-    const-wide/16 v1, 0x6a4
+    const-wide/16 v1, 0x12c
 
     invoke-virtual {v0, v1, v2}, Landroid/view/animation/Animation;->setDuration(J)V
 
@@ -1641,16 +1693,16 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 298
+    .line 296
     new-instance v0, Landroid/view/animation/ScaleAnimation;
 
     const/high16 v1, 0x3f80
 
-    const/high16 v2, 0x3fa0
+    const v2, 0x3f8ccccd
 
     const/high16 v3, 0x3f80
 
-    const/high16 v4, 0x3fa0
+    const v4, 0x3f8ccccd
 
     const/4 v5, 0x1
 
@@ -1736,12 +1788,28 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectTranslateGrow:Landroid/view/animation/Animation;
 
-    .line 329
+    .line 327
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectTranslateGrow:Landroid/view/animation/Animation;
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_WIDTH:I
 
+    int-to-float v1, v1
+
+    const v2, 0x3f99999a
+
+    mul-float/2addr v1, v2
+
+    float-to-int v1, v1
+
     sget v2, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->SOLID_RECT_HEIGHT:I
+
+    int-to-float v2, v2
+
+    const v3, 0x3f99999a
+
+    mul-float/2addr v2, v3
+
+    float-to-int v2, v2
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->getContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -2009,9 +2077,36 @@
 .end method
 
 .method public hideFocusRect()V
-    .locals 0
+    .locals 2
 
     .prologue
+    const/4 v1, 0x4
+
+    .line 405
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
+
+    .line 406
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_NotReady:Lcom/sec/android/glview/TwGLNinePatch;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+
+    .line 408
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Ready:Lcom/sec/android/glview/TwGLNinePatch;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+
+    .line 409
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Fail:Lcom/sec/android/glview/TwGLNinePatch;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+
+    .line 410
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
+
     .line 413
     return-void
 .end method
@@ -2116,53 +2211,17 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 372
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_LeftTop:Lcom/sec/android/glview/TwGLImage;
+    .line 382
+    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
 
-    iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniLeftTopGrow:Landroid/view/animation/Animation;
+    iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectTranslateGrow:Landroid/view/animation/Animation;
 
-    invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLImage;->setAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLViewGroup;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 373
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_RightTop:Lcom/sec/android/glview/TwGLImage;
+    .line 383
+    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
 
-    iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRightTopGrow:Landroid/view/animation/Animation;
-
-    invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLImage;->setAnimation(Landroid/view/animation/Animation;)V
-
-    .line 374
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_LeftBottom:Lcom/sec/android/glview/TwGLImage;
-
-    iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniLeftBottomGrow:Landroid/view/animation/Animation;
-
-    invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLImage;->setAnimation(Landroid/view/animation/Animation;)V
-
-    .line 375
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_RightBottom:Lcom/sec/android/glview/TwGLImage;
-
-    iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRightBottomGrow:Landroid/view/animation/Animation;
-
-    invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLImage;->setAnimation(Landroid/view/animation/Animation;)V
-
-    .line 377
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_LeftTop:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v2}, Lcom/sec/android/glview/TwGLImage;->startAnimation()V
-
-    .line 378
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_RightTop:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v2}, Lcom/sec/android/glview/TwGLImage;->startAnimation()V
-
-    .line 379
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_LeftBottom:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v2}, Lcom/sec/android/glview/TwGLImage;->startAnimation()V
-
-    .line 380
-    iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_RightBottom:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v2}, Lcom/sec/android/glview/TwGLImage;->startAnimation()V
+    invoke-virtual {v2}, Lcom/sec/android/glview/TwGLViewGroup;->startAnimation()V
 
     .line 386
     iput v4, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mMode:I
@@ -2254,27 +2313,27 @@
 
     const/4 v1, 0x4
 
-    .line 431
+    .line 438
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 432
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_NotReady:Lcom/sec/android/glview/TwGLImage;
+    .line 439
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_NotReady:Lcom/sec/android/glview/TwGLNinePatch;
 
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
 
-    .line 434
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ready:Lcom/sec/android/glview/TwGLImage;
+    .line 441
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Ready:Lcom/sec/android/glview/TwGLNinePatch;
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
 
-    .line 435
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Fail:Lcom/sec/android/glview/TwGLImage;
+    .line 442
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Fail:Lcom/sec/android/glview/TwGLNinePatch;
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
 
-    .line 436
+    .line 443
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
@@ -2289,128 +2348,15 @@
 .end method
 
 .method public setFocusIndicator(I)V
-    .locals 3
+    .locals 0
     .parameter "value"
 
     .prologue
-    const/4 v2, 0x0
+    .line 453
+    invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->setFocusRectIndicator(I)V
 
-    const/4 v1, 0x4
-
-    .line 457
-    packed-switch p1, :pswitch_data_0
-
-    .line 492
-    :goto_0
+    .line 454
     return-void
-
-    .line 463
-    :pswitch_0
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 464
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_NotReady:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 467
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ready:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 468
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Fail:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 469
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 470
-    const/16 v0, 0xa
-
-    iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mMode:I
-
-    goto :goto_0
-
-    .line 474
-    :pswitch_1
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 475
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_NotReady:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 476
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ready:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 477
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Fail:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 478
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 479
-    const/16 v0, 0xc
-
-    iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mMode:I
-
-    goto :goto_0
-
-    .line 482
-    :pswitch_2
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 483
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_NotReady:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 484
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ready:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 485
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Fail:Lcom/sec/android/glview/TwGLImage;
-
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
-
-    .line 486
-    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
-
-    .line 487
-    const/16 v0, 0xd
-
-    iput v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mMode:I
-
-    goto :goto_0
-
-    .line 457
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_2
-    .end packed-switch
 .end method
 
 .method public setFocusRectIndicator(I)V
@@ -2429,16 +2375,16 @@
     :goto_0
     return-void
 
-    .line 502
+    .line 499
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
 
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
 
-    .line 503
+    .line 500
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_NotReady:Lcom/sec/android/glview/TwGLNinePatch;
 
-    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
 
     .line 505
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Ready:Lcom/sec/android/glview/TwGLNinePatch;
@@ -2539,11 +2485,44 @@
 .end method
 
 .method public showFocusIndicator(I)V
-    .locals 0
+    .locals 3
     .parameter "state"
 
     .prologue
+    const/4 v2, 0x0
+
+    const/4 v1, 0x4
+
+    .line 417
+    if-nez p1, :cond_0
+
+    .line 419
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus:Lcom/sec/android/glview/TwGLViewGroup;
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
+
+    .line 420
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_NotReady:Lcom/sec/android/glview/TwGLNinePatch;
+
+    invoke-virtual {v0, v2}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+
+    .line 422
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Ready:Lcom/sec/android/glview/TwGLNinePatch;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+
+    .line 423
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRect_Fail:Lcom/sec/android/glview/TwGLNinePatch;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLNinePatch;->setVisibility(I)V
+
+    .line 424
+    iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/glview/TwGLViewGroup;->setVisibility(I)V
+
     .line 427
+    :cond_0
     return-void
 .end method
 

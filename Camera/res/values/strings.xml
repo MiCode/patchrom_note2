@@ -270,7 +270,7 @@ Direct connected"</string>
     <string name="wifi_dialog_text_chn">WLAN connection required.</string>
     <string name="wifi_direct_dialog_title">Share Shot</string>
     <string name="wifi_direct_dialog_text">Share shot enables you to share photos with other users via Wi-Fi Direct. Wi-Fi Direct connection required</string>
-    <string name="wifi_direct_dialog_text_chn">WLAN Direct connection required.</string>
+    <string name="wifi_direct_dialog_text_chn">Share shot enables you to share photos with other users via WLAN Direct. WLAN Direct connection required</string>
     <string name="wifi_dialog_yes">OK</string>
     <string name="wifi_dialog_no">Cancel</string>
     <string name="sharing_devices">Devices for sharing with</string>
@@ -300,26 +300,26 @@ Direct connected"</string>
     <string name="editable_shortcut_helptext_title">Tips</string>
     <string name="editable_shortcut_helptext_message">Tap and hold shortcuts to edit them</string>
     <string name="editable_shortcut_helptext">Tap and hold icon, then drag it to edit position of shortcuts</string>
-    <string name="singleshotburst_helptext">"Tap and hold the camera key to burst shot
- - The save image quality will be fine"</string>
+    <string name="singleshotburst_capture_helptext">Tap and hold the camera button to take a burst shot</string>
+    <string name="singleshotburst_storage_helptext">Burst shot images are saved with the quality set as fine</string>
     <string name="sbeam_helptext">Take and share photos with other devices. Bring the devices together to add devices you want to share with via S Beam</string>
     <string name="storage_setting_dialog_title">Storage location</string>
     <string name="storage_setting_dialog_message">"SD card inserted.
 Change storage location to SD card?"</string>
-    <string name="storage_setting_dialog_burstshot_message">Single shot will be saved in SD card. However, Burst shot will be saved to internal device memory.</string>
+    <string name="storage_setting_dialog_burstshot_message">Single shots will be saved to the SD card. Burst shots will be saved to the device storage</string>
     <string name="do_not_ask_again">Do not show again</string>
     <string name="shutter">Shutter</string>
     <string name="record">Record</string>
     <string name="bestpic">Best photo</string>
     <string name="bestpic_on">On</string>
     <string name="bestpic_off">Off</string>
-    <string name="bestgroup">Best faces</string>
+    <string name="bestgroup">Best Face</string>
     <string name="bestgroup_title">Select each best face to save</string>
     <string name="battery_low">Close Camera. Battery temperature too low</string>
     <string name="buddy_photo_share_helptext">Take and share photos with friends via face detection</string>
     <string name="face_zoom_helptext">Double tap on a face to zoom in or out</string>
     <string name="burst_shot_guidetext">Burst shots will be saved to device storage</string>
-    <string name="best_photo_guidetext">Best photos will be saved to device storage</string>
+    <string name="best_photo_guidetext">The best photos will be saved to device storage</string>
     <string name="snap_shot_limitation_dialog">Unable to use the recording snapshot function while Anti-shake is enabled</string>
     <string name="on_device_help_focus">You can tap to set camera focus</string>
     <string name="on_device_help_camcorder">You can switch between pictures and video</string>

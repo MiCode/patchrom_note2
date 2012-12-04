@@ -3,12 +3,12 @@
 .source "Camera.java"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/content/DialogInterface$OnKeyListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->showFaceZoomGuideDialog()V
+    value = Lcom/sec/android/app/camera/Camera;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 6549
+    .line 6524
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,60 +37,70 @@
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 4
-    .parameter "arg0"
-    .parameter "arg1"
+.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+    .locals 3
+    .parameter "dialog"
+    .parameter "keyCode"
+    .parameter "event"
 
     .prologue
-    const/4 v1, 0x0
-
-    .line 6551
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    const-string v3, "audio"
-
-    invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/Camera;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/media/AudioManager;
-
-    #setter for: Lcom/sec/android/app/camera/Camera;->mAudioManager:Landroid/media/AudioManager;
-    invoke-static {v2, v0}, Lcom/sec/android/app/camera/Camera;->access$2802(Lcom/sec/android/app/camera/Camera;Landroid/media/AudioManager;)Landroid/media/AudioManager;
-
-    .line 6552
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    #getter for: Lcom/sec/android/app/camera/Camera;->mAudioManager:Landroid/media/AudioManager;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2800(Lcom/sec/android/app/camera/Camera;)Landroid/media/AudioManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
-
-    .line 6553
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
-
-    move-result-object v2
-
-    if-eqz p2, :cond_0
-
     const/4 v0, 0x1
 
-    :goto_0
-    invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/CameraSettings;->setFaceZoomHelpTextDialog(I)V
+    .line 6526
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
-    .line 6554
-    return-void
+    move-result v1
 
+    if-ne v1, v0, :cond_1
+
+    const/4 v1, 0x4
+
+    if-eq p2, v1, :cond_0
+
+    const/16 v1, 0x52
+
+    if-eq p2, v1, :cond_0
+
+    const/16 v1, 0x17
+
+    if-ne p2, v1, :cond_1
+
+    .line 6528
     :cond_0
-    move v0, v1
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    .line 6553
+    const-string v2, "/sdcard/Android/data/com.sec.android.app.camera/user_pic.b"
+
+    iput-object v2, v1, Lcom/sec/android/app/camera/Camera;->mPhotoPath:Ljava/lang/String;
+
+    .line 6529
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const/4 v2, 0x0
+
+    iput-boolean v2, v1, Lcom/sec/android/app/camera/Camera;->mNameChanged:Z
+
+    .line 6530
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    const/4 v2, 0x6
+
+    invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->removeDialog(I)V
+
+    .line 6533
+    :goto_0
+    return v0
+
+    :cond_1
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p3}, Landroid/view/Window;->superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
+
+    move-result v0
+
     goto :goto_0
 .end method

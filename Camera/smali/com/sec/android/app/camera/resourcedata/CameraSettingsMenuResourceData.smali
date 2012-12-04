@@ -148,293 +148,370 @@
 .end method
 
 .method private initCommandIdList(Lcom/sec/android/app/camera/AbstractCameraActivity;)V
-    .locals 2
+    .locals 5
     .parameter "activityContext"
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x32
+    const/16 v3, 0x32
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 41
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+
+    const/16 v3, 0x3f
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 44
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x24
+    const/16 v3, 0x24
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 47
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x3
+    const/4 v3, 0x3
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 49
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x1
+    const/4 v3, 0x1
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 50
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x8
+    const/16 v3, 0x8
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 51
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 52
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x7
+    const/4 v3, 0x7
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 54
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x5
+    const/4 v3, 0x5
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 56
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x6
+    const/4 v3, 0x6
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 57
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/4 v1, 0x4
+    const/4 v3, 0x4
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 58
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x9
+    const/16 v3, 0x9
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 60
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0xa
+    const/16 v3, 0xa
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 62
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0xb
+    const/16 v3, 0xb
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 64
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x23
+    const/16 v3, 0x23
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 67
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0xe
+    const/16 v3, 0xe
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 69
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x13
+    const/16 v3, 0x13
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 74
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+
+    const/16 v3, 0x42
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 77
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0xd
+    const/16 v3, 0xd
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 79
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
-    move-result-object v0
+    move-result-object v2
 
-    const-string v1, "CscFeature_Camera_DisableGPSMenu"
+    const-string v3, "CscFeature_Camera_DisableGPSMenu"
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/CscFeature;->getEnableStatus(Ljava/lang/String;)Z
+    invoke-virtual {v2, v3}, Lcom/sec/android/app/CscFeature;->getEnableStatus(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v2
 
-    if-nez v0, :cond_0
+    if-nez v2, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x14
+    const/16 v3, 0x14
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 82
     :cond_0
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
-    move-result-object v0
+    move-result-object v2
 
-    const-string v1, "CscFeature_Camera_ShutterSoundMenu"
+    const-string v3, "CscFeature_Camera_ShutterSoundMenu"
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/CscFeature;->getEnableStatus(Ljava/lang/String;)Z
+    invoke-virtual {v2, v3}, Lcom/sec/android/app/CscFeature;->getEnableStatus(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_1
+    if-eqz v2, :cond_1
 
     .line 83
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x15
+    const/16 v3, 0x15
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 86
+    :cond_1
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+
+    const/16 v3, 0x40
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 89
+    const/4 v1, 0x1
+
+    .line 91
+    .local v1, isVoiceTalkAvailable:Z
+    :try_start_0
+    invoke-virtual {p1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v2
+
+    const-string v3, "com.vlingo.midas"
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v2, v3, v4}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 96
+    :goto_0
+    if-eqz v1, :cond_2
+
+    .line 97
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+
+    const/16 v3, 0x43
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 100
-    :cond_1
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    :cond_2
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x33
+    const/16 v3, 0x33
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 103
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x10
+    const/16 v3, 0x10
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 106
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x16
+    const/16 v3, 0x16
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 108
-    iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/CameraSettingsMenuResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
-    const/16 v1, 0x1e
+    const/16 v3, 0x1e
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 109
     return-void
+
+    .line 92
+    :catch_0
+    move-exception v0
+
+    .line 93
+    .local v0, e:Landroid/content/pm/PackageManager$NameNotFoundException;
+    const/4 v1, 0x0
+
+    goto :goto_0
 .end method
 
 

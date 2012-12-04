@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2436
+    .line 2475
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$50;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,26 +43,26 @@
     .parameter "which"
 
     .prologue
-    .line 2438
+    .line 2477
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.settings.LOCATION_SOURCE_SETTINGS"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 2439
+    .line 2478
     .local v0, intent:Landroid/content/Intent;
     iget-object v1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$50;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 2440
+    .line 2479
     iget-object v1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$50;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     const/4 v2, 0x1
 
     iput-boolean v2, v1, Lcom/sec/android/app/camera/AbstractCameraActivity;->bFromSecureSetting:Z
 
-    .line 2441
+    .line 2480
     return-void
 .end method

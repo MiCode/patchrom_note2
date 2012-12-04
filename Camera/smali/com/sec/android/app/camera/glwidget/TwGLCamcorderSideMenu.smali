@@ -263,7 +263,7 @@
 
     float-to-int v0, v0
 
-    const v1, 0x7f060110
+    const v1, 0x7f060120
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -289,7 +289,7 @@
     .line 67
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->SIDE_MENU_WIDTH:I
 
-    const v1, 0x7f060206
+    const v1, 0x7f060236
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -421,14 +421,14 @@
     .locals 5
 
     .prologue
-    .line 599
+    .line 598
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mLeftSideMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v3}, Lcom/sec/android/glview/TwGLViewGroup;->getSize()I
 
     move-result v1
 
-    .line 601
+    .line 600
     .local v1, size:I
     const/4 v0, 0x0
 
@@ -436,14 +436,14 @@
     :goto_0
     if-ge v0, v1, :cond_3
 
-    .line 602
+    .line 601
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mLeftSideMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v3, v0}, Lcom/sec/android/glview/TwGLViewGroup;->getView(I)Lcom/sec/android/glview/TwGLView;
 
     move-result-object v2
 
-    .line 603
+    .line 602
     .local v2, view:Lcom/sec/android/glview/TwGLView;
     instance-of v3, v2, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
 
@@ -451,7 +451,7 @@
 
     move-object v3, v2
 
-    .line 604
+    .line 603
     check-cast v3, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->getView()Lcom/sec/android/glview/TwGLView;
@@ -468,13 +468,13 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 614
+    .line 613
     .end local v2           #view:Lcom/sec/android/glview/TwGLView;
     :cond_0
     :goto_1
     return-object v2
 
-    .line 608
+    .line 607
     .restart local v2       #view:Lcom/sec/android/glview/TwGLView;
     :cond_1
     instance-of v3, v2, Lcom/sec/android/app/camera/glwidget/TwGLItem;
@@ -483,7 +483,7 @@
 
     move-object v3, v2
 
-    .line 609
+    .line 608
     check-cast v3, Lcom/sec/android/app/camera/glwidget/TwGLItem;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/glwidget/TwGLItem;->getCommandId()I
@@ -494,13 +494,13 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 601
+    .line 600
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 614
+    .line 613
     .end local v2           #view:Lcom/sec/android/glview/TwGLView;
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mShutterButton:Lcom/sec/android/glview/TwGLButton;
@@ -635,7 +635,7 @@
 
     const/4 v8, 0x0
 
-    const v9, 0x7f020201
+    const v9, 0x7f020203
 
     invoke-direct {v3, v4, v5, v8, v9}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -658,7 +658,7 @@
 
     const/4 v8, 0x0
 
-    const v9, 0x7f020200
+    const v9, 0x7f020202
 
     invoke-direct {v3, v4, v5, v8, v9}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -681,7 +681,7 @@
 
     const/4 v8, 0x0
 
-    const v9, 0x7f0201ff
+    const v9, 0x7f020201
 
     invoke-direct {v3, v4, v5, v8, v9}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -825,7 +825,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f09012f
+    const v5, 0x7f090130
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1373,7 +1373,7 @@
 
     int-to-float v5, v5
 
-    const v8, 0x7f020202
+    const v8, 0x7f020204
 
     invoke-direct {v15, v3, v4, v5, v8}, Lcom/sec/android/glview/TwGLImage;-><init>(Lcom/sec/android/glview/TwGLContext;FFI)V
 
@@ -1693,7 +1693,7 @@
     .locals 1
 
     .prologue
-    .line 591
+    .line 590
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mShutterButton:Lcom/sec/android/glview/TwGLButton;
 
     invoke-virtual {v0}, Lcom/sec/android/glview/TwGLButton;->isPressed()Z
@@ -1707,17 +1707,17 @@
     .locals 1
 
     .prologue
-    .line 561
+    .line 560
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mModeButton:Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;
 
     if-eqz v0, :cond_0
 
-    .line 562
+    .line 561
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mModeButton:Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLModeSwitchButton;->setCamcorderSelected()V
 
-    .line 564
+    .line 563
     :cond_0
     return-void
 .end method
@@ -1726,12 +1726,12 @@
     .locals 1
 
     .prologue
-    .line 483
+    .line 482
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->finish()V
 
-    .line 484
+    .line 483
     return-void
 .end method
 
@@ -1970,7 +1970,7 @@
     .parameter "dy"
 
     .prologue
-    .line 520
+    .line 519
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mLeftSideMenu:Lcom/sec/android/glview/TwGLViewGroup;
 
     invoke-virtual {v1}, Lcom/sec/android/glview/TwGLViewGroup;->getClipRect()Landroid/graphics/Rect;
@@ -2003,7 +2003,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 522
+    .line 521
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2025,16 +2025,16 @@
 
     check-cast v0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
-    .line 523
+    .line 522
     .local v0, menu:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
     if-eqz v0, :cond_1
 
-    .line 524
+    .line 523
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->resetOrder(Z)V
 
-    .line 527
+    .line 526
     .end local v0           #menu:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
     :cond_1
     return-void
@@ -2047,10 +2047,10 @@
     .parameter "y"
 
     .prologue
-    .line 531
+    .line 530
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->resetOrder()V
 
-    .line 532
+    .line 531
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getMenuResourceDepot()Lcom/sec/android/app/camera/MenuResourceDepot;
@@ -2071,16 +2071,16 @@
 
     check-cast v0, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
-    .line 533
+    .line 532
     .local v0, menu:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
     if-eqz v0, :cond_0
 
-    .line 534
+    .line 533
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;->resetOrder(Z)V
 
-    .line 536
+    .line 535
     :cond_0
     return-void
 .end method
@@ -2094,7 +2094,7 @@
     .prologue
     const/16 v5, 0xbd1
 
-    .line 510
+    .line 509
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getMenuResourceDepot()Lcom/sec/android/app/camera/MenuResourceDepot;
@@ -2113,7 +2113,7 @@
 
     check-cast v1, Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
 
-    .line 511
+    .line 510
     .local v1, menu:Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenu;
     if-eqz v1, :cond_0
 
@@ -2125,7 +2125,7 @@
 
     if-nez v2, :cond_1
 
-    .line 512
+    .line 511
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2141,14 +2141,14 @@
 
     move-result-object v0
 
-    .line 513
+    .line 512
     .local v0, cmd:Lcom/sec/android/app/camera/command/MenuCommand;
     if-eqz v0, :cond_1
 
-    .line 514
+    .line 513
     invoke-virtual {v0}, Lcom/sec/android/app/camera/command/MenuCommand;->execute()V
 
-    .line 516
+    .line 515
     .end local v0           #cmd:Lcom/sec/android/app/camera/command/MenuCommand;
     :cond_1
     return-void
@@ -2159,10 +2159,10 @@
     .parameter "view"
 
     .prologue
-    .line 539
+    .line 538
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->resetOrder()V
 
-    .line 540
+    .line 539
     return-void
 .end method
 
@@ -2174,7 +2174,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 488
+    .line 487
     const/16 v0, 0x1b
 
     if-eq p1, v0, :cond_0
@@ -2187,7 +2187,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 494
+    .line 493
     :cond_0
     return v1
 .end method
@@ -2200,7 +2200,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 499
+    .line 498
     const/16 v0, 0x1b
 
     if-eq p1, v0, :cond_0
@@ -2213,7 +2213,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 505
+    .line 504
     :cond_0
     return v1
 .end method
@@ -2222,7 +2222,7 @@
     .locals 3
 
     .prologue
-    .line 554
+    .line 553
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mDropBoxList:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -2243,7 +2243,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
 
-    .line 555
+    .line 554
     .local v0, b:Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
     const/4 v2, 0x4
 
@@ -2251,14 +2251,14 @@
 
     goto :goto_0
 
-    .line 557
+    .line 556
     .end local v0           #b:Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mThumbnailButton:Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->removeUptateMessage()V
 
-    .line 558
+    .line 557
     return-void
 .end method
 
@@ -2303,7 +2303,7 @@
     .line 474
     invoke-virtual {v0}, Lcom/sec/android/glview/TwGLView;->requestFocus()Z
 
-    .line 478
+    .line 477
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
@@ -2313,7 +2313,7 @@
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/MenuDimController;->synchronizeDim()V
 
-    .line 479
+    .line 478
     return-void
 
     .line 470
@@ -2803,12 +2803,12 @@
     .locals 6
 
     .prologue
-    .line 543
+    .line 542
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 544
+    .line 543
     .local v1, builder:Ljava/lang/StringBuilder;
     iget-object v4, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mDropBoxList:Ljava/util/ArrayList;
 
@@ -2830,7 +2830,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
 
-    .line 545
+    .line 544
     .local v0, b:Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
     invoke-virtual {v0}, Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;->getView()Lcom/sec/android/glview/TwGLView;
 
@@ -2838,7 +2838,7 @@
 
     check-cast v3, Lcom/sec/android/app/camera/glwidget/TwGLItem;
 
-    .line 546
+    .line 545
     .local v3, v:Lcom/sec/android/app/camera/glwidget/TwGLItem;
     invoke-virtual {v3}, Lcom/sec/android/app/camera/glwidget/TwGLItem;->getCommandId()I
 
@@ -2846,14 +2846,14 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 547
+    .line 546
     const-string v4, ","
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 549
+    .line 548
     .end local v0           #b:Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
     .end local v3           #v:Lcom/sec/android/app/camera/glwidget/TwGLItem;
     :cond_0
@@ -2861,7 +2861,7 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 550
+    .line 549
     iget-object v4, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -2870,7 +2870,7 @@
 
     invoke-virtual {v4, v5}, Lcom/sec/android/app/camera/resourcedata/EditableResourceDataBase;->resetOrder(Ljava/lang/String;)V
 
-    .line 551
+    .line 550
     return-void
 .end method
 
@@ -2893,10 +2893,10 @@
     .parameter "commandId"
 
     .prologue
-    .line 595
+    .line 594
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mSelectedMenuId:I
 
-    .line 596
+    .line 595
     return-void
 .end method
 
@@ -2943,17 +2943,17 @@
 
     const/4 v3, 0x0
 
-    .line 567
+    .line 566
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     if-nez v2, :cond_1
 
-    .line 588
+    .line 587
     :cond_0
     :goto_0
     return-void
 
-    .line 570
+    .line 569
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mDropBoxList:Ljava/util/ArrayList;
 
@@ -2976,37 +2976,37 @@
 
     check-cast v0, Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
 
-    .line 571
+    .line 570
     .local v0, b:Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
     if-eqz v0, :cond_2
 
-    .line 572
+    .line 571
     if-eqz p1, :cond_3
 
-    .line 573
+    .line 572
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;->setNormalBGVisibility(I)V
 
     goto :goto_1
 
-    .line 575
+    .line 574
     :cond_3
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;->setNormalBGVisibility(I)V
 
     goto :goto_1
 
-    .line 578
+    .line 577
     .end local v0           #b:Lcom/sec/android/app/camera/glwidget/TwGLSideMenuDragDropBox;
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mSettingButton:Lcom/sec/android/app/camera/glwidget/TwGLItem;
 
     if-eqz v2, :cond_5
 
-    .line 579
+    .line 578
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mSettingButton:Lcom/sec/android/app/camera/glwidget/TwGLItem;
 
     invoke-virtual {v2, p1}, Lcom/sec/android/app/camera/glwidget/TwGLItem;->setDim(Z)V
 
-    .line 582
+    .line 581
     :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mEditableBackground:Lcom/sec/android/glview/TwGLImage;
 
@@ -3028,17 +3028,17 @@
 
     if-eqz v2, :cond_0
 
-    .line 583
+    .line 582
     if-eqz p1, :cond_6
 
-    .line 584
+    .line 583
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mEditableBackground:Lcom/sec/android/glview/TwGLImage;
 
     invoke-virtual {v2, v3}, Lcom/sec/android/glview/TwGLImage;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 586
+    .line 585
     :cond_6
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSideMenu;->mEditableBackground:Lcom/sec/android/glview/TwGLImage;
 

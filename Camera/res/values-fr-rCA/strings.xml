@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Appareil photo</string>
     <string name="camcorder_label">Appareil vidéo</string>
-    <string name="wait">Veuillez patienter...</string>
+    <string name="wait">Veuillez patienter…</string>
     <string name="warning_msg">Avertissement</string>
     <string name="insert_mmc_msg">"Insérez une carte mémoire pour utiliser l'appareil photo"</string>
     <string name="not_enough_space">Mémoire insuffisante</string>
@@ -13,7 +13,7 @@
     <string name="processing_msg">Traitement…</string>
     <string name="panorama_processing_msg">Veuillez patienter pendant la création du panorama</string>
     <string name="battery_overheat">"Quittez l'appareil photo. La température de la pile est trop élevée"</string>
-    <string name="savingImage">Enregistrement ...</string>
+    <string name="savingImage">Enregistrement …</string>
     <string name="open_hw_failed_msg">Échec appareil photo</string>
     <string name="capture_failed_msg">Échec de capture</string>
     <string name="recording_failed_msg">"Échec de l'enregistrement"</string>
@@ -102,7 +102,7 @@
     <string name="RM_EMAIL">Limite pour courriel</string>
     <string name="RM_SLOW">Ralenti</string>
     <string name="RM_FAST">Enreg. en accéléré</string>
-    <string name="CS_PROGRESS_TEXT">"Création de l'image. Veuillez patienter..."</string>
+    <string name="CS_PROGRESS_TEXT">"Création de l'image. Veuillez patienter…"</string>
     <string name="SCN_NONE">Aucun</string>
     <string name="SCN_PORTRAIT">Portrait</string>
     <string name="SCN_LANDSCAPE">Paysage</string>
@@ -188,15 +188,15 @@ Activez cette fonction, puis rapprochez les périphériques (en général dos co
     <string name="Title_ChangeMemoryInUseDailog">Utiliser la carte mémoire comme emplacement de stockage par défaut ?</string>
     <string name="Title_InsertMemoryCardDailog">"Insérez une carte mémoire pour utiliser l'appareil photo"</string>
     <string name="OnScreen_HelpTextTouchAF">"Touchez l'écran pour faire un zoom de la zone"</string>
-    <string name="media_scanner_running">"Analyseur de médias en cours d'exécution..."</string>
+    <string name="media_scanner_running">"Analyseur de médias en cours d'exécution…"</string>
     <string name="close_camera_when_mmc_inserted">"Carte SD insérée. %s est fermé pendant l'analyse des fichiers mulmédias de la carte SD"</string>
     <string name="close_camera_when_media_mounted">"L'appareil photo a été fermé pour l'analyse des fichiers médias"</string>
     <string name="close_camera_for_unmounted_memory">"Désactivez le stockage USB avant d'utiliser l'appareil photo"</string>
     <string name="message_size_limited">Taille max du message atteinte</string>
     <string name="crop_save_text">Enreg.</string>
-    <string name="crop_discard_text">Ignorer</string>
+    <string name="crop_discard_text">Annuler</string>
     <string name="crop_gallery_text">Galerie</string>
-    <string name="wallpaper">"Configuration du fond d'écran. Veuillez patienter..."</string>
+    <string name="wallpaper">"Configuration du fond d'écran. Veuillez patienter…"</string>
     <string name="crop_label">Rogner la photo</string>
     <string name="low_database_storage_view_text">"L'espace de stockage de la base de données est presque saturé"</string>
     <string name="camera_security_enter">"La politique de sécurité limite l'utilisation de l'appareil photo"</string>
@@ -248,27 +248,31 @@ Activez cette fonction, puis rapprochez les périphériques (en général dos co
     <string name="editable_shortcut_helptext_title">Astuces</string>
     <string name="editable_shortcut_helptext_message">Touchez longuement le raccourci pour le modifier</string>
     <string name="editable_shortcut_helptext">"Touchez longuement l'icône, puis faites-la glisser pour modifier la position des raccourcis"</string>
+    <string name="singleshotburst_capture_helptext">"Touchez longuement le bouton de l'appareil photo pour prendre des photos en rafale"</string>
+    <string name="singleshotburst_storage_helptext">"La qualité d'enregistrement des photos en rafale est définie sur Bonne"</string>
     <string name="sbeam_helptext">"Prenez des photos et partagez-les avec d'autres périphériques. Rapprochez les périphériques pour ajouter les périphériques que vous souhaitez ajouter via S Beam"</string>
     <string name="storage_setting_dialog_title">Emplacement de stockage</string>
     <string name="storage_setting_dialog_message">"Carte SD insérée. Modifier l'emplacement de stockage vers la carte SD ?"</string>
+    <string name="storage_setting_dialog_burstshot_message">Les clichés uniques seront enregistrés sur la carte SD et les photos en rafale sur le périphérique</string>
     <string name="do_not_ask_again">Ne plus afficher</string>
     <string name="shutter">Obturateur</string>
     <string name="record">Enregistrer</string>
     <string name="bestpic">Meilleure photo</string>
     <string name="bestpic_on">Act</string>
     <string name="bestpic_off">Dés</string>
-    <string name="bestgroup">Meilleure photo de groupe</string>
+    <string name="bestgroup">Meilleures poses</string>
     <string name="bestgroup_title">Sélect. meill. poses à enreg.</string>
     <string name="battery_low">"Fermez l'appareil photo. Température de la pile trop basse"</string>
     <string name="buddy_photo_share_helptext">Prenez des photos et partagez-les avec vos amis avec la détection des visages</string>
     <string name="face_zoom_helptext">Touchez deux fois un visage pour effectuer un zoom avant ou arrière</string>
     <string name="burst_shot_guidetext">Les photos en rafale seront enregistrées dans le périphérique de stockage</string>
+    <string name="best_photo_guidetext">Les meilleures photos seront enregistrées sur le périphérique</string>
     <string name="snap_shot_limitation_dialog">"Impossible d'utiliser la fonction d'enregistrement instantané lorsque le stabilisateur est activé"</string>
     <string name="on_device_help_focus">"Touchez pour définir la mise au point de l'appareil photo"</string>
     <string name="on_device_help_camcorder">Passer en mode Appareil vidéo</string>
     <string name="on_device_help_self">Passer en mode Autoportrait</string>
     <string name="on_device_help_editable">"Touchez longuement le raccourci à déplacer. Puis faites-le glisser vers l'emplacement souhaité"</string>
-    <string name="on_device_help_voicecommand">Vous pouvez prendre des photos avec des commandes vocales telles que Capturer, Prise de vue, Souriez et Dites cheese</string>
+    <string name="on_device_help_voicecommand">Vous pouvez prendre des photos avec des commandes vocales telles que “Capturer”, “Prise de vue”, “Souriez” et “Dites cheese”</string>
     <string name="Title_VideoSpeed">Vitesse</string>
     <string name="SPEED_OFF">Normal</string>
     <string name="SPEED_2X_FASTER">2x plus rapide</string>
@@ -291,6 +295,6 @@ Activez cette fonction, puis rapprochez les périphériques (en général dos co
     <string name="contextual_filename">Nom de fichier contextuel</string>
     <string name="enable_gps_dialog">Le balisage GPS doit être activé. Activer le balisage GPS ?</string>
     <string name="gallery_disable">La Galerie est désactivée</string>
-    <string name="HDR_Normal">Normale</string>
+    <string name="HDR_Normal">Normal</string>
     <string name="HDR_Strong">Fort</string>
 </resources>

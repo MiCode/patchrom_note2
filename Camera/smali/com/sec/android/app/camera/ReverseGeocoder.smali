@@ -94,7 +94,7 @@
     return-void
 .end method
 
-.method public execute([F)V
+.method public execute([D)V
     .locals 8
     .parameter "location"
 
@@ -104,9 +104,7 @@
     const/4 v6, 0x0
 
     .line 56
-    aget v2, p1, v6
-
-    float-to-double v2, v2
+    aget-wide v2, p1, v6
 
     iget-wide v4, p0, Lcom/sec/android/app/camera/ReverseGeocoder;->mPrevLatitude:D
 
@@ -114,9 +112,7 @@
 
     if-nez v2, :cond_0
 
-    aget v2, p1, v7
-
-    float-to-double v2, v2
+    aget-wide v2, p1, v7
 
     iget-wide v4, p0, Lcom/sec/android/app/camera/ReverseGeocoder;->mPrevLongitude:D
 
@@ -126,16 +122,12 @@
 
     .line 57
     :cond_0
-    aget v2, p1, v6
-
-    float-to-double v2, v2
+    aget-wide v2, p1, v6
 
     iput-wide v2, p0, Lcom/sec/android/app/camera/ReverseGeocoder;->mPrevLatitude:D
 
     .line 58
-    aget v2, p1, v7
-
-    float-to-double v2, v2
+    aget-wide v2, p1, v7
 
     iput-wide v2, p0, Lcom/sec/android/app/camera/ReverseGeocoder;->mPrevLongitude:D
 
@@ -144,7 +136,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/ReverseGeocoder;->mGeocoder:Landroid/location/Geocoder;
 
-    invoke-direct {v1, v2, p1, p0}, Lcom/sec/android/app/camera/ReverseGeocoderTask;-><init>(Landroid/location/Geocoder;[FLcom/sec/android/app/camera/ReverseGeocoderTask$Callback;)V
+    invoke-direct {v1, v2, p1, p0}, Lcom/sec/android/app/camera/ReverseGeocoderTask;-><init>(Landroid/location/Geocoder;[DLcom/sec/android/app/camera/ReverseGeocoderTask$Callback;)V
 
     .line 62
     .local v1, geoTask:Lcom/sec/android/app/camera/ReverseGeocoderTask;

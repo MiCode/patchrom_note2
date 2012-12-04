@@ -3,12 +3,12 @@
 .source "Camera.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->runDialog(Lcom/samsung/shareshot/User;)V
+    value = Lcom/sec/android/app/camera/Camera;->onReceiveActivateMsg(Lcom/samsung/dmc/ux/db/UserInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
-.field final synthetic val$user:Lcom/samsung/shareshot/User;
+.field final synthetic val$gsUserInfo:Lcom/samsung/dmc/ux/db/UserInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/samsung/shareshot/User;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/samsung/dmc/ux/db/UserInfo;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
-    .line 5829
+    .line 5939
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$19;->val$user:Lcom/samsung/shareshot/User;
+    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$19;->val$gsUserInfo:Lcom/samsung/dmc/ux/db/UserInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,43 +42,47 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
-    .parameter "dialog"
-    .parameter "which"
+.method public run()V
+    .locals 5
 
     .prologue
-    .line 5834
-    :try_start_0
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
+    .line 5943
+    new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, v1, Lcom/sec/android/app/camera/Camera;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$19;->val$user:Lcom/samsung/shareshot/User;
+    .line 5944
+    .local v0, intent:Landroid/content/Intent;
+    new-instance v1, Landroid/content/ComponentName;
 
-    invoke-virtual {v2}, Lcom/samsung/shareshot/User;->getUserInfo()Lcom/samsung/dmc/ux/db/UserInfo;
+    const-string v2, "com.samsung.shareshot"
 
-    move-result-object v2
+    const-string v3, "com.samsung.shareshot.ShareWithRequestDialog"
 
-    invoke-virtual {v2}, Lcom/samsung/dmc/ux/db/UserInfo;->getIPAddress()Ljava/lang/String;
+    invoke-direct {v1, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    invoke-interface {v1, v2}, Lcom/samsung/shareshot/IShareShotService;->rejectActivateUser(Ljava/lang/String;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 5945
+    const-string v1, "UserInfo"
 
-    .line 5839
-    :goto_0
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$19;->val$gsUserInfo:Lcom/samsung/dmc/ux/db/UserInfo;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 5946
+    new-instance v1, Ljava/util/Timer;
+
+    invoke-direct {v1}, Ljava/util/Timer;-><init>()V
+
+    new-instance v2, Lcom/sec/android/app/camera/Camera$19$1;
+
+    invoke-direct {v2, p0, v0}, Lcom/sec/android/app/camera/Camera$19$1;-><init>(Lcom/sec/android/app/camera/Camera$19;Landroid/content/Intent;)V
+
+    const-wide/16 v3, 0x12c
+
+    invoke-virtual {v1, v2, v3, v4}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
+
+    .line 5954
     return-void
-
-    .line 5835
-    :catch_0
-    move-exception v0
-
-    .line 5837
-    .local v0, e:Landroid/os/RemoteException;
-    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
-
-    goto :goto_0
 .end method

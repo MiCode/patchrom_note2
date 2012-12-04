@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Kamera</string>
     <string name="camcorder_label">Video kamera</string>
-    <string name="wait">Lütfen bekleyin...</string>
+    <string name="wait">Lütfen bekleyin…</string>
     <string name="warning_msg">Uyarı</string>
     <string name="insert_mmc_msg">Kamera kullanmak için hafıza kartı takın</string>
     <string name="not_enough_space">Yeterli hafıza yok</string>
@@ -10,7 +10,7 @@
     <string name="change_to_phone_memory">Yeterli hafıza yok. Varsayılan kayıt yeri telefon hafızası olarak değiştirildi</string>
     <string name="change_to_device_memory">SD kartta yeterli alan yok. Varsayılan kayıt yeri cihaz depolama olarak değiştirildi</string>
     <string name="video_reach_size_limit">Maksimum kaydetme boyutuna ulaşıldı</string>
-    <string name="processing_msg">Uygulanıyor...</string>
+    <string name="processing_msg">Uygulanıyor…</string>
     <string name="panorama_processing_msg">Panorama oluşturulurken lütfen bekleyin</string>
     <string name="battery_overheat">Kameradan Çık. Pil sıcaklığı çok yüksek</string>
     <string name="savingImage">Kaydediliyor…</string>
@@ -105,7 +105,7 @@ kamera başlatılamaz"</string>
     <string name="RM_EMAIL">Eposta sınırı</string>
     <string name="RM_SLOW">Yavaş hareketli</string>
     <string name="RM_FAST">Hızlı çekim</string>
-    <string name="CS_PROGRESS_TEXT">Resim oluşturuluyor. Lütfen bekleyin...</string>
+    <string name="CS_PROGRESS_TEXT">Resim oluşturuluyor. Lütfen bekleyin…</string>
     <string name="SCN_NONE">Hiçbiri</string>
     <string name="SCN_PORTRAIT">Portre</string>
     <string name="SCN_LANDSCAPE">Manzara</string>
@@ -180,8 +180,8 @@ kamera başlatılamaz"</string>
     <string name="help_text_panorama_device">Kamera tuşuna basın ve cihazı yavaşça bir yöne doğru çevirin</string>
     <string name="message_DefaultLayout">Kısayol düzeni sıfırlanacak</string>
     <string name="message_EULA_GPS">GPS etiketinin etkinleştirilmesi, her bir fotoğraf içerisindeki coğrafi konum verilerini ekleyecek, katıştıracak ve depolayacaktır. Fotoğrafın çekildiği yere dair bilgiler içerdiklerinden, bu fotoğrafları gönderirken, paylaşırken, dağıtırken, aktarırken veya kopyalarken dikkatli olun</string>
-    <string name="message_Auto_ShareShot">"Auto share shot enables you to easily connect to the devices you want to share pictures with.
-Enable auto share shot, then bring the devices together (typically back to back) to connect them"</string>
+    <string name="message_Auto_ShareShot">"Otomatik çekim paylaşma resim paylaşmak istediğiniz cihazlara kolaylıkla bağlanmanızı sağlar.
+Otomatik çekim paylaşmayı etkinleştirin, ardından bağlanmak için cihazları bir araya getirin(tipik olarak arka arkaya)"</string>
     <string name="GPS_msg">GPS kapalı</string>
     <string name="message_enable_GPS">"GPS imi kullanmak için Ayarlar'dan GPS'i açın"</string>
     <string name="cancel">İptal</string>
@@ -191,15 +191,15 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="Title_ChangeMemoryInUseDailog">Varsayılan kayıt yeri hafıza kartı olarak değiştirilsin mi?</string>
     <string name="Title_InsertMemoryCardDailog">Kamera kullanmak için hafıza kartı takın</string>
     <string name="OnScreen_HelpTextTouchAF">Dokunulan alana odaklanmak için ekrana basın</string>
-    <string name="media_scanner_running">Ortam tarayıcı çalışıyor...</string>
+    <string name="media_scanner_running">Ortam tarayıcı çalışıyor…</string>
     <string name="close_camera_when_mmc_inserted">SD kart takılı. SD karttaki ortam dosyalarını taramak için %s kapatıldı</string>
     <string name="close_camera_when_media_mounted">Ortam dosyalarının taranması için fotoğraf makinesi kapatıldı</string>
     <string name="close_camera_for_unmounted_memory">Kamera kullanmadan önce USB belleği kapat</string>
     <string name="message_size_limited">Mesaj boyut sınırına ulaşıldı</string>
     <string name="crop_save_text">Kaydet</string>
-    <string name="crop_discard_text">Vazgeç</string>
+    <string name="crop_discard_text">İptal</string>
     <string name="crop_gallery_text">Galeri</string>
-    <string name="wallpaper">Duvar kağıdı ayarlanıyor. Lütfen bekleyin...</string>
+    <string name="wallpaper">Duvar kağıdı ayarlanıyor. Lütfen bekleyin…</string>
     <string name="crop_label">Resmi kırp</string>
     <string name="low_database_storage_view_text">Veritabanı saklama alanı neredeyse dolu</string>
     <string name="camera_security_enter">Güvenlik ilkesi Kamera kullanımını kısıtlıyor</string>
@@ -252,21 +252,25 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="editable_shortcut_helptext_title">İpuçları</string>
     <string name="editable_shortcut_helptext_message">Düzenlemek için kısayolları basın ve basılı tutun</string>
     <string name="editable_shortcut_helptext">Simgeye dokunun ve basılı tutun, ardından kısayolun konumunu düzenlemek için sürükleyin</string>
+    <string name="singleshotburst_capture_helptext">Çoklu çekim yapmak için kamera düğmesine dokunun ve basılı tutun</string>
+    <string name="singleshotburst_storage_helptext">Çoklu çekim resimleri iyi kalitede kaydedildi</string>
     <string name="sbeam_helptext">Fotoğraflar çekin ve diğer cihazlarla paylaşın. S Beam üzerinden paylaşmak istediğiniz cihazları eklemek için cihazları bir araya getirin</string>
     <string name="storage_setting_dialog_title">Saklama yeri</string>
     <string name="storage_setting_dialog_message">SD kart takıldı. Kayıt yeri SD kart olarak değiştirilsin mi?</string>
+    <string name="storage_setting_dialog_burstshot_message">Tek çekimler SD karta kaydedilecek. Çoklu çekim cihaz belleğine kaydedilecek</string>
     <string name="do_not_ask_again">Bir daha gösterme</string>
     <string name="shutter">Shutter</string>
     <string name="record">Kayıt</string>
     <string name="bestpic">En iyi fotoğraf</string>
     <string name="bestpic_on">Açık</string>
     <string name="bestpic_off">Kapalı</string>
-    <string name="bestgroup">En iyi grup pozu</string>
-    <string name="bestgroup_title">Kaydetmek için en iyi yüzü seç</string>
+    <string name="bestgroup">En İyi Yüz</string>
+    <string name="bestgroup_title">Kaydetmek için en İyi Yüzü seç</string>
     <string name="battery_low">Kamerayı kapatın. Pil sıcaklığı çok düşük</string>
     <string name="buddy_photo_share_helptext">Yüz algılama ile fotoğraf çekin ve arkadaşlarınızla paylaşın</string>
     <string name="face_zoom_helptext">Büyütmek veya küçültmek için, bir yüze iki kez dokunun</string>
     <string name="burst_shot_guidetext">Patlama çekimleri cihaz belleğine kaydedilecektir</string>
+    <string name="best_photo_guidetext">En iyi fotoğraflar cihaz belleğine kaydedilecektir</string>
     <string name="snap_shot_limitation_dialog">Titreşim önleme devredeyken kayıt anlık görüntü yakalama işlevi kullanılamaz</string>
     <string name="on_device_help_focus">Kamera odağını seçmek için dokunun</string>
     <string name="on_device_help_camcorder">Kamera moduna geçin</string>

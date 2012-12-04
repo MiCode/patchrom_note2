@@ -94,7 +94,7 @@
     .line 42
     new-array v0, v6, [I
 
-    const v1, 0x7f0600cb
+    const v1, 0x7f0600db
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -104,7 +104,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0600cc
+    const v1, 0x7f0600dc
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -114,7 +114,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0600cd
+    const v1, 0x7f0600dd
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -124,7 +124,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0600ce
+    const v1, 0x7f0600de
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     .line 46
     new-array v0, v6, [I
 
-    const v1, 0x7f0600cf
+    const v1, 0x7f0600df
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -149,7 +149,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0600d0
+    const v1, 0x7f0600e0
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -159,7 +159,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0600d1
+    const v1, 0x7f0600e1
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -169,7 +169,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0600d2
+    const v1, 0x7f0600e2
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -182,7 +182,7 @@
     sput-object v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_CAPTURE_PROGRESSBAR_Y:[I
 
     .line 50
-    const v0, 0x7f0600d3
+    const v0, 0x7f0600e3
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -193,7 +193,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_CAPTURE_PROGRESSBAR_WIDTH:I
 
     .line 51
-    const v0, 0x7f0600d4
+    const v0, 0x7f0600e4
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -204,7 +204,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_CAPTURE_PROGRESSBAR_HEIGHT:I
 
     .line 52
-    const v0, 0x7f0600d5
+    const v0, 0x7f0600e5
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -217,7 +217,7 @@
     .line 53
     new-array v0, v4, [F
 
-    const v1, 0x7f0600d6
+    const v1, 0x7f0600e6
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -225,7 +225,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0600d7
+    const v1, 0x7f0600e7
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -238,7 +238,7 @@
     .line 55
     new-array v0, v6, [I
 
-    const v1, 0x7f0600d8
+    const v1, 0x7f0600e8
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -248,7 +248,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0600d9
+    const v1, 0x7f0600e9
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -258,7 +258,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0600da
+    const v1, 0x7f0600ea
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -268,7 +268,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0600db
+    const v1, 0x7f0600eb
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -283,7 +283,7 @@
     .line 59
     new-array v0, v6, [I
 
-    const v1, 0x7f0600d8
+    const v1, 0x7f0600e8
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -293,7 +293,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0600d9
+    const v1, 0x7f0600e9
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -303,7 +303,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0600da
+    const v1, 0x7f0600ea
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -313,7 +313,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0600db
+    const v1, 0x7f0600eb
 
     invoke-static {v1}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -326,7 +326,7 @@
     sput-object v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_HELP_TEXT_Y:[I
 
     .line 63
-    const v0, 0x7f0600e0
+    const v0, 0x7f0600f0
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -337,7 +337,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_HELP_TEXT_WIDTH:I
 
     .line 64
-    const v0, 0x7f0600e1
+    const v0, 0x7f0600f1
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -359,7 +359,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_HELP_TEXT_SIZE:F
 
     .line 66
-    const v0, 0x7f0600e2
+    const v0, 0x7f0600f2
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -370,7 +370,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_RECT_POS_X:I
 
     .line 67
-    const v0, 0x7f0600e3
+    const v0, 0x7f0600f3
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -381,7 +381,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_RECT_POS_Y:I
 
     .line 68
-    const v0, 0x7f0600e4
+    const v0, 0x7f0600f4
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -392,7 +392,7 @@
     sput v0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_RECT_WIDTH:I
 
     .line 69
-    const v0, 0x7f0600e5
+    const v0, 0x7f0600f5
 
     invoke-static {v0}, Lcom/sec/android/glview/TwGLContext;->getDimension(I)F
 
@@ -476,9 +476,9 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02029a
+    const v6, 0x7f0202a0
 
-    const v7, 0x7f020299
+    const v7, 0x7f02029f
 
     sget v8, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->ACTIONSHOT_CAPTURE_PROGRESSBAR_ALPHA:I
 

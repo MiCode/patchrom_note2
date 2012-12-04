@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 242
+    .line 257
     iput-object p1, p0, Lcom/sec/android/app/camera/Camcorder$1;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,7 +39,7 @@
     .parameter "msg"
 
     .prologue
-    .line 244
+    .line 259
     iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$1;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
     #getter for: Lcom/sec/android/app/camera/Camcorder;->mIsDestroying:Z
@@ -51,11 +51,11 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 253
+    .line 268
     :goto_0
     return-void
 
-    .line 246
+    .line 261
     :cond_0
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -63,7 +63,7 @@
 
     goto :goto_0
 
-    .line 248
+    .line 263
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camcorder$1;->this$0:Lcom/sec/android/app/camera/Camcorder;
 
@@ -72,7 +72,7 @@
 
     goto :goto_0
 
-    .line 246
+    .line 261
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

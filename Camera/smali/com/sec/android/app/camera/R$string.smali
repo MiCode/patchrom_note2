@@ -35,21 +35,21 @@
 
 .field public static final Dialog_Yes:I = 0x7f0900cd
 
-.field public static final ER_EFFECT_BIG_EYES:I = 0x7f09015c
+.field public static final ER_EFFECT_BIG_EYES:I = 0x7f09015d
 
-.field public static final ER_EFFECT_BIG_MOUTH:I = 0x7f09015e
+.field public static final ER_EFFECT_BIG_MOUTH:I = 0x7f09015f
 
-.field public static final ER_EFFECT_BIG_NOSE:I = 0x7f09015d
+.field public static final ER_EFFECT_BIG_NOSE:I = 0x7f09015e
 
-.field public static final ER_EFFECT_NOEFFECT:I = 0x7f09015a
+.field public static final ER_EFFECT_NOEFFECT:I = 0x7f09015b
 
-.field public static final ER_EFFECT_NONE:I = 0x7f090159
+.field public static final ER_EFFECT_NONE:I = 0x7f09015a
 
-.field public static final ER_EFFECT_SMALL_EYES:I = 0x7f09015f
+.field public static final ER_EFFECT_SMALL_EYES:I = 0x7f090160
 
-.field public static final ER_EFFECT_SMALL_MOUTH:I = 0x7f090160
+.field public static final ER_EFFECT_SMALL_MOUTH:I = 0x7f090161
 
-.field public static final ER_EFFECT_SQUEEZE:I = 0x7f09015b
+.field public static final ER_EFFECT_SQUEEZE:I = 0x7f09015c
 
 .field public static final EXPOSURE_METER:I = 0x7f09009c
 
@@ -101,9 +101,9 @@
 
 .field public static final HDR_Helptext:I = 0x7f0900d3
 
-.field public static final HDR_Normal:I = 0x7f090168
+.field public static final HDR_Normal:I = 0x7f090169
 
-.field public static final HDR_Strong:I = 0x7f090169
+.field public static final HDR_Strong:I = 0x7f09016a
 
 .field public static final ISO_100:I = 0x7f09003e
 
@@ -279,19 +279,19 @@
 
 .field public static final SM_VINTAGE:I = 0x7f090027
 
-.field public static final SPEED_2X_FASTER:I = 0x7f090143
+.field public static final SPEED_2X_FASTER:I = 0x7f090144
 
-.field public static final SPEED_2X_SLOWER:I = 0x7f090146
+.field public static final SPEED_2X_SLOWER:I = 0x7f090147
 
-.field public static final SPEED_4X_FASTER:I = 0x7f090144
+.field public static final SPEED_4X_FASTER:I = 0x7f090145
 
-.field public static final SPEED_4X_SLOWER:I = 0x7f090147
+.field public static final SPEED_4X_SLOWER:I = 0x7f090148
 
-.field public static final SPEED_8X_FASTER:I = 0x7f090145
+.field public static final SPEED_8X_FASTER:I = 0x7f090146
 
-.field public static final SPEED_8X_SLOWER:I = 0x7f090148
+.field public static final SPEED_8X_SLOWER:I = 0x7f090149
 
-.field public static final SPEED_OFF:I = 0x7f090142
+.field public static final SPEED_OFF:I = 0x7f090143
 
 .field public static final SS_SOUND1:I = 0x7f09007e
 
@@ -335,7 +335,7 @@
 
 .field public static final Title_DeviceList:I = 0x7f0900a7
 
-.field public static final Title_EffectRecorder:I = 0x7f090158
+.field public static final Title_EffectRecorder:I = 0x7f090159
 
 .field public static final Title_Effects:I = 0x7f0900a9
 
@@ -405,7 +405,7 @@
 
 .field public static final Title_VideoQuality:I = 0x7f0900bf
 
-.field public static final Title_VideoSpeed:I = 0x7f090141
+.field public static final Title_VideoSpeed:I = 0x7f090142
 
 .field public static final Title_Voice_Capture:I = 0x7f0900cc
 
@@ -443,27 +443,27 @@
 
 .field public static final app_name:I = 0x7f0900dc
 
-.field public static final battery_low:I = 0x7f090136
+.field public static final battery_low:I = 0x7f090137
 
 .field public static final battery_overheat:I = 0x7f09000d
 
-.field public static final best_photo_guidetext:I = 0x7f09013a
+.field public static final best_photo_guidetext:I = 0x7f09013b
 
-.field public static final bestgroup:I = 0x7f090134
+.field public static final bestgroup:I = 0x7f090135
 
-.field public static final bestgroup_title:I = 0x7f090135
+.field public static final bestgroup_title:I = 0x7f090136
 
-.field public static final bestpic:I = 0x7f090131
+.field public static final bestpic:I = 0x7f090132
 
-.field public static final bestpic_off:I = 0x7f090133
+.field public static final bestpic_off:I = 0x7f090134
 
-.field public static final bestpic_on:I = 0x7f090132
+.field public static final bestpic_on:I = 0x7f090133
 
-.field public static final buddy_photo_share_helptext:I = 0x7f090137
+.field public static final buddy_photo_share_helptext:I = 0x7f090138
 
 .field public static final buffer_overflow_error_msg:I = 0x7f090012
 
-.field public static final burst_shot_guidetext:I = 0x7f090139
+.field public static final burst_shot_guidetext:I = 0x7f09013a
 
 .field public static final camcorder_label:I = 0x7f090002
 
@@ -507,7 +507,7 @@
 
 .field public static final context_menu_edit:I = 0x7f0900f2
 
-.field public static final contextual_filename:I = 0x7f090163
+.field public static final contextual_filename:I = 0x7f090164
 
 .field public static final crop_discard_text:I = 0x7f0900e8
 
@@ -523,7 +523,7 @@
 
 .field public static final deviceType:I = 0x7f09011e
 
-.field public static final do_not_ask_again:I = 0x7f09012e
+.field public static final do_not_ask_again:I = 0x7f09012f
 
 .field public static final done:I = 0x7f090104
 
@@ -535,7 +535,7 @@
 
 .field public static final editable_shortcut_reset:I = 0x7f090125
 
-.field public static final enable_gps_dialog:I = 0x7f090164
+.field public static final enable_gps_dialog:I = 0x7f090165
 
 .field public static final ev_0:I = 0x7f0900f7
 
@@ -555,15 +555,15 @@
 
 .field public static final ev_plus_2_0:I = 0x7f0900f3
 
-.field public static final face_touched:I = 0x7f090166
+.field public static final face_touched:I = 0x7f090167
 
-.field public static final face_zoom_helptext:I = 0x7f090138
+.field public static final face_zoom_helptext:I = 0x7f090139
 
-.field public static final faces_detected:I = 0x7f090165
+.field public static final faces_detected:I = 0x7f090166
 
 .field public static final gallery:I = 0x7f090110
 
-.field public static final gallery_disable:I = 0x7f090167
+.field public static final gallery_disable:I = 0x7f090168
 
 .field public static final help_text_panorama:I = 0x7f0900d4
 
@@ -609,15 +609,15 @@
 
 .field public static final null_string:I = 0x7f090000
 
-.field public static final on_device_help_camcorder:I = 0x7f09013d
+.field public static final on_device_help_camcorder:I = 0x7f09013e
 
-.field public static final on_device_help_editable:I = 0x7f09013f
+.field public static final on_device_help_editable:I = 0x7f090140
 
-.field public static final on_device_help_focus:I = 0x7f09013c
+.field public static final on_device_help_focus:I = 0x7f09013d
 
-.field public static final on_device_help_self:I = 0x7f09013e
+.field public static final on_device_help_self:I = 0x7f09013f
 
-.field public static final on_device_help_voicecommand:I = 0x7f090140
+.field public static final on_device_help_voicecommand:I = 0x7f090141
 
 .field public static final open_hw_failed_msg:I = 0x7f09000f
 
@@ -633,47 +633,47 @@
 
 .field public static final profile_user_default_name:I = 0x7f090122
 
-.field public static final record:I = 0x7f090130
+.field public static final record:I = 0x7f090131
 
 .field public static final recording_failed_msg:I = 0x7f090011
 
-.field public static final recording_speed_1:I = 0x7f09014d
+.field public static final recording_speed_1:I = 0x7f09014e
 
-.field public static final recording_speed_1_2:I = 0x7f09014e
+.field public static final recording_speed_1_2:I = 0x7f09014f
 
-.field public static final recording_speed_1_4:I = 0x7f09014f
+.field public static final recording_speed_1_4:I = 0x7f090150
 
-.field public static final recording_speed_1_8:I = 0x7f090150
+.field public static final recording_speed_1_8:I = 0x7f090151
 
-.field public static final recording_speed_2:I = 0x7f09014a
+.field public static final recording_speed_2:I = 0x7f09014b
 
-.field public static final recording_speed_4:I = 0x7f09014b
+.field public static final recording_speed_4:I = 0x7f09014c
 
-.field public static final recording_speed_8:I = 0x7f09014c
+.field public static final recording_speed_8:I = 0x7f09014d
 
-.field public static final recording_timelapse_1:I = 0x7f090151
+.field public static final recording_timelapse_1:I = 0x7f090152
 
-.field public static final recording_timelapse_10:I = 0x7f090157
+.field public static final recording_timelapse_10:I = 0x7f090158
 
-.field public static final recording_timelapse_1_5:I = 0x7f090152
+.field public static final recording_timelapse_1_5:I = 0x7f090153
 
-.field public static final recording_timelapse_2:I = 0x7f090153
+.field public static final recording_timelapse_2:I = 0x7f090154
 
-.field public static final recording_timelapse_2_5:I = 0x7f090154
+.field public static final recording_timelapse_2_5:I = 0x7f090155
 
-.field public static final recording_timelapse_3:I = 0x7f090155
+.field public static final recording_timelapse_3:I = 0x7f090156
 
-.field public static final recording_timelapse_5:I = 0x7f090156
+.field public static final recording_timelapse_5:I = 0x7f090157
 
-.field public static final recording_timelapse_seconds:I = 0x7f090149
+.field public static final recording_timelapse_seconds:I = 0x7f09014a
 
 .field public static final savingImage:I = 0x7f09000e
 
-.field public static final sbeam_helptext:I = 0x7f09012a
+.field public static final sbeam_helptext:I = 0x7f09012b
 
-.field public static final self_recording_open_warning_popup:I = 0x7f090162
+.field public static final self_recording_open_warning_popup:I = 0x7f090163
 
-.field public static final self_shot_open_warning_popup:I = 0x7f090161
+.field public static final self_shot_open_warning_popup:I = 0x7f090162
 
 .field public static final sendImage:I = 0x7f09011a
 
@@ -689,19 +689,21 @@
 
 .field public static final sharing_devices:I = 0x7f09010e
 
-.field public static final shutter:I = 0x7f09012f
+.field public static final shutter:I = 0x7f090130
 
-.field public static final singleshotburst_helptext:I = 0x7f090129
+.field public static final singleshotburst_capture_helptext:I = 0x7f090129
 
-.field public static final snap_shot_limitation_dialog:I = 0x7f09013b
+.field public static final singleshotburst_storage_helptext:I = 0x7f09012a
+
+.field public static final snap_shot_limitation_dialog:I = 0x7f09013c
 
 .field public static final snapshot_saved:I = 0x7f090124
 
-.field public static final storage_setting_dialog_burstshot_message:I = 0x7f09012d
+.field public static final storage_setting_dialog_burstshot_message:I = 0x7f09012e
 
-.field public static final storage_setting_dialog_message:I = 0x7f09012c
+.field public static final storage_setting_dialog_message:I = 0x7f09012d
 
-.field public static final storage_setting_dialog_title:I = 0x7f09012b
+.field public static final storage_setting_dialog_title:I = 0x7f09012c
 
 .field public static final tabletType:I = 0x7f090120
 
@@ -745,7 +747,7 @@
     .locals 0
 
     .prologue
-    .line 2558
+    .line 2568
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

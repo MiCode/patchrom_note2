@@ -374,7 +374,7 @@
     .parameter "gl"
 
     .prologue
-    .line 370
+    .line 381
     monitor-enter p0
 
     :try_start_0
@@ -696,7 +696,7 @@
     .parameter "newHeight"
 
     .prologue
-    .line 382
+    .line 393
     monitor-enter p0
 
     int-to-float v2, p1
@@ -708,7 +708,7 @@
     :try_start_0
     iput v2, p0, Lcom/sec/android/glview/TwGLTexture;->mTexCoordWidth:F
 
-    .line 383
+    .line 394
     int-to-float v2, p2
 
     int-to-float v3, p4
@@ -717,10 +717,10 @@
 
     iput v2, p0, Lcom/sec/android/glview/TwGLTexture;->mTexCoordHeight:F
 
-    .line 385
+    .line 396
     const/4 v0, 0x0
 
-    .line 386
+    .line 397
     .local v0, offset:I
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
@@ -732,7 +732,7 @@
 
     aput v3, v2, v0
 
-    .line 387
+    .line 398
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v0, v1, 0x1
@@ -743,7 +743,7 @@
 
     aput v3, v2, v1
 
-    .line 388
+    .line 399
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v1, v0, 0x1
@@ -754,7 +754,7 @@
 
     aput v3, v2, v0
 
-    .line 389
+    .line 400
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v0, v1, 0x1
@@ -765,7 +765,7 @@
 
     aput v3, v2, v1
 
-    .line 390
+    .line 401
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v1, v0, 0x1
@@ -776,7 +776,7 @@
 
     aput v3, v2, v0
 
-    .line 391
+    .line 402
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v0, v1, 0x1
@@ -787,7 +787,7 @@
 
     aput v3, v2, v1
 
-    .line 392
+    .line 403
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v1, v0, 0x1
@@ -798,14 +798,14 @@
 
     aput v3, v2, v0
 
-    .line 393
+    .line 404
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     iget v3, p0, Lcom/sec/android/glview/TwGLTexture;->mTexCoordHeight:F
 
     aput v3, v2, v1
 
-    .line 395
+    .line 406
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mTexCoordBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v2}, Ljava/nio/ByteBuffer;->asFloatBuffer()Ljava/nio/FloatBuffer;
@@ -822,10 +822,10 @@
 
     invoke-virtual {v2, v3}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 397
+    .line 408
     const/4 v0, 0x0
 
-    .line 398
+    .line 409
     .end local v1           #offset:I
     .restart local v0       #offset:I
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
@@ -838,7 +838,7 @@
 
     aput v3, v2, v0
 
-    .line 399
+    .line 410
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v0, v1, 0x1
@@ -849,7 +849,7 @@
 
     aput v3, v2, v1
 
-    .line 400
+    .line 411
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v1, v0, 0x1
@@ -860,7 +860,7 @@
 
     aput v3, v2, v0
 
-    .line 401
+    .line 412
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v0, v1, 0x1
@@ -871,7 +871,7 @@
 
     aput v3, v2, v1
 
-    .line 402
+    .line 413
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v1, v0, 0x1
@@ -882,7 +882,7 @@
 
     aput v3, v2, v0
 
-    .line 403
+    .line 414
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v0, v1, 0x1
@@ -893,7 +893,7 @@
 
     aput v3, v2, v1
 
-    .line 404
+    .line 415
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     add-int/lit8 v1, v0, 0x1
@@ -904,14 +904,14 @@
 
     aput v3, v2, v0
 
-    .line 405
+    .line 416
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mCoordBuffer:[F
 
     iget v3, p0, Lcom/sec/android/glview/TwGLTexture;->mTexCoordHeight:F
 
     aput v3, v2, v1
 
-    .line 407
+    .line 418
     iget-object v2, p0, Lcom/sec/android/glview/TwGLTexture;->mTexFlipCoordBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v2}, Ljava/nio/ByteBuffer;->asFloatBuffer()Ljava/nio/FloatBuffer;
@@ -930,12 +930,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 409
+    .line 420
     monitor-exit p0
 
     return-void
 
-    .line 382
+    .line 393
     .end local v1           #offset:I
     :catchall_0
     move-exception v2
@@ -1039,7 +1039,7 @@
     .parameter "gl"
 
     .prologue
-    .line 418
+    .line 429
     monitor-enter p0
 
     :try_start_0
@@ -1051,13 +1051,13 @@
 
     if-nez v2, :cond_0
 
-    .line 455
+    .line 466
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 421
+    .line 432
     :cond_0
     :try_start_1
     move-object/from16 v0, p0
@@ -1068,7 +1068,7 @@
 
     move-result v24
 
-    .line 422
+    .line 433
     .local v24, width:I
     move-object/from16 v0, p0
 
@@ -1078,19 +1078,19 @@
 
     move-result v15
 
-    .line 423
+    .line 434
     .local v15, height:I
     invoke-static/range {v24 .. v24}, Lcom/sec/android/glview/TwGLUtil;->nextPowerOf2(I)I
 
     move-result v6
 
-    .line 424
+    .line 435
     .local v6, newWidth:I
     invoke-static {v15}, Lcom/sec/android/glview/TwGLUtil;->nextPowerOf2(I)I
 
     move-result v7
 
-    .line 426
+    .line 437
     .local v7, newHeight:I
     move/from16 v0, v24
 
@@ -1098,7 +1098,7 @@
 
     if-ne v15, v7, :cond_2
 
-    .line 427
+    .line 438
     const/16 v2, 0xde1
 
     const/4 v3, 0x0
@@ -1111,7 +1111,7 @@
 
     invoke-static {v2, v3, v4, v8}, Landroid/opengl/GLUtils;->texImage2D(IILandroid/graphics/Bitmap;I)V
 
-    .line 449
+    .line 460
     :goto_1
     move-object/from16 v0, p0
 
@@ -1119,21 +1119,21 @@
 
     if-eqz v2, :cond_1
 
-    .line 450
+    .line 461
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 451
+    .line 462
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
-    .line 454
+    .line 465
     :cond_1
     move-object/from16 v0, p0
 
@@ -1145,7 +1145,7 @@
 
     goto :goto_0
 
-    .line 418
+    .line 429
     .end local v6           #newWidth:I
     .end local v7           #newHeight:I
     .end local v15           #height:I
@@ -1157,7 +1157,7 @@
 
     throw v2
 
-    .line 429
+    .line 440
     .restart local v6       #newWidth:I
     .restart local v7       #newHeight:I
     .restart local v15       #height:I
@@ -1172,7 +1172,7 @@
 
     move-result v5
 
-    .line 430
+    .line 441
     .local v5, format:I
     move-object/from16 v0, p0
 
@@ -1182,7 +1182,7 @@
 
     move-result v10
 
-    .line 432
+    .line 443
     .local v10, type:I
     const/16 v3, 0xde1
 
@@ -1198,7 +1198,7 @@
 
     invoke-interface/range {v2 .. v11}, Ljavax/microedition/khronos/opengles/GL11;->glTexImage2D(IIIIIIIILjava/nio/Buffer;)V
 
-    .line 434
+    .line 445
     invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
 
     move-result v2
@@ -1209,11 +1209,11 @@
 
     move-result-object v20
 
-    .line 435
+    .line 446
     .local v20, paddingBuffer:Ljava/nio/IntBuffer;
     if-eqz v20, :cond_3
 
-    .line 436
+    .line 447
     const/16 v12, 0xde1
 
     const/4 v13, 0x0
@@ -1232,7 +1232,7 @@
 
     invoke-interface/range {v11 .. v20}, Ljavax/microedition/khronos/opengles/GL11;->glTexSubImage2D(IIIIIIIILjava/nio/Buffer;)V
 
-    .line 437
+    .line 448
     const/16 v22, 0xde1
 
     const/16 v23, 0x0
@@ -1253,7 +1253,7 @@
 
     invoke-interface/range {v21 .. v30}, Ljavax/microedition/khronos/opengles/GL11;->glTexSubImage2D(IIIIIIIILjava/nio/Buffer;)V
 
-    .line 439
+    .line 450
     const/16 v26, 0xde1
 
     const/16 v27, 0x0
@@ -1281,7 +1281,7 @@
 
     invoke-interface/range {v25 .. v34}, Ljavax/microedition/khronos/opengles/GL11;->glTexSubImage2D(IIIIIIIILjava/nio/Buffer;)V
 
-    .line 440
+    .line 451
     const/16 v26, 0xde1
 
     const/16 v27, 0x0
@@ -1309,13 +1309,13 @@
 
     invoke-interface/range {v25 .. v34}, Ljavax/microedition/khronos/opengles/GL11;->glTexSubImage2D(IIIIIIIILjava/nio/Buffer;)V
 
-    .line 442
+    .line 453
     invoke-virtual/range {v20 .. v20}, Ljava/nio/IntBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 443
+    .line 454
     const/16 v20, 0x0
 
-    .line 446
+    .line 457
     :cond_3
     const/16 v25, 0xde1
 
@@ -1341,13 +1341,13 @@
 
     goto/16 :goto_1
 
-    .line 439
+    .line 450
     :cond_4
     add-int/lit8 v29, v7, -0x2
 
     goto :goto_2
 
-    .line 440
+    .line 451
     :cond_5
     add-int/lit8 v28, v6, -0x2
 
@@ -1370,7 +1370,7 @@
     .parameter "gl"
 
     .prologue
-    .line 461
+    .line 472
     monitor-enter p0
 
     :try_start_0
@@ -1384,34 +1384,34 @@
 
     if-nez v0, :cond_1
 
-    .line 508
+    .line 519
     :cond_0
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 464
+    .line 475
     :cond_1
     :try_start_1
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLView;->mLayoutUpdated:Z
 
     if-eqz v0, :cond_5
 
-    .line 465
+    .line 476
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->setVertices()V
 
-    .line 466
+    .line 477
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mVertexBuffer:Ljava/nio/FloatBuffer;
 
     if-eqz v0, :cond_2
 
-    .line 467
+    .line 478
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mVertexBuffer:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 469
+    .line 480
     :cond_2
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mVertices:[F
 
@@ -1421,7 +1421,7 @@
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mVertexBuffer:Ljava/nio/FloatBuffer;
 
-    .line 470
+    .line 481
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mVertexBuffer:Ljava/nio/FloatBuffer;
 
     if-eqz v0, :cond_0
@@ -1430,12 +1430,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 472
+    .line 483
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLView;->mLayoutUpdated:Z
 
-    .line 481
+    .line 492
     :cond_3
     :goto_1
     const/16 v0, 0xde1
@@ -1448,22 +1448,22 @@
 
     invoke-interface {p1, v0, v1}, Ljavax/microedition/khronos/opengles/GL11;->glBindTexture(II)V
 
-    .line 490
+    .line 501
     const v0, 0x8074
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL11;->glEnableClientState(I)V
 
-    .line 491
+    .line 502
     const v0, 0x8078
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL11;->glEnableClientState(I)V
 
-    .line 493
+    .line 504
     const/16 v0, 0x900
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL11;->glFrontFace(I)V
 
-    .line 494
+    .line 505
     const/4 v0, 0x3
 
     const/16 v1, 0x1406
@@ -1474,14 +1474,14 @@
 
     invoke-interface {p1, v0, v1, v2, v3}, Ljavax/microedition/khronos/opengles/GL11;->glVertexPointer(IIILjava/nio/Buffer;)V
 
-    .line 496
+    .line 507
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mFlip:Z
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_7
 
-    .line 497
+    .line 508
     const/4 v0, 0x2
 
     const/16 v1, 0x1406
@@ -1492,21 +1492,21 @@
 
     invoke-interface {p1, v0, v1, v2, v3}, Ljavax/microedition/khronos/opengles/GL11;->glTexCoordPointer(IIILjava/nio/Buffer;)V
 
-    .line 501
+    .line 512
     :goto_2
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureReloaded:Z
 
     if-eqz v0, :cond_4
 
-    .line 502
+    .line 513
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLTexture;->loadGLTexture(Ljavax/microedition/khronos/opengles/GL11;)V
 
-    .line 503
+    .line 514
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureReloaded:Z
 
-    .line 505
+    .line 516
     :cond_4
     const/4 v0, 0x4
 
@@ -1520,12 +1520,12 @@
 
     invoke-interface {p1, v0, v1, v2, v3}, Ljavax/microedition/khronos/opengles/GL11;->glDrawElements(IIILjava/nio/Buffer;)V
 
-    .line 506
+    .line 517
     const v0, 0x8074
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL11;->glDisableClientState(I)V
 
-    .line 507
+    .line 518
     const v0, 0x8078
 
     invoke-interface {p1, v0}, Ljavax/microedition/khronos/opengles/GL11;->glDisableClientState(I)V
@@ -1534,7 +1534,7 @@
 
     goto :goto_0
 
-    .line 461
+    .line 472
     :catchall_0
     move-exception v0
 
@@ -1542,7 +1542,7 @@
 
     throw v0
 
-    .line 474
+    .line 485
     :cond_5
     :try_start_2
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mVertexBuffer:Ljava/nio/FloatBuffer;
@@ -1561,7 +1561,7 @@
 
     if-nez v0, :cond_3
 
-    .line 475
+    .line 486
     :cond_6
     const-string v0, "TwGLTexture"
 
@@ -1569,15 +1569,15 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 476
+    .line 487
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->setVertices()V
 
-    .line 477
+    .line 488
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->initBuffers()V
 
     goto :goto_1
 
-    .line 499
+    .line 510
     :cond_7
     const/4 v0, 0x2
 
@@ -1611,13 +1611,13 @@
 .end method
 
 .method protected declared-synchronized onLoad(Ljavax/microedition/khronos/opengles/GL11;)Z
-    .locals 8
+    .locals 10
     .parameter "gl"
 
     .prologue
-    const/4 v5, 0x0
+    const/4 v7, 0x0
 
-    const/4 v4, 0x1
+    const/4 v6, 0x1
 
     .line 257
     monitor-enter p0
@@ -1626,66 +1626,66 @@
     iput-object p1, p0, Lcom/sec/android/glview/TwGLTexture;->mGL:Ljavax/microedition/khronos/opengles/GL11;
 
     .line 259
-    iget-boolean v6, p0, Lcom/sec/android/glview/TwGLView;->mAsyncLoad:Z
+    iget-boolean v8, p0, Lcom/sec/android/glview/TwGLView;->mAsyncLoad:Z
 
-    if-eqz v6, :cond_2
+    if-eqz v8, :cond_2
 
     .line 260
-    iget-boolean v6, p0, Lcom/sec/android/glview/TwGLTexture;->mAsyncLodingInProgress:Z
+    iget-boolean v8, p0, Lcom/sec/android/glview/TwGLTexture;->mAsyncLodingInProgress:Z
 
-    if-nez v6, :cond_0
+    if-nez v8, :cond_0
 
     .line 261
-    new-instance v2, Ljava/lang/Thread;
+    new-instance v4, Ljava/lang/Thread;
 
-    new-instance v6, Lcom/sec/android/glview/TwGLTexture$1;
+    new-instance v8, Lcom/sec/android/glview/TwGLTexture$1;
 
-    invoke-direct {v6, p0}, Lcom/sec/android/glview/TwGLTexture$1;-><init>(Lcom/sec/android/glview/TwGLTexture;)V
+    invoke-direct {v8, p0}, Lcom/sec/android/glview/TwGLTexture$1;-><init>(Lcom/sec/android/glview/TwGLTexture;)V
 
-    invoke-direct {v2, v6}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v4, v8}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
     .line 300
-    .local v2, t:Ljava/lang/Thread;
-    invoke-virtual {v2}, Ljava/lang/Thread;->start()V
+    .local v4, t:Ljava/lang/Thread;
+    invoke-virtual {v4}, Ljava/lang/Thread;->start()V
 
     .line 301
-    iget-boolean v6, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
+    iget-boolean v8, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
 
-    if-eqz v6, :cond_1
+    if-eqz v8, :cond_1
 
-    iget-boolean v6, p0, Lcom/sec/android/glview/TwGLTexture;->mAsyncLodingInProgress:Z
+    iget-boolean v8, p0, Lcom/sec/android/glview/TwGLTexture;->mAsyncLodingInProgress:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-eqz v6, :cond_1
+    if-eqz v8, :cond_1
 
-    .line 341
-    .end local v2           #t:Ljava/lang/Thread;
+    .line 352
+    .end local v4           #t:Ljava/lang/Thread;
     :cond_0
     :goto_0
     monitor-exit p0
 
-    return v4
+    return v6
 
-    .restart local v2       #t:Ljava/lang/Thread;
+    .restart local v4       #t:Ljava/lang/Thread;
     :cond_1
-    move v4, v5
+    move v6, v7
 
     .line 304
     goto :goto_0
 
     .line 308
-    .end local v2           #t:Ljava/lang/Thread;
+    .end local v4           #t:Ljava/lang/Thread;
     :cond_2
     :try_start_1
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->initSize()V
 
     .line 309
-    iget-object v6, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
+    iget-object v8, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
-    if-nez v6, :cond_3
+    if-nez v8, :cond_3
 
-    move v4, v5
+    move v6, v7
 
     .line 310
     goto :goto_0
@@ -1698,149 +1698,227 @@
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->initBuffers()V
 
     .line 314
-    iget-object v5, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
+    iget-object v7, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
-    invoke-virtual {v5}, Landroid/graphics/Bitmap;->getWidth()I
+    invoke-virtual {v7}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result v5
+
+    .line 315
+    .local v5, width:I
+    iget-object v7, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
+
+    invoke-virtual {v7}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v3
 
-    .line 315
-    .local v3, width:I
-    iget-object v5, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
-
-    invoke-virtual {v5}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v1
-
     .line 317
-    .local v1, height:I
-    const/4 v5, 0x4
+    .local v3, height:I
+    const/4 v7, 0x4
 
-    new-array v0, v5, [F
+    new-array v0, v7, [F
 
-    const/4 v5, 0x0
+    const/4 v7, 0x0
 
-    const/4 v6, 0x0
+    const/4 v8, 0x0
 
-    aput v6, v0, v5
+    aput v8, v0, v7
 
-    const/4 v5, 0x1
+    const/4 v7, 0x1
 
-    const/4 v6, 0x0
+    const/4 v8, 0x0
 
-    aput v6, v0, v5
+    aput v8, v0, v7
 
-    const/4 v5, 0x2
+    const/4 v7, 0x2
 
-    int-to-float v6, v3
+    int-to-float v8, v5
 
-    aput v6, v0, v5
+    aput v8, v0, v7
 
-    const/4 v5, 0x3
+    const/4 v7, 0x3
 
-    int-to-float v6, v1
+    int-to-float v8, v3
 
-    aput v6, v0, v5
+    aput v8, v0, v7
 
     .line 319
     .local v0, cropRect:[F
-    iget-object v5, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
+    iget-object v7, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
 
-    if-nez v5, :cond_4
+    if-nez v7, :cond_4
 
     .line 320
-    const/4 v5, 0x1
+    const/4 v7, 0x1
 
-    new-array v5, v5, [I
+    new-array v7, v7, [I
 
-    iput-object v5, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
+    iput-object v7, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
 
     .line 321
     :cond_4
-    const/4 v5, 0x1
+    const/4 v7, 0x1
 
-    iget-object v6, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
+    iget-object v8, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
-    invoke-interface {p1, v5, v6, v7}, Ljavax/microedition/khronos/opengles/GL11;->glGenTextures(I[II)V
+    invoke-interface {p1, v7, v8, v9}, Ljavax/microedition/khronos/opengles/GL11;->glGenTextures(I[II)V
 
-    .line 322
-    const/16 v5, 0xde1
+    .line 323
+    invoke-interface {p1}, Ljavax/microedition/khronos/opengles/GL11;->glGetError()I
 
-    iget-object v6, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
-
-    const/4 v7, 0x0
-
-    aget v6, v6, v7
-
-    invoke-interface {p1, v5, v6}, Ljavax/microedition/khronos/opengles/GL11;->glBindTexture(II)V
+    move-result v1
 
     .line 324
-    rem-int/lit8 v5, v3, 0x2
-
-    if-ne v5, v4, :cond_5
+    .local v1, error:I
+    if-eqz v1, :cond_5
 
     .line 325
-    const/16 v5, 0xcf5
+    const-string v7, "TwGLTexture"
 
-    const/4 v6, 0x2
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-interface {p1, v5, v6}, Ljavax/microedition/khronos/opengles/GL11;->glPixelStorei(II)V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 329
-    :goto_1
-    const/16 v5, 0xde1
+    const-string v9, "onLoad glGenTextures GL_ERROR NUM : "
 
-    const v6, 0x8b9d
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v7, 0x0
+    move-result-object v8
 
-    invoke-interface {p1, v5, v6, v0, v7}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterfv(II[FI)V
+    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    const-string v9, "  ex)GL_OUT_OF_MEMORY = 1285"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 328
+    :cond_5
+    const/16 v7, 0xde1
+
+    iget-object v8, p0, Lcom/sec/android/glview/TwGLTexture;->mTextures:[I
+
+    const/4 v9, 0x0
+
+    aget v8, v8, v9
+
+    invoke-interface {p1, v7, v8}, Ljavax/microedition/khronos/opengles/GL11;->glBindTexture(II)V
+
+    .line 330
+    invoke-interface {p1}, Ljavax/microedition/khronos/opengles/GL11;->glGetError()I
+
+    move-result v2
 
     .line 331
-    const/16 v5, 0xde1
-
-    const/16 v6, 0x2801
-
-    const v7, 0x46180400
-
-    invoke-interface {p1, v5, v6, v7}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+    .local v2, errorBind:I
+    if-eqz v2, :cond_6
 
     .line 332
-    const/16 v5, 0xde1
+    const-string v7, "TwGLTexture"
 
-    const/16 v6, 0x2800
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    const v7, 0x46180400
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-interface {p1, v5, v6, v7}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+    const-string v9, "onLoad glBindTexture GL_ERROR NUM : "
 
-    .line 334
-    const/16 v5, 0xde1
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v6, 0x2802
+    move-result-object v8
 
-    const v7, 0x46240400
+    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-interface {p1, v5, v6, v7}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+    move-result-object v8
+
+    const-string v9, "  ex)GL_OUT_OF_MEMORY = 1285"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 335
-    const/16 v5, 0xde1
+    :cond_6
+    rem-int/lit8 v7, v5, 0x2
 
-    const/16 v6, 0x2803
+    if-ne v7, v6, :cond_7
 
-    const v7, 0x46240400
+    .line 336
+    const/16 v7, 0xcf5
 
-    invoke-interface {p1, v5, v6, v7}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+    const/4 v8, 0x2
 
-    .line 337
+    invoke-interface {p1, v7, v8}, Ljavax/microedition/khronos/opengles/GL11;->glPixelStorei(II)V
+
+    .line 340
+    :goto_1
+    const/16 v7, 0xde1
+
+    const v8, 0x8b9d
+
+    const/4 v9, 0x0
+
+    invoke-interface {p1, v7, v8, v0, v9}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterfv(II[FI)V
+
+    .line 342
+    const/16 v7, 0xde1
+
+    const/16 v8, 0x2801
+
+    const v9, 0x46180400
+
+    invoke-interface {p1, v7, v8, v9}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+
+    .line 343
+    const/16 v7, 0xde1
+
+    const/16 v8, 0x2800
+
+    const v9, 0x46180400
+
+    invoke-interface {p1, v7, v8, v9}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+
+    .line 345
+    const/16 v7, 0xde1
+
+    const/16 v8, 0x2802
+
+    const v9, 0x46240400
+
+    invoke-interface {p1, v7, v8, v9}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+
+    .line 346
+    const/16 v7, 0xde1
+
+    const/16 v8, 0x2803
+
+    const v9, 0x46240400
+
+    invoke-interface {p1, v7, v8, v9}, Ljavax/microedition/khronos/opengles/GL11;->glTexParameterf(IIF)V
+
+    .line 348
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLTexture;->loadGLTexture(Ljavax/microedition/khronos/opengles/GL11;)V
 
-    .line 339
-    const/4 v5, 0x1
+    .line 350
+    const/4 v7, 0x1
 
-    iput-boolean v5, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
+    iput-boolean v7, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1848,26 +1926,30 @@
 
     .line 257
     .end local v0           #cropRect:[F
-    .end local v1           #height:I
-    .end local v3           #width:I
+    .end local v1           #error:I
+    .end local v2           #errorBind:I
+    .end local v3           #height:I
+    .end local v5           #width:I
     :catchall_0
-    move-exception v4
+    move-exception v6
 
     monitor-exit p0
 
-    throw v4
+    throw v6
 
-    .line 327
+    .line 338
     .restart local v0       #cropRect:[F
-    .restart local v1       #height:I
-    .restart local v3       #width:I
-    :cond_5
-    const/16 v5, 0xcf5
+    .restart local v1       #error:I
+    .restart local v2       #errorBind:I
+    .restart local v3       #height:I
+    .restart local v5       #width:I
+    :cond_7
+    const/16 v7, 0xcf5
 
-    const/4 v6, 0x4
+    const/4 v8, 0x4
 
     :try_start_2
-    invoke-interface {p1, v5, v6}, Ljavax/microedition/khronos/opengles/GL11;->glPixelStorei(II)V
+    invoke-interface {p1, v7, v8}, Ljavax/microedition/khronos/opengles/GL11;->glPixelStorei(II)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1878,28 +1960,28 @@
     .locals 1
 
     .prologue
-    .line 519
+    .line 530
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
 
-    .line 520
+    .line 531
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 521
+    .line 532
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
-    .line 524
+    .line 535
     :cond_0
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
 
-    .line 525
+    .line 536
     return-void
 .end method
 
@@ -1911,7 +1993,7 @@
 
     const/4 v1, 0x1
 
-    .line 345
+    .line 356
     monitor-enter p0
 
     :try_start_0
@@ -1921,35 +2003,35 @@
 
     if-nez v2, :cond_0
 
-    .line 362
+    .line 373
     :goto_0
     monitor-exit p0
 
     return v0
 
-    .line 348
+    .line 359
     :cond_0
     const/4 v0, 0x0
 
     :try_start_1
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
 
-    .line 350
+    .line 361
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_1
 
-    .line 351
+    .line 362
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 352
+    .line 363
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
-    .line 354
+    .line 365
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->loadBitmap()Landroid/graphics/Bitmap;
 
@@ -1957,23 +2039,23 @@
 
     iput-object v0, p0, Lcom/sec/android/glview/TwGLTexture;->mBitmap:Landroid/graphics/Bitmap;
 
-    .line 356
+    .line 367
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->setVertices()V
 
-    .line 357
+    .line 368
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->initBuffers()V
 
-    .line 359
+    .line 370
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureLoaded:Z
 
-    .line 360
+    .line 371
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/glview/TwGLTexture;->mTextureReloaded:Z
 
-    .line 361
+    .line 372
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLTexture;->getContext()Lcom/sec/android/glview/TwGLContext;
 
     move-result-object v0
@@ -1986,10 +2068,10 @@
 
     move v0, v1
 
-    .line 362
+    .line 373
     goto :goto_0
 
-    .line 345
+    .line 356
     :catchall_0
     move-exception v0
 

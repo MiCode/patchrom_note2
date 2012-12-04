@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2197
+    .line 2229
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$37;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "arg1"
 
     .prologue
-    .line 2199
+    .line 2231
     iget-object v1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$37;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$37;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -58,7 +58,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/AbstractCameraActivity;->mAudioManager:Landroid/media/AudioManager;
 
-    .line 2200
+    .line 2232
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$37;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mAudioManager:Landroid/media/AudioManager;
@@ -67,6 +67,6 @@
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
 
-    .line 2201
+    .line 2233
     return-void
 .end method

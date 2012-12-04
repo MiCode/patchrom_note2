@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Kamera</string>
     <string name="camcorder_label">Videokamera</string>
-    <string name="wait">Var god vänta</string>
+    <string name="wait">Var god vänta…</string>
     <string name="warning_msg">Varning</string>
     <string name="insert_mmc_msg">Sätt i minneskortet för att använda Kamera</string>
     <string name="not_enough_space">Minnet fullt</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">För lite minne. Standardlagringsplatsen ändras till telefonminnet</string>
     <string name="change_to_device_memory">För lite minne på SD-kortet. Standardlagringsplatsen har ändrats till enhetslagring</string>
     <string name="video_reach_size_limit">Högsta inspelningsstorlek har uppnåtts</string>
-    <string name="processing_msg">Bearbetar...</string>
+    <string name="processing_msg">Bearbetar…</string>
     <string name="panorama_processing_msg">Vänta medan panoramat skapas</string>
     <string name="battery_overheat">Avsluta kamera. För hög batteritemperatur</string>
-    <string name="savingImage">Sparar...</string>
+    <string name="savingImage">Sparar…</string>
     <string name="open_hw_failed_msg">Kameran fungerade inte</string>
     <string name="capture_failed_msg">Fotot misslyckades</string>
     <string name="recording_failed_msg">Inspelning misslyckades</string>
@@ -106,7 +106,7 @@ under samtal"</string>
     <string name="RM_EMAIL">Gräns för epost</string>
     <string name="RM_SLOW">Slowmotion</string>
     <string name="RM_FAST">Snabb rörelse</string>
-    <string name="CS_PROGRESS_TEXT">Skapar bild. Vänta...</string>
+    <string name="CS_PROGRESS_TEXT">Skapar bild. Vänta…</string>
     <string name="SCN_NONE">Ingen</string>
     <string name="SCN_PORTRAIT">Porträtt</string>
     <string name="SCN_LANDSCAPE">Landskap</string>
@@ -181,8 +181,8 @@ under samtal"</string>
     <string name="help_text_panorama_device">Tryck på kameraknappen och flytta enheten långsamt i en riktning</string>
     <string name="message_DefaultLayout">Layouten för genvägen kommer att återställas</string>
     <string name="message_EULA_GPS">Om du aktiverar GPS-tagg kommer geografiska platsdata att bifogas, bäddas in och sparas med varje foto. Var försiktig när du skickar, delar, distribuerar, överför eller kopierar dessa foton eftersom de innehåller information om var fotot togs</string>
-    <string name="message_Auto_ShareShot">"Med Bild för automatisk delning kan du enkelt ansluta till enheter som du vill använda för att dela bilder.
-Aktivera Bild för automatisk delning och placera enheterna bredvid varandra (normalt med baksidorna mot varandra) när du vill ansluta dem"</string>
+    <string name="message_Auto_ShareShot">"Med Dela bild automatiskt kan du ansluta till de enheter som du vill dela bilder med på ett enkelt sätt.
+Aktivera Dela bild automatiskt och för enheterna mot varandra (normalt med baksidorna mot varandra) när du vill ansluta dem"</string>
     <string name="GPS_msg">GPS av</string>
     <string name="message_enable_GPS">Slå på GPS i Inställningarna för att använda GPS-tagg</string>
     <string name="cancel">Avbryt</string>
@@ -192,15 +192,15 @@ Aktivera Bild för automatisk delning och placera enheterna bredvid varandra (no
     <string name="Title_ChangeMemoryInUseDailog">Ändra standardlagring till minneskort?</string>
     <string name="Title_InsertMemoryCardDailog">Sätt i minneskortet för att använda Kamera</string>
     <string name="OnScreen_HelpTextTouchAF">Tryck på skärmen för att fokusera på området</string>
-    <string name="media_scanner_running">Mediesökning körs...</string>
+    <string name="media_scanner_running">Mediesökning körs…</string>
     <string name="close_camera_when_mmc_inserted">SD-kort har satts i. %s stängs för att söka efter mediefiler på SD-kortet</string>
     <string name="close_camera_when_media_mounted">Kameran stängs av för att söka efter mediefiler</string>
     <string name="close_camera_for_unmounted_memory">Stäng av USB-minnet innan kameran används</string>
     <string name="message_size_limited">Storleksgränsen för meddelanden har uppnåtts</string>
     <string name="crop_save_text">Spara</string>
-    <string name="crop_discard_text">Ignorera</string>
+    <string name="crop_discard_text">Avbryt</string>
     <string name="crop_gallery_text">Galleri</string>
-    <string name="wallpaper">Anger bakgrund. Vänta...</string>
+    <string name="wallpaper">Anger bakgrund. Vänta…</string>
     <string name="crop_label">Beskär bilden</string>
     <string name="low_database_storage_view_text">Databasutrymmet är nästan fullt</string>
     <string name="camera_security_enter">Säkerhetspolicy begränsar användningen av kamera</string>
@@ -253,21 +253,25 @@ Aktivera Bild för automatisk delning och placera enheterna bredvid varandra (no
     <string name="editable_shortcut_helptext_title">Tips</string>
     <string name="editable_shortcut_helptext_message">Tryck på och håll ned genvägar för att redigera dem</string>
     <string name="editable_shortcut_helptext">Tryck på och håll ned ikonen och dra den sedan för att redigera genvägarnas positioner</string>
+    <string name="singleshotburst_capture_helptext">Tryck på kameraknappen och håll den nedtryckt för att ta bilder i en serie</string>
+    <string name="singleshotburst_storage_helptext">Serietagna bilder sparas med kvaliteten inställd på fin</string>
     <string name="sbeam_helptext">Ta och dela foton med andra enheter. För samman enheterna för att lägga till enheter som du vill dela med via S Beam</string>
     <string name="storage_setting_dialog_title">Lagringsplats</string>
     <string name="storage_setting_dialog_message">SD-kortet har satts i. Ändra lagringsplatsen till SD-kortet?</string>
+    <string name="storage_setting_dialog_burstshot_message">Enskilda bilder sparas på SD-kortet. Serietagna bilder sparas på enhetslagringen</string>
     <string name="do_not_ask_again">Visa inte igen</string>
     <string name="shutter">Slutare</string>
     <string name="record">Spela in</string>
     <string name="bestpic">Bästa foto</string>
     <string name="bestpic_on">På</string>
     <string name="bestpic_off">Av</string>
-    <string name="bestgroup">Bästa pose</string>
+    <string name="bestgroup">Bästa ansikten</string>
     <string name="bestgroup_title">Välj ansikten som ska sparas</string>
     <string name="battery_low">Stäng kamera. För låg batteritemperatur</string>
     <string name="buddy_photo_share_helptext">Ta och dela foton med kompisar via ansiktsigenkänning</string>
     <string name="face_zoom_helptext">Dubbeltryck på ett ansikte för att zooma in eller ut</string>
     <string name="burst_shot_guidetext">Serietagna bilder sparas på enhetslagringen</string>
+    <string name="best_photo_guidetext">De bästa fotona sparas på enhetslagringen</string>
     <string name="snap_shot_limitation_dialog">Det går inte att använda funktionen för inspelning av ögonblicksbilder när bildstabiliseringen är aktiverad</string>
     <string name="on_device_help_focus">Tryck för att ställa i kamerafokus</string>
     <string name="on_device_help_camcorder">Växla till videokameraläget</string>

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 293
+    .line 299
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 296
+    .line 302
     const-wide/16 v1, 0x190
 
     :try_start_0
@@ -49,7 +49,7 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 300
+    .line 306
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu;
 
@@ -58,14 +58,14 @@
     #setter for: Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu;->mIsBlockSlowButton:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu;->access$002(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderSlowControlMenu;Z)Z
 
-    .line 301
+    .line 307
     return-void
 
-    .line 297
+    .line 303
     :catch_0
     move-exception v0
 
-    .line 298
+    .line 304
     .local v0, e:Ljava/lang/InterruptedException;
     invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
 

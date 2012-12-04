@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2338
+    .line 2377
     iput-object p1, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$44;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2340
+    .line 2379
     iget-object v2, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$44;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$44;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
@@ -60,14 +60,14 @@
 
     iput-object v0, v2, Lcom/sec/android/app/camera/AbstractCameraActivity;->mAudioManager:Landroid/media/AudioManager;
 
-    .line 2341
+    .line 2380
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$44;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/AbstractCameraActivity;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
 
-    .line 2342
+    .line 2381
     iget-object v0, p0, Lcom/sec/android/app/camera/AbstractCameraActivity$44;->this$0:Lcom/sec/android/app/camera/AbstractCameraActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/AbstractCameraActivity;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
@@ -81,12 +81,12 @@
     :goto_0
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/CameraSettings;->setSbeamHelpTextDialog(I)V
 
-    .line 2343
+    .line 2382
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 2342
+    .line 2381
     goto :goto_0
 .end method

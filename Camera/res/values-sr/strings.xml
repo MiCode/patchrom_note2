@@ -2,7 +2,7 @@
 <resources>
     <string name="camera_label">Kamera</string>
     <string name="camcorder_label">Kamkorder</string>
-    <string name="wait">Sačekaj...</string>
+    <string name="wait">Sačekaj…</string>
     <string name="warning_msg">Upozorenje</string>
     <string name="insert_mmc_msg">Ubaci memorijsku karticu radi korišćenja kamere</string>
     <string name="not_enough_space">Nedovoljna memorija</string>
@@ -10,10 +10,10 @@
     <string name="change_to_phone_memory">Nedovoljno memorije. Podrazumevana skladišna lokacija je sada u memoriji telefona</string>
     <string name="change_to_device_memory">Nema dovoljno prostora na SD kartici. Podrazumevana skladišna lokacija je sada u uređaju</string>
     <string name="video_reach_size_limit">Dostignuta maksimalna veličina snimka</string>
-    <string name="processing_msg">Obrada...</string>
+    <string name="processing_msg">Obrada…</string>
     <string name="panorama_processing_msg">Sačekaj dok se kreira panoramski snimak</string>
     <string name="battery_overheat">Isključi kameru. Temperatura baterije previsoka</string>
-    <string name="savingImage">Memorisanje...</string>
+    <string name="savingImage">Memorisanje…</string>
     <string name="open_hw_failed_msg">Kamera neuspešna</string>
     <string name="capture_failed_msg">Snimanje neuspešno</string>
     <string name="recording_failed_msg">Snimanje neuspešno</string>
@@ -104,7 +104,7 @@
     <string name="RM_EMAIL">Granična veličina za e-poruke</string>
     <string name="RM_SLOW">Usporeni prikaz</string>
     <string name="RM_FAST">Brzo kretanje</string>
-    <string name="CS_PROGRESS_TEXT">Kreiranje slike. Sačekaj...</string>
+    <string name="CS_PROGRESS_TEXT">Kreiranje slike. Sačekaj…</string>
     <string name="SCN_NONE">Nema</string>
     <string name="SCN_PORTRAIT">Uspravno</string>
     <string name="SCN_LANDSCAPE">Pejzaž</string>
@@ -113,7 +113,7 @@
     <string name="SCN_BEACH_SNOW">Plaža/Sneg</string>
     <string name="SCN_SUNSET">Zalazak sunca</string>
     <string name="SCN_DAWN_DUSK">Zora</string>
-    <string name="SCN_FALL_COLOR">Boja jeseni</string>
+    <string name="SCN_FALL_COLOR">Jesenja boja</string>
     <string name="SCN_NIGHT_SHOT">Noć</string>
     <string name="SCN_FIREWORK">Vatromet</string>
     <string name="SCN_TEXT">Tekst</string>
@@ -158,7 +158,7 @@
     <string name="Title_Guideline">Smernice</string>
     <string name="Title_VideoQuality">Kvalitet video zapisa</string>
     <string name="Title_AudioRecording">Snimanje zv.</string>
-    <string name="Title_Storage">Memorija</string>
+    <string name="Title_Storage">Čuvanje</string>
     <string name="Title_Reset">Resetuj</string>
     <string name="Title_Mode">Režim rada</string>
     <string name="Title_Back">Nazad</string>
@@ -179,8 +179,8 @@
     <string name="help_text_panorama_device">Pritisni taster kamere i polako pomeraj uređaj u jednom pravcu</string>
     <string name="message_DefaultLayout">Izgled prečica će biti resetovan</string>
     <string name="message_EULA_GPS">Omogućavanje GPS oznake će priložiti, ugraditi i sačuvati podatke o geografskoj lokaciji na kojoj je snimljena svaka fotografija. Budi obazriv(a) tokom slanja, deljenja, distribucije, prenosa ili kopiranja ovih fotografija budući da sadrže informacije o lokaciji gde su snimljene</string>
-    <string name="message_Auto_ShareShot">"Auto share shot enables you to easily connect to the devices you want to share pictures with.
-Enable auto share shot, then bring the devices together (typically back to back) to connect them"</string>
+    <string name="message_Auto_ShareShot">"Opcija Automatski deli snimak omogućava ti da se na jednostavan način povežeš sa uređajima sa kojima želiš da podeliš slike.
+Omogući automatsko deljenje snimka, a zatim stavi uređaje jedan do drugog (obično leđa u leđa) da bi se povezali"</string>
     <string name="GPS_msg">GPS isključen</string>
     <string name="message_enable_GPS">Za korišćenje GPS oznaka uključi GPS u Podešavanjima</string>
     <string name="cancel">Poništi</string>
@@ -190,15 +190,15 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="Title_ChangeMemoryInUseDailog">Promeni podrazumevanu skladišnu lokaciju na memorijsku karticu?</string>
     <string name="Title_InsertMemoryCardDailog">Ubaci memorijsku karticu radi korišćenja kamere</string>
     <string name="OnScreen_HelpTextTouchAF">Kucni ekran za fokus na izabrano područje</string>
-    <string name="media_scanner_running">Skeniranje medija u toku...</string>
+    <string name="media_scanner_running">Skeniranje medija u toku…</string>
     <string name="close_camera_when_mmc_inserted">SD kartica ubačena. %s se isključuje radi skeniranja medijskih fajlova na SD kartici</string>
     <string name="close_camera_when_media_mounted">Kamera je isključena zbog pretrage medijskih fajlova</string>
     <string name="close_camera_for_unmounted_memory">Isključi USB memoriju pre upotrebe kamere</string>
     <string name="message_size_limited">Dostignuto ograničenje veličine poruka</string>
     <string name="crop_save_text">Sačuvaj</string>
-    <string name="crop_discard_text">Odbaci</string>
+    <string name="crop_discard_text">Poništi</string>
     <string name="crop_gallery_text">Galerija</string>
-    <string name="wallpaper">Podešavanje tapeta. Sačekajte ...</string>
+    <string name="wallpaper">Podešavanje tapeta. Sačekajte …</string>
     <string name="crop_label">Opseci sliku</string>
     <string name="low_database_storage_view_text">Skladišni prostor za bazu je skoro pun</string>
     <string name="camera_security_enter">Politika bezbednosti ograničava upotrebu kamere</string>
@@ -251,27 +251,31 @@ Enable auto share shot, then bring the devices together (typically back to back)
     <string name="editable_shortcut_helptext_title">Saveti</string>
     <string name="editable_shortcut_helptext_message">Kucni i zadrži prečice radi njihove izmene</string>
     <string name="editable_shortcut_helptext">Kucni i zadrži ikonu, a zatim je prevuci da bi izmenio poziciju prečice</string>
+    <string name="singleshotburst_capture_helptext">Da bi načinio/la brzi snimak, kucni i zadrži dugme za kameru</string>
+    <string name="singleshotburst_storage_helptext">Brzo snimljene slike se čuvaju sa kvalitetom podešenim kao dobar</string>
     <string name="sbeam_helptext">Snimi i podeli fotografije sa drugim uređajima. Putem S Beam-a poveži uređaje da bi dodao/la uređaje sa kojima želiš da deliš fotografije</string>
     <string name="storage_setting_dialog_title">Skladišna lokacija</string>
     <string name="storage_setting_dialog_message">SD kartica nije umetnuta. Promeniti skladišnu lokaciju na SD karticu?</string>
+    <string name="storage_setting_dialog_burstshot_message">Pojedinačni snimci biće sačuvani na SD kartici. Mnoštvo snimaka biće sačuvano u memoriji uređaja</string>
     <string name="do_not_ask_again">Ne prikazuj ponovo</string>
     <string name="shutter">Blenda</string>
     <string name="record">Snimi</string>
     <string name="bestpic">Najbolja fotografija</string>
     <string name="bestpic_on">Uk</string>
     <string name="bestpic_off">Isk</string>
-    <string name="bestgroup">Najbolja grupna poza</string>
-    <string name="bestgroup_title">Izab. svako najb. lice za mem.</string>
+    <string name="bestgroup">Najbolja lica</string>
+    <string name="bestgroup_title">Izab. svako Najb. lice za mem.</string>
     <string name="battery_low">Zatvori kameru. Temperatura baterije je previsoka</string>
     <string name="buddy_photo_share_helptext">Snimi i deli fotografije sa prijateljima pomoću detekcije lica</string>
     <string name="face_zoom_helptext">Dvaput kucni na lice za uvećanje ili umanjenje</string>
     <string name="burst_shot_guidetext">Brz snimak će biti sačuvan u memoriji uređaja</string>
+    <string name="best_photo_guidetext">Najbolje fotografije biće sačuvane u memoriji uređaja</string>
     <string name="snap_shot_limitation_dialog">Korišćenje funkcije snimanja slika kada je omogućena kompenzacija drmanja nije moguće</string>
     <string name="on_device_help_focus">Kucni za podešavanje fokusa kamere</string>
     <string name="on_device_help_camcorder">Pređi u režim kamkodera</string>
     <string name="on_device_help_self">Pređi na režim autoportreta</string>
     <string name="on_device_help_editable">Kucni i zadrži prečicu koju želiš da premestiš. Zatim je prevuci na željeno mesto</string>
-    <string name="on_device_help_voicecommand">Fotografije možeš da snimaš pomoću govornih komandi kao što su Zabeleži, Snimi, Osmeh i Ptičica</string>
+    <string name="on_device_help_voicecommand">Fotografije možeš da snimaš pomoću govornih komandi kao što su „Zabeleži“, „Snimi“, „Osmeh“ i „Ptičica“</string>
     <string name="Title_VideoSpeed">Brzina</string>
     <string name="SPEED_OFF">Normalan</string>
     <string name="SPEED_2X_FASTER">dvaput brže</string>
