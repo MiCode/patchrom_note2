@@ -130,6 +130,8 @@
 
 .field public mPackageName:Ljava/lang/String;
 
+.field mOverlay:Landroid/content/res/ResourcesOverlay;
+
 .field private mPluralRule:Llibcore/icu/NativePluralRules;
 
 .field private mPreloading:Z
@@ -1828,7 +1830,7 @@
     throw v1
 .end method
 
-.method public getDimensionPixelSize(I)I
+.method public getDimensionPixelSizeOrig(I)I
     .locals 5
     .parameter "id"
     .annotation system Ldalvik/annotation/Throws;
@@ -6137,4 +6139,107 @@
     const/4 v0, 0x0
 
     return-object v0
+.end method
+
+.method public setOverlay(Ljava/lang/String;)V
+    .locals 1
+    .parameter "pktname"
+
+    .prologue
+    .line 236
+    iget-object v0, p0, Landroid/content/res/Resources;->mOverlay:Landroid/content/res/ResourcesOverlay;
+
+    if-eqz v0, :cond_0
+
+    .line 240
+    :goto_0
+    return-void
+
+    .line 239
+    :cond_0
+    new-instance v0, Landroid/content/res/ResourcesOverlay;
+
+    invoke-direct {v0, p1}, Landroid/content/res/ResourcesOverlay;-><init>(Ljava/lang/String;)V
+
+    iput-object v0, p0, Landroid/content/res/Resources;->mOverlay:Landroid/content/res/ResourcesOverlay;
+
+    goto :goto_0
+.end method
+
+.method hasOverlayed(I)Z
+    .locals 1
+    .parameter "id"
+
+    .prologue
+    .line 230
+    iget-object v0, p0, Landroid/content/res/Resources;->mOverlay:Landroid/content/res/ResourcesOverlay;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/content/res/Resources;->mOverlay:Landroid/content/res/ResourcesOverlay;
+
+    invoke-virtual {v0, p1}, Landroid/content/res/ResourcesOverlay;->hasOverlayed(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method getOverlayed(I)I
+    .locals 1
+    .parameter "id"
+
+    .prologue
+    .line 233
+    iget-object v0, p0, Landroid/content/res/Resources;->mOverlay:Landroid/content/res/ResourcesOverlay;
+
+    invoke-virtual {v0, p1}, Landroid/content/res/ResourcesOverlay;->getOverlayed(I)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getDimensionPixelSize(I)I
+    .locals 1
+    .parameter "id"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/content/res/Resources$NotFoundException;
+        }
+    .end annotation
+
+    .prologue
+    .line 617
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->hasOverlayed(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 618
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getOverlayed(I)I
+
+    move-result v0
+
+    .line 620
+    :goto_0
+    return v0
+
+    :cond_0
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSizeOrig(I)I
+
+    move-result v0
+
+    goto :goto_0
 .end method
