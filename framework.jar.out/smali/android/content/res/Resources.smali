@@ -2275,7 +2275,7 @@
     throw v1
 .end method
 
-.method public getInteger(I)I
+.method public getIntegerOrig(I)I
     .locals 5
     .parameter "id"
     .annotation system Ldalvik/annotation/Throws;
@@ -6238,6 +6238,40 @@
 
     :cond_0
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSizeOrig(I)I
+
+    move-result v0
+
+    goto :goto_0
+.end method
+
+.method public getInteger(I)I
+    .locals 1
+    .parameter "id"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/content/res/Resources$NotFoundException;
+        }
+    .end annotation
+
+    .prologue
+    .line 857
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->hasOverlayed(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 858
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getOverlayed(I)I
+
+    move-result v0
+
+    .line 860
+    :goto_0
+    return v0
+
+    :cond_0
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getIntegerOrig(I)I
 
     move-result v0
 

@@ -4,3 +4,6 @@ config_icon_width=135
 config_icon_height=135
 workspace_cell_width=152
 workspace_cell_height=180
+config_cell_count_x=4
+config_cell_count_y=5
+
