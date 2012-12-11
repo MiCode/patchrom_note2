@@ -50,6 +50,7 @@ local-pre-zip-misc:
 	done
 	more $(pre_install_data_packages) | wc -l > $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
 	more $(pre_install_data_packages) >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
+	$(TOOL_DIR)/gen_res_conf.sh other/res_overlay_conf.txt $(ZIP_DIR)/system/app $(ZIP_DIR)/system/etc
 
 out/framework2.jar : out/framework.jar
 
