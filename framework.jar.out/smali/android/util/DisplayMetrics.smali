@@ -85,7 +85,7 @@
 
     const-string/jumbo v1, "ro.sf.lcd_density"
 
-    const/16 v2, 0x140
+    const/16 v2, 0xa0
 
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
@@ -95,7 +95,7 @@
 
     move-result v0
 
-    return v2
+    return v0
 .end method
 
 

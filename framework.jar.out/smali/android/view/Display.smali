@@ -119,10 +119,6 @@
 
     .line 57
     invoke-direct {p0, p1}, Landroid/view/Display;->init(I)V
-    .line 58
-    const/high16 v0, 0x4000
-
-    iput v0, p0, Landroid/view/Display;->mDensity:F
 
     .line 58
     return-void
