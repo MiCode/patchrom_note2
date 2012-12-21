@@ -252,6 +252,10 @@
 
     .line 1140
     .local v0, coef:F
+    invoke-static {p0}, Landroid/hardware/SensorManager$Injector;->getSeaLevelPressure(F)F
+
+    move-result p0
+
     const v1, 0x472d2a00
 
     const/high16 v2, 0x3f80
