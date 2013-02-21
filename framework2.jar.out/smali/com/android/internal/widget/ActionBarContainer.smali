@@ -2,15 +2,6 @@
 .super Landroid/widget/FrameLayout;
 .source "ActionBarContainer.java"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/internal/widget/ActionBarContainer$Injector;
-    }
-.end annotation
-
-
 # instance fields
 .field private mActionBarView:Lcom/android/internal/widget/ActionBarView;
 
@@ -152,18 +143,6 @@
 
 
 # virtual methods
-.method getActionBarBackground()Landroid/graphics/drawable/Drawable;
-    .locals 1
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
-
-    .prologue
-    iget-object v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mBackground:Landroid/graphics/drawable/Drawable;
-
-    return-object v0
-.end method
-
 .method protected getActionBarView()Lcom/android/internal/widget/ActionBarView;
     .locals 1
     .annotation build Landroid/annotation/MiuiHook;
@@ -172,18 +151,6 @@
 
     .prologue
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mActionBarView:Lcom/android/internal/widget/ActionBarView;
-
-    return-object v0
-.end method
-
-.method getStackedBackground()Landroid/graphics/drawable/Drawable;
-    .locals 1
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
-
-    .prologue
-    iget-object v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mStackedBackground:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -642,7 +609,7 @@
 
     move-result v12
 
-    invoke-static {p0, v9, v10, v11, v12}, Lcom/android/internal/widget/ActionBarContainer$Injector;->setBounds(Lcom/android/internal/widget/ActionBarContainer;IIII)V
+    invoke-virtual {v8, v9, v10, v11, v12}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 235
     const/4 v6, 0x1

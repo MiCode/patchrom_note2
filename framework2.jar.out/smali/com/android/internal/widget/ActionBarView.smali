@@ -1039,9 +1039,9 @@
 
     move-result-object v8
 
-    check-cast v8, Landroid/widget/LinearLayout;
+    check-cast v8, Landroid/view/ViewGroup;
 
-    iget-object v8, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
+    iput-object v8, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
 
     .line 864
     :goto_0
@@ -1330,9 +1330,9 @@
 
     move-result-object v8
 
-    check-cast v8, Landroid/widget/LinearLayout;
+    check-cast v8, Landroid/view/ViewGroup;
 
-    iget-object v8, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
+    iput-object v8, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
 
     goto/16 :goto_0
 

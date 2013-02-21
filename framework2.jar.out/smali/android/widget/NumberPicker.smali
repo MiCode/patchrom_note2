@@ -97,6 +97,11 @@
 
 .field private final mInputText:Landroid/widget/EditText;
 
+.field private mIsV5:Z
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_FIELD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+.end field
 .field private mLastDownEventTime:J
 
 .field private mLastDownEventY:F
@@ -338,6 +343,13 @@
     iput v14, v0, Landroid/widget/NumberPicker;->mScrollState:I
 
     .line 555
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v14, v0, Landroid/widget/NumberPicker;->mIsV5:Z
+
+    .line 548
     sget-object v14, Lcom/android/internal/R$styleable;->NumberPicker:[I
 
     const/4 v15, 0x0
@@ -3678,6 +3690,20 @@
     goto :goto_0
 .end method
 
+.method protected adjustScrollWheel()V
+    .locals 0
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    .line 2711
+    invoke-direct {p0}, Landroid/widget/NumberPicker;->ensureScrollWheelAdjusted()Z
+
+    .line 2712
+    return-void
+.end method
+
 .method public computeScroll()V
     .locals 4
 
@@ -4831,6 +4857,11 @@
     .line 830
     :cond_2
     :goto_1
+    iget-boolean v3, p0, Landroid/widget/NumberPicker;->mIsV5:Z
+
+    if-nez v3, :cond_miui_1
+
+    .line 830
     invoke-virtual {p0}, Landroid/widget/NumberPicker;->getParent()Landroid/view/ViewParent;
 
     move-result-object v3
@@ -4838,6 +4869,7 @@
     invoke-interface {v3, v1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
     .line 831
+    :cond_miui_1
     iget-object v3, p0, Landroid/widget/NumberPicker;->mFlingScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v3}, Landroid/widget/Scroller;->isFinished()Z
@@ -5524,6 +5556,11 @@
 
     iput-boolean p4, p0, Landroid/widget/NumberPicker;->mNeedSoftInput:Z
 
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/widget/NumberPicker;->mIsV5:Z
+
+    .line 2699
     return-void
 .end method
 

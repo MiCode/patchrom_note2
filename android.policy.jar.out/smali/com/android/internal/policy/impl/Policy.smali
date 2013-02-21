@@ -164,9 +164,9 @@
 
     .prologue
     .line 67
-    new-instance v0, Lcom/android/internal/policy/impl/PhoneLayoutInflater;
+    new-instance v0, Lcom/android/internal/policy/impl/MiuiPhoneLayoutInflater;
 
-    invoke-direct {v0, p1}, Lcom/android/internal/policy/impl/PhoneLayoutInflater;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/internal/policy/impl/MiuiPhoneLayoutInflater;-><init>(Landroid/content/Context;)V
 
     return-object v0
 .end method
