@@ -80,6 +80,9 @@
 
 .method private next()V
     .locals 6
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/4 v2, 0x0
@@ -134,7 +137,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/internal/policy/impl/PatternUnlockScreen;
+    instance-of v0, v0, Lcom/android/internal/policy/impl/MiuiCommonUnlockScreen;
 
     if-eqz v0, :cond_1
 
@@ -146,7 +149,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/internal/policy/impl/PatternUnlockScreen;
+    check-cast v0, Lcom/android/internal/policy/impl/MiuiCommonUnlockScreen;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$AccountAnalyzer;->this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
 
@@ -155,7 +158,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PatternUnlockScreen;->setEnableFallback(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/MiuiCommonUnlockScreen;->setEnableFallback(Z)V
 
     goto :goto_0
 

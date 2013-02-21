@@ -10,6 +10,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/preference/PreferenceScreen$Injector;,
         Landroid/preference/PreferenceScreen$SavedState;
     }
 .end annotation
@@ -236,22 +237,29 @@
 .method public bind(Landroid/widget/ListView;)V
     .locals 1
     .parameter "listView"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
-    .line 137
     invoke-virtual {p1, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 138
+    invoke-virtual {p0}, Landroid/preference/PreferenceScreen;->getRootAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Landroid/preference/PreferenceScreen$Injector;->addHeaderView(Landroid/widget/ListView;Landroid/widget/ListAdapter;)V
+
     invoke-virtual {p0}, Landroid/preference/PreferenceScreen;->getRootAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 140
+    invoke-static {p1}, Landroid/preference/PreferenceScreen$Injector;->bind(Landroid/widget/ListView;)V
+
     invoke-virtual {p0}, Landroid/preference/PreferenceScreen;->onAttachedToActivity()V
 
-    .line 141
     return-void
 .end method
 

@@ -3132,6 +3132,20 @@
     throw v1
 .end method
 
+.method getTheme()Landroid/content/res/Resources$Theme;
+    .locals 1
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    new-instance v0, Landroid/content/res/Resources$Theme;
+
+    invoke-direct {v0, p0}, Landroid/content/res/Resources$Theme;-><init>(Landroid/content/res/Resources;)V
+
+    return-object v0
+.end method
+
 .method public getValue(ILandroid/util/TypedValue;Z)V
     .locals 4
     .parameter "id"
@@ -4762,17 +4776,16 @@
     throw v7
 .end method
 
-.method public newTheme()Landroid/content/res/Resources$Theme;
+.method public final newTheme()Landroid/content/res/Resources$Theme;
     .locals 1
     .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_ACCESS:Landroid/annotation/MiuiHook$MiuiHookType;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
     .end annotation
 
     .prologue
-    .line 1376
-    new-instance v0, Landroid/content/res/Resources$Theme;
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getTheme()Landroid/content/res/Resources$Theme;
 
-    invoke-direct {v0, p0}, Landroid/content/res/Resources$Theme;-><init>(Landroid/content/res/Resources;)V
+    move-result-object v0
 
     return-object v0
 .end method

@@ -1,11 +1,11 @@
-.class Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs;
+.class public Lcom/android/internal/policy/impl/KeyguardUpdateMonitor$SimArgs;
 .super Ljava/lang/Object;
 .source "KeyguardUpdateMonitor.java"
 
 
 # annotations
 .annotation build Landroid/annotation/MiuiHook;
-    value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE_AND_ACCESS:Landroid/annotation/MiuiHook$MiuiHookType;
 .end annotation
 
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -13,7 +13,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0xc
     name = "SimArgs"
 .end annotation
 

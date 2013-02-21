@@ -164,7 +164,7 @@
     return-object v0
 .end method
 
-.method getActionBarView()Lcom/android/internal/widget/ActionBarView;
+.method protected getActionBarView()Lcom/android/internal/widget/ActionBarView;
     .locals 1
     .annotation build Landroid/annotation/MiuiHook;
         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
@@ -196,6 +196,18 @@
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
 
     return-object v0
+.end method
+
+.method protected isSplit()Z
+    .locals 1
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mIsSplit:Z
+
+    return v0
 .end method
 
 .method public onDraw(Landroid/graphics/Canvas;)V
@@ -401,7 +413,7 @@
 
     move-result v8
 
-    and-int/lit8 v8, v8, 0x2
+    and-int/lit8 v8, v8, 0xa
 
     if-nez v8, :cond_7
 

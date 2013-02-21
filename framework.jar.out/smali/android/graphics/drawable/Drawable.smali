@@ -91,6 +91,10 @@
 
     iput-boolean v0, p0, Landroid/graphics/drawable/Drawable;->mVisible:Z
 
+    const/4 v0, -0x1
+
+    iput v0, p0, Landroid/graphics/drawable/Drawable;->mId:I
+
     return-void
 .end method
 
@@ -965,6 +969,18 @@
     return-object p0
 .end method
 
+.method public getId()I
+    .locals 1
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iget v0, p0, Landroid/graphics/drawable/Drawable;->mId:I
+
+    return v0
+.end method
+
 .method public getIntrinsicHeight()I
     .locals 1
 
@@ -1448,6 +1464,19 @@
     return-void
 .end method
 
+.method public setId(I)V
+    .locals 0
+    .parameter "id"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iput p1, p0, Landroid/graphics/drawable/Drawable;->mId:I
+
+    return-void
+.end method
+
 .method public final setLevel(I)Z
     .locals 1
     .parameter "level"
@@ -1564,29 +1593,4 @@
     .line 385
     :cond_0
     return-void
-.end method
-
-.method public setId(I)V
-    .locals 0
-    .parameter "id"
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
-
-    .prologue
-    iput p1, p0, Landroid/graphics/drawable/Drawable;->mId:I
-
-    return-void
-.end method
-
-.method public getId()I
-    .locals 1
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
-
-    .prologue
-    iget v0, p0, Landroid/graphics/drawable/Drawable;->mId:I
-
-    return v0
 .end method

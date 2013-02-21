@@ -177,11 +177,13 @@
     if-nez p2, :cond_1
 
     .line 287
-    iget-object v4, p0, Landroid/preference/PreferenceActivity$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Landroid/preference/PreferenceActivity$HeaderAdapter;->getContext()Landroid/content/Context;
 
-    iget v5, p0, Landroid/preference/PreferenceActivity$HeaderAdapter;->mHeaderItemLayoutResID:I
+    move-result-object v4
 
-    invoke-virtual {v4, v5, p3, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    iget-object v5, p0, Landroid/preference/PreferenceActivity$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
+
+    invoke-static {v4, p3, v5}, Landroid/preference/PreferenceActivity$Injector;->getItemView(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
 
     move-result-object v3
 
@@ -246,6 +248,12 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
+    iget-object v4, v1, Landroid/preference/PreferenceActivity$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
+
+    iget v5, v0, Landroid/preference/PreferenceActivity$Header;->iconRes:I
+
+    invoke-static {v4, v5}, Landroid/preference/PreferenceActivity$Injector;->setIconVisible(Landroid/widget/ImageView;I)V
+
     .line 302
     iget-object v4, v1, Landroid/preference/PreferenceActivity$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
 
@@ -284,17 +292,16 @@
 
     if-nez v4, :cond_2
 
-    .line 305
     iget-object v4, v1, Landroid/preference/PreferenceActivity$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
-    invoke-virtual {v4, v6}, Landroid/widget/TextView;->setVisibility(I)V
+    const/4 v5, 0x0
 
-    .line 306
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
     iget-object v4, v1, Landroid/preference/PreferenceActivity$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 312
     :goto_1
     iget v4, p0, Landroid/preference/PreferenceActivity$HeaderAdapter;->mHeaderItemLayoutResID:I
 

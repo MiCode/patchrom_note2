@@ -35166,8 +35166,11 @@
     goto :goto_0
 .end method
 
-.method sendOurVisibleRect()Landroid/graphics/Rect;
+.method public sendOurVisibleRect()Landroid/graphics/Rect;
     .locals 4
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_ACCESS:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/16 v3, 0x6b

@@ -6954,7 +6954,7 @@
 .end method
 
 .method public scanMtpFile(Ljava/lang/String;Ljava/lang/String;II)V
-    .locals 20
+    .locals 18
     .parameter "path"
     .parameter "volumeName"
     .parameter "objectHandle"
@@ -7024,83 +7024,11 @@
 
     if-nez v2, :cond_2
 
-    .line 1946
-    new-instance v18, Landroid/content/ContentValues;
-
-    invoke-direct/range {v18 .. v18}, Landroid/content/ContentValues;-><init>()V
-
-    .line 1947
-    .local v18, values:Landroid/content/ContentValues;
-    const-string v2, "_size"
-
-    invoke-virtual {v14}, Ljava/io/File;->length()J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    move-object/from16 v0, v18
-
-    invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    .line 1948
-    const-string v2, "date_modified"
-
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    move-object/from16 v0, v18
-
-    invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    .line 1950
-    const/4 v2, 0x1
-
-    :try_start_0
-    new-array v0, v2, [Ljava/lang/String;
-
-    move-object/from16 v19, v0
-
-    const/4 v2, 0x0
-
-    invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    aput-object v3, v19, v2
-
-    .line 1951
-    .local v19, whereArgs:[Ljava/lang/String;
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Landroid/media/MediaScanner;->mMediaProvider:Landroid/content/IContentProvider;
-
-    invoke-static/range {p2 .. p2}, Landroid/provider/MediaStore$Files;->getMtpObjectsUri(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v3
-
-    const-string v4, "_id=?"
-
-    move-object/from16 v0, v18
-
-    move-object/from16 v1, v19
-
-    invoke-interface {v2, v3, v0, v4, v1}, Landroid/content/IContentProvider;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 1989
     .end local v5           #lastModifiedSeconds:J
-    .end local v18           #values:Landroid/content/ContentValues;
-    .end local v19           #whereArgs:[Ljava/lang/String;
     :cond_0
     :goto_1
     return-void
 
-    .line 1938
     .end local v14           #file:Ljava/io/File;
     .end local v16           #fileType:I
     :cond_1
@@ -7112,27 +7040,9 @@
 
     goto :goto_0
 
-    .line 1953
     .restart local v5       #lastModifiedSeconds:J
     .restart local v14       #file:Ljava/io/File;
     .restart local v16       #fileType:I
-    .restart local v18       #values:Landroid/content/ContentValues;
-    :catch_0
-    move-exception v12
-
-    .line 1954
-    .local v12, e:Landroid/os/RemoteException;
-    const-string v2, "MediaScanner"
-
-    const-string v3, "RemoteException in scanMtpFile"
-
-    invoke-static {v2, v3, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    goto :goto_1
-
-    .line 1959
-    .end local v12           #e:Landroid/os/RemoteException;
-    .end local v18           #values:Landroid/content/ContentValues;
     :cond_2
     move/from16 v0, p3
 
@@ -7140,19 +7050,16 @@
 
     iput v0, v1, Landroid/media/MediaScanner;->mMtpObjectHandle:I
 
-    .line 1960
     const/4 v15, 0x0
 
-    .line 1962
     .local v15, fileList:Landroid/database/Cursor;
-    :try_start_1
+    :try_start_0
     invoke-static/range {v16 .. v16}, Landroid/media/MediaFile;->isPlayListFileType(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    .line 1964
     const/4 v2, 0x0
 
     const/4 v3, 0x1
@@ -7161,16 +7068,13 @@
 
     invoke-direct {v0, v2, v3}, Landroid/media/MediaScanner;->prescan(Ljava/lang/String;Z)I
 
-    .line 1966
     invoke-virtual/range {p0 .. p1}, Landroid/media/MediaScanner;->makeEntryFor(Ljava/lang/String;)Landroid/media/MediaScanner$FileEntry;
 
     move-result-object v13
 
-    .line 1967
     .local v13, entry:Landroid/media/MediaScanner$FileEntry;
     if-eqz v13, :cond_3
 
-    .line 1968
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/MediaScanner;->mMediaProvider:Landroid/content/IContentProvider;
@@ -7191,20 +7095,19 @@
 
     invoke-interface/range {v2 .. v8}, Landroid/content/IContentProvider;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/ICancellationSignal;)Landroid/database/Cursor;
 
+    .line 1989
     .end local v5           #lastModifiedSeconds:J
     move-result-object v15
 
-    .line 1971
     if-eqz v15, :cond_3
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v13, v15}, Landroid/media/MediaScanner;->processPlayList(Landroid/media/MediaScanner$FileEntry;Landroid/database/Cursor;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1984
     .end local v13           #entry:Landroid/media/MediaScanner$FileEntry;
     :cond_3
     :goto_2
@@ -7214,27 +7117,24 @@
 
     iput v2, v0, Landroid/media/MediaScanner;->mMtpObjectHandle:I
 
-    .line 1985
     if-eqz v15, :cond_0
 
-    .line 1986
     invoke-interface {v15}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
 
-    .line 1975
+    .line 1953
     .restart local v5       #lastModifiedSeconds:J
     :cond_4
     const/4 v2, 0x0
 
-    :try_start_2
+    :try_start_1
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
     invoke-direct {v0, v1, v2}, Landroid/media/MediaScanner;->prescan(Ljava/lang/String;Z)I
 
-    .line 1978
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/MediaScanner;->mClient:Landroid/media/MediaScanner$MyMediaScannerClient;
@@ -7265,44 +7165,40 @@
     move-object/from16 v3, p1
 
     invoke-virtual/range {v2 .. v11}, Landroid/media/MediaScanner$MyMediaScannerClient;->doScanFile(Ljava/lang/String;Ljava/lang/String;JJZZZ)Landroid/net/Uri;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_2
 
-    .line 1981
     .end local v5           #lastModifiedSeconds:J
-    :catch_1
+    :catch_0
     move-exception v12
 
-    .line 1982
-    .restart local v12       #e:Landroid/os/RemoteException;
-    :try_start_3
+    .line 1954
+    .local v12, e:Landroid/os/RemoteException;
+    :try_start_2
     const-string v2, "MediaScanner"
 
     const-string v3, "RemoteException in MediaScanner.scanFile()"
 
     invoke-static {v2, v3, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1984
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput v2, v0, Landroid/media/MediaScanner;->mMtpObjectHandle:I
 
-    .line 1985
     if-eqz v15, :cond_0
 
-    .line 1986
     invoke-interface {v15}, Landroid/database/Cursor;->close()V
 
     goto/16 :goto_1
 
-    .line 1978
+    .line 1959
     .end local v12           #e:Landroid/os/RemoteException;
     .restart local v5       #lastModifiedSeconds:J
     :cond_5
@@ -7310,13 +7206,13 @@
 
     goto :goto_3
 
-    .line 1984
     .end local v5           #lastModifiedSeconds:J
     :catchall_0
     move-exception v2
 
     const/4 v3, 0x0
 
+    .line 1978
     move-object/from16 v0, p0
 
     iput v3, v0, Landroid/media/MediaScanner;->mMtpObjectHandle:I

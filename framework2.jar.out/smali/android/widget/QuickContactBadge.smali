@@ -565,6 +565,10 @@
 
     move-result v2
 
+    iget v3, p0, Landroid/widget/QuickContactBadge;->mPaddingLeft:I
+
+    sub-int/2addr v2, v3
+
     iget v3, p0, Landroid/widget/QuickContactBadge;->mPaddingRight:I
 
     sub-int/2addr v2, v3
@@ -572,6 +576,10 @@
     invoke-virtual {p0}, Landroid/widget/QuickContactBadge;->getHeight()I
 
     move-result v3
+
+    iget v4, p0, Landroid/widget/QuickContactBadge;->mPaddingTop:I
+
+    sub-int/2addr v3, v4
 
     iget v4, p0, Landroid/widget/QuickContactBadge;->mPaddingBottom:I
 

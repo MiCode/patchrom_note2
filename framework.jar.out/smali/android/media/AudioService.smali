@@ -3847,66 +3847,61 @@
 .end method
 
 .method private dispatchMediaKeyEvent(Landroid/view/KeyEvent;Z)V
-    .locals 12
+    .locals 13
     .parameter "keyEvent"
     .parameter "needWakeLock"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/16 v2, 0x7bc
 
-    const/4 v1, 0x0
+    const/4 v4, 0x0
 
-    .line 4948
     if-eqz p2, :cond_0
 
-    .line 4949
-    iget-object v0, p0, Landroid/media/AudioService;->mMediaEventWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v1, p0, Landroid/media/AudioService;->mMediaEventWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
+    invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
-    .line 4951
     :cond_0
     new-instance v3, Landroid/content/Intent;
 
-    const-string v0, "android.intent.action.MEDIA_BUTTON"
+    const-string v1, "android.intent.action.MEDIA_BUTTON"
 
-    invoke-direct {v3, v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    invoke-direct {v3, v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 4952
     .local v3, keyIntent:Landroid/content/Intent;
-    const-string v0, "android.intent.extra.KEY_EVENT"
+    const-string v1, "android.intent.extra.KEY_EVENT"
 
-    invoke-virtual {v3, v0, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v3, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 4953
-    iget-object v11, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
+    iget-object v12, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
 
-    monitor-enter v11
+    monitor-enter v12
 
-    .line 4954
     :try_start_0
-    iget-object v0, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
+    iget-object v1, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0}, Ljava/util/Stack;->empty()Z
+    iget-object v4, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
+
+    invoke-static {v1, v4, v3}, Landroid/media/AudioService$Injector;->resolveReceiver(Landroid/content/Context;Ljava/util/Stack;Landroid/content/Intent;)Landroid/media/AudioService$Injector$ResolveInfo;
+
+    move-result-object v11
+
+    .local v11, resolveInfo:Landroid/media/AudioService$Injector$ResolveInfo;
+    invoke-static {v11}, Landroid/media/AudioService$Injector;->getPendingIntent(Landroid/media/AudioService$Injector$ResolveInfo;)Landroid/app/PendingIntent;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-result v0
+    move-result-object v0
 
-    if-nez v0, :cond_2
+    .local v0, pi:Landroid/app/PendingIntent;
+    if-eqz v0, :cond_2
 
     .line 4957
     :try_start_1
-    iget-object v0, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
-
-    invoke-virtual {v0}, Ljava/util/Stack;->peek()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/media/AudioService$RemoteControlStackEntry;
-
-    iget-object v0, v0, Landroid/media/AudioService$RemoteControlStackEntry;->mMediaIntent:Landroid/app/PendingIntent;
-
     iget-object v1, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
     if-eqz p2, :cond_1
@@ -3921,84 +3916,81 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 4973
     :goto_1
     :try_start_2
-    monitor-exit v11
+    monitor-exit v12
 
-    .line 4974
     return-void
 
-    .line 4957
     :cond_1
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 4960
     :catch_0
     move-exception v10
 
-    .line 4961
     .local v10, e:Landroid/app/PendingIntent$CanceledException;
-    const-string v0, "AudioService"
+    const-string v1, "AudioService"
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Error sending pending intent "
+    const-string v4, "Error sending pending intent "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    iget-object v2, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
-
-    invoke-virtual {v2}, Ljava/util/Stack;->peek()Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-object v4, p0, Landroid/media/AudioService;->mRCStack:Ljava/util/Stack;
 
-    move-result-object v1
+    invoke-virtual {v4}, Ljava/util/Stack;->peek()Ljava/lang/Object;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v2
 
-    .line 4962
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-virtual {v10}, Landroid/app/PendingIntent$CanceledException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 4973
+    .end local v0           #pi:Landroid/app/PendingIntent;
     .end local v10           #e:Landroid/app/PendingIntent$CanceledException;
+    .end local v11           #resolveInfo:Landroid/media/AudioService$Injector$ResolveInfo;
     :catchall_0
-    move-exception v0
+    move-exception v1
 
-    monitor-exit v11
+    monitor-exit v12
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    throw v0
+    throw v1
 
-    .line 4967
+    .restart local v0       #pi:Landroid/app/PendingIntent;
+    .restart local v11       #resolveInfo:Landroid/media/AudioService$Injector$ResolveInfo;
     :cond_2
     if-eqz p2, :cond_3
 
-    .line 4968
     :try_start_3
-    const-string v0, "android.media.AudioService.WAKELOCK_ACQUIRED"
+    const-string v1, "android.media.AudioService.WAKELOCK_ACQUIRED"
 
-    const/16 v1, 0x7bc
+    const/16 v2, 0x7bc
 
-    invoke-virtual {v3, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v3, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 4970
     :cond_3
+    invoke-static {v3, v11}, Landroid/media/AudioService$Injector;->setComponentName(Landroid/content/Intent;Landroid/media/AudioService$Injector$ResolveInfo;)V
+
     iget-object v2, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
     const/4 v4, 0x0

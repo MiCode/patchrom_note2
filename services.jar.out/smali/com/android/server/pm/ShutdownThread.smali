@@ -647,7 +647,7 @@
 
     .line 397
     .local v4, pd:Landroid/app/ProgressDialog;
-    const v5, 0x60c0191
+    const v5, 0x60c0026
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -656,7 +656,7 @@
     invoke-virtual {v4, v5}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 398
-    const v5, 0x60c01aa
+    const v5, 0x60c002c
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
