@@ -5569,12 +5569,8 @@
 
 .method protected onPause()V
     .locals 1
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
 
     .prologue
-    invoke-static {p0}, Landroid/app/Activity$Injector;->onWindowHide(Landroid/app/Activity;)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
 
@@ -5828,8 +5824,6 @@
     iput-boolean v0, p0, Landroid/app/Activity;->mCalled:Z
 
     invoke-static {p0}, Landroid/app/Activity$Injector;->checkAccessControl(Landroid/app/Activity;)V
-
-    invoke-static {p0}, Landroid/app/Activity$Injector;->onWindowShow(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -6369,11 +6363,15 @@
 
 .method final performPause()V
     .locals 3
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/4 v2, 0x0
 
-    .line 5287
+    invoke-static {p0}, Landroid/app/Activity$Injector;->onWindowHide(Landroid/app/Activity;)V
+
     iget-object v0, p0, Landroid/app/Activity;->mFragments:Landroid/app/FragmentManagerImpl;
 
     invoke-virtual {v0}, Landroid/app/FragmentManagerImpl;->dispatchPause()V
@@ -6706,6 +6704,9 @@
 
 .method final performResume()V
     .locals 3
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
     const/4 v1, 0x0
@@ -6834,6 +6835,8 @@
 
     .line 5284
     :cond_1
+    invoke-static {p0}, Landroid/app/Activity$Injector;->onWindowShow(Landroid/app/Activity;)V
+
     return-void
 .end method
 
