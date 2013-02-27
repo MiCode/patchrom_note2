@@ -88,3 +88,5 @@ net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
 
 ro.telephony.call_ring.multiple=false
+ro.miui.ui.version.code=3
+ro.miui.ui.version.name=V5
