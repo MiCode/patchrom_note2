@@ -1303,13 +1303,23 @@
 
     .line 1301
     :goto_1
-    new-instance v2, Lcom/android/server/pm/Installer;
+    new-instance v2, Lcom/android/server/pm/MiuiInstaller;
 
-    invoke-direct {v2}, Lcom/android/server/pm/Installer;-><init>()V
+    invoke-direct {v2}, Lcom/android/server/pm/MiuiInstaller;-><init>()V
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/android/server/pm/PackageManagerService;->mInstaller:Lcom/android/server/pm/Installer;
+    .line 1036
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/server/pm/PackageManagerService;->mInstaller:Lcom/android/server/pm/Installer;
+
+    invoke-static {v2, v3}, Lcom/android/server/pm/PackageManagerService$Injector;->startMiuiShellService(Landroid/content/Context;Lcom/android/server/pm/Installer;)V
 
     .line 1303
     const-string v2, "window"
@@ -5010,8 +5020,21 @@
 
     .line 3554
     :cond_3
-    iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mResolveInfo:Landroid/content/pm/ResolveInfo;
+    iget-object v5, p0, Lcom/android/server/pm/PackageManagerService;->mResolveInfo:Landroid/content/pm/ResolveInfo;
 
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move v3, p3
+
+    move/from16 v4, p5
+
+    invoke-static/range {v0 .. v5}, Lcom/android/server/pm/PackageManagerService$Injector;->checkMiuiHomeIntent(Lcom/android/server/pm/PackageManagerService;Landroid/content/Intent;Ljava/lang/String;IILandroid/content/pm/ResolveInfo;)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v0
     goto :goto_0
 
     .line 3557
@@ -43281,6 +43304,10 @@
     .local v5, permFile:Ljava/io/File;
     invoke-direct {p0, v5}, Lcom/android/server/pm/PackageManagerService;->readPermissionsFromXml(Ljava/io/File;)V
 
+    .line 1496
+    iget-object v6, p0, Lcom/android/server/pm/PackageManagerService;->mAvailableFeatures:Ljava/util/HashMap;
+
+    invoke-static {v6}, Lcom/android/server/pm/PackageManagerService$Injector;->addAvailableFeatures(Ljava/util/HashMap;)V
     goto/16 :goto_0
 .end method
 

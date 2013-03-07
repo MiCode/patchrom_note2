@@ -32,7 +32,7 @@
 
 .field private final mAccountManager:Landroid/accounts/AccountManager;
 
-.field private final mAccounts:[Landroid/accounts/Account;
+.field private mAccounts:[Landroid/accounts/Account;
 
 .field final synthetic this$0:Lcom/android/internal/policy/impl/LockPatternKeyguardView;
 
@@ -62,6 +62,28 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$AccountAnalyzer;->mAccounts:[Landroid/accounts/Account;
 
     .line 725
+    iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$AccountAnalyzer;->mAccounts:[Landroid/accounts/Account;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$AccountAnalyzer;->mAccounts:[Landroid/accounts/Account;
+
+    array-length v0, v0
+
+    if-nez v0, :cond_1
+
+    .line 546
+    :cond_0
+    const-string v0, "com.xiaomi"
+
+    invoke-virtual {p2, v0}, Landroid/accounts/AccountManager;->getAccountsByType(Ljava/lang/String;)[Landroid/accounts/Account;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$AccountAnalyzer;->mAccounts:[Landroid/accounts/Account;
+
+    .line 547
+    :cond_1
     return-void
 .end method
 

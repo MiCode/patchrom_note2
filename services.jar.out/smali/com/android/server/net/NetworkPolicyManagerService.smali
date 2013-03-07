@@ -2348,7 +2348,7 @@
 .end method
 
 .method private getTotalBytes(Landroid/net/NetworkTemplate;JJ)J
-    .locals 9
+    .locals 10
     .parameter "template"
     .parameter "start"
     .parameter "end"
@@ -2357,41 +2357,37 @@
     .end annotation
 
     .prologue
-    const-wide/16 v7, 0x0
+    const-wide/16 v8, 0x0
 
-    .line 1943
+    .line 2008
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkStats:Landroid/net/INetworkStatsService;
+    iget-object v1, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkStats:Landroid/net/INetworkStatsService;
 
-    move-object v1, p1
+    move-object v0, p0
 
-    move-wide v2, p2
+    move-object v2, p1
 
-    move-wide v4, p4
+    move-wide v3, p2
 
-    invoke-interface/range {v0 .. v5}, Landroid/net/INetworkStatsService;->getNetworkTotalBytes(Landroid/net/NetworkTemplate;JJ)J
+    move-wide v5, p4
 
-    move-result-wide v0
-
-    invoke-static/range {p0 .. p5}, Lcom/android/server/net/NetworkPolicyManagerService$Injector;->adjustMobileDataUsage(Lcom/android/server/net/NetworkPolicyManagerService;Landroid/net/NetworkTemplate;JJ)J
+    invoke-static/range {v0 .. v6}, Lcom/android/server/net/NetworkPolicyManagerService$Injector;->getNetworkTotalBytes(Lcom/android/server/net/NetworkPolicyManagerService;Landroid/net/INetworkStatsService;Landroid/net/NetworkTemplate;JJ)J
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
 
-    move-result-wide v2
+    move-result-wide v0
 
-    add-long/2addr v0, v2
-
-    .line 1949
+    .line 2014
     :goto_0
     return-wide v0
 
-    .line 1944
+    .line 2009
     :catch_0
-    move-exception v6
+    move-exception v7
 
-    .line 1945
-    .local v6, e:Ljava/lang/RuntimeException;
+    .line 2010
+    .local v7, e:Ljava/lang/RuntimeException;
     const-string v0, "NetworkPolicy"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2404,7 +2400,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -2414,20 +2410,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-wide v0, v7
+    move-wide v0, v8
 
-    .line 1946
+    .line 2011
     goto :goto_0
 
-    .line 1947
-    .end local v6           #e:Ljava/lang/RuntimeException;
+    .line 2012
+    .end local v7           #e:Ljava/lang/RuntimeException;
     :catch_1
-    move-exception v6
+    move-exception v7
 
-    .local v6, e:Landroid/os/RemoteException;
-    move-wide v0, v7
+    .local v7, e:Landroid/os/RemoteException;
+    move-wide v0, v8
 
-    .line 1949
+    .line 2014
     goto :goto_0
 .end method
 

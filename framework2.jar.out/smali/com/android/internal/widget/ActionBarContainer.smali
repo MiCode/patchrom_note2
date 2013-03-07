@@ -141,7 +141,43 @@
     goto :goto_0
 .end method
 
+.method private shouldPutTabsOnTop()Z
+    .locals 2
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
+    .prologue
+    const/4 v0, 0x0
+
+    .line 266
+    iget-object v1, p0, Lcom/android/internal/widget/ActionBarContainer;->mContext:Landroid/content/Context;
+
+    invoke-static {v1}, Lmiui/util/UiUtils;->isV5Ui(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
+    :goto_0
+    return v0
+
+    :cond_1
+    iget-object v1, p0, Lcom/android/internal/widget/ActionBarContainer;->mActionBarView:Lcom/android/internal/widget/ActionBarView;
+
+    invoke-virtual {v1}, Lcom/android/internal/widget/ActionBarView;->getDisplayOptions()I
+
+    move-result v1
+
+    and-int/lit8 v1, v1, 0x2
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+.end method
 # virtual methods
 .method protected getActionBarView()Lcom/android/internal/widget/ActionBarView;
     .locals 1
@@ -374,15 +410,11 @@
 
     .line 202
     .local v7, tabHeight:I
-    iget-object v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mActionBarView:Lcom/android/internal/widget/ActionBarView;
-
-    invoke-virtual {v8}, Lcom/android/internal/widget/ActionBarView;->getDisplayOptions()I
+    invoke-direct {p0}, Lcom/android/internal/widget/ActionBarContainer;->shouldPutTabsOnTop()Z
 
     move-result v8
 
-    and-int/lit8 v8, v8, 0xa
-
-    if-nez v8, :cond_7
+    if-eqz v8, :cond_7
 
     .line 204
     invoke-virtual {p0}, Lcom/android/internal/widget/ActionBarContainer;->getChildCount()I
