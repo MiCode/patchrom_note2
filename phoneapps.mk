@@ -10,8 +10,7 @@ private-services := AllshareService \
 					IdeaVisualizer \
 					QuickSnote \
 					SamsungIME \
-					BestGroupPose \
-					Cusettings
+					BestGroupPose
 
 private-phone-apps := ApplicationsProvider \
 					  BackupRestoreConfirmation \
