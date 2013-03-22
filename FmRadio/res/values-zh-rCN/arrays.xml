@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="barge_in_commands">
+        <item>下一个</item>
+        <item>上一个</item>
+        <item>暂停</item>
+        <item>播放</item>
+        <item>增大音量</item>
+        <item>减小音量</item>
+    </string-array>
+</resources>
