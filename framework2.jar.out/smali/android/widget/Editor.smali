@@ -9098,7 +9098,7 @@
     .end annotation
 
     .prologue
-    const v11, 0x104048d
+    const v11, 0x1040489
 
     const/4 v10, 0x0
 
