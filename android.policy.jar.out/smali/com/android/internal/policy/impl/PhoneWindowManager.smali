@@ -6464,11 +6464,6 @@
 
     .line 2224
     :cond_1
-    const/16 v3, 0xbb6
-
-    if-eq v1, v3, :cond_0
-
-    .line 2228
     const/4 v0, 0x0
 
     .line 2229
@@ -17185,17 +17180,8 @@
 
     const/16 v3, 0x7db
 
-    if-eq v2, v3, :cond_7
-
-    move-object/from16 v0, p2
-
-    iget v2, v0, Landroid/view/WindowManager$LayoutParams;->type:I
-
-    const/16 v3, 0xbb6
-
     if-ne v2, v3, :cond_8
 
-    :cond_7
     invoke-interface/range {p1 .. p1}, Landroid/view/WindowManagerPolicy$WindowState;->getGivenInsetsPendingLw()Z
 
     move-result v2
