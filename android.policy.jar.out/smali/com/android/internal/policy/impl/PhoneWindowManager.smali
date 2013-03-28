@@ -853,10 +853,14 @@
 
     const/4 v1, 0x0
 
-    .line 217
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 349
+    new-instance v0, Landroid/os/Binder;
+
+    invoke-direct {v0}, Landroid/os/Binder;-><init>()V
+
+    iput-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarDisableToken:Landroid/os/IBinder;
+
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
