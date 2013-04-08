@@ -985,17 +985,25 @@
     .locals 14
 
     .prologue
+    invoke-virtual {p0}, Lcom/android/internal/widget/ActionBarView;->miuiInitTitle()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_miui_0
+
+    iget-object v4, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, v4}, Lcom/android/internal/widget/ActionBarView;->addView(Landroid/view/View;)V
+
+    return-void
+
+    :cond_miui_0
     const/16 v11, 0x8
 
     const/4 v9, 0x1
 
     const/4 v10, 0x0
 
-    invoke-virtual {p0}, Lcom/android/internal/widget/ActionBarView;->miuiInitTitle()Z
-    move-result v8
-    if-nez v8, :cond_7
-
-    .line 849
     iget-object v8, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/view/ViewGroup;
 
     if-nez v8, :cond_5
