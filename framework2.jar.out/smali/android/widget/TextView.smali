@@ -24443,7 +24443,7 @@
     .line 8419
     iget-object v1, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    invoke-virtual {v1}, Landroid/widget/Editor;->setStartHandle()V
+    #invoke-virtual {v1}, Landroid/widget/Editor;->setStartHandle()V
 
     .line 8422
     :cond_0
@@ -24454,7 +24454,7 @@
     .line 8423
     iget-object v1, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    invoke-virtual {v1}, Landroid/widget/Editor;->refreshSelectionControllers()V
+    #invoke-virtual {v1}, Landroid/widget/Editor;->refreshSelectionControllers()V
 
     .line 8427
     :cond_1
