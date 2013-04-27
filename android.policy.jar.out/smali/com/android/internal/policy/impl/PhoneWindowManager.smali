@@ -24107,3 +24107,11 @@
 
     goto :goto_0
 .end method
+
+.method onScreenShotMessageSend(Landroid/os/Message;)V
+    .locals 0
+    .parameter "msg"
+
+    .prologue
+    return-void
+.end method
