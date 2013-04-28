@@ -4,4 +4,5 @@
     <string name="sleep_notification_action_start">faceservice_enabled</string>
     <string name="sleep_notification_action_stop">faceservice_disabled</string>
     <string name="sleep_notification_action_fail">faceservice_failed</string>
+    <string name="flash_device">/sys/class/leds/torch-sec1/brightness</string>
 </resources>
