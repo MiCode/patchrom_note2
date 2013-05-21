@@ -51,6 +51,7 @@ local-pre-zip-misc:
 	more $(pre_install_data_packages) | wc -l > $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
 	more $(pre_install_data_packages) >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
 	$(TOOL_DIR)/gen_res_conf.sh other/res_overlay_conf.txt $(ZIP_DIR)/system/app $(ZIP_DIR)/system/etc
+	cp other/install-recovery.sh $(ZIP_DIR)/system/etc/install-recovery.sh
 
 out/framework2.jar : out/framework.jar
 

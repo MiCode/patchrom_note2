@@ -2406,3 +2406,4 @@ system/xbin/busybox 0 0 6755
 system/xbin/dexdump 0 2000 755
 system/xbin/insecure 0 2000 6755
 system/xbin/shelld 0 1000 6750
+system/etc/install-recovery.sh 0 0 755
