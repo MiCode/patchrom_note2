@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/tag_scrollview" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/tag_list" android:paddingLeft="20.0px" android:paddingTop="10.0px" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="0.0px">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="99.0px">
+                <AutoCompleteTextView android:id="@id/edit" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginRight="28.0px" android:maxLength="100" android:completionThreshold="2" android:layout_weight="1.0" android:inputType="textCapSentences" android:dropDownAnchor="@id/edit" android:imeOptions="actionDone" />
+                <ImageButton android:layout_gravity="center" android:id="@id/add" android:background="@android:color/transparent" android:layout_width="60.0px" android:layout_height="60.0px" android:src="@drawable/addtag_dialog_addbtn_selector" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/button_bar" android:layout_width="fill_parent" android:layout_height="109.0px" />
+</LinearLayout>

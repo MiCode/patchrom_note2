@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/posting_as_email" android:title="@string/string_filemanager_accountadd_email" />
+    <item android:id="@id/posting_as_gmail" android:title="@string/string_context_gmail" />
+    <item android:id="@id/menu_context_sharevia_textonly_plain" android:title="@string/string_context_textonly_plain" />
+    <item android:id="@id/menu_context_sharevia_image" android:title="@string/string_context_image" />
+    <item android:id="@id/menu_context_sharevia_snotebook" android:title="@string/string_context_snotebook" />
+    <item android:id="@id/menu_context_sharevia_pdf" android:title="@string/string_context_pdf" />
+</menu>

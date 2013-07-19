@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="false" android:layout_width="477.0px" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="12.0px" android:paddingTop="9.0px" android:paddingRight="12.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0px">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/snote_option_in_bg" android:layout_width="fill_parent" android:layout_height="109.0px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="316.0px" android:layout_height="wrap_content" android:layout_marginLeft="9.0px">
+                <SeekBar android:id="@id/eraser_size_seekbar" style="@style/setting_eraser_progress_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/eraser_size_maximum" android:background="@drawable/pen_size_bg" android:layout_width="@dimen/erase_setting_circle_width" android:layout_height="@dimen/erase_setting_circle_height" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_one_button_holder" android:layout_width="fill_parent" android:layout_height="94.0px" android:layout_marginLeft="12.0px" android:layout_marginTop="12.0px" android:layout_marginRight="12.0px" android:layout_marginBottom="10.0px">
+        <Button android:textSize="36.0px" android:textColor="#ff010101" android:gravity="center" android:id="@id/btn_bottom" android:background="@drawable/snote_winsetbtn_light_selector" android:layout_width="fill_parent" android:layout_height="85.0px" />
+    </LinearLayout>
+</LinearLayout>

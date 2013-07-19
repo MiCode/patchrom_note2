@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_copy_light" android:id="@id/menu_filemanager_actionmode_copy" android:title="@string/string_filemanager_context_copy" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_cut_light" android:id="@id/menu_filemanager_actionmode_move" android:title="@string/string_filemanager_context_move" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_delete" android:id="@id/menu_filemanager_actionmode_delete" android:title="@string/string_filemanager_context_delete" android:showAsAction="always" />
+</menu>

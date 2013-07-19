@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/favorites_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/nomatch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center" android:id="@id/nonotes_btn" android:background="@drawable/ic_no_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:color/transparent" />
+        <TextView android:textSize="18.0dip" android:gravity="center" android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/string_filemanager_search_fail" />
+    </LinearLayout>
+    <include android:id="@id/grid" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/tagsearch_grid_list" />
+</FrameLayout>

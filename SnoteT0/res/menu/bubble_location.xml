@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/copy" android:title="@string/string_contextmenu_object_copy" />
+    <item android:id="@id/cut" android:title="@string/string_contextmenu_object_cut" />
+    <item android:id="@id/delete" android:title="@string/string_menu_delete" />
+    <item android:id="@id/location_map" android:title="@string/string_object_contextmenu_selectfrommap" />
+    <item android:id="@id/move_forward_at_most" android:title="@string/bubble_move_forward_at_most" />
+    <item android:id="@id/move_forward" android:title="@string/bubble_move_forward" />
+    <item android:id="@id/move_backward" android:title="@string/bubble_move_backward" />
+    <item android:id="@id/move_backward_at_most" android:title="@string/bubble_move_backward_at_most" />
+</menu>

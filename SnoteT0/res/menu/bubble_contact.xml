@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/delete" android:title="@string/string_menu_delete" />
+    <item android:id="@id/contact_select_from_contacts" android:title="@string/string_object_contextmenu_selectfromcontacts" />
+    <item android:id="@id/contact_view_contact" android:title="@string/string_object_contextmenu_viewcontactsinfo" />
+</menu>

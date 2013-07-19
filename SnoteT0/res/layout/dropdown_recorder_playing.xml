@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="532.0px" android:layout_height="80.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_stop" android:background="@drawable/voice_stop_selector" android:layout_width="112.0px" android:layout_height="62.0px" android:layout_marginLeft="10.0px" />
+    <FrameLayout android:layout_width="112.0px" android:layout_height="62.0px">
+        <ImageButton android:id="@id/btn_start" android:background="@drawable/voice_play_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-1.0px" />
+        <ImageButton android:id="@id/btn_pause" android:background="@drawable/voice_pause2_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:paddingTop="4.0px" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0px">
+        <SeekBar android:id="@id/progress" android:paddingLeft="0.0px" android:paddingRight="0.0px" android:focusable="false" android:layout_width="248.0px" android:layout_height="24.0px" style="@style/q1_custom_seekbar" />
+        <TextView android:textSize="28.0px" android:textColor="#ffc8c8c8" android:gravity="top" android:id="@id/startcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_time" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="-1.0" android:layout_below="@id/progress" android:layout_alignLeft="@id/progress" />
+        <TextView android:textSize="28.0px" android:textColor="#ffc8c8c8" android:gravity="top" android:id="@id/endcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_time" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="-1.0" android:layout_below="@id/progress" android:layout_alignRight="@id/progress" />
+    </RelativeLayout>
+</LinearLayout>

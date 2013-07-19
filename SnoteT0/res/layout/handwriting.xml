@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:layout_width="299.0px" android:layout_height="wrap_content" android:divider="@drawable/snote_list_line" android:dividerHeight="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

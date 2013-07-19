@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="0.0px" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/griditem_filecover_holder" android:layout_width="242.0px" android:layout_height="342.0px" android:layout_marginLeft="5.0px">
+        <ImageView android:id="@id/image_secondsub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0px" android:layout_marginBottom="40.0px" android:scaleType="fitXY" />
+        <ImageView android:id="@id/image_firstsub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_marginRight="6.0px" android:layout_marginBottom="40.0px" android:scaleType="fitXY" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0px" android:layout_marginRight="16.0px" android:layout_marginBottom="38.0px">
+            <ImageView android:id="@id/thumbnail_cover_bg" android:background="@drawable/snote_main_template" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@id/cover_selector" android:background="@drawable/snotebook_main_note_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@id/thumbnail_cover_fg" android:background="@drawable/snote_main_template_01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:gravity="center" android:layout_gravity="top|center" android:id="@id/thumbnail_cover_name_bg" android:background="@drawable/snote_main_cover_name_bg" android:visibility="gone" android:layout_width="176.0px" android:layout_height="50.0px" android:layout_marginLeft="26.0px" android:layout_marginTop="70.0px" android:layout_marginRight="26.0px" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="20.0px" android:ellipsize="none" android:gravity="top" android:layout_gravity="top|center" android:id="@id/name" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip" android:maxWidth="93.0dip" android:text="string/string_griditem_name_text" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/lock_icon" android:background="@drawable/snote_icon_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0px" android:layout_marginRight="9.0px" />
+        <FrameLayout android:id="@id/folders" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0px" android:layout_marginRight="16.0px" android:layout_marginBottom="38.0px">
+            <ImageView android:id="@id/folder_image" android:background="@drawable/snotebook_main_folder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="bottom|left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0px" android:layout_marginRight="26.0px" android:layout_marginBottom="18.0px">
+                <TextView android:textSize="32.0px" android:textStyle="bold" android:textColor="#ff6f4327" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/folder_name" android:fadingEdge="horizontal" android:fadingEdgeLength="40.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#bdffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.5" />
+                <TextView android:textSize="22.0px" android:textColor="#ff6f4327" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/folder_item_count" android:fadingEdge="horizontal" android:fadingEdgeLength="20.0px" android:layout_width="fill_parent" android:layout_height="30.0px" android:singleLine="true" android:shadowColor="#bdffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.5" />
+            </LinearLayout>
+            <ImageView android:id="@id/folder_selector" android:background="@drawable/snotebook_main_folder_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="top|right|center" android:id="@id/check_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0px">
+            <CheckBox android:gravity="top|right|center" android:orientation="vertical" android:id="@id/check" android:background="@drawable/snotebook_select_selector" android:padding="0.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0px" android:layout_marginRight="22.0px" android:button="@android:color/transparent" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="38.0px">
+            <ImageView android:layout_gravity="left" android:id="@id/favorite_icon" android:background="@drawable/snote_thumbnail_icon_favorite" android:visibility="gone" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginLeft="10.0px" android:layout_marginTop="3.0px" />
+            <ImageView android:layout_gravity="left" android:id="@id/voicerecord_icon" android:background="@drawable/snote_thumbnail_icon_record" android:visibility="gone" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="3.0px" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

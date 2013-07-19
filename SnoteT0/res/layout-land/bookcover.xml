@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/snote_main_new_bg_h" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="96.0px" android:layout_marginLeft="153.0px" android:layout_marginTop="30.0px" android:layout_marginRight="153.0px">
+        <EditText android:textSize="38.0px" android:textColor="#ffffffff" android:id="@id/notetitle" android:background="@drawable/snote_main_input_field" android:paddingLeft="14.0px" android:paddingRight="14.0px" android:layout_width="0.0dip" android:layout_height="80.0px" android:layout_marginRight="7.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@null" />
+        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <View android:background="@drawable/snotebook_bookcover_title_bar_handle" android:layout_width="2.0px" android:layout_height="57.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gallery" android:background="@drawable/bookcover_dailog_gallerybtn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:src="@drawable/snote_main_ic_gallery" />
+                <TextView android:textSize="34.0px" android:textColor="#ff4d381e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="15.0dip" android:text="@string/string_gallery_bookcover_dialog" android:shadowColor="#ffebd0b0" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+            <View android:background="@drawable/snotebook_bookcover_title_bar_handle" android:layout_width="2.0px" android:layout_height="57.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cancel" android:background="@drawable/bookcover_dailog_gallerybtn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:src="@drawable/snote_main_ic_cancel" />
+                <TextView android:textSize="34.0px" android:textColor="#ff4d381e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/menu_text_cancel" android:shadowColor="#ffebd0b0" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+            <View android:background="@drawable/snotebook_bookcover_title_bar_handle" android:layout_width="2.0px" android:layout_height="57.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/save" android:background="@drawable/bookcover_dailog_gallerybtn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:src="@drawable/snote_main_ic_done" />
+                <TextView android:textSize="34.0px" android:textColor="#ff4d381e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="15.0dip" android:text="@string/menu_text_done" android:shadowColor="#ffebd0b0" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/snote_main_new_line" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginLeft="154.0px" android:layout_marginRight="154.0px" android:layout_marginBottom="24.0px" />
+    <GridView android:scrollbarStyle="outsideOverlay" android:id="@id/bookcovergridview" android:paddingLeft="162.0px" android:paddingRight="14.0px" android:fadingEdge="vertical" android:fadingEdgeLength="20.0px" android:layout_width="1120.0px" android:layout_height="fill_parent" android:layout_marginBottom="58.0px" android:listSelector="@color/color_transparent" android:horizontalSpacing="36.0px" android:verticalSpacing="40.0px" android:columnWidth="180.0px" android:numColumns="5" android:choiceMode="singleChoice" />
+</LinearLayout>

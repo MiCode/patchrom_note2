@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="17.0px">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0px">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/snote_title_left" android:paddingLeft="19.0px" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" />
+                    <TextView android:textSize="20.0px" android:textColor="#ffc8c8c8" android:id="@id/title" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/custom_action_panel" android:background="@drawable/snote_title_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:divider="@drawable/snotebook_title_divider" android:showDividers="middle" />
+                <LinearLayout android:background="@drawable/snote_title_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0px">
+                    <ImageButton android:id="@id/close" android:background="@drawable/snotebook_title_button_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/snote_title_button_cancle" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="top|left|center" android:id="@id/picker" android:layout_width="56.0px" android:layout_height="24.0px" android:src="@drawable/snote_voice_popup_point" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/content" android:background="@drawable/pen_voice_bg_01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="18.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_button_holder" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="18.0px">
+            <Button android:textSize="29.0px" android:textColor="#ff413f3b" android:gravity="center" android:id="@id/btn_positive" android:background="@drawable/snote_voice_popup_bg" android:visibility="gone" android:layout_width="292.0px" android:layout_height="62.0px" android:text="@string/string_voice_memo_record" android:layout_weight="1.0" />
+            <Button android:textSize="29.0px" android:textColor="@color/snote_record_replace_text_selector" android:gravity="center" android:id="@id/btn_neutral" android:background="@drawable/snote_voice_btn_default_left_selector" android:layout_width="fill_parent" android:layout_height="62.0px" android:text="@string/string_voice_memo_replace" android:layout_weight="1.0" />
+            <View android:background="@drawable/snote_voice_popup_div" android:layout_width="1.0px" android:layout_height="62.0px" />
+            <Button android:textSize="29.0px" android:textColor="#ff413f3b" android:gravity="center" android:id="@id/btn_negative" android:background="@drawable/snote_voice_btn_default_right_selector" android:layout_width="fill_parent" android:layout_height="62.0px" android:text="@string/string_voice_memo_delete" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_one_button_holder" android:background="@drawable/dialog_bottom_holo_light_no_bottom_margin" android:paddingLeft="16.0px" android:paddingTop="9.0px" android:paddingRight="16.0px" android:paddingBottom="9.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0px" android:layout_marginLeft="-1.0px" android:layout_marginTop="-9.0px" android:layout_marginRight="-1.0px">
+            <Button android:gravity="center" android:id="@id/btn_bottom" android:background="@drawable/tw_btn_popup_softkey_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_content" android:visibility="gone" android:layout_width="598.0px" android:layout_height="434.0px" android:layout_below="@id/btn_bottom" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/right_content" android:visibility="gone" android:layout_width="598.0px" android:layout_height="434.0px" android:layout_marginTop="8.0px" android:layout_toRightOf="@id/main_dialog" />
+</LinearLayout>

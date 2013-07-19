@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="80.0px" android:divider="#ffc8c8c8" android:tabStripEnabled="false" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0px">
+            <GridView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center_horizontal" android:id="@id/list" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="620.0px" android:layout_height="380.0px" android:layout_marginTop="20.0px" android:listSelector="@drawable/snote_background_image_selector" android:drawSelectorOnTop="true" android:horizontalSpacing="20.0px" android:verticalSpacing="20.0px" android:columnWidth="180.0px" android:numColumns="3" android:choiceMode="singleChoice" />
+            <ListView android:id="@id/extent_list" android:layout_width="fill_parent" android:layout_height="400.0px" android:divider="#ffffffff" android:dividerHeight="1.0px" android:choiceMode="singleChoice" android:footerDividersEnabled="true" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/result_container" android:layout_width="fill_parent" android:layout_height="250.0px" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="47.0px">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/snote_title_left" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/snote_title_center" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0px" android:textColor="#ffc9c9c9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/recognizer_equation" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/snote_title_right" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <WebView android:id="@id/result_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="right" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0px" android:layout_marginRight="15.0px">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="16.0px" android:id="@id/result_search" android:background="@drawable/popup_search_bg" android:layout_width="wrap_content" android:layout_height="61.0px" android:text="@string/recognizer_search" />
+            <Button android:textSize="16.0px" android:id="@id/result_calculate" android:background="@drawable/popup_search_bg" android:layout_width="wrap_content" android:layout_height="61.0px" android:text="@string/recognizer_calculate" />
+            <Button android:textSize="16.0px" android:id="@id/result_insert" android:background="@drawable/popup_search_bg" android:layout_width="wrap_content" android:layout_height="61.0px" android:text="@string/recognizer_insert" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="294.0dip" android:minHeight="220.0dip" android:updatePeriodMillis="86400000" android:initialLayout="@layout/snote_widget_layout" android:previewImage="@drawable/widget_type1_preview_tab" android:autoAdvanceViewId="@id/widget_viewflipper_01" android:resizeMode="vertical" android:minResizeHeight="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

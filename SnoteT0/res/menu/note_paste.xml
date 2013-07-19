@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_menu_cancel" android:id="@id/paste_cancel" android:title="@string/string_tutorial_close" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/icon_paste_selector" android:id="@id/object_paste" android:title="@android:string/paste" android:showAsAction="always|withText" />
+</menu>

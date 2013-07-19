@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/select_all_layout" android:focusable="true" android:nextFocusDown="@id/grid" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="112.0px">
+            <TextView android:textSize="44.0px" android:textColor="@color/color_white" android:gravity="center_vertical" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:text="@string/select_all" android:shadowColor="#ff2c1f19" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/select_all" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0px" android:button="@drawable/snotebook_select_selector" />
+        </LinearLayout>
+        <View android:background="#7fffffff" android:focusable="false" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:focusable="false" android:layout_width="fill_parent" android:layout_height="20.0px" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/nomatch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center" android:id="@id/nonotes_btn" android:background="@drawable/ic_no_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:color/transparent" />
+            <TextView android:textSize="18.0dip" android:gravity="center" android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/string_filemanager_search_fail" />
+        </LinearLayout>
+        <include android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/edit_page_grid_small" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/move_icon" android:visibility="invisible" android:layout_width="160.0px" android:layout_height="160.0px">
+        <ImageView android:background="@drawable/tw_move_icon" android:focusable="false" android:clickable="false" android:layout_width="160.0px" android:layout_height="160.0px" />
+        <FrameLayout android:layout_gravity="top|right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0px" android:layout_marginRight="3.0px">
+            <TextView android:textSize="44.0px" android:textColor="@android:color/white" android:gravity="center" android:id="@id/move_icon_text" android:background="@drawable/tw_move_bg_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="2" android:shadowColor="@android:color/black" android:shadowDy="1.0" android:shadowRadius="0.3" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

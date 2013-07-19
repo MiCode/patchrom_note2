@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/voice" android:background="@drawable/snote_ic_area_left_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_option_ic_voice_play_selector" android:contentDescription="@string/string_voice_memo_title" />
+        <ImageButton android:id="@id/favorite" android:background="@drawable/snote_ic_area_right_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_favorite_selector" android:contentDescription="@string/string_tutorial_favorite" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0px" android:layout_marginBottom="5.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/horizontal_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/hor_left" android:background="@android:color/transparent" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:id="@id/hor_center" android:background="#50ffffff" android:layout_width="300.0px" android:layout_height="fill_parent" />
+        <Button android:id="@id/hor_right" android:background="@android:color/transparent" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

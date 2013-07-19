@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_menu_cancel" android:id="@id/cancel" android:title="@string/menu_text_cancel" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_delete" android:id="@id/delete" android:title="@string/string_menu_delete" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_copy" android:id="@id/copy" android:title="@string/string_contextmenu_object_copy" android:showAsAction="ifRoom|withText" />
+</menu>

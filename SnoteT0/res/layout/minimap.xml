@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/snote_preview_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.infraware.widget.MinimapImageView android:id="@id/minimap" android:layout_width="157.0px" android:layout_height="242.0px" android:scaleType="fitXY" />
+</FrameLayout>

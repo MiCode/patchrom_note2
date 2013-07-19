@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_note_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/widget_note_cover_1" android:background="@drawable/snote_main_template" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/widget_note_image_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageButton android:id="@id/widget_note_button_1" android:background="@drawable/snotebook_widget3_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center" android:id="@id/widget_lock_icon_1" android:background="@drawable/cal_detail_contents_lock" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+    </FrameLayout>
+</LinearLayout>

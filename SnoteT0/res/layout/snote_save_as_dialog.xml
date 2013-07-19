@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="#ffa3c1de" android:layout_gravity="center" android:id="@id/save_as_name" android:layout_width="552.0px" android:layout_height="wrap_content" android:layout_marginTop="42.0px" android:layout_marginBottom="38.0px" android:singleLine="true" android:inputType="textCapSentences" />
+</LinearLayout>

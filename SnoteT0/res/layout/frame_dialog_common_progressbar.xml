@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dialog_common_filesave_layout_width" android:minWidth="276.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="16.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/holder_common_progressbar" android:layout_width="@dimen/dialog_common_progressbar_width" android:layout_height="@dimen/dialog_common_progressbar_height" android:layout_marginLeft="8.0px" android:layout_marginTop="6.0px" android:layout_marginBottom="6.0px" />
+        <TextView android:ellipsize="end" android:gravity="left|center" android:id="@id/common_progressbar_textbox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="18.0px" android:layout_marginRight="18.0px" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="15.0px" />
+</LinearLayout>

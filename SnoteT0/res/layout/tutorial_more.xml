@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/tutorial_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="25.0px" android:paddingRight="25.0px" android:layout_width="720.0px" android:layout_height="wrap_content" android:layout_marginBottom="30.0px">
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="20.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_more" />
+            <TextView android:textSize="38.0px" android:textColor="#ff342517" android:id="@id/productivitytools_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="6.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_more_explanation1" android:lineSpacingExtra="6.0px" />
+            <ImageView android:id="@id/productiviy_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:src="@drawable/snote_tutorial_more_01" />
+            <ImageView android:id="@id/productiviy_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0px" android:src="@drawable/snote_tutorial_more_02" />
+            <TextView android:textSize="38.0px" android:textColor="#ff342517" android:id="@id/productivitytools_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_more_explanation2" android:lineSpacingExtra="6.0px" />
+            <ImageView android:id="@id/productiviy_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:src="@drawable/snote_tutorial_more_03" />
+            <ImageView android:id="@id/productiviy_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0px" android:src="@drawable/snote_tutorial_more_04" />
+            <TextView android:textSize="38.0px" android:textColor="#ff342517" android:id="@id/productivitytools_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_more_explanation4" android:lineSpacingExtra="6.0px" />
+            <ImageView android:id="@id/productiviy_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:src="@drawable/snote_tutorial_more_06" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

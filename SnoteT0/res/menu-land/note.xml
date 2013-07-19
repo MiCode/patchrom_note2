@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_knowledge_search_selector" android:id="@id/knowledge_search_dummy" android:title="@string/string_handwritingmenu_question" android:showAsAction="always" />
+    <item android:icon="@drawable/snotebook_ic_menu_search" android:id="@id/search" android:title="@string/recognizer_search" android:showAsAction="always" />
+    <item android:icon="@drawable/snotebook_ic_menu_recording" android:id="@id/record" android:visible="false" android:title="@string/string_drawing_record_ready" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_record" android:id="@id/stop" android:visible="false" android:title="@string/string_drawing_record_stop" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_cancel" android:id="@id/cancel" android:title="@string/string_tutorial_close" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_done_selector" android:id="@id/done" android:title="@string/string_tutorial_save" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/menu_icon_add_selector" android:id="@id/add" android:title="@string/string_filemanager_filecreate" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_share_selector" android:id="@id/share_via" android:title="@string/string_menu_share" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_export_selector" android:id="@id/export" android:title="@string/string_menu_export" android:showAsAction="never" />
+    <item android:id="@id/change_layout" android:visible="false" android:title="@string/string_menu_change_layout" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_background_selector" android:id="@id/background_image" android:title="@string/string_menu_background_image" android:showAsAction="never" />
+    <item android:id="@id/import_smemo" android:visible="false" android:title="@string/string_import_file" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_edit_selector" android:id="@id/edit" android:title="@string/edit_pages" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_delete_selector" android:id="@id/delete" android:title="@string/string_menu_delete" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_rename_selector" android:id="@id/rename" android:visible="false" android:title="@string/string_context_rename" android:showAsAction="never" />
+    <item android:id="@id/edit_cover" android:visible="false" android:title="@string/string_context_editcover" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_tag_selector" android:id="@id/tag" android:title="@string/string_title_addtag_dialog" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_splanner_selector" android:id="@id/create_event" android:title="@string/string_menu_create_event" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_save_as_selector" android:id="@id/save_as" android:title="@string/string_wordeditor_mainmenu_saveas" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_shortcut_selector" android:id="@id/set_as_shortcut" android:title="@string/string_menu_shortcut" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_set_as_selector" android:id="@id/set_as" android:title="@string/string_menu_set_as" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_print_selector" android:id="@id/print" android:title="@string/string_menu_print" android:showAsAction="never" />
+    <item android:id="@id/property" android:visible="false" android:title="Property" android:showAsAction="never" />
+</menu>

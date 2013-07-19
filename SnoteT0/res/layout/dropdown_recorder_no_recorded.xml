@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="504.0px" android:layout_height="80.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_start" android:background="@drawable/voice_record_selector" android:focusable="true" android:clickable="true" android:layout_width="262.0px" android:layout_height="62.0px" android:layout_marginLeft="12.0px">
+        <ImageView android:layout_gravity="left|center" android:background="@drawable/snote_record_icon" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginRight="15.0px" android:layout_weight="0.0" />
+        <TextView android:textSize="34.0px" android:textColor="@color/color_black" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0px" android:text="@string/string_template_sheet_official_record" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="-1.0" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="84.0px">
+        <TextView android:textSize="32.0px" android:textColor="#ffc8c8c8" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="52.0px" android:text="@string/string_time" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+</LinearLayout>

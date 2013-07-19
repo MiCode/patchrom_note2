@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@drawable/popup_nobtn_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="DialogWithoutFooter" parent="@style/Dialog">
+        <item name="android:windowBackground">@drawable/popup_nobtn_bg</item>
+    </style>
+    <style name="Context" parent="@style/Dialog">
+        <item name="android:windowBackground">@drawable/popup_nobtn_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="ContextNoTitle" parent="@style/Dialog">
+        <item name="android:windowBackground">@drawable/home_popuptoast_bg_up_left</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="ContextSpinner" parent="@style/Context">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="ContextButton" parent="@style/ContextSpinner">
+        <item name="android:windowBackground">@drawable/popup_nobtn_bg</item>
+    </style>
+    <style name="searchResult" parent="@style/Dialog">
+        <item name="android:windowBackground">@drawable/popup_search_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="InsertDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">640.0px</item>
+        <item name="android:windowMinWidthMinor">640.0px</item>
+    </style>
+    <style name="EffectDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">340.0dip</item>
+        <item name="android:windowMinWidthMinor">340.0dip</item>
+    </style>
+    <style name="setting_title_style">
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">9.0dip</item>
+        <item name="android:shadowColor">@color/color_white</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="SettingPopupTitle">
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <item name="android:textColor">@color/color_setting_popup_title</item>
+    </style>
+    <style name="setting_close_btn_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/color_transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/drawable_popup_close_btn</item>
+    </style>
+    <style name="setting_btn_style">
+        <item name="android:padding">5.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">88.0dip</item>
+        <item name="android:layout_height">70.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+        <item name="android:foreground">@drawable/drawable_select_item_frame</item>
+    </style>
+    <style name="style_actionbar" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">@drawable/snotebook_top_bg</item>
+        <item name="android:displayOptions">useLogo|showHome|showTitle</item>
+        <item name="android:titleTextStyle">@style/actionbar_text_title</item>
+    </style>
+    <style name="style_actionmode" parent="@android:style/Widget.Holo.Light.ActionMode">
+        <item name="android:background">@drawable/snotebook_top_bg</item>
+        <item name="android:titleTextStyle">@style/actionmode_title</item>
+    </style>
+    <style name="actionmode_title" parent="@style/actionbar_text_title">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="actionbar_text_title">
+        <item name="android:textSize">34.0px</item>
+        <item name="android:textColor">#ffebc67f</item>
+        <item name="android:shadowColor">#ffebd0b0</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="actionbar_button_text" parent="@android:style/Widget.ActionButton">
+        <item name="android:textSize">34.0px</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:src">@drawable/snotebook_c_menu_moreoverflow_normal_holo</item>
+    </style>
+    <style name="setting_progress_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">28.0px</item>
+        <item name="android:paddingRight">28.0px</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">331.0px</item>
+        <item name="android:maxHeight">18.0px</item>
+        <item name="android:progressDrawable">@drawable/snote_pen_progress_style</item>
+        <item name="android:minWidth">331.0px</item>
+        <item name="android:minHeight">18.0px</item>
+        <item name="android:thumb">@drawable/snote_progress_thumb_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="setting_eraser_progress_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">28.0px</item>
+        <item name="android:paddingRight">28.0px</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">287.0px</item>
+        <item name="android:maxHeight">18.0px</item>
+        <item name="android:progressDrawable">@drawable/snote_pen_progress_style</item>
+        <item name="android:minWidth">287.0px</item>
+        <item name="android:minHeight">18.0px</item>
+        <item name="android:thumb">@drawable/snote_progress_thumb_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="custom_seekbar">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_seekbar</item>
+        <item name="android:progressDrawable">@drawable/custom_seekbar</item>
+        <item name="android:minHeight">20.0dip</item>
+        <item name="android:thumb">@drawable/transparent</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="q1_custom_seekbar">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/q1_custom_seekbar</item>
+        <item name="android:progressDrawable">@drawable/q1_custom_seekbar</item>
+        <item name="android:minHeight">20.0dip</item>
+        <item name="android:thumb">@drawable/transparent</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="t0_custom_seekbar">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/t0_custom_seekbar</item>
+        <item name="android:progressDrawable">@drawable/t0_custom_seekbar</item>
+        <item name="android:minHeight">20.0dip</item>
+        <item name="android:thumb">@drawable/transparent</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="shape_setting_progress_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">28.0px</item>
+        <item name="android:paddingRight">28.0px</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">320.0px</item>
+        <item name="android:maxHeight">18.0px</item>
+        <item name="android:progressDrawable">@drawable/snote_pen_progress_style</item>
+        <item name="android:minWidth">320.0px</item>
+        <item name="android:minHeight">18.0px</item>
+        <item name="android:thumb">@drawable/snote_progress_thumb_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="SNote.Theme.Transparent" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="hover_animation_top_left">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_top_left</item>
+    </style>
+    <style name="hover_animation_top_right">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_top_right</item>
+    </style>
+    <style name="hover_animation_top_center">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_top_center</item>
+    </style>
+    <style name="hover_animation_center_left">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_center_left</item>
+    </style>
+    <style name="hover_animation_center_right">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_center_right</item>
+    </style>
+    <style name="hover_animation_center_center">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_center_center</item>
+    </style>
+    <style name="hover_animation_bottom_left">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_bottom_left</item>
+    </style>
+    <style name="hover_animation_bottom_right">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_bottom_right</item>
+    </style>
+    <style name="hover_animation_bottom_center">
+        <item name="android:windowEnterAnimation">@anim/hover_incoming_animation_bottom_center</item>
+    </style>
+    <style name="action_mode_close_button_style" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/snotebook_topmenu_selector</item>
+        <item name="android:layout_width">110.0px</item>
+        <item name="android:layout_height">96.0px</item>
+    </style>
+    <style name="CustomTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/style_actionbar</item>
+        <item name="android:actionButtonStyle">@style/actionbar_button_text</item>
+        <item name="android:actionModeCloseDrawable">@drawable/snotebook_ic_menu_done</item>
+        <item name="android:actionOverflowButtonStyle">@style/style_overflow</item>
+        <item name="android:actionModeCloseButtonStyle">@style/action_mode_close_button_style</item>
+        <item name="android:dividerVertical">@drawable/snotebook_tw_title_bar_handle</item>
+        <item name="android:homeAsUpIndicator">@drawable/snote_ic_back</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_item_text_selector</item>
+        <item name="android:actionModeStyle">@style/style_actionmode</item>
+        <item name="android:actionBarItemBackground">@drawable/snotebook_topmenu_selector</item>
+    </style>
+</resources>

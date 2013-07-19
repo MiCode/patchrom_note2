@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_page_grid_spacing_large">50.0px</dimen>
+    <dimen name="vo_text_dialog_item_lang_max_width">300.0px</dimen>
+</resources>

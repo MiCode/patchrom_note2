@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/snote_tab_line" android:showDividers="middle">
+        <TabWidget android:id="@android:id/tabs" android:background="@drawable/snote_page_bg_selector" android:layout_width="fill_parent" android:layout_height="62.0px" android:divider="#1fffffff" android:tabStripEnabled="false" android:dividerPadding="50.0px" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:id="@id/text_setting_scroll_view" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <include android:id="@id/font" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/text_setting_font" />
+                </LinearLayout>
+            </ScrollView>
+            <include android:id="@id/paragraph" android:layout_width="fill_parent" android:layout_height="473.0px" layout="@layout/text_setting_paragraph" />
+            <include android:id="@id/style" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/text_setting_style" />
+            <include android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/text_setting_list" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

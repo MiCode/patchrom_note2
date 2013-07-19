@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/snote_mypen" />
+    <item android:drawable="@drawable/snote_topmenu_focused" />
+</layer-list>

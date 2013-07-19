@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="102.0px">
+        <View android:background="@drawable/handwriting_background" android:layout_width="fill_parent" android:layout_height="92.0px" />
+        <View android:background="@drawable/vo_bg_bottom" android:layout_width="fill_parent" android:layout_height="10.0px" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:layout_marginTop="15.0px" android:layout_marginRight="6.0px">
+        <ImageButton android:id="@id/input_left" android:background="@drawable/snote_ic_area_left_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:src="@drawable/snote_ic_vo_arrow_left_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Left" />
+        <ImageButton android:id="@id/input_right" android:background="@drawable/snote_ic_area_center_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:src="@drawable/snote_ic_vo_arrow_right_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Right" />
+        <ImageButton android:id="@id/input_up" android:background="@drawable/snote_ic_area_center_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:src="@drawable/snote_ic_vo_arrow_up_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Up" />
+        <ImageButton android:id="@id/input_down" android:background="@drawable/snote_ic_area_right_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:layout_marginRight="4.0px" android:src="@drawable/snote_ic_vo_arrow_down_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Down" />
+        <ImageButton android:id="@id/input_backspace" android:background="@drawable/snote_ic_area_left_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:src="@drawable/snote_ic_vo_back_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Backspace" />
+        <ImageButton android:id="@id/input_space" android:background="@drawable/snote_ic_area_center_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:src="@drawable/snote_ic_vo_space_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Space" />
+        <ImageButton android:id="@id/input_enter" android:background="@drawable/snote_ic_area_right_01_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:src="@drawable/snote_ic_vo_enter_selector" android:contentDescription="@string/string_hovering_tootip_TextRecog_Enter" />
+        <ImageButton android:id="@id/input_end" android:background="@drawable/snote_ic_area_center02_selector" android:layout_width="76.0px" android:layout_height="60.0px" android:layout_marginLeft="4.0px" android:src="@drawable/snote_ic_vo_input_end_selector" />
+        <Space android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:textSize="24.0px" android:textColor="@color/handwriting_equation_btn_text_selector" android:ellipsize="none" android:gravity="left|center" android:id="@id/btn_lang_select" android:background="@drawable/snote_ic_area_center02_selector" android:fadingEdgeLength="20.0px" android:layout_width="wrap_content" android:layout_height="60.0px" android:layout_marginLeft="4.0px" android:maxWidth="@dimen/vo_text_dialog_item_lang_max_width" android:minWidth="10.0px" android:singleLine="true" android:layout_alignParentRight="true" android:requiresFadingEdge="horizontal" />
+    </LinearLayout>
+</FrameLayout>

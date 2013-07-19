@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_word_font_common_text_size" android:id="@id/dialogtextviewnewfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_filemanager_filecreate_name" />
+    <EditText android:id="@id/dialogexittextnewfile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

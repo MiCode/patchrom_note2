@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/choose_template" android:background="@drawable/snote_main_new_bg_h" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="972.0px" android:layout_height="wrap_content">
+        <TextView android:textSize="38.0px" android:textColor="#ff4d381e" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="10.0px" android:layout_marginTop="30.0px" android:layout_marginRight="10.0px" android:text="@string/string_title_template_dialog" android:shadowColor="#4dffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <View android:background="@drawable/snote_main_new_line" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginTop="8.0px" android:layout_marginBottom="20.0px" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="974.0px" android:layout_height="fill_parent" android:layout_marginBottom="50.0px">
+        <GridView android:scrollbarStyle="outsideOverlay" android:id="@id/template_grid" android:paddingLeft="15.0px" android:paddingRight="15.0px" android:fadingEdge="vertical" android:fadingEdgeLength="20.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/color_transparent" android:horizontalSpacing="32.0px" android:verticalSpacing="8.0px" android:columnWidth="212.0px" android:numColumns="4" />
+    </FrameLayout>
+</LinearLayout>

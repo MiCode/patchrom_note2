@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/font" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/preview_parent" android:background="@drawable/snote_option_in_bg_custom" android:padding="2.0px" android:layout_width="fill_parent" android:layout_height="123.0px" android:layout_marginLeft="11.0px" android:layout_marginTop="9.0px" android:layout_marginRight="10.0px">
+        <ImageView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0px" android:layout_marginLeft="11.0px" android:layout_marginTop="15.0px" android:layout_marginRight="10.0px">
+        <com.infraware.widget.Spinner android:id="@id/fontface" android:background="@drawable/snote_spinner_selector" android:focusable="true" android:layout_width="175.0px" android:layout_height="fill_parent" android:layout_marginRight="10.0px" android:dropDownWidth="300.0px" android:dropDownHeight="300.0px" android:spinnerMode="dropdown" />
+        <com.infraware.widget.Spinner android:id="@id/size" android:background="@drawable/snote_spinner_selector" android:focusable="true" android:layout_width="67.0px" android:layout_height="fill_parent" android:layout_marginRight="10.0px" android:dropDownWidth="fill_parent" android:dropDownHeight="300.0px" android:spinnerMode="dropdown" />
+        <com.infraware.widget.CenteredCheckBox android:id="@id/bold" android:background="@drawable/q1_snote_btn_popup_left" android:layout_width="58.0px" android:layout_height="fill_parent" android:button="@drawable/snote_text_icon_bold" />
+        <com.infraware.widget.CenteredCheckBox android:id="@id/italic" android:background="@drawable/q1_snote_btn_popup_center" android:layout_width="58.0px" android:layout_height="fill_parent" android:button="@drawable/snote_text_icon_italic" />
+        <com.infraware.widget.CenteredCheckBox android:id="@id/underline" android:background="@drawable/q1_snote_btn_popup_right" android:layout_width="58.0px" android:layout_height="fill_parent" android:button="@drawable/snote_text_icon_underline" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/colorgroup" android:background="@drawable/snote_option_in_bg" android:layout_width="fill_parent" android:layout_height="233.0px" android:layout_marginLeft="11.0px" android:layout_marginTop="15.0px" android:layout_marginRight="10.0px" android:layout_marginBottom="15.0px">
+        <com.infraware.widget.SpuitColorPickerView android:id="@id/palette" android:layout_width="wrap_content" android:layout_height="120.0px" />
+        <com.infraware.widget.GradientColorPicker android:id="@id/picker" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="4.0px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/copy" android:title="@string/string_contextmenu_object_copy" />
+    <item android:id="@id/cut" android:title="@string/string_contextmenu_object_cut" />
+    <item android:id="@id/delete" android:title="@string/string_menu_delete" />
+    <item android:id="@id/date_setdate" android:title="@string/string_object_contextmenu_date" />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/search" android:showAsAction="always" android:actionViewClass="android.widget.SearchView" />
+    <item android:icon="@drawable/snotebook_ic_menu_gps" android:id="@id/mylocation" android:title="@string/string_mapview_option_menu_mylocation" android:showAsAction="always" />
+    <item android:icon="@drawable/snotebook_ic_menu_done" android:id="@id/capture" android:title="@string/string_mapview_option_menu_capture" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/menu_icon_map_start_selector" android:id="@id/startpoint" android:title="@string/string_mapview_startpoint" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_map_end_selector" android:id="@id/endpoint" android:title="@string/string_mapview_endpoint" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_map_directions_selector" android:id="@id/directions" android:title="@string/string_mapview_direction" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_map_clear_selector" android:id="@id/clearmap" android:title="@string/string_mapview_clearmap" android:showAsAction="never" />
+</menu>

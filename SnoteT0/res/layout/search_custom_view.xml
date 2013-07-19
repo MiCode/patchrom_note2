@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="7.0px" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="18.0px" android:textColor="#ff404040" android:id="@id/category" android:paddingLeft="9.0px" android:layout_width="134.0px" android:layout_height="fill_parent" android:text="@string/string_search_category" style="?android:attr/spinnerStyle" />
+    <SearchView android:id="@id/search" android:layout_width="370.0px" android:layout_height="fill_parent" android:iconifiedByDefault="false" android:queryHint="@string/recognizer_search" />
+</LinearLayout>

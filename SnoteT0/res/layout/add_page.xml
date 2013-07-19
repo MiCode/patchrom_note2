@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="73.0px">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/snote_title02" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="9.0px" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" />
+                    <TextView android:textSize="26.0px" android:textColor="#ffc8c8c8" android:gravity="center" android:id="@id/title" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="18.0px" android:text="@string/add_page_title" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/custom_action_panel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:divider="@drawable/snotebook_title_divider" android:showDividers="middle" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/close" android:background="@drawable/popup_exit_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/add_page_content" android:background="@drawable/snote_popup_bg" android:layout_width="wrap_content" android:layout_height="275.0px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="14.0px">
+                <LinearLayout android:orientation="vertical" android:id="@id/add_page_blank" android:focusable="true" android:clickable="true" android:layout_width="165.0px" android:layout_height="fill_parent" android:layout_marginLeft="15.0px" android:layout_marginRight="23.0px">
+                    <ImageView android:id="@id/blank_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_add_page_blank_selector" />
+                    <TextView android:textSize="24.0px" android:textColor="#ffdcdcdc" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="32.0px" android:layout_marginTop="-7.0px" android:text="@string/add_page_plain" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/add_page_template" android:focusable="true" android:clickable="true" android:layout_width="165.0px" android:layout_height="fill_parent" android:layout_marginRight="15.0px">
+                    <ImageView android:id="@id/template_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_add_page_blank_selector" />
+                    <TextView android:textSize="24.0px" android:textColor="#ffdcdcdc" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="32.0px" android:layout_marginTop="-7.0px" android:text="@string/add_page_template" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

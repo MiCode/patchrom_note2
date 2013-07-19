@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_item" android:background="@color/color_transparent" android:layout_width="400.0px" android:layout_height="200.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/search_result_image" android:layout_width="59.0dip" android:layout_height="79.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="0.0" />
+    <ViewFlipper android:orientation="horizontal" android:id="@id/thumbnail_holder" android:background="@color/color_black" android:visibility="gone" android:layout_width="211.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip">
+        <include layout="@layout/listitem_thumbnail_group" />
+    </ViewFlipper>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="44.0px" android:textStyle="bold" android:textColor="@color/listcontrol_filemanager_localfilelist_listitem_name" android:ellipsize="end" android:orientation="horizontal" android:id="@id/search_result_filename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <TextView android:textSize="28.0px" android:textColor="#ffede1c0" android:ellipsize="middle" android:orientation="horizontal" android:id="@id/search_result_filepath" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="28.0px" android:textColor="#ffababab" android:ellipsize="none" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_result_filesize" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_weight="0.0" />
+</LinearLayout>

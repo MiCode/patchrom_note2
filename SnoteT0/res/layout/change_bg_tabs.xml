@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/snote_tabhost_selector" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="35.0px" android:textColor="@color/text_setting_tab_text_color" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/string_change_bg_image" android:layout_weight="1.0" />
+    <View android:background="@drawable/snotebook_tab_focus_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="4.0px" />
+    <View android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

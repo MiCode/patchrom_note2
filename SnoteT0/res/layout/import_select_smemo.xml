@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/import_smemo" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/snote_main_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/top_bg_shadow" android:background="@drawable/snotebook_top_bg_shadow" android:layout_width="fill_parent" android:layout_height="10.0px" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/upper_folder_holder" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="112.0px" android:layout_below="@id/top_bg_shadow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="34.0px" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/upper_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0px" android:text="@string/select_all" android:singleLine="true" android:shadowColor="#ffebd0b0" android:shadowDy="1.1" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="right|center" android:orientation="vertical" android:id="@id/select_all" android:background="@drawable/snotebook_select_selector" android:visibility="gone" android:layout_width="@dimen/checkbox_common_width" android:layout_height="@dimen/checkbox_common_height" android:layout_marginLeft="6.0px" android:layout_marginTop="18.0px" android:layout_marginRight="35.0px" android:layout_marginBottom="18.0px" android:button="@android:color/transparent" android:layout_weight="0.0" />
+            </LinearLayout>
+            <ImageView android:background="#44ffffff" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/holder_relativelayout_filemanager_localfilelist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/upper_folder_holder">
+            <GridView android:gravity="center" android:id="@id/import_smemo_gridimage" android:paddingLeft="30.0px" android:paddingTop="50.0px" android:paddingRight="20.0px" android:paddingBottom="50.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="40.0px" android:verticalSpacing="80.0px" android:columnWidth="190.0px" android:numColumns="auto_fit" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

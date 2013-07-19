@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="73.0px">
+        <View android:background="@drawable/snote_title_left" android:layout_width="11.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/snote_title_center" android:paddingLeft="13.0px" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="26.0px" android:textColor="#ffe2e2e3" android:ellipsize="none" android:gravity="left|center" android:id="@id/title_text" android:fadingEdgeLength="20.0px" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:text="@string/string_tutorial_productivitytools" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:layout_weight="1.0" android:requiresFadingEdge="horizontal" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/snote_title_right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/close" android:background="@drawable/popup_exit_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/content" android:background="@drawable/snote_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

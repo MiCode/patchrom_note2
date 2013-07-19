@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/popup_menu_root" android:layout_width="wrap_content" android:layout_height="210.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/condition_popup" android:layout_width="396.0px" android:layout_height="193.0px" android:layout_marginTop="16.0px">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/conditionbtn1" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="18.0px" android:layout_marginTop="7.0px" />
+            <Button android:id="@id/conditionbtn2" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="18.0px" android:layout_marginTop="7.0px" />
+            <Button android:id="@id/conditionbtn3" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="18.0px" android:layout_marginTop="7.0px" />
+            <Button android:id="@id/conditionbtn4" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="18.0px" android:layout_marginTop="7.0px" />
+            <Button android:id="@id/conditionbtn5" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="18.0px" android:layout_marginTop="7.0px" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="36.0px" android:textColor="#ffb7b7b7" android:id="@id/deletebtn" android:background="@drawable/snote_winsetbtn_selector" android:layout_width="360.0px" android:layout_height="80.0px" android:layout_marginLeft="13.0px" android:layout_marginTop="10.0px" android:text="@string/string_object_contextmenu_deleteobject" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/conditionpicker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/condition_popup_arrow" />
+</FrameLayout>

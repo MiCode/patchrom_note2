@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_width="@dimen/sync_google_dialog_max_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_common_filesave_titlespacer_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0px" android:id="@id/sync_evernote_message_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0px" />
+    <TextView android:textSize="36.0px" android:id="@id/sync_evernote_message_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0px" android:singleLine="false" />
+    <TextView android:textSize="36.0px" android:id="@id/sync_evernote_message_account_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0px" />
+</LinearLayout>

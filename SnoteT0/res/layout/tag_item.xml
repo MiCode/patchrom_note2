@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="99.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginRight="28.0px" android:maxLength="100" android:completionThreshold="2" android:layout_weight="1.0" android:inputType="textCapSentences" android:dropDownAnchor="@id/edit" android:imeOptions="actionDone" />
+        <ImageView android:layout_gravity="center" android:id="@id/delete" android:focusable="true" android:duplicateParentState="false" android:layout_width="60.0px" android:layout_height="60.0px" android:src="@drawable/addtag_dialog_deletebtn_selector" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1.0px">
+        <View android:background="#ffd3d6d8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

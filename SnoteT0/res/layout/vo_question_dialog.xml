@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/result_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="206.0px">
+        <EditText android:textSize="32.0px" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/result_text" android:background="@null" android:paddingLeft="20.0px" android:paddingTop="58.0px" android:paddingRight="10.0px" android:clickable="false" android:layout_width="fill_parent" android:layout_height="200.0px" android:layout_marginLeft="20.0px" />
+        <LinearLayout android:background="@drawable/vo_bg_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|right|center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0px" android:layout_marginBottom="17.0px">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.infraware.widget.Spinner android:id="@id/search_mode" android:background="@drawable/snote_spinner_selector" android:visibility="gone" android:layout_width="256.0px" android:layout_height="fill_parent" android:layout_marginRight="6.0px" android:dropDownWidth="fill_parent" android:dropDownHeight="183.0px" android:dropDownVerticalOffset="-20.0px" android:spinnerMode="dropdown" />
+            <ImageButton android:id="@id/result_search" android:background="@drawable/snote_ic_area_center02_selector" android:layout_width="76.0px" android:layout_height="72.0px" android:src="@drawable/snote_ic_vo_search_selector" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top|right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="13.0px" android:layout_marginRight="20.0px">
+        <TextView android:textSize="32.0px" android:textColor="#9978523a" android:id="@id/english_only_textview" android:background="@color/color_transparent" android:paddingLeft="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_english_only" android:singleLine="true" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|left|center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginBottom="20.0px">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:textSize="18.0px" android:id="@id/input_left" android:background="@drawable/snote_ic_area_left_01_selector" android:layout_width="78.0px" android:layout_height="72.0px" android:src="@drawable/snote_ic_vo_arrow_left_selector" />
+            <ImageButton android:textSize="18.0px" android:id="@id/input_right" android:background="@drawable/snote_ic_area_right_01_selector" android:layout_width="78.0px" android:layout_height="72.0px" android:layout_marginRight="8.0px" android:src="@drawable/snote_ic_vo_arrow_right_selector" />
+            <ImageButton android:textSize="18.0px" android:id="@id/input_backspace" android:background="@drawable/snote_ic_area_left_01_selector" android:layout_width="78.0px" android:layout_height="72.0px" android:src="@drawable/snote_ic_vo_back_selector" />
+            <ImageButton android:textSize="18.0px" android:id="@id/input_space" android:background="@drawable/snote_ic_area_right_01_selector" android:layout_width="78.0px" android:layout_height="72.0px" android:layout_marginRight="8.0px" android:src="@drawable/snote_ic_vo_space_selector" />
+            <Button android:textSize="32.0px" android:textColor="@color/handwriting_equation_btn_text_selector" android:ellipsize="none" android:id="@id/input_clear" android:background="@drawable/snote_ic_area_center02_selector" android:fadingEdgeLength="20.0px" android:layout_width="105.0px" android:layout_height="72.0px" android:text="@string/clear" android:singleLine="true" android:requiresFadingEdge="horizontal" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

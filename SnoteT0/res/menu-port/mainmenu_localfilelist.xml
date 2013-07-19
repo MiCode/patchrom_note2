@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_search_category" android:title="Category" android:showAsAction="always" android:actionViewClass="com.infraware.filemanager.search.SearchCategoryView" />
+    <item android:icon="@drawable/file_operation_search_selector" android:id="@id/menu_dummy_search" android:title="@string/recognizer_search" android:showAsAction="always" />
+    <item android:icon="@drawable/snotebook_ic_menu_search" android:id="@id/menu_localfilelist_mainmenu_search" android:showAsAction="always" android:iconifiedByDefault="true" android:actionViewClass="android.widget.SearchView" />
+    <item android:icon="@drawable/snotebook_ic_menu_delete_selector" android:id="@id/menu_localfilelist_mainmenu_delete_main" android:title="@string/string_context_delete" android:showAsAction="always" />
+    <item android:icon="@drawable/snotebook_ic_menu_new" android:id="@id/menu_localfilelist_mainmenu_newfile" android:title="@string/string_filemanager_filecreate" android:showAsAction="always" />
+    <item android:icon="@drawable/menu_icon_refresh_selector" android:id="@id/menu_localfilelist_mainmenu_refresh" android:title="@string/string_filemanager_menu_refresh" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_sortby_selector" android:id="@id/menu_localfilelist_mainmenu_sortby" android:title="@string/string_filemanager_menu_sortby" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_listview_selector" android:id="@id/menu_localfilelist_mainmenu_listview" android:title="@string/string_localfilelist_mainmenu_listview" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_gridview_selector" android:id="@id/menu_localfilelist_mainmenu_gridview" android:title="@string/string_localfilelist_mainmenu_gridview" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_import_selector" android:id="@id/menu_localfilelist_mainmenu_import" android:title="@string/string_filemanager_menu_import" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_sync_selector" android:id="@id/menu_localfilelist_mainmenu_sync" android:title="@string/string_filemanager_menu_sync" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_newfolder_selector" android:id="@id/menu_localfilelist_mainmenu_newfolder" android:title="@string/string_localfilelist_mainmenu_newfolder" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_changeorder_selector" android:id="@id/menu_localfilelist_mainmenu_changeorder" android:title="@string/change_order" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_copy_selector" android:id="@id/menu_localfilelist_mainmenu_copy" android:title="@string/string_contextmenu_object_copy" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_move_selector" android:id="@id/menu_localfilelist_mainmenu_move" android:title="@string/string_filemanager_context_move" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_settings_selector" android:id="@id/settings" android:title="@string/settings" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_icon_tutorial_selector" android:id="@id/tutorial" android:title="@string/string_tutorial" android:showAsAction="never" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/preset_area" android:padding="0.0px" android:layout_width="96.0px" android:layout_height="88.0px" android:layout_margin="0.0px">
+        <FrameLayout android:id="@id/preset_view" android:background="@drawable/snotebook_preset_selector" android:padding="0.0px" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0px" android:layout_marginTop="6.0px" android:layout_marginRight="6.0px" android:layout_marginBottom="0.0px">
+            <LinearLayout android:id="@id/preset_preview" android:padding="0.0px" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0px" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="top|right|center" android:id="@id/delete_preset" android:background="@drawable/snotebook_preset_delete_selector" android:paddingRight="-1.0px" android:layout_width="57.0px" android:layout_height="44.0px" android:layout_marginRight="1.0px" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/quickactions_arrowdown_holo_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/quickactions_arrowdown_sprit" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/delete" android:background="@android:color/transparent" android:layout_width="93.0dip" android:layout_height="wrap_content" android:text="@string/string_context_delete" android:shadowColor="#e6ffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    <ImageButton android:id="@id/rotate_ccw" android:background="@android:color/transparent" android:layout_width="55.0dip" android:layout_height="wrap_content" android:src="@drawable/quickactions_rotate_ccw" />
+    <ImageButton android:id="@id/rotate_cw" android:background="@android:color/transparent" android:layout_width="55.0dip" android:layout_height="wrap_content" android:src="@drawable/quickactions_rotate_cw" />
+    <Button android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/open_url" android:background="@android:color/transparent" android:layout_width="101.0dip" android:layout_height="wrap_content" android:text="@string/open_url" android:shadowColor="#e6ffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+</LinearLayout>

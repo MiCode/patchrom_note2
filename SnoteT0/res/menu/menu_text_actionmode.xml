@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_common_actionmode_search" />
+    <item android:icon="@drawable/ico_menu_copy" android:id="@id/menu_common_actionmode_copy" android:title="@string/string_contextmenu_object_copy" />
+    <item android:icon="@drawable/ico_menu_cut" android:id="@id/menu_common_actionmode_cut" android:title="@string/string_contextmenu_object_cut" />
+    <item android:icon="@drawable/ico_menu_paste" android:id="@id/menu_common_actionmode_paste" android:title="@string/string_contextmenu_object_paste" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="84.0dip" android:layout_height="110.0dip">
+        <ImageView android:id="@id/widget_template_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/widget_template_button" android:background="@drawable/snote_widget_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ff38210f" android:ellipsize="marquee" android:gravity="bottom|center" android:id="@id/widget_template_text" android:layout_width="84.0dip" android:layout_height="17.0dip" android:singleLine="true" android:shadowColor="#30ffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+</LinearLayout>

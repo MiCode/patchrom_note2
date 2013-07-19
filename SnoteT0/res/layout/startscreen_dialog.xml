@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ff000000" android:dividerHeight="2.0px" android:choiceMode="singleChoice" android:footerDividersEnabled="true" />
+    <View android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="3.0px" android:layout_marginTop="10.0px" />
+    <com.infraware.widget.CheckableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/startscreen_check_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="100.0px" android:layout_marginLeft="20.0px" android:layout_marginTop="10.0px" android:layout_marginBottom="20.0px">
+        <CheckBox android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="40.0px" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/string_tutorial_dontshow" />
+    </com.infraware.widget.CheckableLinearLayout>
+</LinearLayout>

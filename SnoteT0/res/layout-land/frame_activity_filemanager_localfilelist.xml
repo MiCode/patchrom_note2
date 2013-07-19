@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame_activity_filemanager_localfilelist" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/holder_listcontrol_filemanager_localfilelist" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/searchResultList" android:background="#ff000000" android:visibility="invisible" android:layout_width="440.0px" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/holder_emptydir" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_weight="1.0">
+                <ImageButton android:id="@id/nonotes_btn" android:background="@drawable/snote_no_notes_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:color/transparent" />
+                <TextView android:textSize="36.0px" android:textColor="#7f5a4831" android:id="@id/nonotes_btn_text" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/string_filemanager_no_notes" android:shadowColor="#2fffffff" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="top|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+                    <ImageView android:id="@id/nonotes_image" android:background="@drawable/snote_no_add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@android:color/transparent" />
+                    <TextView android:textSize="32.0px" android:textColor="#ff463522" android:gravity="left" android:id="@id/nonotes_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="16.0dip" android:text="@string/string_filemanager_no_notes_add_1" android:layout_weight="272.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/holder_search_nomatch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageButton android:layout_gravity="center" android:id="@id/nonotes_btn" android:background="@drawable/ic_no_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:color/transparent" />
+            <TextView android:textSize="36.0px" android:textColor="#7f5a4831" android:gravity="center" android:layout_gravity="center" android:id="@id/search_nomatch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/string_filemanager_search_fail" android:shadowColor="#2fffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

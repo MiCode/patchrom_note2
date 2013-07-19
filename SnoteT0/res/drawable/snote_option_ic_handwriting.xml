@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/snote_option_ic_text_selector" android:maxLevel="1" />
+    <item android:drawable="@drawable/snote_option_ic_equation_selector" android:maxLevel="2" />
+    <item android:drawable="@drawable/snote_option_ic_shape_selector" android:maxLevel="3" />
+</level-list>

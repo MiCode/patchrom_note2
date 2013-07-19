@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="preference_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/settings_samsung_account_autosync_tag_title" android:key="auto_sync" android:summary="@string/settings_samsung_account_autosync_tag_summary" />
+    <com.infraware.widget.ListPreference android:persistent="true" android:entries="@array/add_page_option_entries" android:title="@string/settings_add_page_option_title" android:key="add_page_option" android:entryValues="@array/add_page_option_values" />
+    <com.infraware.widget.SNoteMultiSelectListPreference android:persistent="true" android:title="@string/string_input_language" android:key="handwriting_language_option" android:summary="@string/string_input_language_summary" />
+    <com.infraware.widget.ListPreference android:persistent="true" android:entries="@array/Create_note_options_entries" android:title="@string/string_create_note_title" android:key="create_note_options" android:entryValues="@array/Create_note_options_values" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/string_draw_guideline" android:key="drawing_guideline" android:summary="@string/string_show_draw_guideline" />
+</PreferenceScreen>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:id="@id/type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="type" android:singleLine="true" />
+        <TextView android:id="@id/typeresult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_result" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="14.0dip" android:id="@id/gettype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_gettype" />
+        <Button android:textSize="14.0dip" android:id="@id/settype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_settype" />
+        <Button android:textSize="14.0dip" android:id="@id/typesearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_typeSearch" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="name" android:singleLine="true" />
+        <TextView android:id="@id/nameresult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_result" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:id="@id/int_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value - Int" android:singleLine="true" />
+        <EditText android:id="@id/string_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value - String" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:id="@id/left_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value - left" android:singleLine="true" />
+        <EditText android:id="@id/top_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value - top" android:singleLine="true" />
+        <EditText android:id="@id/right_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value - right" android:singleLine="true" />
+        <EditText android:id="@id/bottom_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value - bottom" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="14.0dip" android:id="@id/add_int" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_addint" />
+        <Button android:textSize="14.0dip" android:id="@id/add_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_addstring" />
+        <Button android:textSize="14.0dip" android:id="@id/add_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_addrect" />
+        <Button android:textSize="14.0dip" android:id="@id/remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_remove" />
+        <Button android:textSize="14.0dip" android:id="@id/load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_load" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="14.0dip" android:id="@id/change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_Change" />
+        <Button android:textSize="14.0dip" android:id="@id/search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_namesearch" />
+        <Button android:textSize="14.0dip" android:id="@id/clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_clear" />
+        <Button android:textSize="14.0dip" android:id="@id/get_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_getnextpage" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <EditText android:id="@id/et_page_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:hint="@string/string_pageindex" />
+        <EditText android:id="@id/et_object_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:hint="@string/string_objectid" />
+        <Button android:id="@id/get_page_and_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_indexandobject" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/get_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_getvalue" />
+        <Button android:id="@id/get_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/strng_getviedo" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

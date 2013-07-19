@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView android:scrollbarStyle="outsideOverlay" android:id="@id/grid" android:paddingLeft="30.0px" android:paddingRight="30.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/edit_page_grid_spacing_large" android:verticalSpacing="76.0px" android:stretchMode="spacingWidth" android:columnWidth="315.0px" android:numColumns="auto_fit" android:choiceMode="multipleChoice"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

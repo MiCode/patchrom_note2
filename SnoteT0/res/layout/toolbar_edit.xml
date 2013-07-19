@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0px" android:splitMotionEvents="false">
+        <com.infraware.widget.CheckableFrameLayout android:id="@id/draw" android:background="@drawable/snote_ic_area_left_selector" android:focusable="true" android:clickable="true" android:layout_width="70.0px" android:layout_height="fill_parent" android:contentDescription="@string/string_tutorial_drawingmode">
+            <ImageView android:layout_gravity="center" android:id="@id/draw_brush" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_option_ic_draw" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/draw_color" android:layout_width="38.0px" android:layout_height="6.0px" android:layout_marginTop="36.0px" />
+        </com.infraware.widget.CheckableFrameLayout>
+        <com.infraware.widget.CheckableFrameLayout android:id="@id/handwriting" android:background="@drawable/snote_ic_area_center_selector" android:focusable="true" android:clickable="true" android:layout_width="70.0px" android:layout_height="fill_parent" android:button="@drawable/snote_option_ic_text" android:contentDescription="@string/string_tutorial_productivitytools">
+            <ImageView android:layout_gravity="center" android:id="@id/handwriting_object" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_option_ic_handwriting" />
+        </com.infraware.widget.CheckableFrameLayout>
+        <com.infraware.widget.CheckableFrameLayout android:id="@id/text" android:background="@drawable/snote_ic_area_center_selector" android:focusable="true" android:clickable="true" android:layout_width="70.0px" android:layout_height="fill_parent" android:contentDescription="@string/string_tutorial_textselectionmode">
+            <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_text_selector" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/text_color" android:layout_width="38.0px" android:layout_height="6.0px" android:layout_marginTop="36.0px" android:src="#ff000000" />
+        </com.infraware.widget.CheckableFrameLayout>
+        <com.infraware.widget.CheckableFrameLayout android:id="@id/eraser" android:background="@drawable/snote_ic_area_right_selector" android:focusable="true" android:clickable="true" android:layout_width="70.0px" android:layout_height="fill_parent" android:contentDescription="@string/string_tutorial_erasermode">
+            <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="70.0px" android:layout_height="52.0px" android:src="@drawable/snote_option_ic_eraser_selector" />
+        </com.infraware.widget.CheckableFrameLayout>
+    </LinearLayout>
+    <Space android:id="@id/space" android:visibility="gone" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:id="@id/undoredo_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0px" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/undo" android:background="@drawable/snote_ic_area_left_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_undo_selector" android:contentDescription="@string/string_tutorial_undo" />
+        <ImageButton android:id="@id/redo" android:background="@drawable/snote_ic_area_right_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_redo_selector" android:contentDescription="@string/string_tutorial_redo" />
+    </LinearLayout>
+    <Space android:id="@id/space2" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:id="@id/misc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/insert" android:background="@drawable/snote_ic_area_left_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_attach_selector" android:contentDescription="@string/string_tutorial_insertobject" />
+        <ImageButton android:id="@id/voice" android:background="@drawable/snote_ic_area_right_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_voice_selector" android:contentDescription="@string/string_voice_memo_title" />
+        <ImageButton android:id="@id/favorite" android:background="@drawable/snote_ic_area_right_selector" android:visibility="gone" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_favorite_selector" android:contentDescription="@string/string_tutorial_favorite" />
+    </LinearLayout>
+</merge>

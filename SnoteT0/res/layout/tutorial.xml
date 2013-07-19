@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/tutorial_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="18.0px" android:paddingRight="18.0px" android:layout_width="720.0px" android:layout_height="wrap_content">
+            <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="12.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_learningapplication_explanation" android:lineSpacingExtra="6.0px" />
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_productivitytools" />
+            <TextView android:textSize="36.0px" android:textColor="#ff342517" android:id="@id/productivitytools_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="12.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_productivitytools_explanation" android:lineSpacingExtra="6.0px" />
+            <ImageView android:id="@id/productiviy_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/productivity_tools" />
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_shapematch" android:drawableLeft="@drawable/snote_option_ic_shape" />
+            <TextView android:textSize="36.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="12.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_shapematch_explanation" android:lineSpacingExtra="6.0px" />
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_formulamatch" android:drawableLeft="@drawable/snote_option_ic_equation" />
+            <TextView android:textSize="36.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="12.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_formulamatch_explanation" android:lineSpacingExtra="6.0px" />
+            <ImageView android:id="@id/formula_match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/formula_match" />
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_textmatch" android:drawableLeft="@drawable/snote_option_ic_text" />
+            <TextView android:textSize="36.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="12.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_textmatch_explanation" android:lineSpacingExtra="6.0px" />
+            <ImageView android:id="@id/text_match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/text_match" />
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_panning" />
+            <TextView android:textSize="36.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="4.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_panning_explanation_merged" android:lineSpacingExtra="6.0px" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panning" />
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_select_object" />
+            <TextView android:textSize="36.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="4.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_tap_and_hold_object_to_select" android:lineSpacingExtra="6.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/toolbarlayout" android:paddingLeft="18.0px" android:paddingRight="18.0px" android:layout_width="720.0px" android:layout_height="fill_parent" android:layout_marginTop="36.0px">
+            <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:text="@string/string_tutorial_toolbar" />
+            <ImageView android:id="@id/toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar" />
+            <LinearLayout android:orientation="vertical" android:id="@id/knowledgesearch" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="38.0px" android:textStyle="bold" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="36.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_knowledgesearch" android:drawableLeft="@drawable/snote_ic_vo_search" />
+                <TextView android:textSize="36.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:layout_marginTop="12.0px" android:layout_marginRight="9.0px" android:text="@string/string_tutorial_knowledgesearch_explanation" android:lineSpacingExtra="6.0px" />
+            </LinearLayout>
+            <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0px" android:text="@string/string_tutorial_close" />
+            <TextView android:textSize="36.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_close_explanation" android:lineSpacingExtra="6.0px" />
+            <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" android:text="@string/string_tutorial_save" />
+            <TextView android:textSize="36.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_save_explanation" android:lineSpacingExtra="6.0px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/create" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_create" />
+                    <TextView android:textSize="36.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_create_explanation" android:lineSpacingExtra="6.0px" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_view" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_viewmode" />
+                    <TextView android:textSize="36.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_editmode_explanation" android:lineSpacingExtra="6.0px" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_edit" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_editmode" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_option_ic_draw_pen_tuto" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_drawingmode" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_penselectionmode_explanation" android:lineSpacingExtra="6.0px" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_option_ic_equation" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_productivitytools" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_productivitytools_explanation2" android:lineSpacingExtra="6.0px" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_text_tuto" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_textselectionmode" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:text="@string/string_tutorial_textselectionmode_explanation" android:lineSpacingExtra="6.0px" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_option_ic_eraser" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_erasermode" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_erasermode_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_undo" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_undo" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_undo_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_redo" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_redo" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_redo_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_add" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_insertobject" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_insertobject_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_voice" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_voice_memo_title" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_recordvoice_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_spen_only02_normal" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_s_pen_only_title" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_s_pen_only_summary" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" android:layout_marginBottom="20.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_favorite_on" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_favorite" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_favorite_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" android:layout_marginBottom="20.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_ic_record_on" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_marginTop="3.0px">
+                    <TextView android:textSize="38.0px" android:textColor="#ff342517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_record_sketch" />
+                    <TextView android:textSize="38.0px" android:textColor="#ff686764" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_tutorial_record_sketch_explanation" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

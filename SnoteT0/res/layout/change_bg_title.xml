@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/tag_list_dlg" android:layout_width="fill_parent" android:layout_height="96.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="96.0px" android:layout_marginLeft="30.0px" android:text="@string/string_menu_background_image" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="96.0px" android:layout_alignParentRight="true">
+        <View android:background="#ffebebeb" android:layout_width="2.0px" android:layout_height="70.0px" android:layout_marginRight="2.0px" />
+        <ImageButton android:enabled="true" android:id="@id/gallery" android:background="@drawable/insert_gallery_bg_selector" android:clickable="true" android:layout_width="114.0px" android:layout_height="96.0px" android:src="@drawable/insert_gallery_selector" android:contentDescription="@string/string_gallery_bookcover_dialog" />
+    </LinearLayout>
+</RelativeLayout>

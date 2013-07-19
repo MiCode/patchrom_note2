@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="65.0px">
+        <TextView android:textSize="@dimen/listcontrol_filelist_item_name_textsize" android:textColor="@color/listcontrol_filemanager_localfilelist_listitem_name" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:paddingLeft="@dimen/listcontrol_common_item_margin_horizontal" android:paddingRight="@dimen/listcontrol_common_item_margin_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0px" android:textColor="@color/listcontrol_filemanager_localfilelist_listitem_comment" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/comment" android:paddingLeft="@dimen/listcontrol_common_item_margin_horizontal" android:paddingRight="@dimen/listcontrol_common_item_margin_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/listcontrol_filemanager_localfilelist_divider" android:layout_width="fill_parent" android:layout_height="1.0px"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

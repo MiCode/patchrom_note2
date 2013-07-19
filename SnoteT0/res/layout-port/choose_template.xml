@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/choose_template" android:background="@drawable/snote_main_new_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="660.0px" android:layout_height="fill_parent">
+        <TextView android:textSize="38.0px" android:textColor="#ff4d381e" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_marginLeft="10.0px" android:layout_marginTop="85.0px" android:layout_marginRight="11.0px" android:layout_marginBottom="10.0px" android:text="@string/string_title_template_dialog" android:shadowColor="#4dffffff" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+        <View android:background="@drawable/snotebook_main_new_line" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginTop="8.0px" android:layout_marginBottom="20.0px" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="70.0px">
+            <GridView android:id="@id/template_grid" android:scrollbars="vertical" android:fadingEdge="vertical" android:fadingEdgeLength="20.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="12.0px" android:verticalSpacing="8.0px" android:columnWidth="212.0px" android:numColumns="3" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

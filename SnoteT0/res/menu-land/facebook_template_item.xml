@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_menu_cancel" android:id="@id/cancel" android:title="@string/string_tutorial_close" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/facebook_upload_menu_selector" android:id="@id/upload" android:title="@string/string_facebook_option_menu_upload" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/menu_icon_background_selector" android:id="@id/background_image" android:title="@string/string_menu_background_image" android:showAsAction="never" />
+</menu>

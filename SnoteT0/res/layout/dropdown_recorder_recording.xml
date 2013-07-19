@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="504.0px" android:layout_height="80.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_stop" android:background="@drawable/voice_stop_selector" android:layout_width="112.0px" android:layout_height="62.0px" android:layout_marginLeft="12.0px" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="112.0px" android:layout_height="62.0px">
+        <ImageButton android:id="@id/btn_pause" android:background="@drawable/voice_pause_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/btn_resume" android:background="@drawable/voice_re_record_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_cancel" android:background="@drawable/voice_cancel_selector" android:layout_width="112.0px" android:layout_height="62.0px" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="84.0px">
+        <TextView android:textSize="32.0px" android:textColor="#ffc8c8c8" android:gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0px" android:text="@string/string_time" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="-1.0" />
+    </LinearLayout>
+</LinearLayout>

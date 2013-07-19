@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right" android:background="@android:color/transparent" android:layout_width="50.0px" android:layout_height="fill_parent" android:layout_marginRight="5.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/vertical_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/ver_top" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <Button android:id="@id/ver_center" android:background="#50ffffff" android:layout_width="fill_parent" android:layout_height="200.0px" />
+        <Button android:id="@id/ver_bottom" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

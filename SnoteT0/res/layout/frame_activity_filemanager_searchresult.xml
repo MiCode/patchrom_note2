@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/search_result_main" android:background="@drawable/snote_main_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/holder_nomatch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageButton android:layout_gravity="center" android:id="@id/nonotes_btn" android:background="@drawable/ic_no_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:color/transparent" />
+            <TextView android:textSize="18.0dip" android:gravity="center" android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/string_filemanager_search_fail" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/snotebook_top_bg_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

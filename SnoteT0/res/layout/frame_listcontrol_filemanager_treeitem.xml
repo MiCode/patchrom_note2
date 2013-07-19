@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="0.0px" android:layout_width="fill_parent" android:layout_height="128.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/treeview_selector" android:layout_width="fill_parent" android:layout_height="128.0px">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingLeft="20.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0px" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0px">
+                <LinearLayout android:id="@id/indicator_line_holder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/focusable_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <LinearLayout android:id="@id/icon" android:layout_width="96.0px" android:layout_height="96.0px" />
+                    <TextView android:textSize="44.0px" android:textColor="@color/foldertree_text_color" android:ellipsize="none" android:id="@id/name" android:paddingLeft="30.0px" android:paddingRight="21.0px" android:fadingEdge="horizontal" android:fadingEdgeLength="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_textview" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/tree_seperate_icon" android:background="@drawable/snote_tw_contents_list_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="60.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0px" android:textColor="#ffdcdcdc" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/recognizetext" android:layout_width="wrap_content" android:layout_height="65.0px" android:layout_marginLeft="24.0px" android:singleLine="true" android:drawablePadding="20.0px" />
+</LinearLayout>

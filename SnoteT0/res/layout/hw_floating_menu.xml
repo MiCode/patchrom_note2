@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="10.0px" android:paddingTop="9.0px" android:paddingRight="10.0px" android:paddingBottom="9.0px" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_shape" android:background="@drawable/snote_btn_selector" android:layout_width="122.0px" android:layout_height="63.0px" android:src="@drawable/snote_recognize_shape_selector" android:contentDescription="@string/string_tutorial_shapematch" />
+    <ImageButton android:id="@id/btn_equation" android:background="@drawable/snote_btn_selector" android:layout_width="122.0px" android:layout_height="63.0px" android:src="@drawable/snote_recognize_equation_selector" android:contentDescription="@string/string_tutorial_formulamatch" />
+    <ImageButton android:id="@id/btn_text" android:background="@drawable/snote_btn_selector" android:layout_width="122.0px" android:layout_height="63.0px" android:src="@drawable/snote_recognize_text_selector" android:contentDescription="@string/string_tutorial_textmatch" />
+</LinearLayout>

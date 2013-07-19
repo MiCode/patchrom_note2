@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infraware.widget.CheckableFrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item" android:background="@drawable/clipart_bg_normal" android:layout_width="164.0px" android:layout_height="164.0px" />
+    <ImageView android:id="@id/item_selector" android:background="@drawable/smemo_popup_clipart_bg_selector" android:layout_width="164.0px" android:layout_height="164.0px" />
+    <CheckBox android:layout_gravity="top|right|center" android:id="@id/check" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0px" android:layout_marginRight="-10.0px" android:button="@drawable/snotebook_select_selector" />
+</com.infraware.widget.CheckableFrameLayout>

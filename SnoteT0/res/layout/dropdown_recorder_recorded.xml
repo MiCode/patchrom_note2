@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="512.0px" android:layout_height="164.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="80.0px">
+        <ImageButton android:gravity="center" android:id="@id/btn_play" android:background="@drawable/voice_play_selector" android:layout_width="112.0px" android:layout_height="62.0px" android:layout_marginLeft="8.0px" android:layout_marginTop="2.0px" />
+        <TextView android:textSize="28.0px" android:textColor="#ffdcdcdc" android:gravity="center_vertical" android:id="@id/count" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="84.0px" android:text="@string/string_count" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="-1.0" />
+    </LinearLayout>
+    <ImageView android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/bottom_button_holder" android:layout_width="fill_parent" android:layout_height="80.0px">
+        <Button android:id="@id/btn_positive" android:background="@drawable/snote_btn_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="46.0px" android:text="@string/string_voice_memo_record" />
+        <Button android:textSize="28.0px" android:textColor="@color/snote_voice_text_color_selector" android:ellipsize="marquee" android:id="@id/btn_overwrite" android:background="@drawable/snote_btn_selector" android:layout_width="244.0px" android:layout_height="62.0px" android:layout_marginLeft="10.0px" android:layout_marginTop="2.0px" android:layout_marginRight="8.0px" android:text="@string/string_voice_memo_replace" android:singleLine="true" />
+        <Button android:textSize="28.0px" android:textColor="@color/snote_voice_text_color_selector" android:id="@id/btn_delete" android:background="@drawable/snote_btn_selector" android:layout_width="244.0px" android:layout_height="62.0px" android:layout_marginTop="2.0px" android:text="@string/string_voice_memo_delete" />
+    </LinearLayout>
+</LinearLayout>

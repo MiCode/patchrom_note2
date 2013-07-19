@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="0.0px" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0px" android:textColor="@color/subtoolbar_text_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="28.0px" android:layout_marginLeft="8.0px" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

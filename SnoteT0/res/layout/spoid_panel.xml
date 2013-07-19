@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/snote_spoid_bg" android:layout_width="198.0px" android:layout_height="64.0px">
+        <LinearLayout android:orientation="horizontal" android:id="@id/spoid_title" android:layout_width="35.0px" android:layout_height="54.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/spoid_color" android:layout_width="40.0px" android:layout_height="40.0px" android:layout_marginLeft="52.0px" android:layout_marginTop="10.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/spoid_close" android:layout_width="49.0px" android:layout_height="49.0px" android:layout_marginLeft="14.0px" android:layout_marginTop="6.0px">
+            <ImageButton android:id="@id/spoid_close_btn" android:background="@drawable/popup_spoid_selector" android:layout_width="48.0px" android:layout_height="48.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

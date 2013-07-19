@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cover1_holder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="54.0">
+        <ImageView android:id="@id/thumbnail_cover1_bg" android:background="@drawable/snote_main_template" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.infraware.uxcontrol.uicontrol.UiImageView android:id="@id/cover1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/thumbnail_cover1_fg" android:background="@drawable/snote_main_template_01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="28.0px" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/cover1_name" android:layout_width="wrap_content" android:layout_height="48.0px" android:layout_marginTop="70.0px" android:maxWidth="93.0px" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/lock_icon1" android:background="@drawable/snote_icon_lock" android:visibility="gone" android:layout_width="25.0px" android:layout_height="51.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/cover2_holder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="54.0">
+        <ImageView android:id="@id/thumbnail_cover2_bg" android:background="@drawable/snote_main_template" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.infraware.uxcontrol.uicontrol.UiImageView android:id="@id/cover2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/thumbnail_cover2_fg" android:background="@drawable/snote_main_template_01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="28.0px" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/cover2_name" android:layout_width="wrap_content" android:layout_height="48.0px" android:layout_marginTop="70.0px" android:maxWidth="93.0px" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/lock_icon2" android:background="@drawable/snote_icon_lock" android:visibility="gone" android:layout_width="25.0px" android:layout_height="51.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/cover3_holder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="54.0">
+        <ImageView android:id="@id/thumbnail_cover3_bg" android:background="@drawable/snote_main_template" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.infraware.uxcontrol.uicontrol.UiImageView android:id="@id/cover3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/thumbnail_cover3_fg" android:background="@drawable/snote_main_template_01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="28.0px" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/cover3_name" android:layout_width="wrap_content" android:layout_height="48.0px" android:layout_marginTop="70.0px" android:maxWidth="93.0px" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/lock_icon3" android:background="@drawable/snote_icon_lock" android:visibility="gone" android:layout_width="25.0px" android:layout_height="51.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/cover4_holder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="54.0">
+        <ImageView android:id="@id/thumbnail_cover4_bg" android:background="@drawable/snote_main_template" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.infraware.uxcontrol.uicontrol.UiImageView android:id="@id/cover4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/thumbnail_cover4_fg" android:background="@drawable/snote_main_template_01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="28.0px" android:ellipsize="none" android:layout_gravity="top|center" android:id="@id/cover4_name" android:layout_width="wrap_content" android:layout_height="48.0px" android:layout_marginTop="70.0px" android:maxWidth="93.0px" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/lock_icon4" android:background="@drawable/snote_icon_lock" android:visibility="gone" android:layout_width="25.0px" android:layout_height="51.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" />
+    </FrameLayout>
+</LinearLayout>

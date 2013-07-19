@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="466.0px">
+        <LinearLayout android:id="@id/frame_setting_preview" android:background="@drawable/snote_pen_type_bg" android:layout_width="438.0px" android:layout_height="108.0px" android:layout_marginLeft="11.0px" android:layout_marginTop="8.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/frame_size_select_box" android:background="@drawable/snote_popup_in_bg" android:layout_width="438.0px" android:layout_height="84.0px" android:layout_marginLeft="11.0px" android:layout_marginTop="8.0px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="331.0px" android:layout_height="fill_parent" android:layout_marginRight="10.0px">
+                    <SeekBar android:id="@id/frame_size_seekbar" style="@style/setting_progress_style" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="82.0px" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/frame_size_maximum" android:background="@drawable/pen_size_bg" android:layout_width="@dimen/pen_setting_circle_size" android:layout_height="@dimen/pen_setting_circle_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/frame_opacity_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="330.0px" android:layout_height="fill_parent">
+                <SeekBar android:id="@id/frame_alpha_seekbar" style="@style/shape_setting_progress_style" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/image_bg" android:layout_width="74.0px" android:layout_height="74.0px" />
+                <ImageView android:id="@id/frame_alpha_maximum" android:background="@drawable/image_opacity_bg" android:layout_width="74.0px" android:layout_height="74.0px" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/frame_color_select_box" android:background="@drawable/snote_popup_in_bg" android:layout_width="wrap_content" android:layout_height="234.0px" android:layout_marginLeft="11.0px" android:layout_marginTop="8.0px" android:layout_marginBottom="22.0px">
+            <com.infraware.widget.SpuitColorPickerView android:gravity="center" android:id="@id/frame_color_select" android:layout_width="434.0px" android:layout_height="111.0px" android:layout_marginLeft="3.0px" android:layout_marginTop="4.0px" android:layout_marginBottom="4.0px" />
+            <com.infraware.widget.GradientColorPicker android:layout_gravity="center" android:id="@id/frame_color_picker" android:layout_width="419.0px" android:layout_height="110.0px" android:layout_marginLeft="2.0px" android:layout_marginBottom="4.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/frame_vertical_seekbar_box" android:background="@drawable/snote_option_in_bg" android:visibility="gone" android:layout_width="50.0px" android:layout_height="wrap_content" android:layout_marginLeft="9.0px">
+        <com.infraware.widget.VerticalSeekBar android:id="@id/frame_vertical_seekbar" android:layout_width="wrap_content" android:layout_height="437.0px" android:maxWidth="8.0px" android:progressDrawable="@drawable/snote_popup_scroll_bg" android:minWidth="8.0px" android:thumb="@drawable/snote_popup_scroll_handle_selector" android:thumbOffset="0.0px" />
+    </LinearLayout>
+</LinearLayout>

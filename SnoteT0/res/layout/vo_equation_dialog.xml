@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/result_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/equation_result" android:layout_width="fill_parent" android:layout_height="206.0px">
+        <WebView android:id="@id/result_view" android:layout_width="fill_parent" android:layout_height="200.0px" />
+        <LinearLayout android:background="@drawable/vo_bg_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/equation_result" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|right|center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="72.0px" android:layout_marginRight="20.0px" android:layout_marginBottom="17.0px">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="72.0px">
+            <LinearLayout android:orientation="horizontal" android:id="@id/result_search" android:background="@drawable/snote_ic_area_left_01_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/result_search_ico" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="52.0px" android:layout_height="52.0px" android:src="@drawable/snote_ic_vo_search_selector" />
+                <TextView android:textSize="28.0px" android:textColor="@color/handwriting_equation_btn_text_selector" android:gravity="right" android:layout_gravity="right|center" android:id="@id/result_search_txt" android:paddingRight="10.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recognizer_search" android:singleLine="true" />
+            </LinearLayout>
+            <Button android:textSize="28.0px" android:textColor="@color/handwriting_equation_btn_text_selector" android:ellipsize="none" android:id="@id/result_calculate" android:background="@drawable/snote_ic_area_center_01_selector" android:visibility="gone" android:layout_width="94.0px" android:layout_height="72.0px" android:text="@string/recognizer_calculate" android:singleLine="true" />
+            <TextView android:textSize="28.0px" android:textColor="@color/handwriting_equation_btn_text_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/result_insert" android:background="@drawable/snote_ic_area_center_01_selector" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/string_wordeditor_mainmenu_insert" android:singleLine="true" />
+            <TextView android:textSize="28.0px" android:textColor="@color/handwriting_equation_btn_text_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/result_clear" android:background="@drawable/snote_ic_area_right_01_selector" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/clear" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

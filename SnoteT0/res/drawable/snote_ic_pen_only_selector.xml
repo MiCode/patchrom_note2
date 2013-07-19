@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/snote_spen_only02_normal" android:state_activated="true" />
+    <item android:state_selected="true" android:drawable="@drawable/snote_spen_only02_press" android:state_activated="true" />
+    <item android:drawable="@drawable/snote_spen_only01_normal" android:state_activated="false" />
+    <item android:state_selected="true" android:drawable="@drawable/snote_spen_only01_press" android:state_activated="false" />
+</selector>

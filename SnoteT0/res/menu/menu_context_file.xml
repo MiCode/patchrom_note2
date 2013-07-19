@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_context_share" android:title="@string/string_context_share" />
+    <item android:id="@id/menu_context_export" android:title="@string/string_context_Export" />
+    <item android:id="@id/menu_context_copy" android:title="@string/string_filemanager_context_copy" />
+    <item android:id="@id/menu_context_move" android:title="@string/string_filemanager_context_move" />
+    <item android:id="@id/menu_context_rename" android:title="@string/string_context_rename" />
+    <item android:id="@id/menu_context_editcover" android:title="@string/string_context_editcover" />
+    <item android:id="@id/menu_context_delete" android:title="@string/string_context_delete" />
+    <item android:id="@id/menu_context_lock" android:title="@string/string_context_lock" />
+    <item android:id="@id/menu_context_unlock" android:title="@string/string_context_unlock" />
+    <item android:id="@id/menu_context_shortcut" android:title="@string/string_context_shortcut" />
+    <item android:id="@id/menu_context_print" android:title="@string/string_context_print" />
+    <item android:id="@id/menu_context_sync" android:title="@string/string_filemanager_menu_sync" />
+</menu>

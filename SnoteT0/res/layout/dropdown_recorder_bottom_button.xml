@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="101.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_left" android:background="@drawable/snote_btn_selector" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/string_voice_memo_replace" android:layout_weight="1.0" />
+    <Button android:id="@id/btn_right" android:background="@drawable/snote_btn_selector" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/string_voice_memo_delete" android:layout_weight="1.0" />
+</LinearLayout>

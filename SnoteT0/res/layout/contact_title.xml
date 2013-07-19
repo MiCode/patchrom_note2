@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/tw_dialog_top_holo_dark" android:layout_width="670.0px" android:layout_height="76.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/button1" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="76.0px" android:layout_weight="0.0">
+        <Button android:enabled="true" android:layout_gravity="center_vertical" android:background="@drawable/contact_title_left" android:padding="6.0px" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="38.0px" android:layout_height="38.0px" android:layout_marginLeft="50.0px" android:layout_marginRight="50.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="76.0px" android:layout_weight="1.0">
+        <TextView android:textSize="40.0px" android:textColor="#ffe1e1e1" android:gravity="center_horizontal" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="51.0px" android:layout_marginTop="-7.0px" android:text="@string/string_contacts_dialog_viewbutton" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/button2" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="76.0px" android:layout_weight="0.0">
+        <Button android:enabled="true" android:layout_gravity="center_vertical" android:background="@drawable/contact_title_right" android:padding="6.0px" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="38.0px" android:layout_height="38.0px" android:layout_marginLeft="50.0px" android:layout_marginRight="50.0px" />
+    </LinearLayout>
+</LinearLayout>

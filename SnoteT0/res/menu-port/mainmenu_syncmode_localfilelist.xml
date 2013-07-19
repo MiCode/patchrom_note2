@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/sync_cancel" android:title="@string/menu_text_cancel" android:showAsAction="ifRoom|withText" />
+    <item android:id="@id/sync_done" android:title="@string/string_filemanager_menu_sync" android:showAsAction="ifRoom|withText" />
+    <item android:id="@id/sync_all" android:title="@string/menu_text_sync_all" android:showAsAction="ifRoom|withText" />
+</menu>

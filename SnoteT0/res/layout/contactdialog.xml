@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/tw_dialog_middle_holo_dark" android:layout_width="670.0px" android:layout_height="wrap_content" android:minHeight="176.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contactview" android:layout_width="132.0px" android:layout_height="132.0px" android:layout_marginLeft="22.0px" android:layout_marginTop="22.0px" />
+    <TextView android:textSize="40.0px" android:textColor="#ffc8c8c8" android:gravity="center" android:id="@id/nametextview" android:layout_width="wrap_content" android:layout_height="52.0px" android:layout_marginLeft="22.0px" android:layout_marginTop="16.0px" android:text="@string/string_nametext" android:singleLine="true" android:layout_toRightOf="@id/contactview" />
+    <TextView android:textSize="34.0px" android:textColor="#ffa2a2a2" android:gravity="center" android:id="@id/emailtextview" android:layout_width="wrap_content" android:layout_height="43.0px" android:text="@string/string_emailtext" android:singleLine="true" android:layout_below="@id/nametextview" android:layout_alignLeft="@id/nametextview" />
+    <TextView android:textSize="34.0px" android:textColor="#ffa2a2a2" android:gravity="center" android:id="@id/numbertextview" android:layout_width="wrap_content" android:layout_height="38.0px" android:text="@string/string_numbertext" android:singleLine="true" android:layout_below="@id/emailtextview" android:layout_alignLeft="@id/nametextview" />
+</RelativeLayout>

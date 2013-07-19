@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_select_all" android:id="@id/select_all" android:title="@android:string/selectAll" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/icon_cut" android:id="@id/cut" android:title="@android:string/cut" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/icon_copy" android:id="@id/copy" android:title="@android:string/copy" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/icon_paste_selector" android:id="@id/paste" android:title="@android:string/paste" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/icon_clipborad" android:id="@id/clipboard" android:title="@string/string_object_contextmenu_clipboard" android:showAsAction="never" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_menu_delete" android:id="@id/delete" android:title="@string/string_menu_delete" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_gallery" android:id="@id/add" android:title="@string/string_gallery_bookcover_dialog_text" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_cancel" android:id="@id/close" android:title="@string/string_page_gallery_close" android:showAsAction="always|withText" />
+</menu>

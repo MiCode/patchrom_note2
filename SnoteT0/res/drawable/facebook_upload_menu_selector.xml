@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/snotebook_ic_menu_facebook_upload" />
+    <item android:state_enabled="false" android:drawable="@drawable/snotebook_ic_menu_facebook_upload_dim" />
+    <item android:drawable="@drawable/snotebook_ic_menu_facebook_upload" />
+</selector>

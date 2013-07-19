@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:id="@id/sketch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0px" />
+    <LinearLayout android:id="@id/edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0px" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/undo" android:background="@drawable/snote_ic_area_left_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_pre_selector" android:contentDescription="@string/string_hovering_tootip_previous" />
+        <ImageButton android:id="@id/play" android:background="@drawable/snote_ic_area_center_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_option_ic_sketch_play" android:contentDescription="@string/string_hovering_tootip_play" />
+        <ImageButton android:id="@id/redo" android:background="@drawable/snote_ic_area_center_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_next_selector" android:contentDescription="@string/string_hovering_tootip_next" />
+        <ImageButton android:id="@id/delete_drawing_stream" android:background="@drawable/snote_ic_area_right_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_option_ic_sketch_delete" android:contentDescription="@string/string_contextmenu_object_delete" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/misc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/voice" android:background="@drawable/snote_ic_area_left_selector" android:paddingRight="0.0px" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_option_ic_voice_selector" android:contentDescription="@string/string_voice_memo_title" />
+        <ImageButton android:id="@id/favorite" android:background="@drawable/snote_ic_area_right_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:src="@drawable/snote_ic_favorite_selector" />
+    </LinearLayout>
+</merge>

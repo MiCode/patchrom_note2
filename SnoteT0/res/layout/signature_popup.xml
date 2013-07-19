@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/signature" android:layout_width="598.0px" android:layout_height="448.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/snote_title02" android:paddingLeft="18.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="26.0px" android:textColor="#ffc8c8c8" android:gravity="center_vertical" android:id="@id/signature_title" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="@string/draw_signature" android:shadowColor="#ff000000" android:shadowDy="1.0" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="bottom" android:background="@drawable/snote_title_divider" android:layout_width="2.0px" android:layout_height="49.0px" />
+        <Button android:textSize="20.0px" android:textColor="#ffc8c8c8" android:layout_gravity="center_vertical" android:id="@id/clear_signature" android:background="@drawable/snote_signature_center_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/clear" android:shadowColor="#ff000000" android:shadowDy="1.0" />
+        <LinearLayout android:gravity="bottom" android:background="@drawable/snote_title_divider" android:layout_width="2.0px" android:layout_height="49.0px" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/signature_complete" android:background="@drawable/snote_signature_center_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:background="@drawable/snote_title_button_done_selector" android:duplicateParentState="true" android:layout_width="34.0px" android:layout_height="34.0px" />
+            <TextView android:textSize="20.0px" android:textColor="#ffc8c8c8" android:gravity="center" android:layout_width="64.0px" android:layout_height="32.0px" android:text="@string/string_wordeditor_mainmenu_save" android:shadowColor="#ff000000" android:shadowDy="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:background="@drawable/snote_title_divider" android:layout_width="2.0px" android:layout_height="49.0px" />
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/signature_cancel" android:background="@drawable/snote_signature_right_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:background="@drawable/snote_title_button_cancel_selector" android:duplicateParentState="true" android:layout_width="34.0px" android:layout_height="34.0px" />
+            <TextView android:textSize="20.0px" android:textColor="#ffc8c8c8" android:gravity="center" android:layout_width="79.0px" android:layout_height="32.0px" android:text="@string/string_common_button_cancel" android:shadowColor="#ff000000" android:shadowDy="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/signature_canvas" android:background="@drawable/snote_popup_bg02" android:layout_width="fill_parent" android:layout_height="377.0px" />
+</LinearLayout>

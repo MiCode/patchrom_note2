@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="26.0px" android:textColor="#ff000000" android:gravity="left|center" android:background="@drawable/quickactions_arrowdown" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_width="fill_parent" android:layout_height="56.0px" android:minWidth="230.0px" android:shadowColor="#e6ffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

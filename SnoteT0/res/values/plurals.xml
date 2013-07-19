@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="page_will_be_deleted">
+        <item quantity="other">@string/many_pages_will_be_deleted</item>
+        <item quantity="one">@string/one_page_will_be_deleted</item>
+    </plurals>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="cover_thumbnail_name_bg_min_width">120</integer>
+    <integer name="cover_thumbnail_name_bg_padding">20</integer>
+    <integer name="cover_thumbnail_name_bg_height">50</integer>
+    <integer name="cover_text_right_margin">8</integer>
+</resources>

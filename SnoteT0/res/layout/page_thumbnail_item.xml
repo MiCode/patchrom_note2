@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/snote_page_thumbnail_selector" android:paddingLeft="4.0px" android:paddingTop="17.0px" android:paddingRight="8.0px" android:layout_width="190.0px" android:layout_height="280.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumbnail" android:background="@drawable/snote_page_thumbnail" android:paddingLeft="4.0px" android:paddingTop="2.0px" android:paddingRight="4.0px" android:paddingBottom="7.0px" android:layout_width="178.0px" android:layout_height="226.0px" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="6.0px" android:paddingRight="3.0px" android:layout_width="fill_parent" android:layout_height="37.0px">
+        <TextView android:textSize="28.0px" android:textColor="#ffffffff" android:layout_gravity="top|left|center" android:id="@id/page_number" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/favorite" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginRight="1.0px" android:button="@drawable/snote_page_ic_favorites_selector" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/voice" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="32.0px" android:layout_height="32.0px" android:button="@drawable/snote_page_ic_voice_selector" />
+    </LinearLayout>
+</LinearLayout>

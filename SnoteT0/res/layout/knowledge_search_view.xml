@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/color_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/search_plate" android:background="@drawable/textfield_searchview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <EditText android:textColor="#ff000000" android:id="@id/search_src_text" android:background="@color/color_transparent" android:paddingLeft="4.0px" android:paddingRight="4.0px" android:layout_width="266.0px" android:layout_height="80.0px" android:hint="@string/recognizer_search" android:singleLine="true" android:maxLength="512" android:inputType="text" android:imeOptions="actionSearch" />
+        <ImageView android:id="@id/search_close_btn" android:background="?android:selectableItemBackground" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_clear_holo_light" android:contentDescription="@string/string_common_button_cancel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/submit_area" android:background="@drawable/textfield_searchview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0px">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/search_go_btn" android:background="@drawable/snotebook_vo_btn_bg_selector" android:focusable="true" android:visibility="visible" android:layout_width="80.0px" android:layout_height="80.0px" android:src="@drawable/snotebook_vo_ic_question_selector" android:scaleType="center" android:contentDescription="@string/string_handwritingmenu_question" />
+    </LinearLayout>
+</LinearLayout>

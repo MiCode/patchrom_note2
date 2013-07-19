@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/snote_main_default_bg" android:paddingBottom="12.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="44.0px" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/title" android:background="@drawable/penmemo_title_h" android:paddingLeft="28.0px" android:paddingRight="28.0px" android:layout_width="fill_parent" android:layout_height="135.0px" android:layout_marginTop="-13.0px" />
+    <View android:id="@id/space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="18.0px" />
+    <GridView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center" android:id="@id/insert_popup_gridview" android:paddingLeft="36.0px" android:paddingRight="36.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/color_transparent" android:horizontalSpacing="22.0px" android:verticalSpacing="12.0px" android:columnWidth="224.0px" android:numColumns="5" android:choiceMode="multipleChoice" />
+</LinearLayout>

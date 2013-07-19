@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/pen_main" android:paddingTop="5.0px" android:paddingRight="3.0px" android:paddingBottom="0.0px" android:clickable="true" android:layout_width="470.0px" android:layout_height="wrap_content" android:layout_marginRight="20.0px" android:layout_marginBottom="58.0px" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/fill_scroll" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/pen_setting_box" android:paddingLeft="3.0px" android:paddingRight="3.0px" android:layout_width="445.0px" android:layout_height="371.0px" android:layout_marginLeft="4.0px" android:layout_marginRight="4.0px" android:splitMotionEvents="false">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shape_fill_setting_preview" android:background="@drawable/snote_type_preview_bg_00" android:layout_width="fill_parent" android:layout_height="138.0px">
+                <ImageView android:id="@id/shape_preview_fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_shape_setting_fill" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/pen_size_select_box" android:background="@drawable/snote_popup_in_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_marginTop="9.0px" android:splitMotionEvents="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shape_fill_opacity_view" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="330.0px" android:layout_height="fill_parent">
+                        <SeekBar android:id="@id/shape_fill_alpha_seekbar" style="@style/shape_setting_progress_style" />
+                    </LinearLayout>
+                    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px">
+                        <ImageView android:background="@drawable/image_bg" android:layout_width="74.0px" android:layout_height="74.0px" />
+                        <ImageView android:id="@id/shape_fill_alpha_maximum" android:background="@drawable/image_opacity_bg" android:layout_width="75.0px" android:layout_height="75.0px" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/pen_color_select_box" android:background="@drawable/snote_popup_in_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0px" android:layout_marginTop="9.0px" android:layout_marginBottom="4.0px" android:splitMotionEvents="false">
+                <com.infraware.widget.ColorPickerView android:layout_gravity="center_horizontal" android:id="@id/shape_fill_color_select" android:layout_width="wrap_content" android:layout_height="111.0px" android:layout_marginLeft="3.0px" android:layout_marginTop="4.0px" android:layout_marginBottom="4.0px" />
+                <com.infraware.widget.GradientColorPicker android:layout_gravity="center_horizontal" android:id="@id/shape_fill_color_picker" android:visibility="gone" android:layout_width="419.0px" android:layout_height="100.0px" android:layout_marginLeft="2.0px" android:layout_marginBottom="4.0px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shape_fill_vertical_seekbar_box" android:background="@drawable/snote_option_in_bg" android:visibility="gone" android:layout_width="50.0px" android:layout_height="wrap_content" android:layout_marginLeft="9.0px">
+        <com.infraware.widget.VerticalSeekBar android:id="@id/shape_setting_fill_vertical_seekbar" android:layout_width="wrap_content" android:layout_height="371.0px" android:maxWidth="8.0px" android:progressDrawable="@drawable/snote_popup_scroll_bg" android:minWidth="8.0px" android:thumb="@drawable/snote_popup_scroll_handle_selector" android:thumbOffset="0.0px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/delete" android:title="@string/string_menu_delete" />
+    <item android:id="@id/make_signature" android:title="@string/string_object_contextmenu_createsignature" />
+    <item android:id="@id/edit_signature" android:title="@string/string_object_contextmenu_replacesignature" />
+    <item android:id="@id/remove_signature" android:title="@string/string_object_contextmenu_deletesignature" />
+</menu>

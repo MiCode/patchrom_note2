@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_paste_light" android:id="@id/menu_filemanager_actionmode_paste" android:title="@string/string_menu_paste" android:showAsAction="always" />
+</menu>

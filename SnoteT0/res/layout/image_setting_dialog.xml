@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/snote_tab_line" android:splitMotionEvents="false" android:showDividers="middle">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="64.0px" android:divider="#1fffffff" android:tabStripEnabled="false" android:dividerPadding="10.0px" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/image_setting_size" />
+            <include android:id="@id/frame" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/image_setting_frame" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

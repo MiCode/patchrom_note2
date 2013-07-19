@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_context_sharevia_allshare" android:title="@string/string_context_allshare" />
+    <item android:id="@id/menu_context_sharevia_bluetooth" android:title="@string/string_context_bluetooth" />
+    <item android:id="@id/menu_context_sharevia_gmail" android:title="@string/string_context_gmail" />
+    <item android:id="@id/menu_context_sharevia_messaging" android:title="@string/string_context_messaging" />
+    <item android:id="@id/menu_context_sharevia_facebook" android:title="@string/string_context_facebook" />
+    <item android:id="@id/menu_context_sharevia_picasa" android:title="@string/string_context_picasa" />
+    <item android:id="@id/menu_context_sharevia_email" android:title="@string/string_filemanager_accountadd_email" />
+</menu>

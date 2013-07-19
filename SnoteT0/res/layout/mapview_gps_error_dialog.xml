@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="22.0px" android:paddingTop="22.0px" android:layout_width="600.0px" android:layout_height="600.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0px" android:textColor="#ff000000" android:id="@id/gps_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_mapview_gps_error_message" />
+    <TextView android:textSize="36.0px" android:textColor="#ff000000" android:id="@id/gps_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/string_mapview_gps_newtwork_setting_message" />
+    <TextView android:textSize="36.0px" android:textColor="#ff000000" android:id="@id/wifi_off" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/string_mapview_wifi_turn_on" />
+    <com.infraware.widget.CheckableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/map_gps_check_layout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginTop="80.0px">
+        <CheckBox android:id="@id/gps_dont_show" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/dontshow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0px" android:text="@string/string_tutorial_dontshow" />
+    </com.infraware.widget.CheckableLinearLayout>
+</LinearLayout>

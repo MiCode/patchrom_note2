@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/note_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/toolbar" android:background="@drawable/snote_toolbar_bg" android:paddingLeft="18.0px" android:paddingTop="10.0px" android:paddingRight="18.0px" android:paddingBottom="10.0px" android:layout_width="fill_parent" android:layout_height="72.0px" android:layout_alignParentTop="true" android:splitMotionEvents="false">
+        <com.infraware.widget.CenteredCheckBox android:gravity="center" android:layout_gravity="left" android:id="@id/view_mode" android:background="@drawable/snotebook_ic_area_selector" android:layout_width="70.0px" android:layout_height="fill_parent" android:layout_marginRight="18.0px" android:button="@drawable/snote_ic_viewmode" />
+        <LinearLayout android:id="@id/mode_specific_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/toolbar_view" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/navigationbar" android:nextFocusUp="@id/page_list" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/navigationbar_view" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/pte_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navigationbar" android:layout_below="@id/holder_recognizer_popup">
+        <com.samsung.uieffect.pte.snote.PTEViewForSNote android:id="@id/pte_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/pde_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navigationbar" android:layout_below="@id/holder_recognizer_popup">
+        <com.sec.adv.effect.delete.GLDeleteView android:id="@id/pde_surface" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/holder_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navigationbar" android:layout_below="@id/holder_recognizer_popup">
+        <com.infraware.common.UxSurfaceView android:id="@id/document" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/vertical_scrollbar" layout="@layout/vertical_scroll" />
+        <include android:id="@id/horizontal_scrollbar" layout="@layout/horizontal_scroll" />
+    </FrameLayout>
+    <com.samsung.sdraw.CanvasView android:id="@id/canvas_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/holder_surface" android:layout_alignBottom="@id/holder_surface" />
+    <LinearLayout android:id="@id/holder_recognizer_popup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="206.0px" android:layout_below="@id/toolbar">
+        <ImageView android:id="@id/holder_recognizer_popup_bg" android:background="@drawable/handwriting_background" android:layout_width="fill_parent" android:layout_height="200.0px" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/holder_recognizer_popup_fake" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="206.0px" android:layout_below="@id/toolbar">
+        <ImageView android:id="@id/holder_recognizer_popup_bg_fake" android:background="@drawable/handwriting_background" android:layout_width="fill_parent" android:layout_height="200.0px" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/overlay_container_temp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignTop="@id/holder_surface" android:layout_alignBottom="@id/holder_surface">
+        <FrameLayout android:orientation="vertical" android:id="@id/minimap_view" android:background="@drawable/snote_preview_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.infraware.widget.MinimapImageView android:id="@id/minimap" android:layout_width="157.0px" android:layout_height="242.0px" android:scaleType="fitXY" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/paste_bubble_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignBottom="@id/holder_surface" android:layout_alignParentTop="true" />
+    <android.gesture.GestureOverlayView android:id="@id/gesture" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_alignTop="@id/holder_surface" android:layout_alignBottom="@id/holder_surface" android:gestureStrokeWidth="10.0" android:gestureColor="#ffff0000" android:uncertainGestureColor="#3fff0000" android:gestureStrokeType="single" />
+    <ImageView android:layout_gravity="center" android:id="@id/zoomInfo" android:background="@drawable/pagenumber_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginRight="9.0px" android:layout_alignTop="@id/holder_surface" android:layout_alignRight="@id/holder_surface" />
+    <ImageButton android:id="@id/zoomIn_button" android:background="@drawable/snote_zoomin_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:layout_marginRight="38.0px" android:layout_below="@id/zoomInfo" android:layout_alignParentRight="true" />
+    <ImageButton android:id="@id/zoomOut_button" android:background="@drawable/snote_zoomout_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:layout_marginRight="38.0px" android:layout_below="@id/zoomIn_button" android:layout_alignParentRight="true" />
+    <ImageButton android:id="@id/toolbar_change_button" android:background="@drawable/snote_toolbar_show_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:layout_marginRight="20.0px" android:layout_below="@id/toolbar" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_page_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/snote_page_add_split" android:layout_width="2.0px" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/add_page" android:background="@android:color/transparent" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snote_page_add_selector" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/equation_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/holder_recognizer_popup" />
+    <FrameLayout android:id="@id/text_recognize_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="102.0px" android:layout_below="@id/toolbar" />
+    <FrameLayout android:id="@id/question_recognize_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/holder_recognizer_popup" />
+    <FrameLayout android:id="@id/overlay_container" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_alignTop="@id/holder_surface" android:layout_alignBottom="@id/holder_surface" />
+    <fragment android:id="@id/page_list" android:layout_width="fill_parent" android:layout_height="359.0px" android:layout_above="@id/navigationbar" class="com.infraware.uxcontrol.uicontrol.UiPageGalleryFragment" />
+    <FrameLayout android:id="@id/recognize_floating_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="49.0px" android:layout_alignTop="@id/holder_surface" />
+    <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/holder_surface">
+        <include android:id="@id/videoview_container" layout="@layout/video_view" />
+    </FrameLayout>
+</RelativeLayout>

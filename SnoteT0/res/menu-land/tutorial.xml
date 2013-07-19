@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_menu_done" android:id="@id/done" android:title="@string/done" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_more" android:id="@id/more" android:title="@string/string_common_button_more" android:showAsAction="always|withText" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/snotebook_ic_menu_cancel_winset" android:id="@id/cancel" android:title="@string/string_common_button_cancel" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/snotebook_ic_menu_done_winset_selector" android:id="@id/save" android:title="@string/string_common_contextmenu_save" android:showAsAction="always|withText" />
+</menu>
