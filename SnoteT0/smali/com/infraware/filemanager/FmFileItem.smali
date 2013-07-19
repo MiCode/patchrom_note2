@@ -937,6 +937,30 @@
     goto :goto_0
 .end method
 
+.method private verifyDateFormatString(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+    .parameter "format"
+
+    .prologue
+    if-eqz p1, :cond_0
+
+    const-string v0, ""
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    :goto_0
+    return-object p1
+
+    :cond_0
+    const-string p1, "MM/dd/yyyy"
+
+    goto :goto_0
+.end method
+
 .method public getDataStringForLocale(Landroid/content/Context;Z)Ljava/lang/String;
     .locals 9
     .parameter "context"
@@ -978,6 +1002,10 @@
     const-string v6, "date_format"
 
     invoke-static {v5, v6}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {p0, v5}, Lcom/infraware/filemanager/FmFileItem;->verifyDateFormatString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
