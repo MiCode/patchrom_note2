@@ -2072,6 +2072,9 @@
     move-object v0, v1
 
     .line 5618
+    :cond_miui
+    const/4 v0, 0x0
+
     :goto_0
     return-object v0
 
@@ -2154,6 +2157,8 @@
     .line 5618
     :cond_3
     const/4 v1, 0x1
+
+    if-eqz v0, :cond_miui
 
     invoke-static {v0, p2, p3, v1}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
