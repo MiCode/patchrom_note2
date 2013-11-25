@@ -2870,9 +2870,7 @@
     if-eqz v0, :cond_4
 
     .line 1445
-    const v0, 0x1020342
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->getFaceLockAreaView(Landroid/view/View;)Landroid/view/View;
 
     move-result-object v7
 
